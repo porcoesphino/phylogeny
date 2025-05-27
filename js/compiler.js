@@ -12,10 +12,12 @@ function get_content(content_select_value) {
       return data_animalia_arthropoda
     case 'animalia_chordata_tetrapoda':
       return data_animalia_chordata_tetrapoda
+    case 'animalia_tetrapoda_aves':
+      return data_animalia_tetrapoda_aves
     case 'animalia_carnivora':
       return data_animalia_carnivora
     case 'all':
-      return data_luca.concat(data_animalia_phyla_nine).concat(data_animalia_arthropoda).concat(data_animalia_chordata_tetrapoda)
+      return data_luca.concat(data_animalia_phyla_nine).concat(data_animalia_arthropoda).concat(data_animalia_chordata_tetrapoda).concat(data_animalia_tetrapoda_aves)
   }
   throw new Error('Content selection not found.')
 }
@@ -32,6 +34,8 @@ function get_root_name(content_select_value) {
       return 'Arthropoda'
     case 'animalia_chordata_tetrapoda':
       return 'Chordata'
+    case 'animalia_tetrapoda_aves':
+      return 'Tetrapoda'
     case 'animalia_carnivora':
       return 'Carnivora'
   }
