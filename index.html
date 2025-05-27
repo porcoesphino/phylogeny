@@ -5,9 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"> -->
-  <link rel="stylesheet" href="./collapsible_block.css">
-  <link rel="stylesheet" href="./tree_view.css">
+  <link rel="stylesheet" href="./css/collapsible_block.css">
+  <link rel="stylesheet" href="./css/tree_view.css">
   <title>Phylogentic tree</title </head>
 
 <body>
@@ -17,48 +16,44 @@
   <details class="controls">
     <summary>Controls</summary>
     <div>
-    <table>
-    <tr>
-      <td>
-        <div class="select">
-          <label for="style-select">Select style</label>
-          <select size="1" id="style-select">
-            <option value="tree">Tree list</option> <!-- Use javascript to select this option -->
-            <!-- <option value="list" selected>Regular list</option> -->
-          </select>
-        </div>
-      </td>
-      <td>
+      <table>
+        <tr>
+          <td>
+            <div class="select">
+              <label for="style-select">Select style</label>
+              <select size="1" id="style-select">
+                <option value="tree">Tree list</option> <!-- Use javascript to select this option -->
+                <!-- <option value="list" selected>Regular list</option> -->
+              </select>
+            </div>
+          </td>
+          <td>
 
-        <div class="select">
-          <label for="content-select">Select content</label>
-          <select size="5" id="content-select">
-            <option value="all">All</option>
-            <hr />
-            <option value="overview" selected>Overview</option>
-            <hr />
-            <optgroup label="Animalia">
-              <option value="animalia_phyla">Animalia phyla</option>
-              <!-- <option value="animalia_cnidaria">Cnidaria</option> -->
-              <option value="animalia_arthropoda">Arthropoda</option>
-              <!-- <option value="animalia_insecta">Insecta</option>
-              <option value="animalia_cordata">Chordata</option>
-              <option value="animalia_mammalia">Mammalia</option> -->
-            </optgroup>
-          </select>
-        </div>
+            <div class="select">
+              <label for="content-select">Select content</label>
+              <select size="5" id="content-select">
+                <option value="all">All</option>
+                <hr />
+                <option value="overview" selected>Overview</option>
+                <hr />
+                <optgroup label="Animalia">
+                  <option value="animalia_phyla">Animalia phyla</option>
+                  <!-- <option value="animalia_cnidaria">Cnidaria</option> -->
+                  <option value="animalia_arthropoda">Arthropoda</option>
+                  <!-- <option value="animalia_insecta">Insecta</option>
+                  <option value="animalia_cordata">Chordata</option>
+                  <option value="animalia_mammalia">Mammalia</option> -->
+                </optgroup>
+              </select>
+            </div>
 
-      </td>
-    </tr>
-
-  </table>
+          </td>
+        </tr>
+      </table>
     </div>
   </details>
 
   <div id="tree_root"></div>
-
-  <!-- <script src="./data_luca.json"></script> -->
-  <!-- <script src="./data_animalia_phylums.json"></script> -->
 
   <script>
     var data_luca = [
@@ -317,7 +312,7 @@
           "centipedes"
         ],
         "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg/330px-Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg/330px-Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg"
         ]
       },
       {
@@ -353,10 +348,8 @@
     ]
 
   </script>
-  <!-- I frame with src pointing to json file on server, onload we apply "this" to have the iframe context, display none as we don't want to show the iframe -->
-  <!-- <iframe src="./data_luca.json" onload="jsonOnLoad.apply(this, someCallback)" style="display: none;"></iframe> -->
 
-  <script src="./compiler.js"></script>
+  <script src="./js/compiler.js"></script>
 
   <h2 class="title is-4">Interesting sites</h2>
   <ul class="regular_list">
