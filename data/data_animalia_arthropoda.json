@@ -20,6 +20,54 @@
     ]
   },
   {
+    "name": "Multicrustacea",
+    "parent": "Pancrustacea",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [],
+    "imgs": []
+  },
+  {
+    "name": "Malacostraca",
+    "parent": "Multicrustacea",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "crabs",
+      "lobsters",
+      "shrimp",
+      "isopods"
+    ],
+    "imgs": []
+  },
+  {
+    "name": "Thecostraca",
+    "parent": "Multicrustacea",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "barnacles"
+    ],
+    "imgs": []
+  },
+  {
+    "name": "Hexapoda",
+    "parent": "Pancrustacea",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [],
+    "imgs": []
+  },
+  {
+    "name": "Insecta",
+    "parent": "Hexapoda",
+    "rank": "",
+    "ipa": "",
+    "common": [],
+    "imgs": [],
+    "tag": "The insects."
+  },
+  {
     "name": "Myriapoda",
     "parent": "Mandibulata",
     "rank": "Subphylum",
@@ -37,25 +85,29 @@
   {
     "name": "Chilopoda",
     "parent": "Myriapoda",
-    "rank": "Subphylum",
+    "rank": "Class",
     "ipa": "",
     "common": [
       "centipedes"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg/330px-Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg"
-    ]
+    ],
+    "etymology": "greek 'lip'-'foot'",
+    "tag": "Fast moving with one leg per segment that extends away from the body. Their front legs are pincer like and inject venom. Usually predators."
   },
   {
     "name": "Diplopoda",
     "parent": "Myriapoda",
-    "rank": "Subphylum",
+    "rank": "Class",
     "ipa": "",
     "common": [
       "centipedes",
       "millipedes",
       "allies"
     ],
+    "etymology": "greek 'double'-'foot'",
+    "tag": "Slow moving with two legs per segment (besides the first three segments) that are underneath the body. Usually scavengers.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Andrognathus_corticarius_A.jpg/330px-Andrognathus_corticarius_A.jpg"
     ]
@@ -70,10 +122,19 @@
       "horseshoe crabs",
       "arachnids"
     ],
+    "etymology": "greek 'jaw'-'horn'",
+    "tag": "Named for the fang/pincer appendages that appear before the mouth.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nymphon_signatum_194389384_%28white_background%29.jpg/330px-Nymphon_signatum_194389384_%28white_background%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Limulus_polyphemus_%28aquarium%29_%28white_background%29.jpg/330px-Limulus_polyphemus_%28aquarium%29_%28white_background%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Aptostichus_simus_Monterey_County.jpg/330px-Aptostichus_simus_Monterey_County.jpg"
     ]
+  },
+  {
+    "name": "Arachnida",
+    "parent": "Chelicerata",
+    "rank": "Class",
+    "ipa": "",
+    "imgs": []
   }
 ]
