@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Mandibulata",
+    "parent": "Arthropoda",
+    "rank": "Clade",
+    "ipa": ""
+  },
+  {
+    "name": "Pancrustacea",
+    "parent": "Mandibulata",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [
+      "crustaceans",
+      "hexapods"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lobster_png_by_absurdwordpreferred_d2xqhvd.png/330px-Lobster_png_by_absurdwordpreferred_d2xqhvd.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/European_wasp_white_bg.jpg/330px-European_wasp_white_bg.jpg"
+    ]
+  },
+  {
+    "name": "Myriapoda",
+    "parent": "Mandibulata",
+    "rank": "Subphylum",
+    "ipa": "",
+    "common": [
+      "centipedes",
+      "millipedes",
+      "allies"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg/330px-Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Andrognathus_corticarius_A.jpg/330px-Andrognathus_corticarius_A.jpg"
+    ]
+  },
+  {
+    "name": "Chilopoda",
+    "parent": "Myriapoda",
+    "rank": "Subphylum",
+    "ipa": "",
+    "common": [
+      "centipedes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg/330px-Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg",
+    ]
+  },
+  {
+    "name": "",
+    "parent": "Myriapoda",
+    "rank": "Subphylum",
+    "ipa": "",
+    "common": [
+      "centipedes",
+      "millipedes",
+      "allies"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Andrognathus_corticarius_A.jpg/330px-Andrognathus_corticarius_A.jpg"
+    ]
+  },
+  {
+    "name": "Chelicerata",
+    "parent": "Arthropoda",
+    "rank": "Subphylum",
+    "ipa": "",
+    "common": [
+      "sea spiders",
+      "horseshoe crabs",
+      "arachnids"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nymphon_signatum_194389384_%28white_background%29.jpg/330px-Nymphon_signatum_194389384_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Limulus_polyphemus_%28aquarium%29_%28white_background%29.jpg/330px-Limulus_polyphemus_%28aquarium%29_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Aptostichus_simus_Monterey_County.jpg/330px-Aptostichus_simus_Monterey_County.jpg"
+    ]
+  }
+]

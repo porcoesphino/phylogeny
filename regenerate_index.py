@@ -1,0 +1,159 @@
+#!/usr/bin/env python
+
+from dataclasses import dataclass
+import os
+import typing
+
+HTML_OUT_FILENAME = 'index.html'
+
+# JSON_FILES_BY_PARENT: dict[str, str] = {
+#     'LUCA': 'data_luca.json',
+#     'Animalia': 'data_animalia_phyla.json',
+#     'Arthropoda': 'data_animalia_arthropoda.json',
+# }
+
+JSON_DATA_LIST = [
+    'data_luca.json',
+    'data_animalia_phyla.json',
+    'data_animalia_arthropoda.json',
+]
+
+ROOT_DIR = 'src'
+
+Rank: typing.TypeAlias = typing.Literal[
+    'domain',  # Drunken
+    'kingdom',  # Kangaroos
+    'phylum',  # Punch
+    'class',  # Children
+    'order',  # On
+    'family',  # Family
+    'genus',  # Game
+    'species',  # Shows
+]
+
+
+@dataclass(kw_only=True)
+class NodeRaw:
+  name: str
+  rank: Rank
+  parent: str
+  ipa: str | None = None
+  imgs: list[str] | None = None  # TODO: Should this be local or remote?
+  description: str | None = None
+  common: list[str] | None = None
+  etymology: str | None = None
+  description: str | None = None
+
+
+def get_script_vars() -> str:
+  output: str = ''
+  for json_filename in JSON_DATA_LIST:
+    with open(os.path.join(ROOT_DIR, json_filename), 'r', encoding='utf8') as json_file:
+      var_name = json_filename.removesuffix('.json')
+      prefix_spaces = '    '
+      output += f'{prefix_spaces}var {var_name} = {prefix_spaces.join(json_file.readlines())}\n'
+  return output
+
+
+def get_html() -> str:
+  html_wrapper_start = """
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="./collapsible_block.css">
+  <link rel="stylesheet" href="./tree_view.css">
+  <title>Phylogentic tree</title </head>
+
+<body>
+
+  <h1 class="title">A simplified tree of life</h1>
+
+  <details class="controls">
+    <summary>Controls</summary>
+    <div>
+    <table>
+    <tr>
+      <td>
+        <div class="select">
+          <label for="style-select">Select style</label>
+          <select size="1" id="style-select">
+            <option value="tree">Tree list</option> <!-- Use javascript to select this option -->
+            <!-- <option value="list" selected>Regular list</option> -->
+          </select>
+        </div>
+      </td>
+      <td>
+
+        <div class="select">
+          <label for="content-select">Select content</label>
+          <select size="5" id="content-select">
+            <option value="all">All</option>
+            <hr />
+            <option value="overview" selected>Overview</option>
+            <hr />
+            <optgroup label="Animalia">
+              <option value="animalia_phyla">Animalia phyla</option>
+              <!-- <option value="animalia_cnidaria">Cnidaria</option> -->
+              <option value="animalia_arthropoda">Arthropoda</option>
+              <!-- <option value="animalia_insecta">Insecta</option>
+              <option value="animalia_cordata">Chordata</option>
+              <option value="animalia_mammalia">Mammalia</option> -->
+            </optgroup>
+          </select>
+        </div>
+
+      </td>
+    </tr>
+
+  </table>
+    </div>
+  </details>
+
+  <div id="tree_root"></div>
+
+  <!-- <script src="./data_luca.json"></script> -->
+  <!-- <script src="./data_animalia_phylums.json"></script> -->
+
+  <script>
+"""
+  html_wrapper_end = """
+  </script>
+  <!-- I frame with src pointing to json file on server, onload we apply "this" to have the iframe context, display none as we don't want to show the iframe -->
+  <!-- <iframe src="./data_luca.json" onload="jsonOnLoad.apply(this, someCallback)" style="display: none;"></iframe> -->
+
+  <script src="./compiler.js"></script>
+
+  <h2 class="title is-4">Interesting sites</h2>
+  <ul class="regular_list">
+    <li>
+      <a href="https://www.inaturalist.org">iNaturalist</a>
+    </li>
+    <li>
+      <a href="https://www.gbif.org">Global Biodiversity Information Facility</a>
+    </li>
+    <li>
+      <a href="https://www.catalogueoflife.org">Catalogue of Life</a>
+    </li>
+  </ul>
+
+</body>
+
+</html>
+"""
+  return html_wrapper_start + get_script_vars() + html_wrapper_end
+
+
+def main():
+
+  html = get_html()
+
+  with open(os.path.join(ROOT_DIR, HTML_OUT_FILENAME), 'w', encoding='utf8') as html_file:
+    html_file.write(html)
+
+
+if __name__ == '__main__':
+  main()

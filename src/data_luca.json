@@ -1,0 +1,36 @@
+[
+  {
+    "name": "Bacteria",
+    "parent": "LUCA",
+    "rank": "Domain",
+    "ipa": "bækˈtɪəriə"
+  },
+  {
+    "name": "Archaea",
+    "parent": "LUCA",
+    "rank": "Domain",
+    "ipa": "ɑːrˈkiːə"
+  },
+  {
+    "name": "Eukaryota",
+    "parent": "LUCA",
+    "rank": "Domain"
+  },
+  {
+    "name": "Plantae",
+    "parent": "Eukaryota",
+    "rank": "Kingdom"
+  },
+  {
+    "name": "Animalia",
+    "parent": "Eukaryota",
+    "rank": "Kingdom",
+    "ipa": "ˌænɪˈmeɪliə"
+  },
+  {
+    "name": "Fungi",
+    "parent": "Eukaryota",
+    "rank": "Kingdom",
+    "ipa": "ˈfʌŋɡi"
+  }
+]

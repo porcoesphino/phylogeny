@@ -1,0 +1,376 @@
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="./collapsible_block.css">
+  <link rel="stylesheet" href="./tree_view.css">
+  <title>Phylogentic tree</title </head>
+
+<body>
+
+  <h1 class="title">A simplified tree of life</h1>
+
+  <details class="controls">
+    <summary>Controls</summary>
+    <div>
+    <table>
+    <tr>
+      <td>
+        <div class="select">
+          <label for="style-select">Select style</label>
+          <select size="1" id="style-select">
+            <option value="tree">Tree list</option> <!-- Use javascript to select this option -->
+            <!-- <option value="list" selected>Regular list</option> -->
+          </select>
+        </div>
+      </td>
+      <td>
+
+        <div class="select">
+          <label for="content-select">Select content</label>
+          <select size="5" id="content-select">
+            <option value="all">All</option>
+            <hr />
+            <option value="overview" selected>Overview</option>
+            <hr />
+            <optgroup label="Animalia">
+              <option value="animalia_phyla">Animalia phyla</option>
+              <!-- <option value="animalia_cnidaria">Cnidaria</option> -->
+              <option value="animalia_arthropoda">Arthropoda</option>
+              <!-- <option value="animalia_insecta">Insecta</option>
+              <option value="animalia_cordata">Chordata</option>
+              <option value="animalia_mammalia">Mammalia</option> -->
+            </optgroup>
+          </select>
+        </div>
+
+      </td>
+    </tr>
+
+  </table>
+    </div>
+  </details>
+
+  <div id="tree_root"></div>
+
+  <!-- <script src="./data_luca.json"></script> -->
+  <!-- <script src="./data_animalia_phylums.json"></script> -->
+
+  <script>
+    var data_luca = [
+      {
+        "name": "Bacteria",
+        "parent": "LUCA",
+        "rank": "Domain",
+        "ipa": "bækˈtɪəriə"
+      },
+      {
+        "name": "Archaea",
+        "parent": "LUCA",
+        "rank": "Domain",
+        "ipa": "ɑːrˈkiːə"
+      },
+      {
+        "name": "Eukaryota",
+        "parent": "LUCA",
+        "rank": "Domain"
+      },
+      {
+        "name": "Plantae",
+        "parent": "Eukaryota",
+        "rank": "Kingdom"
+      },
+      {
+        "name": "Animalia",
+        "parent": "Eukaryota",
+        "rank": "Kingdom",
+        "ipa": "ˌænɪˈmeɪliə"
+      },
+      {
+        "name": "Fungi",
+        "parent": "Eukaryota",
+        "rank": "Kingdom",
+        "ipa": "ˈfʌŋɡi"
+      }
+    ]
+    var data_animalia_phyla = [
+      {
+        "name": "Ctenophora",
+        "parent": "Animalia",
+        "rank": "Phylum",
+        "ipa": ""
+      },
+      {
+        "name": "Porifera",
+        "parent": "Animalia",
+        "rank": "Phylum",
+        "ipa": "",
+        "common": [
+          "sponges"
+        ],
+        "description": "They do not have tissues that derive from embryonic germ layers. Some are radially symmetrical, but most are asymmetrical."
+      },
+      {
+        "name": "ParaHoxozoa",
+        "parent": "Animalia",
+        "rank": "Clade",
+        "ipa": ""
+      },
+      {
+        "name": "Cnidaria",
+        "parent": "ParaHoxozoa",
+        "rank": "Phylum",
+        "ipa": "",
+        "common": [
+          "jellyfish",
+          "anemones",
+          "corals"
+        ],
+        "description": "They have no organs or organ systems and include some of the smallest marine parasites."
+      },
+      {
+        "name": "Placozoa",
+        "parent": "ParaHoxozoa",
+        "rank": "Phylum",
+        "ipa": ""
+      },
+      {
+        "name": "Bilateria",
+        "parent": "ParaHoxozoa",
+        "rank": "Clade",
+        "ipa": ""
+      },
+      {
+        "name": "Protostomia",
+        "parent": "Bilateria",
+        "rank": "Clade",
+        "ipa": "",
+        "description": "Once thought to be characterized by the formation of the organism's mouth before its anus during embryonic development but it's actually more variable."
+      },
+      {
+        "name": "Spiralia",
+        "parent": "Protostomia",
+        "rank": "Clade",
+        "ipa": "",
+        "description": "Mostly exhibit canonical spiral cleavage during early development.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/2/21/Polychaeta_%28no%29_2.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/6/64/Grapevinesnail_01a.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/d/d2/LingulaanatinaAA_%28cropped%29.JPG"
+        ]
+      },
+      {
+        "name": "Platyhelminthes",
+        "parent": "Spiralia",
+        "rank": "Phylum",
+        "ipa": "",
+        "common": [
+          "flatworms",
+          "flukes",
+          "tapeworms"
+        ],
+        "etymology": "greek 'flat work'"
+      },
+      {
+        "name": "Annelida",
+        "parent": "Spiralia",
+        "rank": "Phylum",
+        "ipa": "",
+        "common": [
+          "bristle/fan worms",
+          "segmented worms",
+          "leeches"
+        ],
+        "etymology": "latin 'little ring'",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/2/27/Polychaeta_%28no%29.JPG"
+        ]
+      },
+      {
+        "name": "Molusca",
+        "parent": "Spiralia",
+        "rank": "Phylum",
+        "ipa": "",
+        "common": [
+          "snails",
+          "sea slugs",
+          "bivalves",
+          "cockles",
+          "octopuses",
+          "squids",
+          "cuttlefish"
+        ],
+        "description": "This includes the order nudibranchia.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/6/69/Grapevinesnail_01.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/4/41/Bivalve_Sea_Shell.png",
+          "https://upload.wikimedia.org/wikipedia/commons/3/32/Octopus_vulgaris_Merculiano.jpg"
+        ]
+      },
+      {
+        "name": "Ecdysozoa",
+        "parent": "Protostomia",
+        "rank": "Clade",
+        "ipa": "",
+        "description": "The sister clade to spiralia. The most distinguishing and prominent feature is their cuticle: a tough, but flexible exoskeleton that is periodically shed."
+      },
+      {
+        "name": "Nematoda",
+        "parent": "Ecdysozoa",
+        "rank": "Phylum",
+        "ipa": "",
+        "common": [
+          "roundworms"
+        ]
+      },
+      {
+        "name": "Arthropoda",
+        "parent": "Ecdysozoa",
+        "rank": "Phylum",
+        "ipa": "",
+        "common": [
+          "crabs",
+          "lobsters",
+          "shrimps",
+          "crayfish"
+        ]
+      },
+      {
+        "name": "Deuterostomia",
+        "parent": "Bilateria",
+        "rank": "Clade",
+        "ipa": "",
+        "description": "Characterized by their anus forming before the mouth during embryonic development."
+      },
+      {
+        "name": "Echinodermata",
+        "parent": "Deuterostomia",
+        "rank": "Phylum",
+        "ipa": "",
+        "common": [
+          "sea urchins",
+          "sea stars",
+          "brittle stars",
+          "sea lillies",
+          "sea cucumbers"
+        ],
+        "etymology": "greek 'porcupine, hedgehog'-'skin'"
+      },
+      {
+        "name": "Cordata",
+        "parent": "Deuterostomia",
+        "rank": "Phylum",
+        "ipa": "kɔːrˈdeɪtə",
+        "common": [
+          "lancelets",
+          "sea squirts",
+          "vertibrates"
+        ]
+      }
+    ]
+    var data_animalia_arthropoda = [
+      {
+        "name": "Mandibulata",
+        "parent": "Arthropoda",
+        "rank": "Clade",
+        "ipa": ""
+      },
+      {
+        "name": "Pancrustacea",
+        "parent": "Mandibulata",
+        "rank": "Clade",
+        "ipa": "",
+        "common": [
+          "crustaceans",
+          "hexapods"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lobster_png_by_absurdwordpreferred_d2xqhvd.png/330px-Lobster_png_by_absurdwordpreferred_d2xqhvd.png",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/European_wasp_white_bg.jpg/330px-European_wasp_white_bg.jpg"
+        ]
+      },
+      {
+        "name": "Myriapoda",
+        "parent": "Mandibulata",
+        "rank": "Subphylum",
+        "ipa": "",
+        "common": [
+          "centipedes",
+          "millipedes",
+          "allies"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg/330px-Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Andrognathus_corticarius_A.jpg/330px-Andrognathus_corticarius_A.jpg"
+        ]
+      },
+      {
+        "name": "Chilopoda",
+        "parent": "Myriapoda",
+        "rank": "Subphylum",
+        "ipa": "",
+        "common": [
+          "centipedes"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg/330px-Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg",
+        ]
+      },
+      {
+        "name": "",
+        "parent": "Myriapoda",
+        "rank": "Subphylum",
+        "ipa": "",
+        "common": [
+          "centipedes",
+          "millipedes",
+          "allies"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Andrognathus_corticarius_A.jpg/330px-Andrognathus_corticarius_A.jpg"
+        ]
+      },
+      {
+        "name": "Chelicerata",
+        "parent": "Arthropoda",
+        "rank": "Subphylum",
+        "ipa": "",
+        "common": [
+          "sea spiders",
+          "horseshoe crabs",
+          "arachnids"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nymphon_signatum_194389384_%28white_background%29.jpg/330px-Nymphon_signatum_194389384_%28white_background%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Limulus_polyphemus_%28aquarium%29_%28white_background%29.jpg/330px-Limulus_polyphemus_%28aquarium%29_%28white_background%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Aptostichus_simus_Monterey_County.jpg/330px-Aptostichus_simus_Monterey_County.jpg"
+        ]
+      }
+    ]
+
+  </script>
+  <!-- I frame with src pointing to json file on server, onload we apply "this" to have the iframe context, display none as we don't want to show the iframe -->
+  <!-- <iframe src="./data_luca.json" onload="jsonOnLoad.apply(this, someCallback)" style="display: none;"></iframe> -->
+
+  <script src="./compiler.js"></script>
+
+  <h2 class="title is-4">Interesting sites</h2>
+  <ul class="regular_list">
+    <li>
+      <a href="https://www.inaturalist.org">iNaturalist</a>
+    </li>
+    <li>
+      <a href="https://www.gbif.org">Global Biodiversity Information Facility</a>
+    </li>
+    <li>
+      <a href="https://www.catalogueoflife.org">Catalogue of Life</a>
+    </li>
+  </ul>
+
+</body>
+
+</html>
