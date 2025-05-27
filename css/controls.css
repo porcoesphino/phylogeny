@@ -1,0 +1,51 @@
+details.controls {
+  max-width: 500px;
+  width: 100%;
+  margin: .2rem;
+  border-radius: .3rem;
+  border: 1px solid;
+}
+
+details.controls summary {
+  font-size: 1.2rem;
+  border-bottom: 1px solid;
+  padding: .5rem;
+}
+
+details.controls div {
+  padding: 0.5rem;
+}
+
+details.controls td {
+  display: flex;
+}
+
+details.controls label {
+  font-size: 1.2rem;
+  padding: 0.2rem;
+}
+
+details.controls div.select {
+  display: inline-flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.controls table {
+  width: 100%;
+}
+
+.controls option {
+  font-size: 1rem;
+  height: 1.2rem;
+  padding: 0.2rem;
+}
+
+.controls select optgroup {
+  padding: 0.2rem;
+}
+
+.controls select hr {
+  border: 1px solid grey;
+  margin: 0;
+}

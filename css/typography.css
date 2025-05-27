@@ -1,0 +1,22 @@
+body {
+  font-family: Helvetica, Arial;
+  padding: 1.5rem;
+}
+
+.regular_list ul,
+.regular_list li {
+  list-style: disc;
+  margin-left: 2rem;
+  padding: 0.2rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+h2 {
+  font-size: 1.2em;
+  padding: 1rem;
+}
