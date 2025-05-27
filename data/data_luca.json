@@ -26,13 +26,13 @@
     "rank": "Domain"
   },
   {
-    "name": "Plantae",
+    "name": "Fungi",
     "parent": "Eukaryota",
     "rank": "Kingdom",
+    "ipa": "ˈfʌŋɡi",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/fb/Chondrus_crispus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-034_%28single%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Tionesta-ac-moss2.jpg/330px-Tionesta-ac-moss2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Senecio_angulatus_003.jpg/330px-Senecio_angulatus_003.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Scarlet_elf_cap_cadnant_dingle.jpg/330px-Scarlet_elf_cap_cadnant_dingle.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caloplaca_thallincola.jpg"
     ]
   },
   {
@@ -48,13 +48,13 @@
     ]
   },
   {
-    "name": "Fungi",
+    "name": "Plantae",
     "parent": "Eukaryota",
     "rank": "Kingdom",
-    "ipa": "ˈfʌŋɡi",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Scarlet_elf_cap_cadnant_dingle.jpg/330px-Scarlet_elf_cap_cadnant_dingle.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caloplaca_thallincola.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/f/fb/Chondrus_crispus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-034_%28single%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Tionesta-ac-moss2.jpg/330px-Tionesta-ac-moss2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Senecio_angulatus_003.jpg/330px-Senecio_angulatus_003.jpg"
     ]
   }
 ]
