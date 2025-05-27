@@ -3,13 +3,22 @@
     "name": "Bacteria",
     "parent": "LUCA",
     "rank": "Domain",
-    "ipa": "bækˈtɪəriə"
+    "ipa": "bækˈtɪəriə",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/E._coli_Bacteria_%287316101966%29.jpg/330px-E._coli_Bacteria_%287316101966%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/79/Gram_Stain_Anthrax.jpg"
+    ]
   },
   {
     "name": "Archaea",
     "parent": "LUCA",
     "rank": "Domain",
-    "ipa": "ɑːrˈkiːə"
+    "ipa": "ɑːrˈkiːə",
+    "tag": "Early cellular life with one branch evolving into eukaryota.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/dc/Urzwerg.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Halobacteria.jpg"
+    ]
   },
   {
     "name": "Eukaryota",
@@ -19,18 +28,33 @@
   {
     "name": "Plantae",
     "parent": "Eukaryota",
-    "rank": "Kingdom"
+    "rank": "Kingdom",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/fb/Chondrus_crispus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-034_%28single%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Tionesta-ac-moss2.jpg/330px-Tionesta-ac-moss2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Senecio_angulatus_003.jpg/330px-Senecio_angulatus_003.jpg"
+    ]
   },
   {
     "name": "Animalia",
     "parent": "Eukaryota",
     "rank": "Kingdom",
-    "ipa": "ˌænɪˈmeɪliə"
+    "ipa": "ˌænɪˈmeɪliə",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/European_wasp_white_bg02.jpg/330px-European_wasp_white_bg02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hertshoon.jpg/330px-Hertshoon.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Phyllorhiza_punctata_macro_II.jpg/330px-Phyllorhiza_punctata_macro_II.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/42/Equus_quagga_%28white_background%29.jpg"
+    ]
   },
   {
     "name": "Fungi",
     "parent": "Eukaryota",
     "rank": "Kingdom",
-    "ipa": "ˈfʌŋɡi"
+    "ipa": "ˈfʌŋɡi",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Scarlet_elf_cap_cadnant_dingle.jpg/330px-Scarlet_elf_cap_cadnant_dingle.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caloplaca_thallincola.jpg"
+    ]
   }
 ]
