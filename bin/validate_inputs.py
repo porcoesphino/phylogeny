@@ -33,6 +33,7 @@ class NodeRaw:
   description: str | None = None
   common: list[str] | None = None
   etymology: str | None = None
+  tag: str | None = None
   description: str | None = None
 
 

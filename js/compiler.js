@@ -2,6 +2,37 @@
 
 // }
 
+function get_content(content_select_value) {
+  switch (content_select_value) {
+    case 'overview':
+      return data_luca
+    case 'animalia_phyla':
+      return data_animalia_phyla
+    case 'animalia_arthropoda':
+      return data_animalia_arthropoda
+    case 'carnivora':
+      return data_carnivora
+    case 'all':
+      return data_luca.concat(data_animalia_phyla).concat(data_animalia_arthropoda)
+  }
+  return nodes
+}
+
+function get_root_name(content_select_value) {
+  switch (content_select_value) {
+    case 'all':
+      return 'LUCA'
+    case 'overview':
+      return 'LUCA'
+    case 'animalia_phyla':
+      return 'Animalia'
+    case 'animalia_arthropoda':
+      return 'Arthropoda'
+    case 'carnivora':
+      return 'Carnivora'
+  }
+}
+
 function create_dictionary(nodes) {
   var node_dictionary = new Map()
   for (var i = 0; i < nodes.length; i++) {
@@ -54,16 +85,16 @@ function get_element_for_node(node, node_map, level = 0) {
     if (node.hasOwnProperty('rank') && !!node.rank) {
       var rank_el = document.createElement('span')
       rank_el.classList.add('badge')
-      rank_el.innerText = rank
+      rank_el.innerText = node.rank
       parent_el.appendChild(rank_el)
     }
   }
 
-  function maybe_append_description(node, parent_el) {
-    if (node.hasOwnProperty('description') && !!node.description) {
-      var description_el = document.createElement('p')
-      description_el.innerText = description
-      parent_el.appendChild(description_el)
+  function maybe_append_tag_line(node, parent_el) {
+    if (node.hasOwnProperty('tag') && !!node.tag) {
+      var tag_el = document.createElement('p')
+      tag_el.innerText = node.tag
+      parent_el.appendChild(tag_el)
     }
   }
   function maybe_append_images(node, parent_el) {
@@ -90,7 +121,7 @@ function get_element_for_node(node, node_map, level = 0) {
     append_name(node, inner_box_el)
     maybe_append_rank(node, inner_box_el)
     maybe_append_common_names(node, inner_box_el)
-    maybe_append_description(node, inner_box_el)
+    maybe_append_tag_line(node, inner_box_el)
     maybe_append_images(node, inner_box_el)
 
     parent_el.appendChild(outer_box_el)
@@ -99,10 +130,8 @@ function get_element_for_node(node, node_map, level = 0) {
   if (typeof (node) == 'string') {
     var name = node
     var id = name
-    var rank = ''
-    var description = ''
   } else {
-    var { name, parent, rank, description } = node
+    var { name, parent } = node
     var id = parent + '_' + name
   }
 
@@ -146,39 +175,6 @@ function get_element_for_node(node, node_map, level = 0) {
   return li_el
 }
 
-var content_select = document.getElementById('content-select');
-
-function get_content(content_select_value) {
-  switch (content_select_value) {
-    case 'overview':
-      var nodes = data_luca
-      break
-    case 'animalia_phyla':
-      var nodes = data_animalia_phyla
-      break
-    case 'animalia_arthropoda':
-      var nodes = data_animalia_arthropoda
-      break
-    case 'all':
-      var nodes = data_luca.concat(data_animalia_phyla).concat(data_animalia_arthropoda)
-      break
-  }
-  return nodes
-}
-
-function get_root_name(content_select_value) {
-  switch (content_select_value) {
-    case 'all':
-      return 'LUCA'
-    case 'overview':
-      return 'LUCA'
-    case 'animalia_phyla':
-      return 'Animalia'
-    case 'animalia_arthropoda':
-      return 'Arthropoda'
-  }
-}
-
 function update_content(content_select_value) {
   var nodes = get_content(content_select_value)
   var root_name = get_root_name(content_select_value)
@@ -198,6 +194,7 @@ function update_content(content_select_value) {
 }
 
 var content_select = document.getElementById('content-select');
+
 update_content(content_select.value)
 
 content_select.addEventListener('change', function () {

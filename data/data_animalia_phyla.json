@@ -10,10 +10,11 @@
     "parent": "Animalia",
     "rank": "Phylum",
     "ipa": "",
+    "etymology": "latin 'pore-bearing'",
     "common": [
       "sponges"
     ],
-    "description": "They do not have tissues that derive from embryonic germ layers. Some are radially symmetrical, but most are asymmetrical."
+    "tag": "They do not have tissues that derive from embryonic germ layers. Some are radially symmetrical, but most are asymmetrical."
   },
   {
     "name": "ParaHoxozoa",
@@ -31,7 +32,7 @@
       "anemones",
       "corals"
     ],
-    "description": "They have no organs or organ systems and include some of the smallest marine parasites."
+    "tag": "They have no organs or organ systems and include some of the smallest marine parasites."
   },
   {
     "name": "Placozoa",
@@ -50,14 +51,14 @@
     "parent": "Bilateria",
     "rank": "Clade",
     "ipa": "",
-    "description": "Once thought to be characterized by the formation of the organism's mouth before its anus during embryonic development but it's actually more variable."
+    "tag": "Once thought to be characterized by the formation of the organism's mouth before its anus during embryonic development but it's actually more variable."
   },
   {
     "name": "Spiralia",
     "parent": "Protostomia",
     "rank": "Clade",
     "ipa": "",
-    "description": "Mostly exhibit canonical spiral cleavage during early development.",
+    "tag": "Mostly exhibit canonical spiral cleavage during early development.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/2/21/Polychaeta_%28no%29_2.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/6/64/Grapevinesnail_01a.jpg",
@@ -105,7 +106,7 @@
       "squids",
       "cuttlefish"
     ],
-    "description": "This includes the order nudibranchia.",
+    "tag": "This includes the order nudibranchia.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/Grapevinesnail_01.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/4/41/Bivalve_Sea_Shell.png",
@@ -117,7 +118,7 @@
     "parent": "Protostomia",
     "rank": "Clade",
     "ipa": "",
-    "description": "The sister clade to spiralia. The most distinguishing and prominent feature is their cuticle: a tough, but flexible exoskeleton that is periodically shed."
+    "tag": "The sister clade to spiralia. The most distinguishing and prominent feature is their cuticle: a tough, but flexible exoskeleton that is periodically shed."
   },
   {
     "name": "Nematoda",
@@ -133,6 +134,7 @@
     "parent": "Ecdysozoa",
     "rank": "Phylum",
     "ipa": "",
+    "etymology": "jointed leg",
     "common": [
       "crabs",
       "lobsters",
@@ -145,7 +147,7 @@
     "parent": "Bilateria",
     "rank": "Clade",
     "ipa": "",
-    "description": "Characterized by their anus forming before the mouth during embryonic development."
+    "tag": "Characterized by their anus forming before the mouth during embryonic development."
   },
   {
     "name": "Echinodermata",

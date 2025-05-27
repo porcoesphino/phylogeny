@@ -10,6 +10,7 @@ HTML_OUT_FILENAME = 'index.html'
 #     'LUCA': 'data_luca.json',
 #     'Animalia': 'data_animalia_phyla.json',
 #     'Arthropoda': 'data_animalia_arthropoda.json',
+#     'Carnivora': 'data_carnivora.json',
 # }
 
 DATA_DIR = 'data'
@@ -18,6 +19,7 @@ JSON_DATA_LIST = [
     'data_luca.json',
     'data_animalia_phyla.json',
     'data_animalia_arthropoda.json',
+    'data_carnivora.json',
 ]
 
 Rank: typing.TypeAlias = typing.Literal[
@@ -97,9 +99,10 @@ def get_html() -> str:
                 <option value="overview" selected>Overview</option>
                 <hr />
                 <optgroup label="Animalia">
-                  <option value="animalia_phyla">Animalia phyla</option>
+                  <option value="animalia_phyla">Main nine phyla</option>
                   <!-- <option value="animalia_cnidaria">Cnidaria</option> -->
-                  <option value="animalia_arthropoda">Arthropoda</option>
+                  <option value="animalia_arthropoda">Arthropoda to Insecta</option>
+                  <option value="carnivora">Carnivora</option>
                   <!-- <option value="animalia_insecta">Insecta</option>
                   <option value="animalia_cordata">Chordata</option>
                   <option value="animalia_mammalia">Mammalia</option> -->

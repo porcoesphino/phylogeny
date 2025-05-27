@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Felidae",
+    "parent": "Carnivora",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Felis",
+    "parent": "Felidae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Catus",
+    "parent": "Felis",
+    "rank": "Species",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Pardalis",
+    "parent": "Felis",
+    "rank": "Species",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Panthera",
+    "parent": "Felidae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Pardus",
+    "parent": "Panthera",
+    "rank": "Species",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Canidae",
+    "parent": "Carnivora",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Canis",
+    "parent": "Canidae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Familiaris",
+    "parent": "Canis",
+    "rank": "Species",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Lupus",
+    "parent": "Canis",
+    "rank": "Species",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Ursidae",
+    "parent": "Carnivora",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Ursus",
+    "parent": "Ursidae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Arctos",
+    "parent": "Ursus",
+    "rank": "Species",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Horribilus",
+    "parent": "Ursus",
+    "rank": "Species",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  }
+]
