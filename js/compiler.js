@@ -10,14 +10,14 @@ function get_content(content_select_value) {
       return data_animalia_phyla_nine
     case 'animalia_arthropoda':
       return data_animalia_arthropoda
-    case 'chordata_tetrapoda':
-      return data_chordata_tetrapoda
-    case 'carnivora':
-      return data_carnivora
+    case 'animalia_chordata_tetrapoda':
+      return data_animalia_chordata_tetrapoda
+    case 'animalia_carnivora':
+      return data_animalia_carnivora
     case 'all':
-      return data_luca.concat(data_animalia_phyla).concat(data_animalia_arthropoda)
+      return data_luca.concat(data_animalia_phyla_nine).concat(data_animalia_arthropoda).concat(data_animalia_chordata_tetrapoda)
   }
-  return nodes
+  throw new Error('Content selection not found.')
 }
 
 function get_root_name(content_select_value) {
@@ -30,11 +30,12 @@ function get_root_name(content_select_value) {
       return 'Animalia'
     case 'animalia_arthropoda':
       return 'Arthropoda'
-    case 'chordata_tetrapoda':
+    case 'animalia_chordata_tetrapoda':
       return 'Chordata'
-    case 'carnivora':
+    case 'animalia_carnivora':
       return 'Carnivora'
   }
+  throw new Error('Content selection not found.')
 }
 
 function create_dictionary(nodes) {
