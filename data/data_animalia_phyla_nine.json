@@ -3,7 +3,11 @@
     "name": "Ctenophora",
     "parent": "Animalia",
     "rank": "Phylum",
-    "ipa": ""
+    "ipa": "",
+    "common": [
+      "comb jellies"
+    ],
+    "tag": "A medusa that swims with groups of cilia."
   },
   {
     "name": "Porifera",
@@ -35,23 +39,18 @@
     "tag": "They have no organs or organ systems and include some of the smallest marine parasites."
   },
   {
-    "name": "Placozoa",
-    "parent": "ParaHoxozoa",
-    "rank": "Phylum",
-    "ipa": ""
-  },
-  {
     "name": "Bilateria",
     "parent": "ParaHoxozoa",
     "rank": "Clade",
-    "ipa": ""
+    "ipa": "",
+    "tag": "Animals that have bilateral symmetry during embryonic development. They are also triploblasts."
   },
   {
     "name": "Protostomia",
     "parent": "Bilateria",
     "rank": "Clade",
     "ipa": "",
-    "tag": "Once thought to be characterized by the formation of the organism's mouth before its anus during embryonic development but it's actually more variable."
+    "tag": "Sister clade to deuterostomia. Many form the organism's mouth before its anus during embryonic development."
   },
   {
     "name": "Spiralia",
@@ -75,7 +74,7 @@
       "flukes",
       "tapeworms"
     ],
-    "etymology": "greek 'flat work'"
+    "etymology": "greek 'flat worm'"
   },
   {
     "name": "Annelida",
@@ -118,7 +117,7 @@
     "parent": "Protostomia",
     "rank": "Clade",
     "ipa": "",
-    "tag": "The sister clade to spiralia. The most distinguishing and prominent feature is their cuticle: a tough, but flexible exoskeleton that is periodically shed."
+    "tag": "The sister clade to spiralia. Most distinguishing feature is their cuticle: a tough, but flexible exoskeleton that is periodically shed."
   },
   {
     "name": "Nematoda",

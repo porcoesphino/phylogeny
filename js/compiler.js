@@ -6,8 +6,8 @@ function get_content(content_select_value) {
   switch (content_select_value) {
     case 'overview':
       return data_luca
-    case 'animalia_phyla':
-      return data_animalia_phyla
+    case 'animalia_phyla_nine':
+      return data_animalia_phyla_nine
     case 'animalia_arthropoda':
       return data_animalia_arthropoda
     case 'carnivora':
@@ -24,7 +24,7 @@ function get_root_name(content_select_value) {
       return 'LUCA'
     case 'overview':
       return 'LUCA'
-    case 'animalia_phyla':
+    case 'animalia_phyla_nine':
       return 'Animalia'
     case 'animalia_arthropoda':
       return 'Arthropoda'
