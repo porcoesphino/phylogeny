@@ -1,0 +1,155 @@
+[
+  {
+    "name": "Cephalochordata",
+    "parent": "Chordata",
+    "rank": "Subphylum",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [
+      "lancelets"
+    ]
+  },
+  {
+    "name": "Tunicata",
+    "parent": "Chordata",
+    "rank": "Subphylum",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [
+      "sea squirts"
+    ]
+  },
+  {
+    "name": "Vertebrata",
+    "parent": "Chordata",
+    "rank": "Subphylum",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Agnatha",
+    "parent": "Vertebrata",
+    "rank": "Infraphylum",
+    "ipa": "ˈæɡnəθə",
+    "ipa-hidden": "æɡˈneɪθə",
+    "etymology": "Greek 'without'-'jaws'",
+    "tag": "The extant jawless fish.",
+    "common": [
+      "hagfishes",
+      "lampreys"
+    ]
+  },
+  {
+    "name": "Myxini",
+    "parent": "Agnatha",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The hagfishes.",
+    "common": []
+  },
+  {
+    "name": "Petromyzontida",
+    "parent": "Agnatha",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The lampreys.",
+    "common": []
+  },
+  {
+    "name": "Gnathostomata",
+    "parent": "Vertebrata",
+    "rank": "Infraphylum",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Chondrichthyes",
+    "parent": "Gnathostomata",
+    "rank": "Class",
+    "ipa": "kɒnˈdrɪkθiiːz",
+    "etymology": "Greek 'cartilage'-'fish'",
+    "tag": "A class of jawed fish including the cartilaginous fish."
+  },
+  {
+    "name": "Elasmobranchii",
+    "parent": "Chondrichthyes",
+    "rank": "Subclass",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [
+      "sharks",
+      "rays",
+      "skates",
+      "sawfish"
+    ]
+  },
+  {
+    "name": "Holocephali",
+    "parent": "Chondrichthyes",
+    "rank": "Subclass",
+    "ipa": "",
+    "etymology": "",
+    "tag": "These sometimes called ghost sharks and sometimes put in their own class.",
+    "common": [
+      "chimaeras"
+    ]
+  },
+  {
+    "name": "Osteichthyes",
+    "parent": "Gnathostomata",
+    "rank": "Clade",
+    "ipa": "ˌɒstiːˈɪkθiːz",
+    "etymology": "Greek 'bone'-'fish'",
+    "tag": "The bony fish."
+  },
+  {
+    "name": "Actinopterygii",
+    "parent": "Osteichthyes",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The ray-finned fish. The majority of the extant fish."
+  },
+  {
+    "name": "Sarcopterygii",
+    "parent": "Osteichthyes",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The lobe-finned fish (and relatives to all land vertebrates)."
+  },
+  {
+    "name": "Rhipidistia",
+    "parent": "Sarcopterygii",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  },
+  {
+    "name": "Dipnoi",
+    "parent": "Rhipidistia",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [
+      "lungfish"
+    ]
+  },
+  {
+    "name": "Tetrapoda",
+    "parent": "Rhipidistia",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "tag": ""
+  }
+]

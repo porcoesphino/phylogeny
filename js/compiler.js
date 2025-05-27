@@ -10,6 +10,8 @@ function get_content(content_select_value) {
       return data_animalia_phyla_nine
     case 'animalia_arthropoda':
       return data_animalia_arthropoda
+    case 'chordata_tetrapoda':
+      return data_chordata_tetrapoda
     case 'carnivora':
       return data_carnivora
     case 'all':
@@ -28,6 +30,8 @@ function get_root_name(content_select_value) {
       return 'Animalia'
     case 'animalia_arthropoda':
       return 'Arthropoda'
+    case 'chordata_tetrapoda':
+      return 'Chordata'
     case 'carnivora':
       return 'Carnivora'
   }
@@ -73,7 +77,7 @@ function get_element_for_node(node, node_map, level = 0) {
   }
 
   function maybe_append_common_names(node, parent_el) {
-    if (node.hasOwnProperty('common') && !!node.common) {
+    if (node.hasOwnProperty('common') && !!node.common && node.common.length > 0) {
       var common_names_el = document.createElement('span')
       common_names_el.classList.add('common_names')
       common_names_el.innerText = '(' + node.common.join(', ') + ')'

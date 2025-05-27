@@ -10,6 +10,7 @@ HTML_OUT_FILENAME = 'index.html'
 #     'LUCA': 'data_luca.json',
 #     'Animalia': 'data_animalia_phyla_nine.json',
 #     'Arthropoda': 'data_animalia_arthropoda.json',
+#     'Chordata': 'data_chordata_tetrapoda.json',
 #     'Carnivora': 'data_carnivora.json',
 # }
 
@@ -19,6 +20,7 @@ JSON_DATA_LIST = [
     'data_luca.json',
     'data_animalia_phyla_nine.json',
     'data_animalia_arthropoda.json',
+    'data_chordata_tetrapoda.json',
     'data_carnivora.json',
 ]
 
@@ -102,6 +104,7 @@ def get_html() -> str:
                   <option value="animalia_phyla_nine">Main nine phyla</option>
                   <!-- <option value="animalia_cnidaria">Cnidaria</option> -->
                   <option value="animalia_arthropoda">Arthropoda to Insecta</option>
+                  <option value="chordata_tetrapoda">Chordata to Tetrapoda</option>
                   <option value="carnivora">Carnivora</option>
                   <!-- <option value="animalia_insecta">Insecta</option>
                   <option value="animalia_cordata">Chordata</option>
