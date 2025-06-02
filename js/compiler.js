@@ -6,10 +6,10 @@ function get_content(content_select_value) {
   switch (content_select_value) {
     case 'overview':
       return data_luca
-    case 'animalia_phyla_nine':
-      return data_animalia_phyla_nine
-    case 'animalia_arthropoda':
-      return data_animalia_arthropoda
+    case 'animalia_phyla_common':
+      return data_animalia_phyla_common
+    case 'animalia_arthropoda_orders_common':
+      return data_animalia_arthropoda_orders_common
     case 'animalia_chordata_tetrapoda':
       return data_animalia_chordata_tetrapoda
     case 'animalia_tetrapoda_aves':
@@ -20,7 +20,7 @@ function get_content(content_select_value) {
       return data_plantae_divisions
     case 'all':
       return (
-        data_luca.concat(data_animalia_phyla_nine).concat(data_animalia_arthropoda)
+        data_luca.concat(data_animalia_phyla_common).concat(data_animalia_arthropoda_orders_common)
           .concat(data_animalia_chordata_tetrapoda).concat(data_animalia_tetrapoda_aves)
           .concat(data_plantae_divisions)
       )
@@ -34,9 +34,9 @@ function get_root_name(content_select_value) {
       return 'LUCA'
     case 'overview':
       return 'LUCA'
-    case 'animalia_phyla_nine':
+    case 'animalia_phyla_common':
       return 'Animalia'
-    case 'animalia_arthropoda':
+    case 'animalia_arthropoda_orders_common':
       return 'Arthropoda'
     case 'animalia_chordata_tetrapoda':
       return 'Chordata'

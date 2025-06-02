@@ -8,8 +8,8 @@ HTML_OUT_FILENAME = 'index.html'
 
 # JSON_FILES_BY_PARENT: dict[str, str] = {
 #     'LUCA': 'data_luca.json',
-#     'Animalia': 'data_animalia_phyla_nine.json',
-#     'Arthropoda': 'data_animalia_arthropoda.json',
+#     'Animalia': 'data_animalia_phyla_common.json',
+#     'Arthropoda': 'data_animalia_arthropoda_orders_common.json',
 #     'Chordata': 'data_animalia_chordata_tetrapoda.json',
 #     'Carnivora': 'data_animalia_carnivora.json',
 #     'Tetrapoda': 'data_animalia_tetrapoda_aves.json',
@@ -20,8 +20,8 @@ DATA_DIR = 'data'
 
 JSON_DATA_LIST = [
     'data_luca.json',
-    'data_animalia_phyla_nine.json',
-    'data_animalia_arthropoda.json',
+    'data_animalia_phyla_common.json',
+    'data_animalia_arthropoda_orders_common.json',
     'data_animalia_chordata_tetrapoda.json',
     'data_animalia_carnivora.json',
     'data_animalia_tetrapoda_aves.json',
@@ -105,9 +105,9 @@ def get_html() -> str:
                 <option value="overview" selected>Overview</option>
                 <hr />
                 <optgroup label="Animalia">
-                  <option value="animalia_phyla_nine">Main nine phyla</option>
+                  <option value="animalia_phyla_common">Animalia to common Phyla</option>
                   <!-- <option value="animalia_cnidaria">Cnidaria</option> -->
-                  <option value="animalia_arthropoda">Arthropoda to Insecta</option>
+                  <option value="animalia_arthropoda_orders_common">Arthropoda to common Orders</option>
                   <!-- <option value="animalia_insecta">Insecta</option> -->
                   <option value="animalia_chordata_tetrapoda">Chordata to Tetrapoda</option>
                   <option value="animalia_tetrapoda_aves">Tetrapoda to Aves</option>
