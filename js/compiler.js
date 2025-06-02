@@ -10,6 +10,8 @@ function get_content(content_select_value) {
       return data_animalia_phyla_common
     case 'animalia_arthropoda_orders_common':
       return data_animalia_arthropoda_orders_common
+    case 'animalia_arthropoda_insecta_orders_common':
+      return data_animalia_arthropoda_insecta_orders_common
     case 'animalia_chordata_tetrapoda':
       return data_animalia_chordata_tetrapoda
     case 'animalia_tetrapoda_aves':
@@ -21,6 +23,7 @@ function get_content(content_select_value) {
     case 'all':
       return (
         data_luca.concat(data_animalia_phyla_common).concat(data_animalia_arthropoda_orders_common)
+          .concat(data_animalia_arthropoda_insecta_orders_common)
           .concat(data_animalia_chordata_tetrapoda).concat(data_animalia_tetrapoda_aves)
           .concat(data_plantae_divisions)
       )
@@ -38,6 +41,8 @@ function get_root_name(content_select_value) {
       return 'Animalia'
     case 'animalia_arthropoda_orders_common':
       return 'Arthropoda'
+    case 'animalia_arthropoda_insecta_orders_common':
+      return 'Insecta'
     case 'animalia_chordata_tetrapoda':
       return 'Chordata'
     case 'animalia_tetrapoda_aves':

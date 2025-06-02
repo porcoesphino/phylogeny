@@ -10,6 +10,7 @@ HTML_OUT_FILENAME = 'index.html'
 #     'LUCA': 'data_luca.json',
 #     'Animalia': 'data_animalia_phyla_common.json',
 #     'Arthropoda': 'data_animalia_arthropoda_orders_common.json',
+#     'Insecta': 'data_animalia_arthropoda_insecta_orders_common.json',
 #     'Chordata': 'data_animalia_chordata_tetrapoda.json',
 #     'Carnivora': 'data_animalia_carnivora.json',
 #     'Tetrapoda': 'data_animalia_tetrapoda_aves.json',
@@ -22,6 +23,7 @@ JSON_DATA_LIST = [
     'data_luca.json',
     'data_animalia_phyla_common.json',
     'data_animalia_arthropoda_orders_common.json',
+    'data_animalia_arthropoda_insecta_orders_common.json',
     'data_animalia_chordata_tetrapoda.json',
     'data_animalia_carnivora.json',
     'data_animalia_tetrapoda_aves.json',
@@ -100,15 +102,15 @@ def get_html() -> str:
             <div class="select">
               <label for="content-select">Select content</label>
               <select size="5" id="content-select">
-                <option value="all">All</option>
-                <hr />
                 <option value="overview" selected>Overview</option>
+                <hr />
+                <option value="all">All so far</option>
                 <hr />
                 <optgroup label="Animalia">
                   <option value="animalia_phyla_common">Animalia to common Phyla</option>
                   <!-- <option value="animalia_cnidaria">Cnidaria</option> -->
-                  <option value="animalia_arthropoda_orders_common">Arthropoda to common Orders</option>
-                  <!-- <option value="animalia_insecta">Insecta</option> -->
+                  <option value="animalia_arthropoda_orders_common">Arthropoda to common Class/Order (incomplete)</option>
+                  <option value="animalia_arthropoda_insecta_orders_common">Insecta to common Orders</option>
                   <option value="animalia_chordata_tetrapoda">Chordata to Tetrapoda</option>
                   <option value="animalia_tetrapoda_aves">Tetrapoda to Aves</option>
                   <!-- <option value="animalia_mammalia">Mammalia</option> -->

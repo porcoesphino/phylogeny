@@ -1,0 +1,325 @@
+[
+  {
+    "name": "Archaeognatha",
+    "parent": "Insecta",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "jumping bristletails"
+    ]
+  },
+  {
+    "name": "Zygentoma",
+    "parent": "Insecta",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "silverfish"
+    ]
+  },
+  {
+    "name": "Pterygota",
+    "parent": "Insecta",
+    "rank": "Subclass",
+    "ipa": "",
+    "common": [],
+    "tag": "Winged insects."
+  },
+  {
+    "name": "Ephemeroptera",
+    "parent": "Pterygota",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "mayflies"
+    ]
+  },
+  {
+    "name": "Odonata",
+    "parent": "Pterygota",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "dragonflies",
+      "damselfiles"
+    ]
+  },
+  {
+    "name": "Neoptera",
+    "parent": "Pterygota",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [],
+    "tag": "Can fold wings over their abdomens."
+  },
+  {
+    "name": "Psocodea",
+    "parent": "Neoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "bark lice",
+      "book lice",
+      "parasitic lice"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Hemiptera",
+    "parent": "Neoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "true bugs including cicadas, aphids, stink bugs, bed bugs"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Thysanoptera",
+    "parent": "Neoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "thrips"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Polyneoptera",
+    "parent": "Neoptera",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [],
+    "tag": "Grasshoppers, crickets, and allies."
+  },
+  {
+    "name": "Orthoptera",
+    "parent": "Polyneoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "grasshoppers",
+      "locusts",
+      "crickets"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Phasmatodea",
+    "parent": "Polyneoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "stick instects"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Embioptera",
+    "parent": "Polyneoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "webspinners"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Plecoptera",
+    "parent": "Polyneoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "stoneflies"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Dermaptera",
+    "parent": "Polyneoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "earwigs"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Zoraptera",
+    "parent": "Polyneoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "angel insects"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Mantodea",
+    "parent": "Polyneoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "mantises"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Blattodea",
+    "parent": "Polyneoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "cockroaches"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Isoptera",
+    "parent": "Blattodea",
+    "rank": "Intra-order",
+    "ipa": "",
+    "common": [
+      "termites"
+    ],
+    "tag": ""
+  },
+  {
+    "name": "Notoptera",
+    "parent": "Polyneoptera",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [],
+    "tag": "Secondarily wingless."
+  },
+  {
+    "name": "Grylloblattodea",
+    "parent": "Notoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "ice crawlers"
+    ]
+  },
+  {
+    "name": "Mantophasmatodea",
+    "parent": "Notoptera",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "gladiators"
+    ]
+  },
+  {
+    "name": "Holometabola",
+    "parent": "Neoptera",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [],
+    "tag": "Undergo complete metamorphism."
+  },
+  {
+    "name": "Neuroptera",
+    "parent": "Holometabola",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [
+      "net-winged insects inc/ antlions"
+    ]
+  },
+  {
+    "name": "Strepsiptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "twisted-wing parasites"
+    ]
+  },
+  {
+    "name": "Megaloptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "alderflies",
+      "allies"
+    ]
+  },
+  {
+    "name": "Raphidioptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "snakeflies"
+    ]
+  },
+  {
+    "name": "Trichoptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "caddisflies"
+    ]
+  },
+  {
+    "name": "Mecoptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "scorpionflies"
+    ]
+  },
+  {
+    "name": "Siphonaptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "fleas"
+    ]
+  },
+  {
+    "name": "Hymenoptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "sawflies",
+      "wasps",
+      "ants",
+      "bees"
+    ]
+  },
+  {
+    "name": "Lepidoptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "butterflies",
+      "moths"
+    ]
+  },
+  {
+    "name": "Diptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "true flies"
+    ]
+  },
+  {
+    "name": "Coleoptera",
+    "parent": "Holometabola",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "beetles"
+    ]
+  }
+]
