@@ -197,9 +197,9 @@ function get_element_for_node(node, node_map, level = 0) {
   return li_el
 }
 
-function update_content(content_select_value) {
-  var nodes = get_content(content_select_value)
-  var root_name = get_root_name(content_select_value)
+function update_tree_range_view(tree_range) {
+  var nodes = get_content(tree_range)
+  var root_name = get_root_name(tree_range)
   var dict = create_dictionary(nodes)
 
   var root_list_el = document.createElement('ul');
@@ -217,8 +217,57 @@ function update_content(content_select_value) {
 
 var content_select = document.getElementById('content-select');
 
-update_content(content_select.value)
+update_tree_range_view(content_select.value)
 
 content_select.addEventListener('change', function () {
-  update_content(content_select.value)
+  query_param_update('tree_range', content_select.value)
+  update_tree_range_view(content_select.value)
 });
+
+function query_param_get(key) {
+  const params = new URLSearchParams(location.search);
+  return params.get(key)
+}
+
+function query_param_update(key, value) {
+  const params = new URLSearchParams(location.search);
+  params.set(key, value)
+  window.history.replaceState({}, '', `${location.pathname}?${params}`);
+}
+
+function set_details_accordion_state(id, is_open) {
+  if (!!is_open) {
+    document.getElementById(id).setAttribute('open', '')
+  } else {
+    document.getElementById(id).removeAttribute('open')
+  }
+}
+
+function add_query_param_update_for_details_accordion_state(id) {
+  var accordion = document.getElementById(id);
+  accordion.addEventListener('toggle', function () {
+    is_open = accordion.hasAttribute('open')
+    if (!!is_open) {
+      query_param_update(id, 'open')
+    } else {
+      query_param_update(id, '')
+    }
+  });
+}
+
+add_query_param_update_for_details_accordion_state('controls-accordion')
+
+function page_load_callback() {
+  var tree_range = query_param_get('tree_range')
+  if (!!tree_range) {
+    update_tree_range_view(tree_range)
+    content_select.value = tree_range
+  }
+
+  var controls_are_open = query_param_get('controls-accordion')  // Treat any value as 'open'.
+  set_details_accordion_state('controls-accordion', controls_are_open)
+}
+
+window.addEventListener('load', function () {
+  page_load_callback()
+})
