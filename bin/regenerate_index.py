@@ -16,6 +16,7 @@ HTML_OUT_FILENAME = 'index.html'
 #     'Carnivora': 'data_animalia_carnivora.json',
 #     'Tetrapoda': 'data_animalia_tetrapoda_aves.json',
 #     'Plantae': 'data_plantae_divisions.json',
+#     'Pinopsida': 'data_plantae_pinopsida_genus_common.json',
 # }
 
 DATA_DIR = 'data'
@@ -30,6 +31,7 @@ JSON_DATA_LIST = [
     'data_animalia_carnivora.json',
     'data_animalia_tetrapoda_aves.json',
     'data_plantae_divisions.json',
+    'data_plantae_pinopsida_genus_common.json',
 ]
 
 Rank: typing.TypeAlias = typing.Literal[
@@ -110,8 +112,8 @@ def get_html() -> str:
                 <hr />
                 <optgroup label="Animalia">
                   <option value="animalia_phyla_common">Animalia to common Phyla</option>
-                  <option value="animalia_cnidaria_orders_common">Cnidaria to common Class/Order (incomplete)</option>
-                  <option value="animalia_arthropoda_orders_common">Arthropoda to common Class/Order (incomplete)</option>
+                  <option value="animalia_cnidaria_orders_common">Cnidaria to common classes/orders (incomplete)</option>
+                  <option value="animalia_arthropoda_orders_common">Arthropoda to common classes/orders (incomplete)</option>
                   <option value="animalia_arthropoda_insecta_orders_common">Insecta to common Orders</option>
                   <option value="animalia_chordata_tetrapoda">Chordata to Tetrapoda</option>
                   <option value="animalia_tetrapoda_aves">Tetrapoda to Aves</option>
@@ -120,6 +122,7 @@ def get_html() -> str:
                 </optgroup>
                 <optgroup label="Plantae">
                 <option value="plantae_divisions">Divisions</option>
+                <option value="plantae_pinopsida_genus_common">Pinopsida to common genera</option>
                 </optgroup>
               </select>
             </div>

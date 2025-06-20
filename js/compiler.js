@@ -23,12 +23,14 @@ function get_content(content_select_value) {
       return data_animalia_carnivora
     case 'plantae_divisions':
       return data_plantae_divisions
+    case 'plantae_pinopsida_genus_common':
+      return data_plantae_pinopsida_genus_common
     case 'all':
       return (
         data_luca.concat(data_animalia_phyla_common).concat(data_animalia_cnidaria_orders_common).concat(data_animalia_arthropoda_orders_common)
           .concat(data_animalia_arthropoda_insecta_orders_common)
           .concat(data_animalia_chordata_tetrapoda).concat(data_animalia_tetrapoda_aves)
-          .concat(data_plantae_divisions)
+          .concat(data_plantae_divisions).concat(data_plantae_pinopsida_genus_common)
       )
   }
   throw new Error('Content selection not found.')
@@ -56,6 +58,8 @@ function get_root_name(content_select_value) {
       return 'Carnivora'
     case 'plantae_divisions':
       return 'Plantae'
+    case 'plantae_pinopsida_genus_common':
+      return 'Pinopsida'
   }
   throw new Error('Content selection not found.')
 }
