@@ -81,7 +81,7 @@ class Data {
 }
 
 class TreeBuilderAsTreeList {
-  static get_element_for_node(node, node_map, level = 0) {
+  static _get_element_for_node(node, node_map, level = 0) {
 
     function append_name(node, parent_el) {
       if (typeof (node) == 'string') {
@@ -190,7 +190,7 @@ class TreeBuilderAsTreeList {
 
       var ul_el = document.createElement('ul')
       for (var i = 0; i < children.length; i++) {
-        var li_child_el = TreeBuilderAsTreeList.get_element_for_node(children[i], node_map, level + 1)
+        var li_child_el = TreeBuilderAsTreeList._get_element_for_node(children[i], node_map, level + 1)
         ul_el.appendChild(li_child_el)
       }
       li_el.appendChild(ul_el)
@@ -209,15 +209,21 @@ class TreeBuilderAsTreeList {
 
     return li_el
   }
+
+  static get_html_for_tree_range(tree_range) {
+    var root_name = Data.get_root_name(tree_range)
+    var dict = Data.create_dictionary(tree_range)
+
+    var root_list_el = document.createElement('ul');
+    root_list_el.classList.add('tree')
+    root_list_el.appendChild(TreeBuilderAsTreeList._get_element_for_node(root_name, dict))
+
+    return root_list_el
+  }
 }
 
 function update_tree_range_view(tree_range) {
-  var root_name = Data.get_root_name(tree_range)
-  var dict = Data.create_dictionary(tree_range)
-
-  var root_list_el = document.createElement('ul');
-  root_list_el.classList.add('tree')
-  root_list_el.appendChild(TreeBuilderAsTreeList.get_element_for_node(root_name, dict))
+  var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(tree_range)
 
   var tree_root = document.getElementById('tree_root')
 
