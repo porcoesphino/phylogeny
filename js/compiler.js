@@ -2,31 +2,6 @@
 
 // }
 
-class QueryParams {
-  get(key) {
-    const params = new URLSearchParams(location.search);
-    return params.get(key)
-  }
-
-  update(key, value) {
-    const params = new URLSearchParams(location.search);
-    params.set(key, value)
-    window.history.replaceState({}, '', `${location.pathname}?${params}`);
-  }
-}
-
-
-class Page {
-
-  constructor() {
-    this.query_params = new QueryParams()
-  }
-}
-
-
-var page = new Page()
-
-
 function get_content(content_select_value) {
   switch (content_select_value) {
     case 'overview':
@@ -249,53 +224,81 @@ function update_tree_range_view(tree_range) {
   tree_root.appendChild(root_list_el)
 }
 
-var content_select = document.getElementById('content-select');
+class QueryParams {
+  get(key) {
+    const params = new URLSearchParams(location.search);
+    return params.get(key)
+  }
 
-update_tree_range_view(content_select.value)
-
-content_select.addEventListener('change', function () {
-  page.query_params.update('tree_range', content_select.value)
-  update_tree_range_view(content_select.value)
-});
-
-
-
-function set_details_accordion_state(id, is_open) {
-  if (!!is_open) {
-    document.getElementById(id).setAttribute('open', '')
-  } else {
-    document.getElementById(id).removeAttribute('open')
+  update(key, value) {
+    const params = new URLSearchParams(location.search);
+    params.set(key, value)
+    window.history.replaceState({}, '', `${location.pathname}?${params}`);
   }
 }
 
-function add_query_param_update_for_details_accordion_state(id) {
-  var accordion = document.getElementById(id);
-  if (!accordion) {
-    console.error('Missing accordion element id: %s', id)
-  }
-  accordion.addEventListener('toggle', function () {
-    is_open = accordion.hasAttribute('open')
-    if (!!is_open) {
-      page.query_params.update(id, 'open')
-    } else {
-      page.query_params.update(id, '')
+
+class Page {
+
+  constructor() {
+    this.query_params = new QueryParams()
+    this._content_select = document.getElementById('content-select');
+
+    update_tree_range_view(this._content_select.value)
+
+    var content_select_change = () => {
+      page.query_params.update('tree_range', this._content_select.value)
+      update_tree_range_view(this._content_select.value)
     }
-  });
-}
+    this._content_select.addEventListener('change', function () {
+      content_select_change()
+    });
 
-add_query_param_update_for_details_accordion_state('controls-accordion')
 
-function page_load_callback() {
-  var tree_range = page.query_params.get('tree_range')
-  if (!!tree_range) {
-    update_tree_range_view(tree_range)
-    content_select.value = tree_range
+    Page.add_query_param_update_for_details_accordion_state('controls-accordion')
+
+    var page_load_callback = () => {
+      this.page_load_callback()
+    }
+    window.addEventListener('load', function () {
+      page_load_callback()
+    })
+
   }
 
-  var controls_are_open = page.query_params.get('controls-accordion')  // Treat any value as 'open'.
-  set_details_accordion_state('controls-accordion', controls_are_open)
+  static set_details_accordion_state(id, is_open) {
+    if (!!is_open) {
+      document.getElementById(id).setAttribute('open', '')
+    } else {
+      document.getElementById(id).removeAttribute('open')
+    }
+  }
+
+  static add_query_param_update_for_details_accordion_state(id) {
+    var accordion = document.getElementById(id);
+    if (!accordion) {
+      console.error('Missing accordion element id: %s', id)
+    }
+    accordion.addEventListener('toggle', function () {
+      var is_open = accordion.hasAttribute('open')
+      if (!!is_open) {
+        page.query_params.update(id, 'open')
+      } else {
+        page.query_params.update(id, '')
+      }
+    });
+  }
+
+  page_load_callback() {
+    var tree_range = this.query_params.get('tree_range')
+    if (!!tree_range) {
+      update_tree_range_view(tree_range)
+      this._content_select.value = tree_range
+    }
+
+    var controls_are_open = this.query_params.get('controls-accordion')  // Treat any value as 'open'.
+    Page.set_details_accordion_state('controls-accordion', controls_are_open)
+  }
 }
 
-window.addEventListener('load', function () {
-  page_load_callback()
-})
+var page = new Page()
