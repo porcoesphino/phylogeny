@@ -240,7 +240,8 @@ class Page {
 
   constructor() {
     this.query_params = new QueryParams()
-    this._content_select = document.getElementById('content-select');
+    this._content_select = document.getElementById('tree-range-select');
+
     this.update_tree_range_view = (tree_range) => {
       var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(tree_range)
 

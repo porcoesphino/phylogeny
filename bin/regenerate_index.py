@@ -101,11 +101,11 @@ def get_html() -> str:
               </select>
             </div>
           </td>
-          <td>
 
+          <td>
             <div class="select">
-              <label for="content-select">Select content</label>
-              <select size="5" id="content-select">
+              <label for="tree-range-select">Select tree range</label>
+              <select size="5" id="tree-range-select">
                 <option value="overview" selected>Overview</option>
                 <hr />
                 <option value="all">All so far</option>
@@ -126,8 +126,8 @@ def get_html() -> str:
                 </optgroup>
               </select>
             </div>
-
           </td>
+
         </tr>
       </table>
     </div>
