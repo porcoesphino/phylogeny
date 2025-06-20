@@ -1,0 +1,273 @@
+[
+  {
+    "name": "Anthozoa",
+    "parent": "Cnidaria",
+    "rank": "Subphylum",
+    "ipa": "",
+    "etymology": "greek 'flower'-'animal'",
+    "tag": "The polyps in the cnidaria phylum that have no medusa stage that have no medusa stage including all the corals and sea/tube anemones",
+    "common": [],
+    "imgs": []
+  },
+  {
+    "name": "Hexacorallia",
+    "parent": "Anthozoa",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Have six or fewer axes of symmetry but possibly more tentacles",
+    "common": [
+      "sea anenomes",
+      "hard corals"
+    ],
+    "imgs": []
+  },
+  {
+    "name": "Actiniaria",
+    "parent": "Hexacorallia",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [
+      "sea anemones"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Stichodactyla_gigantea%2C_tent%C3%A1culos.jpg/330px-Stichodactyla_gigantea%2C_tent%C3%A1culos.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Stichodactyla_haddoni_01_by_Line1.JPG/330px-Stichodactyla_haddoni_01_by_Line1.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Actinostola_3.jpg/330px-Actinostola_3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/64/Striped_colonial_anemone.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Actinoscyphia_aurelia_1.jpg/250px-Actinoscyphia_aurelia_1.jpg"
+    ]
+  },
+  {
+    "name": "Antipatharia",
+    "parent": "Hexacorallia",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [
+      "black corals"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Plumapathes_pennacea.jpg/330px-Plumapathes_pennacea.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d1/Leiopathes_NOAA%2C_Haw%C3%A1i.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Cirrhipathes.jpg/250px-Cirrhipathes.jpg"
+    ]
+  },
+  {
+    "name": "Corallimorpharia",
+    "parent": "Hexacorallia",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Corallimorpharians or the false corals.",
+    "common": [
+      "false corals"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Corynactis_australis_389639.jpeg/330px-Corynactis_australis_389639.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Amplexidiscus_fenestrafer_Maldives.JPG/330px-Amplexidiscus_fenestrafer_Maldives.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Paracorynactis_hoplites_Museum_Of_The_World_Ocean.jpg/330px-Paracorynactis_hoplites_Museum_Of_The_World_Ocean.jpg"
+    ]
+  },
+  {
+    "name": "Scleractinia",
+    "parent": "Hexacorallia",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The true corals sometimes called hermatypic or reef building.",
+    "common": [
+      "stony corals"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Brain_coral.jpg/250px-Brain_coral.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a1/Favites_abdita.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Faviidae_-_Echinopora_fruticolosa.JPG/250px-Faviidae_-_Echinopora_fruticolosa.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Leptoria_phrygia.jpg/330px-Leptoria_phrygia.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/48/Plesiastrea_versipora%2C_in_situ.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Coral_%28Favia_favus%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-27%2C_DD_12.jpg/250px-Coral_%28Favia_favus%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-27%2C_DD_12.jpg"
+    ],
+    "description": "True corals build reefs by depositing hard calcareous material for their skeletons, forming the stony framework of the reef. A close up each looks like miniature sea anemone since they are closely related."
+  },
+  {
+    "name": "Zoantharia",
+    "parent": "Hexacorallia",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [
+      "zoanthids"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Zoanthus-dragon-eye.jpg/330px-Zoanthus-dragon-eye.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Parazoanth2.JPG/250px-Parazoanth2.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Palythoa_grandis_%28Sun_Zoanthids%29.jpg/330px-Palythoa_grandis_%28Sun_Zoanthids%29.jpg",
+    ]
+  },
+  {
+    "name": "Octocorallia",
+    "parent": "Anthozoa",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Colonial organisms of polyps connected by gastrodermal tubes, called solenia, with each polyp having eight fold symmetry (ie. eight tentacles).",
+    "common": [
+      "sea fans",
+      "sea pens",
+      "soft corals",
+      "blue corals"
+    ],
+    "imgs": [],
+    "description": ""
+  },
+  {
+    "name": "Malacalcyonacea",
+    "parent": "Octocorallia",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [
+      "soft corals",
+      "bamboo corals",
+      "sea fans",
+      "carnation corals",
+      "tree corals"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Folded_Coral_Flynn_Reef.jpg/330px-Folded_Coral_Flynn_Reef.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Isidella_tentaculum_-_NOAA.jpg/330px-Isidella_tentaculum_-_NOAA.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/93/Melithaea_ochracea2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Capnella_sp.JPG/330px-Capnella_sp.JPG"
+    ]
+  },
+  {
+    "name": "Scleralcyonacea",
+    "parent": "Octocorallia",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [
+      "sea pens",
+      "soft corals",
+      "blue corals"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Virgularia_sp._%28Purple_sea_pen%29.jpg/250px-Virgularia_sp._%28Purple_sea_pen%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/11/Heliopora_coerulea_%28YPM_IZ_010737.CN%29.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a4/Heliopora_coerulea%2C_Samoa_Americana.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Narella_sp.jpg/330px-Narella_sp.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Umbellula_-_MBA.png/330px-Umbellula_-_MBA.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Cavernularia_obesa_2.jpg/250px-Cavernularia_obesa_2.jpg"
+    ]
+  },
+  {
+    "name": "Ceriantharia",
+    "parent": "Anthozoa",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Radially symmetrical tube anemones that can fully retract their tentacles into their fibrous tubes.",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Cerianthus_membranaceus_Spallanzani%2C_1784.jpg/330px-Cerianthus_membranaceus_Spallanzani%2C_1784.jpg"
+    ]
+  },
+  {
+    "name": "Scyphozoa",
+    "parent": "Cnidaria",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "greek 'cup'-'animal'",
+    "tag": "The true jellyfish",
+    "common": [
+      "lion's mane jellyfish",
+      "moon jellies",
+      "upside-down jellyfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Sea_nettles.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Moon_jellyfish_at_Gota_Sagher.JPG/330px-Moon_jellyfish_at_Gota_Sagher.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Phyllorhiza_punctata_macro_II.jpg/330px-Phyllorhiza_punctata_macro_II.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Periphyllopsis_braueri.jpg/330px-Periphyllopsis_braueri.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Fkeysmacro.jpg/330px-Fkeysmacro.jpg"
+    ],
+    "description": "Their firmness comes from hydrostatic pressure and they are 95% water, have four radial gastric pouches. Well known scyphozoa include the lion's mane jellyfish, moon jellies, upside-down jellyfish"
+  },
+  {
+    "name": "Staurozoa",
+    "parent": "Cnidaria",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "greek 'cross'-'animal'",
+    "tag": "Similar to the scyphozoans but lack an alternating polyp/medusa life cycle and have a stalk that attaches to rock.",
+    "common": [
+      "stalked jellyfishes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Haliclystus_antarcticus_1B.jpg/330px-Haliclystus_antarcticus_1B.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Haliclystus_stejnegeri_1.jpg/250px-Haliclystus_stejnegeri_1.jpg"
+    ],
+    "description": "The only extant order is commonly called the stalked jellyfishes and they have a small and flowerlike in apearance."
+  },
+  {
+    "name": "Cubozoa",
+    "parent": "Cnidaria",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "greek 'box'-'animal'",
+    "tag": "",
+    "common": [
+      "box jellyfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Box_jellyfish_at_Bakoven_Rock_DSC11031.JPG/330px-Box_jellyfish_at_Bakoven_Rock_DSC11031.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/7/75/Chironex_fleckeri_%28sea_wasp%29.jpg"
+    ],
+    "description": "Compared to the scyphozoa (true jellyfish) they have more optimised propusion and a more developed nervous system. They have four radial symmetric parts each with six fully formed eyes (including two that are lensed)"
+  },
+  {
+    "name": "Hydrozoa",
+    "parent": "Cnidaria",
+    "rank": "Class",
+    "ipa": "",
+    "etymology": "greek 'water'-'animal'",
+    "tag": "Mostly contains small predatory polyps (like the freshwater genus hydra) and hydrocorals.",
+    "common": [
+      "Portuguese man o' war / bluebottle",
+      "fire corals",
+      "deep red jellyfish",
+      "air ferns",
+      "freshwater jellyfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Millepora_alcicornis_%28Branching_Fire_Coral%29.jpg/250px-Millepora_alcicornis_%28Branching_Fire_Coral%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sertularia_argentea_6880622.jpg/330px-Sertularia_argentea_6880622.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Craspedacusta_sowerbyi_by_OpenCage.jpg/250px-Craspedacusta_sowerbyi_by_OpenCage.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Expl0393_-_Flickr_-_NOAA_Photo_Library.jpg/330px-Expl0393_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1a/Hydra_oligactis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/61/Noble_coral8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Portuguese_Man-O-War_%28Physalia_physalis%29.jpg/250px-Portuguese_Man-O-War_%28Physalia_physalis%29.jpg"
+    ]
+  },
+  {
+    "name": "Siphonophorae",
+    "parent": "Hydrozoa",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "'tube to bear'",
+    "tag": "Colonial organisms that include the Portuguese man o' war / bluebottle. Other notable hydrozoans are the fire corals, rose corals, deep red jellyfish, air ferns and the freshwater jellyfish",
+    "common": [
+      "Portuguese man o' war / bluebottle"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Portuguese_Man-O-War_%28Physalia_physalis%29.jpg/250px-Portuguese_Man-O-War_%28Physalia_physalis%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Physalia_physalis_EM1B0679_%2840827501481%29.jpg/330px-Physalia_physalis_EM1B0679_%2840827501481%29.jpg"
+    ]
+  }
+]

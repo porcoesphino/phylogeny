@@ -34,7 +34,6 @@ class NodeRaw:
   common: list[str] | None = None
   etymology: str | None = None
   tag: str | None = None
-  description: str | None = None
 
 
 def print_node(n: NodeRaw | str, children_map: dict[str, list[NodeRaw]], level: int = 0) -> None:
