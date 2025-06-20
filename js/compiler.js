@@ -222,18 +222,6 @@ class TreeBuilderAsTreeList {
   }
 }
 
-function update_tree_range_view(tree_range) {
-  var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(tree_range)
-
-  var tree_root = document.getElementById('tree_root')
-
-  while (tree_root.firstChild) {
-    // The list is LIVE so it will re-index each call
-    tree_root.removeChild(tree_root.firstChild);
-  }
-  tree_root.appendChild(root_list_el)
-}
-
 class QueryParams {
   get(key) {
     const params = new URLSearchParams(location.search);
@@ -253,9 +241,21 @@ class Page {
   constructor() {
     this.query_params = new QueryParams()
     this._content_select = document.getElementById('content-select');
+    this.update_tree_range_view = (tree_range) => {
+      var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(tree_range)
 
-    update_tree_range_view(this._content_select.value)
+      var tree_root = document.getElementById('tree_root')
 
+      while (tree_root.firstChild) {
+        // The list is LIVE so it will re-index each call
+        tree_root.removeChild(tree_root.firstChild);
+      }
+      tree_root.appendChild(root_list_el)
+    }
+
+    this.update_tree_range_view(this._content_select.value)
+
+    var update_tree_range_view = this.update_tree_range_view
     var content_select_change = () => {
       page.query_params.update('tree_range', this._content_select.value)
       update_tree_range_view(this._content_select.value)
@@ -302,7 +302,7 @@ class Page {
   page_load_callback() {
     var tree_range = this.query_params.get('tree_range')
     if (!!tree_range) {
-      update_tree_range_view(tree_range)
+      this.update_tree_range_view(tree_range)
       this._content_select.value = tree_range
     }
 
