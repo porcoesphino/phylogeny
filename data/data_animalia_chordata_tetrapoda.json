@@ -8,6 +8,9 @@
     "tag": "",
     "common": [
       "lancelets"
+    ],
+    "cards": [
+      1
     ]
   },
   {
@@ -19,6 +22,9 @@
     "tag": "",
     "common": [
       "sea squirts"
+    ],
+    "cards": [
+      1
     ]
   },
   {
@@ -27,7 +33,11 @@
     "rank": "Subphylum",
     "ipa": "",
     "etymology": "",
-    "tag": ""
+    "tag": "",
+    "cards": [
+      1,
+      2
+    ]
   },
   {
     "name": "Agnatha",
@@ -40,6 +50,9 @@
     "common": [
       "hagfishes",
       "lampreys"
+    ],
+    "cards": [
+      2
     ]
   },
   {
@@ -49,7 +62,10 @@
     "ipa": "",
     "etymology": "",
     "tag": "The hagfishes.",
-    "common": []
+    "common": [],
+    "cards": [
+      2
+    ]
   },
   {
     "name": "Petromyzontida",
@@ -58,7 +74,10 @@
     "ipa": "",
     "etymology": "",
     "tag": "The lampreys.",
-    "common": []
+    "common": [],
+    "cards": [
+      2
+    ]
   },
   {
     "name": "Gnathostomata",
@@ -66,7 +85,11 @@
     "rank": "Infraphylum",
     "ipa": "",
     "etymology": "",
-    "tag": ""
+    "tag": "",
+    "cards": [
+      2,
+      3
+    ]
   },
   {
     "name": "Chondrichthyes",
@@ -74,7 +97,10 @@
     "rank": "Class",
     "ipa": "kɒnˈdrɪkθiiːz",
     "etymology": "Greek 'cartilage'-'fish'",
-    "tag": "A class of jawed fish including the cartilaginous fish."
+    "tag": "A class of jawed fish including the cartilaginous fish.",
+    "cards": [
+      3
+    ]
   },
   {
     "name": "Elasmobranchii",
@@ -88,6 +114,9 @@
       "rays",
       "skates",
       "sawfish"
+    ],
+    "cards": [
+      3
     ]
   },
   {
@@ -99,6 +128,9 @@
     "tag": "These sometimes called ghost sharks and sometimes put in their own class.",
     "common": [
       "chimaeras"
+    ],
+    "cards": [
+      3
     ]
   },
   {
@@ -107,7 +139,11 @@
     "rank": "Clade",
     "ipa": "ˌɒstiːˈɪkθiːz",
     "etymology": "Greek 'bone'-'fish'",
-    "tag": "The bony fish."
+    "tag": "The bony fish.",
+    "cards": [
+      3,
+      4
+    ]
   },
   {
     "name": "Actinopterygii",
@@ -115,7 +151,10 @@
     "rank": "Class",
     "ipa": "",
     "etymology": "",
-    "tag": "The ray-finned fish. The majority of the extant fish."
+    "tag": "The ray-finned fish. The majority of the extant fish.",
+    "cards": [
+      4
+    ]
   },
   {
     "name": "Sarcopterygii",
@@ -123,7 +162,10 @@
     "rank": "Clade",
     "ipa": "",
     "etymology": "",
-    "tag": "The lobe-finned fish (and relatives to all land vertebrates)."
+    "tag": "The lobe-finned fish (and relatives to all land vertebrates).",
+    "cards": [
+      4
+    ]
   },
   {
     "name": "Rhipidistia",
@@ -131,7 +173,10 @@
     "rank": "Clade",
     "ipa": "",
     "etymology": "",
-    "tag": ""
+    "tag": "",
+    "cards": [
+      4
+    ]
   },
   {
     "name": "Dipnoi",
@@ -142,6 +187,9 @@
     "tag": "",
     "common": [
       "lungfish"
+    ],
+    "cards": [
+      4
     ]
   },
   {
@@ -150,6 +198,9 @@
     "rank": "Clade",
     "ipa": "",
     "etymology": "greek 'four'-'foot'",
-    "tag": ""
+    "tag": "",
+    "cards": [
+      4
+    ]
   }
 ]
