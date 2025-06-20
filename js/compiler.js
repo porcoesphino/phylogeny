@@ -2,80 +2,89 @@
 
 // }
 
-function get_content(content_select_value) {
-  switch (content_select_value) {
-    case 'overview':
-      return data_luca
-    case 'animalia_phyla_common':
-      return data_animalia_phyla_common
-    case 'animalia_cnidaria_orders_common':
-      return data_animalia_cnidaria_orders_common
-    case 'animalia_arthropoda_insecta_orders_common':
-    case 'animalia_arthropoda_orders_common':
-      return data_animalia_arthropoda_orders_common
-    case 'animalia_arthropoda_insecta_orders_common':
-      return data_animalia_arthropoda_insecta_orders_common
-    case 'animalia_chordata_tetrapoda':
-      return data_animalia_chordata_tetrapoda
-    case 'animalia_tetrapoda_aves':
-      return data_animalia_tetrapoda_aves
-    case 'animalia_carnivora':
-      return data_animalia_carnivora
-    case 'plantae_divisions':
-      return data_plantae_divisions
-    case 'plantae_pinopsida_genus_common':
-      return data_plantae_pinopsida_genus_common
-    case 'all':
-      return (
-        data_luca.concat(data_animalia_phyla_common).concat(data_animalia_cnidaria_orders_common).concat(data_animalia_arthropoda_orders_common)
-          .concat(data_animalia_arthropoda_insecta_orders_common)
-          .concat(data_animalia_chordata_tetrapoda).concat(data_animalia_tetrapoda_aves)
-          .concat(data_plantae_divisions).concat(data_plantae_pinopsida_genus_common)
-      )
-  }
-  throw new Error('Content selection not found.')
-}
-
-function get_root_name(content_select_value) {
-  switch (content_select_value) {
-    case 'all':
-      return 'LUCA'
-    case 'overview':
-      return 'LUCA'
-    case 'animalia_phyla_common':
-      return 'Animalia'
-    case 'animalia_cnidaria_orders_common':
-      return 'Cnidaria'
-    case 'animalia_arthropoda_orders_common':
-      return 'Arthropoda'
-    case 'animalia_arthropoda_insecta_orders_common':
-      return 'Insecta'
-    case 'animalia_chordata_tetrapoda':
-      return 'Chordata'
-    case 'animalia_tetrapoda_aves':
-      return 'Tetrapoda'
-    case 'animalia_carnivora':
-      return 'Carnivora'
-    case 'plantae_divisions':
-      return 'Plantae'
-    case 'plantae_pinopsida_genus_common':
-      return 'Pinopsida'
-  }
-  throw new Error('Content selection not found.')
-}
-
-function create_dictionary(nodes) {
-  var node_dictionary = new Map()
-  for (var i = 0; i < nodes.length; i++) {
-    n = nodes[i]
-    if (!node_dictionary.has(n.parent)) {
-      node_dictionary.set(n.parent, [])
+class Data {
+  static get_root_name(content_select_value) {
+    switch (content_select_value) {
+      case 'all':
+        return 'LUCA'
+      case 'overview':
+        return 'LUCA'
+      case 'animalia_phyla_common':
+        return 'Animalia'
+      case 'animalia_cnidaria_orders_common':
+        return 'Cnidaria'
+      case 'animalia_arthropoda_orders_common':
+        return 'Arthropoda'
+      case 'animalia_arthropoda_insecta_orders_common':
+        return 'Insecta'
+      case 'animalia_chordata_tetrapoda':
+        return 'Chordata'
+      case 'animalia_tetrapoda_aves':
+        return 'Tetrapoda'
+      case 'animalia_carnivora':
+        return 'Carnivora'
+      case 'plantae_divisions':
+        return 'Plantae'
+      case 'plantae_pinopsida_genus_common':
+        return 'Pinopsida'
     }
-    parents_children = node_dictionary.get(n.parent)
-    parents_children.push(n)
+    throw new Error('Content selection not found.')
   }
-  return node_dictionary
+
+  static _get_data(content_select_value) {
+    switch (content_select_value) {
+      case 'overview':
+        return data_luca
+      case 'animalia_phyla_common':
+        return data_animalia_phyla_common
+      case 'animalia_cnidaria_orders_common':
+        return data_animalia_cnidaria_orders_common
+      case 'animalia_arthropoda_insecta_orders_common':
+      case 'animalia_arthropoda_orders_common':
+        return data_animalia_arthropoda_orders_common
+      case 'animalia_arthropoda_insecta_orders_common':
+        return data_animalia_arthropoda_insecta_orders_common
+      case 'animalia_chordata_tetrapoda':
+        return data_animalia_chordata_tetrapoda
+      case 'animalia_tetrapoda_aves':
+        return data_animalia_tetrapoda_aves
+      case 'animalia_carnivora':
+        return data_animalia_carnivora
+      case 'plantae_divisions':
+        return data_plantae_divisions
+      case 'plantae_pinopsida_genus_common':
+        return data_plantae_pinopsida_genus_common
+      case 'all':
+        return (
+          data_luca.concat(data_animalia_phyla_common).concat(data_animalia_cnidaria_orders_common).concat(data_animalia_arthropoda_orders_common)
+            .concat(data_animalia_arthropoda_insecta_orders_common)
+            .concat(data_animalia_chordata_tetrapoda).concat(data_animalia_tetrapoda_aves)
+            .concat(data_plantae_divisions).concat(data_plantae_pinopsida_genus_common)
+        )
+    }
+    throw new Error('Content selection not found.')
+  }
+
+  static _create_dictionary_from_nodes(nodes) {
+    var node_dictionary = new Map()
+    for (var i = 0; i < nodes.length; i++) {
+      var n = nodes[i]
+      if (!node_dictionary.has(n.parent)) {
+        node_dictionary.set(n.parent, [])
+      }
+      var parents_children = node_dictionary.get(n.parent)
+      parents_children.push(n)
+    }
+    return node_dictionary
+  }
+
+  static create_dictionary(tree_range) {
+    var nodes = Data._get_data(tree_range)
+    return Data._create_dictionary_from_nodes(nodes)
+  }
 }
+
+
 
 function get_element_for_node(node, node_map, level = 0) {
 
@@ -206,10 +215,10 @@ function get_element_for_node(node, node_map, level = 0) {
   return li_el
 }
 
+
 function update_tree_range_view(tree_range) {
-  var nodes = get_content(tree_range)
-  var root_name = get_root_name(tree_range)
-  var dict = create_dictionary(nodes)
+  var root_name = Data.get_root_name(tree_range)
+  var dict = Data.create_dictionary(tree_range)
 
   var root_list_el = document.createElement('ul');
   root_list_el.classList.add('tree')
