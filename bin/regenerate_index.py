@@ -83,7 +83,7 @@ def get_html() -> str:
 
   <h1 class="title">A simplified tree of life</h1>
 
-  <details class="controls">
+  <details class="controls" id="controls-accordion">
     <summary>Controls</summary>
     <div>
       <table>

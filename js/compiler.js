@@ -245,6 +245,9 @@ function set_details_accordion_state(id, is_open) {
 
 function add_query_param_update_for_details_accordion_state(id) {
   var accordion = document.getElementById(id);
+  if (!accordion) {
+    console.error('Missing accordion element id: %s', id)
+  }
   accordion.addEventListener('toggle', function () {
     is_open = accordion.hasAttribute('open')
     if (!!is_open) {
