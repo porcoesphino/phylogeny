@@ -15,7 +15,17 @@ class QueryParams {
   }
 }
 
-var query_params = new QueryParams()
+
+class Page {
+
+  constructor() {
+    this.query_params = new QueryParams()
+  }
+}
+
+
+var page = new Page()
+
 
 function get_content(content_select_value) {
   switch (content_select_value) {
@@ -244,7 +254,7 @@ var content_select = document.getElementById('content-select');
 update_tree_range_view(content_select.value)
 
 content_select.addEventListener('change', function () {
-  query_params.update('tree_range', content_select.value)
+  page.query_params.update('tree_range', content_select.value)
   update_tree_range_view(content_select.value)
 });
 
@@ -266,9 +276,9 @@ function add_query_param_update_for_details_accordion_state(id) {
   accordion.addEventListener('toggle', function () {
     is_open = accordion.hasAttribute('open')
     if (!!is_open) {
-      query_params.update(id, 'open')
+      page.query_params.update(id, 'open')
     } else {
-      query_params.update(id, '')
+      page.query_params.update(id, '')
     }
   });
 }
@@ -276,13 +286,13 @@ function add_query_param_update_for_details_accordion_state(id) {
 add_query_param_update_for_details_accordion_state('controls-accordion')
 
 function page_load_callback() {
-  var tree_range = query_params.get('tree_range')
+  var tree_range = page.query_params.get('tree_range')
   if (!!tree_range) {
     update_tree_range_view(tree_range)
     content_select.value = tree_range
   }
 
-  var controls_are_open = query_params.get('controls-accordion')  // Treat any value as 'open'.
+  var controls_are_open = page.query_params.get('controls-accordion')  // Treat any value as 'open'.
   set_details_accordion_state('controls-accordion', controls_are_open)
 }
 
