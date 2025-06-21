@@ -24,8 +24,8 @@ class Data {
         return data_animalia_chordata_tetrapoda
       case 'animalia_chordata_tetrapoda_aves':
         return data_animalia_chordata_tetrapoda_aves
-      case 'animalia_carnivora':
-        return data_animalia_carnivora
+      case 'animalia_chordata_tetrapoda_carnivora':
+        return data_animalia_chordata_tetrapoda_carnivora
       case 'plantae_divisions':
         return data_plantae_divisions
       case 'plantae_pinopsida_genus_common':
