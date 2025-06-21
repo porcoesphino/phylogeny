@@ -45,6 +45,7 @@ class Data {
     this._data = null
     this._parent_to_child_list = null
     this._root_name = null
+    this._max_card = null
   }
 
   get tree_range() {
@@ -81,6 +82,7 @@ class Data {
     var parent_to_child_list = new Map()
     var name_to_node = new Map()
     var filtered_nodes = []
+    var max_card = 0
 
     for (var i = 0; i < this.data.length; i++) {
       var n = this.data[i]
@@ -92,6 +94,9 @@ class Data {
       }
 
       filtered_nodes.push(n)
+      if (n.card && n.card > max_card) {
+        max_card = n.card
+      }
 
       if (!parent_to_child_list.has(n.parent)) {
         parent_to_child_list.set(n.parent, [])
@@ -107,7 +112,6 @@ class Data {
     if (!filtered_nodes || filtered_nodes.lenth == 0) {
       throw new Error('Empty filtered_nodes')
     }
-    console.log('filtered_nodes: ', filtered_nodes)
 
     var current_parent = filtered_nodes[0].parent
     while (name_to_node.has(current_parent)) {
@@ -118,9 +122,17 @@ class Data {
       current_parent = grand_parent
     }
 
+    this._max_card = max_card
     this._root_name = current_parent
     this._parent_to_child_list = parent_to_child_list
     this._name_to_node = name_to_node
+  }
+
+  get max_card() {
+    if (this._max_card == null) {
+      this._update_maps()
+    }
+    return this._max_card
   }
 
   get root_name() {
@@ -306,9 +318,10 @@ class Page {
 
   constructor() {
     this._content_select = document.getElementById('tree-range-select');
+    this._card_select = document.getElementById('card-select');
 
     this.query_params = new QueryParams()
-    this.data = new Data(this._content_select.value)
+    this.data = new Data(this._content_select.value, 'all')
 
     this.update_tree_range_view = (data) => {
       var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(data)
@@ -328,12 +341,23 @@ class Page {
     var content_select_change = () => {
       page.query_params.update('tree_range', this._content_select.value)
       this.data.tree_range = this._content_select.value
+      this.data.card = 'all'
+      page.query_params.update('card', 'all')
+      this.add_card_select_options()
       update_tree_range_view(this.data)
     }
     this._content_select.addEventListener('change', function () {
       content_select_change()
     });
 
+    var card_select_change = () => {
+      page.query_params.update('card', this._card_select.value)
+      this.data.card = this._card_select.value
+      update_tree_range_view(this.data)
+    }
+    this._card_select.addEventListener('change', function () {
+      card_select_change()
+    });
 
     Page.add_query_param_update_for_details_accordion_state('controls-accordion')
 
@@ -357,7 +381,7 @@ class Page {
   static add_query_param_update_for_details_accordion_state(id) {
     var accordion = document.getElementById(id);
     if (!accordion) {
-      console.error('Missing accordion element id: %s', id)
+      throw new Error('Missing accordion element id: %s', id)
     }
     accordion.addEventListener('toggle', function () {
       var is_open = accordion.hasAttribute('open')
@@ -369,13 +393,53 @@ class Page {
     });
   }
 
+  add_card_select_options() {
+
+    this._card_select.replaceChildren();
+
+    var el_all = document.createElement('option')
+    el_all.value = 'all'
+    el_all.selected = true
+    el_all.innerText = 'All'
+    this._card_select.appendChild(el_all)
+
+    var max_card = this.data.max_card
+    if (!!max_card) {
+      var el_opt_group = document.createElement('optgroup')
+      el_opt_group.label = 'Cards'
+
+      for (var i = 0; i < this.data.max_card; i++) {
+        var el_option = document.createElement('option')
+        var label = i + 1
+        el_option.value = label
+        el_option.innerText = label
+        el_opt_group.appendChild(el_option)
+      }
+
+      this._card_select.appendChild(el_opt_group)
+    }
+  }
+
   page_load_callback() {
+
     var tree_range = this.query_params.get('tree_range')
     if (!!tree_range) {
-      this.data.tree_range = tree_range
-      this.update_tree_range_view(this.data)
       this._content_select.value = tree_range
+      this.data.tree_range = tree_range
     }
+
+    this.add_card_select_options()
+
+    var card = this.query_params.get('card')
+    if (!!card) {
+      this._card_select.value = card
+      this.data.card = card
+    } else {
+      this._card_select.value = 'all'
+      this.data.card = 'all'
+    }
+
+    this.update_tree_range_view(this.data)
 
     var controls_are_open = this.query_params.get('controls-accordion')  // Treat any value as 'open'.
     Page.set_details_accordion_state('controls-accordion', controls_are_open)

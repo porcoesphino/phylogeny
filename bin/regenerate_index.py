@@ -128,6 +128,14 @@ def get_html() -> str:
             </div>
           </td>
 
+          <td>
+            <div class="select">
+              <label for="card-select">Select card</label>
+              <select id="card-select">
+              </select>
+            </div>
+          </td>
+
         </tr>
       </table>
     </div>
