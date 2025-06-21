@@ -14,7 +14,7 @@ HTML_OUT_FILENAME = 'index.html'
 #     'Insecta': 'data_animalia_arthropoda_insecta_orders_common.json',
 #     'Chordata': 'data_animalia_chordata_tetrapoda.json',
 #     'Carnivora': 'data_animalia_carnivora.json',
-#     'Tetrapoda': 'data_animalia_tetrapoda_aves.json',
+#     'Tetrapoda': 'data_animalia_chordata_tetrapoda_aves.json',
 #     'Plantae': 'data_plantae_divisions.json',
 #     'Pinopsida': 'data_plantae_pinopsida_genus_common.json',
 # }
@@ -29,7 +29,7 @@ JSON_DATA_LIST = [
     'data_animalia_arthropoda_insecta_orders_common.json',
     'data_animalia_chordata_tetrapoda.json',
     'data_animalia_carnivora.json',
-    'data_animalia_tetrapoda_aves.json',
+    'data_animalia_chordata_tetrapoda_aves.json',
     'data_plantae_divisions.json',
     'data_plantae_pinopsida_genus_common.json',
 ]
@@ -112,11 +112,11 @@ def get_html() -> str:
                 <hr />
                 <optgroup label="Animalia">
                   <option value="animalia_phyla_common">Animalia to common Phyla</option>
-                  <option value="animalia_cnidaria_orders_common">Cnidaria to common classes/orders (incomplete)</option>
-                  <option value="animalia_arthropoda_orders_common">Arthropoda to common classes/orders (incomplete)</option>
-                  <option value="animalia_arthropoda_insecta_orders_common">Insecta to common Orders</option>
+                  <option value="animalia_cnidaria_orders_common">Cnidaria to common classes/orders</option>
+                  <option value="animalia_arthropoda_orders_common">Arthropoda to common classes/orders</option>
+                  <option value="animalia_arthropoda_insecta_orders_common">Insecta to common orders</option>
                   <option value="animalia_chordata_tetrapoda">Chordata to Tetrapoda</option>
-                  <option value="animalia_tetrapoda_aves">Tetrapoda to Aves</option>
+                  <option value="animalia_chordata_tetrapoda_aves">Tetrapoda to Aves</option>
                   <!-- <option value="animalia_mammalia">Mammalia</option> -->
                   <option value="animalia_carnivora">Carnivora</option>
                 </optgroup>

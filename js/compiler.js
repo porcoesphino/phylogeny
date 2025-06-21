@@ -22,8 +22,8 @@ class Data {
         return data_animalia_arthropoda_insecta_orders_common
       case 'animalia_chordata_tetrapoda':
         return data_animalia_chordata_tetrapoda
-      case 'animalia_tetrapoda_aves':
-        return data_animalia_tetrapoda_aves
+      case 'animalia_chordata_tetrapoda_aves':
+        return data_animalia_chordata_tetrapoda_aves
       case 'animalia_carnivora':
         return data_animalia_carnivora
       case 'plantae_divisions':
@@ -34,7 +34,7 @@ class Data {
         return (
           data_luca.concat(data_animalia_phyla_common).concat(data_animalia_cnidaria_orders_common).concat(data_animalia_arthropoda_orders_common)
             .concat(data_animalia_arthropoda_insecta_orders_common)
-            .concat(data_animalia_chordata_tetrapoda).concat(data_animalia_tetrapoda_aves)
+            .concat(data_animalia_chordata_tetrapoda).concat(data_animalia_chordata_tetrapoda_aves)
             .concat(data_plantae_divisions).concat(data_plantae_pinopsida_genus_common)
         )
     }
