@@ -5,9 +5,13 @@
     "rank": "Subphylum",
     "ipa": "kɔːrˈdeɪtə",
     "etymology": "",
-    "tag": "",
+    "tag": "Fish-like benthic filter feeding chordates with a dorsal nerve cord protected by a notochord made up of collagen fibers and gills used for feeding not breathing.",
     "common": [
       "lancelets"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Branchiostoma_lanceolatum.jpg/330px-Branchiostoma_lanceolatum.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e1/%28only%29_Asymmetron_lucayanum.png"
     ],
     "card": 1
   },
@@ -17,9 +21,20 @@
     "rank": "Subphylum",
     "ipa": "ˌtjuːnɪˈkeɪtə",
     "etymology": "",
-    "tag": "",
+    "tag": "Cordates with a larval form that looks a lot like a frog tadpole and has a notocord but most adult forms are filter feeders, often permanently attached to rocks and losing their notocord.",
     "common": [
-      "sea squirts"
+      "sea squirts",
+      "salp",
+      "ghostfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a0/Ascidia_005.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Tunicate_komodo.jpg/330px-Tunicate_komodo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bluebell_tunicates_Nick_Hobgood.jpg/330px-Bluebell_tunicates_Nick_Hobgood.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Sea_Squirts_Didemnum_molle.jpg/330px-Sea_Squirts_Didemnum_molle.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Salp_colony%2C_Aorangaia_PA171899.JPG/250px-Salp_colony%2C_Aorangaia_PA171899.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/MARUM-Tiere-02-HiRes.jpg/330px-MARUM-Tiere-02-HiRes.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Predatory_tunicate_-_MBA.png/250px-Predatory_tunicate_-_MBA.png"
     ],
     "card": 1
   },
@@ -29,7 +44,8 @@
     "rank": "Subphylum",
     "ipa": "",
     "etymology": "",
-    "tag": "",
+    "tag": "Animals with a vertebral column, and a cranium, or skull.",
+    "imgs": [],
     "card": 1
   },
   {
@@ -44,6 +60,7 @@
       "hagfishes",
       "lampreys"
     ],
+    "imgs": [],
     "card": 2
   },
   {
@@ -52,8 +69,16 @@
     "rank": "Class",
     "ipa": "mɪkˈsaɪnaɪ",
     "etymology": "",
-    "tag": "The hagfishes.",
-    "common": [],
+    "tag": "Eel-shaped jawless fish that have a skull but no vertebral column.",
+    "common": [
+      "hagfish",
+      "slime eels"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Eptatretus_polytrema.jpg/330px-Eptatretus_polytrema.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/12/Pacific_hagfish_Myxine.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Eptatretus_stoutii.jpg/330px-Eptatretus_stoutii.jpg"
+    ],
     "card": 2
   },
   {
@@ -62,8 +87,14 @@
     "rank": "Class",
     "ipa": "",
     "etymology": "",
-    "tag": "The lampreys.",
-    "common": [],
+    "tag": "Adults are characterized by a toothed, funnel-like sucking mouth.",
+    "common": [
+      "lampreys"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/J%C3%B5esilmud2.jpg/330px-J%C3%B5esilmud2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Petromyzon_marinus.004_-_Aquarium_Finisterrae.jpg/330px-Petromyzon_marinus.004_-_Aquarium_Finisterrae.jpg"
+    ],
     "card": 2
   },
   {
@@ -73,6 +104,7 @@
     "ipa": "ˌnæθoʊˈstɒmətə",
     "etymology": "greek 'jaw'-'mouth'",
     "tag": "The jawed fish.",
+    "imgs": [],
     "card": 2
   },
   {
@@ -82,6 +114,7 @@
     "ipa": "kɒnˈdrɪkθiiːz",
     "etymology": "Greek 'cartilage'-'fish'",
     "tag": "A class of jawed fish including the cartilaginous fish.",
+    "imgs": [],
     "card": 3
   },
   {
@@ -97,6 +130,14 @@
       "skates",
       "sawfish"
     ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Scalloped_Hammerhead_Shark_Sphyrna_Lewini_%28226845659%29.jpeg/330px-Scalloped_Hammerhead_Shark_Sphyrna_Lewini_%28226845659%29.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Great_White_Shark_%2814730719119%29.jpg/330px-Great_White_Shark_%2814730719119%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Bullshark.JPG/330px-Bullshark.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/SStringray.jpg/330px-SStringray.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Aetobatus_narinari_342101452.jpg/330px-Aetobatus_narinari_342101452.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/06/Manta_ray_from_Yap.jpg"
+    ],
     "card": 3
   },
   {
@@ -109,6 +150,11 @@
     "common": [
       "chimaeras"
     ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/dc/Observations_of_Chimaera_opalescens.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Deep_sea_chimaera.jpg/250px-Deep_sea_chimaera.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Cape_Elephantfish.jpg/330px-Cape_Elephantfish.jpg"
+    ],
     "card": 3
   },
   {
@@ -118,6 +164,7 @@
     "ipa": "ˌɒstiːˈɪkθiːz",
     "etymology": "Greek 'bone'-'fish'",
     "tag": "The bony fish.",
+    "imgs": [],
     "card": 3
   },
   {
@@ -127,6 +174,17 @@
     "ipa": "ˌæktɪnɒptəˈrɪdʒiaɪ",
     "etymology": "",
     "tag": "The ray-finned fish. The majority of the extant fish.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Sole_commune_%28Solea_solea%29_en_rade_de_Brest_%28Ifremer_00558-67035_-_20670%29.jpg/330px-Sole_commune_%28Solea_solea%29_en_rade_de_Brest_%28Ifremer_00558-67035_-_20670%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/250px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Stone_Fish_at_AQWA_SMC2006.jpg/330px-Stone_Fish_at_AQWA_SMC2006.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Morena_pimienta_%28Gymnothorax_griseus%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-27%2C_DD_185.jpg/330px-Morena_pimienta_%28Gymnothorax_griseus%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-27%2C_DD_185.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Puffer_Fish_DSC01257.JPG/330px-Puffer_Fish_DSC01257.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Clown_fish_in_the_Andaman_Coral_Reef.jpg/330px-Clown_fish_in_the_Andaman_Coral_Reef.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Chaetodon_ephippium_PLW_edit.jpg/330px-Chaetodon_ephippium_PLW_edit.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/MC_Rotfeuerfisch.jpg/330px-MC_Rotfeuerfisch.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Atlantischer_Lachs.jpg/330px-Atlantischer_Lachs.jpg"
+    ],
     "card": 4
   },
   {
@@ -136,6 +194,7 @@
     "ipa": "ˌsɑːrkɒptəˈrɪdʒi.aɪ",
     "etymology": "",
     "tag": "The lobe-finned fish (and relatives to all land vertebrates).",
+    "imgs": [],
     "card": 4
   },
   {
@@ -145,6 +204,7 @@
     "ipa": "",
     "etymology": "",
     "tag": "",
+    "imgs": [],
     "card": 4
   },
   {
@@ -157,6 +217,12 @@
     "common": [
       "lungfish"
     ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lepidosiren_paradoxa_0.jpg/330px-Lepidosiren_paradoxa_0.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Leopard_lungfish_%28Protopterus_aethiopicus%29_close_-_GRB.JPG/330px-Leopard_lungfish_%28Protopterus_aethiopicus%29_close_-_GRB.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Neoceratodus_forsteri%2C_2014-09-19.JPG/330px-Neoceratodus_forsteri%2C_2014-09-19.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Marbled_lungfish_1.jpg/250px-Marbled_lungfish_1.jpg"
+    ],
     "card": 4
   },
   {
@@ -166,6 +232,14 @@
     "ipa": "ˈtɛtrəˌpɒd",
     "etymology": "greek 'four'-'foot'",
     "tag": "Four-limbed vertebrates.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Mercurana.jpg/330px-Mercurana.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dermophis_mexicanus.jpg/330px-Dermophis_mexicanus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/AgamaSinaita01_ST_10_edit.jpg/330px-AgamaSinaita01_ST_10_edit.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/330px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Tachyglossus_aculeatus_side_on.jpg/330px-Tachyglossus_aculeatus_side_on.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Royal_Tern.jpg/330px-Royal_Tern.jpg"
+    ],
     "card": 4
   }
 ]
