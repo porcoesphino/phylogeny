@@ -1,30 +1,8 @@
 class Data {
-  static get_root_name(content_select_value) {
-    switch (content_select_value) {
-      case 'all':
-        return 'LUCA'
-      case 'overview':
-        return 'LUCA'
-      case 'animalia_phyla_common':
-        return 'Animalia'
-      case 'animalia_cnidaria_orders_common':
-        return 'Cnidaria'
-      case 'animalia_arthropoda_orders_common':
-        return 'Arthropoda'
-      case 'animalia_arthropoda_insecta_orders_common':
-        return 'Insecta'
-      case 'animalia_chordata_tetrapoda':
-        return 'Chordata'
-      case 'animalia_tetrapoda_aves':
-        return 'Tetrapoda'
-      case 'animalia_carnivora':
-        return 'Carnivora'
-      case 'plantae_divisions':
-        return 'Plantae'
-      case 'plantae_pinopsida_genus_common':
-        return 'Pinopsida'
-    }
-    throw new Error('Content selection not found.')
+
+  constructor(tree_range) {
+    this._tree_range = tree_range
+    this._clear_cache()
   }
 
   static _get_data(content_select_value) {
@@ -59,29 +37,90 @@ class Data {
             .concat(data_plantae_divisions).concat(data_plantae_pinopsida_genus_common)
         )
     }
-    throw new Error('Content selection not found.')
+    throw new Error('Content selection not found: ' + content_select_value)
   }
 
-  static _create_dictionary_from_nodes(nodes) {
-    var node_dictionary = new Map()
-    for (var i = 0; i < nodes.length; i++) {
-      var n = nodes[i]
-      if (!node_dictionary.has(n.parent)) {
-        node_dictionary.set(n.parent, [])
-      }
-      var parents_children = node_dictionary.get(n.parent)
-      parents_children.push(n)
+  _clear_cache() {
+    this._data = null
+    this._parent_to_child_list = null
+    this._root_name = null
+  }
+
+  get tree_range() {
+    return this._tree_range
+  }
+
+  set tree_range(new_val) {
+    this._tree_range = new_val
+    this._clear_cache()
+  }
+
+  get data() {
+    if (!this._data) {
+      this._data = Data._get_data(this.tree_range)
     }
-    return node_dictionary
+    return this._data
   }
 
-  static create_dictionary(tree_range) {
-    var nodes = Data._get_data(tree_range)
-    return Data._create_dictionary_from_nodes(nodes)
+  _update_maps() {
+    var parent_to_child_list = new Map()
+    var name_to_node = new Map()
+
+    for (var i = 0; i < this.data.length; i++) {
+      var n = this.data[i]
+      if (!parent_to_child_list.has(n.parent)) {
+        parent_to_child_list.set(n.parent, [])
+      }
+      var parents_children = parent_to_child_list.get(n.parent)
+      parents_children.push(n)
+
+      if (!name_to_node.has(n.name)) {
+        name_to_node.set(n.name, n)
+      }
+    }
+
+    var current_parent = this.data[0].parent
+    while (name_to_node.has(current_parent)) {
+      grand_parent = current_parent.parent
+      if (!grand_parent) {
+        break
+      }
+      current_parent = grand_parent
+    }
+
+    this._root_name = current_parent
+    this._parent_to_child_list = parent_to_child_list
+    this._name_to_node = name_to_node
+  }
+
+  get root_name() {
+    if (!this._root_name) {
+      this._update_maps()
+    }
+    return this._root_name
+  }
+
+  get parent_to_child_list() {
+    if (!this._parent_to_child_list) {
+      this._update_maps()
+    }
+    return this._parent_to_child_list
+  }
+
+  get name_to_node() {
+    if (!this._name_to_node) {
+      this._update_maps()
+    }
+    return this._name_to_node
   }
 }
 
 class TreeBuilderAsTreeList {
+  static _display_node(node, displayed_cards) {
+    var display_node = (displayed_cards == 'all' || !node.cards || displayed_cards in node.cards)
+    return display_node
+  }
+
   static _get_element_for_node(node, node_map, level = 0) {
 
     function append_name(node, parent_el) {
@@ -191,7 +230,8 @@ class TreeBuilderAsTreeList {
 
       var ul_el = document.createElement('ul')
       for (var i = 0; i < children.length; i++) {
-        var li_child_el = TreeBuilderAsTreeList._get_element_for_node(children[i], node_map, level + 1)
+        var node_new_child = children[i]
+        var li_child_el = TreeBuilderAsTreeList._get_element_for_node(node_new_child, node_map, level + 1)
         ul_el.appendChild(li_child_el)
       }
       li_el.appendChild(ul_el)
@@ -211,9 +251,9 @@ class TreeBuilderAsTreeList {
     return li_el
   }
 
-  static get_html_for_tree_range(tree_range) {
-    var root_name = Data.get_root_name(tree_range)
-    var dict = Data.create_dictionary(tree_range)
+  static get_html_for_tree_range(data) {
+    var root_name = data.root_name
+    var dict = data.parent_to_child_list
 
     var root_list_el = document.createElement('ul');
     root_list_el.classList.add('tree')
@@ -240,11 +280,13 @@ class QueryParams {
 class Page {
 
   constructor() {
-    this.query_params = new QueryParams()
     this._content_select = document.getElementById('tree-range-select');
 
-    this.update_tree_range_view = (tree_range) => {
-      var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(tree_range)
+    this.query_params = new QueryParams()
+    this.data = new Data(this._content_select.value)
+
+    this.update_tree_range_view = (data) => {
+      var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(data)
 
       var tree_root = document.getElementById('tree_root')
 
@@ -255,12 +297,13 @@ class Page {
       tree_root.appendChild(root_list_el)
     }
 
-    this.update_tree_range_view(this._content_select.value)
+    this.update_tree_range_view(this.data)
 
     var update_tree_range_view = this.update_tree_range_view
     var content_select_change = () => {
       page.query_params.update('tree_range', this._content_select.value)
-      update_tree_range_view(this._content_select.value)
+      this.data.tree_range = this._content_select.value
+      update_tree_range_view(this.data)
     }
     this._content_select.addEventListener('change', function () {
       content_select_change()
@@ -304,7 +347,7 @@ class Page {
   page_load_callback() {
     var tree_range = this.query_params.get('tree_range')
     if (!!tree_range) {
-      this.update_tree_range_view(tree_range)
+      this.update_tree_range_view(this.data)
       this._content_select.value = tree_range
     }
 
