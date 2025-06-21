@@ -347,6 +347,7 @@ class Page {
   page_load_callback() {
     var tree_range = this.query_params.get('tree_range')
     if (!!tree_range) {
+      this.data.tree_range = tree_range
       this.update_tree_range_view(this.data)
       this._content_select.value = tree_range
     }
