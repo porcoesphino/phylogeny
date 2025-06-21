@@ -36,6 +36,7 @@ class Data {
       case 'animalia_cnidaria_orders_common':
         return data_animalia_cnidaria_orders_common
       case 'animalia_arthropoda_insecta_orders_common':
+        return data_animalia_arthropoda_insecta_orders_common
       case 'animalia_arthropoda_orders_common':
         return data_animalia_arthropoda_orders_common
       case 'animalia_arthropoda_insecta_orders_common':
