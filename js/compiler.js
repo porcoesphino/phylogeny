@@ -1,7 +1,8 @@
 class Data {
 
-  constructor(tree_range) {
+  constructor(tree_range, card = 'all') {
     this._tree_range = tree_range
+    this._card = card
     this._clear_cache()
   }
 
@@ -55,6 +56,20 @@ class Data {
     this._clear_cache()
   }
 
+  get card() {
+    return this._card
+  }
+
+  set card(new_val) {
+    this._card = new_val
+    this._clear_cache()
+  }
+
+  set tree_range(new_val) {
+    this._tree_range = new_val
+    this._clear_cache()
+  }
+
   get data() {
     if (!this._data) {
       this._data = Data._get_data(this.tree_range)
@@ -65,9 +80,19 @@ class Data {
   _update_maps() {
     var parent_to_child_list = new Map()
     var name_to_node = new Map()
+    var filtered_nodes = []
 
     for (var i = 0; i < this.data.length; i++) {
       var n = this.data[i]
+
+      var display_node = (this.card == 'all' || Number(this.card) == n.card)
+
+      if (!display_node) {
+        continue
+      }
+
+      filtered_nodes.push(n)
+
       if (!parent_to_child_list.has(n.parent)) {
         parent_to_child_list.set(n.parent, [])
       }
@@ -79,7 +104,12 @@ class Data {
       }
     }
 
-    var current_parent = this.data[0].parent
+    if (!filtered_nodes || filtered_nodes.lenth == 0) {
+      throw new Error('Empty filtered_nodes')
+    }
+    console.log('filtered_nodes: ', filtered_nodes)
+
+    var current_parent = filtered_nodes[0].parent
     while (name_to_node.has(current_parent)) {
       grand_parent = current_parent.parent
       if (!grand_parent) {
@@ -116,11 +146,6 @@ class Data {
 }
 
 class TreeBuilderAsTreeList {
-  static _display_node(node, displayed_cards) {
-    var display_node = (displayed_cards == 'all' || !node.cards || displayed_cards in node.cards)
-    return display_node
-  }
-
   static _get_element_for_node(node, node_map, level = 0) {
 
     function append_name(node, parent_el) {
