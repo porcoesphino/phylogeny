@@ -3,7 +3,8 @@
     "name": "Mandibulata",
     "parent": "Arthropoda",
     "rank": "Clade",
-    "ipa": ""
+    "ipa": "",
+    "card": 1
   },
   {
     "name": "Pancrustacea",
@@ -17,7 +18,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lobster_png_by_absurdwordpreferred_d2xqhvd.png/330px-Lobster_png_by_absurdwordpreferred_d2xqhvd.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/European_wasp_white_bg.jpg/330px-European_wasp_white_bg.jpg"
-    ]
+    ],
+    "card": 1
   },
   {
     "name": "Multicrustacea",
@@ -25,7 +27,8 @@
     "rank": "Clade",
     "ipa": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 4
   },
   {
     "name": "Malacostraca",
@@ -38,7 +41,8 @@
       "shrimp",
       "isopods"
     ],
-    "imgs": []
+    "imgs": [],
+    "card": 5
   },
   {
     "name": "Stomatopoda",
@@ -50,7 +54,8 @@
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/OdontodactylusScyllarus2.jpg/330px-OdontodactylusScyllarus2.jpg"
-    ]
+    ],
+    "card": 6
   },
   {
     "name": "Isopoda",
@@ -66,7 +71,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Armadillidium_vulgare_001.jpg/330px-Armadillidium_vulgare_001.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Eurydice_pulchra.jpg/330px-Eurydice_pulchra.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Cymothoa_exigua_parassita_Lithognathus_mormyrus.JPG/330px-Cymothoa_exigua_parassita_Lithognathus_mormyrus.JPG"
-    ]
+    ],
+    "card": 6
   },
   {
     "name": "Amphipoda",
@@ -81,7 +87,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Megalorchestia_californiana.jpg/330px-Megalorchestia_californiana.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Lepidepecreum_longicornis.jpg/330px-Lepidepecreum_longicornis.jpg"
-    ]
+    ],
+    "card": 6
   },
   {
     "name": "Euphausiacea",
@@ -94,7 +101,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Meganyctiphanes_norvegica2.jpg/330px-Meganyctiphanes_norvegica2.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Krill_swarm.jpg/330px-Krill_swarm.jpg"
-    ]
+    ],
+    "card": 6
   },
   {
     "name": "Decapoda",
@@ -112,7 +120,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Lobster_NSRW_rotated2.jpg/330px-Lobster_NSRW_rotated2.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/CoenobitaVariabilis2.jpg/330px-CoenobitaVariabilis2.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Blue_crab_on_market_in_Piraeus_-_Callinectes_sapidus_Rathbun_20020819-317.jpg/330px-Blue_crab_on_market_in_Piraeus_-_Callinectes_sapidus_Rathbun_20020819-317.jpg"
-    ]
+    ],
+    "card": 6
   },
   {
     "name": "Thecostraca",
@@ -120,7 +129,8 @@
     "rank": "Class",
     "ipa": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 5
   },
   {
     "name": "Cirripedia",
@@ -134,7 +144,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Anim1032_-_Flickr_-_NOAA_Photo_Library.jpg/330px-Anim1032_-_Flickr_-_NOAA_Photo_Library.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Giant_Acorn_Barnacle%2C_Embarcadero%2C_Morro_Bay%2C_CA%2C_US_imported_from_iNaturalist_photo_149595197.jpg/330px-Giant_Acorn_Barnacle%2C_Embarcadero%2C_Morro_Bay%2C_CA%2C_US_imported_from_iNaturalist_photo_149595197.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Balanus_improvisus_on_Mya_arenaria_shell.jpg/330px-Balanus_improvisus_on_Mya_arenaria_shell.jpg"
-    ]
+    ],
+    "card": 5
   },
   {
     "name": "Branchiopoda",
@@ -163,7 +174,8 @@
     "rank": "Clade",
     "ipa": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 4
   },
   {
     "name": "Insecta",
@@ -172,7 +184,8 @@
     "ipa": "",
     "common": [],
     "imgs": [],
-    "tag": "The insects."
+    "tag": "The insects.",
+    "card": 4
   },
   {
     "name": "Myriapoda",
@@ -187,7 +200,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg/330px-Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Andrognathus_corticarius_A.jpg/330px-Andrognathus_corticarius_A.jpg"
-    ]
+    ],
+    "card": 1
   },
   {
     "name": "Chilopoda",
@@ -201,7 +215,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg/330px-Scolopendra_japonica_%E3%82%A2%E3%82%AA%E3%82%BA%E3%83%A0%E3%82%AB%E3%83%87_%E5%A4%A7%E9%98%AA%E5%BA%9C_%E7%94%9F%E9%A7%92%E5%B1%B1%E7%94%A3.jpg"
     ],
     "etymology": "greek 'lip'-'foot'",
-    "tag": "Fast moving with one leg per segment that extends away from the body. Their front legs are pincer like and inject venom. Usually predators."
+    "tag": "Fast moving with one leg per segment that extends away from the body. Their front legs are pincer like and inject venom. Usually predators.",
+    "card": 3
   },
   {
     "name": "Diplopoda",
@@ -217,7 +232,8 @@
     "tag": "Slow moving with two legs per segment (besides the first three segments) that are underneath the body. Usually scavengers.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Andrognathus_corticarius_A.jpg/330px-Andrognathus_corticarius_A.jpg"
-    ]
+    ],
+    "card": 3
   },
   {
     "name": "Chelicerata",
@@ -235,7 +251,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nymphon_signatum_194389384_%28white_background%29.jpg/330px-Nymphon_signatum_194389384_%28white_background%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Limulus_polyphemus_%28aquarium%29_%28white_background%29.jpg/330px-Limulus_polyphemus_%28aquarium%29_%28white_background%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Aptostichus_simus_Monterey_County.jpg/330px-Aptostichus_simus_Monterey_County.jpg"
-    ]
+    ],
+    "card": 1
   },
   {
     "name": "Pycnogonida",
@@ -248,7 +265,8 @@
     ],
     "common": [
       "sea spiders"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Xiphosura",
@@ -261,7 +279,8 @@
     ],
     "common": [
       "horseshoe crabs"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Arachnida",
@@ -279,6 +298,7 @@
       "scorpions",
       "pseudoscorpions",
       "harvestmen"
-    ]
+    ],
+    "card": 2
   }
 ]

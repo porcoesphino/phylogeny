@@ -6,7 +6,8 @@
     "ipa": "",
     "tag": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 1
   },
   {
     "name": "Pinaceae",
@@ -15,7 +16,8 @@
     "ipa": "",
     "tag": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 1
   },
   {
     "name": "Pinus",
@@ -32,7 +34,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Pinus_radiata_cone.jpg/330px-Pinus_radiata_cone.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Pinus_densiflora_Kumgangsan.jpg/250px-Pinus_densiflora_Kumgangsan.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Pinus_radiata_binata.jpg/330px-Pinus_radiata_binata.jpg"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Larix",
@@ -48,7 +51,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/SubalpineLarch_7769.jpg/960px-SubalpineLarch_7769.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Larix_decidua_Aletschwald.jpg/250px-Larix_decidua_Aletschwald.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Lone_Larix_lyallii_in_fall_color_in_the_Enchantments_%2811_October_2024%29.jpg/250px-Lone_Larix_lyallii_in_fall_color_in_the_Enchantments_%2811_October_2024%29.jpg"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Picea",
@@ -62,7 +66,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Picea_abies_Nadelkissen.jpg/960px-Picea_abies_Nadelkissen.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Sitka_01.JPG/250px-Sitka_01.JPG"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Abies",
@@ -79,7 +84,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Abies_grandis_5359.JPG/250px-Abies_grandis_5359.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Abies_koreana_%28szyszki%29.JPG/330px-Abies_koreana_%28szyszki%29.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Abies_fabri_in_mist.jpg/250px-Abies_fabri_in_mist.jpg"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Cedrus",
@@ -95,7 +101,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Male_cone_of_Cedar_of_Lebanon.JPG/250px-Male_cone_of_Cedar_of_Lebanon.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/20130903Cedrus_deodara2.jpg/330px-20130903Cedrus_deodara2.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/C%C3%A8dre_du_Liban_Barouk_2005.jpg/330px-C%C3%A8dre_du_Liban_Barouk_2005.jpg"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Tsuga",
@@ -110,7 +117,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/2013-08-25_15_39_09_Closeup_of_Eastern_Hemlock_foliage_across_Taborton_Road_from_the_entrance_to_Spring_Lake_in_Berlin%2C_New_York.jpg/330px-2013-08-25_15_39_09_Closeup_of_Eastern_Hemlock_foliage_across_Taborton_Road_from_the_entrance_to_Spring_Lake_in_Berlin%2C_New_York.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Tsuga-diversifolia.JPG/330px-Tsuga-diversifolia.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Tsuga_heterophylla1.jpg/250px-Tsuga_heterophylla1.jpg"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Cupressales",
@@ -119,7 +127,8 @@
     "ipa": "",
     "tag": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 1
   },
   {
     "name": "Cupressaceae",
@@ -128,7 +137,8 @@
     "ipa": "",
     "tag": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 1
   },
   {
     "name": "Sequoioideae",
@@ -143,7 +153,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/MetaseqLeaves.jpg/330px-MetaseqLeaves.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Sequoia_sempervirens1.jpg/330px-Sequoia_sempervirens1.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Giant_sequoias_in_Sequoia_National_Park_02_2013.jpg/250px-Giant_sequoias_in_Sequoia_National_Park_02_2013.jpg"
-    ]
+    ],
+    "card": 3
   },
   {
     "name": "Cupressus",
@@ -158,7 +169,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Cupressus_duclouxiana_-_Quarryhill_Botanical_Garden_-_DSC03443.JPG/330px-Cupressus_duclouxiana_-_Quarryhill_Botanical_Garden_-_DSC03443.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Med_Cypress.jpg/250px-Med_Cypress.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Cupressus_atlantica0.jpg/250px-Cupressus_atlantica0.jpg"
-    ]
+    ],
+    "card": 3
   },
   {
     "name": "Juniperus",
@@ -173,7 +185,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Juniperus_californica_Joshua_Tree_NP_2.jpg/330px-Juniperus_californica_Joshua_Tree_NP_2.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Jun_chin_close.jpg/250px-Jun_chin_close.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/SabinaChinensis.jpg/330px-SabinaChinensis.jpg"
-    ]
+    ],
+    "card": 3
   },
   {
     "name": "Chamaecyparis",
@@ -187,7 +200,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/4/48/Sawara.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Chamaecyparis_pisifera.jpg/250px-Chamaecyparis_pisifera.jpg"
-    ]
+    ],
+    "card": 3
   },
   {
     "name": "Taxaceae",
@@ -196,7 +210,8 @@
     "ipa": "",
     "tag": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 1
   },
   {
     "name": "Taxus",
@@ -210,6 +225,7 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Taxus_baccata_MHNT.jpg/330px-Taxus_baccata_MHNT.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/4112_year_Yew_3.jpg/250px-4112_year_Yew_3.jpg"
-    ]
+    ],
+    "card": 1
   }
 ]

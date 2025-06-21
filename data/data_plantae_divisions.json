@@ -14,7 +14,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/a/a8/Stylonemaalsidii.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/New_Zealand_Mosses_Am_media-v-838854_%28Plocamium_spp.%29.jpg/250px-New_Zealand_Mosses_Am_media-v-838854_%28Plocamium_spp.%29.jpg"
-    ]
+    ],
+    "card": 1
   },
   {
     "name": "Viridiplantae",
@@ -23,7 +24,8 @@
     "ipa": "",
     "tag": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 1
   },
   {
     "name": "Chlorophyta",
@@ -38,7 +40,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Meersalat-Ulva-lactuca.jpg/330px-Meersalat-Ulva-lactuca.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Caulerpa_prolifera.JPG/250px-Caulerpa_prolifera.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Dictyosphaeria_cavernosa.jpg/330px-Dictyosphaeria_cavernosa.jpg"
-    ]
+    ],
+    "card": 1
   },
   {
     "name": "Charophyta",
@@ -52,7 +55,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/CharaGlobularis.jpg/250px-CharaGlobularis.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Klebsormidium_bilatum_Belgium_%2814759117646%29.jpg/330px-Klebsormidium_bilatum_Belgium_%2814759117646%29.jpg"
-    ]
+    ],
+    "card": 1
   },
   {
     "name": "Embryophyta",
@@ -61,7 +65,8 @@
     "ipa": "",
     "tag": "The land plants.",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 1
   },
   {
     "name": "Bryophyta",
@@ -73,7 +78,8 @@
     ],
     "tag": "Early land plants that are dominated by a multicellular haploid gametophyte and lack vascular tissue.",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 2
   },
   {
     "name": "Marchantiophyta",
@@ -92,7 +98,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lunularia_cruciata.jpg/330px-Lunularia_cruciata.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Marchantia_polymorpha_20100619_44.jpg/250px-Marchantia_polymorpha_20100619_44.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Jungermannia_hyalina_%28a%2C_113308-471324%29_2392.JPG/330px-Jungermannia_hyalina_%28a%2C_113308-471324%29_2392.JPG"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Anthocerotophyta",
@@ -112,7 +119,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Phaeoceros_laevis.jpg/330px-Phaeoceros_laevis.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Dendroceros.jpg/330px-Dendroceros.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Anthoceros_agrestis_060910c.jpg/250px-Anthoceros_agrestis_060910c.jpg"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Bryophytina",
@@ -129,14 +137,16 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Sphagnum_cuspidatum_041107a.jpg/330px-Sphagnum_cuspidatum_041107a.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Oedipodium_griffithianum_1.jpg/330px-Oedipodium_griffithianum_1.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Distichium_capillaceum_%28b%2C_144346-474700%29_3624.JPG/330px-Distichium_capillaceum_%28b%2C_144346-474700%29_3624.JPG"
-    ]
+    ],
+    "card": 2
   },
   {
     "name": "Tracheophyta",
     "parent": "Embryophyta",
     "rank": "Clade",
     "ipa": "",
-    "tag": "The vascular plants."
+    "tag": "The vascular plants.",
+    "card": 2
   },
   {
     "name": "Lycopodiophyta",
@@ -153,7 +163,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Lycopodium_annotinum_161102a.jpg/330px-Lycopodium_annotinum_161102a.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Selaginella_canaliculata.jpeg/330px-Selaginella_canaliculata.jpeg",
       "https://upload.wikimedia.org/wikipedia/commons/6/69/Lycopodium_plant.jpg"
-    ]
+    ],
+    "card": 3
   },
   {
     "name": "Euphyllophyta",
@@ -162,7 +173,8 @@
     "ipa": "",
     "tag": "",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 3
   },
   {
     "name": "Polypodiophyta",
@@ -179,7 +191,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tree_Fern_%2848717210587%29.jpg/330px-Tree_Fern_%2848717210587%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Equisetopsida.jpg/250px-Equisetopsida.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/0/0d/Psilotum.jpg"
-    ]
+    ],
+    "card": 3
   },
   {
     "name": "Spermatophyta",
@@ -189,7 +202,8 @@
     "etymology": "latin 'seed' - greek 'plant'",
     "tag": "Plants that produce seeds.",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 3
   },
   {
     "name": "Gymnospermae",
@@ -199,7 +213,8 @@
     "etymology": "greek 'naked'-'seed'",
     "tag": "Early seed plants that don't have their seeds encased in an ovary and often form cones.",
     "common": [],
-    "imgs": []
+    "imgs": [],
+    "card": 4
   },
   {
     "name": "Cycadophyta",
@@ -213,7 +228,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Cycas_circinalis.jpg/250px-Cycas_circinalis.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cycads%2C_Limpopo%2C_South_Africa_%282417726335%29.jpg/250px-Cycads%2C_Limpopo%2C_South_Africa_%282417726335%29.jpg"
-    ]
+    ],
+    "card": 5
   },
   {
     "name": "Ginkgophyta",
@@ -228,7 +244,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Ginko_bilboa_%27King_of_Dongting%27_%28Ginkgoaceae%29_leaves.JPG/330px-Ginko_bilboa_%27King_of_Dongting%27_%28Ginkgoaceae%29_leaves.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Ginko_tree_in_late_October_01.jpg/330px-Ginko_tree_in_late_October_01.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Cussac-ginko_01.jpg/250px-Cussac-ginko_01.jpg"
-    ]
+    ],
+    "card": 5
   },
   {
     "name": "Pinophyta",
@@ -244,7 +261,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Abies_grandis_5359.JPG/500px-Abies_grandis_5359.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/e/e9/C_lawsoniana_Lge.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Abies_lasiocarpa_5922.JPG/250px-Abies_lasiocarpa_5922.JPG"
-    ]
+    ],
+    "card": 5
   },
   {
     "name": "Gnetophyta",
@@ -256,7 +274,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Gnetum_luofuense_125787614.jpg/330px-Gnetum_luofuense_125787614.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/9/9f/Welwitschia_at_Ugab_River_basin.jpg"
-    ]
+    ],
+    "card": 5
   },
   {
     "name": "Angiospermae",
@@ -266,6 +285,7 @@
     "tag": "",
     "common": [
       "flowering plants"
-    ]
+    ],
+    "card": 4
   }
 ]

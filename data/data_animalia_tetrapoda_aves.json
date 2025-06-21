@@ -8,7 +8,8 @@
       "frogs",
       "salamanders"
     ],
-    "tag": ""
+    "tag": "",
+    "card": 1
   },
   {
     "name": "Amniota",
@@ -16,7 +17,8 @@
     "rank": "",
     "ipa": "",
     "common": [],
-    "tag": "Has an embryo that develops within a set of protective extra-embryonic membranes."
+    "tag": "Has an embryo that develops within a set of protective extra-embryonic membranes.",
+    "card": 1
   },
   {
     "name": "Synapsida",
@@ -25,7 +27,8 @@
     "ipa": "",
     "common": [],
     "tag": "The sibling taxon to sauropsida. All mammals and their extinct relatives. They have a single hole behind each eye, on the lower part of the skull.",
-    "etymology": "greek 'together-arch'"
+    "etymology": "greek 'together-arch'",
+    "card": 1
   },
   {
     "name": "Sauropsida",
@@ -34,7 +37,8 @@
     "ipa": "",
     "common": [],
     "tag": "The sibling taxon to Synapsida. The class Reptilia but including birds and extinct relatives.",
-    "etymology": "greek 'lizard faces'"
+    "etymology": "greek 'lizard faces'",
+    "card": 1
   },
   {
     "name": "Eureptilia",
@@ -42,7 +46,8 @@
     "rank": "",
     "ipa": "",
     "common": [],
-    "tag": ""
+    "tag": "",
+    "card": 2
   },
   {
     "name": "Diapsida",
@@ -54,7 +59,8 @@
       "reptiles",
       "turtles"
     ],
-    "tag": "Have two holes behind their eye sockets."
+    "tag": "Have two holes behind their eye sockets.",
+    "card": 2
   },
   {
     "name": "Sauria",
@@ -62,7 +68,8 @@
     "rank": "",
     "ipa": "",
     "common": [],
-    "tag": ""
+    "tag": "",
+    "card": 2
   },
   {
     "name": "Lepidosauria",
@@ -74,7 +81,8 @@
       "lizards",
       "snakes"
     ],
-    "tag": ""
+    "tag": "",
+    "card": 2
   },
   {
     "name": "Rhynchocephalia/Sphenodon",
@@ -85,7 +93,8 @@
       "tuatara"
     ],
     "tag": "",
-    "description": "The only extant species is the tuatara in New Zealand. They were diverse during the Mesozoic era. They have primitive hearing organs and lower odorant receptors compared to crocodiles"
+    "description": "The only extant species is the tuatara in New Zealand. They were diverse during the Mesozoic era. They have primitive hearing organs and lower odorant receptors compared to crocodiles",
+    "card": 4
   },
   {
     "name": "Squamata",
@@ -96,7 +105,8 @@
       "lizards",
       "snakes"
     ],
-    "tag": ""
+    "tag": "",
+    "card": 4
   },
   {
     "name": "Gekkota",
@@ -106,7 +116,8 @@
     "common": [
       "gekkos"
     ],
-    "tag": ""
+    "tag": "",
+    "card": 4
   },
   {
     "name": "Scincomorpha",
@@ -116,7 +127,8 @@
     "common": [
       "skinks",
       "allies"
-    ]
+    ],
+    "card": 4
   },
   {
     "name": "Laterata",
@@ -127,7 +139,8 @@
       "wall lizards",
       "rock lizards",
       "allies"
-    ]
+    ],
+    "card": 4
   },
   {
     "name": "Toxicofera",
@@ -135,7 +148,8 @@
     "rank": "",
     "ipa": "",
     "tag": "Venom evolved once for this taxa",
-    "common": []
+    "common": [],
+    "card": 4
   },
   {
     "name": "Anguimorpha",
@@ -143,7 +157,8 @@
     "rank": "",
     "ipa": "",
     "tag": "All autarchoglossans closer to Varanus (monitor lizards) and Anguis (slowworms) than Scincus",
-    "common": []
+    "common": [],
+    "card": 5
   },
   {
     "name": "Iguania",
@@ -152,7 +167,8 @@
     "ipa": "",
     "etymology": "",
     "tag": "",
-    "common": []
+    "common": [],
+    "card": 5
   },
   {
     "name": "Pleurodonta",
@@ -164,7 +180,8 @@
     "common": [
       "iguanas",
       "New World lizards"
-    ]
+    ],
+    "card": 5
   },
   {
     "name": "Acrodonta",
@@ -177,7 +194,8 @@
       "chameleons",
       "thorny devil",
       "frilled-neck lizards"
-    ]
+    ],
+    "card": 5
   },
   {
     "name": "Serpentes",
@@ -188,7 +206,8 @@
     "tag": "",
     "common": [
       "snakes"
-    ]
+    ],
+    "card": 5
   },
   {
     "name": "Archosauria",
@@ -200,7 +219,8 @@
       "birds"
     ],
     "etymology": "'ruling reptiles'",
-    "tag": ""
+    "tag": "",
+    "card": 2
   },
   {
     "name": "Testudines",
@@ -212,7 +232,8 @@
       "tortoises",
       "terrapins"
     ],
-    "tag": ""
+    "tag": "",
+    "card": 2
   },
   {
     "name": "Mammalia",
@@ -220,7 +241,8 @@
     "rank": "",
     "ipa": "",
     "common": [],
-    "tag": ""
+    "tag": "",
+    "card": 1
   },
   {
     "name": "Crocodilia",
@@ -229,7 +251,8 @@
     "ipa": "",
     "common": [],
     "etymology": "",
-    "tag": ""
+    "tag": "",
+    "card": 3
   },
   {
     "name": "Dinosauria",
@@ -238,7 +261,8 @@
     "ipa": "",
     "common": [],
     "etymology": "",
-    "tag": ""
+    "tag": "",
+    "card": 3
   },
   {
     "name": "Aves",
@@ -248,6 +272,7 @@
     "common": [
       "birds"
     ],
-    "tag": ""
+    "tag": "",
+    "card": 3
   }
 ]
