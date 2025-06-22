@@ -6,9 +6,17 @@
     "ipa": "",
     "common": [
       "frogs",
-      "salamanders"
+      "salamanders",
+      "newts",
+      "caecilians"
     ],
     "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/f/f6/AxolotlBE.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Litoria_phyllochroa.JPG/330px-Litoria_phyllochroa.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Notophthalmus_viridescensPCCA20040816-3983A.jpg/330px-Notophthalmus_viridescensPCCA20040816-3983A.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dermophis_mexicanus.jpg/330px-Dermophis_mexicanus.jpg"
+    ],
     "card": 1
   },
   {
@@ -18,6 +26,7 @@
     "ipa": "",
     "common": [],
     "tag": "Has an embryo that develops within a set of protective extra-embryonic membranes.",
+    "imgs": [],
     "card": 1
   },
   {
@@ -28,6 +37,7 @@
     "common": [],
     "tag": "The sibling taxon to sauropsida. All mammals and their extinct relatives. They have a single hole behind each eye, on the lower part of the skull.",
     "etymology": "greek 'together-arch'",
+    "imgs": [],
     "card": 1
   },
   {
@@ -38,6 +48,7 @@
     "common": [],
     "tag": "The sibling taxon to Synapsida. The class Reptilia but including birds and extinct relatives.",
     "etymology": "greek 'lizard faces'",
+    "imgs": [],
     "card": 1
   },
   {
@@ -46,7 +57,8 @@
     "rank": "",
     "ipa": "",
     "common": [],
-    "tag": "",
+    "tag": "A contested clade with the only extant species being in Diapsida.",
+    "imgs": [],
     "card": 2
   },
   {
@@ -60,6 +72,7 @@
       "turtles"
     ],
     "tag": "Have two holes behind their eye sockets.",
+    "imgs": [],
     "card": 2
   },
   {
@@ -68,7 +81,8 @@
     "rank": "",
     "ipa": "",
     "common": [],
-    "tag": "",
+    "tag": "All descendants of the most recent common ancestor to crocodilians, birds, lizards, snakes and the tuatara.",
+    "imgs": [],
     "card": 2
   },
   {
@@ -81,19 +95,25 @@
       "lizards",
       "snakes"
     ],
-    "tag": "",
+    "tag": "All descendants of the most recent common ancestor to lizards, snakes and the tuatara.",
+    "imgs": [],
     "card": 2
   },
   {
-    "name": "Rhynchocephalia/Sphenodon",
+    "name": "Rhynchocephalia",
     "parent": "Lepidosauria",
     "rank": "",
-    "ipa": "",
+    "ipa": "ˌrɪŋkoʊsɪˈfeɪliə",
+    "etymology": "'beak-heads'",
     "common": [
       "tuatara"
     ],
-    "tag": "",
+    "tag": "The only living species is the tuatara.",
     "description": "The only extant species is the tuatara in New Zealand. They were diverse during the Mesozoic era. They have primitive hearing organs and lower odorant receptors compared to crocodiles",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Henry_at_Invercargill.jpg/250px-Henry_at_Invercargill.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Tuatara_%285205719005%29.jpg/330px-Tuatara_%285205719005%29.jpg"
+    ],
     "card": 4
   },
   {
@@ -106,6 +126,7 @@
       "snakes"
     ],
     "tag": "",
+    "imgs": [],
     "card": 4
   },
   {
@@ -114,9 +135,16 @@
     "rank": "",
     "ipa": "",
     "common": [
-      "gekkos"
+      "gekkos",
+      "legless lizards"
     ],
     "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Phelsuma_l._laticauda.jpg/250px-Phelsuma_l._laticauda.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/01/Phyllodactylus_xanti.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Pygopus_lepidopodus_431078669_%28cropped%29.jpg/330px-Pygopus_lepidopodus_431078669_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Pink-tailed_Worm-lizard_%28Aprasia_parapulchella%29_%289105308465%29.jpg/330px-Pink-tailed_Worm-lizard_%28Aprasia_parapulchella%29_%289105308465%29.jpg"
+    ],
     "card": 4
   },
   {
@@ -126,7 +154,16 @@
     "ipa": "",
     "common": [
       "skinks",
-      "allies"
+      "allies",
+      "blue-tongued lizards",
+      "limbless skinks"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Blue-toungued_skink444.jpg/330px-Blue-toungued_skink444.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Tropical_Girdled_Lizard_P9240103.JPG/330px-Tropical_Girdled_Lizard_P9240103.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Newbery%27s_Legless_Skink%2C_Vhembe_District_Municipality%2C_South_Africa_imported_from_iNaturalist_photo_457324536.jpg/330px-Newbery%27s_Legless_Skink%2C_Vhembe_District_Municipality%2C_South_Africa_imported_from_iNaturalist_photo_457324536.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cryptoblepharus_boutonii_furcata.jpg/330px-Cryptoblepharus_boutonii_furcata.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Acontias_breviceps.jpg/330px-Acontias_breviceps.jpg"
     ],
     "card": 4
   },
@@ -138,7 +175,13 @@
     "common": [
       "wall lizards",
       "rock lizards",
-      "allies"
+      "worm lizards"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Jaszczurka-Lacerta_agilis.jpg/330px-Jaszczurka-Lacerta_agilis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tupinambis_teguixin_66357095.jpg/330px-Tupinambis_teguixin_66357095.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/40/Amphisbaenia_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Iberian_worm_lizard.jpg/330px-Iberian_worm_lizard.jpg"
     ],
     "card": 4
   },
@@ -149,6 +192,7 @@
     "ipa": "",
     "tag": "Venom evolved once for this taxa",
     "common": [],
+    "imgs": [],
     "card": 4
   },
   {
@@ -157,7 +201,20 @@
     "rank": "",
     "ipa": "",
     "tag": "All autarchoglossans closer to Varanus (monitor lizards) and Anguis (slowworms) than Scincus",
-    "common": [],
+    "common": [
+      "monitors",
+      "goannas",
+      "komodo dragons",
+      "slow worms",
+      "glass lizards"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Chin-krokodilschwanzechse-01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lace_monitor_%28Varanus_varius%29%2C_photographed_in_the_Kindra_State_Forest.jpg/250px-Lace_monitor_%28Varanus_varius%29%2C_photographed_in_the_Kindra_State_Forest.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/%281%29Goanna-1.jpg/330px-%281%29Goanna-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Yuli_Seperi_Komodo_TNKomodo-2_%28cropped%29.jpg/330px-Yuli_Seperi_Komodo_TNKomodo-2_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5e/Anguidae.jpg"
+    ],
     "card": 5
   },
   {
@@ -166,8 +223,9 @@
     "rank": "",
     "ipa": "",
     "etymology": "",
-    "tag": "",
+    "tag": "The iguanas, chameleons, agamids, and New World lizards.",
     "common": [],
+    "imgs": [],
     "card": 5
   },
   {
@@ -180,6 +238,13 @@
     "common": [
       "iguanas",
       "New World lizards"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Plumedbasiliskcele4_edit.jpg/330px-Plumedbasiliskcele4_edit.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Green_anole.jpg/330px-Green_anole.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Male_Green_Iguana_Belize.jpg/250px-Male_Green_Iguana_Belize.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Leiocephalidae.jpg/330px-Leiocephalidae.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Liolaemus_Tenuis.jpg/330px-Liolaemus_Tenuis.jpg"
     ],
     "card": 5
   },
@@ -195,6 +260,14 @@
       "thorny devil",
       "frilled-neck lizards"
     ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Draco_taeniopterus_Gunther%2C_1861_from_Bulon_%28cropped%29.jpg/330px-Draco_taeniopterus_Gunther%2C_1861_from_Bulon_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Acanthosaura_cardamomensis_189186673_%28cropped%29.jpg/330px-Acanthosaura_cardamomensis_189186673_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Frilled_dragon_with_frill_extended_close_up_-_DPLA_-_d6e3c74db204607072354d5bf185b8c9_%28cropped%29.jpg/330px-Frilled_dragon_with_frill_extended_close_up_-_DPLA_-_d6e3c74db204607072354d5bf185b8c9_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Moloch_horridus_77894454_%28cropped%29.jpg/330px-Moloch_horridus_77894454_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cameleon%2C_peyrieras_20.JPG/330px-Cameleon%2C_peyrieras_20.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Calumma_gastrotaenia.jpg/330px-Calumma_gastrotaenia.jpg"
+    ],
     "card": 5
   },
   {
@@ -207,6 +280,11 @@
     "common": [
       "snakes"
     ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Trimeresurus_sabahi_fucatus%2C_Banded_pit_viper_-_Takua_Pa_District%2C_Phang-nga_Province_%2846710893582%29.jpg/330px-Trimeresurus_sabahi_fucatus%2C_Banded_pit_viper_-_Takua_Pa_District%2C_Phang-nga_Province_%2846710893582%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Laticauda_colubrina_%28Wakatobi%29.jpg/250px-Laticauda_colubrina_%28Wakatobi%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Indian_Cobra%2C_crop.jpg/250px-Indian_Cobra%2C_crop.jpg"
+    ],
     "card": 5
   },
   {
@@ -218,8 +296,9 @@
       "crocodiles",
       "birds"
     ],
-    "etymology": "'ruling reptiles'",
-    "tag": "",
+    "etymology": "greek 'ruling'-'reptiles'",
+    "tag": "All living and extinct relatives of birds and crocodilians.",
+    "imgs": [],
     "card": 2
   },
   {
@@ -233,6 +312,11 @@
       "terrapins"
     ],
     "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Green_Sea_Turtle_swimming.jpg/330px-Green_Sea_Turtle_swimming.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Diamond_terrapin_turtle_reptile_malaclemys_terrapin.jpg/330px-Diamond_terrapin_turtle_reptile_malaclemys_terrapin.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/A._gigantea_Aldabra_Giant_Tortoise.jpg/330px-A._gigantea_Aldabra_Giant_Tortoise.jpg"
+    ],
     "card": 2
   },
   {
@@ -242,6 +326,15 @@
     "ipa": "",
     "common": [],
     "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Monachus_schauinslandi.jpg/330px-Monachus_schauinslandi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tuskercorbett.jpg/330px-Tuskercorbett.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flying_fox_at_botanical_gardens_in_Sydney_%28cropped%29.jpg/250px-Flying_fox_at_botanical_gardens_in_Sydney_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Humpback_stellwagen_edit.jpg/330px-Humpback_stellwagen_edit.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kangaroo_Australia_01_11_2008_-_retouch.JPG/330px-Kangaroo_Australia_01_11_2008_-_retouch.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Panthera_tigris_tigris_edit2.jpg/330px-Panthera_tigris_tigris_edit2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lemur_catta_001.jpg/330px-Lemur_catta_001.jpg"
+    ],
     "card": 1
   },
   {
@@ -249,9 +342,19 @@
     "parent": "Archosauria",
     "rank": "",
     "ipa": "",
-    "common": [],
+    "common": [
+      "crocodiles",
+      "alligators",
+      "caimans",
+      "gharial"
+    ],
     "etymology": "",
     "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SaltwaterCrocodile%28%27Maximo%27%29.jpg/330px-SaltwaterCrocodile%28%27Maximo%27%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Freshwater_Crocodile_at_Lone_Pine_Koala_Sanctuary.jpg/330px-Freshwater_Crocodile_at_Lone_Pine_Koala_Sanctuary.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/American_Alligator.jpg/250px-American_Alligator.jpg"
+    ],
     "card": 3
   },
   {
@@ -261,7 +364,8 @@
     "ipa": "",
     "common": [],
     "etymology": "",
-    "tag": "",
+    "tag": "Descendents of the most recent common ancestor to Triceratops and modern birds.",
+    "imgs": [],
     "card": 3
   },
   {
@@ -273,6 +377,12 @@
       "birds"
     ],
     "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/American_Flamingo_JG.jpg/330px-American_Flamingo_JG.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/250px-Puffin_%28Fratercula_arctica%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/2020-11_Kerguelen_Islands_-_Gentoo_penguin_11.jpg/250px-2020-11_Kerguelen_Islands_-_Gentoo_penguin_11.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Southern_Cassowary_7071.jpg/330px-Southern_Cassowary_7071.jpg"
+    ],
     "card": 3
   }
 ]
