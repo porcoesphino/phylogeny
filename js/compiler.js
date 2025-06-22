@@ -8,37 +8,25 @@ class Data {
 
   static _get_data(content_select_value) {
     switch (content_select_value) {
-      case 'overview':
-        return data_luca
-      case 'animalia_phyla_common':
-        return data_animalia_phyla_common
-      case 'animalia_cnidaria_orders_common':
-        return data_animalia_cnidaria_orders_common
-      case 'animalia_arthropoda_insecta_orders_common':
-        return data_animalia_arthropoda_insecta_orders_common
-      case 'animalia_arthropoda_orders_common':
-        return data_animalia_arthropoda_orders_common
-      case 'animalia_arthropoda_insecta_orders_common':
-        return data_animalia_arthropoda_insecta_orders_common
-      case 'animalia_chordata_classes_minus_tetrapoda':
-        return data_animalia_chordata_classes_minus_tetrapoda
-      case 'animalia_chordata_tetrapoda_classes_minus_aves_and_mammalia':
-        return data_animalia_chordata_tetrapoda_classes_minus_aves_and_mammalia
-      case 'animalia_chordata_tetrapoda_carnivora':
-        return data_animalia_chordata_tetrapoda_carnivora
-      case 'plantae_divisions':
-        return data_plantae_divisions
-      case 'plantae_pinopsida_genus_common':
-        return data_plantae_pinopsida_genus_common
       case 'all':
         return (
-          data_luca.concat(data_animalia_phyla_common).concat(data_animalia_cnidaria_orders_common).concat(data_animalia_arthropoda_orders_common)
+          data_luca
+            .concat(data_animalia_phyla_common)
+            .concat(data_animalia_cnidaria_orders_common)
+            .concat(data_animalia_arthropoda_orders_common)
             .concat(data_animalia_arthropoda_insecta_orders_common)
-            .concat(data_animalia_chordata_classes_minus_tetrapoda).concat(data_animalia_chordata_tetrapoda_classes_minus_aves_and_mammalia)
-            .concat(data_plantae_divisions).concat(data_plantae_pinopsida_genus_common)
+            .concat(data_animalia_chordata_classes_minus_tetrapoda)
+            .concat(data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia)
+            .concat(data_plantae_divisions)
+            .concat(data_plantae_pinopsida_genus_common)
         )
+      default:
+        var data_variable_name = 'data_' + content_select_value
+        if (!window.hasOwnProperty(data_variable_name)) {
+          throw new Error('Content selection not found: ' + content_select_value)
+        }
+        return window[data_variable_name]
     }
-    throw new Error('Content selection not found: ' + content_select_value)
   }
 
   _clear_cache() {
