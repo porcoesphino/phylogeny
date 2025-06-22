@@ -6,19 +6,6 @@ import typing
 
 HTML_OUT_FILENAME = 'index.html'
 
-# JSON_FILES_BY_PARENT: dict[str, str] = {
-#     'LUCA': 'data_luca.json',
-#     'Animalia': 'data_animalia_phyla_common.json',
-#     'Cnidaria': 'data_animalia_cnidaria_orders_common.json',
-#     'Arthropoda': 'data_animalia_arthropoda_orders_common.json',
-#     'Insecta': 'data_animalia_arthropoda_insecta_orders_common.json',
-#     'Chordata': 'data_animalia_chordata_tetrapoda.json',
-#     'Carnivora': 'data_animalia_chordata_tetrapoda_carnivora.json',
-#     'Tetrapoda': 'data_animalia_chordata_tetrapoda_aves.json',
-#     'Plantae': 'data_plantae_divisions.json',
-#     'Pinopsida': 'data_plantae_pinopsida_genus_common.json',
-# }
-
 DATA_DIR = 'data'
 
 JSON_DATA_LIST = [
@@ -27,9 +14,9 @@ JSON_DATA_LIST = [
     'data_animalia_cnidaria_orders_common.json',
     'data_animalia_arthropoda_orders_common.json',
     'data_animalia_arthropoda_insecta_orders_common.json',
-    'data_animalia_chordata_tetrapoda.json',
+    'data_animalia_chordata_classes_minus_tetrapoda.json',
+    'data_animalia_chordata_tetrapoda_classes_minus_aves_and_mammalia.json',
     'data_animalia_chordata_tetrapoda_carnivora.json',
-    'data_animalia_chordata_tetrapoda_aves.json',
     'data_plantae_divisions.json',
     'data_plantae_pinopsida_genus_common.json',
 ]
@@ -111,18 +98,18 @@ def get_html() -> str:
                 <option value="all">All so far</option>
                 <hr />
                 <optgroup label="Animalia">
-                  <option value="animalia_phyla_common">Animalia to common Phyla</option>
-                  <option value="animalia_cnidaria_orders_common">Cnidaria to common classes/orders</option>
-                  <option value="animalia_arthropoda_orders_common">Arthropoda to common classes/orders</option>
-                  <option value="animalia_arthropoda_insecta_orders_common">Insecta to common orders</option>
-                  <option value="animalia_chordata_tetrapoda">Chordata to Tetrapoda</option>
-                  <option value="animalia_chordata_tetrapoda_aves">Tetrapoda to Aves</option>
+                  <option value="animalia_phyla_common">Animalia — common Phyla</option>
+                  <option value="animalia_cnidaria_orders_common">Cnidaria — common classes/orders</option>
+                  <option value="animalia_arthropoda_orders_common">Arthropoda — common classes/orders</option>
+                  <option value="animalia_arthropoda_insecta_orders_common">Insecta — common orders</option>
+                  <option value="animalia_chordata_classes_minus_tetrapoda">Chordata — classes minus Tetrapoda</option>
+                  <option value="animalia_chordata_tetrapoda_classes_minus_aves_and_mammalia">Tetrapoda — orders minus Aves and Mammalia</option>
                   <!-- <option value="animalia_chordata_tetrapoda_mammalia">Mammalia</option> -->
                   <!-- <option value="animalia_chordata_tetrapoda_carnivora">Carnivora</option> -->
                 </optgroup>
                 <optgroup label="Plantae">
                 <option value="plantae_divisions">Divisions</option>
-                <option value="plantae_pinopsida_genus_common">Pinopsida to common genera</option>
+                <option value="plantae_pinopsida_genus_common">Pinopsida — common genera</option>
                 </optgroup>
               </select>
             </div>

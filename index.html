@@ -39,18 +39,18 @@
                 <option value="all">All so far</option>
                 <hr />
                 <optgroup label="Animalia">
-                  <option value="animalia_phyla_common">Animalia to common Phyla</option>
-                  <option value="animalia_cnidaria_orders_common">Cnidaria to common classes/orders</option>
-                  <option value="animalia_arthropoda_orders_common">Arthropoda to common classes/orders</option>
-                  <option value="animalia_arthropoda_insecta_orders_common">Insecta to common orders</option>
-                  <option value="animalia_chordata_tetrapoda">Chordata to Tetrapoda</option>
-                  <option value="animalia_chordata_tetrapoda_aves">Tetrapoda to Aves</option>
+                  <option value="animalia_phyla_common">Animalia — common Phyla</option>
+                  <option value="animalia_cnidaria_orders_common">Cnidaria — common classes/orders</option>
+                  <option value="animalia_arthropoda_orders_common">Arthropoda — common classes/orders</option>
+                  <option value="animalia_arthropoda_insecta_orders_common">Insecta — common orders</option>
+                  <option value="animalia_chordata_classes_minus_tetrapoda">Chordata — classes minus Tetrapoda</option>
+                  <option value="animalia_chordata_tetrapoda_classes_minus_aves_and_mammalia">Tetrapoda — orders minus Aves and Mammalia</option>
                   <!-- <option value="animalia_chordata_tetrapoda_mammalia">Mammalia</option> -->
                   <!-- <option value="animalia_chordata_tetrapoda_carnivora">Carnivora</option> -->
                 </optgroup>
                 <optgroup label="Plantae">
                 <option value="plantae_divisions">Divisions</option>
-                <option value="plantae_pinopsida_genus_common">Pinopsida to common genera</option>
+                <option value="plantae_pinopsida_genus_common">Pinopsida — common genera</option>
                 </optgroup>
               </select>
             </div>
@@ -1417,7 +1417,7 @@
         "card": 6
       }
     ]
-    var data_animalia_chordata_tetrapoda = [
+    var data_animalia_chordata_classes_minus_tetrapoda = [
       {
         "name": "Cephalochordata",
         "parent": "Chordata",
@@ -1662,121 +1662,7 @@
         "card": 4
       }
     ]
-    var data_animalia_chordata_tetrapoda_carnivora = [
-      {
-        "name": "Felidae",
-        "parent": "Carnivora",
-        "rank": "Family",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Felis",
-        "parent": "Felidae",
-        "rank": "Genus",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Catus",
-        "parent": "Felis",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Pardalis",
-        "parent": "Felis",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Panthera",
-        "parent": "Felidae",
-        "rank": "Genus",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Pardus",
-        "parent": "Panthera",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Canidae",
-        "parent": "Carnivora",
-        "rank": "Family",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Canis",
-        "parent": "Canidae",
-        "rank": "Genus",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Familiaris",
-        "parent": "Canis",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Lupus",
-        "parent": "Canis",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Ursidae",
-        "parent": "Carnivora",
-        "rank": "Family",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Ursus",
-        "parent": "Ursidae",
-        "rank": "Genus",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Arctos",
-        "parent": "Ursus",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Horribilus",
-        "parent": "Ursus",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      }
-    ]
-    var data_animalia_chordata_tetrapoda_aves = [
+    var data_animalia_chordata_tetrapoda_classes_minus_aves_and_mammalia = [
       {
         "name": "Amphibia",
         "parent": "Tetrapoda",
@@ -2213,6 +2099,120 @@
           "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Southern_Cassowary_7071.jpg/330px-Southern_Cassowary_7071.jpg"
         ],
         "card": 3
+      }
+    ]
+    var data_animalia_chordata_tetrapoda_carnivora = [
+      {
+        "name": "Felidae",
+        "parent": "Carnivora",
+        "rank": "Family",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Felis",
+        "parent": "Felidae",
+        "rank": "Genus",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Catus",
+        "parent": "Felis",
+        "rank": "Species",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Pardalis",
+        "parent": "Felis",
+        "rank": "Species",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Panthera",
+        "parent": "Felidae",
+        "rank": "Genus",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Pardus",
+        "parent": "Panthera",
+        "rank": "Species",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Canidae",
+        "parent": "Carnivora",
+        "rank": "Family",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Canis",
+        "parent": "Canidae",
+        "rank": "Genus",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Familiaris",
+        "parent": "Canis",
+        "rank": "Species",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Lupus",
+        "parent": "Canis",
+        "rank": "Species",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Ursidae",
+        "parent": "Carnivora",
+        "rank": "Family",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Ursus",
+        "parent": "Ursidae",
+        "rank": "Genus",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Arctos",
+        "parent": "Ursus",
+        "rank": "Species",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Horribilus",
+        "parent": "Ursus",
+        "rank": "Species",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
       }
     ]
     var data_plantae_divisions = [
