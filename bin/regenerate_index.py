@@ -16,7 +16,8 @@ JSON_DATA_LIST = [
     'data_animalia_arthropoda_insecta_orders_common.json',
     'data_animalia_chordata_classes_minus_tetrapoda.json',
     'data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia.json',
-    'data_animalia_chordata_tetrapoda_carnivora.json',
+    'data_animalia_chordata_tetrapoda_mammalia_orders.json',
+    'data_animalia_chordata_tetrapoda_mammalia_carnivora_families.json',
     'data_plantae_divisions.json',
     'data_plantae_pinopsida_genus_common.json',
 ]
@@ -141,8 +142,8 @@ def get_html() -> str:
                   <option value="animalia_arthropoda_insecta_orders_common">Insecta — common orders</option>
                   <option value="animalia_chordata_classes_minus_tetrapoda">Chordata — classes minus Tetrapoda</option>
                   <option value="animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia">Tetrapoda — orders minus Aves and Mammalia</option>
-                  <!-- <option value="animalia_chordata_tetrapoda_mammalia">Mammalia</option> -->
-                  <!-- <option value="animalia_chordata_tetrapoda_carnivora">Carnivora</option> -->
+                  <option value="animalia_chordata_tetrapoda_mammalia_orders">Mammalia — orders</option>
+                  <!-- <option value="animalia_chordata_tetrapoda_mammalia_carnivora_families">Carnivora — families</option> -->
                 </optgroup>
                 <optgroup label="Plantae">
                 <option value="plantae_divisions">Divisions</option>

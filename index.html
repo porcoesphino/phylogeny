@@ -35,8 +35,7 @@
         pronunciation, a short description and some images.
       </p>
       <p>
-        Deep linking should work so you can collapse this section, refresh and not need to read it
-        again.
+        Deep linking should work so you can collapse this section, refresh and not see it again.
       </p>
       <p>
         This website is obviously reinventing the wheel a little but it was mostly just cleaning up
@@ -47,7 +46,7 @@
         framework to quickly attach all the new things I was learning about these different
         ecosystems. I found a great starting place was the
         <a href="https://www.youtube.com/playlist?list=PLybg94GvOJ9HpCr9iU9YXHa5kXj0Pp2dA">Zoology
-          Youtube playlist from Professor Dave Explains</a>. Memorising parts of it to get familiar
+        Youtube playlist from Professor Dave Explains</a>. Memorising parts of it to get familiar
         was maybe a bit excessive but here we are.
       </p>
     </div>
@@ -83,8 +82,8 @@
                   <option value="animalia_arthropoda_insecta_orders_common">Insecta — common orders</option>
                   <option value="animalia_chordata_classes_minus_tetrapoda">Chordata — classes minus Tetrapoda</option>
                   <option value="animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia">Tetrapoda — orders minus Aves and Mammalia</option>
-                  <!-- <option value="animalia_chordata_tetrapoda_mammalia">Mammalia</option> -->
-                  <!-- <option value="animalia_chordata_tetrapoda_carnivora">Carnivora</option> -->
+                  <option value="animalia_chordata_tetrapoda_mammalia_orders">Mammalia — orders</option>
+                  <!-- <option value="animalia_chordata_tetrapoda_mammalia_carnivora_families">Carnivora — families</option> -->
                 </optgroup>
                 <optgroup label="Plantae">
                 <option value="plantae_divisions">Divisions</option>
@@ -1583,6 +1582,7 @@
         "tag": "The cartilaginous fish.",
         "common": [
           "sharks",
+          "whale sharks",
           "rays",
           "skates",
           "sawfish"
@@ -2139,115 +2139,747 @@
         "card": 3
       }
     ]
-    var data_animalia_chordata_tetrapoda_carnivora = [
+    var data_animalia_chordata_tetrapoda_mammalia_orders = [
       {
-        "name": "Felidae",
+        "name": "Monotremata",
+        "parent": "Mammalia",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [
+          "platypus",
+          "echidnas"
+        ],
+        "tag": "Mammals that lay eggs but still nurse their young with milk.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_surfacing_Scottsdale.jpg/250px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_surfacing_Scottsdale.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Short-beaked_echidna_%28Tachyglossus_aculeatus_setosus%29_Scottsdale.jpg/330px-Short-beaked_echidna_%28Tachyglossus_aculeatus_setosus%29_Scottsdale.jpg"
+        ],
+        "card": 1
+      },
+      {
+        "name": "Marsupialia",
+        "parent": "Mammalia",
+        "rank": "Infraclass",
+        "ipa": "",
+        "etymology": "",
+        "common": [
+          "kangaroos",
+          "koalas",
+          "opossums",
+          "possums",
+          "wombats",
+          "wallabies",
+          "bandicoots"
+        ],
+        "tag": "Bear their young within a pouch on the mother's abdomen after a birth in a relatively undeveloped state.",
+        "imgs": [],
+        "card": 1
+      },
+      {
+        "name": "Paucituberculata",
+        "parent": "Marsupialia",
+        "rank": "Order",
+        "ipa": "ˌpɔːsɪtjuːˌbɜːrkjuːˈleɪtə",
+        "etymology": "",
+        "common": [
+          "shrew opossums"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Caenolestes_sangay._Foto_Jorge_Brito.jpg/330px-Caenolestes_sangay._Foto_Jorge_Brito.jpg"
+        ],
+        "card": 2
+      },
+      {
+        "name": "Didelphimorphia",
+        "parent": "Marsupialia",
+        "rank": "Order",
+        "ipa": "daɪˌdɛlfɪˈmɔːrfiə",
+        "etymology": "",
+        "common": [
+          "opossums"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Didelphis_virginiana_with_young.JPG/330px-Didelphis_virginiana_with_young.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Opossum2.jpg/330px-Opossum2.jpg"
+        ],
+        "card": 2
+      },
+      {
+        "name": "Microbiotheria",
+        "parent": "Marsupialia",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Monito_del_Monte_ps6.jpg/250px-Monito_del_Monte_ps6.jpg"
+        ],
+        "card": 2
+      },
+      {
+        "name": "Eomarsupialia",
+        "parent": "Marsupialia",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [],
+        "tag": "The Australasian marsupials. They descend from a single dispersal event from South America via Antartica.",
+        "imgs": [],
+        "card": 2
+      },
+      {
+        "name": "Notoryctidae",
+        "parent": "Eomarsupialia",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [
+          "marsupial moles"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Em_-_Notoryctes_typhlops_-_1.jpg/330px-Em_-_Notoryctes_typhlops_-_1.jpg"
+        ],
+        "card": 3
+      },
+      {
+        "name": "Peramelemorphia",
+        "parent": "Eomarsupialia",
+        "rank": "Order",
+        "ipa": "pɛrəmɛlɪˈmɔːrfiə",
+        "etymology": "",
+        "common": [
+          "bandicoots",
+          "bilbies"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Perameles_gunnii_268991712.jpg/330px-Perameles_gunnii_268991712.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Southern_Brown_Bandicoot_%28Isoodon_obesulus%29_2%2C_Vic%2C_jjron%2C_09.01.2013.jpg/330px-Southern_Brown_Bandicoot_%28Isoodon_obesulus%29_2%2C_Vic%2C_jjron%2C_09.01.2013.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/8/8c/Macrotis_lagotis_-_bandicut_conejo.jpg"
+        ],
+        "card": 3
+      },
+      {
+        "name": "Dasyuromorphia",
+        "parent": "Eomarsupialia",
+        "rank": "Order",
+        "ipa": "dæsijʊəroʊˈmɔːrfiə",
+        "etymology": "greek 'hairy tail'",
+        "common": [
+          "quolls",
+          "dunnarts",
+          "numbats",
+          "Tasmanian devils",
+          "Tasmanian tigers"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sarcophilus_harrisii_taranna.jpg/330px-Sarcophilus_harrisii_taranna.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Eastern_quoll_%28Dasyurus_viverrinus%29_fawn_morph_Esk_Valley.jpg/330px-Eastern_quoll_%28Dasyurus_viverrinus%29_fawn_morph_Esk_Valley.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Fat-tailed_Dunnart_%28Sminthopsis_crassicaudata%29_%2814559441713%29.jpg/330px-Fat-tailed_Dunnart_%28Sminthopsis_crassicaudata%29_%2814559441713%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Myrmecobius_fasciatus_259629687.jpg/330px-Myrmecobius_fasciatus_259629687.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/d/d5/Thylacinus.jpg"
+        ],
+        "card": 3
+      },
+      {
+        "name": "Diprotodontia",
+        "parent": "Eomarsupialia",
+        "rank": "Order",
+        "ipa": "daɪˌproʊtəˈdɒntiə",
+        "etymology": "Greek 'two forward teeth'",
+        "common": [
+          "kangaroos",
+          "wallabies",
+          "possums",
+          "koala",
+          "wombats"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/250px-Koala_climbing_tree.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/0/01/Mahogany_glider.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Macropus_giganteus_-_Brunkerville.jpg/250px-Macropus_giganteus_-_Brunkerville.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Ailurops_ursinus_Naemundung_2_North_Sulawesi.jpg/330px-Ailurops_ursinus_Naemundung_2_North_Sulawesi.jpg"
+        ],
+        "card": 3
+      },
+      {
+        "name": "Placentalia",
+        "parent": "Mammalia",
+        "rank": "Infraclass",
+        "ipa": "",
+        "etymology": "",
+        "common": [],
+        "tag": "Carry the fetus in the uterus of the mother to a relatively late stage of development.",
+        "imgs": [],
+        "card": 1
+      },
+      {
+        "name": "Xenarthra",
+        "parent": "Placentalia",
+        "rank": "Superorder",
+        "ipa": "zɛˈnɑːrθrə",
+        "etymology": "greek 'unusual'-'joint'",
+        "common": [
+          "anteaters",
+          "sloths",
+          "armadillos"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Myresluger2.jpg/330px-Myresluger2.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/330px-Bicho-pregui%C3%A7a_3.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Nine-banded_Armadillo_%28Dasypus_novemcinctus%29_%2837649606094%29.jpg/330px-Nine-banded_Armadillo_%28Dasypus_novemcinctus%29_%2837649606094%29.jpg"
+        ],
+        "card": 1
+      },
+      {
+        "name": "Cingulata",
+        "parent": "Xenarthra",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [
+          "armadillos"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Nine-banded_Armadillo_%28Dasypus_novemcinctus%29_%2837649606094%29.jpg/330px-Nine-banded_Armadillo_%28Dasypus_novemcinctus%29_%2837649606094%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Nine-banded_Armadillo.jpg/330px-Nine-banded_Armadillo.jpg"
+        ],
+        "card": 4
+      },
+      {
+        "name": "Pilosa",
+        "parent": "Xenarthra",
+        "rank": "Order",
+        "ipa": "paɪˈloʊsə",
+        "etymology": "latin 'hairy'",
+        "common": [
+          "anteaters",
+          "sloths"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/e/e1/Myresluger.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Myresluger2.jpg/330px-Myresluger2.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Silky_Anteater.jpg/330px-Silky_Anteater.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Cholepus_didactylus_-_Flickr_-_Dick_Culbert.jpg/330px-Cholepus_didactylus_-_Flickr_-_Dick_Culbert.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Bradypus.jpg/250px-Bradypus.jpg"
+        ],
+        "card": 4
+      },
+      {
+        "name": "Afrotheria",
+        "parent": "Placentalia",
+        "rank": "Superorder",
+        "ipa": "",
+        "etymology": "latin 'african'-'wild beasts'",
+        "common": [
+          "golden moles",
+          "elephant shrews",
+          "otter shrews",
+          "tenrecs",
+          "aardvarks",
+          "hyraxes",
+          "elephants",
+          "sea cows"
+        ],
+        "tag": "",
+        "imgs": [],
+        "card": 1
+      },
+      {
+        "name": "Paenungulata",
+        "parent": "Afrotheria",
+        "rank": "Grandorder",
+        "ipa": "",
+        "etymology": "latin 'almost'-'having hoofs'",
+        "common": [],
+        "tag": "",
+        "imgs": [],
+        "card": 5
+      },
+      {
+        "name": "Hyracoidea",
+        "parent": "Paenungulata",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [
+          "hyraxes",
+          "dassies"
+        ],
+        "tag": "Small, stout, thickset, herbivorous mammals with multichambered stomachs.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Klipdas.jpg/330px-Klipdas.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Hyrax_on_the_Rocks.JPG/330px-Hyrax_on_the_Rocks.JPG"
+        ],
+        "card": 6
+      },
+      {
+        "name": "Sirenia",
+        "parent": "Paenungulata",
+        "rank": "Order",
+        "ipa": "saɪˈriːni.ə",
+        "etymology": "",
+        "common": [
+          "sea cows",
+          "dugong",
+          "manatees"
+        ],
+        "tag": "Fully aquatic, herbivorous mammals.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/3/3b/Manatee_Florida.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/7/75/Dugong_dugon.jpg"
+        ],
+        "card": 6
+      },
+      {
+        "name": "Proboscidea",
+        "parent": "Paenungulata",
+        "rank": "Order",
+        "ipa": "ˌproʊbəˈsɪdiə",
+        "etymology": "latin 'elephant's trunk'",
+        "common": [
+          "elephants",
+          "mastodons",
+          "mammoths",
+          "gomphotheres",
+          "stegodonts"
+        ],
+        "tag": "Herbivorous mammals that are typically large with extant species having long tusks and strong mobile trunks.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tuskercorbett.jpg/330px-Tuskercorbett.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Herd_of_Elephants.jpg/330px-Herd_of_Elephants.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Loxodontacyclotis.jpg/330px-Loxodontacyclotis.jpg"
+        ],
+        "card": 6
+      },
+      {
+        "name": "Tubulidentata",
+        "parent": "Afrotheria",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "latin 'tubule'-'tooth'",
+        "common": [
+          "aardvarks"
+        ],
+        "tag": "Mammals with tubule-style teeth. Extant species are medium-sized, burrowing, nocturnal mammals native to Africa that feed almost exclusively on termites and ants.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/SanWild17.jpg/330px-SanWild17.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Orycteropus_afer_175359476.jpg/250px-Orycteropus_afer_175359476.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Orycteropus_afer_175359469.jpg/330px-Orycteropus_afer_175359469.jpg"
+        ],
+        "card": 5
+      },
+      {
+        "name": "Macroscelidea",
+        "parent": "Afrotheria",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [
+          "Elephant shrews",
+          "jumping shrews",
+          "sengis"
+        ],
+        "tag": "Small quadrupedal insectivorous mammals with scaly tails and long snouts native to Africa that are superficially similar to shrews.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Rhynchocyon_petersi_from_side.jpg/330px-Rhynchocyon_petersi_from_side.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/b/bc/Bushveld-elephant-shrew.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Petrodromus_tetradactylus-Zootaxa.jpg/330px-Petrodromus_tetradactylus-Zootaxa.jpg"
+        ],
+        "card": 5
+      },
+      {
+        "name": "Afrosoricida",
+        "parent": "Afrotheria",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "latin 'looking like African shrews'",
+        "common": [
+          "golden moles",
+          "otter shrews",
+          "tenrecs"
+        ],
+        "tag": "These small mammals have dirersified into a number of faunivorous niches in Madagascar and Africa so their morphology can vary with some species bearing similarities to hedgehogs, moles, shrews, or miniature otters.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Amblysomus_hottentotus_%28Palmiet_Nature_Reserve%2C_South_Africa_East_Coast%29_2.jpg/330px-Amblysomus_hottentotus_%28Palmiet_Nature_Reserve%2C_South_Africa_East_Coast%29_2.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Chrysochloris_asiatica_Cape_golden_mole_adult_IMG_7120.jpg/330px-Chrysochloris_asiatica_Cape_golden_mole_adult_IMG_7120.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Potamogale_velox_340101862.jpg/330px-Potamogale_velox_340101862.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/0/01/Kleiner-igeltanrek-a.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Microgale_cowani.jpg/250px-Microgale_cowani.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tanrek.jpg/330px-Tanrek.jpg"
+        ],
+        "card": 5
+      },
+      {
+        "name": "Laurasiatheria",
+        "parent": "Placentalia",
+        "rank": "Superorder",
+        "ipa": "lɔːrˌeɪʒəˈθɪəriə",
+        "etymology": "'Laurasian beasts'",
+        "common": [],
+        "tag": "",
+        "imgs": [],
+        "card": 1
+      },
+      {
+        "name": "Eulipotyphla",
+        "parent": "Laurasiatheria",
+        "rank": "Order",
+        "ipa": "ˌjuːlɪpoʊˈtɪflə",
+        "etymology": "'lacking a cecum'",
+        "common": [
+          "hedgehogs",
+          "gymnures",
+          "solenodons",
+          "moles",
+          "shrew-like moles",
+          "desmans",
+          "true shrews"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Talpa_europaea_MHNT_Tete.jpg/330px-Talpa_europaea_MHNT_Tete.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/0/09/Hispaniolan_Solenodon_crop.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Sorex-araneus.jpg/330px-Sorex-araneus.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Erinaceus_europaeus_%28Linnaeus%2C_1758%29.jpg/330px-Erinaceus_europaeus_%28Linnaeus%2C_1758%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Talpa_europaea_MHNT.jpg/330px-Talpa_europaea_MHNT.jpg"
+        ],
+        "card": 7
+      },
+      {
+        "name": "Chiroptera",
+        "parent": "Laurasiatheria",
+        "rank": "Order",
+        "ipa": "kaɪˈrɒptərə",
+        "etymology": "",
+        "common": [],
+        "tag": "The only mammals capable of true and sustained flight. Most are nocturnal, and many roost in caves. Many are insectivores, but some eat fruit, nectar, or blood.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/0/0d/Gro%C3%9Fes_Mausohr.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Lesser_short-nosed_fruit_bat_%28Cynopterus_brachyotis%29.jpg/330px-Lesser_short-nosed_fruit_bat_%28Cynopterus_brachyotis%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/3/3f/Golden_crowned_fruit_bat.jpg"
+        ],
+        "card": 7
+      },
+      {
+        "name": "Ferungulata",
+        "parent": "Laurasiatheria",
+        "rank": "Grandorder",
+        "ipa": "",
+        "etymology": "'wild beasts and ungulates'",
+        "common": [],
+        "tag": "",
+        "imgs": [],
+        "card": 7
+      },
+      {
+        "name": "Pholidota",
+        "parent": "Ferungulata",
+        "rank": "Order",
+        "ipa": "fɒlɪˈdoʊtə",
+        "etymology": "greek 'clad in scales'",
+        "common": [
+          "pangolins",
+          "scaly anteaters"
+        ],
+        "tag": "Nocturnal mammals with large, protective keratin scales that live in hollow trees or burrows that mostly feed on ants and termites.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Pangolin_brought_to_the_Range_office%2C_KMTR_AJTJ_cropped.jpg/330px-Pangolin_brought_to_the_Range_office%2C_KMTR_AJTJ_cropped.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Manis_temminckii_%2829390603130%29.jpg/330px-Manis_temminckii_%2829390603130%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Philippine_Pangolin_Curled-up_by_Gregg_Yan.jpg/330px-Philippine_Pangolin_Curled-up_by_Gregg_Yan.jpg"
+        ],
+        "card": 8
+      },
+      {
+        "name": "Carnivora",
+        "parent": "Ferungulata",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [],
+        "tag": "An order of placental mammals specialized primarily in eating flesh.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/7_Walross_1999.jpg/330px-7_Walross_1999.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/%E7%8C%8E%E8%B1%B9.jpg/330px-%E7%8C%8E%E8%B1%B9.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Grizzly_Bear_Drip_%286968122232%29.jpg/330px-Grizzly_Bear_Drip_%286968122232%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/North_American_Wolf_-_Tala_0912_%287263487664%29.jpg/330px-North_American_Wolf_-_Tala_0912_%287263487664%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/MinkforWiki.jpg/330px-MinkforWiki.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Bored_Raccoon.jpg/330px-Bored_Raccoon.jpg"
+        ],
+        "card": 8
+      },
+      {
+        "name": "Euungulata",
+        "parent": "Ferungulata",
+        "rank": "",
+        "ipa": "",
+        "etymology": "'true ungulates'",
+        "common": [],
+        "tag": "Typically herbivorous mammals that descended from hooved ancestors.",
+        "imgs": [],
+        "card": 8
+      },
+      {
+        "name": "Perissodactyla",
+        "parent": "Euungulata",
+        "rank": "Order",
+        "ipa": "pəˌrɪsoʊˈdæktɪlə",
+        "etymology": "greek 'odd'-'toe'",
+        "common": [
+          "horses",
+          "asses",
+          "zebras",
+          "rhinoceroses",
+          "tapirs"
+        ],
+        "tag": "The odd-toed ungulates are herbivores that digest plant cellulose in their intestines in an enlarged cecum.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Ybtpr_3b_%2816045157658%29.jpg/330px-Ybtpr_3b_%2816045157658%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Eurasian_wild_horse.jpg/330px-Eurasian_wild_horse.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Waterberg_Nashorn2.jpg/330px-Waterberg_Nashorn2.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Plains_Zebra_Equus_quagga_cropped.jpg/250px-Plains_Zebra_Equus_quagga_cropped.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/1/1a/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Schabrackentapir_Tapirus_indicus_Tiergarten-Nuernberg-1.jpg/330px-Schabrackentapir_Tapirus_indicus_Tiergarten-Nuernberg-1.jpg"
+        ],
+        "card": 8
+      },
+      {
+        "name": "Artiodactyla",
+        "parent": "Euungulata",
+        "rank": "Order",
+        "ipa": "ˌɑːrtioʊˈdæktɪlə",
+        "etymology": "greek 'even'-'toe'",
+        "common": [
+          "pigs",
+          "hippopotamuses",
+          "antelopes",
+          "deer",
+          "giraffes",
+          "camels",
+          "llamas",
+          "sheep",
+          "cattle",
+          "whales",
+          "dolphins"
+        ],
+        "tag": "The even-toed ungulates bear weight equally on an even number of their toes and digest plant cellulose in one or more stomach chambers. Many are herbivores, but some are omnivorous, and others are entirely carnivorous.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Choeropsis.jpg/330px-Choeropsis.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Sable_bull.jpg/330px-Sable_bull.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/White-tailed_deer.jpg/330px-White-tailed_deer.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Giraffe_Mikumi_National_Park.jpg/250px-Giraffe_Mikumi_National_Park.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg/250px-07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Alpaca_%2831562329701%29.jpg/250px-Alpaca_%2831562329701%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/2005_04_27_1582_Dall_Sheep.jpg/330px-2005_04_27_1582_Dall_Sheep.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Dolphin_Encounter-9563.jpg/330px-Dolphin_Encounter-9563.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/330px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Mother_and_baby_sperm_whale.jpg/330px-Mother_and_baby_sperm_whale.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Eubalaena_glacialis_with_calf.jpg/250px-Eubalaena_glacialis_with_calf.jpg"
+        ],
+        "card": 8
+      },
+      {
+        "name": "Euarchontoglires",
+        "parent": "Placentalia",
+        "rank": "Superorder",
+        "ipa": "",
+        "etymology": "'true rulers'-'dormice'",
+        "common": [
+          "rodents",
+          "lagomorphs",
+          "treeshrews",
+          "primates",
+          "colugos"
+        ],
+        "tag": "",
+        "imgs": [],
+        "card": 1
+      },
+      {
+        "name": "Scandentia",
+        "parent": "Euarchontoglires",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "latin 'to climb'",
+        "common": [
+          "tree shrews",
+          "banxrings"
+        ],
+        "tag": "Omnivorous mammals that live in small family groups, resemble shews and some species live in trees.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Spitzh%C3%B6rnchen.JPG/330px-Spitzh%C3%B6rnchen.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Tupaia_minor.jpg/330px-Tupaia_minor.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/7/78/Anathana_ellioti.jpg"
+        ],
+        "card": 9
+      },
+      {
+        "name": "Lagomorpha",
+        "parent": "Euarchontoglires",
+        "rank": "Order",
+        "ipa": "ˈlæɡəmɔːrf",
+        "etymology": "",
+        "common": [
+          "rabbits",
+          "hares",
+          "pikas"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Eastern_Cottontail.JPG/250px-Eastern_Cottontail.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/The_Pika.jpg/330px-The_Pika.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Pika.jpg/330px-Pika.jpg"
+        ],
+        "card": 9
+      },
+      {
+        "name": "Rodentia",
+        "parent": "Euarchontoglires",
+        "rank": "Order",
+        "ipa": "roʊˈdɛnʃə",
+        "etymology": "latin 'to gnaw'",
+        "common": [
+          "mice",
+          "rats",
+          "squirrels",
+          "prairie dogs",
+          "porcupines",
+          "beavers",
+          "guinea pigs",
+          "hamsters"
+        ],
+        "tag": "The group is characterized by a single pair of continuously growing incisors in each of the upper and lower jaws.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Hydrochoeris_hydrochaeris_in_Brazil_in_Petr%C3%B3polis%2C_Rio_de_Janeiro%2C_Brazil_09.jpg/330px-Hydrochoeris_hydrochaeris_in_Brazil_in_Petr%C3%B3polis%2C_Rio_de_Janeiro%2C_Brazil_09.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Goldmantelziesel.jpg/330px-Goldmantelziesel.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/250px-American_Beaver.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/8/8f/Mouse_white_background.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/MainePorcupine.JPG/330px-MainePorcupine.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Cynomys_parvidens_%2829259482624%29.jpg/330px-Cynomys_parvidens_%2829259482624%29.jpg"
+        ],
+        "card": 9
+      },
+      {
+        "name": "Dermoptera",
+        "parent": "Euarchontoglires",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [
+          "colugos",
+          "flying lemurs"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Colugo_%28Galeopterus_variegatus%2C_adult_female%29%2C_Central_Catchment_Area%2C_Singapore_-_20060618.jpg/250px-Colugo_%28Galeopterus_variegatus%2C_adult_female%29%2C_Central_Catchment_Area%2C_Singapore_-_20060618.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Flying_Lemur_%26_Baby%2C_Bohol.jpg/250px-Flying_Lemur_%26_Baby%2C_Bohol.jpg"
+        ],
+        "card": 9
+      },
+      {
+        "name": "Primates",
+        "parent": "Euarchontoglires",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "",
+        "common": [
+          "lemurs",
+          "galagos",
+          "lorisids",
+          "monkeys",
+          "apes"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lemur_catta_001.jpg/330px-Lemur_catta_001.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Bohol_Tarsier.jpg/330px-Bohol_Tarsier.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Hylobates_lar_pair_of_white_and_black_01.jpg/330px-Hylobates_lar_pair_of_white_and_black_01.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/250px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Papio_hamadryas_%28aka%29.jpg/330px-Papio_hamadryas_%28aka%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/250px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg"
+        ],
+        "card": 9
+      }
+    ]
+    var data_animalia_chordata_tetrapoda_mammalia_carnivora_families = [
+      {
+        "name": "Caniformia",
         "parent": "Carnivora",
-        "rank": "Family",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Felis",
-        "parent": "Felidae",
-        "rank": "Genus",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Catus",
-        "parent": "Felis",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Pardalis",
-        "parent": "Felis",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Panthera",
-        "parent": "Felidae",
-        "rank": "Genus",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Pardus",
-        "parent": "Panthera",
-        "rank": "Species",
+        "rank": "Suborder",
         "ipa": "",
         "etymology": "",
         "tag": ""
       },
       {
         "name": "Canidae",
-        "parent": "Carnivora",
+        "parent": "Caniformia",
         "rank": "Family",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Canis",
-        "parent": "Canidae",
-        "rank": "Genus",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Familiaris",
-        "parent": "Canis",
-        "rank": "Species",
-        "ipa": "",
-        "etymology": "",
-        "tag": ""
-      },
-      {
-        "name": "Lupus",
-        "parent": "Canis",
-        "rank": "Species",
         "ipa": "",
         "etymology": "",
         "tag": ""
       },
       {
         "name": "Ursidae",
-        "parent": "Carnivora",
+        "parent": "Caniformia",
         "rank": "Family",
         "ipa": "",
         "etymology": "",
         "tag": ""
       },
       {
-        "name": "Ursus",
-        "parent": "Ursidae",
-        "rank": "Genus",
+        "name": "Pinnipedia",
+        "parent": "Caniformia",
+        "rank": "Clade",
         "ipa": "",
         "etymology": "",
         "tag": ""
       },
       {
-        "name": "Arctos",
-        "parent": "Ursus",
-        "rank": "Species",
+        "name": "Phocidae",
+        "parent": "Pinnipedia",
+        "rank": "Family",
         "ipa": "",
         "etymology": "",
         "tag": ""
       },
       {
-        "name": "Horribilus",
-        "parent": "Ursus",
-        "rank": "Species",
+        "name": "Otariidae",
+        "parent": "Pinnipedia",
+        "rank": "ClFamilyade",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Odobenidae",
+        "parent": "Pinnipedia",
+        "rank": "Family",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Feliformia",
+        "parent": "Carnivora",
+        "rank": "Suborder",
+        "ipa": "",
+        "etymology": "",
+        "tag": ""
+      },
+      {
+        "name": "Felidae",
+        "parent": "Feliformia",
+        "rank": "Family",
         "ipa": "",
         "etymology": "",
         "tag": ""
