@@ -74,6 +74,43 @@ def get_html() -> str:
 
   <h1 class="title">A simplified tree of life</h1>
 
+  <details class="controls" id="summary-accordion" open>
+    <summary>Summary</summary>
+    <div>
+      <p>
+        This website is a way to help me memorise a simplified phylogenetic tree of life. The
+        traditional taxonomic trees are easier to understand but a bit misleading and many of the
+        great online sources for phylogenetic trees are pretty complicated. The aim here was to
+        have a tree that was accurate enough to get a bit of an understanding without getting too
+        complicated and to then split it up into smaller chunks that can be memorised with
+        <a href="https://apps.ankiweb.net/">Anki</a>
+        <a href="https://docs.ankiweb.net/?search=cloze%20deletion">cloze cards</a>. To achieve
+        this I've mostly flattened complicated parts of the tree or parts that seemed less certain.
+        I aimed to include some context without adding too much noise or individual detail.
+      </p>
+      <p>
+        Each item has the name of the group, and a link back to Wikipedia. Most will list the more
+        well known life in the group, the IPA pronunciation of the name, a link to play the IPA
+        pronunciation, a short description and some images.
+      </p>
+      <p>
+        Deep linking should work so you can collapse this section, refresh and not see it again.
+      </p>
+      <p>
+        This website is obviously reinventing the wheel a little but it was mostly just cleaning up
+        notes I already had and adding a generator for the
+        <a href="https://apps.ankiweb.net/">Anki</a> cards I was already building. I'd always been
+        a bit interested in the tree of life but I became a lot more interested in it after I began
+        working remote and exploring National Parks soon after COVID. I quickly wanted a stable
+        framework to quickly attach all the new things I was learning about these different
+        ecosystems. I found a great starting place was the
+        <a href="https://www.youtube.com/playlist?list=PLybg94GvOJ9HpCr9iU9YXHa5kXj0Pp2dA">Zoology
+        Youtube playlist from Professor Dave Explains</a>. Memorising parts of it to get familiar
+        was maybe a bit excessive but here we are.
+      </p>
+    </div>
+  </details>
+
   <details class="controls" id="controls-accordion">
     <summary>Controls</summary>
     <div>

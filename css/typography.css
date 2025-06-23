@@ -20,3 +20,13 @@ h2 {
   font-size: 1.2em;
   padding: 1rem;
 }
+
+p {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: #303030;
+
+  a {
+    color: #3e7774;
+  }
+}

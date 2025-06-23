@@ -347,8 +347,6 @@ class Page {
       card_select_change()
     });
 
-    Page.add_query_param_update_for_details_accordion_state('controls-accordion')
-
     var page_load_callback = () => {
       this.page_load_callback()
     }
@@ -431,6 +429,13 @@ class Page {
 
     var controls_are_open = this.query_params.get('controls-accordion')  // Treat any value as 'open'.
     Page.set_details_accordion_state('controls-accordion', controls_are_open)
+
+    var controls_are_open = this.query_params.get('summary-accordion')  // Treat any value as 'open'.
+    Page.set_details_accordion_state('summary-accordion', controls_are_open)
+
+    Page.add_query_param_update_for_details_accordion_state('controls-accordion')
+
+    Page.add_query_param_update_for_details_accordion_state('summary-accordion')
   }
 }
 
