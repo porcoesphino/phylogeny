@@ -20,7 +20,7 @@ JSON_DATA_LIST = [
     'data_animalia_chordata_tetrapoda_mammalia_orders.json',
     'data_animalia_chordata_tetrapoda_mammalia_carnivora_families.json',
     'data_plantae_divisions.json',
-    'data_plantae_pinopsida_genus_common.json',
+    'data_plantae_pinophyta_genus_common.json',
     'data_plantae_angiosperm_orders_minus_monocots_eudicots.json',
     'data_plantae_angiosperm_monocots_orders.json',
 ]
@@ -151,7 +151,7 @@ def get_html() -> str:
                 </optgroup>
                 <optgroup label="Plantae">
                 <option value="plantae_divisions">Divisions</option>
-                <option value="plantae_pinopsida_genus_common">Pinopsida — common genera</option>
+                <option value="plantae_pinophyta_genus_common">Pinophyta — common genera</option>
                 <option value="plantae_angiosperm_orders_minus_monocots_eudicots">Angiosperm — orders minus Monocots and Eudicots</option>
                 <option value="plantae_angiosperm_monocots_orders">Monocot — orders</option>
                 </optgroup>
