@@ -1,5 +1,15 @@
 [
   {
+    "name": "Pinopsida",
+    "parent": "Pinophyta",
+    "rank": "Class",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [],
+    "card": 1
+  },
+  {
     "name": "Pinales",
     "parent": "Pinopsida",
     "rank": "Order",
