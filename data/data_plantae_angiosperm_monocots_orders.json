@@ -1,0 +1,268 @@
+[
+  {
+    "name": "Alismatid monocots",
+    "parent": "Monocots",
+    "rank": "Grade",
+    "ipa": "",
+    "common": [],
+    "tag": "The grade that includes the two basal monocot orders.",
+    "imgs": [
+      ""
+    ],
+    "card": 1
+  },
+  {
+    "name": "Acorales",
+    "parent": "Alismatid monocots",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "sweet flags"
+    ],
+    "tag": "An order that's sister to all other known monocots.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Acorus_americanus_USFS-1.jpg/250px-Acorus_americanus_USFS-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Acorus_calamus1.jpg/250px-Acorus_calamus1.jpg"
+    ],
+    "card": 2
+  },
+  {
+    "name": "Alismatales",
+    "parent": "Alismatid monocots",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "taros",
+      "arrowgrass",
+      "surfgrass",
+      "seagrass"
+    ],
+    "tag": "An order of monocots often found in aquatic and marshy habitats, and the only known to have green embryos other than the Amaryllidaceae family.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Posidonia_oceanica_%28L%29.jpg/330px-Posidonia_oceanica_%28L%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Butomus_umbellatus_-_harilik_luigelill_Keilas.jpg/250px-Butomus_umbellatus_-_harilik_luigelill_Keilas.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Spathiphyllum_cochlearispathum_RTBG.jpg/250px-Spathiphyllum_cochlearispathum_RTBG.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/044_Dracunculus_vulgaris_at_Akrotiri_peninsula%2C_Crete%2C_Greece.jpg/250px-044_Dracunculus_vulgaris_at_Akrotiri_peninsula%2C_Crete%2C_Greece.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ottelia_alismoides_W_IMG_0915.jpg/330px-Ottelia_alismoides_W_IMG_0915.jpg"
+    ],
+    "card": 2
+  },
+  {
+    "name": "Lilioid monocots",
+    "parent": "Monocots",
+    "rank": "Grade",
+    "ipa": "",
+    "common": [],
+    "tag": "A grade of monocots that has lily like flowers.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Shoshan-Zachi-Evenor-6964.jpg/250px-Shoshan-Zachi-Evenor-6964.jpg"
+    ],
+    "card": 1
+  },
+  {
+    "name": "Petrosaviales",
+    "parent": "Lilioid monocots",
+    "rank": "Order",
+    "ipa": "",
+    "common": [],
+    "tag": "An order of monocots found in low-light montane rainforests with some unable to photosynthesise so instead take their food from fungi.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Japonolirion_osense_1.JPG/330px-Japonolirion_osense_1.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Petrosavia_sakuraii_ihenglan_1.jpg/250px-Petrosavia_sakuraii_ihenglan_1.jpg"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Dioscoreales",
+    "parent": "Lilioid monocots",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "yams",
+      "fairy lanterns"
+    ],
+    "tag": "A monocot order of vines and herbaceous forest floor plants with some unable to photosynthesise so instead take their food from fungi.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Apteria_aphylla000004.jpg/250px-Apteria_aphylla000004.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Thismia_rodwayi_%28Fairy_lantern%29_2.JPG/330px-Thismia_rodwayi_%28Fairy_lantern%29_2.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Dioscorea_balcanica_BotGardBln310505.jpg/250px-Dioscorea_balcanica_BotGardBln310505.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Tiputinia_foetida_Pastaza.jpg/330px-Tiputinia_foetida_Pastaza.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Aletris_farinosa_CBM-34.png/250px-Aletris_farinosa_CBM-34.png"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Pandanales",
+    "parent": "Lilioid monocots",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "pandan",
+      "toquilla palm",
+      "palmilla"
+    ],
+    "tag": "A monocot order of the pandans or screw-pines with some unable to photosynthesise so instead take their food from fungi.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Xerophyta_retinervis00.jpg/250px-Xerophyta_retinervis00.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Sciaphila_secundiflora_Thwaites_ex_Benth.%2C_1855_%E9%8C%AB%E8%98%AD%E9%9C%89%E8%8D%89_%2819886718405%29.jpg/250px-Sciaphila_secundiflora_Thwaites_ex_Benth.%2C_1855_%E9%8C%AB%E8%98%AD%E9%9C%89%E8%8D%89_%2819886718405%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Croomia_heterosepala_flower.jpg/330px-Croomia_heterosepala_flower.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Chottola.jpg/250px-Chottola.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Pandanus_tectorius_%285187732979%29.jpg/330px-Pandanus_tectorius_%285187732979%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Starr_030807-0128_Carludovica_palmata.jpg/250px-Starr_030807-0128_Carludovica_palmata.jpg"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Liliales",
+    "parent": "Lilioid monocots",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "lily",
+      "tulip",
+      "greenbrier"
+    ],
+    "tag": "A monocot order that necessarily includes the family Liliaceae that are predominantly perennial erect or twining herbaceous and climbing plants.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Lily_Festival_2009_Neepawa_Manitoba_Canada_%2816%29.JPG/330px-Lily_Festival_2009_Neepawa_Manitoba_Canada_%2816%29.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG/330px-%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lilium_martagon_Tauerntal_01.jpg/250px-Lilium_martagon_Tauerntal_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Smilax_aspera.jpg/250px-Smilax_aspera.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/TrilliumErectum.jpg/330px-TrilliumErectum.jpg"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Asparagales",
+    "parent": "Lilioid monocots",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "dragon trees",
+      "black boys",
+      "grasstree",
+      "joshua trees",
+      "iris",
+      "agave",
+      "spider ivy",
+      "aloe"
+    ],
+    "tag": "A monocot order that necessarily includes the family Asparagaceae.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Tates_grass_tree_Xanthorrhoea_semiplana_tateana_%288271136148%29.jpg/250px-Tates_grass_tree_Xanthorrhoea_semiplana_tateana_%288271136148%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Aloe_arborescens_on_Monte_Vumba_%284387600468%29.jpg/330px-Aloe_arborescens_on_Monte_Vumba_%284387600468%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Hierbabuena_0611_Revised.jpg/330px-Hierbabuena_0611_Revised.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Agave_americana_R01.jpg/330px-Agave_americana_R01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Yucca_elephantipes_and_alow.jpg/250px-Yucca_elephantipes_and_alow.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Asperge_in_bloei_Asparagus_officinalis.jpg/250px-Asperge_in_bloei_Asparagus_officinalis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/2007-12-17AdventFlowerShop02.jpg/250px-2007-12-17AdventFlowerShop02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/%D8%B2%D9%86%D8%A8%D9%82_%D8%AE%D9%88%D8%AF%D8%B1%D9%88_%D8%AF%D8%B1_%D8%A8%D9%87%D8%A8%D9%87%D8%A7%D9%86.jpg/330px-%D8%B2%D9%86%D8%A8%D9%82_%D8%AE%D9%88%D8%AF%D8%B1%D9%88_%D8%AF%D8%B1_%D8%A8%D9%87%D8%A8%D9%87%D8%A7%D9%86.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/ARS_red_onion.jpg/250px-ARS_red_onion.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Yucca_elata_-_tmcelrath_01.jpg/250px-Yucca_elata_-_tmcelrath_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Joshua_Tree_NP_-_Joshua_Tree_2.jpg/250px-Joshua_Tree_NP_-_Joshua_Tree_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Nolina_Menton.JPG/250px-Nolina_Menton.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/White_orchid_in_Clara_bog._03.jpg/250px-White_orchid_in_Clara_bog._03.jpg"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Commelinids",
+    "parent": "Monocots",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [],
+    "tag": "Distinguished by having cell walls containing ferulic acid.",
+    "imgs": [],
+    "card": 1
+  },
+  {
+    "name": "Arecales",
+    "parent": "Commelinids",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "palms",
+      "bullanocks",
+      "black gins"
+    ],
+    "tag": "A monocot order that includes the palms and relatives.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/BlackGins%2CAridGarden%2CRBG-CranbourneVIC.jpg/330px-BlackGins%2CAridGarden%2CRBG-CranbourneVIC.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/1859-Martinique.web.jpg/250px-1859-Martinique.web.jpg"
+    ],
+    "card": 4
+  },
+  {
+    "name": "Poales",
+    "parent": "Commelinids",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "grasses",
+      "rushes",
+      "bromeliads",
+      "pineapples",
+      "Spanish moss",
+      "sedges",
+      "bamboo",
+      "reeds"
+    ],
+    "tag": "A monocot order that includes grasses, sedges, rushes, and bromeliads.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Carex_pseudocyperus_002307258O.jpg/250px-Carex_pseudocyperus_002307258O.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/ba/Billbergia_pyramidalis_in_Hyderabad_Nursery_W_IMG_0425.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Typha_latifolia_Finland.jpg/250px-Typha_latifolia_Finland.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Chimonobambusa_tumidissinoda%27s_swollen_disk-like_nodes.jpg/250px-Chimonobambusa_tumidissinoda%27s_swollen_disk-like_nodes.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Pineapple1.JPG/250px-Pineapple1.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Zbo%C5%BCe.jpg/250px-Zbo%C5%BCe.jpg"
+    ],
+    "card": 4
+  },
+  {
+    "name": "Zingiberales",
+    "parent": "Commelinids",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "gingers",
+      "banana",
+      "Bird of Paradise",
+      "plantains",
+      "galangal",
+      "arrowroot",
+      "cardamom",
+      "turmeric"
+    ],
+    "tag": "A monocot order with a herbaceous arborescent stem, distichous phyllotaxy, large petiolate leaves, and inflorescences of conspicuous colorful bracts.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Starr_061212-2337_Alpinia_purpurata.jpg/250px-Starr_061212-2337_Alpinia_purpurata.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Fresh_ginger.jpg/330px-Fresh_ginger.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/2018_06_TropicalIslands_IMG_2170.jpg/250px-2018_06_TropicalIslands_IMG_2170.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Turmeric_inflorescence.jpg/250px-Turmeric_inflorescence.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bird_of_Paradise_flower.JPG/330px-Bird_of_Paradise_flower.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Cardamom_Flowers_and_Blooms.jpg/330px-Cardamom_Flowers_and_Blooms.jpg"
+    ],
+    "card": 4
+  },
+  {
+    "name": "Commelinales",
+    "parent": "Commelinids",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "spiderwort",
+      "water hyacinth",
+      "dayflowers",
+      "kangaroo paws"
+    ],
+    "tag": "A monocot order with a lack of mycorrhizal associations and tapetal raphides.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Aneilema_aequinoctiale.jpg/250px-Aneilema_aequinoctiale.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9e/Anigozanthos.flavidus2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Fruiting_Hanguana_rubinea_in_Singapore%2C_August_2023.jpg/250px-Fruiting_Hanguana_rubinea_in_Singapore%2C_August_2023.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Helmholtzia_glaberrima_2.jpg/250px-Helmholtzia_glaberrima_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Eichhornia_crassipes.jpg/250px-Eichhornia_crassipes.jpg"
+    ],
+    "card": 4
+  }
+]

@@ -22,6 +22,7 @@ class Data {
             .concat(data_plantae_divisions)
             .concat(data_plantae_pinopsida_genus_common)
             .concat(data_plantae_angiosperm_orders_minus_monocots_eudicots)
+            .concat(data_plantae_angiosperm_monocots_orders)
         )
       default:
         var data_variable_name = 'data_' + content_select_value
