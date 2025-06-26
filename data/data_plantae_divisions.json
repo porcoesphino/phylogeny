@@ -76,7 +76,7 @@
     "ipa-hidden": [
       "ˌbraɪ.əˈfaɪtə"
     ],
-    "tag": "Early land plants that are dominated by a multicellular haploid gametophyte and lack vascular tissue.",
+    "tag": "A clade of early land plants that are dominated by a multicellular haploid gametophyte and lack of true vascular tissue.",
     "common": [],
     "imgs": [],
     "card": 2
@@ -127,7 +127,7 @@
     "parent": "Bryophyta",
     "rank": "Division",
     "ipa": "",
-    "tag": "The name Bryophyta is for the division which was reused as the clade, Bryophytina is technically a proposed name as a class.",
+    "tag": "The division of mosses, they are small, non-vascular plants that typically form dense green mats or clumps in damp or shaded environments, lack seeds and reproduce through spores. Bryophytina is technically a proposed name as a class.",
     "common": [
       "mosses"
     ],
@@ -145,7 +145,7 @@
     "parent": "Embryophyta",
     "rank": "Clade",
     "ipa": "",
-    "tag": "The vascular plants.",
+    "tag": "The vascular plants with a sporophyte dominated lifecyle; have true roots, leaves, and stems; using phloem to conduct products of photosynthesis and xylem to conconduct water and minerals.",
     "card": 2
   },
   {
@@ -153,7 +153,7 @@
     "parent": "Tracheophyta",
     "rank": "Division",
     "ipa": "",
-    "tag": "Early vascular system.",
+    "tag": "A division of plants that includes the clubmoss class, Lycopodiopsida, that have an early vascular system and biflagellate sperm.",
     "common": [
       "club mosses"
     ],
@@ -171,7 +171,7 @@
     "parent": "Tracheophyta",
     "rank": "Clade",
     "ipa": "",
-    "tag": "",
+    "tag": "Vascular plants that are characterized by the possession of true leaves (megaphylls).",
     "common": [],
     "imgs": [],
     "card": 3
@@ -195,8 +195,19 @@
     "card": 3
   },
   {
-    "name": "Spermatophyta",
+    "name": "Lignophytes",
     "parent": "Euphyllophyta",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Characterised by a bifascial vascular cambium (secondary xylem and secondary phloem), or wood.",
+    "common": [],
+    "imgs": [],
+    "card": 3
+  },
+  {
+    "name": "Spermatophyta",
+    "parent": "Lignophytes",
     "rank": "Division",
     "ipa": "",
     "etymology": "latin 'seed' - greek 'plant'",
@@ -282,10 +293,9 @@
     "parent": "Spermatophyta",
     "rank": "Division",
     "ipa": "",
-    "tag": "",
-    "common": [
-      "flowering plants"
-    ],
+    "etymology": "greek 'container'-'seed'",
+    "tag": "Plants that bear flowers and fruits. They have reduced gametophytes and a closed carpel enclosing the ovules.",
+    "common": [],
     "card": 4
   }
 ]
