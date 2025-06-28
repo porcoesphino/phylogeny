@@ -23,6 +23,7 @@ JSON_DATA_LIST = [
     'data_plantae_pinophyta_genus_common.json',
     'data_plantae_angiosperm_orders_minus_monocots_eudicots.json',
     'data_plantae_angiosperm_monocots_orders.json',
+    'data_plantae_angiosperm_eudicots_orders.json',
 ]
 
 Rank: typing.TypeAlias = typing.Literal[
@@ -154,6 +155,7 @@ def get_html() -> str:
                 <option value="plantae_pinophyta_genus_common">Pinophyta — common genera</option>
                 <option value="plantae_angiosperm_orders_minus_monocots_eudicots">Angiosperm — orders minus Monocots and Eudicots</option>
                 <option value="plantae_angiosperm_monocots_orders">Monocot — orders</option>
+                <option value="plantae_angiosperm_eudicots_orders">Eudicot — orders</option>
                 </optgroup>
               </select>
             </div>
