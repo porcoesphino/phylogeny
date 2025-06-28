@@ -42,7 +42,7 @@
     "common": [
       "tinamous"
     ],
-    "tag": "",
+    "tag": "Heavy bodied ground dwelling birds of central and South America; sometimes domesticated. One of the most ancient living groups",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/f/fc/NothuraDarwiniiSmit_white_background.jpg"
     ],
@@ -133,7 +133,7 @@
       "quail",
       "peacocks"
     ],
-    "tag": "An order of heavy-bodied ground-feeding landfowl.",
+    "tag": "An order of heavy-bodied ground-feeding landfowl often domesticated or hunted as game birds.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Red_Junglefowl_by_George_Edward_Lodge_white_background.png/330px-Red_Junglefowl_by_George_Edward_Lodge_white_background.png"
     ],
@@ -152,7 +152,7 @@
       "swans",
       "screamers"
     ],
-    "tag": "The waterfowl.",
+    "tag": "The waterfowl. Highly adapted for an aquatic existence at the water surface. The bill and a modified tongue create suction to pump or draw water in.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/b/b1/Cuvier-97-Canard_colvert.jpg"
     ],
@@ -193,7 +193,7 @@
     "common": [
       "flamingos"
     ],
-    "tag": "",
+    "tag": "Ancient distinct group of birds found in saline lakes throughout tropical and warm temperate zones.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cuvier-87-Flamant_rouge.jpg/250px-Cuvier-87-Flamant_rouge.jpg"
     ],
@@ -209,7 +209,7 @@
     "common": [
       "grebes"
     ],
-    "tag": "",
+    "tag": "Medium-sized, stocky waterbirds of lakes and marshes, well adapted to aquatic life.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Fuut_Podiceps_cristatus_Jos_Zwarts_5.tif/lossy-page1-318px-Fuut_Podiceps_cristatus_Jos_Zwarts_5.tif.jpg"
     ],
@@ -239,9 +239,10 @@
     "etymology": "",
     "common": [
       "pigeons",
-      "doves"
+      "doves",
+      "dodos"
     ],
-    "tag": "",
+    "tag": "Stout-bodied monogomous birds with small heads, relatively short necks and slender bills. They feed largely on plant matter and are capable of drinking by sucking up water.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Meyers_grosses_Konversations-Lexikon_-_ein_Nachschlagewerk_des_allgemeinen_Wissens_%281908%29_%28Antwerpener_Breiftaube%29.jpg/250px-Meyers_grosses_Konversations-Lexikon_-_ein_Nachschlagewerk_des_allgemeinen_Wissens_%281908%29_%28Antwerpener_Breiftaube%29.jpg"
     ],
@@ -334,9 +335,10 @@
     "ipa": "",
     "etymology": "",
     "common": [
-      "cuckoos"
+      "cuckoos",
+      "roadrunners"
     ],
-    "tag": "",
+    "tag": "Small to medium sized birds, often with a long tail.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/1/10/British_birds_in_their_haunts_%28Cuculus_canorus%29.jpg"
     ],
@@ -386,7 +388,7 @@
       "limpkin",
       "trumpeters"
     ],
-    "tag": "",
+    "tag": "A diverse group of ground-feeding and nesting birds with few unifying characters.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Cuvier-72-Grue_cendr%C3%A9e.jpg/250px-Cuvier-72-Grue_cendr%C3%A9e.jpg"
     ],
@@ -416,7 +418,7 @@
       "auks",
       "alcids"
     ],
-    "tag": "The shorebirds and relatives.",
+    "tag": "The shorebirds and relatives. Waterbirds or birds clearly derived from waterbirds found along seacoasts and inland waters. Most eat invertebrates or other small animals.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/D%27Orbigny-Mouette_rieuse_et_Bec-en-ciseaux_white_background.jpg/330px-D%27Orbigny-Mouette_rieuse_et_Bec-en-ciseaux_white_background.jpg"
     ],
@@ -447,7 +449,7 @@
     "common": [
       "nightjars"
     ],
-    "tag": "",
+    "tag": "Often nocturnal or crepuscular hunters with a highly developed sense of sight that are known for feeding on the wing and are excellent flyers with small weak legs.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Chordeiles_acutipennis_texensisAQBIP06CA.jpg/330px-Chordeiles_acutipennis_texensisAQBIP06CA.jpg"
     ],
@@ -527,10 +529,9 @@
     "common": [
       "swifts",
       "treeswifts",
-      "hummingbirds",
-      "owlet-nightjars"
+      "hummingbirds"
     ],
-    "tag": "",
+    "tag": "Small to very small birds with a unique Albumen protein and a specialized wing morphology that feed while flying.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/4/41/White-eared_Hummingbird_%28Basilinna_leucotis%29_white_background.jpg"
     ],
@@ -606,7 +607,7 @@
       "loons",
       "divers"
     ],
-    "tag": "",
+    "tag": "Waterbirds that breed beside lakes and ponds in arctic and subarctic latitudes of North America.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/IJsduiker_Gavia_immer_Jos_Zwarts.tif/lossy-page1-320px-IJsduiker_Gavia_immer_Jos_Zwarts.tif.jpg"
     ],
@@ -624,7 +625,7 @@
       "shearwaters",
       "petrels"
     ],
-    "tag": "",
+    "tag": "Tube-nosed seabirds of the open ocean.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Thalassarche_chlororhynchos_1838.jpg/250px-Thalassarche_chlororhynchos_1838.jpg"
     ],
@@ -640,7 +641,7 @@
     "common": [
       "penguins"
     ],
-    "tag": "",
+    "tag": "Flightless seabirds native to cool southern hemisphere waters.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/7/78/Chinstrap_Penguin_white_background.jpg"
     ],
@@ -656,7 +657,7 @@
     "common": [
       "storks"
     ],
-    "tag": "",
+    "tag": "Long-legged and often long necked birds adapted for wading and capturing animal foods.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/d/d1/Wei%C3%9Fstorch_%28Ciconia_ciconia%29_white_background.jpg"
     ],
@@ -679,7 +680,7 @@
       "anhingas",
       "boobies"
     ],
-    "tag": "",
+    "tag": "Pelagic piscivores of tropical oceans. They obtain food on the wing and can stay airborne for long periods.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cormorant_in_Strunjan%2C_white_background.png/330px-Cormorant_in_Strunjan%2C_white_background.png"
     ],
@@ -701,7 +702,7 @@
       "hammerkop",
       "shoebill"
     ],
-    "tag": "",
+    "tag": "Medium to large sized aquatic birds that eat fish or squid and have all four toes webbed. Most members have distensible bare throat patch between the branches of the lower mandible.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Spot-billed_pelican_takeoff_white_background.jpg/250px-Spot-billed_pelican_takeoff_white_background.jpg"
     ],
@@ -714,9 +715,7 @@
     "rank": "Clade",
     "ipa": "",
     "etymology": "",
-    "common": [
-      ""
-    ],
+    "common": [],
     "tag": "Core landbirds.",
     "imgs": [],
     "card": 2,
@@ -731,7 +730,7 @@
     "common": [],
     "tag": "",
     "imgs": [],
-    "card": 12,
+    "card": 12
   },
   {
     "name": "Strigiformes",
@@ -742,7 +741,7 @@
     "common": [
       "owls"
     ],
-    "tag": "",
+    "tag": "Solitary, nocturnal birds of prey occupying all regions of earth except Antarctica. Rounded heads with large eyes; legs and toes often feathered; hunt mostly small mammals, insects.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/e/e7/Cuvier-12-Hibou_%C3%A0_huppe_courte.jpg"
     ],
@@ -761,7 +760,7 @@
       "eagles",
       "vultures"
     ],
-    "tag": "",
+    "tag": "Diurnal birds of prey. Male is often considerably smaller. Bill is hooked with sharp curved talons.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/b/b2/Golden_Eagle_Illustration_white_background.jpg"
     ],
@@ -858,7 +857,7 @@
       "todies",
       "motmots"
     ],
-    "tag": "",
+    "tag": "Near passerine birds. Most nest in cavities or mud banks.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cuvier-46-Martin-p%C3%AAcheur_d%27Europe.jpg"
     ],
@@ -880,7 +879,7 @@
       "puffbirds",
       "nunbirds"
     ],
-    "tag": "",
+    "tag": "Arboreal insectivorous birds with a peculiar arrangement of the tendons of the toes.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/c/c6/Dendrocopos_major_-Durham%2C_England_-female-8_white_background.jpg"
     ],
@@ -924,7 +923,7 @@
       "falcons",
       "caracaras"
     ],
-    "tag": "",
+    "tag": "Diurnal birds of prey. Male is often considerably smaller than the female. They are highly adept fliers and hunters.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/4/4e/NewZealandFalconBuller_white_background.jpg"
     ],
@@ -943,7 +942,7 @@
       "macaws",
       "cockatoos"
     ],
-    "tag": "",
+    "tag": "Have an upright stancem known for their vocal ability and intelligence. The upper mandible is prominent, curves downward and is not fused to the skull.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Pyrrhura_lucianii_-_Castelnau_2.jpg/250px-Pyrrhura_lucianii_-_Castelnau_2.jpg"
     ],
@@ -959,7 +958,7 @@
     "common": [
       "passerines"
     ],
-    "tag": "",
+    "tag": "A diverse and rich assemblage of mostly small land birds with strong feet for perching and grabbing branches.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/5/50/Cuvier-33-Moineau_domestique.jpg"
     ],
