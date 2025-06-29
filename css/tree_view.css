@@ -220,6 +220,7 @@ div.tree_label:after {
 .tree_box img {
   max-height: 43px;
   float: right;
+  border: 0.5px #010101 solid;
 }
 
 .tree_box a {
