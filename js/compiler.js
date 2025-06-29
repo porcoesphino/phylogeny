@@ -207,9 +207,19 @@ class TreeBuilderAsTreeList {
         var wrapper_el = document.createElement('div')
         for (var i = 0; i < node.imgs.length; i++) {
           var img_src = node.imgs[i]
+          if (img_src.startsWith('https://upload.wikimedia.org/wikipedia/commons/thumb')) {
+            var re = /https\:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/[^/]+\/[^/]+\/([^/]+)\//
+          } else {
+            var re = /https\:\/\/upload.wikimedia.org\/wikipedia\/commons\/[^/]+\/[^/]+\/([^/]+)/
+          }
+          var img_base = re.exec(img_src)[1]
+          var img_href = 'https://commons.wikimedia.org/wiki/File:' + img_base
+          var img_link = document.createElement('a')
+          img_link.href = img_href
           var img_el = document.createElement('img')
           img_el.src = img_src
-          wrapper_el.appendChild(img_el)
+          img_link.appendChild(img_el)
+          wrapper_el.appendChild(img_link)
         }
         parent_el.appendChild(wrapper_el)
       }
