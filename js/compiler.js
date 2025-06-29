@@ -320,8 +320,11 @@ class QueryParams {
 
   update(key, value) {
     const params = new URLSearchParams(location.search);
+    if (params.get(key) == value) {
+      return
+    }
     params.set(key, value)
-    window.history.replaceState({}, '', `${location.pathname}?${params}`);
+    window.history.pushState({}, '', `${location.pathname}?${params}`);
   }
 }
 
@@ -377,6 +380,12 @@ class Page {
     window.addEventListener('load', function () {
       page_load_callback()
     })
+
+    window.addEventListener("popstate", (e) => {
+      if (e.state) {
+        page_load_callback()
+      }
+    });
 
   }
 
