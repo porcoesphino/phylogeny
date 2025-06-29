@@ -207,19 +207,28 @@ class TreeBuilderAsTreeList {
         var wrapper_el = document.createElement('div')
         for (var i = 0; i < node.imgs.length; i++) {
           var img_src = node.imgs[i]
+          if (!img_src) {
+            continue
+          }
+          var img_el = document.createElement('img')
+          img_el.src = img_src
+
           if (img_src.startsWith('https://upload.wikimedia.org/wikipedia/commons/thumb')) {
             var re = /https\:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/[^/]+\/[^/]+\/([^/]+)\//
           } else {
             var re = /https\:\/\/upload.wikimedia.org\/wikipedia\/commons\/[^/]+\/[^/]+\/([^/]+)/
           }
-          var img_base = re.exec(img_src)[1]
-          var img_href = 'https://commons.wikimedia.org/wiki/File:' + img_base
-          var img_link = document.createElement('a')
-          img_link.href = img_href
-          var img_el = document.createElement('img')
-          img_el.src = img_src
-          img_link.appendChild(img_el)
-          wrapper_el.appendChild(img_link)
+          var re_match = re.exec(img_src)
+          if (!!re_match && re_match.length > 1) {
+            var img_base = re_match[1]
+            var img_href = 'https://commons.wikimedia.org/wiki/File:' + img_base
+            var img_link = document.createElement('a')
+            img_link.href = img_href
+            img_link.appendChild(img_el)
+            wrapper_el.appendChild(img_link)
+          } else {
+            wrapper_el.appendChild(img_el)
+          }
         }
         parent_el.appendChild(wrapper_el)
       }
