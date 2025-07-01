@@ -11,10 +11,15 @@
       "cassowaries",
       "emus",
       "rheas",
-      "ostriches"
+      "ostriches",
+      "moas"
     ],
-    "tag": "",
-    "imgs": [],
+    "tag": "Mostly flightless birds where the male incubates the eggs.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Avestruz_de_cuello_azul_%28Struthio_camelus_australis%29%2C_cabo_de_Buena_Esparanza%2C_Sud%C3%A1frica%2C_2018-07-23%2C_DD_87.jpg/330px-Avestruz_de_cuello_azul_%28Struthio_camelus_australis%29%2C_cabo_de_Buena_Esparanza%2C_Sud%C3%A1frica%2C_2018-07-23%2C_DD_87.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Rhynchotus_rufescens_-Parque_das_Aves-8a.jpg/330px-Rhynchotus_rufescens_-Parque_das_Aves-8a.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Apteryx_mantelli_-Rotorua%2C_North_Island%2C_New_Zealand-8a.jpg/330px-Apteryx_mantelli_-Rotorua%2C_North_Island%2C_New_Zealand-8a.jpg"
+    ],
     "card": 1
   },
   {
@@ -26,9 +31,12 @@
     "common": [
       "ostriches"
     ],
-    "tag": "",
+    "tag": "Large flightless birds native to Africa. They are the largest extant birds and the fastest runners.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/07/Struthio_camelus_-_Etosha_2014_%281%29_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/0/07/Struthio_camelus_-_Etosha_2014_%281%29_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/%CE%A3%CF%84%CF%81%CE%BF%CF%85%CE%B8%CE%BF%CE%BA%CE%B1%CE%BC%CE%AE%CE%BB%CE%BF%CF%85_%CF%83%CF%84%CE%B7%CE%BD_Bucaramanga_%CF%84%CE%B7%CF%82_%CE%9A%CE%BF%CE%BB%CE%BF%CE%BC%CE%B2%CE%AF%CE%B1%CF%82.jpg/330px-%CE%A3%CF%84%CF%81%CE%BF%CF%85%CE%B8%CE%BF%CE%BA%CE%B1%CE%BC%CE%AE%CE%BB%CE%BF%CF%85_%CF%83%CF%84%CE%B7%CE%BD_Bucaramanga_%CF%84%CE%B7%CF%82_%CE%9A%CE%BF%CE%BB%CE%BF%CE%BC%CE%B2%CE%AF%CE%B1%CF%82.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Somali_ostrich.jpg/330px-Somali_ostrich.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Avestruz_de_cuello_azul_%28Struthio_camelus_australis%29%2C_cabo_de_Buena_Esparanza%2C_Sud%C3%A1frica%2C_2018-07-23%2C_DD_87.jpg/330px-Avestruz_de_cuello_azul_%28Struthio_camelus_australis%29%2C_cabo_de_Buena_Esparanza%2C_Sud%C3%A1frica%2C_2018-07-23%2C_DD_87.jpg"
     ],
     "card": 4,
     "species": 2
@@ -37,14 +45,17 @@
     "name": "Tinamiformes",
     "parent": "Palaeognathae",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˌtɪnəməˈfɔːrmiːz",
     "etymology": "",
     "common": [
       "tinamous"
     ],
-    "tag": "Heavy bodied ground dwelling birds of central and South America; sometimes domesticated. One of the most ancient living groups",
+    "tag": "Heavy bodied and short tailed ground dwelling birds of central and South America that have the ability to fly; sometimes domesticated.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/f/fc/NothuraDarwiniiSmit_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/f/fc/NothuraDarwiniiSmit_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Elegant_Crested_Tinamou_%28Eudromia_elegans%29_%2815953728501%29.jpg/330px-Elegant_Crested_Tinamou_%28Eudromia_elegans%29_%2815953728501%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Rhynchotus_rufescens_-Parque_das_Aves-8a.jpg/330px-Rhynchotus_rufescens_-Parque_das_Aves-8a.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e9/Crypturellus_tataupa.JPG"
     ],
     "card": 4,
     "species": 46
@@ -58,9 +69,13 @@
     "common": [
       "rheas"
     ],
-    "tag": "",
+    "tag": "Rheiformes is an order of flightless birds primarily native to South America.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rhea_white_background.jpg/250px-Rhea_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Rhea_white_background.jpg/250px-Rhea_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Nandu_Rhea_americana_Tierpark_Hellabrunn-1.jpg/330px-Nandu_Rhea_americana_Tierpark_Hellabrunn-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Greater_Rhea_%28Rhea_americana%29_%2828234029614%29.jpg/250px-Greater_Rhea_%28Rhea_americana%29_%2828234029614%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/As_emas.jpg/330px-As_emas.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Pterocnemia_pennat_%28zoo_Zurich%29.jpg/250px-Pterocnemia_pennat_%28zoo_Zurich%29.jpg"
     ],
     "card": 4,
     "species": 2
@@ -70,13 +85,15 @@
     "parent": "Palaeognathae",
     "rank": "Order",
     "ipa": "",
-    "etymology": "",
+    "etymology": "greek 'without'-'wing'-'shape'",
     "common": [
       "kiwis"
     ],
-    "tag": "",
+    "tag": "Flightless birds characterized by their small size, nocturnal habits, and lack of functional wings. Known primarily for the modern family of Kiwis, native to New Zealand.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/7/72/Little_spotted_kiwi%2C_Apteryx_owenii%2C_Auckland_War_Memorial_Museum_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/7/72/Little_spotted_kiwi%2C_Apteryx_owenii%2C_Auckland_War_Memorial_Museum_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Okarito_kiwi_2.jpg/250px-Okarito_kiwi_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Apteryx_mantelli_-Rotorua%2C_North_Island%2C_New_Zealand-8a.jpg/330px-Apteryx_mantelli_-Rotorua%2C_North_Island%2C_New_Zealand-8a.jpg"
     ],
     "card": 4,
     "species": 5
@@ -86,14 +103,18 @@
     "parent": "Palaeognathae",
     "rank": "Order",
     "ipa": "",
-    "etymology": "",
+    "etymology": "'cassowary'-'form'",
     "common": [
       "emu",
       "cassowaries"
     ],
-    "tag": "",
+    "tag": "Large flightless birds native to the Australasian region.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/00/Emu_RWD2_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/0/00/Emu_RWD2_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Darica_Cossowary_00975.jpg/250px-Darica_Cossowary_00975.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Casuarius_unappendiculatus_qtl1.jpg/330px-Casuarius_unappendiculatus_qtl1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Emu_portrait.jpg/330px-Emu_portrait.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c4/Emoe.jpg"
     ],
     "card": 4,
     "species": 4
@@ -116,8 +137,13 @@
     "ipa": "",
     "etymology": "latin 'rooster'-'goose'",
     "common": [],
-    "tag": "Fowl.",
-    "imgs": [],
+    "tag": "The fowl. Survived the K-T extinction event.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Wood-ducks-male-female-chicago-march-2024.jpg/330px-Wood-ducks-male-female-chicago-march-2024.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Anser_caerulescens_CT8.jpg/330px-Anser_caerulescens_CT8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/A_male_peafowl_dancing.jpg/330px-A_male_peafowl_dancing.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Malleefowl_0A2A4564.jpg/330px-Malleefowl_0A2A4564.jpg"
+    ],
     "card": 1
   },
   {
@@ -131,11 +157,24 @@
       "pheasants",
       "turkeys",
       "quail",
-      "peacocks"
+      "peacocks",
+      "partridges",
+      "grouse",
+      "guinea foul"
     ],
-    "tag": "An order of heavy-bodied ground-feeding landfowl often domesticated or hunted as game birds.",
+    "tag": "The gamefowl. Heavy-bodied ground-feeding landfowl often domesticated or hunted as game birds.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Red_Junglefowl_by_George_Edward_Lodge_white_background.png/330px-Red_Junglefowl_by_George_Edward_Lodge_white_background.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Red_Junglefowl_by_George_Edward_Lodge_white_background.png/330px-Red_Junglefowl_by_George_Edward_Lodge_white_background.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Chestnut-bellied_Partridge_RWD2.jpg/330px-Chestnut-bellied_Partridge_RWD2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Pheasant.jpg/330px-Pheasant.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/A_male_peafowl_dancing.jpg/330px-A_male_peafowl_dancing.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Peacock-JS.jpg/330px-Peacock-JS.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/SageGrouse21.jpg/250px-SageGrouse21.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Numida_meleagris_-Serengeti_National_Park%2C_Tanzania-8_%281%29.jpg/330px-Numida_meleagris_-Serengeti_National_Park%2C_Tanzania-8_%281%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Crax_daubentoni_-Philadelphia_Zoo_-female-8a-4c.jpg/250px-Crax_daubentoni_-Philadelphia_Zoo_-female-8a-4c.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Malleefowl_0A2A4564.jpg/330px-Malleefowl_0A2A4564.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Australian_Brushturkey_2_-_Newington.jpg/250px-Australian_Brushturkey_2_-_Newington.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Brushturkeykansaszoo.jpg/330px-Brushturkeykansaszoo.jpg"
     ],
     "card": 5,
     "species": 302
@@ -154,7 +193,13 @@
     ],
     "tag": "The waterfowl. Highly adapted for an aquatic existence at the water surface. The bill and a modified tongue create suction to pump or draw water in.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Cuvier-97-Canard_colvert.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/b/b1/Cuvier-97-Canard_colvert.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/At_Possa_da_Londra_in_the_Brazilian_Patanal_%28105m%29_-_the_weird_looking_Southern_Screamer_%28Chauna_torquata%29_-_%2824213807344%29.jpg/330px-At_Possa_da_Londra_in_the_Brazilian_Patanal_%28105m%29_-_the_weird_looking_Southern_Screamer_%28Chauna_torquata%29_-_%2824213807344%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Anseranas_semipalmata_-Edithvale_Wetland%2C_Melbourne%2C_Australia-8.jpg/330px-Anseranas_semipalmata_-Edithvale_Wetland%2C_Melbourne%2C_Australia-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Wood-ducks-male-female-chicago-march-2024.jpg/330px-Wood-ducks-male-female-chicago-march-2024.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Anser_caerulescens_CT8.jpg/330px-Anser_caerulescens_CT8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Black_Swans_mating_in_Lake_Burley_Griffin-2_%285549171039%29.jpg/330px-Black_Swans_mating_in_Lake_Burley_Griffin-2_%285549171039%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Mute_Swan_Emsworth2.JPG/330px-Mute_Swan_Emsworth2.JPG"
     ],
     "card": 5,
     "species": 178
@@ -174,14 +219,18 @@
     "name": "Mirandornithes",
     "parent": "Neoaves",
     "rank": "Clade",
-    "ipa": "",
+    "ipa": "mɪˌrændɔːrˈnɪθiːz",
     "etymology": "",
     "common": [
       "flamingos",
       "grebes"
     ],
-    "tag": "",
-    "imgs": [],
+    "tag": "Specialised aquatic birds found on freshwater lakes and ponds. Includes the flamingos and grebes.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Greater_flamingo_galapagos.JPG/330px-Greater_flamingo_galapagos.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Podilymbus-podiceps-001.jpg/330px-Podilymbus-podiceps-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Great_Crested_Grebe_%2852909695022%29.jpg/330px-Great_Crested_Grebe_%2852909695022%29.jpg"
+    ],
     "card": 2
   },
   {
@@ -193,9 +242,12 @@
     "common": [
       "flamingos"
     ],
-    "tag": "Ancient distinct group of birds found in saline lakes throughout tropical and warm temperate zones.",
+    "tag": "Birds with vibrant pink or reddish plumage, long legs, and uniquely shaped beaks adapted for filter feeding found in saline lakes throughout tropical and warm temperate zones.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cuvier-87-Flamant_rouge.jpg/250px-Cuvier-87-Flamant_rouge.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Cuvier-87-Flamant_rouge.jpg/250px-Cuvier-87-Flamant_rouge.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Greater_flamingo_galapagos.JPG/330px-Greater_flamingo_galapagos.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flamingo_and_offspring.jpg/250px-Flamingo_and_offspring.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Large_number_of_flamingos_at_Lake_Nakuru.jpg/330px-Large_number_of_flamingos_at_Lake_Nakuru.jpg"
     ],
     "card": 6,
     "species": 6
@@ -204,14 +256,18 @@
     "name": "Podicipediformes",
     "parent": "Mirandornithes",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˌpɒdɪsɪˈpɛdɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "grebes"
     ],
-    "tag": "Medium-sized, stocky waterbirds of lakes and marshes, well adapted to aquatic life.",
+    "tag": "Medium-sized, stocky waterbirds of lakes and marshes, well adapted to aquatic life. Some are flightless.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Fuut_Podiceps_cristatus_Jos_Zwarts_5.tif/lossy-page1-318px-Fuut_Podiceps_cristatus_Jos_Zwarts_5.tif.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Fuut_Podiceps_cristatus_Jos_Zwarts_5.tif/lossy-page1-318px-Fuut_Podiceps_cristatus_Jos_Zwarts_5.tif.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Flickr_-_Rainbirder_-_Great_Crested_Grebe_%28Podiceps_cristatus%29.jpg/250px-Flickr_-_Rainbirder_-_Great_Crested_Grebe_%28Podiceps_cristatus%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Podilymbus-podiceps-001.jpg/330px-Podilymbus-podiceps-001.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/101_-_CLARK%27S_GREBE_%285-18-08%29_santa_margarita_lake%2C_sloco%2C_ca_%282%29_%288722134244%29.jpg/330px-101_-_CLARK%27S_GREBE_%285-18-08%29_santa_margarita_lake%2C_sloco%2C_ca_%282%29_%288722134244%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Great_Crested_Grebe_%2852909695022%29.jpg/330px-Great_Crested_Grebe_%2852909695022%29.jpg"
     ],
     "card": 6,
     "species": 23
@@ -227,8 +283,12 @@
       "sandgrouse",
       "pigeons"
     ],
-    "tag": "",
-    "imgs": [],
+    "tag": "The pigeons, sandgrouse & allies.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Subdesert_Mesite.jpg/330px-Subdesert_Mesite.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/2012-namaqua-sandgrouse-male.jpg/330px-2012-namaqua-sandgrouse-male.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/SNOW-PIGEON-SELA.jpg/330px-SNOW-PIGEON-SELA.jpg"
+    ],
     "card": 2
   },
   {
@@ -244,7 +304,11 @@
     ],
     "tag": "Stout-bodied monogomous birds with small heads, relatively short necks and slender bills. They feed largely on plant matter and are capable of drinking by sucking up water.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Meyers_grosses_Konversations-Lexikon_-_ein_Nachschlagewerk_des_allgemeinen_Wissens_%281908%29_%28Antwerpener_Breiftaube%29.jpg/250px-Meyers_grosses_Konversations-Lexikon_-_ein_Nachschlagewerk_des_allgemeinen_Wissens_%281908%29_%28Antwerpener_Breiftaube%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Meyers_grosses_Konversations-Lexikon_-_ein_Nachschlagewerk_des_allgemeinen_Wissens_%281908%29_%28Antwerpener_Breiftaube%29.jpg/250px-Meyers_grosses_Konversations-Lexikon_-_ein_Nachschlagewerk_des_allgemeinen_Wissens_%281908%29_%28Antwerpener_Breiftaube%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Oxford_Dodo_display.jpg/330px-Oxford_Dodo_display.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Treron_vernans_male_-_Kent_Ridge_Park.jpg/330px-Treron_vernans_male_-_Kent_Ridge_Park.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Nicobar_Pigeon_on_the_bar.jpg/330px-Nicobar_Pigeon_on_the_bar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/SNOW-PIGEON-SELA.jpg/330px-SNOW-PIGEON-SELA.jpg"
     ],
     "card": 7,
     "species": 351
@@ -258,9 +322,11 @@
     "common": [
       "mesites"
     ],
-    "tag": "",
+    "tag": "Somewhat small-bodied, flightless or near flightless, somewhat shy birds endemic to Madagascar.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/d/d6/Monias_benschi_1912_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/d/d6/Monias_benschi_1912_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Subdesert_Mesite.jpg/330px-Subdesert_Mesite.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/White-breasted_Mesite_-_Ankarafantsika_-_Madagascar_S4E9441_%2815297364032%29.jpg/330px-White-breasted_Mesite_-_Ankarafantsika_-_Madagascar_S4E9441_%2815297364032%29.jpg"
     ],
     "card": 7,
     "species": 3
@@ -269,14 +335,18 @@
     "name": "Pterocliformes",
     "parent": "Columbimorphae",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˌtɛrəklɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "sandgrouse"
     ],
-    "tag": "",
+    "tag": "Ground-dwelling birds with small, pigeon-like heads and necks and sturdy compact bodies that are restricted to treeless, open country.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/b/be/Pterocles_quadricinctus_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/b/be/Pterocles_quadricinctus_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/2012-namaqua-sandgrouse-male.jpg/330px-2012-namaqua-sandgrouse-male.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Burchell%27s_sandgrouse%2C_Pterocles_burchelli%2C_at_Kgalagadi_Transfrontier_Park%2C_Northern_Cape%2C_South_Africa_%2835283376362%29%2C_crop.jpg/250px-Burchell%27s_sandgrouse%2C_Pterocles_burchelli%2C_at_Kgalagadi_Transfrontier_Park%2C_Northern_Cape%2C_South_Africa_%2835283376362%29%2C_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Painted_Sandgrouse_Male_%2850325876266%29.jpg/330px-Painted_Sandgrouse_Male_%2850325876266%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/91/Syrrhaptes_paradoxus_%28J%C3%A1n_Svetl%C3%ADk%29.jpg"
     ],
     "card": 7,
     "species": 16
@@ -292,22 +362,36 @@
       "bustards",
       "cuckoos"
     ],
-    "tag": "",
-    "imgs": [],
+    "tag": "A clade of birds that contains the cuckoos, turacos, and bustards orders.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Greatbluturaco%2C_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Denham%27s_Bustard_%28Neotis_denhami%29_%287083219537%29.jpg/330px-Denham%27s_Bustard_%28Neotis_denhami%29_%287083219537%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Coquerel%27s_Coua%2C_crop.jpg/330px-Coquerel%27s_Coua%2C_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Lesser_Roadrunner_-_Mexico_S4E1497.jpg/330px-Lesser_Roadrunner_-_Mexico_S4E1497.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Reed_warbler_cuckoo.jpg/426px-Reed_warbler_cuckoo.jpg"
+    ],
     "card": 2
   },
   {
     "name": "Musophagiformes",
     "parent": "Otidimorphae",
     "rank": "Order",
-    "ipa": "",
-    "etymology": "",
+    "ipa": "ˌmjuːzoʊˈfædʒɪdiː",
+    "etymology": "'banana'-'eaters'",
     "common": [
-      "turacos"
+      "turacos",
+      "loeries",
+      "plantain-eaters",
+      "go-away-birds"
     ],
-    "tag": "",
+    "tag": "Medium to large-sized colourful birds that feed mainly of fruits, leaves, and flowers with semi-zygodactylous toes (the fourth toe can be switched back and forth).",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Planches_enlumin%C3%A9es_d%27histoire_naturelle_%281765%29_%28Tauraco_persa%29.jpg/250px-Planches_enlumin%C3%A9es_d%27histoire_naturelle_%281765%29_%28Tauraco_persa%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Planches_enlumin%C3%A9es_d%27histoire_naturelle_%281765%29_%28Tauraco_persa%29.jpg/250px-Planches_enlumin%C3%A9es_d%27histoire_naturelle_%281765%29_%28Tauraco_persa%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Greatbluturaco%2C_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Crinifer_piscator_-Lotherton_Hall%2C_West_Yorkshire%2C_England-8a.jpg/250px-Crinifer_piscator_-Lotherton_Hall%2C_West_Yorkshire%2C_England-8a.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Bare-faced_Go-away-bird_RWD5.jpg/330px-Bare-faced_Go-away-bird_RWD5.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/2009-white-bellied-goaway-bird.jpg/250px-2009-white-bellied-goaway-bird.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Tauraco_fischeri.jpg/250px-Tauraco_fischeri.jpg"
     ],
     "card": 8,
     "species": 23
@@ -319,11 +403,18 @@
     "ipa": "",
     "etymology": "",
     "common": [
-      "bustards"
+      "bustards",
+      "floricans",
+      "korhaans"
     ],
-    "tag": "",
+    "tag": "Elusive ground-dwelling birds adaptated to open landscapes with an elegant walk tht reluctantly fly.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cayley_Ardeotis_australis_flipped.jpg/250px-Cayley_Ardeotis_australis_flipped.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Cayley_Ardeotis_australis_flipped.jpg/250px-Cayley_Ardeotis_australis_flipped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Denham%27s_Bustard_%28Neotis_denhami%29_%287083219537%29.jpg/330px-Denham%27s_Bustard_%28Neotis_denhami%29_%287083219537%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Bengal_Florican_Houbaropsis_bengalensis_bengalensis_%28cropped%29.jpg/250px-Bengal_Florican_Houbaropsis_bengalensis_bengalensis_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Northern_black_korhaan_%28Afrotis_afraoides%29_male.jpg/250px-Northern_black_korhaan_%28Afrotis_afraoides%29_male.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Blue_Korhaan_%28Eupodotis_caerulescens%29_male.jpg/330px-Blue_Korhaan_%28Eupodotis_caerulescens%29_male.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Kori_Bustard_Bushes_2019-07-26.jpg/250px-Kori_Bustard_Bushes_2019-07-26.jpg"
     ],
     "card": 8,
     "species": 26
@@ -332,15 +423,28 @@
     "name": "Cuculiformes",
     "parent": "Otidimorphae",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "kjuːˈkjuːlɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "cuckoos",
-      "roadrunners"
+      "roadrunners",
+      "koels",
+      "malkohas",
+      "couas",
+      "coucals",
+      "anis"
     ],
-    "tag": "Small to medium sized birds, often with a long tail.",
+    "tag": "Small to medium sized birds, slender birds, often with a long tail. Most species live in trees, with some ground-dwelling. Some species are brood parasites.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/1/10/British_birds_in_their_haunts_%28Cuculus_canorus%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/1/10/British_birds_in_their_haunts_%28Cuculus_canorus%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Cuculus_canorus_vogelartinfo.jpg/330px-Cuculus_canorus_vogelartinfo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Lesser_Roadrunner_-_Mexico_S4E1497.jpg/330px-Lesser_Roadrunner_-_Mexico_S4E1497.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Pacific_koel_male_kob08.JPG/250px-Pacific_koel_male_kob08.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Chestnut-breasted_Malkoha_San_Deigo_Zoo_2009.jpg/330px-Chestnut-breasted_Malkoha_San_Deigo_Zoo_2009.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Coquerel%27s_Coua%2C_crop.jpg/330px-Coquerel%27s_Coua%2C_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Senegal_coucal_%28Centropus_senegalensis_senegalensis%29.jpg/250px-Senegal_coucal_%28Centropus_senegalensis_senegalensis%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/ANU-PRETO_%28Crotophaga_ani%29.jpg/250px-ANU-PRETO_%28Crotophaga_ani%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Reed_warbler_cuckoo.jpg/426px-Reed_warbler_cuckoo.jpg"
     ],
     "card": 8,
     "species": 150
@@ -361,13 +465,17 @@
     "parent": "Elementaves",
     "rank": "Order",
     "ipa": "",
-    "etymology": "",
+    "etymology": "greek 'behind'-'hair'-'form'",
     "common": [
-      "hoatzin"
+      "hoatzin",
+      "stinkbird"
     ],
-    "tag": "",
+    "tag": "A tropical bird found in South America with a digestive system that ferments plant matter. The chicks have two claws on each wing.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Cuvier-59-Hoazin_hupp%C3%A9.jpg/330px-Cuvier-59-Hoazin_hupp%C3%A9.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Cuvier-59-Hoazin_hupp%C3%A9.jpg/330px-Cuvier-59-Hoazin_hupp%C3%A9.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Hoatzin_%28Opisthocomus_hoazin%29_Rio_Napo.jpg/250px-Hoatzin_%28Opisthocomus_hoazin%29_Rio_Napo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Hoatzin_%28Opisthocomus_hoazin%29_head_Rio_Napo.jpg/250px-Hoatzin_%28Opisthocomus_hoazin%29_head_Rio_Napo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Rurrenabaque_Bolivia_-_The_Amazon.jpg/330px-Rurrenabaque_Bolivia_-_The_Amazon.jpg"
     ],
     "card": 3,
     "species": 1
@@ -376,7 +484,7 @@
     "name": "Gruiformes",
     "parent": "Elementaves",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˈɡruːɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "rails",
@@ -386,11 +494,20 @@
       "flufftails",
       "finfoots",
       "limpkin",
-      "trumpeters"
+      "trumpeters",
+      "quails"
     ],
-    "tag": "A diverse group of ground-feeding and nesting birds with few unifying characters.",
+    "tag": "The cranes & allies but the group is varied and many are not so crane-like. Ground-feeding and nesting birds. Many species have elaborate courtship displays and long seasonal migrations.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Cuvier-72-Grue_cendr%C3%A9e.jpg/250px-Cuvier-72-Grue_cendr%C3%A9e.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Cuvier-72-Grue_cendr%C3%A9e.jpg/250px-Cuvier-72-Grue_cendr%C3%A9e.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Anthropoides_virgo_-Mongolia_-flying-8.jpg/330px-Anthropoides_virgo_-Mongolia_-flying-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Japanse_kraanvogels_in_Akan_International_Crane_Centre%2C_-24_februari_2012_a.jpg/250px-Japanse_kraanvogels_in_Akan_International_Crane_Centre%2C_-24_februari_2012_a.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Grey_crowned_crane_at_Martin_Mere.JPG/250px-Grey_crowned_crane_at_Martin_Mere.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Sandhill_bare_areas.jpg/330px-Sandhill_bare_areas.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Dusky_moorhen442.jpg/330px-Dusky_moorhen442.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/African_Finfoot%2C_male_breeding.jpg/330px-African_Finfoot%2C_male_breeding.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Grey-wing_Turmpeter_RWD.jpg/330px-Grey-wing_Turmpeter_RWD.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Brown_Quail.jpg/330px-Brown_Quail.jpg"
     ],
     "card": 3,
     "species": 188
@@ -399,28 +516,38 @@
     "name": "Charadriiformes",
     "parent": "Elementaves",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "kəˈrædri.ɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "sandpipers",
+      "puffins",
+      "gulls",
       "plovers",
       "phalaropes",
       "stilts",
       "jacanas",
       "painted snipes",
       "pratincoles",
-      "gulls",
       "terns",
       "seedsnipes",
       "sheathbills",
       "skimmers",
       "skuas",
       "auks",
-      "alcids"
+      "alcids",
+      "false quails"
     ],
-    "tag": "The shorebirds and relatives. Waterbirds or birds clearly derived from waterbirds found along seacoasts and inland waters. Most eat invertebrates or other small animals.",
+    "tag": "Small to medium-large birds that are waterbirds or birds clearly derived from waterbirds found along seacoasts and inland waters, with many called shorebirds. Most eat invertebrates or other small animals.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/D%27Orbigny-Mouette_rieuse_et_Bec-en-ciseaux_white_background.jpg/330px-D%27Orbigny-Mouette_rieuse_et_Bec-en-ciseaux_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/D%27Orbigny-Mouette_rieuse_et_Bec-en-ciseaux_white_background.jpg/330px-D%27Orbigny-Mouette_rieuse_et_Bec-en-ciseaux_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/CURLEW%2C_LONG-BILLED_%283-22-10%29_morro_bay%2C_ca_-04_%284455146301%29.jpg/330px-CURLEW%2C_LONG-BILLED_%283-22-10%29_morro_bay%2C_ca_-04_%284455146301%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Black-breasted_Button-quail_male_inskip.JPG/250px-Black-breasted_Button-quail_male_inskip.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/6/60/Reiherl%C3%A4ufer.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Larus_argentatus_ad.jpg/330px-Larus_argentatus_ad.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Laridae_on_Lake_Baikal.png/330px-Laridae_on_Lake_Baikal.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Stercorarius_antarcticus_-Godthul%2C_South_Georgia%2C_British_Overseas_Territories%2C_UK_-landing-8.jpg/250px-Stercorarius_antarcticus_-Godthul%2C_South_Georgia%2C_British_Overseas_Territories%2C_UK_-landing-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Aethia_pygmaea3.jpg/250px-Aethia_pygmaea3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Papageitaucher_Fratercula_arctica.jpg/330px-Papageitaucher_Fratercula_arctica.jpg"
     ],
     "card": 3,
     "species": 390
@@ -444,14 +571,17 @@
     "name": "Caprimulgiformes",
     "parent": "Strisores",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˌkæprɪˈmʌldʒɪfɔːrmiːz/ ",
     "etymology": "",
     "common": [
       "nightjars"
     ],
     "tag": "Often nocturnal or crepuscular hunters with a highly developed sense of sight that are known for feeding on the wing and are excellent flyers with small weak legs.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Chordeiles_acutipennis_texensisAQBIP06CA.jpg/330px-Chordeiles_acutipennis_texensisAQBIP06CA.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Chordeiles_acutipennis_texensisAQBIP06CA.jpg/330px-Chordeiles_acutipennis_texensisAQBIP06CA.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/28/Mlongipennis.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Lesser_Nighthawk.jpg/330px-Lesser_Nighthawk.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Great_Eared-Nightjar%2C_Tangkoko%2C_Sulawesi_%285799113025%29_%282%29.jpg/250px-Great_Eared-Nightjar%2C_Tangkoko%2C_Sulawesi_%285799113025%29_%282%29.jpg"
     ],
     "card": 9,
     "species": 100
@@ -463,11 +593,15 @@
     "ipa": "",
     "etymology": "",
     "common": [
-      "potoos"
+      "potoos",
+      "poor-me-ones"
     ],
-    "tag": "",
+    "tag": "Nocturnal insectivores that lack the bristles around the mouth found in the true nightjars that are found in central and south America. They hunt from a perch and during the day they perch upright camouflaged on tree stumps.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/NyctibiusBracteatusSmit.jpg/330px-NyctibiusBracteatusSmit.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/NyctibiusBracteatusSmit.jpg/330px-NyctibiusBracteatusSmit.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Northern_potoo_%28Nyctibius_jamaicensis_mexicanus%29_Orange_Walk.jpg/250px-Northern_potoo_%28Nyctibius_jamaicensis_mexicanus%29_Orange_Walk.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/M%C3%A3e-da-lua-gigante_%28Nyctibius_grandis%29.jpg/330px-M%C3%A3e-da-lua-gigante_%28Nyctibius_grandis%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Nyctibius_griseus_471885191_27f931630d_o_Crop.jpg/250px-Nyctibius_griseus_471885191_27f931630d_o_Crop.jpg"
     ],
     "card": 9,
     "species": 7
@@ -481,9 +615,11 @@
     "common": [
       "oilbirds"
     ],
-    "tag": "",
+    "tag": "Nocturnal forager with specially adapted eyesight that also echolocate, eat fruit and nesting in colonies in caves. They are found in northern South America.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Steatornis_caripensis_MHNT_ZON_STEA_1.jpg/330px-Steatornis_caripensis_MHNT_ZON_STEA_1.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Steatornis_caripensis_MHNT_ZON_STEA_1.jpg/330px-Steatornis_caripensis_MHNT_ZON_STEA_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Oilbirds.jpg/330px-Oilbirds.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Oilbird_%2817370415445%29.jpg/330px-Oilbird_%2817370415445%29.jpg"
     ],
     "card": 9,
     "species": 1
@@ -497,9 +633,12 @@
     "common": [
       "frogmouths"
     ],
-    "tag": "",
+    "tag": "Nocturnal birds with weak flight from Australiasia with large flattened hooked bill and huge frog-like gape that they use to eat insects and small invertebrates. During the day they rest camouflaged on branches.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Batrachostomus_septimus_01.jpg/250px-Batrachostomus_septimus_01.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Batrachostomus_septimus_01.jpg/250px-Batrachostomus_septimus_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tawny_frogmouth_wholebody444.jpg/330px-Tawny_frogmouth_wholebody444.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Pair_of_tawny_frogmouths.jpg/250px-Pair_of_tawny_frogmouths.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/A_Tawny_frogmouth%2C_Podargus_strigoides.jpg/330px-A_Tawny_frogmouth%2C_Podargus_strigoides.jpg"
     ],
     "card": 9,
     "species": 16
@@ -513,9 +652,14 @@
     "common": [
       "owlet-nightjars"
     ],
-    "tag": "",
+    "tag": "Small birds that feed on insects at twilight that are found in Australasia.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Aegotheles_savesi.jpg/250px-Aegotheles_savesi.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Aegotheles_savesi.jpg/250px-Aegotheles_savesi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Barred_Owlet-Nightjar.jpg/250px-Barred_Owlet-Nightjar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Aegotheles_chrisoptus_-_Catlereigh_Nature_Reserve.jpg/250px-Aegotheles_chrisoptus_-_Catlereigh_Nature_Reserve.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Australian_owlet-nightjar_A22I9928.jpg/330px-Australian_owlet-nightjar_A22I9928.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Feline_Owlet-nightjar_0A2A6959.jpg/330px-Feline_Owlet-nightjar_0A2A6959.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Moluccan_Owlet-nightjar_0A2A8326.jpg/330px-Moluccan_Owlet-nightjar_0A2A8326.jpg"
     ],
     "card": 9,
     "species": 10
@@ -524,16 +668,24 @@
     "name": "Apodiformes",
     "parent": "Strisores",
     "rank": "Order",
-    "ipa": "",
-    "etymology": "",
+    "ipa": "ˈæpədɪfɔːrmiːz",
+    "etymology": "greek 'footless'",
     "common": [
       "swifts",
       "treeswifts",
       "hummingbirds"
     ],
-    "tag": "Small to very small birds with a unique Albumen protein and a specialized wing morphology that feed while flying.",
+    "tag": "Small to very small birds with a specialized wing morphology that feed while flying.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/41/White-eared_Hummingbird_%28Basilinna_leucotis%29_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/4/41/White-eared_Hummingbird_%28Basilinna_leucotis%29_white_background.jpg",
+      "http://upload.wikimedia.org/wikipedia/commons/7/78/Flickr_-_Rainbirder_-_Chestnut-collared_Swift_%28Streptoprocne_rutila%29_on_the_nest.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Apus_apus_-Barcelona%2C_Spain-8_%281%29.jpg/330px-Apus_apus_-Barcelona%2C_Spain-8_%281%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/16/Apus_apus_flock_flying_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Grey_Rumped_Treeswift.jpg/250px-Grey_Rumped_Treeswift.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Moustached_Treeswift_%28Hemiprocne_mystacea%29_-_Flickr_-_Lip_Kee.jpg/250px-Moustached_Treeswift_%28Hemiprocne_mystacea%29_-_Flickr_-_Lip_Kee.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Archilochus_colubris_%28Male%29.jpg/330px-Archilochus_colubris_%28Male%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Purple-throated_carib_hummingbird_feeding.jpg/330px-Purple-throated_carib_hummingbird_feeding.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Rufous_Hummingbird%2C_male_01.jpg/330px-Rufous_Hummingbird%2C_male_01.jpg"
     ],
     "card": 9,
     "species": 497
@@ -548,8 +700,11 @@
       "sunbittern",
       "kagu"
     ],
-    "tag": "",
-    "imgs": [],
+    "tag": "The least inclusive crown clade containing the red-billed tropicbird, the sunbittern, and the kagu.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Red-billed_Tropicbird_%28Phaethon_aethereus%29_%284089464789%29.jpg/330px-Red-billed_Tropicbird_%28Phaethon_aethereus%29_%284089464789%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Eurypyga_helias_-Smithsonian_National_Zoological_Park%2C_USA-8.jpg/330px-Eurypyga_helias_-Smithsonian_National_Zoological_Park%2C_USA-8.jpg"
+    ],
     "card": 3,
     "species": 2
   },
@@ -557,14 +712,17 @@
     "name": "Phaethontiformes",
     "parent": "Eurypygimorphae",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˌfeɪ.ɪˈθɒntɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "tropicbirds"
     ],
-    "tag": "",
+    "tag": "Seabirds with elongated tail feathers.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Cuvier-95-Phaeton_%C3%A0_bec_rouge.jpg/330px-Cuvier-95-Phaeton_%C3%A0_bec_rouge.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Cuvier-95-Phaeton_%C3%A0_bec_rouge.jpg/330px-Cuvier-95-Phaeton_%C3%A0_bec_rouge.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Red-billed_Tropicbird_%28Phaethon_aethereus%29_%284089464789%29.jpg/330px-Red-billed_Tropicbird_%28Phaethon_aethereus%29_%284089464789%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Starr_080612-8667_Calophyllum_inophyllum.jpg/330px-Starr_080612-8667_Calophyllum_inophyllum.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Red-tailed_Tropicbird_RWD2.jpg/330px-Red-tailed_Tropicbird_RWD2.jpg"
     ],
     "card": 10,
     "species": 3
@@ -579,9 +737,11 @@
       "sunbittern",
       "kagu"
     ],
-    "tag": "",
+    "tag": "Medium-sized, almost flightless, non-migratory birds.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Cuvier-72-Caurale_soleil.jpg/330px-Cuvier-72-Caurale_soleil.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Cuvier-72-Caurale_soleil.jpg/330px-Cuvier-72-Caurale_soleil.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Eurypyga_helias_-Smithsonian_National_Zoological_Park%2C_USA-8.jpg/330px-Eurypyga_helias_-Smithsonian_National_Zoological_Park%2C_USA-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Kagu_0A2A3521.jpg/330px-Kagu_0A2A3521.jpg"
     ],
     "card": 10,
     "species": 2
@@ -601,7 +761,7 @@
     "name": "Gaviiformes",
     "parent": "Aequornithes",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˈɡævi.ɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "loons",
@@ -609,7 +769,11 @@
     ],
     "tag": "Waterbirds that breed beside lakes and ponds in arctic and subarctic latitudes of North America.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/IJsduiker_Gavia_immer_Jos_Zwarts.tif/lossy-page1-320px-IJsduiker_Gavia_immer_Jos_Zwarts.tif.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/IJsduiker_Gavia_immer_Jos_Zwarts.tif/lossy-page1-320px-IJsduiker_Gavia_immer_Jos_Zwarts.tif.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Gavia_immer_-Osgood_Pond%2C_New_York%2C_USA_-nest-8a.jpg/330px-Gavia_immer_-Osgood_Pond%2C_New_York%2C_USA_-nest-8a.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Gavia_immer_-Minocqua%2C_Wisconsin%2C_USA_-swimming-8.jpg/330px-Gavia_immer_-Minocqua%2C_Wisconsin%2C_USA_-swimming-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Red-throated_Loon_%28Gavia_stellata%29_-_Summer_plumage_breeding_adult2.jpg/250px-Red-throated_Loon_%28Gavia_stellata%29_-_Summer_plumage_breeding_adult2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Gavia_arctica_EM1B1934_%2848009481846%29.jpg/330px-Gavia_arctica_EM1B1934_%2848009481846%29.jpg"
     ],
     "card": 11,
     "species": 5
@@ -618,16 +782,23 @@
     "name": "Procellariiformes",
     "parent": "Aequornithes",
     "rank": "Order",
-    "ipa": "",
-    "etymology": "",
+    "ipa": "prɒsɛˈlɛəri.ɪfɔːrmiːz",
+    "etymology": "latin 'storm'-'order'",
     "common": [
+      "petrels",
       "albatrosses",
-      "shearwaters",
-      "petrels"
+      "shearwaters"
     ],
-    "tag": "Tube-nosed seabirds of the open ocean.",
+    "tag": "Medium to large seabirds that feed in the open ocean, travel long distances and are often known as tubenoses. They tend to form monogamous bonds and nest on remote islands.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Thalassarche_chlororhynchos_1838.jpg/250px-Thalassarche_chlororhynchos_1838.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Thalassarche_chlororhynchos_1838.jpg/250px-Thalassarche_chlororhynchos_1838.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Giant_petrel_-_Macronectes_giganteus.jpg/330px-Giant_petrel_-_Macronectes_giganteus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Shearwater_migrant_flock.jpg/250px-Shearwater_migrant_flock.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Diomedea_epomophora_portrait_-_SE_Tasmania.jpg/330px-Diomedea_epomophora_portrait_-_SE_Tasmania.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Phoebastria_albatrus1.jpg/330px-Phoebastria_albatrus1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Diomedea_exulans_in_flight_-_SE_Tasmania.jpg/330px-Diomedea_exulans_in_flight_-_SE_Tasmania.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Oceanodroma_furcata1.jpg/330px-Oceanodroma_furcata1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Grey-backed_Storm_Petrel_0A2A8780.jpg/330px-Grey-backed_Storm_Petrel_0A2A8780.jpg"
     ],
     "card": 11,
     "species": 147
@@ -636,14 +807,20 @@
     "name": "Sphenisciformes",
     "parent": "Aequornithes",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "sfɪˈnɪsəfɔːrmiːz",
     "etymology": "",
     "common": [
       "penguins"
     ],
-    "tag": "Flightless seabirds native to cool southern hemisphere waters.",
+    "tag": "Flightless seabirds with wings adapted to swimming and most species native to cool southern hemisphere waters.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/7/78/Chinstrap_Penguin_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/7/78/Chinstrap_Penguin_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg/250px-Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/South_Shetland-2016-Deception_Island%E2%80%93Chinstrap_penguin_%28Pygoscelis_antarctica%29_04.jpg/250px-South_Shetland-2016-Deception_Island%E2%80%93Chinstrap_penguin_%28Pygoscelis_antarctica%29_04.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Snares_Penguin_%28Eudyptes_robustus%29_-group.jpg/330px-Snares_Penguin_%28Eudyptes_robustus%29_-group.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/African_penguin_side_profile.jpg/250px-African_penguin_side_profile.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Falkland_Islands_Penguins_70.jpg/330px-Falkland_Islands_Penguins_70.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Pygoscelis_papua_-Nagasaki_Penguin_Aquarium_-swimming_underwater-8a.jpg/330px-Pygoscelis_papua_-Nagasaki_Penguin_Aquarium_-swimming_underwater-8a.jpg"
     ],
     "card": 11,
     "species": 18
@@ -652,14 +829,19 @@
     "name": "Ciconiiformes",
     "parent": "Aequornithes",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "sɪˈkoʊni.ɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "storks"
     ],
-    "tag": "Long-legged and often long necked birds adapted for wading and capturing animal foods.",
+    "tag": "Long-legged and often long necked birds adapted for wading and capturing animal foods and usually fly by soaring.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/d/d1/Wei%C3%9Fstorch_%28Ciconia_ciconia%29_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/d/d1/Wei%C3%9Fstorch_%28Ciconia_ciconia%29_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ringed_white_stork.jpg/250px-Ringed_white_stork.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Dvorac_Bisag_-_roda.jpg/250px-Dvorac_Bisag_-_roda.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/African_openbill%2C_Anastomus_lamelligerus%2C_Chobe_National_Park%2C_Botswana_%2832390774275%29.jpg/330px-African_openbill%2C_Anastomus_lamelligerus%2C_Chobe_National_Park%2C_Botswana_%2832390774275%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Abdim%27s_Stork_%28Ciconia_abdimii%29_%287011390701%29.jpg/330px-Abdim%27s_Stork_%28Ciconia_abdimii%29_%287011390701%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Yellow-billed_Stork_%28Mycteria_ibis%29_%2812011503884%29.jpg/330px-Yellow-billed_Stork_%28Mycteria_ibis%29_%2812011503884%29.jpg"
     ],
     "card": 11,
     "species": 19
@@ -668,7 +850,7 @@
     "name": "Suliformes",
     "parent": "Aequornithes",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˈsjuːlɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "frigatebirds",
@@ -682,7 +864,16 @@
     ],
     "tag": "Pelagic piscivores of tropical oceans. They obtain food on the wing and can stay airborne for long periods.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cormorant_in_Strunjan%2C_white_background.png/330px-Cormorant_in_Strunjan%2C_white_background.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Cormorant_in_Strunjan%2C_white_background.png/330px-Cormorant_in_Strunjan%2C_white_background.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Brown_boobytern.JPG/250px-Brown_boobytern.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/5/59/Northern_Gannet_2006_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Lamberts_Bay_P1010338.JPG/330px-Lamberts_Bay_P1010338.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9d/Fou.varie1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Fregata_magnificens_-Galapagos%2C_Ecuador_-male-8_%281%29.jpg/330px-Fregata_magnificens_-Galapagos%2C_Ecuador_-male-8_%281%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Magnificent-Frigate-male.jpg/330px-Magnificent-Frigate-male.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Little_cormorant_%28Microcarbo_niger%29_-_20070322.jpg/250px-Little_cormorant_%28Microcarbo_niger%29_-_20070322.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Phalacrocorax_atriceps%2C_Beagle_Channel.jpg/250px-Phalacrocorax_atriceps%2C_Beagle_Channel.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Anhinga_rufa_-Chobe_River_front%2C_Botswana-8.jpg/250px-Anhinga_rufa_-Chobe_River_front%2C_Botswana-8.jpg"
     ],
     "card": 11,
     "species": 61
@@ -691,7 +882,7 @@
     "name": "Pelecaniformes",
     "parent": "Aequornithes",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "pɛlɪˈkænɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "pelicans",
@@ -700,11 +891,20 @@
       "spoonbills",
       "bitterns",
       "hammerkop",
-      "shoebill"
+      "shoebills"
     ],
     "tag": "Medium to large sized aquatic birds that eat fish or squid and have all four toes webbed. Most members have distensible bare throat patch between the branches of the lower mandible.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Spot-billed_pelican_takeoff_white_background.jpg/250px-Spot-billed_pelican_takeoff_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Spot-billed_pelican_takeoff_white_background.jpg/250px-Spot-billed_pelican_takeoff_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Scarlet_ibis_arp.jpg/250px-Scarlet_ibis_arp.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Black-headed_Ibis_%28Threskiornis_melanocephalus%29.jpg/330px-Black-headed_Ibis_%28Threskiornis_melanocephalus%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Yellow_Bittern_hunting.jpg/330px-Yellow_Bittern_hunting.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Goliath_heron_standing_cropped.jpg/250px-Goliath_heron_standing_cropped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Heron_tricol_01.JPG/330px-Heron_tricol_01.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Hamerkop_%28Scopus_umbretta_umbretta%29_2.jpg/250px-Hamerkop_%28Scopus_umbretta_umbretta%29_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Balaeniceps_rex.jpg/250px-Balaeniceps_rex.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Pelikan_Walvis_Bay.jpg/330px-Pelikan_Walvis_Bay.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Pelecanus_conspicillatus_-Australia_-8.jpg/330px-Pelecanus_conspicillatus_-Australia_-8.jpg"
     ],
     "card": 11,
     "species": 118
@@ -736,14 +936,21 @@
     "name": "Strigiformes",
     "parent": "Afroaves",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˈstrɪdʒəfɔːrmiːz",
     "etymology": "",
     "common": [
       "owls"
     ],
-    "tag": "Solitary, nocturnal birds of prey occupying all regions of earth except Antarctica. Rounded heads with large eyes; legs and toes often feathered; hunt mostly small mammals, insects.",
+    "tag": "Solitary, nocturnal birds of prey occupying all regions of earth except Antarctica. Rounded heads with large eyes; upright stance; feathers adapted for silent flight; legs and toes often feathered; hunt mostly small mammals, insects.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/e/e7/Cuvier-12-Hibou_%C3%A0_huppe_courte.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/e/e7/Cuvier-12-Hibou_%C3%A0_huppe_courte.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Pulsatrix_perspicillata.jpg/250px-Pulsatrix_perspicillata.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Coruja-de-crista_%28Lophostrix_cristata%29.jpg/250px-Coruja-de-crista_%28Lophostrix_cristata%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Eastern_Screech_Owl.jpg/250px-Eastern_Screech_Owl.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/49/Ceylon_Bay_Owl1_Abhilash_Arjunan.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Harfang_en_vol_1.jpg/330px-Harfang_en_vol_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/SpottedEagleOwl2539MGEyeLid.jpg/250px-SpottedEagleOwl2539MGEyeLid.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Owl_sleeping_in_tree.jpg/250px-Owl_sleeping_in_tree.jpg"
     ],
     "card": 12,
     "species": 255
@@ -752,17 +959,31 @@
     "name": "Accipitriformes",
     "parent": "Afroaves",
     "rank": "Order",
-    "ipa": "",
-    "etymology": "",
+    "ipa": "ækˌsɪpɪtrɪˈfɔːrmiːz",
+    "etymology": "latin 'hawk'-'form'",
     "common": [
       "raptors",
       "hawks",
       "eagles",
-      "vultures"
+      "vultures",
+      "harriers",
+      "kites",
+      "ospreys",
+      "secretarybirds"
     ],
-    "tag": "Diurnal birds of prey. Male is often considerably smaller. Bill is hooked with sharp curved talons.",
+    "tag": "Diurnal birds of prey with a sharply hooked bill, wings optimised for souring and sharp curved talons. Female can be up to twice as large. ",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/b/b2/Golden_Eagle_Illustration_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/b/b2/Golden_Eagle_Illustration_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Wedge_tailed_eagle_in_flight04.jpg/330px-Wedge_tailed_eagle_in_flight04.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Circus_aeruginosus_Valencia_3.jpeg/330px-Circus_aeruginosus_Valencia_3.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Red-tailed_Hawk.jpg/250px-Red-tailed_Hawk.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Milvus_milvus_Jura.jpg/330px-Milvus_milvus_Jura.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Gyps_africanus_Torgos_tracheliotus.jpg/330px-Gyps_africanus_Torgos_tracheliotus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Osprey_at_Shadow_Mountain_Lake%2C_CO_8-27-12_%288054292660%29.jpg/250px-Osprey_at_Shadow_Mountain_Lake%2C_CO_8-27-12_%288054292660%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Osprey_with_its_nest.jpg/330px-Osprey_with_its_nest.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Greater_Yellow-headed_Vulture_%28Cathartes_melambrotus%29_in_flight_from_below.jpg/330px-Greater_Yellow-headed_Vulture_%28Cathartes_melambrotus%29_in_flight_from_below.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Urubu_a_tete_rouge_-_Turkey_Vulture.jpg/250px-Urubu_a_tete_rouge_-_Turkey_Vulture.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Sagittarius_serpentarius_Sekret%C3%A4r.JPG/250px-Sagittarius_serpentarius_Sekret%C3%A4r.JPG"
     ],
     "card": 12,
     "species": 266
@@ -787,9 +1008,13 @@
     "common": [
       "mousebirds"
     ],
-    "tag": "",
+    "tag": "Slender greyish or brown birds with soft, hairlike body feathers with pamprodactyl feet found in sub-Saharan Africa. They are arboreal and scurry through the leaves like rodents, in search of berries, fruit and buds.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/ColiusCastanonotusKeulemans.jpg/250px-ColiusCastanonotusKeulemans.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/ColiusCastanonotusKeulemans.jpg/250px-ColiusCastanonotusKeulemans.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Urocolius_macrourus-20090110B.jpg/250px-Urocolius_macrourus-20090110B.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Colius_striatus1.jpg/330px-Colius_striatus1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/White-headed_Mousebird_-_Samburu_NH8O5520.jpg/250px-White-headed_Mousebird_-_Samburu_NH8O5520.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Red-faced_Mousebird_Urocolius_indicus_in_flight_2012_05_08_6358t.JPG/330px-Red-faced_Mousebird_Urocolius_indicus_in_flight_2012_05_08_6358t.JPG"
     ],
     "card": 13,
     "species": 6
@@ -798,14 +1023,16 @@
     "name": "Leptosomiformes",
     "parent": "Coraciimorphae",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "lɛptoʊˈsɒmɪdiː",
     "etymology": "",
     "common": [
       "cuckoo roller"
     ],
-    "tag": "",
+    "tag": "A medium-large sexually dichromatic bird with zygodactyl feet that feeds on vertebrates and insects. It nests in tree cavities and is found in forests and woodlands of Madagascar and the Comoro Islands.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Leptosomus_discolor_-_1825-1834_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28cropped%29.tif/lossy-page1-200px-Leptosomus_discolor_-_1825-1834_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28cropped%29.tif.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Leptosomus_discolor_-_1825-1834_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28cropped%29.tif/lossy-page1-200px-Leptosomus_discolor_-_1825-1834_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28cropped%29.tif.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Leptosomusdiscolorcrop.jpg/250px-Leptosomusdiscolorcrop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Male_cuckoo_roller.jpg/250px-Male_cuckoo_roller.jpg"
     ],
     "card": 13,
     "species": 1
@@ -820,9 +1047,14 @@
       "trogons",
       "quetzals"
     ],
-    "tag": "",
+    "tag": "Birds that live in tropical forests worldwide that nest in holes dug into trees or termite nests. They feed on insects and fruit, have distinct male and female plumage, and a heterodactyl toe arrangement.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Harpactes_fasciatus_1838_white_background.jpg/250px-Harpactes_fasciatus_1838_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Harpactes_fasciatus_1838_white_background.jpg/250px-Harpactes_fasciatus_1838_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/PhilippineTrogonFemale.jpg/250px-PhilippineTrogonFemale.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Javan_Trogon_%28Harpactes_reinwardtii_reinwardtii%29.jpg/330px-Javan_Trogon_%28Harpactes_reinwardtii_reinwardtii%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Quetzal01.jpg/250px-Quetzal01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Priotelus_temnurus_-Matanzas_Province%2C_Cuba-8.jpg/250px-Priotelus_temnurus_-Matanzas_Province%2C_Cuba-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Harpactes_erythrocephalus_-_Khao_Yai.jpg/250px-Harpactes_erythrocephalus_-_Khao_Yai.jpg"
     ],
     "card": 13,
     "species": 43
@@ -831,15 +1063,21 @@
     "name": "Bucerotiformes",
     "parent": "Coraciimorphae",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "bjuːˈsɛrətɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "hornbills",
       "hoopoes"
     ],
-    "tag": "",
+    "tag": "Medium to large birds many with bright beaks and others with large curved beaks. Some species wall the female into a tree cavity while she incubates the eggs.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/cf/A_monograph_of_the_Bucerotid%C3%A6%2C_or_family_of_the_hornbills_%28Plate_II%29_%28white_background%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/c/cf/A_monograph_of_the_Bucerotid%C3%A6%2C_or_family_of_the_hornbills_%28Plate_II%29_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Common_Scimitar-bill_01.jpg/330px-Common_Scimitar-bill_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Hoopoe_with_insect.jpg/250px-Hoopoe_with_insect.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Abyssinian_Ground_Hornbill_RWD3.jpg/330px-Abyssinian_Ground_Hornbill_RWD3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Southern_Ground-hornbill_%28Bucorvus_leadbeateri%29_-side_beak_open.jpg/330px-Southern_Ground-hornbill_%28Bucorvus_leadbeateri%29_-side_beak_open.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c0/Great_hornbill_%28Buceros_bicornis%29_Photograph_by_Shantanu_Kuveskar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Malabar_Grey_Hornbill_DSCN8046.jpg/330px-Malabar_Grey_Hornbill_DSCN8046.jpg"
     ],
     "card": 13,
     "species": 74
@@ -852,14 +1090,24 @@
     "etymology": "",
     "common": [
       "kingfishers",
+      "kookaburras",
       "rollers",
       "bee-eaters",
+      "rollers",
       "todies",
       "motmots"
     ],
-    "tag": "Near passerine birds. Most nest in cavities or mud banks.",
+    "tag": "Near passerine birds with syndactyly toes. Most nest in cavities or mud banks.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cuvier-46-Martin-p%C3%AAcheur_d%27Europe.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/5/5f/Cuvier-46-Martin-p%C3%AAcheur_d%27Europe.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/European_roller.jpg/330px-European_roller.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Dacelo_novaeguineae_waterworks.jpg/330px-Dacelo_novaeguineae_waterworks.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Fishing_-_Alcedo_atthis%2C_crop.jpg/250px-Fishing_-_Alcedo_atthis%2C_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Ein_Eisvogel_im_Schwebflug.jpg/330px-Ein_Eisvogel_im_Schwebflug.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Nyctyornis_amictus_-_Kaeng_Krachan.jpg/250px-Nyctyornis_amictus_-_Kaeng_Krachan.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Blue-throated_Roller_from_Canopy_Walkway_-_Kakum_NP_-_Ghana_14_S4E1636_%2816011512580%29.jpg/250px-Blue-throated_Roller_from_Canopy_Walkway_-_Kakum_NP_-_Ghana_14_S4E1636_%2816011512580%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Blue-crowned_Motmot_back_2.jpg/250px-Blue-crowned_Motmot_back_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Jamaican_tody_%28Todus_todus%29.jpg/250px-Jamaican_tody_%28Todus_todus%29.jpg"
     ],
     "card": 13,
     "species": 184
@@ -868,7 +1116,7 @@
     "name": "Piciformes",
     "parent": "Coraciimorphae",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˈpɪsɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "woodpeckers",
@@ -879,9 +1127,16 @@
       "puffbirds",
       "nunbirds"
     ],
-    "tag": "Arboreal insectivorous birds with a peculiar arrangement of the tendons of the toes.",
+    "tag": "Arboreal insectivorous birds with a peculiar arrangement of the tendons of the toes. Nearly all have zygodactyl feet—two with toes forward and two back.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Dendrocopos_major_-Durham%2C_England_-female-8_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Dendrocopos_major_-Durham%2C_England_-female-8_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Red-headed_barbet_%28Eubucco_bourcierii_aequatorialis%29_male_Paz_de_las_Aves.jpg/330px-Red-headed_barbet_%28Eubucco_bourcierii_aequatorialis%29_male_Paz_de_las_Aves.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Toco_toucan_-_panoramio_-_Basa_Roland.jpg/330px-Toco_toucan_-_panoramio_-_Basa_Roland.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Flickr_-_Rainbirder_-_Scaly-throated_Honeyguide_%28Indicator_variegatus%29.jpg/504px-Flickr_-_Rainbirder_-_Scaly-throated_Honeyguide_%28Indicator_variegatus%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Rufous-tailed_jacamar_%28Galbula_ruficauda%29_male_2.JPG/250px-Rufous-tailed_jacamar_%28Galbula_ruficauda%29_male_2.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Lanceolated_Monklet_%28Micromonacha_lanceolata%29.jpg/250px-Lanceolated_Monklet_%28Micromonacha_lanceolata%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Monasa_atra_-_Black_nunbird.JPG/330px-Monasa_atra_-_Black_nunbird.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/PileatedWoodpeckerFeedingonTree%2C_crop.jpg/250px-PileatedWoodpeckerFeedingonTree%2C_crop.jpg"
     ],
     "card": 13,
     "species": 449
@@ -891,10 +1146,14 @@
     "parent": "Telluraves",
     "rank": "Clade",
     "ipa": "",
-    "etymology": "",
+    "etymology": "'southern birds'",
     "common": [],
-    "tag": "Altricial (young are underdeveloped at the time of birth)",
-    "imgs": [],
+    "tag": "The least inclusive crown clade containing the crested seriema and the house sparrow. Members are altricial (young are underdeveloped at the time of birth).",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Cariama_cristata_-near_Goiania%2C_Goias%2C_Brazil-8.jpg/330px-Cariama_cristata_-near_Goiania%2C_Goias%2C_Brazil-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/House_sparrow_male_in_Prospect_Park_%2853532%29.jpg/330px-House_sparrow_male_in_Prospect_Park_%2853532%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/House_Sparrow%2C_England_-_May_09.jpg/330px-House_Sparrow%2C_England_-_May_09.jpg"
+    ],
     "card": 12
   },
   {
@@ -904,11 +1163,15 @@
     "ipa": "",
     "etymology": "",
     "common": [
-      "seriemas"
+      "seriemas",
+      "terror birds"
     ],
-    "tag": "",
+    "tag": "Primarily flightless birds that are basal to the rest of Australaves.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Cariama_cristata_1838_white_background.jpg/250px-Cariama_cristata_1838_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Cariama_cristata_1838_white_background.jpg/250px-Cariama_cristata_1838_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Seriema_de_Perna_Vermelha_I.jpg/250px-Seriema_de_Perna_Vermelha_I.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Black-legged_seriema_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Skeleton_of_Titanis_at_the_Florida_Museum_of_Natural_History.jpg/330px-Skeleton_of_Titanis_at_the_Florida_Museum_of_Natural_History.jpg"
     ],
     "card": 14,
     "species": 2
@@ -917,15 +1180,23 @@
     "name": "Falconiformes",
     "parent": "Australaves",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "fælˈkɒnɪˌfɔːrmiːz",
     "etymology": "",
     "common": [
       "falcons",
-      "caracaras"
+      "caracaras",
+      "kestrels"
     ],
     "tag": "Diurnal birds of prey. Male is often considerably smaller than the female. They are highly adept fliers and hunters.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/4e/NewZealandFalconBuller_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/NewZealandFalconBuller_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Brown-Falcon%2C-Vic%2C-3.1.2008.jpg/250px-Brown-Falcon%2C-Vic%2C-3.1.2008.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e4/Falco_vespertinus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Lachfalke.jpg/250px-Lachfalke.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ave_Carcar%C3%A1.jpg/330px-Ave_Carcar%C3%A1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Common_kestrel_falco_tinnunculus.jpg/250px-Common_kestrel_falco_tinnunculus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Black_Caracara_-_Chupacacao_Negro_%28Daptrius_ater%29_%2814909975447%29_%28cropped%29.jpg/250px-Black_Caracara_-_Chupacacao_Negro_%28Daptrius_ater%29_%2814909975447%29_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Caracara_cheriway_-Brevard_Zoo-8a.jpg/330px-Caracara_cheriway_-Brevard_Zoo-8a.jpg"
     ],
     "card": 14,
     "species": 65
@@ -940,11 +1211,22 @@
       "parrots",
       "parakeets",
       "macaws",
-      "cockatoos"
+      "cockatoos",
+      "lorikeets",
+      "budgerigar"
     ],
-    "tag": "Have an upright stancem known for their vocal ability and intelligence. The upper mandible is prominent, curves downward and is not fused to the skull.",
+    "tag": "Birds with a strong curved beak, upright stance, and strong zygodactyl feet (two toes facing forward and two back) that are known for their vocal ability and intelligence.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Pyrrhura_lucianii_-_Castelnau_2.jpg/250px-Pyrrhura_lucianii_-_Castelnau_2.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Pyrrhura_lucianii_-_Castelnau_2.jpg/250px-Pyrrhura_lucianii_-_Castelnau_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Sirocco_full_length_portrait.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Kea.jpg/250px-Kea.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Rainbow_lorikeet.jpg/250px-Rainbow_lorikeet.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Melopsittacus_undulatus_%2824082227505%29.jpg/330px-Melopsittacus_undulatus_%2824082227505%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Psittrichas_fulgidus_-Jurong_Bird_Park-8a.jpg/250px-Psittrichas_fulgidus_-Jurong_Bird_Park-8a.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Ara_ararauna_Luc_Viatour.jpg/330px-Ara_ararauna_Luc_Viatour.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Congo_African_Grey_Parrot_-head_detail.jpg/330px-Congo_African_Grey_Parrot_-head_detail.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Cacatua_galerita_-perching_on_branch_-crest-8a-2c.jpg/250px-Cacatua_galerita_-perching_on_branch_-crest-8a-2c.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Kaka-Parrots.jpg"
     ],
     "card": 14,
     "species": 403
@@ -953,14 +1235,48 @@
     "name": "Passeriformes",
     "parent": "Australaves",
     "rank": "Order",
-    "ipa": "",
-    "etymology": "",
+    "ipa": "ˈpæsərɪfɔːrmiːz",
+    "etymology": "Latin 'sparrow'-'shaped'",
     "common": [
-      "passerines"
+      "passerines",
+      "sparrows",
+      "martins",
+      "treecreepers",
+      "bowerbirds",
+      "wrens",
+      "honeyeaters",
+      "warblers",
+      "babblers",
+      "shrikes",
+      "larks",
+      "ifrits",
+      "birds-of-paradise",
+      "crows",
+      "ravens",
+      "jays",
+      "magpies"
     ],
     "tag": "A diverse and rich assemblage of mostly small land birds with strong feet for perching and grabbing branches.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/5/50/Cuvier-33-Moineau_domestique.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/5/50/Cuvier-33-Moineau_domestique.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ed/Rock_wren.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Gymnopithys-leucaspis-001_edit2.jpg/250px-Gymnopithys-leucaspis-001_edit2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Flickr_-_Rainbirder_-_Long-tailed_Manakin_%28Chiroxiphia_linearis%29.jpg/500px-Flickr_-_Rainbirder_-_Long-tailed_Manakin_%28Chiroxiphia_linearis%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Turca%2C_Alto_del_Naranjo_01nov14_.jpg/250px-Turca%2C_Alto_del_Naranjo_01nov14_.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cd/Yellow_bellied_Asity12.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Superb_lyrbird_in_scrub.jpg/330px-Superb_lyrbird_in_scrub.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Brown_Treecreeper.jpg/250px-Brown_Treecreeper.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Vogelkop_Bowerbird_Bower_1099.jpg/330px-Vogelkop_Bowerbird_Bower_1099.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Acanthorhynchus_tenuirostris_female.jpg/330px-Acanthorhynchus_tenuirostris_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ribbon-tailed_Astrapia.jpg/250px-Ribbon-tailed_Astrapia.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Paradisaea_raggiana_23zz.jpg/330px-Paradisaea_raggiana_23zz.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Corvus_corone_-near_Canford_Cliffs%2C_Poole%2C_England-8.jpg/250px-Corvus_corone_-near_Canford_Cliffs%2C_Poole%2C_England-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Towerrabe.png/250px-Towerrabe.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Cracticus_tibicen_hypoleuca_male_domain.jpg/250px-Cracticus_tibicen_hypoleuca_male_domain.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Blue_jay_in_PP_%2830960%29.jpg/250px-Blue_jay_in_PP_%2830960%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Helmet_vanga_%28Euryceros_prevostii%29.jpg/330px-Helmet_vanga_%28Euryceros_prevostii%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Cliff_Swallow-27527-2.jpg/330px-Cliff_Swallow-27527-2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Pseudhirundo_griseopyga_Sharpe_%28cropped%29.jpg/330px-Pseudhirundo_griseopyga_Sharpe_%28cropped%29.jpg"
     ],
     "card": 14,
     "species": 6533
