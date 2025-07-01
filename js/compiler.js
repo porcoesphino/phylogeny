@@ -19,6 +19,7 @@ class Data {
             .concat(data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia)
             .concat(data_animalia_chordata_tetrapoda_aves_orders)
             .concat(data_animalia_chordata_tetrapoda_mammalia_orders)
+            .concat(data_fungi_phyla)
             .concat(data_plantae_divisions)
             .concat(data_plantae_pinophyta_genus_common)
             .concat(data_plantae_angiosperm_orders_minus_monocots_eudicots)

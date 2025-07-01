@@ -24,6 +24,7 @@ JSON_DATA_LIST = [
     'data_plantae_angiosperm_orders_minus_monocots_eudicots.json',
     'data_plantae_angiosperm_monocots_orders.json',
     'data_plantae_angiosperm_eudicots_orders.json',
+    'data_fungi_phyla.json',
 ]
 
 Rank: typing.TypeAlias = typing.Literal[
@@ -150,12 +151,15 @@ def get_html() -> str:
                   <option value="animalia_chordata_tetrapoda_mammalia_orders">Mammalia — orders</option>
                   <!-- <option value="animalia_chordata_tetrapoda_mammalia_carnivora_families">Carnivora — families</option> -->
                 </optgroup>
+                <optgroup label="Fungi">
+                  <option value="fungi_phyla">Fungi — common Phyla</option>
+                </optgroup>
                 <optgroup label="Plantae">
-                <option value="plantae_divisions">Divisions</option>
-                <option value="plantae_pinophyta_genus_common">Pinophyta — common genera</option>
-                <option value="plantae_angiosperm_orders_minus_monocots_eudicots">Angiosperm — orders minus Monocots and Eudicots</option>
-                <option value="plantae_angiosperm_monocots_orders">Monocot — orders</option>
-                <option value="plantae_angiosperm_eudicots_orders">Eudicot — orders</option>
+                  <option value="plantae_divisions">Plantae - Divisions</option>
+                  <option value="plantae_pinophyta_genus_common">Pinophyta — common genera</option>
+                  <option value="plantae_angiosperm_orders_minus_monocots_eudicots">Angiosperm — orders minus Monocots and Eudicots</option>
+                  <option value="plantae_angiosperm_monocots_orders">Monocot — orders</option>
+                  <option value="plantae_angiosperm_eudicots_orders">Eudicot — orders</option>
                 </optgroup>
               </select>
             </div>
