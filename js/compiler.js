@@ -16,6 +16,7 @@ class Data {
             .concat(data_animalia_arthropoda_orders_common)
             .concat(data_animalia_arthropoda_insecta_orders_common)
             .concat(data_animalia_chordata_classes_minus_tetrapoda)
+            .concat(data_animalia_chordata_elasmobranchii_orders)
             .concat(data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia)
             .concat(data_animalia_chordata_tetrapoda_aves_orders)
             .concat(data_animalia_chordata_tetrapoda_mammalia_orders)

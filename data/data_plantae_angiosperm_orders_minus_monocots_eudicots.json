@@ -1,7 +1,7 @@
 [
   {
     "name": "Basal angiosperms",
-    "parent": "Angiosperm",
+    "parent": "Angiospermae",
     "rank": "Grade",
     "ipa": "",
     "tag": "A parathyletic grade also known as the ANA grade.",
@@ -58,7 +58,7 @@
   },
   {
     "name": "Core angiosperms",
-    "parent": "Angiosperm",
+    "parent": "Angiospermae",
     "rank": "Grade",
     "ipa": "",
     "tag": "A parathyletic grade.",

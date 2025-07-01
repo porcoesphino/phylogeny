@@ -27,17 +27,6 @@
     "tag": "Organisms with cells have a membrane-bound nucleus and organelles, including a nucleus, mitochondria, endoplasmic reticulum, and Golgi apparatus."
   },
   {
-    "name": "Fungi",
-    "parent": "Eukaryota",
-    "rank": "Kingdom",
-    "ipa": "ˈfʌŋɡi",
-    "tag": "Eukaryotes with chitin in their cell walls and the primary decomposers in many ecological systems.",
-    "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Scarlet_elf_cap_cadnant_dingle.jpg/330px-Scarlet_elf_cap_cadnant_dingle.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caloplaca_thallincola.jpg"
-    ]
-  },
-  {
     "name": "Animalia",
     "parent": "Eukaryota",
     "rank": "Kingdom",
@@ -47,6 +36,17 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hertshoon.jpg/330px-Hertshoon.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Phyllorhiza_punctata_macro_II.jpg/330px-Phyllorhiza_punctata_macro_II.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/4/42/Equus_quagga_%28white_background%29.jpg"
+    ]
+  },
+  {
+    "name": "Fungi",
+    "parent": "Eukaryota",
+    "rank": "Kingdom",
+    "ipa": "ˈfʌŋɡi",
+    "tag": "Eukaryotes with chitin in their cell walls and the primary decomposers in many ecological systems.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Scarlet_elf_cap_cadnant_dingle.jpg/330px-Scarlet_elf_cap_cadnant_dingle.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caloplaca_thallincola.jpg"
     ]
   },
   {
