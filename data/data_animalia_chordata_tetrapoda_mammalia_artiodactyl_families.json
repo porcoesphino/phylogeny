@@ -6,9 +6,14 @@
     "ipa": "",
     "etymology": "",
     "common": [
-      "camels"
+      "dromedary camels",
+      "Bactrian camels",
+      "llamas",
+      "alpacas",
+      "vicuñas",
+      "guanacos"
     ],
-    "tag": "",
+    "tag": "Strictly herbivorous animals with slender necks and long legs but with vestigial canine teeth and tusk-like premolars and three-chambered stomachs. They have two-toed feet with toenails and soft foot pads, not hooves. Their red blood cells are elliptical.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Cladogram_of_Cetacea_within_Artiodactyla_%28Camelus_bactrianus%29.png/120px-Cladogram_of_Cetacea_within_Artiodactyla_%28Camelus_bactrianus%29.png"
     ]
@@ -20,7 +25,7 @@
     "ipa": "",
     "etymology": "",
     "common": [],
-    "tag": "The pigs.",
+    "tag": "The pigs. Omnivorous, non-ruminant artiodactyl mammals.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Recherches_pour_servir_%C3%A0_l%27histoire_naturelle_des_mammif%C3%A8res_%28Pl._80%29_%28white_background%29.jpg/120px-Recherches_pour_servir_%C3%A0_l%27histoire_naturelle_des_mammif%C3%A8res_%28Pl._80%29_%28white_background%29.jpg"
     ]
@@ -31,7 +36,12 @@
     "rank": "Family",
     "ipa": "",
     "etymology": "",
-    "common": [],
+    "common": [
+      "pigs",
+      "hogs",
+      "warthogs",
+      "babirusas"
+    ],
     "tag": "",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Recherches_pour_servir_%C3%A0_l%27histoire_naturelle_des_mammif%C3%A8res_%28Pl._80%29_%28white_background%29.jpg/120px-Recherches_pour_servir_%C3%A0_l%27histoire_naturelle_des_mammif%C3%A8res_%28Pl._80%29_%28white_background%29.jpg",
@@ -49,8 +59,11 @@
       "javelinas",
       "skunk pigs"
     ],
-    "tag": "",
-    "imgs": []
+    "tag": "New World pig. Medium-sized animal, with a strong resemblance to a pigs but with tusks that are short and straight that interlock with each other. They have a three chambered stomach and are foregut fermenters.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Collared_peccary02_-_melbourne_zoo.jpg/330px-Collared_peccary02_-_melbourne_zoo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Tayassu_pecari.jpg/330px-Tayassu_pecari.jpg"
+    ]
   },
   {
     "name": "Cetruminantia",
@@ -78,7 +91,7 @@
       "gazelles",
       "antelopes"
     ],
-    "tag": "The ruminants.",
+    "tag": "The ruminants. They have a four-chambered stomach, and a paraxonic foot.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Walia_ibex_illustration_white_background.png/120px-Walia_ibex_illustration_white_background.png"
     ]
@@ -92,9 +105,10 @@
     "common": [
       "mouse-deer"
     ],
-    "tag": "",
+    "tag": "The smallest hoofed mammals in the world. They have a four-chambered stomach (but the third chamber is poorly developed), and a paraxonic foot.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Tragulus_napu_-_1818-1842_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28white_background%29.jpg/120px-Tragulus_napu_-_1818-1842_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28white_background%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Tragulus_napu_-_1818-1842_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28white_background%29.jpg/120px-Tragulus_napu_-_1818-1842_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Mouse-deer_Singapore_Zoo_2012.JPG/250px-Mouse-deer_Singapore_Zoo_2012.JPG"
     ]
   },
   {
@@ -104,7 +118,7 @@
     "ipa": "",
     "etymology": "",
     "common": [],
-    "tag": "The horn bearers.",
+    "tag": "The horn bearers. Most species have cranial appendages projecting from their frontal bones but only some are properly called 'horns'. They have a four-chambered stomach, and a paraxonic foot.",
     "imgs": []
   },
   {
@@ -190,9 +204,11 @@
     "common": [
       "musk deer"
     ],
-    "tag": "",
+    "tag": "Characterized by long 'saber teeth' instead of horns and a lack of facial glands.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Moschus_chrysogaster_white_background.jpg/120px-Moschus_chrysogaster_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Moschus_chrysogaster_white_background.jpg/120px-Moschus_chrysogaster_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Siberian_Musk_Deer.jpg/250px-Siberian_Musk_Deer.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Moschus_moschiferus_in_Plzen_zoo_%2812.02.2011%29.jpg/250px-Moschus_moschiferus_in_Plzen_zoo_%2812.02.2011%29.jpg"
     ]
   },
   {
@@ -201,8 +217,13 @@
     "rank": "Suborder",
     "ipa": "",
     "etymology": "",
-    "common": [],
-    "tag": "",
+    "common": [
+      "hippopotamuses",
+      "whales",
+      "dolphins",
+      "porpoises"
+    ],
+    "tag": "The even-toed ungulates that exhibit amphibious and aquatic behaviors possibly the point they now have flippers. They have a dense layer of subcutaneous fat and largely hairless bodies.",
     "imgs": []
   },
   {
@@ -221,14 +242,16 @@
   },
   {
     "name": "Cetacea",
-    "parent": "Artiodactyl",
+    "parent": "Whippomorpha",
     "rank": "Suborder",
     "ipa": "",
     "etymology": "",
     "common": [
-      "whales"
+      "whales",
+      "dolphins",
+      "porpoises"
     ],
-    "tag": "",
+    "tag": "Have a fully aquatic lifestyle, streamlined body shape, often large size and exclusively carnivorous diet.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bowhead-Whale1_%2816273933365%29.jpg/120px-Bowhead-Whale1_%2816273933365%29.jpg"
     ]
@@ -255,8 +278,6 @@
     ],
     "tag": "",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Balaena_mysticetus_NOAA.jpg/250px-Balaena_mysticetus_NOAA.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Eubalaena_glacialis_NOAA.jpg/250px-Eubalaena_glacialis_NOAA.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Eubalaena_japonica_drawing-removebg-preview.png/250px-Eubalaena_japonica_drawing-removebg-preview.png",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Eubalaena_australis3_flipped.jpg/250px-Eubalaena_australis3_flipped.jpg"
     ]
@@ -293,10 +314,8 @@
     "tag": "",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/6/61/Blauwal.png",
-      "https://upload.wikimedia.org/wikipedia/commons/d/d3/Rorcual_com%C3%BAn_%28Balaenoptera_physalus%29_flipped.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Megaptera_novaeangliae_NOAA.jpg/330px-Megaptera_novaeangliae_NOAA.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/d/da/Rorcual_austral_3_flipped.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Balaenoptera_borealis.jpg/330px-Balaenoptera_borealis.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Balaenoptera_edeni.jpg/330px-Balaenoptera_edeni.jpg"
     ]
   },
@@ -344,7 +363,7 @@
       "Ganges river dolphins",
       "Indus river dolphins"
     ],
-    "tag": "",
+    "tag": "The river dolphins of South Asia.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Ganges.png/120px-Ganges.png"
     ]
@@ -362,25 +381,35 @@
     ]
   },
   {
-    "name": "Inioidea",
+    "name": "Delphinida",
     "parent": "Odontoceti",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "The modern oceanic dolphins, porpoises, and most river dolphins.",
+    "imgs": []
+  },
+  {
+    "name": "Inioidea",
+    "parent": "Delphinida",
     "rank": "Superfamily",
     "ipa": "",
     "etymology": "",
     "common": [],
-    "tag": "",
+    "tag": "American River Dolphins.",
     "imgs": []
   },
   {
     "name": "Lipotidae",
-    "parent": "Inioidea",
+    "parent": "Delphinida",
     "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
-      "Yangtze river dolphins"
+      "Yangtze river dolphins."
     ],
-    "tag": "",
+    "tag": "The river dolphins of China. Thought to be newly extinct.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Lipotes_vexillifer.png/120px-Lipotes_vexillifer.png"
     ]
@@ -391,8 +420,13 @@
     "rank": "Family",
     "ipa": "",
     "etymology": "",
-    "common": [],
-    "tag": "",
+    "common": [
+      "Araguaian river dolphins",
+      "Bolivian river dolphins",
+      "Amazon river dolphins",
+      "Orinoco river dolphins"
+    ],
+    "tag": "A family of river dolphins living in the Orinoco and Amazon basins (connected through the Casiquiare canal).",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Inia_geoffrensis.jpg/120px-Inia_geoffrensis.jpg"
     ]
@@ -403,19 +437,26 @@
     "rank": "Family",
     "ipa": "",
     "etymology": "",
-    "common": [],
-    "tag": "",
+    "common": [
+      "La Plata dolphins"
+    ],
+    "tag": "A river dolphin found in coastal Atlantic waters of southeastern South America in the ocean and saltwater estuaries.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Pontoporia_blainvillei.jpg/120px-Pontoporia_blainvillei.jpg"
     ]
   },
   {
     "name": "Delphinoidea",
-    "parent": "Odontoceti",
+    "parent": "Delphinida",
     "rank": "Superfamily",
     "ipa": "",
     "etymology": "",
-    "common": [],
+    "common": [
+      "oceanic dolphins",
+      "porpoises",
+      "narwhals",
+      "beluga whales"
+    ],
     "tag": "",
     "imgs": []
   },
@@ -447,14 +488,14 @@
       "narwhals",
       "beluga whales"
     ],
-    "tag": "",
+    "tag": "Medium-sized whales found at high latitudes in the arctic seas and in most of the major rivers draining into them. They feed mainly near the bottom on fish and invertebrates and are generally found in schools, sometimes more than 100 individuals.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Delphinapterus_leucas_NOAA.jpg/120px-Delphinapterus_leucas_NOAA.jpg"
     ]
   },
   {
     "name": "Phocoenidae",
-    "parent": "Odontoceti",
+    "parent": "Delphinoidea",
     "rank": "Family",
     "ipa": "",
     "etymology": "",
