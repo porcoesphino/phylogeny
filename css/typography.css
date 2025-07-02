@@ -30,3 +30,7 @@ p {
     color: #3e7774;
   }
 }
+
+small {
+  font-size: 0.65rem;
+}

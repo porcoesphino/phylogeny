@@ -364,6 +364,12 @@ class Page {
       page.query_params.update('card', 'all')
       this.add_card_select_options()
       update_tree_range_view(this.data)
+
+      if (this.data.tree_range == 'all') {
+        this._card_select.disabled = true
+      } else {
+        this._card_select.disabled = false
+      }
     }
     this._content_select.addEventListener('change', function () {
       content_select_change()

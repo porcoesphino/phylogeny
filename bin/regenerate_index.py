@@ -173,7 +173,7 @@ def get_html() -> str:
 
           <td>
             <div class="select">
-              <label for="card-select">Select card</label>
+              <label for="card-select">Select card <small>(Advanced for Anki input)</small></label>
               <select id="card-select">
               </select>
             </div>
