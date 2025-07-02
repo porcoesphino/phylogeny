@@ -1,0 +1,359 @@
+[
+  {
+    "name": "Feliformia",
+    "parent": "Carnivora",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [],
+    "imgs": [],
+    "species": 0
+  },
+  {
+    "name": "Nandiniidae",
+    "parent": "Feliformia",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in Sub-Saharan Africa.",
+    "common": [
+      "African palm civet"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_carnivores_of_West_Africa_%28Nandinia_binotata_white_background%29.png/120px-The_carnivores_of_West_Africa_%28Nandinia_binotata_white_background%29.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Nandinia_binotata%2C_Manchester_Museum.jpg/330px-Nandinia_binotata%2C_Manchester_Museum.jpg"
+    ],
+    "species": 1
+  },
+  {
+    "name": "Viverroidea",
+    "parent": "Feliformia",
+    "rank": "Parvorder",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "imgs": [
+      ""
+    ],
+    "species": 0
+  },
+  {
+    "name": "Viverridae",
+    "parent": "Viverroidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in Southern Europe, Indomalayan realm, and Africa.",
+    "common": [
+      "viverrids",
+      "civets",
+      "genets",
+      "oyans"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Malay_Civet_%28Viverra_tangalunga%29_white_background.jpg/120px-Malay_Civet_%28Viverra_tangalunga%29_white_background.jpg"
+    ],
+    "species": 34
+  },
+  {
+    "name": "Herpestidae",
+    "parent": "Viverroidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the Iberian Peninsula, Africa, the Middle East, the Caucasus, Central Asia, and the Indomalayan realm.",
+    "common": [
+      "mongooses"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Lydekker_-_Broad-banded_Cusimanse_%28white_background%29.JPG/120px-Lydekker_-_Broad-banded_Cusimanse_%28white_background%29.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Herpestes_ichneumon_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B0%D0%BD%D0%B3%D1%83%D1%81%D1%82%2C_%D0%B8%D0%BB%D0%B8_%D1%84%D0%B0%D1%80%D0%B0%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0_%D0%BA%D1%80%D1%8B%D1%81%D0%B0%2C_%D0%B8%D0%BB%D0%B8_%D0%B8%D1%85%D0%BD%D0%B5%D0%B2%D0%BC%D0%BE%CC%81%D0%BD.jpg/330px-Herpestes_ichneumon_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B0%D0%BD%D0%B3%D1%83%D1%81%D1%82%2C_%D0%B8%D0%BB%D0%B8_%D1%84%D0%B0%D1%80%D0%B0%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0_%D0%BA%D1%80%D1%8B%D1%81%D0%B0%2C_%D0%B8%D0%BB%D0%B8_%D0%B8%D1%85%D0%BD%D0%B5%D0%B2%D0%BC%D0%BE%CC%81%D0%BD.jpg"
+    ],
+    "species": 34
+  },
+  {
+    "name": "Eupleridae",
+    "parent": "Viverroidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in Madagascar.",
+    "common": [
+      "Malagasy mongooses",
+      "civets"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cryptoprocta_ferox_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-%28white_background%29.png/120px-Cryptoprocta_ferox_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-%28white_background%29.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Eupleres_goudotii_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa%2C_Italy_-_DSC02711.JPG/330px-Eupleres_goudotii_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa%2C_Italy_-_DSC02711.JPG"
+    ],
+    "species": 8
+  },
+  {
+    "name": "Hyaenidae",
+    "parent": "Viverroidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in Africa, the Middle East, the Caucasus, Central Asia, and the Indian subcontinent.",
+    "common": [
+      "hyenas"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Spotted_hyena_%28Crocuta_crocuta%29_by_Connor_Ashbridge.png/120px-Spotted_hyena_%28Crocuta_crocuta%29_by_Connor_Ashbridge.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Hyena_at_chattbir_zoo.jpg/330px-Hyena_at_chattbir_zoo.jpg"
+    ],
+    "species": 4
+  },
+  {
+    "name": "Feloidea",
+    "parent": "Feliformia",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "imgs": [
+      ""
+    ],
+    "species": 0
+  },
+  {
+    "name": "Prionodontidae",
+    "parent": "Feloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the Indomalayan realm.",
+    "common": [
+      "Asiatic linsangs"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Prionodon_maculosus.png/120px-Prionodon_maculosus.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Prionodon_linsang_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa%2C_Italy_-_DSC02704.JPG/330px-Prionodon_linsang_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa%2C_Italy_-_DSC02704.JPG"
+    ],
+    "species": 2
+  },
+  {
+    "name": "Felidae",
+    "parent": "Feloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the Americas, Africa, and Eurasia.",
+    "common": [
+      "cats",
+      "tigers",
+      "leopards",
+      "jaguars",
+      "lions",
+      "cheetahs",
+      "ocelots"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Stamp-russia2014-save-russian-cats-%28snow_leopard%29.png/120px-Stamp-russia2014-save-russian-cats-%28snow_leopard%29.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/330px-Felis_catus-cat_on_snow.jpg"
+    ],
+    "species": 37
+  },
+  {
+    "name": "Caniformia",
+    "parent": "Carnivora",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [],
+    "imgs": [],
+    "species": 0
+  },
+  {
+    "name": "Canidae",
+    "parent": "Caniformia",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the Americas, Africa, and Eurasia.",
+    "common": [
+      "dogs",
+      "wolves",
+      "foxes",
+      "dingoes",
+      "jackals",
+      "coyotes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Dogs%2C_jackals%2C_wolves%2C_and_foxes_%28Plate_XI%29.jpg/120px-Dogs%2C_jackals%2C_wolves%2C_and_foxes_%28Plate_XI%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/2013072515020909_MyDogs_622.jpg/330px-2013072515020909_MyDogs_622.jpg"
+    ],
+    "species": 35
+  },
+  {
+    "name": "Arctoidea",
+    "parent": "Caniformia",
+    "rank": "Infraorder",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [],
+    "imgs": [],
+    "species": 0
+  },
+  {
+    "name": "Ursidae",
+    "parent": "Arctoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the Americas and Eurasia.",
+    "common": [
+      "bears"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/UrsusNasutusWolf_white_background.jpg/120px-UrsusNasutusWolf_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg/330px-Kamchatka_Brown_Bear_near_Dvuhyurtochnoe_on_2015-07-23.jpg"
+    ],
+    "species": 8
+  },
+  {
+    "name": "Pinnipedia",
+    "parent": "Arctoidea",
+    "rank": "Parvorder",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [],
+    "imgs": [],
+    "species": 0
+  },
+  {
+    "name": "Phocidae",
+    "parent": "Pinnipedia",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The earless seals. Found in the sea and Lake Baikal.",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cambridge_Natural_History_Mammalia_Fig_230_white_background.jpg/120px-Cambridge_Natural_History_Mammalia_Fig_230_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/White_harbor_seal_on_moss_by_Dave_Withrow%2C_NOAA.png/330px-White_harbor_seal_on_moss_by_Dave_Withrow%2C_NOAA.png"
+    ],
+    "species": 18
+  },
+  {
+    "name": "Otariidae",
+    "parent": "Pinnipedia",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The Eared seals. Found in subpolar, temperate, and equatorial waters throughout the Pacific and Southern Oceans and the southern Indian and Atlantic Oceans.",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/NIE_1905_Seal_%28white_background%29.jpg/120px-NIE_1905_Seal_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Southern_Sea_Lions.jpg/330px-Southern_Sea_Lions.jpg"
+    ],
+    "species": 15
+  },
+  {
+    "name": "Odobenidae",
+    "parent": "Pinnipedia",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the North Pole in the Arctic Ocean and subarctic seas of the Northern Hemisphere.",
+    "common": [
+      "walruses"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Walrus_animal_male_detailed_photo_white_background.jpg/120px-Walrus_animal_male_detailed_photo_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Walrus2.jpg/330px-Walrus2.jpg"
+    ],
+    "species": 1
+  },
+  {
+    "name": "Musteloidea",
+    "parent": "Arctoidea",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "tag": "",
+    "common": [],
+    "imgs": [],
+    "species": 0
+  },
+  {
+    "name": "Mephitidae",
+    "parent": "Musteloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the Americas, western Philippines, and Indonesia and Malaysia.",
+    "common": [
+      "skunks",
+      "stink badgers"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Die_S%C3%A4ugthiere_in_Abbildungen_nach_der_Natur%2C_mit_Beschreibungen_%28Plate_CXXI-%29_%28white_background%29.jpg/120px-Die_S%C3%A4ugthiere_in_Abbildungen_nach_der_Natur%2C_mit_Beschreibungen_%28Plate_CXXI-%29_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Skunk_about_to_spray.jpg/330px-Skunk_about_to_spray.jpg"
+    ],
+    "species": 12
+  },
+  {
+    "name": "Ailuridae",
+    "parent": "Musteloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the Eastern Himalayas and southwestern China.",
+    "common": [
+      "red panda"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/RedPandaFullBody_white_background.JPG/120px-RedPandaFullBody_white_background.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/RedPanda_SingalilaNationalPark_DFrame.jpg/330px-RedPanda_SingalilaNationalPark_DFrame.jpg"
+    ],
+    "species": 1
+  },
+  {
+    "name": "Procyonidae",
+    "parent": "Musteloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the Americas.",
+    "common": [
+      "raccoons",
+      "olingos",
+      "ringtails",
+      "coatis",
+      "cacomistles",
+      "kinkajous"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Wild_animals_of_North_America%2C_intimate_studies_of_big_and_little_creatures_of_the_mammal_kingdom_%28Page_410%29_%28white_background%29.jpg/120px-Wild_animals_of_North_America%2C_intimate_studies_of_big_and_little_creatures_of_the_mammal_kingdom_%28Page_410%29_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Waschbaer_auf_dem_Dach.jpg/330px-Waschbaer_auf_dem_Dach.jpg"
+    ],
+    "species": 12
+  },
+  {
+    "name": "Mustelidae",
+    "parent": "Musteloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Found in the Americas, Africa, and Eurasia.",
+    "common": [
+      "weasels",
+      "otters",
+      "wolverines",
+      "polecats",
+      "badgers",
+      "martens",
+      "grisons"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Fitch_white_background.png/120px-Fitch_white_background.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Stoat_-_RSPB_Sandy_%2828058976023%29.jpg/330px-Stoat_-_RSPB_Sandy_%2828058976023%29.jpg"
+    ],
+    "species": 57
+  }
+]

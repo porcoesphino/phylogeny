@@ -21,7 +21,7 @@ JSON_DATA_LIST = [
     'data_animalia_chordata_actinopterygii_acanthomorpha_orders.json',
     'data_animalia_chordata_tetrapoda_aves_orders.json',
     'data_animalia_chordata_tetrapoda_mammalia_orders.json',
-    # 'data_animalia_chordata_tetrapoda_mammalia_carnivora_families.json',
+    'data_animalia_chordata_tetrapoda_mammalia_carnivora_families.json',
     'data_plantae_divisions.json',
     'data_plantae_pinophyta_genus_common.json',
     'data_plantae_angiosperm_orders_minus_monocots_eudicots.json',
@@ -177,7 +177,9 @@ def get_html() -> str:
                   <option value="animalia_chordata_tetrapoda_mammalia_orders">
                     ——→ Mammalia — orders
                   </option>
-                  <!-- <option value="animalia_chordata_tetrapoda_mammalia_carnivora_families">Carnivora — families</option> -->
+                  <option value="animalia_chordata_tetrapoda_mammalia_carnivora_families">
+                    ———→ Carnivora — families
+                  </option>
                 </optgroup>
                 <optgroup label="Fungi">
                   <option value="fungi_phyla">Fungi — common Phyla</option>
