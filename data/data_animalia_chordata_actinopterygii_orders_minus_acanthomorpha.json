@@ -43,13 +43,12 @@
     "species": 32000
   },
   {
-    "name": "Ginglymodi",
+    "name": "Lepisosteiformes",
     "parent": "Neopterygii",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "common": [
-      "gars",
-      "alligator gars"
+      "gars"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Alligator_gar_fish_%28white_background%29.jpg/330px-Alligator_gar_fish_%28white_background%29.jpg"
@@ -59,13 +58,12 @@
     "species": 7
   },
   {
-    "name": "Halecomorphi",
+    "name": "Amiiformes",
     "parent": "Neopterygii",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "common": [
-      "bowfin",
-      "eyespot bowfin"
+      "bowfins"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Amia_calva_%28white_background%29.jpg/330px-Amia_calva_%28white_background%29.jpg"
@@ -77,27 +75,29 @@
   {
     "name": "Teleostei",
     "parent": "Neopterygii",
-    "rank": "",
-    "ipa": "",
-    "common": [],
+    "rank": "Infraclass",
+    "ipa": "ˌtɛliˈɒstiaɪ",
+    "common": [
+      "'complete'-'bone'"
+    ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Common_carp_%28white_background%29.jpg/330px-Common_carp_%28white_background%29.jpg"
     ],
     "etymology": "",
-    "tag": "",
+    "tag": "Have a movable premaxilla used to protrude their jaws outwards from their mouth. Most use external fertilisation and many are sequential hermaphrodites changing sex with age.",
     "species": 32000
   },
   {
     "name": "Osteoglossomorpha",
     "parent": "Teleostei",
-    "rank": "",
+    "rank": "Clade",
     "ipa": "",
     "common": [],
     "imgs": [
       ""
     ],
     "etymology": "",
-    "tag": "",
+    "tag": "Use their tongue as the opposing surface for the teeth. Extant species are freshwater fish.",
     "species": 0
   },
   {
@@ -134,24 +134,25 @@
   {
     "name": "Elopomorpha",
     "parent": "Teleostei",
-    "rank": "",
+    "rank": "Superorder",
     "ipa": "",
     "common": [],
     "imgs": [
       ""
     ],
     "etymology": "",
-    "tag": "",
+    "tag": "Unique to this group are leptocephalus larvae.",
     "species": 0
   },
   {
     "name": "Elopiformes",
     "parent": "Elopomorpha",
-    "rank": "",
-    "ipa": "",
+    "rank": "Order",
+    "ipa": "ˈɛləpɪfɔːrmiːz",
     "common": [
       "tenpounders",
-      "tarpons"
+      "tarpons",
+      "ladyfish"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Tarpon_%28PSF%29.png/250px-Tarpon_%28PSF%29.png"
@@ -163,8 +164,8 @@
   {
     "name": "Albuliformes",
     "parent": "Elopomorpha",
-    "rank": "",
-    "ipa": "",
+    "rank": "Order",
+    "ipa": "ˈælbjəlɪfɔːrmiːz",
     "common": [
       "Japanese gissus",
       "bonefishes"
@@ -179,23 +180,21 @@
   {
     "name": "Notacanthiformes",
     "parent": "Elopomorpha",
-    "rank": "",
-    "ipa": "",
-    "common": [
-      "deep sea spiny eels"
-    ],
+    "rank": "Order",
+    "ipa": "nɒtəˈkænθɪfɔːrmiːz",
+    "common": [],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Notacanthus_sexspinis1.jpg/250px-Notacanthus_sexspinis1.jpg"
     ],
     "etymology": "",
-    "tag": "",
+    "tag": "Deep-sea ray-finned eels.",
     "species": 0
   },
   {
     "name": "Anguilliformes",
     "parent": "Elopomorpha",
-    "rank": "",
-    "ipa": "",
+    "rank": "Order",
+    "ipa": "æŋˈɡwɪlɪfɔːrmiːz",
     "common": [
       "true eels"
     ],
@@ -209,23 +208,25 @@
   {
     "name": "Otocephala",
     "parent": "Teleostei",
-    "rank": "",
+    "rank": "Clade",
     "ipa": "",
     "common": [],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/FMIB_43249_Menhaden_%28Brevortia_tyrannus%29_2.jpeg/330px-FMIB_43249_Menhaden_%28Brevortia_tyrannus%29_2.jpeg"
     ],
     "etymology": "",
-    "tag": "",
+    "tag": "Named for the presence of a hearing link from the swimbladder to the inner ear.",
     "species": 0
   },
   {
     "name": "Clupeiformes",
     "parent": "Otocephala",
-    "rank": "",
-    "ipa": "",
+    "rank": "Order",
+    "ipa": "ˈkluːpiːɪfɔːrmiːz",
     "common": [
-      "herrings"
+      "herrings",
+      "anchovies",
+      "sardines"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/American_shad_fish_alosa_sapidissima_%28white_background%29.jpg/250px-American_shad_fish_alosa_sapidissima_%28white_background%29.jpg"
@@ -237,7 +238,7 @@
   {
     "name": "Alepocephaliformes",
     "parent": "Otocephala",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "common": [
       "slickheads",
@@ -344,7 +345,7 @@
   {
     "name": "Euteleostei",
     "parent": "Teleostei",
-    "rank": "",
+    "rank": "Clade",
     "ipa": "",
     "common": [],
     "imgs": [
@@ -357,7 +358,7 @@
   {
     "name": "Lepidogalaxiiformes",
     "parent": "Euteleostei",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "common": [
       "salamanderfish"
@@ -502,9 +503,9 @@
     "species": 0
   },
   {
-    "name": "Ateleopodidae",
+    "name": "Ateleopodiformes",
     "parent": "Neoteleostei",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "common": [
       "jellynoses"
@@ -519,8 +520,8 @@
   {
     "name": "Aulopiformes",
     "parent": "Neoteleostei",
-    "rank": "",
-    "ipa": "",
+    "rank": "Order",
+    "ipa": "ˈɔːləpɪfɔːrmiːz",
     "common": [
       "lizardfish"
     ],
@@ -534,8 +535,8 @@
   {
     "name": "Myctophiformes",
     "parent": "Neoteleostei",
-    "rank": "",
-    "ipa": "",
+    "rank": "Order",
+    "ipa": "ˈmɪktəfɪfɔːrmiːz",
     "common": [
       "lanternfish"
     ],

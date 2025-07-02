@@ -120,8 +120,8 @@
   {
     "name": "Beryciformes",
     "parent": "Acanthopterygii",
-    "rank": "",
-    "ipa": "",
+    "rank": "Order",
+    "ipa": "ˈbɛrɪsɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "alfonsinos",
@@ -143,8 +143,8 @@
   {
     "name": "Trachichthyiformes",
     "parent": "Acanthopterygii",
-    "rank": "",
-    "ipa": "",
+    "rank": "Order",
+    "ipa": "træˈkɪkθi.ɪfɔːrmiːz",
     "etymology": "",
     "common": [
       "pinecone fishes",
@@ -153,22 +153,6 @@
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Hoplostethus_mediterraneus.jpg/250px-Hoplostethus_mediterraneus.jpg"
-    ],
-    "tag": "",
-    "species": 0
-  },
-  {
-    "name": "Holocentriformes",
-    "parent": "Acanthopterygii",
-    "rank": "",
-    "ipa": "",
-    "etymology": "",
-    "common": [
-      "squirrelfish",
-      "soldier fishes"
-    ],
-    "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Holocentrus_adscensionis_%28white_background%29.jpg/250px-Holocentrus_adscensionis_%28white_background%29.jpg"
     ],
     "tag": "",
     "species": 0
