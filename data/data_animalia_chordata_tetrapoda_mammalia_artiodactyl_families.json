@@ -1,0 +1,469 @@
+[
+  {
+    "name": "Camelidae",
+    "parent": "Artiodactyl",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "camels"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Cladogram_of_Cetacea_within_Artiodactyla_%28Camelus_bactrianus%29.png/120px-Cladogram_of_Cetacea_within_Artiodactyla_%28Camelus_bactrianus%29.png"
+    ]
+  },
+  {
+    "name": "Suina",
+    "parent": "Artiodactyl",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "The pigs.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Recherches_pour_servir_%C3%A0_l%27histoire_naturelle_des_mammif%C3%A8res_%28Pl._80%29_%28white_background%29.jpg/120px-Recherches_pour_servir_%C3%A0_l%27histoire_naturelle_des_mammif%C3%A8res_%28Pl._80%29_%28white_background%29.jpg"
+    ]
+  },
+  {
+    "name": "Suidae",
+    "parent": "Suina",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Recherches_pour_servir_%C3%A0_l%27histoire_naturelle_des_mammif%C3%A8res_%28Pl._80%29_%28white_background%29.jpg/120px-Recherches_pour_servir_%C3%A0_l%27histoire_naturelle_des_mammif%C3%A8res_%28Pl._80%29_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/PotamochoerusAfricanusWolf_white_background.jpg/120px-PotamochoerusAfricanusWolf_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Babiroussa_%28white_background%29.jpg/120px-Babiroussa_%28white_background%29.jpg"
+    ]
+  },
+  {
+    "name": "Tayassuidae",
+    "parent": "Suina",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "javelinas",
+      "skunk pigs"
+    ],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Cetruminantia",
+    "parent": "Artiodactyl",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "The ruminants, hippopotamuses and whales.",
+    "imgs": []
+  },
+  {
+    "name": "Ruminantia",
+    "parent": "Cetruminantia",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "cattle",
+      "bovines",
+      "goats",
+      "sheep",
+      "giraffes",
+      "deer",
+      "gazelles",
+      "antelopes"
+    ],
+    "tag": "The ruminants.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Walia_ibex_illustration_white_background.png/120px-Walia_ibex_illustration_white_background.png"
+    ]
+  },
+  {
+    "name": "Tragulidae",
+    "parent": "Cetruminantia",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "mouse-deer"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Tragulus_napu_-_1818-1842_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28white_background%29.jpg/120px-Tragulus_napu_-_1818-1842_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28white_background%29.jpg"
+    ]
+  },
+  {
+    "name": "Pecora",
+    "parent": "Cetruminantia",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "The horn bearers.",
+    "imgs": []
+  },
+  {
+    "name": "Antilocapridae",
+    "parent": "Pecora",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "pronghorns"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Antilocapra_white_background.jpg/120px-Antilocapra_white_background.jpg"
+    ]
+  },
+  {
+    "name": "Giraffidae",
+    "parent": "Pecora",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "zebra giraffes",
+      "giraffes"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Giraffa_camelopardalis_Brockhaus_white_background.jpg/120px-Giraffa_camelopardalis_Brockhaus_white_background.jpg"
+    ]
+  },
+  {
+    "name": "Cervidae",
+    "parent": "Pecora",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "true deer",
+      "muntjac",
+      "elk",
+      "wapiti",
+      "red deer",
+      "fallow deer",
+      "reindeer",
+      "caribou",
+      "white-tailed deer",
+      "roe deer",
+      "moose"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/The_deer_of_all_lands_%281898%29_Hangul_white_background.png/120px-The_deer_of_all_lands_%281898%29_Hangul_white_background.png"
+    ]
+  },
+  {
+    "name": "Bovidae",
+    "parent": "Pecora",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "cattle",
+      "bison",
+      "buffalo",
+      "antelopes",
+      "goat-antelopes",
+      "sheep",
+      "goats"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Birds_and_nature_%281901%29_%2814562088237%29_white_background.jpg/120px-Birds_and_nature_%281901%29_%2814562088237%29_white_background.jpg"
+    ],
+    "species": 143
+  },
+  {
+    "name": "Moschidae",
+    "parent": "Pecora",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "musk deer"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Moschus_chrysogaster_white_background.jpg/120px-Moschus_chrysogaster_white_background.jpg"
+    ]
+  },
+  {
+    "name": "Whippomorpha",
+    "parent": "Cetruminantia",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Hippopotamidae",
+    "parent": "Whippomorpha",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "hippopotamuses"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Voyage_en_Abyssinie_Plate_2_%28white_background%29.jpg/120px-Voyage_en_Abyssinie_Plate_2_%28white_background%29.jpg"
+    ]
+  },
+  {
+    "name": "Cetacea",
+    "parent": "Artiodactyl",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "whales"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bowhead-Whale1_%2816273933365%29.jpg/120px-Bowhead-Whale1_%2816273933365%29.jpg"
+    ]
+  },
+  {
+    "name": "Mysticeti",
+    "parent": "Cetacea",
+    "rank": "Parvorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "The baleen whales.",
+    "imgs": []
+  },
+  {
+    "name": "Balaenidae",
+    "parent": "Mysticeti",
+    "rank": "Family",
+    "ipa": "bəˈlɛnɪdeɪ",
+    "etymology": "",
+    "common": [
+      "right whales",
+      "bowhead whales"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Balaena_mysticetus_NOAA.jpg/250px-Balaena_mysticetus_NOAA.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Eubalaena_glacialis_NOAA.jpg/250px-Eubalaena_glacialis_NOAA.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Eubalaena_japonica_drawing-removebg-preview.png/250px-Eubalaena_japonica_drawing-removebg-preview.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Eubalaena_australis3_flipped.jpg/250px-Eubalaena_australis3_flipped.jpg"
+    ]
+  },
+  {
+    "name": "Cetotheriidae",
+    "parent": "Mysticeti",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "pygmy right whales"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/6c/Caperea_marginata_3.jpg"
+    ]
+  },
+  {
+    "name": "Balaenopteridae",
+    "parent": "Mysticeti",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "right whales",
+      "grey whales",
+      "blue whales",
+      "humpback whales",
+      "fin whales",
+      "sei whales",
+      "minke whales"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/61/Blauwal.png",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d3/Rorcual_com%C3%BAn_%28Balaenoptera_physalus%29_flipped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Megaptera_novaeangliae_NOAA.jpg/330px-Megaptera_novaeangliae_NOAA.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/da/Rorcual_austral_3_flipped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Balaenoptera_borealis.jpg/330px-Balaenoptera_borealis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Balaenoptera_edeni.jpg/330px-Balaenoptera_edeni.jpg"
+    ]
+  },
+  {
+    "name": "Odontoceti",
+    "parent": "Cetacea",
+    "rank": "Parvorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "The toothed whales.",
+    "imgs": []
+  },
+  {
+    "name": "Kogiidae",
+    "parent": "Odontoceti",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "Dwarf sperm whales.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Kogia_sima_%28transparent_background%29.png/120px-Kogia_sima_%28transparent_background%29.png"
+    ]
+  },
+  {
+    "name": "Physeteridae",
+    "parent": "Odontoceti",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "Sperm whales.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Physeter_macrocephalus_NOAA.jpg/120px-Physeter_macrocephalus_NOAA.jpg"
+    ]
+  },
+  {
+    "name": "Platanistidae",
+    "parent": "Odontoceti",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Ganges river dolphins",
+      "Indus river dolphins"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Ganges.png/120px-Ganges.png"
+    ]
+  },
+  {
+    "name": "Ziphiidae",
+    "parent": "Odontoceti",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "The beaked whales.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Ziphius_cavirostris_NOAA.jpg/120px-Ziphius_cavirostris_NOAA.jpg"
+    ]
+  },
+  {
+    "name": "Inioidea",
+    "parent": "Odontoceti",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Lipotidae",
+    "parent": "Inioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Yangtze river dolphins"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Lipotes_vexillifer.png/120px-Lipotes_vexillifer.png"
+    ]
+  },
+  {
+    "name": "Iniidae",
+    "parent": "Inioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Inia_geoffrensis.jpg/120px-Inia_geoffrensis.jpg"
+    ]
+  },
+  {
+    "name": "Pontoporiidae",
+    "parent": "Inioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Pontoporia_blainvillei.jpg/120px-Pontoporia_blainvillei.jpg"
+    ]
+  },
+  {
+    "name": "Delphinoidea",
+    "parent": "Odontoceti",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Delphinidae",
+    "parent": "Delphinoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "false killer whales",
+      "pilot whales",
+      "Maui's dolphins",
+      "orcas",
+      "bottlenose dolphins"
+    ],
+    "tag": "The true dolphins, or oceanic dolphins.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Orcinus_orca_NOAA_2.jpg/120px-Orcinus_orca_NOAA_2.jpg"
+    ]
+  },
+  {
+    "name": "Monodontidae",
+    "parent": "Delphinoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "narwhals",
+      "beluga whales"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Delphinapterus_leucas_NOAA.jpg/120px-Delphinapterus_leucas_NOAA.jpg"
+    ]
+  },
+  {
+    "name": "Phocoenidae",
+    "parent": "Odontoceti",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "porpoises"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Vaquita_swimming_through_the_void._%28Phocoena_Sinus%29.png/120px-Vaquita_swimming_through_the_void._%28Phocoena_Sinus%29.png"
+    ]
+  }
+]

@@ -23,6 +23,7 @@ class Data {
             .concat(data_animalia_chordata_tetrapoda_aves_orders)
             .concat(data_animalia_chordata_tetrapoda_mammalia_orders)
             .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_families)
+            .concat(data_animalia_chordata_tetrapoda_mammalia_artiodactyl_families)
             .concat(data_fungi_phyla)
             .concat(data_plantae_divisions)
             .concat(data_plantae_pinophyta_genus_common)
