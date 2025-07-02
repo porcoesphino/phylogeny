@@ -5,8 +5,13 @@
     "rank": "Suborder",
     "ipa": "",
     "etymology": "",
-    "tag": "",
-    "common": [],
+    "tag": "The 'cat-like' animals.",
+    "common": [
+      "cats",
+      "hyenas",
+      "mongooses",
+      "viverrids"
+    ],
     "imgs": [],
     "species": 0
   },
@@ -16,13 +21,13 @@
     "rank": "Family",
     "ipa": "",
     "etymology": "",
-    "tag": "Found in Sub-Saharan Africa.",
+    "tag": "A small feliform mammal that's nocturnal, largely arboreal, eats fruit and widely distributed in sub-Saharan Africa.",
     "common": [
       "African palm civet"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/The_carnivores_of_West_Africa_%28Nandinia_binotata_white_background%29.png/120px-The_carnivores_of_West_Africa_%28Nandinia_binotata_white_background%29.png",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Nandinia_binotata%2C_Manchester_Museum.jpg/330px-Nandinia_binotata%2C_Manchester_Museum.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Nandinia_binotata%2C_Manchester_Museum.jpg/330px-Nandinia_binotata%2C_Manchester_Museum.jpg",
     ],
     "species": 1
   },
@@ -32,7 +37,7 @@
     "rank": "Parvorder",
     "ipa": "",
     "etymology": "",
-    "tag": "",
+    "tag": "Includes viverrids, mongooses and hyaenas.",
     "imgs": [
       ""
     ],
@@ -49,10 +54,16 @@
       "viverrids",
       "civets",
       "genets",
-      "oyans"
+      "oyans",
+      "African linsangs"
     ],
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Malay_Civet_%28Viverra_tangalunga%29_white_background.jpg/120px-Malay_Civet_%28Viverra_tangalunga%29_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Malay_Civet_%28Viverra_tangalunga%29_white_background.jpg/120px-Malay_Civet_%28Viverra_tangalunga%29_white_background.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Small_Indian_Civet%2C_Silchar%2C_Assam%2C_India.jpg/330px-Small_Indian_Civet%2C_Silchar%2C_Assam%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Banded_palm_civet_10.jpg/330px-Banded_palm_civet_10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Binturong_in_Overloon.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Palm_civet_on_tree_%28detail%29.jpg/330px-Palm_civet_on_tree_%28detail%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Genetta_genetta_felina_%28Wroclaw_zoo%29.JPG/250px-Genetta_genetta_felina_%28Wroclaw_zoo%29.JPG"
     ],
     "species": 34
   },
@@ -64,11 +75,15 @@
     "etymology": "",
     "tag": "Found in the Iberian Peninsula, Africa, the Middle East, the Caucasus, Central Asia, and the Indomalayan realm.",
     "common": [
-      "mongooses"
+      "mongooses",
+      "meerkats"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Lydekker_-_Broad-banded_Cusimanse_%28white_background%29.JPG/120px-Lydekker_-_Broad-banded_Cusimanse_%28white_background%29.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Herpestes_ichneumon_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B0%D0%BD%D0%B3%D1%83%D1%81%D1%82%2C_%D0%B8%D0%BB%D0%B8_%D1%84%D0%B0%D1%80%D0%B0%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0_%D0%BA%D1%80%D1%8B%D1%81%D0%B0%2C_%D0%B8%D0%BB%D0%B8_%D0%B8%D1%85%D0%BD%D0%B5%D0%B2%D0%BC%D0%BE%CC%81%D0%BD.jpg/330px-Herpestes_ichneumon_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B0%D0%BD%D0%B3%D1%83%D1%81%D1%82%2C_%D0%B8%D0%BB%D0%B8_%D1%84%D0%B0%D1%80%D0%B0%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0_%D0%BA%D1%80%D1%8B%D1%81%D0%B0%2C_%D0%B8%D0%BB%D0%B8_%D0%B8%D1%85%D0%BD%D0%B5%D0%B2%D0%BC%D0%BE%CC%81%D0%BD.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Herpestes_ichneumon_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B0%D0%BD%D0%B3%D1%83%D1%81%D1%82%2C_%D0%B8%D0%BB%D0%B8_%D1%84%D0%B0%D1%80%D0%B0%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0_%D0%BA%D1%80%D1%8B%D1%81%D0%B0%2C_%D0%B8%D0%BB%D0%B8_%D0%B8%D1%85%D0%BD%D0%B5%D0%B2%D0%BC%D0%BE%CC%81%D0%BD.jpg/330px-Herpestes_ichneumon_%D0%95%D0%B3%D0%B8%D0%BF%D0%B5%D1%82%D1%81%D0%BA%D0%B8%D0%B9_%D0%BC%D0%B0%D0%BD%D0%B3%D1%83%D1%81%D1%82%2C_%D0%B8%D0%BB%D0%B8_%D1%84%D0%B0%D1%80%D0%B0%D0%BE%D0%BD%D0%BE%D0%B2%D0%B0_%D0%BA%D1%80%D1%8B%D1%81%D0%B0%2C_%D0%B8%D0%BB%D0%B8_%D0%B8%D1%85%D0%BD%D0%B5%D0%B2%D0%BC%D0%BE%CC%81%D0%BD.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/96/Herpestes_edwardsii_at_Hyderaba.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Cynictis_penicillata_%28Etosha%2C_2011%29.jpg/250px-Cynictis_penicillata_%28Etosha%2C_2011%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/330px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg"
     ],
     "species": 34
   },
@@ -78,14 +93,19 @@
     "rank": "Family",
     "ipa": "",
     "etymology": "",
-    "tag": "Found in Madagascar.",
+    "tag": "Believed to have evolved from a single raft event from mainland Africa 18–24 million years ago. Found in Madagascar.",
     "common": [
       "Malagasy mongooses",
-      "civets"
+      "Malagasy civets",
+      "mongoose-like euplerids"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Cryptoprocta_ferox_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-%28white_background%29.png/120px-Cryptoprocta_ferox_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-%28white_background%29.png",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Eupleres_goudotii_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa%2C_Italy_-_DSC02711.JPG/330px-Eupleres_goudotii_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa%2C_Italy_-_DSC02711.JPG"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Eupleres_goudotii_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa%2C_Italy_-_DSC02711.JPG/330px-Eupleres_goudotii_-_Museo_Civico_di_Storia_Naturale_Giacomo_Doria_-_Genoa%2C_Italy_-_DSC02711.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Galidia_elegans_1.jpg/250px-Galidia_elegans_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Cryptoprocta_Ferox.JPG/330px-Cryptoprocta_Ferox.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Smalstreepmangoest.JPG/330px-Smalstreepmangoest.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Spotted_fanaloka_%28Fossa_fossana%29.jpg/330px-Spotted_fanaloka_%28Fossa_fossana%29.jpg"
     ],
     "species": 8
   },
@@ -111,7 +131,7 @@
     "rank": "Superfamily",
     "ipa": "",
     "etymology": "",
-    "tag": "",
+    "tag": "Includes cats and Asiatic linsangs",
     "imgs": [
       ""
     ],
@@ -123,7 +143,7 @@
     "rank": "Family",
     "ipa": "",
     "etymology": "",
-    "tag": "Found in the Indomalayan realm.",
+    "tag": "Tree-dwelling carnivorous mammals that are nocturnal, solitary, and at least partly arboreal. They den in hollows in trees and feed on rodents, frogs and snakes. Native to the Indomalayan realm.",
     "common": [
       "Asiatic linsangs"
     ],
@@ -151,7 +171,13 @@
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Stamp-russia2014-save-russian-cats-%28snow_leopard%29.png/120px-Stamp-russia2014-save-russian-cats-%28snow_leopard%29.png",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/330px-Felis_catus-cat_on_snow.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Felis_catus-cat_on_snow.jpg/330px-Felis_catus-cat_on_snow.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Walking_tiger_female.jpg/330px-Walking_tiger_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/250px-African_leopard_male_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/330px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/330px-Male_cheetah_facing_left_in_South_Africa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Ocelot_%28Jaguatirica%29_Zoo_Itatiba.jpg/330px-Ocelot_%28Jaguatirica%29_Zoo_Itatiba.jpg"
     ],
     "species": 37
   },
@@ -161,8 +187,14 @@
     "rank": "Suborder",
     "ipa": "",
     "etymology": "",
-    "tag": "",
-    "common": [],
+    "tag": "The 'dog-like' animals.",
+    "common": [
+      "dogs",
+      "bears",
+      "raccoons",
+      "mustelids",
+      "pinnipeds"
+    ],
     "imgs": [],
     "species": 0
   },
@@ -183,7 +215,12 @@
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Dogs%2C_jackals%2C_wolves%2C_and_foxes_%28Plate_XI%29.jpg/120px-Dogs%2C_jackals%2C_wolves%2C_and_foxes_%28Plate_XI%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/2013072515020909_MyDogs_622.jpg/330px-2013072515020909_MyDogs_622.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/2013072515020909_MyDogs_622.jpg/330px-2013072515020909_MyDogs_622.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/330px-Eurasian_wolf_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Vulpes_vulpes_ssp_fulvus.jpg/330px-Vulpes_vulpes_ssp_fulvus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Dingo_%28Canis_lupus_dingo%29_Kakadu_2.jpg/330px-Dingo_%28Canis_lupus_dingo%29_Kakadu_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Flickr_-_Rainbirder_-_Golden_Jackal_%281%29.jpg/330px-Flickr_-_Rainbirder_-_Golden_Jackal_%281%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/2009-Coyote-Yosemite.jpg/250px-2009-Coyote-Yosemite.jpg"
     ],
     "species": 35
   },
@@ -193,8 +230,13 @@
     "rank": "Infraorder",
     "ipa": "",
     "etymology": "",
-    "tag": "",
-    "common": [],
+    "tag": "mostly carnivorous mammals found in all continents from 46 million years ago to the present.",
+    "common": [
+      "bears",
+      "raccoons",
+      "mustelids",
+      "pinnipeds"
+    ],
     "imgs": [],
     "species": 0
   },
@@ -220,7 +262,7 @@
     "rank": "Parvorder",
     "ipa": "",
     "etymology": "",
-    "tag": "",
+    "tag": "Carnivorous, fin-footed, semiaquatic, mostly marine mammals.",
     "common": [],
     "imgs": [],
     "species": 0
@@ -229,13 +271,20 @@
     "name": "Phocidae",
     "parent": "Pinnipedia",
     "rank": "Family",
-    "ipa": "",
+    "ipa": "ˈfoʊsɪdiː",
     "etymology": "",
-    "tag": "The earless seals. Found in the sea and Lake Baikal.",
-    "common": [],
+    "tag": "The earless seals - true seals. Found in the sea and Lake Baikal.",
+    "common": [
+      "elephant seals",
+      "monk seals",
+      "Baikal seals"
+    ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Cambridge_Natural_History_Mammalia_Fig_230_white_background.jpg/120px-Cambridge_Natural_History_Mammalia_Fig_230_white_background.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/White_harbor_seal_on_moss_by_Dave_Withrow%2C_NOAA.png/330px-White_harbor_seal_on_moss_by_Dave_Withrow%2C_NOAA.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Seehund.jpg/330px-Seehund.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Monachus_monachus_DSC_0274.jpg/330px-Monachus_monachus_DSC_0274.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Nerpa_%28Pusa_sibirica%29_%283635255975%29.jpg/330px-Nerpa_%28Pusa_sibirica%29_%283635255975%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Mirounga_leonina.jpg/330px-Mirounga_leonina.jpg"
     ],
     "species": 18
   },
@@ -244,12 +293,18 @@
     "parent": "Pinnipedia",
     "rank": "Family",
     "ipa": "",
-    "etymology": "",
-    "tag": "The Eared seals. Found in subpolar, temperate, and equatorial waters throughout the Pacific and Southern Oceans and the southern Indian and Atlantic Oceans.",
-    "common": [],
+    "etymology": "greek 'little ear'",
+    "tag": "The Eared seals - fur seals and sea lions. Found in subpolar, temperate, and equatorial waters throughout the Pacific and Southern Oceans and the southern Indian and Atlantic Oceans. Have small but visible external ear flaps.",
+    "common": [
+      "fur seals",
+      "sea lions"
+    ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/NIE_1905_Seal_%28white_background%29.jpg/120px-NIE_1905_Seal_%28white_background%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Southern_Sea_Lions.jpg/330px-Southern_Sea_Lions.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Southern_Sea_Lions.jpg/330px-Southern_Sea_Lions.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Otaria_fg02.jpg/330px-Otaria_fg02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Sea_lion_head.jpg/250px-Sea_lion_head.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Kangaroosealion.jpg/250px-Kangaroosealion.jpg"
     ],
     "species": 15
   },
@@ -265,7 +320,8 @@
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Walrus_animal_male_detailed_photo_white_background.jpg/120px-Walrus_animal_male_detailed_photo_white_background.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Walrus2.jpg/330px-Walrus2.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Walrus2.jpg/330px-Walrus2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Pacific_Walrus_-_Bull_%288247646168%29.jpg/330px-Pacific_Walrus_-_Bull_%288247646168%29.jpg"
     ],
     "species": 1
   },
@@ -275,7 +331,7 @@
     "rank": "Superfamily",
     "ipa": "",
     "etymology": "",
-    "tag": "",
+    "tag": "Includes the weasels, raccoons, red pandas, and skunks.",
     "common": [],
     "imgs": [],
     "species": 0
