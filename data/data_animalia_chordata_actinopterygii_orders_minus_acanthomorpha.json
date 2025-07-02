@@ -1,0 +1,562 @@
+[
+  {
+    "name": "Polypteriformes",
+    "parent": "Actinopterygii",
+    "rank": "Order",
+    "ipa": "pəˈlɪptərɪfɔːrmiːz",
+    "common": [
+      "bichirs",
+      "reedfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Cuvier-105-Polypt%C3%A8re.jpg/250px-Cuvier-105-Polypt%C3%A8re.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 14
+  },
+  {
+    "name": "Acipenseriformes",
+    "parent": "Actinopterygii",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "sturgeon",
+      "paddlefish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Atlantic_sturgeon_flipped.jpg/330px-Atlantic_sturgeon_flipped.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 27
+  },
+  {
+    "name": "Neopterygii",
+    "parent": "Actinopterygii",
+    "rank": "Subclass",
+    "ipa": "",
+    "common": [],
+    "imgs": [],
+    "etymology": "",
+    "tag": "",
+    "species": 32000
+  },
+  {
+    "name": "Ginglymodi",
+    "parent": "Neopterygii",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "gars",
+      "alligator gars"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Alligator_gar_fish_%28white_background%29.jpg/330px-Alligator_gar_fish_%28white_background%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 7
+  },
+  {
+    "name": "Halecomorphi",
+    "parent": "Neopterygii",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "bowfin",
+      "eyespot bowfin"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Amia_calva_%28white_background%29.jpg/330px-Amia_calva_%28white_background%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 2
+  },
+  {
+    "name": "Teleostei",
+    "parent": "Neopterygii",
+    "rank": "",
+    "ipa": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Common_carp_%28white_background%29.jpg/330px-Common_carp_%28white_background%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 32000
+  },
+  {
+    "name": "Osteoglossomorpha",
+    "parent": "Teleostei",
+    "rank": "",
+    "ipa": "",
+    "common": [],
+    "imgs": [
+      ""
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Hiodontiformes",
+    "parent": "Osteoglossomorpha",
+    "rank": "Order",
+    "ipa": "haɪəˈdɒntɪfɔːrmiːz",
+    "common": [
+      "mooneyes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Hiodon_tergisus_NOAA.jpg/120px-Hiodon_tergisus_NOAA.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 2
+  },
+  {
+    "name": "Osteoglossiformes",
+    "parent": "Osteoglossomorpha",
+    "rank": "Order",
+    "ipa": "ˌɒstiːoʊˈɡlɒsɪfɔːrmiːz",
+    "etymology": "'boney'-'tongues'",
+    "common": [
+      "bonytongues",
+      "elephantfishes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Osteoglossum_bicirrhosum_%28white_background%29.jpg/250px-Osteoglossum_bicirrhosum_%28white_background%29.jpg"
+    ],
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Elopomorpha",
+    "parent": "Teleostei",
+    "rank": "",
+    "ipa": "",
+    "common": [],
+    "imgs": [
+      ""
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Elopiformes",
+    "parent": "Elopomorpha",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "tenpounders",
+      "tarpons"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Tarpon_%28PSF%29.png/250px-Tarpon_%28PSF%29.png"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Albuliformes",
+    "parent": "Elopomorpha",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "Japanese gissus",
+      "bonefishes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Albula_conorhynchus_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28white_background%29.jpg/250px-Albula_conorhynchus_-_1700-1880_-_Print_-_Iconographia_Zoologica_-_Special_Collections_University_of_Amsterdam_-_%28white_background%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Notacanthiformes",
+    "parent": "Elopomorpha",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "deep sea spiny eels"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Notacanthus_sexspinis1.jpg/250px-Notacanthus_sexspinis1.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Anguilliformes",
+    "parent": "Elopomorpha",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "true eels"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Conger_conger_Gervais.jpg/250px-Conger_conger_Gervais.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Otocephala",
+    "parent": "Teleostei",
+    "rank": "",
+    "ipa": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/FMIB_43249_Menhaden_%28Brevortia_tyrannus%29_2.jpeg/330px-FMIB_43249_Menhaden_%28Brevortia_tyrannus%29_2.jpeg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Clupeiformes",
+    "parent": "Otocephala",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "herrings"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/American_shad_fish_alosa_sapidissima_%28white_background%29.jpg/250px-American_shad_fish_alosa_sapidissima_%28white_background%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Alepocephaliformes",
+    "parent": "Otocephala",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "slickheads",
+      "tubeshoulders"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Alepocephalus_rostratus_Gervais.jpg/250px-Alepocephalus_rostratus_Gervais.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Ostariophysi",
+    "parent": "Otocephala",
+    "rank": "Superorder",
+    "ipa": "",
+    "common": [],
+    "imgs": [
+      ""
+    ],
+    "etymology": "",
+    "tag": "Have an alarm substance and a Weberian apparatus - a chain of small bones that connect the auditory system to the gas bladder. Most species possess a swim bladder",
+    "species": 10758
+  },
+  {
+    "name": "Gonorynchiformes",
+    "parent": "Ostariophysi",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "milkfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Chanos_salmoneus_Achilles_166.jpg/250px-Chanos_salmoneus_Achilles_166.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 37
+  },
+  {
+    "name": "Cypriniformes",
+    "parent": "Ostariophysi",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "minnow",
+      "carp",
+      "loach"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Common_carp_%28white_background%29.jpg/250px-Common_carp_%28white_background%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 4501
+  },
+  {
+    "name": "Characiformes",
+    "parent": "Ostariophysi",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "tetras",
+      "piranhas"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/F_de_Castelnau-poissonsPl37_%28Serrasalmus_humeralis%29.jpg/250px-F_de_Castelnau-poissonsPl37_%28Serrasalmus_humeralis%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 2168
+  },
+  {
+    "name": "Gymnotiformes",
+    "parent": "Ostariophysi",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "knifefish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Johann_Natterer_-_Itu%C3%AD-cavalo_%28Apteronotus_albifrons%29.jpg/250px-Johann_Natterer_-_Itu%C3%AD-cavalo_%28Apteronotus_albifrons%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 239
+  },
+  {
+    "name": "Siluriformes",
+    "parent": "Ostariophysi",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "catfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Black_bullhead_fish_%28white_background%29.jpg/250px-Black_bullhead_fish_%28white_background%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 3813
+  },
+  {
+    "name": "Euteleostei",
+    "parent": "Teleostei",
+    "rank": "",
+    "ipa": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bachforelle_Zeichnung.jpg/330px-Bachforelle_Zeichnung.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Lepidogalaxiiformes",
+    "parent": "Euteleostei",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "salamanderfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Lepidogalaxias_salamandroides_324066790.jpg/330px-Lepidogalaxias_salamandroides_324066790.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Protacanthopterygii",
+    "parent": "Euteleostei",
+    "rank": "Superorder",
+    "ipa": "",
+    "common": [],
+    "imgs": [
+      ""
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Argentiniformes",
+    "parent": "Protacanthopterygii",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "marine smelts"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Argentina_sphyraena.jpg/250px-Argentina_sphyraena.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Galaxiiformes",
+    "parent": "Protacanthopterygii",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "white bait",
+      "mudfishes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/45/Galaxias_maculatus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Chatham_Mudfish.jpg/330px-Chatham_Mudfish.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Esociformes",
+    "parent": "Protacanthopterygii",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "pike"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Esox_lucius1.jpg/250px-Esox_lucius1.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Salmoniformes",
+    "parent": "Protacanthopterygii",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "salmon",
+      "trout"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Salmo_salar_%28crop%29.jpg/250px-Salmo_salar_%28crop%29.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Stomiati",
+    "parent": "Euteleostei",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [],
+    "imgs": [
+      ""
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Stomiiformes",
+    "parent": "Stomiati",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "dragonfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Fish4104_-_Flickr_-_NOAA_Photo_Library.jpg/250px-Fish4104_-_Flickr_-_NOAA_Photo_Library.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Osmeriformes",
+    "parent": "Stomiati",
+    "rank": "Order",
+    "ipa": "",
+    "common": [
+      "smelt"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Pond_smelt_illustration.jpg/250px-Pond_smelt_illustration.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Neoteleostei",
+    "parent": "Euteleostei",
+    "rank": "Clade",
+    "ipa": "",
+    "common": [],
+    "imgs": [
+      ""
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Ateleopodidae",
+    "parent": "Neoteleostei",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "jellynoses"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Ijimaia_plicatellus1.jpg/250px-Ijimaia_plicatellus1.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Aulopiformes",
+    "parent": "Neoteleostei",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "lizardfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Aulopus_filamentosus.jpg/250px-Aulopus_filamentosus.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Myctophiformes",
+    "parent": "Neoteleostei",
+    "rank": "",
+    "ipa": "",
+    "common": [
+      "lanternfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Myctophum_punctatum1.jpg/250px-Myctophum_punctatum1.jpg"
+    ],
+    "etymology": "",
+    "tag": "",
+    "species": 0
+  },
+  {
+    "name": "Acanthomorpha",
+    "parent": "Neoteleostei",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "'thorn'-'shaped'",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Scomber_scombrus.png/140px-Scomber_scombrus.png"
+    ],
+    "tag": "Have spines at the anterior edge of the dorsal and anal fins that can be extended for protection and retracted to decrease drag when swimming.",
+    "species": 0
+  }
+]

@@ -17,6 +17,8 @@ JSON_DATA_LIST = [
     'data_animalia_chordata_classes_minus_tetrapoda.json',
     'data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia.json',
     'data_animalia_chordata_elasmobranchii_orders.json',
+    'data_animalia_chordata_actinopterygii_orders_minus_acanthomorpha.json',
+    'data_animalia_chordata_actinopterygii_acanthomorpha_orders.json',
     'data_animalia_chordata_tetrapoda_aves_orders.json',
     'data_animalia_chordata_tetrapoda_mammalia_orders.json',
     # 'data_animalia_chordata_tetrapoda_mammalia_carnivora_families.json',
@@ -148,6 +150,8 @@ def get_html() -> str:
                   <option value="animalia_arthropoda_insecta_orders_common">Insecta — common orders</option>
                   <option value="animalia_chordata_classes_minus_tetrapoda">Chordata — classes minus Tetrapoda</option>
                   <option value="animalia_chordata_elasmobranchii_orders">Elasmobranchii — orders</option>
+                  <option value="animalia_chordata_actinopterygii_orders_minus_acanthomorpha">Actinopterygii — orders minus Acanthomorpha</option>
+                  <option value="animalia_chordata_actinopterygii_acanthomorpha_orders">Acanthomorpha — orders</option>
                   <option value="animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia">Tetrapoda — orders minus Aves and Mammalia</option>
                   <option value="animalia_chordata_tetrapoda_aves_orders">Aves — orders</option>
                   <option value="animalia_chordata_tetrapoda_mammalia_orders">Mammalia — orders</option>
