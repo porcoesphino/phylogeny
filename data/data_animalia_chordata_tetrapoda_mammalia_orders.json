@@ -9,7 +9,7 @@
       "platypus",
       "echidnas"
     ],
-    "tag": "Mammals that lay eggs but still nurse their young with milk.",
+    "tag": "Nurse their young with milk but still lay eggs.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_surfacing_Scottsdale.jpg/250px-Duck-billed_platypus_%28Ornithorhynchus_anatinus%29_surfacing_Scottsdale.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Short-beaked_echidna_%28Tachyglossus_aculeatus_setosus%29_Scottsdale.jpg/330px-Short-beaked_echidna_%28Tachyglossus_aculeatus_setosus%29_Scottsdale.jpg"
@@ -72,8 +72,10 @@
     "rank": "Order",
     "ipa": "",
     "etymology": "",
-    "common": [],
-    "tag": "",
+    "common": [
+      "monitos del monte"
+    ],
+    "tag": "Small marsupials that look like mice.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Monito_del_Monte_ps6.jpg/250px-Monito_del_Monte_ps6.jpg"
     ],
@@ -85,7 +87,16 @@
     "rank": "Order",
     "ipa": "",
     "etymology": "",
-    "common": [],
+    "common": [
+      "marsupial moles",
+      "bandicoots",
+      "numbats",
+      "Tasmanian devils",
+      "kangaroos",
+      "possums",
+      "koala",
+      "wombats"
+    ],
     "tag": "The Australasian marsupials. They descend from a single dispersal event from South America via Antartica.",
     "imgs": [],
     "card": 2
@@ -190,7 +201,7 @@
       "sloths",
       "armadillos"
     ],
-    "tag": "",
+    "tag": "Primitive placental mammals that are believed to have descended from subterranean diggers. They have single-color vision and low metabolic rates. Females show no clear distinction between the uterus and vagina, and males have testicles inside the body.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Myresluger2.jpg/330px-Myresluger2.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/330px-Bicho-pregui%C3%A7a_3.jpg",
@@ -250,7 +261,7 @@
       "elephants",
       "sea cows"
     ],
-    "tag": "",
+    "tag": "A clade of mammals that evolved to fill niches in Africa while it was an isolated island, before the Cenozoic.",
     "imgs": [],
     "card": 1
   },
@@ -260,8 +271,12 @@
     "rank": "Grandorder",
     "ipa": "",
     "etymology": "latin 'almost'-'having hoofs'",
-    "common": [],
-    "tag": "",
+    "common": [
+      "hyraxes",
+      "sea cows",
+      "elephants"
+    ],
+    "tag": "Herbivorous near ungulates mammals of African origin. Some have long incisors and others continuously replace their teeth from the back of the jaw.",
     "imgs": [],
     "card": 5
   },
@@ -380,13 +395,54 @@
     "card": 5
   },
   {
-    "name": "Laurasiatheria",
+    "name": "Boreoeutheria",
     "parent": "Placentalia",
+    "rank": "Magnorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "primates",
+      "cats",
+      "dogs",
+      "hedgehogs",
+      "rodents",
+      "moles",
+      "true shrews",
+      "bats",
+      "pangolins",
+      "zebras",
+      "rhinoceroses",
+      "hippopotamuses",
+      "deer",
+      "cattle",
+      "whales"
+    ],
+    "tag": "Most males have their testicles in an external pouch.",
+    "imgs": [],
+    "card": 1
+  },
+  {
+    "name": "Laurasiatheria",
+    "parent": "Boreoeutheria",
     "rank": "Superorder",
     "ipa": "lɔːrˌeɪʒəˈθɪəriə",
     "etymology": "'Laurasian beasts'",
-    "common": [],
-    "tag": "",
+    "common": [
+      "hedgehogs",
+      "moles",
+      "true shrews",
+      "bats",
+      "cats",
+      "dogs",
+      "pangolins",
+      "zebras",
+      "rhinoceroses",
+      "hippopotamuses",
+      "deer",
+      "cattle",
+      "whales"
+    ],
+    "tag": "Mammals with ancestors that originated on the northern supercontinent of Laurasia, after it split from Gondwana.",
     "imgs": [],
     "card": 1
   },
@@ -421,7 +477,9 @@
     "rank": "Order",
     "ipa": "kaɪˈrɒptərə",
     "etymology": "",
-    "common": [],
+    "common": [
+      "bats"
+    ],
     "tag": "The only mammals capable of true and sustained flight. Most are nocturnal, and many roost in caves. Many are insectivores, but some eat fruit, nectar, or blood.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/0/0d/Gro%C3%9Fes_Mausohr.jpg",
@@ -436,8 +494,20 @@
     "rank": "Grandorder",
     "ipa": "",
     "etymology": "'wild beasts and ungulates'",
-    "common": [],
-    "tag": "",
+    "common": [
+      "cats",
+      "dogs",
+      "pangolins",
+      "zebras",
+      "rhinoceroses",
+      "tapirs",
+      "hippopotamuses",
+      "deer",
+      "camels",
+      "cattle",
+      "whales"
+    ],
+    "tag": "A clade of placental mammals that includes carnivores, pangolins, and the hoofed herbivores.",
     "imgs": [],
     "card": 7
   },
@@ -465,7 +535,15 @@
     "rank": "Order",
     "ipa": "",
     "etymology": "",
-    "common": [],
+    "common": [
+      "cats",
+      "dogs",
+      "hyenas",
+      "mongoose",
+      "bears",
+      "skunks",
+      "raccoons"
+    ],
     "tag": "An order of placental mammals specialized primarily in eating flesh.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/7_Walross_1999.jpg/330px-7_Walross_1999.jpg",
@@ -483,7 +561,20 @@
     "rank": "",
     "ipa": "",
     "etymology": "'true ungulates'",
-    "common": [],
+    "common": [
+      "horses",
+      "zebras",
+      "rhinoceroses",
+      "tapirs",
+      "pigs",
+      "hippopotamuses",
+      "deer",
+      "giraffes",
+      "camels",
+      "sheep",
+      "cattle",
+      "whales"
+    ],
     "tag": "Typically herbivorous mammals that descended from hooved ancestors.",
     "imgs": [],
     "card": 8
@@ -549,7 +640,7 @@
   },
   {
     "name": "Euarchontoglires",
-    "parent": "Placentalia",
+    "parent": "Boreoeutheria",
     "rank": "Superorder",
     "ipa": "",
     "etymology": "'true rulers'-'dormice'",
@@ -560,7 +651,7 @@
       "primates",
       "colugos"
     ],
-    "tag": "",
+    "tag": "The rodents and the primates.",
     "imgs": [],
     "card": 1
   },
@@ -624,7 +715,8 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/American_Beaver.jpg/250px-American_Beaver.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/8/8f/Mouse_white_background.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/MainePorcupine.JPG/330px-MainePorcupine.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Cynomys_parvidens_%2829259482624%29.jpg/330px-Cynomys_parvidens_%2829259482624%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Cynomys_parvidens_%2829259482624%29.jpg/330px-Cynomys_parvidens_%2829259482624%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/43/Graphiurus_spec_-murinus-1.jpg"
     ],
     "card": 9
   },
