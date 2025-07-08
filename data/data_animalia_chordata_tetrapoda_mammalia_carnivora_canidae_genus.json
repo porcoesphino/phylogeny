@@ -1,0 +1,296 @@
+[
+  {
+    "name": "Canini",
+    "parent": "Canidae",
+    "rank": "Tribe",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The dog-like canines.",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Atelocynus_microtis_en_Amazonie_p%C3%A9ruvienne.jpg/250px-Atelocynus_microtis_en_Amazonie_p%C3%A9ruvienne.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Speothos_venaticus_Zoo_Praha_2011-5_%28cropped%29.jpg/330px-Speothos_venaticus_Zoo_Praha_2011-5_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/330px-Eurasian_wolf_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Lobo_Guar%C3%A1_andando.jpg/330px-Lobo_Guar%C3%A1_andando.jpg"
+    ],
+    "card": 1
+  },
+  {
+    "name": "Canina",
+    "parent": "Canini",
+    "rank": "Subtribe",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The wolf and wolf-like canines.",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Lupulella_mesomelas_schmidti_Kenya_2020_2_%28cropped%29.jpg/330px-Lupulella_mesomelas_schmidti_Kenya_2020_2_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/African_wild_dog_%28Lycaon_pictus_pictus%29.jpg/330px-African_wild_dog_%28Lycaon_pictus_pictus%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dhole_%28Asiatic_wild_dog%29_cropped.jpg/330px-Dhole_%28Asiatic_wild_dog%29_cropped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/330px-Eurasian_wolf_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3b/BlkStdSchnauzer2.jpg"
+    ],
+    "card": 1
+  },
+  {
+    "name": "Canis",
+    "parent": "Canina",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The wolf genus. Distinguished by their moderate to large size, their massive, well-developed skulls and dentition, long legs, and comparatively short ears and tails.",
+    "common": [
+      "wolves",
+      "dogs",
+      "coyotes",
+      "golden jackals"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/2009-Coyote-Yosemite.jpg/250px-2009-Coyote-Yosemite.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/07-03-23RedWolfAlbanyGAChehaw.jpg/330px-07-03-23RedWolfAlbanyGAChehaw.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/330px-Eurasian_wolf_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3b/BlkStdSchnauzer2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Grey_jackal_from_Haizer_Algeria_10_%28cropped%29.jpeg/330px-Grey_jackal_from_Haizer_Algeria_10_%28cropped%29.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Ethiopian_wolf.JPG/330px-Ethiopian_wolf.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Canis_aureus_syriacus_114837596.jpg/250px-Canis_aureus_syriacus_114837596.jpg"
+    ],
+    "card": 2
+  },
+  {
+    "name": "Cuon",
+    "parent": "Canina",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains canid species native Asia.",
+    "common": [
+      "dhole"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Dhole_%28Asiatic_wild_dog%29_cropped.jpg/330px-Dhole_%28Asiatic_wild_dog%29_cropped.jpg"
+    ],
+    "card": 2
+  },
+  {
+    "name": "Lycaon",
+    "parent": "Canina",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The only extant species is the largest wild canine in Africa. Fur consists entirely of stiff bristle-hairs with no underfur.",
+    "common": [
+      "African wild dogs"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/African_wild_dog_%28Lycaon_pictus_pictus%29.jpg/330px-African_wild_dog_%28Lycaon_pictus_pictus%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Wild_Dogs_%28Lycaon_pictus%29_%2816394165128%29.jpg/330px-Wild_Dogs_%28Lycaon_pictus%29_%2816394165128%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/African_wild_dog_%28Lycaon_pictus_pictus%29_play_fighting.jpg/330px-African_wild_dog_%28Lycaon_pictus_pictus%29_play_fighting.jpg"
+    ],
+    "card": 2
+  },
+  {
+    "name": "Lupulella",
+    "parent": "Canina",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "A genus of canine found in Africa.",
+    "common": [
+      "black-backed jackal",
+      "side-striped jackal"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Lupulella_mesomelas_schmidti_Kenya_2020_2_%28cropped%29.jpg/330px-Lupulella_mesomelas_schmidti_Kenya_2020_2_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Lupulella_adusta_in_Kalabo_Zambia_01.jpeg/330px-Lupulella_adusta_in_Kalabo_Zambia_01.jpeg"
+    ],
+    "card": 2
+  },
+  {
+    "name": "Cerdocyonina",
+    "parent": "Canini",
+    "rank": "Subtribe",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The South American canines.",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Speothos_venaticus_Zoo_Praha_2011-5_%28cropped%29.jpg/330px-Speothos_venaticus_Zoo_Praha_2011-5_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Lobo_Guar%C3%A1_andando.jpg/330px-Lobo_Guar%C3%A1_andando.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Atelocynus_microtis_en_Amazonie_p%C3%A9ruvienne.jpg/250px-Atelocynus_microtis_en_Amazonie_p%C3%A9ruvienne.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Crab-eating_Fox_%28cropped%29.JPG/330px-Crab-eating_Fox_%28cropped%29.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/South_american_grey_fox_%28cropped%29.jpg/330px-South_american_grey_fox_%28cropped%29.jpg"
+    ],
+    "card": 1
+  },
+  {
+    "name": "Speothos",
+    "parent": "Cerdocyonina",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "A genus of canid found in Central and South America",
+    "common": [
+      "bush dogs"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Chien_des_buissons_Safari_de_Peaugres_07082017_2.jpg/330px-Chien_des_buissons_Safari_de_Peaugres_07082017_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Speothos_venaticus_Zoo_Praha_2011-5_%28cropped%29.jpg/330px-Speothos_venaticus_Zoo_Praha_2011-5_%28cropped%29.jpg"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Chrysocyon",
+    "parent": "Cerdocyonina",
+    "rank": "Genus",
+    "ipa": "greek 'golden dog'",
+    "etymology": "",
+    "tag": "Contains the largest canine in South America. It has markings resembling a red fox.",
+    "common": [
+      "maned wolf"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Lobo_Guar%C3%A1_andando.jpg/330px-Lobo_Guar%C3%A1_andando.jpg"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Lycalopex",
+    "parent": "Cerdocyonina",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains South American canines that resemble true foxes.",
+    "common": [
+      "raposa"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/South_american_grey_fox_%28cropped%29.jpg/330px-South_american_grey_fox_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Lycalopex_vetulus_in_Bacury_Lodge%2C_Anhembi_1.jpg/330px-Lycalopex_vetulus_in_Bacury_Lodge%2C_Anhembi_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lycalopex_sechurae_in_Peru_2_%28cropped%29.jpg/330px-Lycalopex_sechurae_in_Peru_2_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/ab/Zorro_de_Darwin.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Culpeo.jpg/330px-Culpeo.jpg"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Cerdocyon",
+    "parent": "Cerdocyonina",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains a medium-sized nocturnal canid endemic to the central part of South America.",
+    "common": [
+      "crab-eating fox"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Crab-eating_Fox_%28cropped%29.JPG/330px-Crab-eating_Fox_%28cropped%29.JPG"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Atelocynus",
+    "parent": "Cerdocyonina",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains an elusive canid species endemic to the Amazonian basin.",
+    "common": [
+      "short-eared dogs"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/70/Atelocynus_microtis_en_amazonie_p%C3%A9ruvienne.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Atelocynus_microtis_en_Amazonie_p%C3%A9ruvienne.jpg/250px-Atelocynus_microtis_en_Amazonie_p%C3%A9ruvienne.jpg"
+    ],
+    "card": 3
+  },
+  {
+    "name": "Vulpini",
+    "parent": "Canidae",
+    "rank": "Tribe",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The fox-like canines.",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bat_eared_fox_Kenya_crop_%28cropped%29.jpg/330px-Bat_eared_fox_Kenya_crop_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nyctereutes_procyonoides_4_%28Piotr_Kuczynski%29.jpg/330px-Nyctereutes_procyonoides_4_%28Piotr_Kuczynski%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Vulpes_vulpes_ssp_fulvus.jpg/330px-Vulpes_vulpes_ssp_fulvus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Fennec_Fox_Vulpes_zerda.jpg/330px-Fennec_Fox_Vulpes_zerda.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Arctic_Fox_Posed_%288564878025%29.jpg/330px-Arctic_Fox_Posed_%288564878025%29.jpg"
+    ],
+    "card": 1
+  },
+  {
+    "name": "Otocyon",
+    "parent": "Vulpini",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains a single species of fox found on the African savanna.",
+    "common": [
+      "bat-eared foxes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bat_eared_fox_Kenya_crop_%28cropped%29.jpg/330px-Bat_eared_fox_Kenya_crop_%28cropped%29.jpg"
+    ],
+    "card": 4
+  },
+  {
+    "name": "Nyctereutes",
+    "parent": "Vulpini",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "A fox-like canine that has a face that resembles a racoon.",
+    "common": [
+      "racoon dogs"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nyctereutes_procyonoides_4_%28Piotr_Kuczynski%29.jpg/330px-Nyctereutes_procyonoides_4_%28Piotr_Kuczynski%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Tanuki_in_Higashiyama_Zoo_-_2.jpg/330px-Tanuki_in_Higashiyama_Zoo_-_2.jpg"
+    ],
+    "card": 4
+  },
+  {
+    "name": "Vulpes",
+    "parent": "Vulpini",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "They have a smaller size, longer, bushier tail, and flatter skull. They have black, triangular markings between their eyes and nose, and the tip of their tail is often a different color from the rest of their pelt.",
+    "common": [
+      "true foxes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Indian_Fox_in_a_Grassland.jpg/330px-Indian_Fox_in_a_Grassland.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/eb/Blandford%27s_fox_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Vulpes_chama_%28Etosha%29.jpg/330px-Vulpes_chama_%28Etosha%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Vulpes_corsac_Halle_Zoo_10.2012.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Vulpes_ferrilata_367800858.jpg/330px-Vulpes_ferrilata_367800858.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Arctic_Fox_Posed_%288564878025%29.jpg/330px-Arctic_Fox_Posed_%288564878025%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Kit_fox_tds.jpg/330px-Kit_fox_tds.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/R%C3%BCppell%27s_fox.jpg/330px-R%C3%BCppell%27s_fox.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Swift_Fox_Colorado_Wolf_and_Wildlife_cropped.jpg/330px-Swift_Fox_Colorado_Wolf_and_Wildlife_cropped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Vulpes_vulpes_ssp_fulvus.jpg/330px-Vulpes_vulpes_ssp_fulvus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Fennec_Fox_Vulpes_zerda.jpg/330px-Fennec_Fox_Vulpes_zerda.jpg"
+    ],
+    "card": 4
+  },
+  {
+    "name": "Urocyon",
+    "parent": "Canidae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The gray foxes.",
+    "common": [
+      "gray foxes",
+      "island foxes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Urocyon_littoralis.jpg/330px-Urocyon_littoralis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Gray_fox.jpg/330px-Gray_fox.jpg"
+    ],
+    "card": 1
+  }
+]
