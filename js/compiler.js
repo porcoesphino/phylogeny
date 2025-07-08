@@ -26,6 +26,7 @@ class Data {
             .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus)
             .concat(data_animalia_chordata_tetrapoda_mammalia_artiodactyl_families)
             .concat(data_animalia_chordata_tetrapoda_mammalia_primates)
+            .concat(data_animalia_chordata_tetrapoda_mammalia_primates_homo)
             .concat(data_fungi_phyla)
             .concat(data_plantae_divisions)
             .concat(data_plantae_pinophyta_genus_common)

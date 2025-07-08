@@ -1,0 +1,79 @@
+[
+  {
+    "name": "Homo habilis",
+    "parent": "Homo",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+    "card": 3
+  },
+  {
+    "name": "Homo erectus",
+    "parent": "Homo",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+    "card": 3
+  },
+  {
+    "name": "Homo naledi",
+    "parent": "Homo erectus",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+    "card": 3
+  },
+  {
+    "name": "Homo floresiensis",
+    "parent": "Homo erectus",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+    "card": 3
+  },
+  {
+    "name": "Homo neanderthalensis ",
+    "parent": "Homo erectus",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+    "card": 3
+  },
+  {
+    "name": "Denisovans",
+    "parent": "Homo erectus",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+    "card": 3
+  },
+  {
+    "name": "Homo sapiens",
+    "parent": "Homo erectus",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+    "card": 3
+  }
+]
