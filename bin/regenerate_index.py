@@ -23,6 +23,7 @@ JSON_DATA_LIST = [
     'data_animalia_chordata_tetrapoda_mammalia_orders.json',
     'data_animalia_chordata_tetrapoda_mammalia_carnivora_families.json',
     'data_animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus.json',
+    'data_animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus.json',
     'data_animalia_chordata_tetrapoda_mammalia_artiodactyl_families.json',
     'data_animalia_chordata_tetrapoda_mammalia_primates.json',
     'data_animalia_chordata_tetrapoda_mammalia_primates_homo.json',
@@ -183,6 +184,9 @@ def get_html() -> str:
                   </option>
                   <option value="animalia_chordata_tetrapoda_mammalia_carnivora_families">
                     ———→ Carnivora — families
+                  </option>
+                  <option value="animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus">
+                    ————→ Felidae — families
                   </option>
                   <option value="animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus">
                     ————→ Canidae — families

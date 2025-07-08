@@ -23,6 +23,7 @@ class Data {
             .concat(data_animalia_chordata_tetrapoda_aves_orders)
             .concat(data_animalia_chordata_tetrapoda_mammalia_orders)
             .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_families)
+            .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus)
             .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus)
             .concat(data_animalia_chordata_tetrapoda_mammalia_artiodactyl_families)
             .concat(data_animalia_chordata_tetrapoda_mammalia_primates)

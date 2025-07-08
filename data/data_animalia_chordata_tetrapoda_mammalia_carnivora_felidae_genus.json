@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Pantherinae",
+    "parent": "Felidae",
+    "rank": "Subfamily",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Characterised by an imperfectly ossified hyoid bone with elastic tendons that enable their larynx to be mobile so many species can roar.",
+    "common": [],
+    "imgs": []
+  },
+  {
+    "name": "Neofelis",
+    "parent": "Pantherinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "'new'-'cat'",
+    "tag": "Two extant cat species in Southeast Asia that are the sister taxon to other pantherine cats and can still purr. They have a maximum gape of approximately 90 degrees, the biggest of extant carnivora",
+    "common": [
+      "clouded leopards"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/7d/Neofelis_nebulosa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Clouded_Leopard_Neofelis_nebulosa_by_Dr_Raju_Kasambe_DSC_7497_%2828%29.JPG/330px-Clouded_Leopard_Neofelis_nebulosa_by_Dr_Raju_Kasambe_DSC_7497_%2828%29.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Neofelis_nebulosa_face.jpg/330px-Neofelis_nebulosa_face.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Borneo_clouded_leopard.jpg/330px-Borneo_clouded_leopard.jpg"
+    ]
+  },
+  {
+    "name": "Panthera",
+    "parent": "Pantherinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains the largest living members of the cat family, native to Africa, Asia and the Americas with humans implicated in the species lost to Europe, North America and Russia. They have a specially adapted larynx with large vocal folds covered in a fibro-elastic pad; these characteristics enable them to roar.",
+    "common": [
+      "jaguars",
+      "leopards",
+      "lions",
+      "snow leopards",
+      "tigers",
+      "† cave lions",
+      "† American lions"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/African_leopard%2C_Panthera_pardus_pardus%2C_near_Lake_Panic%2C_Kruger_National_Park%2C_South_Africa_%2819448654130%29.jpg/330px-African_leopard%2C_Panthera_pardus_pardus%2C_near_Lake_Panic%2C_Kruger_National_Park%2C_South_Africa_%2819448654130%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/330px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Schneeleopard_Koeln.jpg/330px-Schneeleopard_Koeln.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Panthera_tigris_corbetti_%28Tierpark_Berlin%29_832-714-%28118%29.jpg/330px-Panthera_tigris_corbetti_%28Tierpark_Berlin%29_832-714-%28118%29.jpg"
+    ]
+  },
+  {
+    "name": "Felinae",
+    "parent": "Felidae",
+    "rank": "Subfamily",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Members have a bony hyoid, so they can purr but not roar, and retractable claws.",
+    "common": [],
+    "imgs": []
+  },
+  {
+    "name": "Leptailurus",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains a wild, slender, medium-sized cat with the longest legs of any cat relative to its body size. Native to Africa. It feeds on rodents. Characterised by a small head, large ears, a golden-yellow to buff coat spotted and striped with black, and a short, black-tipped tail",
+    "common": [
+      "servals"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Leptailurus_serval_-Serengeti_National_Park%2C_Tanzania-8.jpg/330px-Leptailurus_serval_-Serengeti_National_Park%2C_Tanzania-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Leptailurus_serval_61666728%2C_crop.jpg/330px-Leptailurus_serval_61666728%2C_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Serval_imported_from_iNaturalist_photo_27691409_on_6_December_2024.jpg/330px-Serval_imported_from_iNaturalist_photo_27691409_on_6_December_2024.jpg"
+    ]
+  },
+  {
+    "name": "Caracal",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Two species of medium-sized solitary and nocturnal wild cats native to Africa and Southwestern Asia.",
+    "common": [
+      "African golden cats",
+      "caracals"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Caracal_hunting_in_the_serengeti.jpg/330px-Caracal_hunting_in_the_serengeti.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Caracal_on_the_road%2C_early_morning_in_Kgalagadi_%2836173878220%29.jpg/250px-Caracal_on_the_road%2C_early_morning_in_Kgalagadi_%2836173878220%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Caracal001.jpg/250px-Caracal001.jpg"
+    ]
+  },
+  {
+    "name": "Leopardus",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The oldest branch of a genetic lineage of small cats in the Americas. Native to Central and Southern America. They have 36 chromosomes, when other felids have 38.",
+    "common": [
+      "ocelot",
+      "oncillas",
+      "Pampas cats",
+      "kodkods",
+      "margays",
+      "Geoffroy's cats",
+      "Andean mountain cats",
+      "Southern tigrinas"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Ocelot_%28Leopardus_pardalis%29-8.jpg/330px-Ocelot_%28Leopardus_pardalis%29-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Leopardus_tigrinus_-_Parc_des_F%C3%A9lins.jpg/330px-Leopardus_tigrinus_-_Parc_des_F%C3%A9lins.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/81/Leopardus_pajeros_20101006.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Leopardus_guigna.jpeg/330px-Leopardus_guigna.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Margay.jpg/330px-Margay.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Margay_in_Costa_Rica.jpg/250px-Margay_in_Costa_Rica.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Salzkatze.jpg/330px-Salzkatze.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Andean_cat_1_Jim_Sanderson.jpg/330px-Andean_cat_1_Jim_Sanderson.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gato-do-mato-pequeno.jpg/330px-Gato-do-mato-pequeno.jpg"
+    ]
+  },
+  {
+    "name": "Pardofelis",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains a single species of small wild cat native from the eastern Himalayas to Southeast Asia.",
+    "common": [
+      "marbled cats"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Marbled_cat_borneo.jpg/250px-Marbled_cat_borneo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Pardofelis_marmorata_300280177.jpg/330px-Pardofelis_marmorata_300280177.jpg"
+    ]
+  },
+  {
+    "name": "Catopuma",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains two small cat species native to Southeast Asia. Both have solid reddish brown coloration on their backs and darker markings on the head.",
+    "common": [
+      "bay cats",
+      "Asian golden cats"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Bay_cat_1_Jim_Sanderson-cropped.jpg/330px-Bay_cat_1_Jim_Sanderson-cropped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Asian_Golden_cat.jpg/250px-Asian_Golden_cat.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Asian_Golden_Cat.jpg/250px-Asian_Golden_Cat.jpg"
+    ]
+  },
+  {
+    "name": "Lynx",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "lɪŋks",
+    "etymology": "",
+    "tag": "Medium-sized wild cat with a short tail; characteristic tufts of black hair on the tips of their ears; large, padded paws; and long whiskers on the face. Native to the Northern Hemisphere.",
+    "common": [
+      "lynxs",
+      "bobcats"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Eurasischer_Luchs_im_Tier-Freigel%C3%A4nde_Nationalparkzentrums_Falkenstein_im_Nationalpark_Bayerischer_Wald.jpg/250px-Eurasischer_Luchs_im_Tier-Freigel%C3%A4nde_Nationalparkzentrums_Falkenstein_im_Nationalpark_Bayerischer_Wald.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f5/Linces10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Canada_Lynx_%286187103428%29.jpg/250px-Canada_Lynx_%286187103428%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Bobcat_at_Columbus_Zoo_Boo.jpg/250px-Bobcat_at_Columbus_Zoo_Boo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Lynx_Nationalpark_Bayerischer_Wald_01.jpg/330px-Lynx_Nationalpark_Bayerischer_Wald_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Canadian_lynx_by_Keith_Williams.jpg/330px-Canadian_lynx_by_Keith_Williams.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Iberian_Lynx_cub_07.jpg/330px-Iberian_Lynx_cub_07.jpg"
+    ]
+  },
+  {
+    "name": "Acinonyx",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "The only extant specicies is a large cat and the fastest land animal. It is lightly built, has a slender body, spotted coat, long tail and semi-retractable claws. Native to Africa and Southwestern Asia",
+    "common": [
+      "cheetahs"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/330px-Male_cheetah_facing_left_in_South_Africa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1c/Iranian_Cheetah_roars.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Cheetah_portrait_Whipsnade_Zoo.jpg/330px-Cheetah_portrait_Whipsnade_Zoo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Gepardjagt1_%28Acinonyx_jubatus%29.jpg/330px-Gepardjagt1_%28Acinonyx_jubatus%29.jpg"
+    ]
+  },
+  {
+    "name": "Otocolobus",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains a single species of small wild cat with long and dense light grey fur, and rounded ears set low on the sides of the head. Native to Central Asia. It finds shelter in rock crevices and burrows, and preys foremost on lagomorphs and rodents.",
+    "common": [
+      "Pallas's cats",
+      "manuls"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/2018-Manul01.jpg/330px-2018-Manul01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Felis_manul_-Howletts_Wild_Animal_Park_-8.jpg/330px-Felis_manul_-Howletts_Wild_Animal_Park_-8.jpg"
+    ]
+  },
+  {
+    "name": "Prionailurus",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Contains spotted, small wild cats native to Southeastern and Eastern Asia. Forests are their preferred habitat; they feed on small mammals, reptiles and birds, and occasionally aquatic wildlife.",
+    "common": [
+      "leopard cats",
+      "flat-headed cats",
+      "fishing cats",
+      "rusty-spotted cats"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Leopard_cat_India.jpg/330px-Leopard_cat_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Prionailurus_bengalensis_in_Indonesia_02.jpg/330px-Prionailurus_bengalensis_in_Indonesia_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Flat-headed_cat_1_Jim_Sanderson.JPG/330px-Flat-headed_cat_1_Jim_Sanderson.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Prionailurus_viverrinus_07.jpg/330px-Prionailurus_viverrinus_07.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Rusty_spotted_cat_1.jpg/330px-Rusty_spotted_cat_1.jpg"
+    ]
+  },
+  {
+    "name": "Felis",
+    "parent": "Felinae",
+    "rank": "Genus",
+    "ipa": "",
+    "etymology": "",
+    "tag": "Small and medium-sized cat species native to most of Africa and south of 60° latitude in Europe and Asia to Indochina.",
+    "common": [
+      "Domestic cats",
+      "European wildcats",
+      "Jungle cats",
+      "African wildcats",
+      "Black-footed cats",
+      "Sand cats",
+      "Chinese mountain cats"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg/250px-Orange_tabby_cat_sitting_on_fallen_leaves-Hisashi-01A.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Felis_silvestris_silvestris_Luc_Viatour.jpg/250px-Felis_silvestris_silvestris_Luc_Viatour.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Jungle_Cat_on_tree_at_Sundarban%2C_West_Bengal%2C_India.jpg/250px-Jungle_Cat_on_tree_at_Sundarban%2C_West_Bengal%2C_India.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Southern_African_Wildcat_%28Felis_sylvestris_cafra%29_female_..._%28captive_specimen%29_%2839789072173%29.jpg/330px-Southern_African_Wildcat_%28Felis_sylvestris_cafra%29_female_..._%28captive_specimen%29_%2839789072173%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Zoo_Wuppertal_Schwarzfusskatze.jpg/250px-Zoo_Wuppertal_Schwarzfusskatze.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e9/Persian_sand_CAT.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Chinese_Mountain_Cat_%28Felis_Bieti%29_in_XiNing_Wild_Zoo_2.jpg/250px-Chinese_Mountain_Cat_%28Felis_Bieti%29_in_XiNing_Wild_Zoo_2.jpg"
+    ]
+  },
+]
