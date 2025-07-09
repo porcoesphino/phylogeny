@@ -26,6 +26,7 @@ JSON_DATA_LIST = [
     'data_animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus.json',
     'data_animalia_chordata_tetrapoda_mammalia_artiodactyl_families.json',
     'data_animalia_chordata_tetrapoda_mammalia_primates.json',
+    'data_animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families.json',
     'data_animalia_chordata_tetrapoda_mammalia_primates_homo.json',
     'data_plantae_divisions.json',
     'data_plantae_pinophyta_genus_common.json',
@@ -196,6 +197,9 @@ def get_html() -> str:
                   </option>
                   <option value="animalia_chordata_tetrapoda_mammalia_primates">
                     ———→ Primates
+                  </option>
+                  <option value="animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families">
+                    ————→ Platyrrhini - families
                   </option>
                   <option value="animalia_chordata_tetrapoda_mammalia_primates_homo">
                     ————→ Homo
