@@ -271,6 +271,15 @@ def get_html() -> str:
             <li>
               <a href="http://tolweb.org/">Tree of Life - web project</a>
             </li>
+            <li>
+              <a href="http://tolweb.org/">Tree of Life - web project</a>
+            </li>
+            <li>
+              <a href="https://eol.org/">Encylcopedia of Life</a>
+            </li>
+            <li>
+              <a href="https://animaldiversity.org/">Animal Diversity Web</a>
+            </li>
           </ul>
         </li>
         <li>
