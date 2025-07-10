@@ -34,6 +34,7 @@ JSON_DATA_LIST = [
     'data_plantae_angiosperm_monocots_orders.json',
     'data_plantae_angiosperm_eudicots_orders.json',
     'data_fungi_phyla.json',
+    'data_fungi_basidiomycota.json',
     'data_fungi_ascomycota.json',
 ]
 
@@ -209,6 +210,9 @@ def get_html() -> str:
                 <optgroup label="Fungi">
                   <option value="fungi_phyla">
                     Fungi — common Phyla
+                  </option>
+                  <option value="fungi_basidiomycota">
+                    → Basidiomycota
                   </option>
                   <option value="fungi_ascomycota">
                     → Ascomycota
