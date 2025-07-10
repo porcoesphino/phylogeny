@@ -34,6 +34,7 @@ JSON_DATA_LIST = [
     'data_plantae_angiosperm_monocots_orders.json',
     'data_plantae_angiosperm_eudicots_orders.json',
     'data_fungi_phyla.json',
+    'data_fungi_ascomycota.json',
 ]
 
 Rank: typing.TypeAlias = typing.Literal[
@@ -206,7 +207,12 @@ def get_html() -> str:
                   </option>
                 </optgroup>
                 <optgroup label="Fungi">
-                  <option value="fungi_phyla">Fungi — common Phyla</option>
+                  <option value="fungi_phyla">
+                    Fungi — common Phyla
+                  </option>
+                  <option value="fungi_ascomycota">
+                    → Ascomycota
+                  </option>
                 </optgroup>
                 <optgroup label="Plantae">
                   <option value="plantae_divisions">
@@ -267,9 +273,6 @@ def get_html() -> str:
             </li>
             <li>
               <a href="https://www.catalogueoflife.org">Catalogue of Life</a>
-            </li>
-            <li>
-              <a href="http://tolweb.org/">Tree of Life - web project</a>
             </li>
             <li>
               <a href="http://tolweb.org/">Tree of Life - web project</a>

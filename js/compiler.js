@@ -30,6 +30,7 @@ class Data {
             .concat(data_animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families)
             .concat(data_animalia_chordata_tetrapoda_mammalia_primates_homo)
             .concat(data_fungi_phyla)
+            .concat(data_fungi_ascomycota)
             .concat(data_plantae_divisions)
             .concat(data_plantae_pinophyta_genus_common)
             .concat(data_plantae_angiosperm_orders_minus_monocots_eudicots)
