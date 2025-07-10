@@ -123,7 +123,7 @@
     "rank": "Subclass",
     "ipa": "ɪˌlæzməˈbræŋkiaɪ",
     "etymology": "",
-    "tag": "The cartilaginous fish.",
+    "tag": "The cartilaginous fish. They have no swim bladder and need to swim to avoid sinking.",
     "common": [
       "sharks",
       "whale sharks",
@@ -164,7 +164,7 @@
     "rank": "Clade",
     "ipa": "ˌɒstiːˈɪkθiːz",
     "etymology": "Greek 'bone'-'fish'",
-    "tag": "The bony fish.",
+    "tag": "The bony fish. Had foregut pouches that eventually evolved into swim bladders and lungs.",
     "imgs": [],
     "card": 3
   },
@@ -232,7 +232,7 @@
     "rank": "Clade",
     "ipa": "ˈtɛtrəˌpɒd",
     "etymology": "greek 'four'-'foot'",
-    "tag": "Four-limbed vertebrates.",
+    "tag": "Four-limbed vertebrates. Have paired lungs.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Mercurana.jpg/330px-Mercurana.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dermophis_mexicanus.jpg/330px-Dermophis_mexicanus.jpg",
