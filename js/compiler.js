@@ -28,6 +28,7 @@ class Data {
             .concat(data_animalia_chordata_tetrapoda_mammalia_artiodactyl_families)
             .concat(data_animalia_chordata_tetrapoda_mammalia_primates)
             .concat(data_animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families)
+            .concat(data_animalia_chordata_tetrapoda_mammalia_primates_cercopithecidae_families)
             .concat(data_animalia_chordata_tetrapoda_mammalia_primates_homo)
             .concat(data_fungi_phyla)
             .concat(data_fungi_basidiomycota)
