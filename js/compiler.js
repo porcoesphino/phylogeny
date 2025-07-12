@@ -9,43 +9,21 @@ class Data {
   static _get_data(content_select_value) {
     switch (content_select_value) {
       case 'all':
-        return (
-          data_luca
-            .concat(data_animalia_phyla_common)
-            .concat(data_animalia_cnidaria_orders_common)
-            .concat(data_animalia_arthropoda_orders_common)
-            .concat(data_animalia_arthropoda_insecta_orders_common)
-            .concat(data_animalia_chordata_classes_minus_tetrapoda)
-            .concat(data_animalia_chordata_elasmobranchii_orders)
-            .concat(data_animalia_chordata_actinopterygii_orders_minus_acanthomorpha)
-            .concat(data_animalia_chordata_actinopterygii_acanthomorpha_orders)
-            .concat(data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia)
-            .concat(data_animalia_chordata_tetrapoda_aves_orders)
-            .concat(data_animalia_chordata_tetrapoda_aves_passeriformes)
-            .concat(data_animalia_chordata_tetrapoda_aves_passeriformes_passeri)
-            .concat(data_animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides)
-            .concat(data_animalia_chordata_tetrapoda_mammalia_orders)
-            .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_families)
-            .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus)
-            .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus)
-            .concat(data_animalia_chordata_tetrapoda_mammalia_artiodactyl_families)
-            .concat(data_animalia_chordata_tetrapoda_mammalia_primates)
-            .concat(data_animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families)
-            .concat(data_animalia_chordata_tetrapoda_mammalia_primates_cercopithecidae_families)
-            .concat(data_animalia_chordata_tetrapoda_mammalia_primates_homo)
-            .concat(data_fungi_phyla)
-            .concat(data_fungi_basidiomycota)
-            .concat(data_fungi_ascomycota)
-            .concat(data_plantae_divisions)
-            .concat(data_plantae_pinophyta_genus_common)
-            .concat(data_plantae_angiosperm_orders_minus_monocots_eudicots)
-            .concat(data_plantae_angiosperm_monocots_orders)
-            .concat(data_plantae_angiosperm_eudicots_orders)
-        )
+        var all_data = []
+        for (var i = 0; i < window.data_files.length; i++) {
+          var file_metadata = window.data_files[i]
+          var var_name_for_file = 'data_' + file_metadata.file
+          if (!window.hasOwnProperty(var_name_for_file)) {
+            throw new Error('Data missing: ' + var_name_for_file)
+          }
+          var data_from_file = window[var_name_for_file]
+          all_data = all_data.concat(data_from_file)
+        }
+        return all_data
       default:
         var data_variable_name = 'data_' + content_select_value
         if (!window.hasOwnProperty(data_variable_name)) {
-          throw new Error('Content selection not found: ' + content_select_value)
+          throw new Error('Data missing: ' + data_variable_name)
         }
         return window[data_variable_name]
     }
@@ -176,7 +154,6 @@ class TreeBuilderAsTreeList {
       } else {
         var { name } = node
       }
-      console.log(name)
       var name_el = document.createElement('span')
       var wikipedia_link_el = document.createElement('a')
       wikipedia_link_el.href = 'https://en.wikipedia.org/wiki/' + name

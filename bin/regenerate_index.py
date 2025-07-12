@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
-from dataclasses import dataclass
+from dataclasses import dataclass, asdict
+import json
 import os
 import typing
 
@@ -8,38 +9,109 @@ HTML_OUT_FILENAME = 'index.html'
 
 DATA_DIR = 'data'
 
-JSON_DATA_LIST = [
-    'data_luca.json',
-    'data_animalia_phyla_common.json',
-    'data_animalia_cnidaria_orders_common.json',
-    'data_animalia_arthropoda_orders_common.json',
-    'data_animalia_arthropoda_insecta_orders_common.json',
-    'data_animalia_chordata_classes_minus_tetrapoda.json',
-    'data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia.json',
-    'data_animalia_chordata_elasmobranchii_orders.json',
-    'data_animalia_chordata_actinopterygii_orders_minus_acanthomorpha.json',
-    'data_animalia_chordata_actinopterygii_acanthomorpha_orders.json',
-    'data_animalia_chordata_tetrapoda_aves_orders.json',
-    'data_animalia_chordata_tetrapoda_aves_passeriformes.json',
-    'data_animalia_chordata_tetrapoda_aves_passeriformes_passeri.json',
-    'data_animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides.json',
-    'data_animalia_chordata_tetrapoda_mammalia_orders.json',
-    'data_animalia_chordata_tetrapoda_mammalia_carnivora_families.json',
-    'data_animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus.json',
-    'data_animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus.json',
-    'data_animalia_chordata_tetrapoda_mammalia_artiodactyl_families.json',
-    'data_animalia_chordata_tetrapoda_mammalia_primates.json',
-    'data_animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families.json',
-    'data_animalia_chordata_tetrapoda_mammalia_primates_cercopithecidae_families.json',
-    'data_animalia_chordata_tetrapoda_mammalia_primates_homo.json',
-    'data_plantae_divisions.json',
-    'data_plantae_pinophyta_genus_common.json',
-    'data_plantae_angiosperm_orders_minus_monocots_eudicots.json',
-    'data_plantae_angiosperm_monocots_orders.json',
-    'data_plantae_angiosperm_eudicots_orders.json',
-    'data_fungi_phyla.json',
-    'data_fungi_basidiomycota.json',
-    'data_fungi_ascomycota.json',
+
+@dataclass(kw_only=True)
+class JsonDataFile:
+  file: str
+
+
+DATA_LIST = [
+    JsonDataFile(
+        file='luca',
+    ),
+    JsonDataFile(
+        file='animalia_phyla_common',
+    ),
+    JsonDataFile(
+        file='animalia_cnidaria_orders_common',
+    ),
+    JsonDataFile(
+        file='animalia_arthropoda_orders_common',
+    ),
+    JsonDataFile(
+        file='animalia_arthropoda_insecta_orders_common',
+    ),
+    JsonDataFile(
+        file='animalia_arthropoda_insecta_hymenoptera',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_classes_minus_tetrapoda',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_elasmobranchii_orders',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_actinopterygii_orders_minus_acanthomorpha',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_actinopterygii_acanthomorpha_orders',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_aves_orders',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_aves_passeriformes',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_aves_passeriformes_passeri',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_mammalia_orders',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_mammalia_carnivora_families',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_mammalia_artiodactyl_families',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_mammalia_primates',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_mammalia_primates_cercopithecidae_families',
+    ),
+    JsonDataFile(
+        file='animalia_chordata_tetrapoda_mammalia_primates_homo',
+    ),
+    JsonDataFile(
+        file='plantae_divisions',
+    ),
+    JsonDataFile(
+        file='plantae_pinophyta_genus_common',
+    ),
+    JsonDataFile(
+        file='plantae_angiosperm_orders_minus_monocots_eudicots',
+    ),
+    JsonDataFile(
+        file='plantae_angiosperm_monocots_orders',
+    ),
+    JsonDataFile(
+        file='plantae_angiosperm_eudicots_orders',
+    ),
+    JsonDataFile(
+        file='fungi_phyla',
+    ),
+    JsonDataFile(
+        file='fungi_basidiomycota',
+    ),
+    JsonDataFile(
+        file='fungi_ascomycota',
+    ),
 ]
 
 Rank: typing.TypeAlias = typing.Literal[
@@ -60,7 +132,7 @@ class NodeRaw:
   rank: Rank
   parent: str
   ipa: str | None = None
-  imgs: list[str] | None = None  # TODO: Should this be local or remote?
+  imgs: list[str] | None = None  # A list of the the remote image URLs.
   description: str | None = None
   common: list[str] | None = None
   etymology: str | None = None
@@ -68,8 +140,9 @@ class NodeRaw:
 
 
 def get_script_vars() -> str:
-  output: str = ''
-  for json_filename in JSON_DATA_LIST:
+  output: str = 'var data_files = ' + json.dumps(DATA_LIST, default=asdict, indent=2) + '\n'
+  for json_file in DATA_LIST:
+    json_filename = f'data_{json_file.file}.json'
     with open(os.path.join(DATA_DIR, json_filename), 'r', encoding='utf8') as json_file:
       var_name = json_filename.removesuffix('.json')
       prefix_spaces = '    '
@@ -167,6 +240,9 @@ def get_html() -> str:
                   </option>
                   <option value="animalia_arthropoda_insecta_orders_common">
                     —→ Insecta — common orders
+                  </option>
+                  <option value="animalia_arthropoda_insecta_hymenoptera">
+                    ——→ Hymenoptera
                   </option>
                   <option value="animalia_chordata_classes_minus_tetrapoda">
                     → Chordata — classes minus Tetrapoda
