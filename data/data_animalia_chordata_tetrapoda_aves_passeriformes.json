@@ -1,0 +1,310 @@
+[
+  {
+    "name": "Acanthisittidae",
+    "parent": "Passeriformes",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "New Zealand wrens"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Tyranni",
+    "parent": "Passeriformes",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "Have a simpler syrinx musculature so their vocalizations are more mechanical sounding.",
+    "imgs": [],
+  },
+  {
+    "name": "Eurylaimides",
+    "parent": "Tyranni",
+    "rank": "Infraorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "An Old World bird group distributed pantropically.",
+    "imgs": [],
+  },
+  {
+    "name": "Philepittidae",
+    "parent": "Eurylaimides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "asites"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Eurylaimidae",
+    "parent": "Eurylaimides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "eurylaimid broadbills"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Calyptomenidae",
+    "parent": "Eurylaimides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "African broadbills",
+      "green broadbills"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Sapayoidae",
+    "parent": "Eurylaimides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "sapayoa"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Pittidae",
+    "parent": "Eurylaimides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "pittas"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Tyrannides",
+    "parent": "Tyranni",
+    "rank": "Infraorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "New World suboscines. Likely originated in South America during the Eocene, about 45 million years ago.",
+    "imgs": [],
+  },
+  {
+    "name": "Furnariida",
+    "parent": "Tyrannides",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "ovenbirds",
+      "woodcreepers",
+      "antbirds"
+    ],
+    "tag": "Neotropical ovenbirds and allies.",
+    "imgs": [],
+  },
+  {
+    "name": "Melanopareiidae",
+    "parent": "Furnariida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "crescentchests"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 5
+  },
+  {
+    "name": "Conopophagidae",
+    "parent": "Furnariida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "gnateaters"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 12
+  },
+  {
+    "name": "Thamnophilidae",
+    "parent": "Furnariida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "antbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 238
+  },
+  {
+    "name": "Grallariidae",
+    "parent": "Furnariida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "antpittas"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 70
+  },
+  {
+    "name": "Rhinocryptidae",
+    "parent": "Furnariida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "tapaculos"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 65
+  },
+  {
+    "name": "Formicariidae",
+    "parent": "Furnariida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "antthrushes"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 12
+  },
+  {
+    "name": "Furnariidae",
+    "parent": "Furnariida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "ovenbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 321
+  },
+  {
+    "name": "Tyrannida",
+    "parent": "Tyrannides",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Pipridae",
+    "parent": "Tyrannida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "manakins"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 55
+  },
+  {
+    "name": "Cotingidae",
+    "parent": "Tyrannida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "cotingas"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 66
+  },
+  {
+    "name": "Tityridae",
+    "parent": "Tyrannida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "tityras",
+      "becards"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 37
+  },
+  {
+    "name": "Tyrannidae",
+    "parent": "Tyrannida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "tyrant flycatchers"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 447
+  },
+  {
+    "name": "Oxyruncidae",
+    "parent": "Tyrannida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "sharpbill"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 1
+  },
+  {
+    "name": "Onychorhynchidae",
+    "parent": "Tyrannida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "royal flycatchers",
+      "myiobiuses"
+    ],
+    "tag": "",
+    "imgs": [],
+    "species": 7
+  },
+  {
+    "name": "Passeri",
+    "parent": "Passeriformes",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "The song birds. They have a complex syrinx musculature allowing a wide range of songs and other vocalizations.",
+    "imgs": [],
+  }
+]

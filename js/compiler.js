@@ -21,6 +21,9 @@ class Data {
             .concat(data_animalia_chordata_actinopterygii_acanthomorpha_orders)
             .concat(data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia)
             .concat(data_animalia_chordata_tetrapoda_aves_orders)
+            .concat(data_animalia_chordata_tetrapoda_aves_passeriformes)
+            .concat(data_animalia_chordata_tetrapoda_aves_passeriformes_passeri)
+            .concat(data_animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides)
             .concat(data_animalia_chordata_tetrapoda_mammalia_orders)
             .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_families)
             .concat(data_animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus)
@@ -173,6 +176,7 @@ class TreeBuilderAsTreeList {
       } else {
         var { name } = node
       }
+      console.log(name)
       var name_el = document.createElement('span')
       var wikipedia_link_el = document.createElement('a')
       wikipedia_link_el.href = 'https://en.wikipedia.org/wiki/' + name

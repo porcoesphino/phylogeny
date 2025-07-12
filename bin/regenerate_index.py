@@ -20,6 +20,9 @@ JSON_DATA_LIST = [
     'data_animalia_chordata_actinopterygii_orders_minus_acanthomorpha.json',
     'data_animalia_chordata_actinopterygii_acanthomorpha_orders.json',
     'data_animalia_chordata_tetrapoda_aves_orders.json',
+    'data_animalia_chordata_tetrapoda_aves_passeriformes.json',
+    'data_animalia_chordata_tetrapoda_aves_passeriformes_passeri.json',
+    'data_animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides.json',
     'data_animalia_chordata_tetrapoda_mammalia_orders.json',
     'data_animalia_chordata_tetrapoda_mammalia_carnivora_families.json',
     'data_animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus.json',
@@ -182,6 +185,15 @@ def get_html() -> str:
                   </option>
                   <option value="animalia_chordata_tetrapoda_aves_orders">
                     ——→ Aves — orders
+                  </option>
+                  <option value="animalia_chordata_tetrapoda_aves_passeriformes">
+                    ———→ Passeriformes — families minus Passeri
+                  </option>
+                  <option value="animalia_chordata_tetrapoda_aves_passeriformes_passeri">
+                    ————→ Passeri — families minus Core Passerides
+                  </option>
+                  <option value="animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides">
+                    —————→ Core Passerides — families
                   </option>
                   <option value="animalia_chordata_tetrapoda_mammalia_orders">
                     ——→ Mammalia — orders

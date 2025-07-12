@@ -1,0 +1,1070 @@
+[
+  {
+    "name": "Paroidea",
+    "parent": "Passeri",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Stenostiridae",
+    "parent": "Paroidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "crested flycatchers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Hyliotidae",
+    "parent": "Paroidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "hyliotas"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Remizidae",
+    "parent": "Paroidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "penduline tits"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Paridae",
+    "parent": "Paroidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "tits",
+      "chickadees"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Sylvioidea",
+    "parent": "Passeri",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Nicatoridae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "nicators"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Panuridae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "bearded reedling"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Alaudidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "larks"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Macrosphenidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "crombecs",
+      "African warblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Cisticolidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "cisticolas"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Locustelloidea",
+    "parent": "Sylvioidea",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Acrocephalidae",
+    "parent": "Locustelloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "acrocephalid warblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Locustellidae",
+    "parent": "Locustelloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "grassbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Bernieridae",
+    "parent": "Locustelloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Malagasy warblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Donacobiidae",
+    "parent": "Locustelloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "donacobius"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Hirundinidae",
+    "parent": "Sylviida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "martins",
+      "swallows"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Pnoepygidae",
+    "parent": "Sylviida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "wren warblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Aegithaloidea",
+    "parent": "Sylviida",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Phylloscopidae",
+    "parent": "Aegithaloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "leaf-warblers"
+    ],
+    "tag": "Leaf-warblers and allies.",
+    "imgs": [],
+  },
+  {
+    "name": "Hyliidae",
+    "parent": "Aegithaloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "hylias"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Aegithalidae",
+    "parent": "Aegithaloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "long-tailed tits",
+      "bushtits"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Erythrocercidae",
+    "parent": "Aegithaloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "yellow flycatchers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Cettiidae",
+    "parent": "Aegithaloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Cettia bush warblers"
+    ],
+    "tag": "Cettia bush warblers and allies.",
+    "imgs": [],
+  },
+  {
+    "name": "Scotocercidae",
+    "parent": "Aegithaloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "streaked scrub warbler"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Sylviida",
+    "parent": "Sylvioidea",
+    "rank": "Parvorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Pycnonotidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "bulbuls"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Paradoxornithidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "parrotbills",
+      "fulvettas"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Sylviidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "typical warblers",
+      "sylviid babblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Zosteropidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "white-eyes"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Timaliidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "babblers",
+      "tit-babblers",
+      "scimitar bablers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Leiothrichidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "laughingthrushes"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Pellorneidae",
+    "parent": "Sylvioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "fulvettas",
+      "ground babblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Muscicapida",
+    "parent": "Passeri",
+    "rank": "Parvorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Bombycilloidea",
+    "parent": "Muscicapida",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Dulidae",
+    "parent": "Bombycilloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "palmchat"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Bombycillidae",
+    "parent": "Bombycilloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "waxwings"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Ptiliogonatidae",
+    "parent": "Bombycilloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "silky-flycatchers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Hylocitreidae",
+    "parent": "Bombycilloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "hylocitrea"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Hypocoliidae",
+    "parent": "Bombycilloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "hypocolius"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Muscicapoidea",
+    "parent": "Muscicapida",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Elachuridae",
+    "parent": "Muscicapoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "elechura"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Cinclidae",
+    "parent": "Muscicapoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "dippers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Muscicapidae",
+    "parent": "Muscicapoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Old World flycatchers",
+      "chats"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Turdidae",
+    "parent": "Muscicapoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "thrushes"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Buphagidae",
+    "parent": "Muscicapoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "oxpeckers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Mimidae",
+    "parent": "Muscicapoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "mockingbirds",
+      "thrashers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Sturnidae",
+    "parent": "Muscicapoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "starlings",
+      "mynas"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Regulidae",
+    "parent": "Muscicapida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "kinglets"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Certhioidea",
+    "parent": "Muscicapida",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Tichodromidae",
+    "parent": "Certhioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "wallcreeper"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Sittidae",
+    "parent": "Certhioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "nuthatches"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Certhiidae",
+    "parent": "Certhioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "treecreepers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Salpornithidae",
+    "parent": "Certhioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "spotted creepers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Polioptilidae",
+    "parent": "Certhioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "gnatcatchers",
+      "gnatwrens"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Troglodytidae",
+    "parent": "Certhioidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "wrens"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Passerida",
+    "parent": "Passeri",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Modulatricidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "dapple-throat"
+    ],
+    "tag": "Dapple-throat & allies.",
+    "imgs": [],
+  },
+  {
+    "name": "Promeropidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "sugarbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Dicaeidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "flowerpeckers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Nectariniidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "sunbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Chloropseidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "leafbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Irenidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "fairy bluebirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Peucedramidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "olive warbler"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Urocynchramidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Przevalski's finch"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Ploceoidea",
+    "parent": "Passerida",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Ploceidae",
+    "parent": "Ploceoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "weavers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Estrildidae",
+    "parent": "Ploceoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "estrildid finches"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Viduidae",
+    "parent": "Ploceoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "indigobirds",
+      "whydahs"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Prunellidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "accentors"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Passeridae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "sparrows"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Motacillidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "wagtails",
+      "pipits"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Fringillidae",
+    "parent": "Passerida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "finches",
+      "euphonias"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Emberizoidea",
+    "parent": "Passerida",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Rhodinocichlidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "thrush-tanager"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Calcariidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "longspurs",
+      "snow buntings"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Emberizidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "buntings"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Cardinalidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "cardinal grosbeaks"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Mitrospingidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "mitrosingus"
+    ],
+    "tag": "Mitrosingus & allies",
+    "imgs": [],
+  },
+  {
+    "name": "Thraupidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "tanagers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Passerellidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "American sparrows"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Parulidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "wood warblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Icteridae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "ɪkˈtɛrɪdi",
+    "etymology": "",
+    "common": [
+      "New World blackbirds",
+      "New World orioles",
+      "bobolinks",
+      "meadowlarks",
+      "grackles",
+      "cowbirds",
+      "oropendolas",
+      "caciques"
+    ],
+    "tag": "The New World blackbirds are small to medium-sized, usually with black as a predominant plumage color, often enlivened by yellow, orange, or red.",
+    "imgs": [],
+  },
+  {
+    "name": "Icteriidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "yellow-breasted chat"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Calyptophilidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "chat-tanagers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Zeledoniidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "wrenthrush"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Phaenicophilidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Hispaniolan tanagers"
+    ],
+    "tag": "Hispaniolan tanagers and allies",
+    "imgs": [],
+  },
+  {
+    "name": "Nesospingidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Puerto Rican tanager"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Spindalidae",
+    "parent": "Emberizoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "spindalises"
+    ],
+    "tag": "",
+    "imgs": [],
+  }
+]

@@ -1,0 +1,718 @@
+[
+  {
+    "name": "Menuridae",
+    "parent": "Passeri",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "lyrebirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Atrichornithidae",
+    "parent": "Passeri",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "scrubbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Climacteridae",
+    "parent": "Passeri",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Australian treecreepers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Ptilonorhynchidae",
+    "parent": "Passeri",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "bowerbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Meliphagoidea",
+    "parent": "Passeri",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "Includes some small to mid-sized songbirds widespread in the Austropacific region.",
+    "imgs": [],
+  },
+  {
+    "name": "Maluridae",
+    "parent": "Meliphagoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Australasian wrens"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Dasyornithidae",
+    "parent": "Meliphagoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "bristlebirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Meliphagidae",
+    "parent": "Meliphagoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "honeyeaters"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Acanthizidae",
+    "parent": "Meliphagoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Australasian warblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Pardalotidae",
+    "parent": "Meliphagoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "pardalotes"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Orthonychides",
+    "parent": "Passeri",
+    "rank": "Infraorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Orthonychidae",
+    "parent": "Orthonychides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "logrunners"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Pomatostomidae",
+    "parent": "Orthonychides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Australasian babblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Corvides",
+    "parent": "Passeri",
+    "rank": "Infraorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Cinclosomatidae",
+    "parent": "Corvides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "quail-thrushes",
+      "jewel-babblers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Campephagidae",
+    "parent": "Corvides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "cuckooshrikes"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Mohouidae",
+    "parent": "Corvides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "whiteheads",
+      "pipipis",
+      "yellowheads"
+    ],
+    "tag": "Whitehead & allies.",
+    "imgs": [],
+  },
+  {
+    "name": "Neosittidae",
+    "parent": "Corvides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "sittellas"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Orioloidea",
+    "parent": "Corvides",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Psophodidae",
+    "parent": "Orioloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "whipbirds"
+    ],
+    "tag": "Whipbirds & allies.",
+    "imgs": [],
+  },
+  {
+    "name": "Eulacestomidae",
+    "parent": "Orioloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "ploughbill"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Falcunculidae",
+    "parent": "Orioloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "shriketits"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Oreoicidae",
+    "parent": "Orioloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Australo-Papuan bellbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Paramythiidae",
+    "parent": "Orioloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "painted berrypickers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Vireonidae",
+    "parent": "Orioloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "vireos"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Oriolidae",
+    "parent": "Orioloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "orioles",
+      "figbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Pachycephalidae",
+    "parent": "Orioloidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "whistlers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Malaconotoidea",
+    "parent": "Corvides",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "bushshrikes",
+      "helmetshrikes",
+      "ioras",
+      "vangas",
+      "butcherbirds",
+      "Australian magpies",
+      "currawongs",
+      "woodswallows"
+    ],
+    "tag": "Omnivorous and carnivorous songbirds widespread in Africa and Australia, many of which superficially resemble shrikes.",
+    "imgs": [],
+  },
+  {
+    "name": "Machaerirhynchidae",
+    "parent": "Malaconotoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "boatbills"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Artamidae",
+    "parent": "Malaconotoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "woodswallows",
+      "currawongs",
+      "butcherbirds",
+      "Australian magpies"
+    ],
+    "tag": "Native to Australia, the Indo-Pacific region, and Southern Asia.",
+    "imgs": [],
+  },
+  {
+    "name": "Rhagologidae",
+    "parent": "Malaconotoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "mottled berryhunter"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Malaconotidae",
+    "parent": "Malaconotoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "bush-shrikes",
+      "puffbacks",
+      "tchagras",
+      "boubous"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Aegithinidae",
+    "parent": "Malaconotoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "ioras"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Pityriaseidae",
+    "parent": "Malaconotoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "bristlehead"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Platysteiridae",
+    "parent": "Malaconotoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "wattle-eyes",
+      "batsies"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Vangidae",
+    "parent": "Malaconotoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "vangas"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Corvoidea",
+    "parent": "Corvides",
+    "rank": "Superfamily",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Rhipiduridae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "fantails"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Dicruridae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "drongos"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Monarchidae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "monarchs"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Ifritidae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "ifrit"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Paradisaeidae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "birds-of-paradise"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Corcoracidae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Australian mudnesters"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Melampittidae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "melampittas"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Corvidae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "crows",
+      "ravens",
+      "rooks",
+      "true magpies",
+      "jackdaws",
+      "jays",
+      "treepies",
+      "choughs",
+      "nutcrackers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Laniidae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "shrikes"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Platylophidae",
+    "parent": "Corvoidea",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "crested jays"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Passerides",
+    "parent": "Passeri",
+    "rank": "Infraorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Melanocharitidae",
+    "parent": "Passerides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "berrypeckers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Cnemophilidae",
+    "parent": "Passerides",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "satinbirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Petroicida",
+    "parent": "Passerides",
+    "rank": "Parvorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Petroicidae",
+    "parent": "Petroicida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "Australian robins"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Notiomystidae",
+    "parent": "Petroicida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "stitchbird"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Callaeidae",
+    "parent": "Petroicida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "New Zealand wattlebirds"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Eupetida",
+    "parent": "Passerides",
+    "rank": "Parvorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Picathartidae",
+    "parent": "Eupetida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "rockfowl"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Chaetopidae",
+    "parent": "Eupetida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "rock-jumpers"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Eupetidae",
+    "parent": "Eupetida",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "rail-babbler"
+    ],
+    "tag": "",
+    "imgs": [],
+  },
+  {
+    "name": "Core Passerides",
+    "parent": "Passerides",
+    "rank": "Clade",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "",
+    "imgs": [],
+  }
+]
