@@ -13,104 +13,197 @@ DATA_DIR = 'data'
 @dataclass(kw_only=True)
 class JsonDataFile:
   file: str
+  domain: str
+  label_sci: str
+  label_simple: str
 
 
 DATA_LIST = [
     JsonDataFile(
         file='luca',
+        domain='',
+        label_sci='Overview',
+        label_simple='Overview',
     ),
     JsonDataFile(
         file='animalia_phyla_common',
+        domain='animalia',
+        label_sci='Animalia — common Phyla',
+        label_simple='Animalia — common Phyla',
     ),
     JsonDataFile(
         file='animalia_cnidaria_orders_common',
+        domain='animalia',
+        label_sci='→ Cnidaria — common classes/orders',
+        label_simple='→ Cnidaria — common classes/orders',
     ),
     JsonDataFile(
         file='animalia_arthropoda_orders_common',
+        domain='animalia',
+        label_sci='→ Arthropoda — common classes/orders',
+        label_simple='→ Arthropoda — common classes/orders',
     ),
     JsonDataFile(
         file='animalia_arthropoda_insecta_orders_common',
-    ),
-    JsonDataFile(
-        file='animalia_arthropoda_insecta_hymenoptera',
+        domain='animalia',
+        label_sci='—→ Insecta — common orders',
+        label_simple='—→ Insecta — common orders',
     ),
     JsonDataFile(
         file='animalia_chordata_classes_minus_tetrapoda',
+        domain='animalia',
+        label_sci='→ Chordata — classes minus Tetrapoda',
+        label_simple='→ Chordata — classes minus Tetrapoda',
     ),
     JsonDataFile(
         file='animalia_chordata_elasmobranchii_orders',
+        domain='animalia',
+        label_sci='—→ Elasmobranchii — orders',
+        label_simple='—→ Elasmobranchii — orders',
     ),
     JsonDataFile(
         file='animalia_chordata_actinopterygii_orders_minus_acanthomorpha',
+        domain='animalia',
+        label_sci='—→ Actinopterygii — orders minus Acanthomorpha',
+        label_simple='—→ Actinopterygii — orders minus Acanthomorpha',
     ),
     JsonDataFile(
         file='animalia_chordata_actinopterygii_acanthomorpha_orders',
+        domain='animalia',
+        label_sci='——→ Acanthomorpha — orders',
+        label_simple='——→ Acanthomorpha — orders',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia',
+        domain='animalia',
+        label_sci='—→ Tetrapoda — orders minus Aves and Mammalia',
+        label_simple='—→ Tetrapoda — orders minus Aves and Mammalia',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_aves_orders',
+        domain='animalia',
+        label_sci='——→ Aves — orders',
+        label_simple='——→ Aves — orders',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_aves_passeriformes',
+        domain='animalia',
+        label_sci='———→ Passeriformes — families minus Passeri',
+        label_simple='———→ Passeriformes — families minus Passeri',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_aves_passeriformes_passeri',
+        domain='animalia',
+        label_sci='————→ Passeri — families minus Core Passerides',
+        label_simple='————→ Passeri — families minus Core Passerides',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides',
+        domain='animalia',
+        label_sci='—————→ Core Passerides — families',
+        label_simple='—————→ Core Passerides — families',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_orders',
+        domain='animalia',
+        label_sci='——→ Mammalia — orders',
+        label_simple='——→ Mammal orders',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_carnivora_families',
+        domain='animalia',
+        label_sci='———→ Carnivora — families',
+        label_simple='———→ The carnivorans — carniverous mammals',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus',
+        domain='animalia',
+        label_sci='————→ Felidae — families',
+        label_simple='————→ The cat-like carnivorans',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus',
+        domain='animalia',
+        label_sci='————→ Canidae — families',
+        label_simple='————→ The dog-like carnivorans',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_artiodactyl_families',
+        domain='animalia',
+        label_sci='———→ Artiodactyl — families',
+        label_simple='———→ Artiodactyl — families',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_primates',
+        domain='animalia',
+        label_sci='———→ Primates',
+        label_simple='———→ Primates',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families',
+        domain='animalia',
+        label_sci='————→ Platyrrhini - families',
+        label_simple='————→ The new world monkeys',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_primates_cercopithecidae_families',
+        domain='animalia',
+        label_sci='————→ Cercopithecidae - families',
+        label_simple='————→ The old world monkeys',
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_primates_homo',
+        domain='animalia',
+        label_sci='————→ Homo',
+        label_simple='————→ Humans and their close ancestors',
     ),
     JsonDataFile(
         file='plantae_divisions',
+        domain='plantae',
+        label_sci='Plantae - Divisions',
+        label_simple='Plantae - Divisions',
     ),
     JsonDataFile(
         file='plantae_pinophyta_genus_common',
+        domain='plantae',
+        label_sci='→ Pinophyta — common genera',
+        label_simple='→ The conifers',
     ),
     JsonDataFile(
         file='plantae_angiosperm_orders_minus_monocots_eudicots',
+        domain='plantae',
+        label_sci='→ Angiosperm — orders minus Monocots and Eudicots',
+        label_simple='→ The flowering plants',
     ),
     JsonDataFile(
         file='plantae_angiosperm_monocots_orders',
+        domain='plantae',
+        label_sci='—→ Monocot — orders',
+        label_simple='—→ Monocot — orders',
     ),
     JsonDataFile(
         file='plantae_angiosperm_eudicots_orders',
+        domain='plantae',
+        label_sci='—→ Eudicot — orders',
+        label_simple='—→ Eudicot — orders',
     ),
     JsonDataFile(
         file='fungi_phyla',
+        domain='fungi',
+        label_sci='Fungi — common Phyla',
+        label_simple='Fungi — common Phyla',
     ),
     JsonDataFile(
         file='fungi_basidiomycota',
+        domain='fungi',
+        label_sci='→ Basidiomycota',
+        label_simple='→ The higher fungi',
     ),
     JsonDataFile(
         file='fungi_ascomycota',
+        domain='fungi',
+        label_sci='→ Ascomycota',
+        label_simple='→ The sac fungi',
     ),
 ]
 
@@ -224,109 +317,6 @@ def get_html() -> str:
             <div class="select">
               <label for="tree-range-select">Select tree range</label>
               <select size="5" id="tree-range-select">
-                <option value="luca" selected>Overview</option>
-                <hr />
-                <option value="all">All so far</option>
-                <hr />
-                <optgroup label="Animalia">
-                  <option value="animalia_phyla_common">
-                    Animalia — common Phyla
-                  </option>
-                  <option value="animalia_cnidaria_orders_common">
-                    → Cnidaria — common classes/orders
-                  </option>
-                  <option value="animalia_arthropoda_orders_common">
-                    → Arthropoda — common classes/orders
-                  </option>
-                  <option value="animalia_arthropoda_insecta_orders_common">
-                    —→ Insecta — common orders
-                  </option>
-                  <option value="animalia_arthropoda_insecta_hymenoptera">
-                    ——→ Hymenoptera
-                  </option>
-                  <option value="animalia_chordata_classes_minus_tetrapoda">
-                    → Chordata — classes minus Tetrapoda
-                  </option>
-                  <option value="animalia_chordata_elasmobranchii_orders">
-                    —→ Elasmobranchii — orders
-                  </option>
-                  <option value="animalia_chordata_actinopterygii_orders_minus_acanthomorpha">
-                    —→ Actinopterygii — orders minus Acanthomorpha
-                  </option>
-                  <option value="animalia_chordata_actinopterygii_acanthomorpha_orders">
-                    ——→ Acanthomorpha — orders
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia">
-                    —→ Tetrapoda — orders minus Aves and Mammalia
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_aves_orders">
-                    ——→ Aves — orders
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_aves_passeriformes">
-                    ———→ Passeriformes — families minus Passeri
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_aves_passeriformes_passeri">
-                    ————→ Passeri — families minus Core Passerides
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides">
-                    —————→ Core Passerides — families
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_mammalia_orders">
-                    ——→ Mammalia — orders
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_mammalia_carnivora_families">
-                    ———→ Carnivora — families
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus">
-                    ————→ Felidae — families
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus">
-                    ————→ Canidae — families
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_mammalia_artiodactyl_families">
-                    ———→ Artiodactyl — families
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_mammalia_primates">
-                    ———→ Primates
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families">
-                    ————→ Platyrrhini - families
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_mammalia_primates_cercopithecidae_families">
-                    ————→ Cercopithecidae - families
-                  </option>
-                  <option value="animalia_chordata_tetrapoda_mammalia_primates_homo">
-                    ————→ Homo
-                  </option>
-                </optgroup>
-                <optgroup label="Fungi">
-                  <option value="fungi_phyla">
-                    Fungi — common Phyla
-                  </option>
-                  <option value="fungi_basidiomycota">
-                    → Basidiomycota
-                  </option>
-                  <option value="fungi_ascomycota">
-                    → Ascomycota
-                  </option>
-                </optgroup>
-                <optgroup label="Plantae">
-                  <option value="plantae_divisions">
-                    Plantae - Divisions
-                  </option>
-                  <option value="plantae_pinophyta_genus_common">
-                    → Pinophyta — common genera
-                  </option>
-                  <option value="plantae_angiosperm_orders_minus_monocots_eudicots">
-                    → Angiosperm — orders minus Monocots and Eudicots
-                  </option>
-                  <option value="plantae_angiosperm_monocots_orders">
-                    —→ Monocot — orders
-                  </option>
-                  <option value="plantae_angiosperm_eudicots_orders">
-                    —→ Eudicot — orders
-                  </option>
-                </optgroup>
               </select>
             </div>
           </td>
