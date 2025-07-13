@@ -61,12 +61,20 @@ class Data {
 
   get data() {
     if (!this._data) {
+      if (!this.tree_range) {
+        return []  // Abort early during initialisation.
+      }
       this._data = Data._get_data(this.tree_range)
     }
     return this._data
   }
 
   _update_maps() {
+
+    if (this.data.length == 0) {
+      return  // Abort early during initialisation.
+    }
+
     var parent_to_child_list = new Map()
     var name_to_node = new Map()
     var filtered_nodes = []
@@ -296,6 +304,11 @@ class TreeBuilderAsTreeList {
   }
 
   static get_html_for_tree_range(data) {
+
+    if (!data.tree_range) {
+      return  // Abort early during initialisation.
+    }
+
     var root_name = data.root_name
     var dict = data.parent_to_child_list
 
@@ -394,6 +407,37 @@ class TreeRangeSelectorBuilder {
     this._add_hr(parent_el)
     parent_el.appendChild(plantae_optgroup_el)
   }
+
+  replace_tree_range_as_buttons(parent_el) {
+    while (parent_el.firstChild) {
+      // The list is LIVE so it will re-index each call
+      parent_el.removeChild(parent_el.firstChild);
+    }
+
+    this._add_from_metadata_list(parent_el, this._options_map[''], true)
+    this._add_hr(parent_el)
+
+    var all_so_far_el = document.createElement('option')
+    all_so_far_el.value = 'all'
+    all_so_far_el.innerText = 'All so far'
+    parent_el.appendChild(all_so_far_el)
+    this._add_hr(parent_el)
+
+    var animalia_optgroup_el = this._add_optgroup(parent_el, 'Animalia')
+    this._add_from_metadata_list(animalia_optgroup_el, this._options_map['animalia'])
+    this._add_hr(parent_el)
+    parent_el.appendChild(animalia_optgroup_el)
+
+    var fungi_optgroup_el = this._add_optgroup(parent_el, 'Fungi')
+    this._add_from_metadata_list(fungi_optgroup_el, this._options_map['fungi'])
+    this._add_hr(parent_el)
+    parent_el.appendChild(fungi_optgroup_el)
+
+    var plantae_optgroup_el = this._add_optgroup(parent_el, 'Plantae')
+    this._add_from_metadata_list(plantae_optgroup_el, this._options_map['plantae'])
+    this._add_hr(parent_el)
+    parent_el.appendChild(plantae_optgroup_el)
+  }
 }
 
 class Page {
@@ -407,6 +451,10 @@ class Page {
 
     this.update_tree_range_view = (data) => {
       var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(data)
+
+      if (!root_list_el) {
+        return  // Abort early during initialisation.
+      }
 
       var tree_root = document.getElementById('tree_root')
 
