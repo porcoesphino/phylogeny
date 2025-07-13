@@ -1,3 +1,5 @@
+const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
+
 class Data {
 
   constructor(tree_range, card = 'all') {
@@ -505,6 +507,16 @@ class Page {
       card_select_change()
     });
 
+    this._set_state_based_on_width = () => {
+      var width = window.screen.width
+      console.log('Setting state based on width: ', width)
+      if (width > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
+        Page.set_details_accordion_state('controls-accordion', true)
+        Page.set_details_accordion_state('summary-accordion', true)
+      }
+    }
+    window.addEventListener('resize', this._set_state_based_on_width, true);
+
     var page_load_callback = () => {
       this.page_load_callback()
     }
@@ -517,14 +529,6 @@ class Page {
         page_load_callback()
       }
     });
-
-    window.addEventListener('resize', function (event) {
-      var width = (event.srcElement || event.currentTarget).innerWidth
-      if (width > 1200) {
-        Page.set_details_accordion_state('controls-accordion', true)
-        Page.set_details_accordion_state('summary-accordion', true)
-      }
-    }, true);
 
   }
 
@@ -542,6 +546,10 @@ class Page {
       throw new Error('Missing accordion element id: %s', id)
     }
     accordion.addEventListener('toggle', function () {
+      if (window.screen.width > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
+        Page.set_details_accordion_state(id, true)
+        return
+      }
       var is_open = accordion.hasAttribute('open')
       if (!!is_open) {
         page.query_params.update(id, 'open')
@@ -615,6 +623,8 @@ class Page {
 
     var controls_are_open = this.query_params.get('summary-accordion')  // Treat any value as 'open'.
     Page.set_details_accordion_state('summary-accordion', controls_are_open)
+
+    this._set_state_based_on_width()
 
     Page.add_query_param_update_for_details_accordion_state('controls-accordion')
 

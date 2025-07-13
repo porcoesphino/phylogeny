@@ -27,15 +27,14 @@
   #tree_root {
     /* flex: 4 1 500px; */
     overflow: auto;
+    mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
   }
 
-  .summary {
-    overflow: auto;
-  }
-
+  .summary,
   details>div {
+    overflow: auto;
+    mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
     /* Why does this overflow? Details elements? */
     height: 90%;
-    overflow: auto;
   }
 }
