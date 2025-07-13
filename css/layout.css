@@ -1,16 +1,55 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 780px) {
   #tree-range-select-buttons {
     height: 10rem !important;
   }
+
+  details.controls {
+    max-width: calc(100% - .6rem) !important;
+    margin-right: 20px !important;
+  }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {
+@media only screen and (min-width: 780px) and (max-width: 1200px) {
+  .layout-columns {
+    display: flex;
+    width: 100%;
+    /* Why does this overflow? Details elements? */
+    height: 90%;
+  }
+
+  #summary-accordion {
+    flex: 1 2 500px;
+    width: 100%;
+  }
+
   #tree-range-select-buttons {
-    height: 10rem !important;
+    height: fit-content !important;
+    overflow: hidden !important;
+  }
+
+  #tree_root {
+    flex: 2 1 500px;
+    min-width: 500px;
+    overflow: auto;
+    mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
+  }
+
+  .summary,
+  details>div {
+    overflow: auto;
+    mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
+    /* Why does this overflow? Details elements? */
+    height: 90%;
   }
 }
 
 @media only screen and (min-width: 1200px) {
+  .rows-on-mobile {
+    display: flex;
+    flex-direction: row;
+    flex: 1 2 700px;
+  }
+
   .layout-columns {
     display: flex;
     width: 100%;
