@@ -499,14 +499,14 @@ class Page {
     this._set_state_based_on_width = () => {
       var width = window.innerWidth
       if (width > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
-        Page.set_details_accordion_state('controls-accordion', true)
-        Page.set_details_accordion_state('summary-accordion', true)
+        Page.set_details_accordion_state('controls-accordion', true, true)
+        Page.set_details_accordion_state('summary-accordion', true, true)
       } else {
         var controls_are_open = this.query_params.get('controls-accordion')  // Treat any value as 'open'.
-        Page.set_details_accordion_state('controls-accordion', controls_are_open)
+        Page.set_details_accordion_state('controls-accordion', controls_are_open, false)
 
         var controls_are_open = this.query_params.get('summary-accordion')  // Treat any value as 'open'.
-        Page.set_details_accordion_state('summary-accordion', controls_are_open)
+        Page.set_details_accordion_state('summary-accordion', controls_are_open, false)
       }
     }
     window.addEventListener('resize', this._set_state_based_on_width, true);
@@ -526,11 +526,16 @@ class Page {
 
   }
 
-  static set_details_accordion_state(id, is_open) {
+  static set_details_accordion_state(id, is_open, disabled = false) {
     if (!!is_open) {
       document.getElementById(id).setAttribute('open', '')
     } else {
       document.getElementById(id).removeAttribute('open')
+    }
+    if (!!disabled) {
+      document.getElementById(id).setAttribute('disabled', '')
+    } else {
+      document.getElementById(id).removeAttribute('disabled')
     }
   }
 
@@ -541,7 +546,7 @@ class Page {
     }
     accordion.addEventListener('toggle', function () {
       if (window.innerWidth > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
-        Page.set_details_accordion_state(id, true)
+        Page.set_details_accordion_state(id, true, true)
         return
       }
       var is_open = accordion.hasAttribute('open')

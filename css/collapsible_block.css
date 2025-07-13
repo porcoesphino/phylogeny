@@ -22,3 +22,14 @@ details[open] summary:after {
   transition: transform .2s ease-in-out;
   float: right;
 }
+
+details[disabled] summary {
+  /* prevents click events */
+  pointer-events: none;
+  /* prevents text selection */
+  user-select: none;
+}
+
+details[disabled] summary:after {
+  background-image: none
+}
