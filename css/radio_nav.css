@@ -23,6 +23,10 @@ li {
   list-style: none;
 }
 
+ul {
+  padding-inline-start: 20px;
+}
+
 /** Hide the radiobox. */
 input {
   position: absolute !important;
