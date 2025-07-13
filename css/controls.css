@@ -12,15 +12,18 @@ details.controls summary {
   padding: .5rem;
 }
 
-details.controls div {
+details.controls>div,
+details.controls td {
   padding: 0.5rem;
 }
 
 details.controls td {
   display: flex;
+  flex-direction: column;
 }
 
-details.controls label {
+details.controls div.select>label,
+details.controls div.control-section {
   font-size: 1.2rem;
   padding: 0.2rem;
 }

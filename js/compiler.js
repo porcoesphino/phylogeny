@@ -364,48 +364,49 @@ class TreeRangeSelectorBuilder {
     parent_el.appendChild(hr_el)
   }
 
-  _add_from_metadata_list(parent_el, metadata_list, is_selected = false) {
-    for (var i = 0; i < metadata_list.length; i++) {
-      var option_el = document.createElement('option')
-      var metadata = metadata_list[i]
-      option_el.value = metadata.file
-      option_el.innerText = metadata.label_sci
-      if (is_selected && i == 0) {
-        option_el.selected = true
-      }
-      parent_el.appendChild(option_el)
-    }
+  _add_fieldset(parent_el, label) {
+    var fieldset_el = document.createElement('fieldset')
+    var legend_el = document.createElement('legend')
+    legend_el.innerText = label
+    fieldset_el.appendChild(legend_el)
+    parent_el.appendChild(fieldset_el)
+    return fieldset_el
   }
 
-  replace_tree_range_selector(parent_el) {
-    while (parent_el.firstChild) {
-      // The list is LIVE so it will re-index each call
-      parent_el.removeChild(parent_el.firstChild);
+  _add_from_metadata_list_buttons(parent_el, metadata_list, is_selected = false) {
+    for (var i = 0; i < metadata_list.length; i++) {
+      var metadata = metadata_list[i]
+
+      var outer_div_el = document.createElement('div')
+      var input_el = document.createElement('input')
+      input_el.type = 'radio'
+      input_el.id = metadata.file
+      input_el.value = metadata.file
+      input_el.name = 'tree_range_selector_radio'
+      outer_div_el.appendChild(input_el)
+      var label_el = document.createElement('label')
+      label_el.htmlFor = metadata.file
+      outer_div_el.appendChild(label_el)
+      var inner_div_el = document.createElement('div')
+      var label = metadata.taxa
+      if (!!metadata.prefix) {
+        label = metadata.prefix + ' ' + label
+      }
+      inner_div_el.innerText = label
+      if (!!metadata.tag) {
+        var br_el = document.createElement('br')
+        inner_div_el.appendChild(br_el)
+        var small_el = document.createElement('small')
+        small_el.innerText = metadata.tag
+        inner_div_el.appendChild(small_el)
+      }
+      label_el.appendChild(inner_div_el)
+
+      if (is_selected && i == 0) {
+        input_el.checked = true
+      }
+      parent_el.appendChild(outer_div_el)
     }
-
-    this._add_from_metadata_list(parent_el, this._options_map[''], true)
-    this._add_hr(parent_el)
-
-    var all_so_far_el = document.createElement('option')
-    all_so_far_el.value = 'all'
-    all_so_far_el.innerText = 'All so far'
-    parent_el.appendChild(all_so_far_el)
-    this._add_hr(parent_el)
-
-    var animalia_optgroup_el = this._add_optgroup(parent_el, 'Animalia')
-    this._add_from_metadata_list(animalia_optgroup_el, this._options_map['animalia'])
-    this._add_hr(parent_el)
-    parent_el.appendChild(animalia_optgroup_el)
-
-    var fungi_optgroup_el = this._add_optgroup(parent_el, 'Fungi')
-    this._add_from_metadata_list(fungi_optgroup_el, this._options_map['fungi'])
-    this._add_hr(parent_el)
-    parent_el.appendChild(fungi_optgroup_el)
-
-    var plantae_optgroup_el = this._add_optgroup(parent_el, 'Plantae')
-    this._add_from_metadata_list(plantae_optgroup_el, this._options_map['plantae'])
-    this._add_hr(parent_el)
-    parent_el.appendChild(plantae_optgroup_el)
   }
 
   replace_tree_range_as_buttons(parent_el) {
@@ -414,40 +415,31 @@ class TreeRangeSelectorBuilder {
       parent_el.removeChild(parent_el.firstChild);
     }
 
-    this._add_from_metadata_list(parent_el, this._options_map[''], true)
+    this._add_from_metadata_list_buttons(parent_el, this._options_map[''], true)
     this._add_hr(parent_el)
 
-    var all_so_far_el = document.createElement('option')
-    all_so_far_el.value = 'all'
-    all_so_far_el.innerText = 'All so far'
-    parent_el.appendChild(all_so_far_el)
-    this._add_hr(parent_el)
+    var animalia_fieldset_el = this._add_fieldset(parent_el, 'Animalia')
+    this._add_from_metadata_list_buttons(animalia_fieldset_el, this._options_map['animalia'])
+    parent_el.appendChild(animalia_fieldset_el)
 
-    var animalia_optgroup_el = this._add_optgroup(parent_el, 'Animalia')
-    this._add_from_metadata_list(animalia_optgroup_el, this._options_map['animalia'])
-    this._add_hr(parent_el)
-    parent_el.appendChild(animalia_optgroup_el)
+    var fungi_fieldset_el = this._add_fieldset(parent_el, 'Fungi')
+    this._add_from_metadata_list_buttons(fungi_fieldset_el, this._options_map['fungi'])
+    parent_el.appendChild(fungi_fieldset_el)
 
-    var fungi_optgroup_el = this._add_optgroup(parent_el, 'Fungi')
-    this._add_from_metadata_list(fungi_optgroup_el, this._options_map['fungi'])
-    this._add_hr(parent_el)
-    parent_el.appendChild(fungi_optgroup_el)
-
-    var plantae_optgroup_el = this._add_optgroup(parent_el, 'Plantae')
-    this._add_from_metadata_list(plantae_optgroup_el, this._options_map['plantae'])
-    this._add_hr(parent_el)
-    parent_el.appendChild(plantae_optgroup_el)
+    var plantae_fieldset_el = this._add_fieldset(parent_el, 'Plantae')
+    this._add_from_metadata_list_buttons(plantae_fieldset_el, this._options_map['plantae'])
+    parent_el.appendChild(plantae_fieldset_el)
   }
 }
 
 class Page {
 
   constructor() {
-    this._content_select = document.getElementById('tree-range-select');
+    this._tree_range_select = document.getElementById('tree-range-select-buttons');
     this._card_select = document.getElementById('card-select');
 
     this.query_params = new QueryParams()
-    this.data = new Data(this._content_select.value, 'all')
+    this.data = new Data('luca', 'all')
 
     this.update_tree_range_view = (data) => {
       var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(data)
@@ -465,12 +457,9 @@ class Page {
       tree_root.appendChild(root_list_el)
     }
 
-    this.update_tree_range_view(this.data)
-
-    var update_tree_range_view = this.update_tree_range_view
-    var content_select_change = () => {
-      page.query_params.update('tree_range', this._content_select.value)
-      this.data.tree_range = this._content_select.value
+    this.select_new_tree_range = (new_value) => {
+      page.query_params.update('tree_range', new_value)
+      this.data.tree_range = new_value
       this.data.card = 'all'
       page.query_params.update('card', 'all')
       this.add_card_select_options()
@@ -482,9 +471,10 @@ class Page {
         this._card_select.disabled = false
       }
     }
-    this._content_select.addEventListener('change', function () {
-      content_select_change()
-    });
+
+    this.update_tree_range_view(this.data)
+
+    var update_tree_range_view = this.update_tree_range_view
 
     var card_select_change = () => {
       page.query_params.update('card', this._card_select.value)
@@ -563,12 +553,20 @@ class Page {
   page_load_callback() {
 
     var tree_range_builder = new TreeRangeSelectorBuilder()
-    tree_range_builder.replace_tree_range_selector(this._content_select)
+    tree_range_builder.replace_tree_range_as_buttons(this._tree_range_select)
+    var select_new_tree_range = this.select_new_tree_range
+    document.getElementById('tree-range-select-buttons').addEventListener('click', function (event) {
+      if (event.target && event.target.matches("input[type='radio']")) {
+        var clicked_range = event.target.id
+        select_new_tree_range(clicked_range)
+      }
+    });
 
     var tree_range = this.query_params.get('tree_range')
     if (!!tree_range) {
-      this._content_select.value = tree_range
       this.data.tree_range = tree_range
+      var radio_btn = document.getElementById(tree_range);
+      radio_btn.checked = true;
     }
 
     this.add_card_select_options()

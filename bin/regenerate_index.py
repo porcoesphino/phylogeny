@@ -14,196 +14,292 @@ DATA_DIR = 'data'
 class JsonDataFile:
   file: str
   domain: str
-  label_sci: str
-  label_simple: str
+  prefix: str
+  taxa: str
+  ranks: str
+  tag: str
+  level: int
 
 
 DATA_LIST = [
     JsonDataFile(
         file='luca',
         domain='',
-        label_sci='Overview',
-        label_simple='Overview',
+        prefix='',
+        taxa='Overview',
+        ranks='',
+        tag='Early life and how the main domains formed.',
+        level=0,
     ),
     JsonDataFile(
         file='animalia_phyla_common',
         domain='animalia',
-        label_sci='Animalia — common Phyla',
-        label_simple='Animalia — common Phyla',
+        prefix='',
+        taxa='Animalia',
+        ranks='common Phyla',
+        tag='The evolutionary branches for animals.',
+        level=0,
     ),
     JsonDataFile(
         file='animalia_cnidaria_orders_common',
         domain='animalia',
-        label_sci='→ Cnidaria — common classes/orders',
-        label_simple='→ Cnidaria — common classes/orders',
+        prefix='→',
+        taxa='Cnidaria',
+        ranks='common classes/orders',
+        tag='Jellyfish, corals and sea anenomes.',
+        level=1,
     ),
     JsonDataFile(
         file='animalia_arthropoda_orders_common',
         domain='animalia',
-        label_sci='→ Arthropoda — common classes/orders',
-        label_simple='→ Arthropoda — common classes/orders',
+        prefix='→',
+        taxa='Arthropoda',
+        ranks='common classes/orders',
+        tag='Crabs, insects and arachnids.',
+        level=1,
     ),
     JsonDataFile(
         file='animalia_arthropoda_insecta_orders_common',
         domain='animalia',
-        label_sci='—→ Insecta — common orders',
-        label_simple='—→ Insecta — common orders',
+        prefix='—→',
+        taxa='Insecta',
+        ranks='common orders',
+        tag='The insects.',
+        level=2,
     ),
     JsonDataFile(
         file='animalia_chordata_classes_minus_tetrapoda',
         domain='animalia',
-        label_sci='→ Chordata — classes minus Tetrapoda',
-        label_simple='→ Chordata — classes minus Tetrapoda',
+        prefix='→',
+        taxa='Chordata',
+        ranks='classes minus Tetrapoda',
+        tag='From early spinal cords to animals leaving the oceans.',
+        level=1,
     ),
     JsonDataFile(
         file='animalia_chordata_elasmobranchii_orders',
         domain='animalia',
-        label_sci='—→ Elasmobranchii — orders',
-        label_simple='—→ Elasmobranchii — orders',
+        prefix='—→',
+        taxa='Elasmobranchii',
+        ranks='orders',
+        tag='The cartilaginous fish that developed bones. Mostly sharks and rays.',
+        level=2,
     ),
     JsonDataFile(
         file='animalia_chordata_actinopterygii_orders_minus_acanthomorpha',
         domain='animalia',
-        label_sci='—→ Actinopterygii — orders minus Acanthomorpha',
-        label_simple='—→ Actinopterygii — orders minus Acanthomorpha',
+        prefix='—→',
+        taxa='Actinopterygii',
+        ranks='orders minus Acanthomorpha',
+        tag='The ray finned fish. Most known fish.',
+        level=2,
     ),
     JsonDataFile(
         file='animalia_chordata_actinopterygii_acanthomorpha_orders',
         domain='animalia',
-        label_sci='——→ Acanthomorpha — orders',
-        label_simple='——→ Acanthomorpha — orders',
+        prefix='——→',
+        taxa='Acanthomorpha',
+        ranks='orders',
+        tag='A large group nested in the ray finned fish.',
+        level=3,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia',
         domain='animalia',
-        label_sci='—→ Tetrapoda — orders minus Aves and Mammalia',
-        label_simple='—→ Tetrapoda — orders minus Aves and Mammalia',
+        prefix='—→',
+        taxa='Tetrapoda',
+        ranks='orders minus Aves and Mammalia',
+        tag='Early land life up until birds and mammals.',
+        level=2,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_aves_orders',
         domain='animalia',
-        label_sci='——→ Aves — orders',
-        label_simple='——→ Aves — orders',
+        prefix='——→',
+        taxa='Aves',
+        ranks='orders',
+        tag='An overview of birds.',
+        level=3,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_aves_passeriformes',
         domain='animalia',
-        label_sci='———→ Passeriformes — families minus Passeri',
-        label_simple='———→ Passeriformes — families minus Passeri',
+        prefix='———→',
+        taxa='Passeriformes',
+        ranks='families minus Passeri',
+        tag='The perching birds.',
+        level=4,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_aves_passeriformes_passeri',
         domain='animalia',
-        label_sci='————→ Passeri — families minus Core Passerides',
-        label_simple='————→ Passeri — families minus Core Passerides',
+        prefix='————→',
+        taxa='Passeri',
+        ranks='families minus Core Passerides',
+        tag='A large group of perching birds known as the songbirds.',
+        level=5,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides',
         domain='animalia',
-        label_sci='—————→ Core Passerides — families',
-        label_simple='—————→ Core Passerides — families',
+        prefix='—————→',
+        taxa='Core Passerides',
+        ranks='families',
+        tag='A large group of songbirds.',
+        level=6,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_orders',
         domain='animalia',
-        label_sci='——→ Mammalia — orders',
-        label_simple='——→ Mammal orders',
+        prefix='——→',
+        taxa='Mammalia',
+        ranks='orders',
+        tag='Most of the animals we think of.',
+        level=3,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_carnivora_families',
         domain='animalia',
-        label_sci='———→ Carnivora — families',
-        label_simple='———→ The carnivorans — carniverous mammals',
+        prefix='———→',
+        taxa='Carnivora',
+        ranks='families',
+        tag='The carnivorans, the carnivorous mammals.',
+        level=4,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus',
         domain='animalia',
-        label_sci='————→ Felidae — families',
-        label_simple='————→ The cat-like carnivorans',
+        prefix='————→',
+        taxa='Felidae',
+        ranks='families',
+        tag='The cat-like carnivorans.',
+        level=5,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus',
         domain='animalia',
-        label_sci='————→ Canidae — families',
-        label_simple='————→ The dog-like carnivorans',
+        prefix='————→',
+        taxa='Canidae',
+        ranks='families',
+        tag='The dog-like carnivorans.',
+        level=5,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_artiodactyl_families',
         domain='animalia',
-        label_sci='———→ Artiodactyl — families',
-        label_simple='———→ Artiodactyl — families',
+        prefix='———→',
+        taxa='Artiodactyl',
+        ranks='families',
+        tag='The ungulates and their descendents. Many of the herbivours we think of, and whales.',
+        level=4,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_primates',
         domain='animalia',
-        label_sci='———→ Primates',
-        label_simple='———→ Primates',
+        prefix='———→',
+        taxa='Primates',
+        ranks='',
+        tag='The monkeys and apes.',
+        level=4,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families',
         domain='animalia',
-        label_sci='————→ Platyrrhini - families',
-        label_simple='————→ The new world monkeys',
+        prefix='————→',
+        taxa='Platyrrhini',
+        ranks='families',
+        tag='The new world monkeys.',
+        level=5,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_primates_cercopithecidae_families',
         domain='animalia',
-        label_sci='————→ Cercopithecidae - families',
-        label_simple='————→ The old world monkeys',
+        prefix='————→',
+        taxa='Cercopithecidae',
+        ranks='families',
+        tag='The old world monkeys.',
+        level=5,
     ),
     JsonDataFile(
         file='animalia_chordata_tetrapoda_mammalia_primates_homo',
         domain='animalia',
-        label_sci='————→ Homo',
-        label_simple='————→ Humans and their close ancestors',
+        prefix='————→',
+        taxa='Homo',
+        ranks='',
+        tag='Humans and their close ancestors.',
+        level=5,
     ),
     JsonDataFile(
         file='plantae_divisions',
         domain='plantae',
-        label_sci='Plantae - Divisions',
-        label_simple='Plantae - Divisions',
+        prefix='',
+        taxa='Plantae',
+        ranks='',
+        tag='The evolutionary branches for plants.',
+        level=0,
     ),
     JsonDataFile(
         file='plantae_pinophyta_genus_common',
         domain='plantae',
-        label_sci='→ Pinophyta — common genera',
-        label_simple='→ The conifers',
+        prefix='→',
+        taxa='Pinophyta',
+        ranks='common genera',
+        tag='The conifers',
+        level=1,
     ),
     JsonDataFile(
         file='plantae_angiosperm_orders_minus_monocots_eudicots',
         domain='plantae',
-        label_sci='→ Angiosperm — orders minus Monocots and Eudicots',
-        label_simple='→ The flowering plants',
+        prefix='→',
+        taxa='Angiosperm',
+        ranks='orders minus Monocots and Eudicots',
+        tag='The flowering plants',
+        level=1,
     ),
     JsonDataFile(
         file='plantae_angiosperm_monocots_orders',
         domain='plantae',
-        label_sci='—→ Monocot — orders',
-        label_simple='—→ Monocot — orders',
+        prefix='—→',
+        taxa='Monocot',
+        ranks='orders',
+        tag='This includes the grasses and many of the plants used in large-scale farming.',
+        level=2,
     ),
     JsonDataFile(
         file='plantae_angiosperm_eudicots_orders',
         domain='plantae',
-        label_sci='—→ Eudicot — orders',
-        label_simple='—→ Eudicot — orders',
+        prefix='—→',
+        taxa='Eudicot',
+        ranks='orders',
+        tag='Dicots show two leaves seed leaves during germination and this is the true dicots.',
+        level=2,
     ),
     JsonDataFile(
         file='fungi_phyla',
         domain='fungi',
-        label_sci='Fungi — common Phyla',
-        label_simple='Fungi — common Phyla',
+        prefix='',
+        taxa='Fungi',
+        ranks='common Phyla',
+        tag='The evolutionary branches for fungi.',
+        level=0,
     ),
     JsonDataFile(
         file='fungi_basidiomycota',
         domain='fungi',
-        label_sci='→ Basidiomycota',
-        label_simple='→ The higher fungi',
+        prefix='→',
+        taxa='Basidiomycota',
+        ranks='',
+        tag='The higher fungi.',
+        level=1,
     ),
     JsonDataFile(
         file='fungi_ascomycota',
         domain='fungi',
-        label_sci='→ Ascomycota',
-        label_simple='→ The sac fungi',
+        prefix='→',
+        taxa='Ascomycota',
+        ranks='',
+        tag='The sac fungi',
+        level=1,
     ),
 ]
 
@@ -255,6 +351,7 @@ def get_html() -> str:
   <link rel="stylesheet" href="./css/collapsible_block.css">
   <link rel="stylesheet" href="./css/controls.css">
   <link rel="stylesheet" href="./css/tree_view.css">
+  <link rel="stylesheet" href="./css/radio_nav.css">
   <title>Phylogentic tree</title </head>
 
 <body>
@@ -307,12 +404,19 @@ def get_html() -> str:
             <div class="select">
               <label for="style-select">Select style</label>
               <select size="1" id="style-select">
-                <option value="tree">Tree list</option> <!-- Use javascript to select this option -->
+                <option value="tree">Tree list</option>
                 <!-- <option value="list" selected>Regular list</option> -->
               </select>
             </div>
           </td>
 
+          <td>
+            <div class="control-section">Select tree range</h3>
+            <div id="tree-range-select-buttons">
+            </div>
+          </td>
+
+          <!--
           <td>
             <div class="select">
               <label for="tree-range-select">Select tree range</label>
@@ -320,6 +424,7 @@ def get_html() -> str:
               </select>
             </div>
           </td>
+          -->
 
           <td>
             <div class="select">

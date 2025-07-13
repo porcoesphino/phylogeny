@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/collapsible_block.css">
   <link rel="stylesheet" href="./css/controls.css">
   <link rel="stylesheet" href="./css/tree_view.css">
+  <link rel="stylesheet" href="./css/radio_nav.css">
   <title>Phylogentic tree</title </head>
 
 <body>
@@ -61,12 +62,19 @@
             <div class="select">
               <label for="style-select">Select style</label>
               <select size="1" id="style-select">
-                <option value="tree">Tree list</option> <!-- Use javascript to select this option -->
+                <option value="tree">Tree list</option>
                 <!-- <option value="list" selected>Regular list</option> -->
               </select>
             </div>
           </td>
 
+          <td>
+            <div class="control-section">Select tree range</h3>
+            <div id="tree-range-select-buttons">
+            </div>
+          </td>
+
+          <!--
           <td>
             <div class="select">
               <label for="tree-range-select">Select tree range</label>
@@ -74,6 +82,7 @@
               </select>
             </div>
           </td>
+          -->
 
           <td>
             <div class="select">
@@ -93,100 +102,283 @@
   <script>
 var data_files = [
   {
-    "file": "luca"
+    "file": "luca",
+    "domain": "",
+    "prefix": "",
+    "taxa": "Overview",
+    "ranks": "",
+    "tag": "Early life and how the main domains formed.",
+    "level": 0
   },
   {
-    "file": "animalia_phyla_common"
+    "file": "animalia_phyla_common",
+    "domain": "animalia",
+    "prefix": "",
+    "taxa": "Animalia",
+    "ranks": "common Phyla",
+    "tag": "The evolutionary branches for animals.",
+    "level": 0
   },
   {
-    "file": "animalia_cnidaria_orders_common"
+    "file": "animalia_cnidaria_orders_common",
+    "domain": "animalia",
+    "prefix": "\u2192",
+    "taxa": "Cnidaria",
+    "ranks": "common classes/orders",
+    "tag": "Jellyfish, corals and sea anenomes.",
+    "level": 1
   },
   {
-    "file": "animalia_arthropoda_orders_common"
+    "file": "animalia_arthropoda_orders_common",
+    "domain": "animalia",
+    "prefix": "\u2192",
+    "taxa": "Arthropoda",
+    "ranks": "common classes/orders",
+    "tag": "Crabs, insects and arachnids.",
+    "level": 1
   },
   {
-    "file": "animalia_arthropoda_insecta_orders_common"
+    "file": "animalia_arthropoda_insecta_orders_common",
+    "domain": "animalia",
+    "prefix": "\u2014\u2192",
+    "taxa": "Insecta",
+    "ranks": "common orders",
+    "tag": "The insects.",
+    "level": 2
   },
   {
-    "file": "animalia_arthropoda_insecta_hymenoptera"
+    "file": "animalia_chordata_classes_minus_tetrapoda",
+    "domain": "animalia",
+    "prefix": "\u2192",
+    "taxa": "Chordata",
+    "ranks": "classes minus Tetrapoda",
+    "tag": "From early spinal cords to animals leaving the oceans.",
+    "level": 1
   },
   {
-    "file": "animalia_chordata_classes_minus_tetrapoda"
+    "file": "animalia_chordata_elasmobranchii_orders",
+    "domain": "animalia",
+    "prefix": "\u2014\u2192",
+    "taxa": "Elasmobranchii",
+    "ranks": "orders",
+    "tag": "The cartilaginous fish that developed bones. Mostly sharks and rays.",
+    "level": 2
   },
   {
-    "file": "animalia_chordata_elasmobranchii_orders"
+    "file": "animalia_chordata_actinopterygii_orders_minus_acanthomorpha",
+    "domain": "animalia",
+    "prefix": "\u2014\u2192",
+    "taxa": "Actinopterygii",
+    "ranks": "orders minus Acanthomorpha",
+    "tag": "The ray finned fish. Most known fish.",
+    "level": 2
   },
   {
-    "file": "animalia_chordata_actinopterygii_orders_minus_acanthomorpha"
+    "file": "animalia_chordata_actinopterygii_acanthomorpha_orders",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2192",
+    "taxa": "Acanthomorpha",
+    "ranks": "orders",
+    "tag": "A large group nested in the ray finned fish.",
+    "level": 3
   },
   {
-    "file": "animalia_chordata_actinopterygii_acanthomorpha_orders"
+    "file": "animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia",
+    "domain": "animalia",
+    "prefix": "\u2014\u2192",
+    "taxa": "Tetrapoda",
+    "ranks": "orders minus Aves and Mammalia",
+    "tag": "Early land life up until birds and mammals.",
+    "level": 2
   },
   {
-    "file": "animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia"
+    "file": "animalia_chordata_tetrapoda_aves_orders",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2192",
+    "taxa": "Aves",
+    "ranks": "orders",
+    "tag": "An overview of birds.",
+    "level": 3
   },
   {
-    "file": "animalia_chordata_tetrapoda_aves_orders"
+    "file": "animalia_chordata_tetrapoda_aves_passeriformes",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2192",
+    "taxa": "Passeriformes",
+    "ranks": "families minus Passeri",
+    "tag": "The perching birds.",
+    "level": 4
   },
   {
-    "file": "animalia_chordata_tetrapoda_aves_passeriformes"
+    "file": "animalia_chordata_tetrapoda_aves_passeriformes_passeri",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2014\u2192",
+    "taxa": "Passeri",
+    "ranks": "families minus Core Passerides",
+    "tag": "A large group of perching birds known as the songbirds.",
+    "level": 5
   },
   {
-    "file": "animalia_chordata_tetrapoda_aves_passeriformes_passeri"
+    "file": "animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2014\u2014\u2192",
+    "taxa": "Core Passerides",
+    "ranks": "families",
+    "tag": "A large group of songbirds.",
+    "level": 6
   },
   {
-    "file": "animalia_chordata_tetrapoda_aves_passeriformes_passeri_core_passerides"
+    "file": "animalia_chordata_tetrapoda_mammalia_orders",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2192",
+    "taxa": "Mammalia",
+    "ranks": "orders",
+    "tag": "Most of the animals we think of.",
+    "level": 3
   },
   {
-    "file": "animalia_chordata_tetrapoda_mammalia_orders"
+    "file": "animalia_chordata_tetrapoda_mammalia_carnivora_families",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2192",
+    "taxa": "Carnivora",
+    "ranks": "families",
+    "tag": "The carnivorans, the carnivorous mammals.",
+    "level": 4
   },
   {
-    "file": "animalia_chordata_tetrapoda_mammalia_carnivora_families"
+    "file": "animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2014\u2192",
+    "taxa": "Felidae",
+    "ranks": "families",
+    "tag": "The cat-like carnivorans.",
+    "level": 5
   },
   {
-    "file": "animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus"
+    "file": "animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2014\u2192",
+    "taxa": "Canidae",
+    "ranks": "families",
+    "tag": "The dog-like carnivorans.",
+    "level": 5
   },
   {
-    "file": "animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus"
+    "file": "animalia_chordata_tetrapoda_mammalia_artiodactyl_families",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2192",
+    "taxa": "Artiodactyl",
+    "ranks": "families",
+    "tag": "The ungulates and their descendents. Many of the herbivours we think of, and whales.",
+    "level": 4
   },
   {
-    "file": "animalia_chordata_tetrapoda_mammalia_artiodactyl_families"
+    "file": "animalia_chordata_tetrapoda_mammalia_primates",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2192",
+    "taxa": "Primates",
+    "ranks": "",
+    "tag": "The monkeys and apes.",
+    "level": 4
   },
   {
-    "file": "animalia_chordata_tetrapoda_mammalia_primates"
+    "file": "animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2014\u2192",
+    "taxa": "Platyrrhini",
+    "ranks": "families",
+    "tag": "The new world monkeys.",
+    "level": 5
   },
   {
-    "file": "animalia_chordata_tetrapoda_mammalia_primates_platyrrhini_families"
+    "file": "animalia_chordata_tetrapoda_mammalia_primates_cercopithecidae_families",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2014\u2192",
+    "taxa": "Cercopithecidae",
+    "ranks": "families",
+    "tag": "The old world monkeys.",
+    "level": 5
   },
   {
-    "file": "animalia_chordata_tetrapoda_mammalia_primates_cercopithecidae_families"
+    "file": "animalia_chordata_tetrapoda_mammalia_primates_homo",
+    "domain": "animalia",
+    "prefix": "\u2014\u2014\u2014\u2014\u2192",
+    "taxa": "Homo",
+    "ranks": "",
+    "tag": "Humans and their close ancestors.",
+    "level": 5
   },
   {
-    "file": "animalia_chordata_tetrapoda_mammalia_primates_homo"
+    "file": "plantae_divisions",
+    "domain": "plantae",
+    "prefix": "",
+    "taxa": "Plantae",
+    "ranks": "",
+    "tag": "The evolutionary branches for plants.",
+    "level": 0
   },
   {
-    "file": "plantae_divisions"
+    "file": "plantae_pinophyta_genus_common",
+    "domain": "plantae",
+    "prefix": "\u2192",
+    "taxa": "Pinophyta",
+    "ranks": "common genera",
+    "tag": "The conifers",
+    "level": 1
   },
   {
-    "file": "plantae_pinophyta_genus_common"
+    "file": "plantae_angiosperm_orders_minus_monocots_eudicots",
+    "domain": "plantae",
+    "prefix": "\u2192",
+    "taxa": "Angiosperm",
+    "ranks": "orders minus Monocots and Eudicots",
+    "tag": "The flowering plants",
+    "level": 1
   },
   {
-    "file": "plantae_angiosperm_orders_minus_monocots_eudicots"
+    "file": "plantae_angiosperm_monocots_orders",
+    "domain": "plantae",
+    "prefix": "\u2014\u2192",
+    "taxa": "Monocot",
+    "ranks": "orders",
+    "tag": "This includes the grasses and many of the plants used in large-scale farming.",
+    "level": 2
   },
   {
-    "file": "plantae_angiosperm_monocots_orders"
+    "file": "plantae_angiosperm_eudicots_orders",
+    "domain": "plantae",
+    "prefix": "\u2014\u2192",
+    "taxa": "Eudicot",
+    "ranks": "orders",
+    "tag": "Dicots show two leaves seed leaves during germination and this is the true dicots.",
+    "level": 2
   },
   {
-    "file": "plantae_angiosperm_eudicots_orders"
+    "file": "fungi_phyla",
+    "domain": "fungi",
+    "prefix": "",
+    "taxa": "Fungi",
+    "ranks": "common Phyla",
+    "tag": "The evolutionary branches for fungi.",
+    "level": 0
   },
   {
-    "file": "fungi_phyla"
+    "file": "fungi_basidiomycota",
+    "domain": "fungi",
+    "prefix": "\u2192",
+    "taxa": "Basidiomycota",
+    "ranks": "",
+    "tag": "The higher fungi.",
+    "level": 1
   },
   {
-    "file": "fungi_basidiomycota"
-  },
-  {
-    "file": "fungi_ascomycota"
+    "file": "fungi_ascomycota",
+    "domain": "fungi",
+    "prefix": "\u2192",
+    "taxa": "Ascomycota",
+    "ranks": "",
+    "tag": "The sac fungi",
+    "level": 1
   }
 ]
     var data_luca = [
@@ -1788,445 +1980,6 @@ var data_files = [
         "card": 4
       }
     ]
-    var data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia = [
-      {
-        "name": "Amphibia",
-        "parent": "Tetrapoda",
-        "rank": "Class",
-        "ipa": "",
-        "common": [
-          "frogs",
-          "salamanders",
-          "newts",
-          "caecilians"
-        ],
-        "tag": "",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/f/f6/AxolotlBE.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Litoria_phyllochroa.JPG/330px-Litoria_phyllochroa.JPG",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Notophthalmus_viridescensPCCA20040816-3983A.jpg/330px-Notophthalmus_viridescensPCCA20040816-3983A.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dermophis_mexicanus.jpg/330px-Dermophis_mexicanus.jpg"
-        ],
-        "card": 1
-      },
-      {
-        "name": "Anura",
-        "parent": "Amphibia",
-        "rank": "Order",
-        "ipa": "",
-        "etymology": "greek 'without'-'tail'",
-        "common": [
-          "frogs"
-        ],
-        "tag": "",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Bombina_bombina_1_%28Marek_Szczepanek%29_tight_crop.jpg/330px-Bombina_bombina_1_%28Marek_Szczepanek%29_tight_crop.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Atelopus_zeteki1.jpg/330px-Atelopus_zeteki1.jpg"
-        ],
-        "card": 6
-      },
-      {
-        "name": "Urodela",
-        "parent": "Amphibia",
-        "rank": "Order",
-        "ipa": "",
-        "etymology": "greek 'conspicuous tail'",
-        "common": [
-          "salamanders",
-          "newts",
-          "axolotls"
-        ],
-        "tag": "",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/SpottedSalamander.jpg/401px-SpottedSalamander.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/5/5a/P_anguinus-head1.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/f/f6/AxolotlBE.jpg"
-        ],
-        "card": 6
-      },
-      {
-        "name": "Gymnophiona",
-        "parent": "Amphibia",
-        "rank": "Order",
-        "ipa": "",
-        "etymology": "latin 'blind ones'",
-        "common": [
-          "caecilians"
-        ],
-        "tag": "Limbless, worm or snake shaped amphibians with small or nonexistent eyes.",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Geotrypetes_seraphini_81151958.jpg/330px-Geotrypetes_seraphini_81151958.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Oscaecilia_ochrocephala_%2816983972190%29.jpg/330px-Oscaecilia_ochrocephala_%2816983972190%29.jpg"
-        ],
-        "card": 6
-      },
-      {
-        "name": "Amniota",
-        "parent": "Tetrapoda",
-        "rank": "Clade",
-        "ipa": "",
-        "common": [],
-        "tag": "Has an embryo that develops within a set of protective extra-embryonic membranes; thicker and keratinized skin; costal respiration (breathing by expanding/constricting the rib cage); more complex kidneys; the presence of an astragalus for better extremity range of motion; the diminished role of skin breathing.",
-        "imgs": [],
-        "card": 1
-      },
-      {
-        "name": "Synapsida",
-        "parent": "Amniota",
-        "rank": "Clade",
-        "ipa": "",
-        "common": [],
-        "tag": "The sibling taxon to sauropsida. All mammals and their extinct relatives. They have a single hole behind each eye, on the lower part of the skull.",
-        "etymology": "greek 'together-arch'",
-        "imgs": [],
-        "card": 1
-      },
-      {
-        "name": "Sauropsida",
-        "parent": "Amniota",
-        "rank": "Clade",
-        "ipa": "",
-        "common": [],
-        "tag": "The sibling taxon to Synapsida. The class Reptilia but including birds and extinct relatives.",
-        "etymology": "greek 'lizard faces'",
-        "imgs": [],
-        "card": 1
-      },
-      {
-        "name": "Eureptilia",
-        "parent": "Sauropsida",
-        "rank": "Clade",
-        "ipa": "",
-        "common": [],
-        "tag": "A contested clade with the only extant species being in Diapsida.",
-        "imgs": [],
-        "card": 2
-      },
-      {
-        "name": "Diapsida",
-        "parent": "Eureptilia",
-        "rank": "Clade",
-        "ipa": "",
-        "common": [
-          "birds",
-          "reptiles",
-          "turtles"
-        ],
-        "tag": "Have two holes behind their eye sockets.",
-        "imgs": [],
-        "card": 2
-      },
-      {
-        "name": "Sauria",
-        "parent": "Diapsida",
-        "rank": "Clade",
-        "ipa": "",
-        "common": [],
-        "tag": "All descendants of the most recent common ancestor to crocodilians, birds, lizards, snakes and the tuatara.",
-        "imgs": [],
-        "card": 2
-      },
-      {
-        "name": "Lepidosauria",
-        "parent": "Sauria",
-        "rank": "Superorder",
-        "ipa": "",
-        "common": [
-          "tautara",
-          "lizards",
-          "snakes"
-        ],
-        "tag": "All descendants of the most recent common ancestor to lizards, snakes and the tuatara.",
-        "imgs": [],
-        "card": 2
-      },
-      {
-        "name": "Rhynchocephalia",
-        "parent": "Lepidosauria",
-        "rank": "Order",
-        "ipa": "ˌrɪŋkoʊsɪˈfeɪliə",
-        "etymology": "'beak-heads'",
-        "common": [
-          "tuatara"
-        ],
-        "tag": "The only living species is the tuatara.",
-        "description": "The only extant species is the tuatara in New Zealand. They were diverse during the Mesozoic era. They have primitive hearing organs and lower odorant receptors compared to crocodiles",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Henry_at_Invercargill.jpg/250px-Henry_at_Invercargill.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Tuatara_%285205719005%29.jpg/330px-Tuatara_%285205719005%29.jpg"
-        ],
-        "card": 4
-      },
-      {
-        "name": "Squamata",
-        "parent": "Lepidosauria",
-        "rank": "Order",
-        "ipa": "",
-        "common": [
-          "lizards",
-          "snakes"
-        ],
-        "tag": "",
-        "imgs": [],
-        "card": 4
-      },
-      {
-        "name": "Gekkota",
-        "parent": "Squamata",
-        "rank": "Infraorder",
-        "ipa": "",
-        "common": [
-          "gekkos",
-          "legless lizards"
-        ],
-        "tag": "",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Phelsuma_l._laticauda.jpg/250px-Phelsuma_l._laticauda.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/0/01/Phyllodactylus_xanti.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Pygopus_lepidopodus_431078669_%28cropped%29.jpg/330px-Pygopus_lepidopodus_431078669_%28cropped%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Pink-tailed_Worm-lizard_%28Aprasia_parapulchella%29_%289105308465%29.jpg/330px-Pink-tailed_Worm-lizard_%28Aprasia_parapulchella%29_%289105308465%29.jpg"
-        ],
-        "card": 4
-      },
-      {
-        "name": "Scincomorpha",
-        "parent": "Squamata",
-        "rank": "Infraorder",
-        "ipa": "",
-        "common": [
-          "skinks",
-          "allies",
-          "blue-tongued lizards",
-          "limbless skinks"
-        ],
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Blue-toungued_skink444.jpg/330px-Blue-toungued_skink444.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Tropical_Girdled_Lizard_P9240103.JPG/330px-Tropical_Girdled_Lizard_P9240103.JPG",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Newbery%27s_Legless_Skink%2C_Vhembe_District_Municipality%2C_South_Africa_imported_from_iNaturalist_photo_457324536.jpg/330px-Newbery%27s_Legless_Skink%2C_Vhembe_District_Municipality%2C_South_Africa_imported_from_iNaturalist_photo_457324536.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cryptoblepharus_boutonii_furcata.jpg/330px-Cryptoblepharus_boutonii_furcata.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Acontias_breviceps.jpg/330px-Acontias_breviceps.jpg"
-        ],
-        "card": 4
-      },
-      {
-        "name": "Laterata",
-        "parent": "Squamata",
-        "rank": "Suborder",
-        "ipa": "",
-        "common": [
-          "wall lizards",
-          "rock lizards",
-          "worm lizards"
-        ],
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Jaszczurka-Lacerta_agilis.jpg/330px-Jaszczurka-Lacerta_agilis.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tupinambis_teguixin_66357095.jpg/330px-Tupinambis_teguixin_66357095.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/4/40/Amphisbaenia_1.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Iberian_worm_lizard.jpg/330px-Iberian_worm_lizard.jpg"
-        ],
-        "card": 4
-      },
-      {
-        "name": "Toxicofera",
-        "parent": "Squamata",
-        "rank": "Clade",
-        "ipa": "",
-        "tag": "Venom evolved once for this taxa",
-        "common": [],
-        "imgs": [],
-        "card": 4
-      },
-      {
-        "name": "Anguimorpha",
-        "parent": "Toxicofera",
-        "rank": "Suborder",
-        "ipa": "",
-        "tag": "All autarchoglossans closer to Varanus (monitor lizards) and Anguis (slowworms) than Scincus",
-        "common": [
-          "monitors",
-          "goannas",
-          "komodo dragons",
-          "slow worms",
-          "glass lizards"
-        ],
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/9/9e/Chin-krokodilschwanzechse-01.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lace_monitor_%28Varanus_varius%29%2C_photographed_in_the_Kindra_State_Forest.jpg/250px-Lace_monitor_%28Varanus_varius%29%2C_photographed_in_the_Kindra_State_Forest.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/%281%29Goanna-1.jpg/330px-%281%29Goanna-1.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Yuli_Seperi_Komodo_TNKomodo-2_%28cropped%29.jpg/330px-Yuli_Seperi_Komodo_TNKomodo-2_%28cropped%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/5/5e/Anguidae.jpg"
-        ],
-        "card": 5
-      },
-      {
-        "name": "Iguania",
-        "parent": "Toxicofera",
-        "rank": "Clade",
-        "ipa": "",
-        "etymology": "",
-        "tag": "The iguanas, chameleons, agamids, and New World lizards.",
-        "common": [],
-        "imgs": [],
-        "card": 5
-      },
-      {
-        "name": "Pleurodonta",
-        "parent": "Iguania",
-        "rank": "Clade",
-        "ipa": "",
-        "etymology": "greek 'lateral teeth'",
-        "tag": "",
-        "common": [
-          "iguanas",
-          "New World lizards"
-        ],
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Plumedbasiliskcele4_edit.jpg/330px-Plumedbasiliskcele4_edit.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Green_anole.jpg/330px-Green_anole.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Male_Green_Iguana_Belize.jpg/250px-Male_Green_Iguana_Belize.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Leiocephalidae.jpg/330px-Leiocephalidae.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Liolaemus_Tenuis.jpg/330px-Liolaemus_Tenuis.jpg"
-        ],
-        "card": 5
-      },
-      {
-        "name": "Acrodonta",
-        "parent": "Iguania",
-        "rank": "Clade",
-        "ipa": "",
-        "etymology": "greek 'highest teeth'",
-        "tag": "Includes the families Chamaeleonidae (chameleons, their range is mostly in Africa) and Agamidae (dragon lizards including the thorny devil, and frilled-neck lizards)",
-        "common": [
-          "chameleons",
-          "thorny devil",
-          "frilled-neck lizards"
-        ],
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Draco_taeniopterus_Gunther%2C_1861_from_Bulon_%28cropped%29.jpg/330px-Draco_taeniopterus_Gunther%2C_1861_from_Bulon_%28cropped%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Acanthosaura_cardamomensis_189186673_%28cropped%29.jpg/330px-Acanthosaura_cardamomensis_189186673_%28cropped%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Frilled_dragon_with_frill_extended_close_up_-_DPLA_-_d6e3c74db204607072354d5bf185b8c9_%28cropped%29.jpg/330px-Frilled_dragon_with_frill_extended_close_up_-_DPLA_-_d6e3c74db204607072354d5bf185b8c9_%28cropped%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Moloch_horridus_77894454_%28cropped%29.jpg/330px-Moloch_horridus_77894454_%28cropped%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cameleon%2C_peyrieras_20.JPG/330px-Cameleon%2C_peyrieras_20.JPG",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Calumma_gastrotaenia.jpg/330px-Calumma_gastrotaenia.jpg"
-        ],
-        "card": 5
-      },
-      {
-        "name": "Serpentes",
-        "parent": "Toxicofera",
-        "rank": "Suborder",
-        "ipa": "",
-        "etymology": "",
-        "tag": "",
-        "common": [
-          "snakes"
-        ],
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Trimeresurus_sabahi_fucatus%2C_Banded_pit_viper_-_Takua_Pa_District%2C_Phang-nga_Province_%2846710893582%29.jpg/330px-Trimeresurus_sabahi_fucatus%2C_Banded_pit_viper_-_Takua_Pa_District%2C_Phang-nga_Province_%2846710893582%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Laticauda_colubrina_%28Wakatobi%29.jpg/250px-Laticauda_colubrina_%28Wakatobi%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Indian_Cobra%2C_crop.jpg/250px-Indian_Cobra%2C_crop.jpg"
-        ],
-        "card": 5
-      },
-      {
-        "name": "Archosauria",
-        "parent": "Sauria",
-        "rank": "Clade",
-        "ipa": "",
-        "common": [
-          "crocodiles",
-          "birds"
-        ],
-        "etymology": "greek 'ruling'-'reptiles'",
-        "tag": "All living and extinct relatives of birds and crocodilians.",
-        "imgs": [],
-        "card": 2
-      },
-      {
-        "name": "Testudines",
-        "parent": "Sauria",
-        "rank": "Order",
-        "ipa": "",
-        "common": [
-          "turtles",
-          "tortoises",
-          "terrapins"
-        ],
-        "tag": "",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Green_Sea_Turtle_swimming.jpg/330px-Green_Sea_Turtle_swimming.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Diamond_terrapin_turtle_reptile_malaclemys_terrapin.jpg/330px-Diamond_terrapin_turtle_reptile_malaclemys_terrapin.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/A._gigantea_Aldabra_Giant_Tortoise.jpg/330px-A._gigantea_Aldabra_Giant_Tortoise.jpg"
-        ],
-        "card": 2
-      },
-      {
-        "name": "Mammalia",
-        "parent": "Synapsida",
-        "rank": "Class",
-        "ipa": "",
-        "common": [],
-        "tag": "",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Monachus_schauinslandi.jpg/330px-Monachus_schauinslandi.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tuskercorbett.jpg/330px-Tuskercorbett.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flying_fox_at_botanical_gardens_in_Sydney_%28cropped%29.jpg/250px-Flying_fox_at_botanical_gardens_in_Sydney_%28cropped%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Humpback_stellwagen_edit.jpg/330px-Humpback_stellwagen_edit.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kangaroo_Australia_01_11_2008_-_retouch.JPG/330px-Kangaroo_Australia_01_11_2008_-_retouch.JPG",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Panthera_tigris_tigris_edit2.jpg/330px-Panthera_tigris_tigris_edit2.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lemur_catta_001.jpg/330px-Lemur_catta_001.jpg"
-        ],
-        "card": 1
-      },
-      {
-        "name": "Crocodilia",
-        "parent": "Archosauria",
-        "rank": "Order",
-        "ipa": "",
-        "common": [
-          "crocodiles",
-          "alligators",
-          "caimans",
-          "gharial"
-        ],
-        "etymology": "",
-        "tag": "",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SaltwaterCrocodile%28%27Maximo%27%29.jpg/330px-SaltwaterCrocodile%28%27Maximo%27%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Freshwater_Crocodile_at_Lone_Pine_Koala_Sanctuary.jpg/330px-Freshwater_Crocodile_at_Lone_Pine_Koala_Sanctuary.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/American_Alligator.jpg/250px-American_Alligator.jpg"
-        ],
-        "card": 3
-      },
-      {
-        "name": "Dinosauria",
-        "parent": "Archosauria",
-        "rank": "Clade",
-        "ipa": "",
-        "common": [],
-        "etymology": "",
-        "tag": "Descendents of the most recent common ancestor to Triceratops and modern birds.",
-        "imgs": [],
-        "card": 3
-      },
-      {
-        "name": "Aves",
-        "parent": "Dinosauria",
-        "rank": "Class",
-        "ipa": "",
-        "common": [
-          "birds"
-        ],
-        "tag": "",
-        "imgs": [
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/American_Flamingo_JG.jpg/330px-American_Flamingo_JG.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/250px-Puffin_%28Fratercula_arctica%29.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/2020-11_Kerguelen_Islands_-_Gentoo_penguin_11.jpg/250px-2020-11_Kerguelen_Islands_-_Gentoo_penguin_11.jpg",
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Southern_Cassowary_7071.jpg/330px-Southern_Cassowary_7071.jpg"
-        ],
-        "card": 3
-      }
-    ]
     var data_animalia_chordata_elasmobranchii_orders = [
       {
         "name": "Selachii",
@@ -3751,6 +3504,445 @@ var data_files = [
         ],
         "tag": "",
         "species": 0
+      }
+    ]
+    var data_animalia_chordata_tetrapoda_orders_minus_aves_and_mammalia = [
+      {
+        "name": "Amphibia",
+        "parent": "Tetrapoda",
+        "rank": "Class",
+        "ipa": "",
+        "common": [
+          "frogs",
+          "salamanders",
+          "newts",
+          "caecilians"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/f/f6/AxolotlBE.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Litoria_phyllochroa.JPG/330px-Litoria_phyllochroa.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Notophthalmus_viridescensPCCA20040816-3983A.jpg/330px-Notophthalmus_viridescensPCCA20040816-3983A.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Dermophis_mexicanus.jpg/330px-Dermophis_mexicanus.jpg"
+        ],
+        "card": 1
+      },
+      {
+        "name": "Anura",
+        "parent": "Amphibia",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "greek 'without'-'tail'",
+        "common": [
+          "frogs"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Bombina_bombina_1_%28Marek_Szczepanek%29_tight_crop.jpg/330px-Bombina_bombina_1_%28Marek_Szczepanek%29_tight_crop.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Atelopus_zeteki1.jpg/330px-Atelopus_zeteki1.jpg"
+        ],
+        "card": 6
+      },
+      {
+        "name": "Urodela",
+        "parent": "Amphibia",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "greek 'conspicuous tail'",
+        "common": [
+          "salamanders",
+          "newts",
+          "axolotls"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/SpottedSalamander.jpg/401px-SpottedSalamander.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/5/5a/P_anguinus-head1.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/f/f6/AxolotlBE.jpg"
+        ],
+        "card": 6
+      },
+      {
+        "name": "Gymnophiona",
+        "parent": "Amphibia",
+        "rank": "Order",
+        "ipa": "",
+        "etymology": "latin 'blind ones'",
+        "common": [
+          "caecilians"
+        ],
+        "tag": "Limbless, worm or snake shaped amphibians with small or nonexistent eyes.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Geotrypetes_seraphini_81151958.jpg/330px-Geotrypetes_seraphini_81151958.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Oscaecilia_ochrocephala_%2816983972190%29.jpg/330px-Oscaecilia_ochrocephala_%2816983972190%29.jpg"
+        ],
+        "card": 6
+      },
+      {
+        "name": "Amniota",
+        "parent": "Tetrapoda",
+        "rank": "Clade",
+        "ipa": "",
+        "common": [],
+        "tag": "Has an embryo that develops within a set of protective extra-embryonic membranes; thicker and keratinized skin; costal respiration (breathing by expanding/constricting the rib cage); more complex kidneys; the presence of an astragalus for better extremity range of motion; the diminished role of skin breathing.",
+        "imgs": [],
+        "card": 1
+      },
+      {
+        "name": "Synapsida",
+        "parent": "Amniota",
+        "rank": "Clade",
+        "ipa": "",
+        "common": [],
+        "tag": "The sibling taxon to sauropsida. All mammals and their extinct relatives. They have a single hole behind each eye, on the lower part of the skull.",
+        "etymology": "greek 'together-arch'",
+        "imgs": [],
+        "card": 1
+      },
+      {
+        "name": "Sauropsida",
+        "parent": "Amniota",
+        "rank": "Clade",
+        "ipa": "",
+        "common": [],
+        "tag": "The sibling taxon to Synapsida. The class Reptilia but including birds and extinct relatives.",
+        "etymology": "greek 'lizard faces'",
+        "imgs": [],
+        "card": 1
+      },
+      {
+        "name": "Eureptilia",
+        "parent": "Sauropsida",
+        "rank": "Clade",
+        "ipa": "",
+        "common": [],
+        "tag": "A contested clade with the only extant species being in Diapsida.",
+        "imgs": [],
+        "card": 2
+      },
+      {
+        "name": "Diapsida",
+        "parent": "Eureptilia",
+        "rank": "Clade",
+        "ipa": "",
+        "common": [
+          "birds",
+          "reptiles",
+          "turtles"
+        ],
+        "tag": "Have two holes behind their eye sockets.",
+        "imgs": [],
+        "card": 2
+      },
+      {
+        "name": "Sauria",
+        "parent": "Diapsida",
+        "rank": "Clade",
+        "ipa": "",
+        "common": [],
+        "tag": "All descendants of the most recent common ancestor to crocodilians, birds, lizards, snakes and the tuatara.",
+        "imgs": [],
+        "card": 2
+      },
+      {
+        "name": "Lepidosauria",
+        "parent": "Sauria",
+        "rank": "Superorder",
+        "ipa": "",
+        "common": [
+          "tautara",
+          "lizards",
+          "snakes"
+        ],
+        "tag": "All descendants of the most recent common ancestor to lizards, snakes and the tuatara.",
+        "imgs": [],
+        "card": 2
+      },
+      {
+        "name": "Rhynchocephalia",
+        "parent": "Lepidosauria",
+        "rank": "Order",
+        "ipa": "ˌrɪŋkoʊsɪˈfeɪliə",
+        "etymology": "'beak-heads'",
+        "common": [
+          "tuatara"
+        ],
+        "tag": "The only living species is the tuatara.",
+        "description": "The only extant species is the tuatara in New Zealand. They were diverse during the Mesozoic era. They have primitive hearing organs and lower odorant receptors compared to crocodiles",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Henry_at_Invercargill.jpg/250px-Henry_at_Invercargill.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Tuatara_%285205719005%29.jpg/330px-Tuatara_%285205719005%29.jpg"
+        ],
+        "card": 4
+      },
+      {
+        "name": "Squamata",
+        "parent": "Lepidosauria",
+        "rank": "Order",
+        "ipa": "",
+        "common": [
+          "lizards",
+          "snakes"
+        ],
+        "tag": "",
+        "imgs": [],
+        "card": 4
+      },
+      {
+        "name": "Gekkota",
+        "parent": "Squamata",
+        "rank": "Infraorder",
+        "ipa": "",
+        "common": [
+          "gekkos",
+          "legless lizards"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Phelsuma_l._laticauda.jpg/250px-Phelsuma_l._laticauda.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/0/01/Phyllodactylus_xanti.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Pygopus_lepidopodus_431078669_%28cropped%29.jpg/330px-Pygopus_lepidopodus_431078669_%28cropped%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Pink-tailed_Worm-lizard_%28Aprasia_parapulchella%29_%289105308465%29.jpg/330px-Pink-tailed_Worm-lizard_%28Aprasia_parapulchella%29_%289105308465%29.jpg"
+        ],
+        "card": 4
+      },
+      {
+        "name": "Scincomorpha",
+        "parent": "Squamata",
+        "rank": "Infraorder",
+        "ipa": "",
+        "common": [
+          "skinks",
+          "allies",
+          "blue-tongued lizards",
+          "limbless skinks"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Blue-toungued_skink444.jpg/330px-Blue-toungued_skink444.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Tropical_Girdled_Lizard_P9240103.JPG/330px-Tropical_Girdled_Lizard_P9240103.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Newbery%27s_Legless_Skink%2C_Vhembe_District_Municipality%2C_South_Africa_imported_from_iNaturalist_photo_457324536.jpg/330px-Newbery%27s_Legless_Skink%2C_Vhembe_District_Municipality%2C_South_Africa_imported_from_iNaturalist_photo_457324536.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cryptoblepharus_boutonii_furcata.jpg/330px-Cryptoblepharus_boutonii_furcata.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Acontias_breviceps.jpg/330px-Acontias_breviceps.jpg"
+        ],
+        "card": 4
+      },
+      {
+        "name": "Laterata",
+        "parent": "Squamata",
+        "rank": "Suborder",
+        "ipa": "",
+        "common": [
+          "wall lizards",
+          "rock lizards",
+          "worm lizards"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Jaszczurka-Lacerta_agilis.jpg/330px-Jaszczurka-Lacerta_agilis.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Tupinambis_teguixin_66357095.jpg/330px-Tupinambis_teguixin_66357095.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/4/40/Amphisbaenia_1.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Iberian_worm_lizard.jpg/330px-Iberian_worm_lizard.jpg"
+        ],
+        "card": 4
+      },
+      {
+        "name": "Toxicofera",
+        "parent": "Squamata",
+        "rank": "Clade",
+        "ipa": "",
+        "tag": "Venom evolved once for this taxa",
+        "common": [],
+        "imgs": [],
+        "card": 4
+      },
+      {
+        "name": "Anguimorpha",
+        "parent": "Toxicofera",
+        "rank": "Suborder",
+        "ipa": "",
+        "tag": "All autarchoglossans closer to Varanus (monitor lizards) and Anguis (slowworms) than Scincus",
+        "common": [
+          "monitors",
+          "goannas",
+          "komodo dragons",
+          "slow worms",
+          "glass lizards"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/9/9e/Chin-krokodilschwanzechse-01.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Lace_monitor_%28Varanus_varius%29%2C_photographed_in_the_Kindra_State_Forest.jpg/250px-Lace_monitor_%28Varanus_varius%29%2C_photographed_in_the_Kindra_State_Forest.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/%281%29Goanna-1.jpg/330px-%281%29Goanna-1.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Yuli_Seperi_Komodo_TNKomodo-2_%28cropped%29.jpg/330px-Yuli_Seperi_Komodo_TNKomodo-2_%28cropped%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/5/5e/Anguidae.jpg"
+        ],
+        "card": 5
+      },
+      {
+        "name": "Iguania",
+        "parent": "Toxicofera",
+        "rank": "Clade",
+        "ipa": "",
+        "etymology": "",
+        "tag": "The iguanas, chameleons, agamids, and New World lizards.",
+        "common": [],
+        "imgs": [],
+        "card": 5
+      },
+      {
+        "name": "Pleurodonta",
+        "parent": "Iguania",
+        "rank": "Clade",
+        "ipa": "",
+        "etymology": "greek 'lateral teeth'",
+        "tag": "",
+        "common": [
+          "iguanas",
+          "New World lizards"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Plumedbasiliskcele4_edit.jpg/330px-Plumedbasiliskcele4_edit.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Green_anole.jpg/330px-Green_anole.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Male_Green_Iguana_Belize.jpg/250px-Male_Green_Iguana_Belize.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Leiocephalidae.jpg/330px-Leiocephalidae.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Liolaemus_Tenuis.jpg/330px-Liolaemus_Tenuis.jpg"
+        ],
+        "card": 5
+      },
+      {
+        "name": "Acrodonta",
+        "parent": "Iguania",
+        "rank": "Clade",
+        "ipa": "",
+        "etymology": "greek 'highest teeth'",
+        "tag": "Includes the families Chamaeleonidae (chameleons, their range is mostly in Africa) and Agamidae (dragon lizards including the thorny devil, and frilled-neck lizards)",
+        "common": [
+          "chameleons",
+          "thorny devil",
+          "frilled-neck lizards"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Draco_taeniopterus_Gunther%2C_1861_from_Bulon_%28cropped%29.jpg/330px-Draco_taeniopterus_Gunther%2C_1861_from_Bulon_%28cropped%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Acanthosaura_cardamomensis_189186673_%28cropped%29.jpg/330px-Acanthosaura_cardamomensis_189186673_%28cropped%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Frilled_dragon_with_frill_extended_close_up_-_DPLA_-_d6e3c74db204607072354d5bf185b8c9_%28cropped%29.jpg/330px-Frilled_dragon_with_frill_extended_close_up_-_DPLA_-_d6e3c74db204607072354d5bf185b8c9_%28cropped%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Moloch_horridus_77894454_%28cropped%29.jpg/330px-Moloch_horridus_77894454_%28cropped%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Cameleon%2C_peyrieras_20.JPG/330px-Cameleon%2C_peyrieras_20.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Calumma_gastrotaenia.jpg/330px-Calumma_gastrotaenia.jpg"
+        ],
+        "card": 5
+      },
+      {
+        "name": "Serpentes",
+        "parent": "Toxicofera",
+        "rank": "Suborder",
+        "ipa": "",
+        "etymology": "",
+        "tag": "",
+        "common": [
+          "snakes"
+        ],
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Trimeresurus_sabahi_fucatus%2C_Banded_pit_viper_-_Takua_Pa_District%2C_Phang-nga_Province_%2846710893582%29.jpg/330px-Trimeresurus_sabahi_fucatus%2C_Banded_pit_viper_-_Takua_Pa_District%2C_Phang-nga_Province_%2846710893582%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Laticauda_colubrina_%28Wakatobi%29.jpg/250px-Laticauda_colubrina_%28Wakatobi%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Indian_Cobra%2C_crop.jpg/250px-Indian_Cobra%2C_crop.jpg"
+        ],
+        "card": 5
+      },
+      {
+        "name": "Archosauria",
+        "parent": "Sauria",
+        "rank": "Clade",
+        "ipa": "",
+        "common": [
+          "crocodiles",
+          "birds"
+        ],
+        "etymology": "greek 'ruling'-'reptiles'",
+        "tag": "All living and extinct relatives of birds and crocodilians.",
+        "imgs": [],
+        "card": 2
+      },
+      {
+        "name": "Testudines",
+        "parent": "Sauria",
+        "rank": "Order",
+        "ipa": "",
+        "common": [
+          "turtles",
+          "tortoises",
+          "terrapins"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Green_Sea_Turtle_swimming.jpg/330px-Green_Sea_Turtle_swimming.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Diamond_terrapin_turtle_reptile_malaclemys_terrapin.jpg/330px-Diamond_terrapin_turtle_reptile_malaclemys_terrapin.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/A._gigantea_Aldabra_Giant_Tortoise.jpg/330px-A._gigantea_Aldabra_Giant_Tortoise.jpg"
+        ],
+        "card": 2
+      },
+      {
+        "name": "Mammalia",
+        "parent": "Synapsida",
+        "rank": "Class",
+        "ipa": "",
+        "common": [],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Monachus_schauinslandi.jpg/330px-Monachus_schauinslandi.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Tuskercorbett.jpg/330px-Tuskercorbett.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Flying_fox_at_botanical_gardens_in_Sydney_%28cropped%29.jpg/250px-Flying_fox_at_botanical_gardens_in_Sydney_%28cropped%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Humpback_stellwagen_edit.jpg/330px-Humpback_stellwagen_edit.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Kangaroo_Australia_01_11_2008_-_retouch.JPG/330px-Kangaroo_Australia_01_11_2008_-_retouch.JPG",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Panthera_tigris_tigris_edit2.jpg/330px-Panthera_tigris_tigris_edit2.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Lemur_catta_001.jpg/330px-Lemur_catta_001.jpg"
+        ],
+        "card": 1
+      },
+      {
+        "name": "Crocodilia",
+        "parent": "Archosauria",
+        "rank": "Order",
+        "ipa": "",
+        "common": [
+          "crocodiles",
+          "alligators",
+          "caimans",
+          "gharial"
+        ],
+        "etymology": "",
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/SaltwaterCrocodile%28%27Maximo%27%29.jpg/330px-SaltwaterCrocodile%28%27Maximo%27%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Freshwater_Crocodile_at_Lone_Pine_Koala_Sanctuary.jpg/330px-Freshwater_Crocodile_at_Lone_Pine_Koala_Sanctuary.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/American_Alligator.jpg/250px-American_Alligator.jpg"
+        ],
+        "card": 3
+      },
+      {
+        "name": "Dinosauria",
+        "parent": "Archosauria",
+        "rank": "Clade",
+        "ipa": "",
+        "common": [],
+        "etymology": "",
+        "tag": "Descendents of the most recent common ancestor to Triceratops and modern birds.",
+        "imgs": [],
+        "card": 3
+      },
+      {
+        "name": "Aves",
+        "parent": "Dinosauria",
+        "rank": "Class",
+        "ipa": "",
+        "common": [
+          "birds"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/American_Flamingo_JG.jpg/330px-American_Flamingo_JG.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Puffin_%28Fratercula_arctica%29.jpg/250px-Puffin_%28Fratercula_arctica%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/2020-11_Kerguelen_Islands_-_Gentoo_penguin_11.jpg/250px-2020-11_Kerguelen_Islands_-_Gentoo_penguin_11.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Southern_Cassowary_7071.jpg/330px-Southern_Cassowary_7071.jpg"
+        ],
+        "card": 3
       }
     ]
     var data_animalia_chordata_tetrapoda_aves_orders = [
@@ -6045,7 +6237,7 @@ var data_files = [
         "common": [
           "shrikes"
         ],
-        "tag": "",
+        "tag": "Known to impale prey onto plant spines within their territories.",
         "imgs": [],
       },
       {
