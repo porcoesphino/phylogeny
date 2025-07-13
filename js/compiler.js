@@ -497,7 +497,7 @@ class Page {
     });
 
     this._set_state_based_on_width = () => {
-      var width = window.screen.width
+      var width = window.innerWidth
       if (width > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
         Page.set_details_accordion_state('controls-accordion', true)
         Page.set_details_accordion_state('summary-accordion', true)
@@ -534,7 +534,7 @@ class Page {
       throw new Error('Missing accordion element id: %s', id)
     }
     accordion.addEventListener('toggle', function () {
-      if (window.screen.width > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
+      if (window.innerWidth > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
         Page.set_details_accordion_state(id, true)
         return
       }
