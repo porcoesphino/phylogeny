@@ -369,8 +369,23 @@ class TreeRangeSelectorBuilder {
   }
 
   _add_from_metadata_list_buttons(parent_el, metadata_list, is_selected = false) {
+    var level = 0
+    var parent_ul_els = []
+    var current_parent = parent_el
     for (var i = 0; i < metadata_list.length; i++) {
       var metadata = metadata_list[i]
+
+      if (metadata.level > level) {
+        if (metadata.level != level + 1) {
+          throw new Error('Source data does not have expected level changes')
+        }
+        level += 1
+        var ul_el = document.createElement('ul')
+        current_parent.appendChild(ul_el)
+
+        parent_ul_els.push(current_parent)
+        current_parent = ul_el
+      }
 
       var outer_div_el = document.createElement('div')
       var input_el = document.createElement('input')
@@ -384,9 +399,6 @@ class TreeRangeSelectorBuilder {
       outer_div_el.appendChild(label_el)
       var inner_div_el = document.createElement('div')
       var label = metadata.taxa
-      if (!!metadata.prefix) {
-        label = metadata.prefix + ' ' + label
-      }
       inner_div_el.innerText = label
       if (!!metadata.tag) {
         var br_el = document.createElement('br')
@@ -400,7 +412,21 @@ class TreeRangeSelectorBuilder {
       if (is_selected && i == 0) {
         input_el.checked = true
       }
-      parent_el.appendChild(outer_div_el)
+
+      if (metadata.level < level) {
+        while (metadata.level < level) {
+          level -= 1
+          current_parent = parent_ul_els.pop()
+        }
+      }
+
+      if (level > 0) {
+        var li_el = document.createElement('li')
+        li_el.appendChild(outer_div_el)
+        current_parent.appendChild(li_el)
+      } else {
+        current_parent.appendChild(outer_div_el)
+      }
     }
   }
 
