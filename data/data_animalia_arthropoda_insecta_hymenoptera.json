@@ -1,0 +1,316 @@
+[
+  {
+    "name": "Symphyta",
+    "parent": "Hymenoptera",
+    "rank": "Suborder",
+    "ipa": "",
+    "tag": "A paraphyletic grouping of basal groups that are all commonly called sawflies. Their ovipositor has a saw-like appearance and the females use it to cut into the plants to they lay their eggs.",
+    "common": [
+      "sawflies"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Xyelapusilla.jpg/250px-Xyelapusilla.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Diprionpini_crop.jpg/250px-Diprionpini_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Caenolyda_reticulata_%28cropped%29.jpg/250px-Caenolyda_reticulata_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Hartigia_linearis.jpg/250px-Hartigia_linearis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Hymenoptera_Vielfalt_Horntail.jpg/250px-Hymenoptera_Vielfalt_Horntail.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Xiphydria_prolongata_crop.jpg/250px-Xiphydria_prolongata_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Orussus_coronatus.jpg/250px-Orussus_coronatus.jpg"
+    ]
+  },
+  {
+    "name": "Apocrita",
+    "parent": "Hymenoptera",
+    "rank": "Suborder",
+    "ipa": "",
+    "tag": "Known for a narrow 'waist' (petiole) formed between the first two segments of the actual abdomen. Most species have grublike larvae that are sedentary; They may feed as parasites on other arthropods or within plant structures, or they may be fed by adults within a nest. Eusociality evolved multiple times.",
+    "common": [
+      "ants",
+      "bees",
+      "wasps"
+    ],
+    "imgs": []
+  },
+  {
+    "name": "Parasitoida",
+    "parent": "Apocrita",
+    "rank": "Clade",
+    "ipa": "",
+    "tag": "Contains parasitoid wasps.",
+    "common": [],
+    "imgs": []
+  },
+  {
+    "name": "Ceraphronoidea",
+    "parent": "Parasitoida",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Ceraphonidae.jpg/330px-Ceraphonidae.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Dendrocerus_sp._male.jpg/250px-Dendrocerus_sp._male.jpg"
+    ]
+  },
+  {
+    "name": "Ichneumonoidea",
+    "parent": "Parasitoida",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/Megarhyssa_greenei_female.jpg/330px-Megarhyssa_greenei_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Braconidae_Richard_Bartz.jpg/330px-Braconidae_Richard_Bartz.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/IC_Ichneumonini.jpg/330px-IC_Ichneumonini.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Cremastinae_wasp.jpg/330px-Cremastinae_wasp.jpg"
+    ]
+  },
+  {
+    "name": "Proctotrupomorpha",
+    "parent": "Parasitoida",
+    "rank": "Infraorder",
+    "ipa": "",
+    "tag": "Contains mainly small parasitic wasps.",
+    "common": [],
+    "imgs": []
+  },
+  {
+    "name": "Cynipoidea",
+    "parent": "Proctotrupomorpha",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [
+      "gall wasps"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Cynips_sp_beentree.jpg/330px-Cynips_sp_beentree.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Ibaliidae_-_Ibalia_leucospoides.jpg/330px-Ibaliidae_-_Ibalia_leucospoides.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/3e/Callaspidia.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Gall_Wasp_-_Cynipidae_family%2C_Leesylvania_State_Park%2C_Woodbridge%2C_Virginia.jpg/250px-Gall_Wasp_-_Cynipidae_family%2C_Leesylvania_State_Park%2C_Woodbridge%2C_Virginia.jpg"
+    ]
+  },
+  {
+    "name": "Platygastroidea",
+    "parent": "Proctotrupomorpha",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Platygastrid_%28Leptacis_spp.%29_%289687661511%29.jpg/330px-Platygastrid_%28Leptacis_spp.%29_%289687661511%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/13/Trissolcus_on_Chinavia_eggs.jpg"
+    ]
+  },
+  {
+    "name": "Chalcidoidea",
+    "parent": "Proctotrupomorpha",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Omphale-cornula.png/250px-Omphale-cornula.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/IC_Leucospis_gigas.JPG/330px-IC_Leucospis_gigas.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Torymus_female.jpg/330px-Torymus_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/41/Balcha_indica._2.jpg"
+    ]
+  },
+  {
+    "name": "Diaprioidea",
+    "parent": "Proctotrupomorpha",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Neurogalesus_carinatus_specimen.jpg/330px-Neurogalesus_carinatus_specimen.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Maaminga_rangi.jpg/330px-Maaminga_rangi.jpg"
+    ]
+  },
+  {
+    "name": "Proctotrupoidea",
+    "parent": "Proctotrupomorpha",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/7/7b/Codrus_picicornis.jpg"
+    ]
+  },
+  {
+    "name": "Evanioidea",
+    "parent": "Apocrita",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Evania_appendigaster.jpg/330px-Evania_appendigaster.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Gasteruption%2C_U%2C_Maryland%2C_side_2015-07-10-16.53.jpg/330px-Gasteruption%2C_U%2C_Maryland%2C_side_2015-07-10-16.53.jpg"
+    ]
+  },
+  {
+    "name": "Stephanoidea",
+    "parent": "Apocrita",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Stephanus_serrator_F_%28ovipositing%29_rotated.JPG"
+    ]
+  },
+  {
+    "name": "Trigonaloidea",
+    "parent": "Apocrita",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Trigonalid_-_Orthogonalys_pulchella_%28Cresson%29_%2815646350670%29.jpg/250px-Trigonalid_-_Orthogonalys_pulchella_%28Cresson%29_%2815646350670%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Taeniogonalos_gundlachii.jpg"
+    ]
+  },
+  {
+    "name": "Aculeata",
+    "parent": "Apocrita",
+    "rank": "Infraorder",
+    "ipa": "",
+    "tag": "The defining feature of the group is the modification of the ovipositor into a stinger, but not all species have this.",
+    "common": [],
+    "imgs": []
+  },
+  {
+    "name": "Chrysidoidea",
+    "parent": "Aculeata",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [
+      "jewel wasps"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Chrysididae_jewel_wasp.jpg/120px-Chrysididae_jewel_wasp.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/83/Chrysis_viridula2.jpg"
+    ]
+  },
+  {
+    "name": "Vespoidea",
+    "parent": "Aculeata",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [
+      "yellowjackets",
+      "paper wasps",
+      "hornets"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/European_wasp_white_bg.jpg/120px-European_wasp_white_bg.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/2919baldf.w.jpg/250px-2919baldf.w.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Ancistrocerus_antilope_female.jpg/250px-Ancistrocerus_antilope_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Polistes_sp_wasp.jpg/330px-Polistes_sp_wasp.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Yellow_Paper_Wasp.jpg/330px-Yellow_Paper_Wasp.jpg"
+    ]
+  },
+  {
+    "name": "Pompiloidea",
+    "parent": "Aculeata",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Spider_Wasp_%28cropped%29.JPG/120px-Spider_Wasp_%28cropped%29.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ceropales_maculata_%2847936916403%29.jpg/330px-Ceropales_maculata_%2847936916403%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c5/Eusapvertic.jpg"
+    ]
+  },
+  {
+    "name": "Thynnoidea",
+    "parent": "Aculeata",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [
+      "chyphotid wasps",
+      "thynnid wasps"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Myzinum_quinquecinctum_P1240895a.jpg/330px-Myzinum_quinquecinctum_P1240895a.jpg"
+    ]
+  },
+  {
+    "name": "Tiphioidea",
+    "parent": "Aculeata",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Sierolomorpha_canadensis.jpg/330px-Sierolomorpha_canadensis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Tiphia_P1280629a.jpg/330px-Tiphia_P1280629a.jpg"
+    ]
+  },
+  {
+    "name": "Scolioidea",
+    "parent": "Aculeata",
+    "rank": "Family",
+    "ipa": "",
+    "tag": "",
+    "common": [
+      "scoliid wasps"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Megascolia_procer_MHNT_dos.jpg/330px-Megascolia_procer_MHNT_dos.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Scolia_bicincta._female.jpg/250px-Scolia_bicincta._female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Scoliid_wasp_%28Megascolia_bidens%29_male_Cap_Bon_2.jpg/250px-Scoliid_wasp_%28Megascolia_bidens%29_male_Cap_Bon_2.jpg"
+    ]
+  },
+  {
+    "name": "Formicoidea",
+    "parent": "Aculeata",
+    "rank": "Family",
+    "ipa": "",
+    "tag": "",
+    "common": [
+      "ants"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Meat_eater_ant_feeding_on_honey02.jpg/120px-Meat_eater_ant_feeding_on_honey02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Red_Ant_-_March_2025.jpg/330px-Red_Ant_-_March_2025.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Bullant_head_detail.jpg/330px-Bullant_head_detail.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/FlyingAnts.jpg/330px-FlyingAnts.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/AntBridge_Crossing_10.jpg/330px-AntBridge_Crossing_10.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/HoneyAnt.jpg/330px-HoneyAnt.jpg"
+    ]
+  },
+  {
+    "name": "Apoidea",
+    "parent": "Aculeata",
+    "rank": "Superfamily",
+    "ipa": "",
+    "tag": "",
+    "common": [
+      "bees",
+      "sphecoid wasps"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Apis_mellifera_%28in_flight%29_%28cropped%29.jpg/120px-Apis_mellifera_%28in_flight%29_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Emerald_Cockroach_Wasp.JPG/250px-Emerald_Cockroach_Wasp.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Astata_boopsDSC05135.JPG/250px-Astata_boopsDSC05135.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Bembix_sp2.jpg/250px-Bembix_sp2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Sceliphron_spirifex_TZ_edit1.jpg/250px-Sceliphron_spirifex_TZ_edit1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Ectemnius.lapidarius.-.lindsey.jpg/250px-Ectemnius.lapidarius.-.lindsey.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mellinus_arvensis_-_Flickr_-_gailhampshire_%281%29.jpg/250px-Mellinus_arvensis_-_Flickr_-_gailhampshire_%281%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Pemphredon_%3F_%28Crabronidae%29_-_Zwerggrabwespe_%2811462528464%29.jpg/250px-Pemphredon_%3F_%28Crabronidae%29_-_Zwerggrabwespe_%2811462528464%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/P._gibbosus57306787w.jpg/250px-P._gibbosus57306787w.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Aphid_Wasp_-_Flickr_-_treegrow_%282%29.jpg/250px-Aphid_Wasp_-_Flickr_-_treegrow_%282%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Abeille_butineuse_et_son_pollen.JPG/250px-Abeille_butineuse_et_son_pollen.JPG"
+    ]
+  },
+]

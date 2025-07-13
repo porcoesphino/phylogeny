@@ -57,6 +57,13 @@ DATA_LIST = [
         level=2,
     ),
     JsonDataFile(
+        file='animalia_arthropoda_insecta_hymenoptera',
+        domain='animalia',
+        taxa='Hymenoptera',
+        tag='The narrow waisted insects. Wasps, bees and ants.',
+        level=3,
+    ),
+    JsonDataFile(
         file='animalia_chordata_classes_minus_tetrapoda',
         domain='animalia',
         taxa='Chordata',
