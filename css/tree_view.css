@@ -35,7 +35,6 @@ Tree core styles
 
 .tree {
   margin: 1em;
-  max-width: 500px;
 }
 
 .tree,
@@ -184,6 +183,9 @@ div.tree_label:after {
   border-radius: 0.3em;
 }
 
+.outer_tree_box {
+  padding-right: 1em;
+}
 
 .tree input~.outer_tree_box {
   margin-left: -0.5em;
@@ -214,7 +216,6 @@ div.tree_label:after {
 
 .tree_box p {
   font-size: 0.75em;
-  max-width: 500px;
 }
 
 .tree_box img {

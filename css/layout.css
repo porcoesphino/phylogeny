@@ -13,8 +13,8 @@
   }
 
   #summary-accordion {
-    flex: 1 0 auto;
-    width: min-content;
+    flex: 1 2 500px;
+    width: fit-content;
   }
 
   #tree-range-select-buttons {
@@ -23,6 +23,8 @@
   }
 
   #tree_root {
+    flex: 2 1 500px;
+    min-width: 500px;
     overflow: auto;
     mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
   }
