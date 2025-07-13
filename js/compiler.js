@@ -359,11 +359,6 @@ class TreeRangeSelectorBuilder {
     return optgroup_el
   }
 
-  _add_hr(parent_el) {
-    var hr_el = document.createElement('hr')
-    parent_el.appendChild(hr_el)
-  }
-
   _add_fieldset(parent_el, label) {
     var fieldset_el = document.createElement('fieldset')
     var legend_el = document.createElement('legend')
@@ -416,7 +411,6 @@ class TreeRangeSelectorBuilder {
     }
 
     this._add_from_metadata_list_buttons(parent_el, this._options_map[''], true)
-    this._add_hr(parent_el)
 
     var animalia_fieldset_el = this._add_fieldset(parent_el, 'Animalia')
     this._add_from_metadata_list_buttons(animalia_fieldset_el, this._options_map['animalia'])
