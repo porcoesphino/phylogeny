@@ -518,6 +518,14 @@ class Page {
       }
     });
 
+    window.addEventListener('resize', function (event) {
+      var width = (event.srcElement || event.currentTarget).innerWidth
+      if (width > 1200) {
+        Page.set_details_accordion_state('controls-accordion', true)
+        Page.set_details_accordion_state('summary-accordion', true)
+      }
+    }, true);
+
   }
 
   static set_details_accordion_state(id, is_open) {
