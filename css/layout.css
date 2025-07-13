@@ -13,19 +13,16 @@
   }
 
   #summary-accordion {
-    /* min-width: 50px; */
     flex: 1 0 auto;
     width: min-content;
   }
 
   #tree-range-select-buttons {
-    /* height: 100% !important; */
-    min-height: 9rem;
-    min-height: 40rem;
+    height: fit-content !important;
+    overflow: hidden !important;
   }
 
   #tree_root {
-    /* flex: 4 1 500px; */
     overflow: auto;
     mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
   }

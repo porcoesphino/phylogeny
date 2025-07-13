@@ -354,20 +354,9 @@ class TreeRangeSelectorBuilder {
     }
   }
 
-  _add_optgroup(parent_el, label) {
-    var optgroup_el = document.createElement('optgroup')
-    optgroup_el.label = label
-    parent_el.appendChild(optgroup_el)
-    return optgroup_el
-  }
-
-  _add_fieldset(parent_el, label) {
-    var fieldset_el = document.createElement('fieldset')
-    var legend_el = document.createElement('legend')
-    legend_el.innerText = label
-    fieldset_el.appendChild(legend_el)
-    parent_el.appendChild(fieldset_el)
-    return fieldset_el
+  _add_hr(parent_el) {
+    var hr_el = document.createElement('hr')
+    parent_el.appendChild(hr_el)
   }
 
   _add_from_metadata_list_buttons(parent_el, metadata_list, is_selected = false) {
@@ -440,17 +429,17 @@ class TreeRangeSelectorBuilder {
 
     this._add_from_metadata_list_buttons(parent_el, this._options_map[''], true)
 
-    var animalia_fieldset_el = this._add_fieldset(parent_el, 'Animalia')
-    this._add_from_metadata_list_buttons(animalia_fieldset_el, this._options_map['animalia'])
-    parent_el.appendChild(animalia_fieldset_el)
+    this._add_hr(parent_el)
 
-    var fungi_fieldset_el = this._add_fieldset(parent_el, 'Fungi')
-    this._add_from_metadata_list_buttons(fungi_fieldset_el, this._options_map['fungi'])
-    parent_el.appendChild(fungi_fieldset_el)
+    this._add_from_metadata_list_buttons(parent_el, this._options_map['animalia'])
 
-    var plantae_fieldset_el = this._add_fieldset(parent_el, 'Plantae')
-    this._add_from_metadata_list_buttons(plantae_fieldset_el, this._options_map['plantae'])
-    parent_el.appendChild(plantae_fieldset_el)
+    this._add_hr(parent_el)
+
+    this._add_from_metadata_list_buttons(parent_el, this._options_map['fungi'])
+
+    this._add_hr(parent_el)
+
+    this._add_from_metadata_list_buttons(parent_el, this._options_map['plantae'])
   }
 }
 
@@ -509,7 +498,6 @@ class Page {
 
     this._set_state_based_on_width = () => {
       var width = window.screen.width
-      console.log('Setting state based on width: ', width)
       if (width > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
         Page.set_details_accordion_state('controls-accordion', true)
         Page.set_details_accordion_state('summary-accordion', true)

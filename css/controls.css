@@ -13,13 +13,8 @@ details.controls summary {
 }
 
 details.controls>div,
-details.controls td {
+details.controls>div>div {
   padding: 0.5rem;
-}
-
-details.controls td {
-  display: flex;
-  flex-direction: column;
 }
 
 details.controls div.select>label,

@@ -285,7 +285,7 @@ def get_script_vars() -> str:
 
 def get_html() -> str:
   html_wrapper_start = """
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -297,10 +297,12 @@ def get_html() -> str:
   <link rel="stylesheet" href="./css/controls.css">
   <link rel="stylesheet" href="./css/tree_view.css">
   <link rel="stylesheet" href="./css/radio_nav.css">
-  <title>Phylogentic tree</title </head>
+  <title>Phylogentic tree</title>
+</head>
 
 <body>
 
+  <div class="full-height-wrapper">
   <h1 class="title">A simplified tree of life</h1>
 
   <div class="layout-columns">
@@ -398,6 +400,7 @@ def get_html() -> str:
                     </ul>
                   </li>
                 </ul>
+              </li>
               <li>
                 Plants
                 <ul>
@@ -429,44 +432,31 @@ def get_html() -> str:
     <details class="controls" id="controls-accordion">
       <summary>Controls</summary>
       <div>
-        <table>
-          <tr>
-            <td>
-              <div class="select">
-                <label for="style-select">Select style</label>
-                <select size="1" id="style-select">
-                  <option value="tree">Tree list</option>
-                  <!-- <option value="list" selected>Regular list</option> -->
-                </select>
-              </div>
-            </td>
 
-            <td>
-              <div class="control-section">Select tree range</h3>
-              <div id="tree-range-select-buttons">
-              </div>
-            </td>
+        <div>
+          <div class="select">
+            <label for="style-select">Select style</label>
+            <select size="1" id="style-select">
+              <option value="tree">Tree list</option>
+              <!-- <option value="list" selected>Regular list</option> -->
+            </select>
+          </div>
+        </div>
 
-            <!--
-            <td>
-              <div class="select">
-                <label for="tree-range-select">Select tree range</label>
-                <select size="5" id="tree-range-select">
-                </select>
-              </div>
-            </td>
-            -->
+        <div>
+          <div class="control-section">Select tree range</div>
+          <div id="tree-range-select-buttons">
+          </div>
+        </div>
 
-            <td>
-              <div class="select">
-                <label for="card-select">Select card <small>(Advanced for Anki input)</small></label>
-                <select id="card-select">
-                </select>
-              </div>
-            </td>
+        <div>
+          <div class="select">
+            <label for="card-select">Select card <small>(Advanced for Anki input)</small></label>
+            <select id="card-select">
+            </select>
+          </div>
+        </div>
 
-          </tr>
-        </table>
       </div>
     </details>
 
@@ -480,6 +470,8 @@ def get_html() -> str:
   </script>
 
   <script src="./js/compiler.js"></script>
+
+  </div>
 
 </body>
 
