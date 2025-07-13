@@ -501,6 +501,12 @@ class Page {
       if (width > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
         Page.set_details_accordion_state('controls-accordion', true)
         Page.set_details_accordion_state('summary-accordion', true)
+      } else {
+        var controls_are_open = this.query_params.get('controls-accordion')  // Treat any value as 'open'.
+        Page.set_details_accordion_state('controls-accordion', controls_are_open)
+
+        var controls_are_open = this.query_params.get('summary-accordion')  // Treat any value as 'open'.
+        Page.set_details_accordion_state('summary-accordion', controls_are_open)
       }
     }
     window.addEventListener('resize', this._set_state_based_on_width, true);

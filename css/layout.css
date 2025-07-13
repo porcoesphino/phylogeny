@@ -4,6 +4,12 @@
   }
 }
 
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
+  #tree-range-select-buttons {
+    height: 10rem !important;
+  }
+}
+
 @media only screen and (min-width: 1200px) {
   .layout-columns {
     display: flex;
