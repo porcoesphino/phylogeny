@@ -151,7 +151,7 @@ DATA_LIST = [
         file='animalia_chordata_tetrapoda_mammalia_artiodactyl_families',
         domain='animalia',
         taxa='Artiodactyl',
-        tag='The ungulates and their descendents. Many of the herbivours we think of, and whales.',
+        tag='The ungulates and their descendents. Many of the herbivours we think of... and whales.',
         level=4,
     ),
     JsonDataFile(
