@@ -141,14 +141,14 @@ DATA_LIST = [
         level=4,
     ),
     JsonDataFile(
-        file='animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus',
+        file='animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus',
         domain='animalia',
         taxa='Felidae',
         tag='The cat-like carnivorans.',
         level=5,
     ),
     JsonDataFile(
-        file='animalia_chordata_tetrapoda_mammalia_carnivora_felidae_genus',
+        file='animalia_chordata_tetrapoda_mammalia_carnivora_canidae_genus',
         domain='animalia',
         taxa='Canidae',
         tag='The dog-like carnivorans.',
