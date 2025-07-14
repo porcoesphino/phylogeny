@@ -7,8 +7,12 @@
     "common": [
       "jumping bristletails"
     ],
+    "tag": "Their abdomen ends in three long tail-like structures with a longer the medial filament. They have elongated bodies and backs that are arched. They easily dehydrate and must remain in moist air.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/0/03/Arch-borstehale_%28white_background%29.png"
+      "https://upload.wikimedia.org/wikipedia/commons/0/03/Arch-borstehale_%28white_background%29.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Rock_bristletail.JPG/330px-Rock_bristletail.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Jumping_Bristletails_%2815567941692%29.jpg/330px-Jumping_Bristletails_%2815567941692%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/T%C3%AAte_de_Trigoniophthalmus_alternatus.jpg/330px-T%C3%AAte_de_Trigoniophthalmus_alternatus.jpg"
     ],
     "card": 1
   },
@@ -18,10 +22,14 @@
     "rank": "Order",
     "ipa": "",
     "common": [
-      "silverfish"
+      "silverfish",
+      "firebrat"
     ],
+    "tag": "Their abdomen ends in three long tail-like structures of similar lengths. Their scales have a silvery glitter. They feed on organic detritus.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Silverfish_2007-2_%28white_background%29.jpg/330px-Silverfish_2007-2_%28white_background%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/Silverfish_2007-2_%28white_background%29.jpg/330px-Silverfish_2007-2_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c9/Atelura_formicaria_18180053.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/48/Thermobia_domestica1.jpg"
     ],
     "card": 1
   },
@@ -42,8 +50,13 @@
     "common": [
       "mayflies"
     ],
+    "tag": "They have long tails and wings that do not fold flat over the abdomen. Their immature stages are aquatic fresh water nymphs that emerge as adults together in large swarms. Adults do not feed and have only vestigial mouthparts.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Isonychia_sicca.jpeg/330px-Isonychia_sicca.jpeg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Isonychia_sicca.jpeg/330px-Isonychia_sicca.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Rhithrogena_germanica_subimago_on_Equisetum_hyemale.jpg/250px-Rhithrogena_germanica_subimago_on_Equisetum_hyemale.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Mayfly_nymph_dorsal_view_wing_buds_paired_gills.JPG/120px-Mayfly_nymph_dorsal_view_wing_buds_paired_gills.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/1/12/Shadfly01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/dd/Eendagsvlieg_%28257301115%29.jpeg"
     ],
     "card": 2
   },
@@ -56,8 +69,15 @@
       "dragonflies",
       "damselfiles"
     ],
+    "tag": "Predatory flying insects have aquatic larvae. They are carnivorous and are almost entirely insectivorous. The adults have two pairs of long, transparent wings that move independently, and elongated abdomens.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Illustrations_of_Exotic_Entomology_II_47_%28%27LIBELLULA_AXILENA%27%29.jpg/330px-Illustrations_of_Exotic_Entomology_II_47_%28%27LIBELLULA_AXILENA%27%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Illustrations_of_Exotic_Entomology_II_47_%28%27LIBELLULA_AXILENA%27%29.jpg/330px-Illustrations_of_Exotic_Entomology_II_47_%28%27LIBELLULA_AXILENA%27%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Common_blue_damselfly02.jpg/250px-Common_blue_damselfly02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2d/Aeshna_juncea_hovering.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Beautiful_demoiselle_%28Calopteryx_virgo%29_male_3.jpg/330px-Beautiful_demoiselle_%28Calopteryx_virgo%29_male_3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ischnura_heterosticta02.jpg/330px-Ischnura_heterosticta02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Aeshna_cyanea_female_1.jpg/330px-Aeshna_cyanea_female_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Anotogaster_sieboldii_on_wall.jpg/330px-Anotogaster_sieboldii_on_wall.jpg"
     ],
     "card": 2
   },
@@ -80,11 +100,16 @@
       "book lice",
       "parasitic lice"
     ],
+    "tag": "Small, scavenging insects that feed primarily on fungi, algae, lichen, and organic detritus. Some are parasitic on warm-blooded hosts feeding on skin, debris or blood.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f5/Psocoptera_%28white_background%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Lipeurus_forficulatus_f.png/250px-Lipeurus_forficulatus_f.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Lipeurus_forficulatus_f.png/250px-Lipeurus_forficulatus_f.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Body_lice.jpg/250px-Body_lice.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Abelopsocus_basipunctatus_live.jpg/330px-Abelopsocus_basipunctatus_live.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Green-eyed_Barklouse_-_Flickr_-_treegrow.jpg/330px-Green-eyed_Barklouse_-_Flickr_-_treegrow.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Liposcelis.jpg/250px-Liposcelis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Trogium_pulsatorium.jpg/250px-Trogium_pulsatorium.jpg"
     ],
-    "tag": "",
     "card": 3
   },
   {
@@ -94,13 +119,13 @@
     "ipa": "",
     "common": [
       "cicadas",
-			"aphids",
-			"stink bugs",
-			"bed bugs",
-			"assassin bugs",
-			"shield bugs",
-			"plant hoppers",
-			"leaf hoppers"
+      "aphids",
+      "stink bugs",
+      "bed bugs",
+      "assassin bugs",
+      "shield bugs",
+      "plant hoppers",
+      "leaf hoppers"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dorisiana_bicolor_MHNT%2C_Montsin%C3%A9ry%2C_Guyane_dos_vol_2.jpg/330px-Dorisiana_bicolor_MHNT%2C_Montsin%C3%A9ry%2C_Guyane_dos_vol_2.jpg"
@@ -116,10 +141,13 @@
     "common": [
       "thrips"
     ],
+    "tag": "Slender insects with fringed wings and unique asymmetrical 'piercing-sucking' mouthparts mouthparts and are usually less than 1 mm long. Many species are fungivorous and many are polinators.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Thrips_%28PSF%29_%28white_background%29.png/250px-Thrips_%28PSF%29_%28white_background%29.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Thrips_%28PSF%29_%28white_background%29.png/250px-Thrips_%28PSF%29_%28white_background%29.png",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f5/Frankadult.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/8b/Phlaeothripidae_-_fungus_feeding_thrip.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4f/Thrips_nymph.jpg"
     ],
-    "tag": "",
     "card": 3
   },
   {
