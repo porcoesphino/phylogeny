@@ -412,7 +412,8 @@ class QueryParams {
 }
 
 class TreeRangeSelectorBuilder {
-  constructor() {
+  constructor(initial_selection) {
+    this._initial_selection = initial_selection
     this._options_map = new Map()
     this._options_map[''] = []
     this._options_map['animalia'] = []
@@ -432,7 +433,7 @@ class TreeRangeSelectorBuilder {
     parent_el.appendChild(hr_el)
   }
 
-  _add_from_metadata_list_buttons(parent_el, metadata_list, is_selected = false) {
+  _add_from_metadata_list_buttons(parent_el, metadata_list) {
     var level = 0
     var parent_ul_els = []
     var current_parent = parent_el
@@ -473,7 +474,7 @@ class TreeRangeSelectorBuilder {
       }
       label_el.appendChild(inner_div_el)
 
-      if (is_selected && i == 0) {
+      if (metadata.file == this._initial_selection) {
         input_el.checked = true
       }
 
@@ -500,7 +501,7 @@ class TreeRangeSelectorBuilder {
       parent_el.removeChild(parent_el.firstChild);
     }
 
-    this._add_from_metadata_list_buttons(parent_el, this._options_map[''], true)
+    this._add_from_metadata_list_buttons(parent_el, this._options_map[''])
 
     this._add_hr(parent_el)
 
@@ -523,7 +524,7 @@ class Page {
     this._card_select = document.getElementById('card-select');
 
     this.query_params = new QueryParams()
-    this.data = new Data('luca', 'all')
+    this.data = new Data('animalia_phyla_common', 'all')
 
     this.search = new Search(this.data)
     this.search.add_callback()
@@ -668,7 +669,7 @@ class Page {
 
   page_load_callback() {
 
-    var tree_range_builder = new TreeRangeSelectorBuilder()
+    var tree_range_builder = new TreeRangeSelectorBuilder(this.data.tree_range)
     tree_range_builder.replace_tree_range_as_buttons(this._tree_range_select)
     var select_new_tree_range = this.select_new_tree_range
     document.getElementById('tree-range-select-buttons').addEventListener('click', function (event) {

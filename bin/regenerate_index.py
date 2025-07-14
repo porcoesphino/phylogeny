@@ -448,7 +448,7 @@ def get_html() -> str:
 
           <div>
             <div class="control-section">Select tree range</div>
-            <input type="search" id="taxa-search" placeholder="Search"/>
+            <input type="search" id="taxa-search" placeholder="Search">
             <div id="tree-range-select-buttons">
             </div>
           </div>
