@@ -155,6 +155,77 @@ class Data {
   }
 }
 
+class Search {
+  static ID = 'taxa-search'
+
+  constructor(data) {
+    this._data = data
+  }
+
+  _menu_el_matches_search(el, search_input) {
+    var input_el = el.getElementsByTagName('input')[0];
+    var id = input_el.id
+    var data_for_menu_item = window['data_' + id]
+    for (var data_i = 0; data_i < data_for_menu_item.length; data_i++) {
+      var taxa_metadata = data_for_menu_item[data_i]
+      if (taxa_metadata.name.includes(search_input)) {
+        return true
+      }
+
+      if (!!taxa_metadata.tag && taxa_metadata.tag.includes(search_input)) {
+        return true
+      }
+
+      if (!taxa_metadata.common) {
+        continue
+      }
+      var common_names = taxa_metadata.common
+      for (var name_i = 0; name_i < common_names.length; name_i++) {
+        if (common_names[name_i].includes(search_input)) {
+          return true
+        }
+      }
+    }
+
+    return false
+  }
+
+  _search_callback() {
+    var search_el = document.getElementById(Search.ID)
+    var search_input = search_el.value
+
+    var menu_items = document.querySelectorAll('#tree-range-select-buttons li, #tree-range-select-buttons > div')
+    for (var i = 0; i < menu_items.length; i++) {
+      var menu_el = menu_items[i]
+
+      if (!search_input) {
+        menu_el.style.display = ''
+        continue
+      }
+
+      var innerText = menu_items[i].innerText
+      if (innerText.includes(search_input) || this._menu_el_matches_search(menu_el, search_input)) {
+        menu_el.style.display = ''
+      } else {
+        menu_el.style.display = 'none'
+      }
+    }
+  }
+
+  _debounce(func, timeout = 300) {
+    let timer;
+    return (...args) => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { func.apply(this, args); }, timeout);
+    };
+  }
+
+  add_callback() {
+    var process_typing = this._debounce(() => this._search_callback());
+    document.getElementById(Search.ID).addEventListener('input', process_typing)
+  }
+}
+
 class TreeBuilderAsTreeList {
   static _get_element_for_node(node, node_map, level = 0) {
 
@@ -451,6 +522,9 @@ class Page {
 
     this.query_params = new QueryParams()
     this.data = new Data('luca', 'all')
+
+    this.search = new Search(this.data)
+    this.search.add_callback()
 
     this.update_tree_range_view = (data) => {
       var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(data)
