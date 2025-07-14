@@ -501,19 +501,23 @@ class TreeRangeSelectorBuilder {
       parent_el.removeChild(parent_el.firstChild);
     }
 
-    this._add_from_metadata_list_buttons(parent_el, this._options_map[''])
+    var wrapper_div_el = document.createElement('div')
 
-    this._add_hr(parent_el)
+    this._add_from_metadata_list_buttons(wrapper_div_el, this._options_map[''])
 
-    this._add_from_metadata_list_buttons(parent_el, this._options_map['animalia'])
+    this._add_hr(wrapper_div_el)
 
-    this._add_hr(parent_el)
+    this._add_from_metadata_list_buttons(wrapper_div_el, this._options_map['animalia'])
 
-    this._add_from_metadata_list_buttons(parent_el, this._options_map['fungi'])
+    this._add_hr(wrapper_div_el)
 
-    this._add_hr(parent_el)
+    this._add_from_metadata_list_buttons(wrapper_div_el, this._options_map['fungi'])
 
-    this._add_from_metadata_list_buttons(parent_el, this._options_map['plantae'])
+    this._add_hr(wrapper_div_el)
+
+    this._add_from_metadata_list_buttons(wrapper_div_el, this._options_map['plantae'])
+
+    parent_el.appendChild(wrapper_div_el)
   }
 }
 

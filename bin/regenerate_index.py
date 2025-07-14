@@ -309,7 +309,7 @@ def get_html() -> str:
 
     <div class="rows-on-mobile">
 
-      <details class="controls" id="summary-accordion" open>
+      <details class="controls" id="summary-accordion">
         <summary>Summary</summary>
         <div class="summary">
           <p>
@@ -432,7 +432,7 @@ def get_html() -> str:
         </div>
       </details>
 
-      <details class="controls" id="controls-accordion">
+      <details class="controls" id="controls-accordion" open>
         <summary>Controls</summary>
         <div>
 
@@ -450,6 +450,7 @@ def get_html() -> str:
             <div class="control-section">Select tree range</div>
             <input type="search" id="taxa-search" placeholder="Search">
             <div id="tree-range-select-buttons">
+              <div style="height: 1800px; width: 500px;"></div>
             </div>
           </div>
 
