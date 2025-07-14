@@ -10,6 +10,15 @@ class Data {
     this._clear_cache()
   }
 
+  static get_menu_metadata_for_id(id) {
+    for (var i = 0; i < window.data_files.length; i++) {
+      var file_metadata = window.data_files[i]
+      if (file_metadata.file == id) {
+        return file_metadata
+      }
+    }
+  }
+
   static _get_data(content_select_value) {
     switch (content_select_value) {
       case 'all':
@@ -562,6 +571,9 @@ class Page {
       } else {
         this._card_select.disabled = false
       }
+
+      var menu_metadata = Data.get_menu_metadata_for_id(new_value)
+      document.title = 'Phylogentic tree - ' + menu_metadata.taxa
     }
 
     this.update_tree_range_view(this.data)
@@ -689,6 +701,8 @@ class Page {
       var radio_btn = document.getElementById(tree_range);
       radio_btn.checked = true;
       radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
+      var menu_metadata = Data.get_menu_metadata_for_id(tree_range)
+      document.title = 'Phylogentic tree - ' + menu_metadata.taxa
     }
 
     this.add_card_select_options()
