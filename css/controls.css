@@ -4,6 +4,7 @@ details.controls {
   margin: .2rem;
   border-radius: .3rem;
   border: 1px solid;
+  overflow: hidden;
 }
 
 details.controls summary {
@@ -21,6 +22,9 @@ details.controls input[type=search] {
   width: 100%;
   padding: 0.3rem;
   margin: 0.3rem 0px;
+  -webkit-appearance: textfield;
+  border-radius: 3px;
+  border-width: 1px;
 }
 
 details.controls div.select>label,

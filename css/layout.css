@@ -10,6 +10,26 @@
 }
 
 @media only screen and (min-width: 780px) and (max-width: 1200px) {
+  .rows-on-mobile {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0;
+  }
+
+  details#summary-accordion {
+    flex: 0 0 fit-content;
+  }
+
+  details#summary-accordion div.summary {
+    height: 40vh;
+  }
+
+  details#controls-accordion {
+    /* min-height: 0px; */
+    flex: 0 2;
+    flex-basis: fit-content;
+  }
+
   .layout-columns {
     display: flex;
     width: 100%;
@@ -81,6 +101,18 @@
     /* Why does this overflow? Details elements? */
     height: 90%;
   }
+}
+
+/** Safari only CSS to make scrolling in columns work correctly. */
+@supports (-webkit-backdrop-filter: blur(10px)) {
+
+  details.controls,
+  .summary,
+  details>div {
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 @media only screen and (min-width: 780px) and (max-width: 1200px) and (max-height: 1000px) {

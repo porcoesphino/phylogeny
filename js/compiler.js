@@ -1,5 +1,7 @@
 const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 
+const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
+
 class Data {
 
   constructor(tree_range, card = 'all') {
@@ -575,6 +577,11 @@ class Page {
       if (width > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
         Page.set_details_accordion_state('controls-accordion', true, true)
         Page.set_details_accordion_state('summary-accordion', true, true)
+      } else if (width > WIDTH_CONTROL_ACCORDION_STAY_OPEN) {
+        Page.set_details_accordion_state('controls-accordion', true, true)
+
+        var controls_are_open = this.query_params.get('summary-accordion')  // Treat any value as 'open'.
+        Page.set_details_accordion_state('summary-accordion', controls_are_open, false)
       } else {
         var controls_are_open = this.query_params.get('controls-accordion')  // Treat any value as 'open'.
         Page.set_details_accordion_state('controls-accordion', controls_are_open, false)
