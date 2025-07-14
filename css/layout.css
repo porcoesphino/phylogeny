@@ -41,10 +41,6 @@
     /* Why does this overflow? Details elements? */
     height: 90%;
   }
-
-  .tree_box img {
-    max-height: 50px !important;
-  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -85,8 +81,28 @@
     /* Why does this overflow? Details elements? */
     height: 90%;
   }
+}
 
+@media only screen and (min-width: 780px) and (max-width: 1200px) and (max-height: 1000px) {
+  .tree_box img {
+    max-height: 50px !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-height: 1000px) {
   .tree_box img {
     max-height: 60px !important;
+  }
+}
+
+@media only screen and (min-width: 780px) and (min-height: 1000px) and (max-height: 2000px) {
+  .tree_box img {
+    max-height: 60px !important;
+  }
+}
+
+@media only screen and (min-width: 780px) and (min-height: 2000px) {
+  .tree_box img {
+    max-height: 100px !important;
   }
 }
