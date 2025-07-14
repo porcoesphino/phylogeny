@@ -688,6 +688,7 @@ class Page {
       this.data.tree_range = tree_range
       var radio_btn = document.getElementById(tree_range);
       radio_btn.checked = true;
+      radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
     }
 
     this.add_card_select_options()
