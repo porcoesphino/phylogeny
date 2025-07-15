@@ -84,16 +84,6 @@ class Data {
     this._clear_cache()
   }
 
-  static get_menu_metadata_for_id(id) {
-    for (var i = 0; i < window.data_files.length; i++) {
-      var file_metadata = window.data_files[i]
-      if (file_metadata.file == id) {
-        return file_metadata
-      }
-    }
-    throw new Error('Menu metadata missing for ID: ' + id)
-  }
-
   static get_menu_metadata_for_taxa(taxa) {
     for (var i = 0; i < window.data_files.length; i++) {
       var file_metadata = window.data_files[i]
