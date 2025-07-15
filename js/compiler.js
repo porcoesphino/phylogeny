@@ -376,7 +376,7 @@ class TreeBuilderAsTreeList {
       var id = node.name.toLowerCase()
       if (!window.page) {
         // Abort early during init.
-        // TODO: Optimise so this doesn't happen.
+        // TODO: Optimise so this doesn't happen. (The menu should load before the first tree load)
         return
       }
       if (window.page.data.has_menu_item(id)) {
@@ -781,9 +781,7 @@ class Page {
     var page_load_callback = () => {
       this.page_load_callback()
     }
-    // TODO: This triggers after images load, and we want it earlier.
-    // TODO: The menu should load before the first tree load.
-    window.addEventListener('load', function () {
+    setTimeout(function () {
       page_load_callback()
     })
 
