@@ -82,19 +82,29 @@ class Data {
     this._tree_range = tree_range
     this._card = card
     this._clear_cache()
+    this._menu_mapped_by_taxa = null
   }
 
-  static get_menu_metadata_for_taxa(taxa) {
-    for (var i = 0; i < window.data_files.length; i++) {
-      var file_metadata = window.data_files[i]
-      if (file_metadata.taxa.toLowerCase() == taxa) {
-        return file_metadata
+  _get_menu_map() {
+    if (this._menu_mapped_by_taxa == null) {
+      this._menu_mapped_by_taxa = new Map()
+      for (var i = 0; i < window.data_files.length; i++) {
+        var file_metadata = window.data_files[i]
+        this._menu_mapped_by_taxa.set(file_metadata.taxa.toLowerCase(), file_metadata)
       }
     }
-    throw new Error('Menu metadata missing for taxa: ' + taxa)
+    return this._menu_mapped_by_taxa
   }
 
-  static _get_data(root_id) {
+  has_menu_item(taxa) {
+    return this._get_menu_map().has(taxa.toLowerCase())
+  }
+
+  get_menu_metadata_for_taxa(taxa) {
+    return this._get_menu_map().get(taxa)
+  }
+
+  _get_data(root_id) {
     switch (root_id) {
       case 'all':
         var all_data = []
@@ -109,7 +119,7 @@ class Data {
         }
         return all_data
       default:
-        var metadata = Data.get_menu_metadata_for_taxa(root_id)
+        var metadata = this.get_menu_metadata_for_taxa(root_id)
         var data_variable_name = metadata.file
         if (!window.hasOwnProperty(data_variable_name)) {
           throw new Error('Data missing: ' + data_variable_name)
@@ -153,7 +163,7 @@ class Data {
       if (!this.tree_range) {
         return []  // Abort early during initialisation.
       }
-      this._data = Data._get_data(this.tree_range)
+      this._data = this._get_data(this.tree_range)
     }
     return this._data
   }
@@ -349,6 +359,36 @@ class TreeBuilderAsTreeList {
       }
     }
 
+    function add_float_right(node, parent_el) {
+      var right_el = document.createElement('span')
+      right_el.classList.add('float-right')
+      maybe_append_open_tree_button(node, right_el)
+      maybe_append_rank(node, right_el)
+      parent_el.appendChild(right_el)
+    }
+
+    function maybe_append_open_tree_button(node, parent_el) {
+      var name = node.name
+      if (name == null) {
+        // TODO: Add button to open the parent tree.
+        return
+      }
+      var id = node.name.toLowerCase()
+      if (!window.page) {
+        // Abort early during init.
+        // TODO: Optimise so this doesn't happen.
+        return
+      }
+      if (window.page.data.has_menu_item(id)) {
+        var button_el = document.createElement('button')
+        button_el.innerText = 'See children'
+        button_el.addEventListener('click', () => {
+          window.page.select_new_tree_range(id, false)
+        })
+        parent_el.appendChild(button_el)
+      }
+    }
+
     function maybe_append_rank(node, parent_el) {
       if (node.hasOwnProperty('rank') && !!node.rank) {
         var rank_el = document.createElement('span')
@@ -406,7 +446,7 @@ class TreeBuilderAsTreeList {
       outer_box_el.appendChild(inner_box_el)
 
       append_name(node, inner_box_el)
-      maybe_append_rank(node, inner_box_el)
+      add_float_right(node, inner_box_el)
       maybe_append_common_names(node, inner_box_el)
       maybe_append_tag_line(node, inner_box_el)
       maybe_append_images(node, inner_box_el)
@@ -653,6 +693,7 @@ class Page {
   constructor() {
     this._tree_range_select = document.getElementById('tree-range-select-buttons');
     this._card_select = document.getElementById('card-select');
+    this._tree_root = document.getElementById('tree_root')
 
     this._controls = new Accordion(Accordion.ID_CONTROLS)
     this._summary = new Accordion(Accordion.ID_SUMMARY)
@@ -670,7 +711,7 @@ class Page {
         return  // Abort early during initialisation.
       }
 
-      var tree_root = document.getElementById('tree_root')
+      var tree_root = this._tree_root
 
       while (tree_root.firstChild) {
         // The list is LIVE so it will re-index each call
@@ -679,13 +720,14 @@ class Page {
       tree_root.appendChild(root_list_el)
     }
 
-    this.select_new_tree_range = (new_value) => {
+    this.select_new_tree_range = (new_value, button_click = false) => {
       page.query_params.root = new_value
       this.data.tree_range = new_value
       this.data.card = 'all'
       page.query_params.card = 'all'
       this.add_card_select_options()
       update_tree_range_view(this.data)
+      this.scroll_tree_to_top()
 
       if (this.data.tree_range == 'all') {
         this._card_select.disabled = true
@@ -693,8 +735,14 @@ class Page {
         this._card_select.disabled = false
       }
 
-      var menu_metadata = Data.get_menu_metadata_for_taxa(new_value)
+      var menu_metadata = this.data.get_menu_metadata_for_taxa(new_value)
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
+
+      if (!button_click) {
+        var radio_btn = document.getElementById(new_value);
+        radio_btn.checked = true;
+        radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
+      }
     }
 
     this._update_tree_range_view(this.data)
@@ -733,6 +781,8 @@ class Page {
     var page_load_callback = () => {
       this.page_load_callback()
     }
+    // TODO: This triggers after images load, and we want it earlier.
+    // TODO: The menu should load before the first tree load.
     window.addEventListener('load', function () {
       page_load_callback()
     })
@@ -745,7 +795,12 @@ class Page {
 
   }
 
-
+  scroll_tree_to_top() {
+    if (!tree_root.firstChild || !tree_root.firstChild.firstChild) {
+      return
+    }
+    tree_root.firstChild.firstChild.scrollIntoView()
+  }
 
   add_card_select_options() {
 
@@ -782,7 +837,7 @@ class Page {
     document.getElementById('tree-range-select-buttons').addEventListener('click', function (event) {
       if (event.target && event.target.matches("input[type='radio']")) {
         var clicked_range = event.target.id
-        select_new_tree_range(clicked_range)
+        select_new_tree_range(clicked_range, true)
       }
     });
 
@@ -792,7 +847,7 @@ class Page {
       var radio_btn = document.getElementById(tree_range);
       radio_btn.checked = true;
       radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
-      var menu_metadata = Data.get_menu_metadata_for_taxa(tree_range)
+      var menu_metadata = this.data.get_menu_metadata_for_taxa(tree_range)
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
     }
 

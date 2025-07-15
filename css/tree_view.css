@@ -1,3 +1,18 @@
+.float-right {
+  float: right;
+}
+
+.tree_box button {
+  padding: 2px 4px;
+  font-size: 0.75em;
+  margin: 0 4px;
+  text-align: center;
+  /* border-radius: 0.2rem; */
+  vertical-align: text-top;
+  height: 18px;
+  line-height: 10px;
+}
+
 .badge {
   background-color: #cff4fc;
   color: #055160;
@@ -5,7 +20,6 @@
   text-align: center;
   border-radius: 50rem;
   font-size: 0.75em;
-  float: right;
   clear: both;
   vertical-align: text-top;
 }
