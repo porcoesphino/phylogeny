@@ -2,6 +2,22 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
+class QueryParams {
+  get(key) {
+    const params = new URLSearchParams(location.search);
+    return params.get(key)
+  }
+
+  update(key, value) {
+    const params = new URLSearchParams(location.search);
+    if (params.get(key) == value) {
+      return
+    }
+    params.set(key, value)
+    window.history.pushState({}, '', `${location.pathname}?${params}`);
+  }
+}
+
 class Data {
 
   constructor(tree_range, card = 'all') {
@@ -401,22 +417,6 @@ class TreeBuilderAsTreeList {
     root_list_el.appendChild(TreeBuilderAsTreeList._get_element_for_node(root_name, dict))
 
     return root_list_el
-  }
-}
-
-class QueryParams {
-  get(key) {
-    const params = new URLSearchParams(location.search);
-    return params.get(key)
-  }
-
-  update(key, value) {
-    const params = new URLSearchParams(location.search);
-    if (params.get(key) == value) {
-      return
-    }
-    params.set(key, value)
-    window.history.pushState({}, '', `${location.pathname}?${params}`);
   }
 }
 
