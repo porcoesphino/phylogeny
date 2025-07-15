@@ -188,7 +188,7 @@
     "card": 2
   },
   {
-    "name": "Monocots",
+    "name": "Monocot",
     "parent": "Core angiosperms",
     "rank": "Clade",
     "ipa": "",
@@ -231,7 +231,7 @@
     "card": 2
   },
   {
-    "name": "Eudicots",
+    "name": "Eudicot",
     "parent": "Core angiosperms",
     "rank": "Clade",
     "ipa": "",
