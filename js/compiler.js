@@ -91,10 +91,21 @@ class Data {
         return file_metadata
       }
     }
+    throw new Error('Menu metadata missing for ID: ' + id)
   }
 
-  static _get_data(content_select_value) {
-    switch (content_select_value) {
+  static get_menu_metadata_for_taxa(taxa) {
+    for (var i = 0; i < window.data_files.length; i++) {
+      var file_metadata = window.data_files[i]
+      if (file_metadata.taxa.toLowerCase() == taxa) {
+        return file_metadata
+      }
+    }
+    throw new Error('Menu metadata missing for taxa: ' + taxa)
+  }
+
+  static _get_data(root_id) {
+    switch (root_id) {
       case 'all':
         var all_data = []
         for (var i = 0; i < window.data_files.length; i++) {
@@ -108,7 +119,8 @@ class Data {
         }
         return all_data
       default:
-        var data_variable_name = content_select_value
+        var metadata = Data.get_menu_metadata_for_taxa(root_id)
+        var data_variable_name = metadata.file
         if (!window.hasOwnProperty(data_variable_name)) {
           throw new Error('Data missing: ' + data_variable_name)
         }
@@ -522,12 +534,13 @@ class TreeRangeSelectorBuilder {
       var outer_div_el = document.createElement('div')
       var input_el = document.createElement('input')
       input_el.type = 'radio'
-      input_el.id = metadata.file
-      input_el.value = metadata.file
+      var id = metadata.taxa.toLowerCase()
+      input_el.id = metadata.taxa.toLowerCase()
+      input_el.value = id
       input_el.name = 'tree_range_selector_radio'
       outer_div_el.appendChild(input_el)
       var label_el = document.createElement('label')
-      label_el.htmlFor = metadata.file
+      label_el.htmlFor = id
       outer_div_el.appendChild(label_el)
       var inner_div_el = document.createElement('div')
       var label = metadata.taxa
@@ -541,7 +554,7 @@ class TreeRangeSelectorBuilder {
       }
       label_el.appendChild(inner_div_el)
 
-      if (metadata.file == this._initial_selection) {
+      if (id == this._initial_selection) {
         input_el.checked = true
       }
 
@@ -655,7 +668,7 @@ class Page {
     this._summary = new Accordion(Accordion.ID_SUMMARY)
 
     this.query_params = new QueryParams()
-    this.data = new Data('luca_animalia', 'all')
+    this.data = new Data('animalia', 'all')
 
     this.search = new Search(this.data)
     this.search.add_callback()
@@ -690,7 +703,7 @@ class Page {
         this._card_select.disabled = false
       }
 
-      var menu_metadata = Data.get_menu_metadata_for_id(new_value)
+      var menu_metadata = Data.get_menu_metadata_for_taxa(new_value)
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
     }
 
@@ -789,7 +802,7 @@ class Page {
       var radio_btn = document.getElementById(tree_range);
       radio_btn.checked = true;
       radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
-      var menu_metadata = Data.get_menu_metadata_for_id(tree_range)
+      var menu_metadata = Data.get_menu_metadata_for_taxa(tree_range)
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
     }
 
