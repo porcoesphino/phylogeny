@@ -3,11 +3,11 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
 class QueryParams {
-  static _KEY_CONTROLS = 'controls-accordion'
+  static _KEY_CONTROLS = 'controls'
   static _DEFAULT_CONTROLS = 'open'
-  static _KEY_SUMMARY = 'summary-accordion'
+  static _KEY_SUMMARY = 'summary'
   static _DEFAULT_SUMMARY = ''
-  static _KEY_ROOT = 'tree_range'
+  static _KEY_ROOT = 'root'
   static _KEY_CARD = 'card'
   static _DEFAULT_CARD = 'all'
 
