@@ -3,18 +3,76 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
 class QueryParams {
-  get(key) {
+  static _KEY_CONTROLS = 'controls-accordion'
+  static _DEFAULT_CONTROLS = 'open'
+  static _KEY_SUMMARY = 'summary-accordion'
+  static _DEFAULT_SUMMARY = ''
+  static _KEY_ROOT = 'tree_range'
+  static _KEY_CARD = 'card'
+  static _DEFAULT_CARD = 'all'
+
+  _get(key, default_value = null) {
     const params = new URLSearchParams(location.search);
+    if (!params.has(key) && !!default_value) {
+      return default_value
+    }
     return params.get(key)
   }
 
-  update(key, value) {
+  _update(key, value, default_value = null) {
     const params = new URLSearchParams(location.search);
-    if (params.get(key) == value) {
-      return
+
+    if (value == default_value) {
+      // If this is a default, make sure it's not sent to the URL.
+      if (!!params.has(key)) {
+        params.delete(key)
+      }
+    } else {
+      // If this will set the same value, abort early.
+      if (params.get(key) == value) {
+        return
+      }
+
+      params.set(key, value)
     }
-    params.set(key, value)
-    window.history.pushState({}, '', `${location.pathname}?${params}`);
+    if (params.size > 0) {
+      var new_location = `${location.pathname}?${params}`
+    } else {
+      var new_location = location.pathname
+    }
+    window.history.pushState({}, '', new_location);
+  }
+
+  get controls() {
+    return this._get(QueryParams._KEY_CONTROLS, QueryParams._DEFAULT_CONTROLS)
+  }
+
+  set controls(new_value) {
+    this._update(QueryParams._KEY_CONTROLS, new_value, QueryParams._DEFAULT_CONTROLS)
+  }
+
+  get summary() {
+    return this._get(QueryParams._KEY_SUMMARY, QueryParams._DEFAULT_SUMMARY)
+  }
+
+  set summary(new_value) {
+    this._update(QueryParams._KEY_SUMMARY, new_value, QueryParams._DEFAULT_SUMMARY)
+  }
+
+  get root() {
+    return this._get(QueryParams._KEY_ROOT)
+  }
+
+  set root(new_value) {
+    this._update(QueryParams._KEY_ROOT, new_value, null /* Always add this query param */)
+  }
+
+  get card() {
+    return this._get(QueryParams._KEY_CARD, QueryParams._DEFAULT_CARD)
+  }
+
+  set card(new_value) {
+    this._update(QueryParams._KEY_CARD, new_value, QueryParams._DEFAULT_CARD)
   }
 }
 
@@ -530,11 +588,71 @@ class TreeRangeSelectorBuilder {
   }
 }
 
+class Accordion {
+  static ID_CONTROLS = 'controls-accordion'
+  static ID_SUMMARY = 'summary-accordion'
+
+  constructor(id) {
+    this.id = id
+  }
+
+  static set_state_with_id(id, is_open, disabled = false) {
+    if (!!is_open) {
+      document.getElementById(id).setAttribute('open', '')
+    } else {
+      document.getElementById(id).removeAttribute('open')
+    }
+    if (!!disabled) {
+      document.getElementById(id).setAttribute('disabled', '')
+    } else {
+      document.getElementById(id).removeAttribute('disabled')
+    }
+  }
+
+  static add_query_param_on_state_change(id) {
+    var accordion = document.getElementById(id);
+    if (!accordion) {
+      throw new Error('Missing accordion element id: %s', id)
+    }
+    accordion.addEventListener('toggle', function () {
+      if (window.innerWidth > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
+        Accordion.set_state_with_id(id, true, true)
+        return
+      }
+
+      var is_open = accordion.hasAttribute('open')
+      if (!!is_open) {
+        var query_param_value = 'open'
+      } else {
+        var query_param_value = ''
+      }
+
+      switch (id) {
+        case Accordion.ID_CONTROLS:
+          page.query_params.controls = query_param_value
+          break;
+        case Accordion.ID_SUMMARY:
+          page.query_params.summary = query_param_value
+          break;
+        default:
+          throw new Error('Invalid Accordion ID')
+      }
+    });
+  }
+
+  set_state(is_open, disabled = false) {
+    Accordion.set_state_with_id(this.id, is_open, disabled)
+  }
+}
+
 class Page {
 
   constructor() {
     this._tree_range_select = document.getElementById('tree-range-select-buttons');
     this._card_select = document.getElementById('card-select');
+
+    this._controls = new Accordion(Accordion.ID_CONTROLS)
+    this._summary = new Accordion(Accordion.ID_SUMMARY)
 
     this.query_params = new QueryParams()
     this.data = new Data('luca_animalia', 'all')
@@ -542,7 +660,7 @@ class Page {
     this.search = new Search(this.data)
     this.search.add_callback()
 
-    this.update_tree_range_view = (data) => {
+    this._update_tree_range_view = (data) => {
       var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(data)
 
       if (!root_list_el) {
@@ -559,10 +677,10 @@ class Page {
     }
 
     this.select_new_tree_range = (new_value) => {
-      page.query_params.update('tree_range', new_value)
+      page.query_params.root = new_value
       this.data.tree_range = new_value
       this.data.card = 'all'
-      page.query_params.update('card', 'all')
+      page.query_params.card = 'all'
       this.add_card_select_options()
       update_tree_range_view(this.data)
 
@@ -576,12 +694,12 @@ class Page {
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
     }
 
-    this.update_tree_range_view(this.data)
+    this._update_tree_range_view(this.data)
 
-    var update_tree_range_view = this.update_tree_range_view
+    var update_tree_range_view = this._update_tree_range_view
 
     var card_select_change = () => {
-      page.query_params.update('card', this._card_select.value)
+      page.query_params.card = this._card_select.value
       this.data.card = this._card_select.value
       update_tree_range_view(this.data)
     }
@@ -592,19 +710,19 @@ class Page {
     this._set_state_based_on_width = () => {
       var width = window.innerWidth
       if (width > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
-        Page.set_details_accordion_state('controls-accordion', true, true)
-        Page.set_details_accordion_state('summary-accordion', true, true)
+        this._controls.set_state(true, true)
+        this._summary.set_state(true, true)
       } else if (width > WIDTH_CONTROL_ACCORDION_STAY_OPEN) {
-        Page.set_details_accordion_state('controls-accordion', true, true)
+        this._controls.set_state(true, true)
 
-        var controls_are_open = this.query_params.get('summary-accordion')  // Treat any value as 'open'.
-        Page.set_details_accordion_state('summary-accordion', controls_are_open, false)
+        var summay_is_open = this.query_params.summary
+        this._summary.set_state(summay_is_open, false)
       } else {
-        var controls_are_open = this.query_params.get('controls-accordion')  // Treat any value as 'open'.
-        Page.set_details_accordion_state('controls-accordion', controls_are_open, false)
+        var controls_are_open = this.query_params.controls
+        this._summary.set_state(controls_are_open, false)
 
-        var controls_are_open = this.query_params.get('summary-accordion')  // Treat any value as 'open'.
-        Page.set_details_accordion_state('summary-accordion', controls_are_open, false)
+        var summay_is_open = this.query_params.summary
+        this._summary.set_state(summay_is_open, false)
       }
     }
     window.addEventListener('resize', this._set_state_based_on_width, true);
@@ -624,37 +742,7 @@ class Page {
 
   }
 
-  static set_details_accordion_state(id, is_open, disabled = false) {
-    if (!!is_open) {
-      document.getElementById(id).setAttribute('open', '')
-    } else {
-      document.getElementById(id).removeAttribute('open')
-    }
-    if (!!disabled) {
-      document.getElementById(id).setAttribute('disabled', '')
-    } else {
-      document.getElementById(id).removeAttribute('disabled')
-    }
-  }
 
-  static add_query_param_update_for_details_accordion_state(id) {
-    var accordion = document.getElementById(id);
-    if (!accordion) {
-      throw new Error('Missing accordion element id: %s', id)
-    }
-    accordion.addEventListener('toggle', function () {
-      if (window.innerWidth > WIDTH_BOTH_ACCORDIONS_STAY_OPEN) {
-        Page.set_details_accordion_state(id, true, true)
-        return
-      }
-      var is_open = accordion.hasAttribute('open')
-      if (!!is_open) {
-        page.query_params.update(id, 'open')
-      } else {
-        page.query_params.update(id, '')
-      }
-    });
-  }
 
   add_card_select_options() {
 
@@ -695,7 +783,7 @@ class Page {
       }
     });
 
-    var tree_range = this.query_params.get('tree_range')
+    var tree_range = this.query_params.root
     if (!!tree_range) {
       this.data.tree_range = tree_range
       var radio_btn = document.getElementById(tree_range);
@@ -707,7 +795,7 @@ class Page {
 
     this.add_card_select_options()
 
-    var card = this.query_params.get('card')
+    var card = this.query_params.card
     if (!!card) {
       this._card_select.value = card
       this.data.card = card
@@ -716,19 +804,17 @@ class Page {
       this.data.card = 'all'
     }
 
-    this.update_tree_range_view(this.data)
+    this._update_tree_range_view(this.data)
 
-    var controls_are_open = this.query_params.get('controls-accordion')  // Treat any value as 'open'.
-    Page.set_details_accordion_state('controls-accordion', controls_are_open)
-
-    var controls_are_open = this.query_params.get('summary-accordion')  // Treat any value as 'open'.
-    Page.set_details_accordion_state('summary-accordion', controls_are_open)
+    var controls_are_open = this.query_params.controls
+    this._controls.set_state(controls_are_open)
+    var summary_is_open = this.query_params.summary
+    this._summary.set_state(summary_is_open)
 
     this._set_state_based_on_width()
 
-    Page.add_query_param_update_for_details_accordion_state('controls-accordion')
-
-    Page.add_query_param_update_for_details_accordion_state('summary-accordion')
+    Accordion.add_query_param_on_state_change(Accordion.ID_CONTROLS)
+    Accordion.add_query_param_on_state_change(Accordion.ID_SUMMARY)
   }
 }
 
