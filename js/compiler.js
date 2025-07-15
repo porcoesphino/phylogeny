@@ -93,11 +93,71 @@ class MenuMap {
   }
 
   has_taxa(taxa) {
+    if (!taxa) {
+      return false
+    }
     return this._get_menu_map().has(taxa.toLowerCase())
   }
 
   get_metadata(taxa) {
     return this._get_menu_map().get(taxa)
+  }
+}
+
+class DataMap {
+  constructor() {
+    this._taxa_to_root = null
+    this._taxa_to_metadata = null
+  }
+
+  static get_data_for_file(metadata_file) {
+    if (!window.hasOwnProperty(metadata_file)) {
+      throw new Error('Data missing: ' + metadata_file)
+    }
+    return window[metadata_file]
+  }
+
+  _build_maps() {
+    if (this._data_mapped_by_taxa == null) {
+      this._taxa_to_root = new Map()
+      this._taxa_to_metadata = new Map()
+      for (var file_i = 0; file_i < window.data_files.length; file_i++) {
+        var menu_metadata = window.data_files[file_i]
+        var tree_as_list = DataMap.get_data_for_file(menu_metadata.file)
+        var root = menu_metadata.taxa.toLowerCase()
+        for (var taxa_i = 0; taxa_i < tree_as_list.length; taxa_i++) {
+          var taxa_metadata = tree_as_list[taxa_i]
+          var id = taxa_metadata.name.toLowerCase()
+          if (this._taxa_to_root.has(name) || this._taxa_to_metadata.has(name)) {
+            throw new Error('Duplicate taxa ID in source data.')
+          }
+          this._taxa_to_root.set(id, root)
+          this._taxa_to_metadata.set(id, taxa_metadata)
+        }
+      }
+    }
+    return this._data_mapped_by_taxa
+  }
+
+  has_taxa(taxa) {
+    if (this._taxa_to_root == null) {
+      this._build_maps()
+    }
+    return this._taxa_to_root.has(taxa.toLowerCase())
+  }
+
+  get_root(taxa) {
+    if (this._taxa_to_root == null) {
+      this._build_maps()
+    }
+    return this._taxa_to_root.get(taxa.toLowerCase())
+  }
+
+  get_metadata(taxa) {
+    if (this._taxa_to_metadata == null) {
+      this._build_maps()
+    }
+    return this._taxa_to_metadata.get(taxa.toLowerCase())
   }
 }
 
@@ -108,6 +168,7 @@ class State {
     this._card = card
     this._clear_cache()
     this.menu_map = new MenuMap()
+    this.data_map = new DataMap()
   }
 
   _get_data(root_id) {
@@ -126,11 +187,7 @@ class State {
         return all_data
       default:
         var metadata = this.menu_map.get_metadata(root_id)
-        var data_variable_name = metadata.file
-        if (!window.hasOwnProperty(data_variable_name)) {
-          throw new Error('Data missing: ' + data_variable_name)
-        }
-        return window[data_variable_name]
+        return DataMap.get_data_for_file(metadata.file)
     }
   }
 
@@ -332,12 +389,23 @@ class Search {
 class TreeBuilderAsTreeList {
   static _get_element_for_node(node, node_map, level = 0) {
 
-    function append_name(node, parent_el) {
-      if (typeof (node) == 'string') {
-        var name = node
+    if (typeof (node) == 'string') {
+      var is_root = true
+      if (node == 'LUCA') {
+        // Create a fake node for LUCA.
+        node = {
+          'name': node,
+          'tag': 'The theoretical Last Universal Common Ancestor.'
+        }
       } else {
-        var { name } = node
+        // If this is a parent node, load it's data from the tree where it's a child.
+        node = window.page.state.data_map.get_metadata(node)
       }
+    } else {
+      var is_root = false
+    }
+
+    function append_name(node, parent_el) {
       var name_el = document.createElement('span')
       var wikipedia_link_el = document.createElement('a')
       wikipedia_link_el.href = 'https://en.wikipedia.org/wiki/' + name
@@ -365,32 +433,34 @@ class TreeBuilderAsTreeList {
       }
     }
 
-    function add_float_right(node, parent_el) {
+    function add_float_right(node, parent_el, is_root) {
       var right_el = document.createElement('span')
       right_el.classList.add('float-right')
-      maybe_append_open_tree_button(node, right_el)
+      maybe_append_open_tree_button(node, right_el, is_root)
       maybe_append_rank(node, right_el)
       parent_el.appendChild(right_el)
     }
 
     function maybe_append_open_tree_button(node, parent_el) {
-      var name = node.name
-      if (name == null) {
-        // TODO: Add button to open the parent tree.
-        return
-      }
-      var id = node.name.toLowerCase()
       if (!window.page) {
         // Abort early during init.
-        // TODO: Optimise so this doesn't happen. (The menu should load before the first tree load)
         return
       }
+
+      var id = node.name.toLowerCase()
       if (window.page.state.menu_map.has_taxa(id)) {
         var button_el = document.createElement('button')
-        button_el.innerText = 'See children'
-        button_el.addEventListener('click', () => {
-          window.page.select_new_tree_range(id, false)
-        })
+        if (is_root) {
+          button_el.innerText = 'See parent'
+          button_el.addEventListener('click', () => {
+            window.page.select_new_tree_range(window.page.state.data_map.get_root(id), false)
+          })
+        } else {
+          button_el.innerText = 'See children'
+          button_el.addEventListener('click', () => {
+            window.page.select_new_tree_range(id, false)
+          })
+        }
         parent_el.appendChild(button_el)
       }
     }
@@ -452,7 +522,7 @@ class TreeBuilderAsTreeList {
       outer_box_el.appendChild(inner_box_el)
 
       append_name(node, inner_box_el)
-      add_float_right(node, inner_box_el)
+      add_float_right(node, inner_box_el, is_root)
       maybe_append_common_names(node, inner_box_el)
       maybe_append_tag_line(node, inner_box_el)
       maybe_append_images(node, inner_box_el)
@@ -460,13 +530,9 @@ class TreeBuilderAsTreeList {
       parent_el.appendChild(outer_box_el)
     }
 
-    if (typeof (node) == 'string') {
-      var name = node
-      var id = name
-    } else {
-      var { name, parent } = node
-      var id = parent + '_' + name
-    }
+
+    var { name, parent } = node
+    var id = parent + '_' + name
 
     var children = node_map.get(name)
     var has_children = !!children
@@ -511,7 +577,8 @@ class TreeBuilderAsTreeList {
 
   static get_html_for_tree_range(data) {
 
-    if (!data.tree_range) {
+    if (!data.tree_range || !window.page) {
+      // TODO: Optimise so this doesn't happen with the page initialised and the menu loaded.
       return  // Abort early during initialisation.
     }
 
