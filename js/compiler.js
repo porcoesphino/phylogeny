@@ -25,7 +25,7 @@ class Data {
         var all_data = []
         for (var i = 0; i < window.data_files.length; i++) {
           var file_metadata = window.data_files[i]
-          var var_name_for_file = 'data_' + file_metadata.file
+          var var_name_for_file = file_metadata.file
           if (!window.hasOwnProperty(var_name_for_file)) {
             throw new Error('Data missing: ' + var_name_for_file)
           }
@@ -34,7 +34,7 @@ class Data {
         }
         return all_data
       default:
-        var data_variable_name = 'data_' + content_select_value
+        var data_variable_name = content_select_value
         if (!window.hasOwnProperty(data_variable_name)) {
           throw new Error('Data missing: ' + data_variable_name)
         }
@@ -176,7 +176,7 @@ class Search {
   _menu_el_matches_search(el, search_input) {
     var input_el = el.getElementsByTagName('input')[0];
     var id = input_el.id
-    var data_for_menu_item = window['data_' + id]
+    var data_for_menu_item = window[id]
     for (var data_i = 0; data_i < data_for_menu_item.length; data_i++) {
       var taxa_metadata = data_for_menu_item[data_i]
       if (taxa_metadata.name.includes(search_input)) {
@@ -537,7 +537,7 @@ class Page {
     this._card_select = document.getElementById('card-select');
 
     this.query_params = new QueryParams()
-    this.data = new Data('animalia_phyla_common', 'all')
+    this.data = new Data('luca_animalia', 'all')
 
     this.search = new Search(this.data)
     this.search.add_callback()
