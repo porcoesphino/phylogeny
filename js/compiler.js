@@ -76,12 +76,8 @@ class QueryParams {
   }
 }
 
-class Data {
-
-  constructor(tree_range, card = 'all') {
-    this._tree_range = tree_range
-    this._card = card
-    this._clear_cache()
+class MenuMap {
+  constructor() {
     this._menu_mapped_by_taxa = null
   }
 
@@ -96,12 +92,22 @@ class Data {
     return this._menu_mapped_by_taxa
   }
 
-  has_menu_item(taxa) {
+  has_taxa(taxa) {
     return this._get_menu_map().has(taxa.toLowerCase())
   }
 
-  get_menu_metadata_for_taxa(taxa) {
+  get_metadata(taxa) {
     return this._get_menu_map().get(taxa)
+  }
+}
+
+class State {
+
+  constructor(tree_range, card = 'all') {
+    this._tree_range = tree_range
+    this._card = card
+    this._clear_cache()
+    this.menu_map = new MenuMap()
   }
 
   _get_data(root_id) {
@@ -112,14 +118,14 @@ class Data {
           var file_metadata = window.data_files[i]
           var var_name_for_file = file_metadata.file
           if (!window.hasOwnProperty(var_name_for_file)) {
-            throw new Error('Data missing: ' + var_name_for_file)
+            throw new Error('State missing: ' + var_name_for_file)
           }
           var data_from_file = window[var_name_for_file]
           all_data = all_data.concat(data_from_file)
         }
         return all_data
       default:
-        var metadata = this.get_menu_metadata_for_taxa(root_id)
+        var metadata = this.menu_map.get_metadata(root_id)
         var data_variable_name = metadata.file
         if (!window.hasOwnProperty(data_variable_name)) {
           throw new Error('Data missing: ' + data_variable_name)
@@ -129,7 +135,7 @@ class Data {
   }
 
   _clear_cache() {
-    this._data = null
+    this._displayed_tree_raw_data = null
     this._parent_to_child_list = null
     this._root_name = null
     this._max_card = null
@@ -158,19 +164,19 @@ class Data {
     this._clear_cache()
   }
 
-  get data() {
-    if (!this._data) {
+  get displayed_tree_raw_data() {
+    if (!this._displayed_tree_raw_data) {
       if (!this.tree_range) {
         return []  // Abort early during initialisation.
       }
-      this._data = this._get_data(this.tree_range)
+      this._displayed_tree_raw_data = this._get_data(this.tree_range)
     }
-    return this._data
+    return this._displayed_tree_raw_data
   }
 
   _update_maps() {
 
-    if (this.data.length == 0) {
+    if (this.displayed_tree_raw_data.length == 0) {
       return  // Abort early during initialisation.
     }
 
@@ -179,8 +185,8 @@ class Data {
     var filtered_nodes = []
     var max_card = 0
 
-    for (var i = 0; i < this.data.length; i++) {
-      var n = this.data[i]
+    for (var i = 0; i < this.displayed_tree_raw_data.length; i++) {
+      var n = this.displayed_tree_raw_data[i]
 
       var display_node = (this.card == 'all' || Number(this.card) == n.card)
 
@@ -255,8 +261,8 @@ class Data {
 class Search {
   static ID = 'taxa-search'
 
-  constructor(data) {
-    this._data = data
+  constructor(state) {
+    this._state = state
   }
 
   _menu_el_matches_search(el, search_input) {
@@ -379,7 +385,7 @@ class TreeBuilderAsTreeList {
         // TODO: Optimise so this doesn't happen. (The menu should load before the first tree load)
         return
       }
-      if (window.page.data.has_menu_item(id)) {
+      if (window.page.state.menu_map.has_taxa(id)) {
         var button_el = document.createElement('button')
         button_el.innerText = 'See children'
         button_el.addEventListener('click', () => {
@@ -699,9 +705,9 @@ class Page {
     this._summary = new Accordion(Accordion.ID_SUMMARY)
 
     this.query_params = new QueryParams()
-    this.data = new Data('animalia', 'all')
+    this.state = new State('animalia', 'all')
 
-    this.search = new Search(this.data)
+    this.search = new Search(this.state)
     this.search.add_callback()
 
     this._update_tree_range_view = (data) => {
@@ -722,20 +728,20 @@ class Page {
 
     this.select_new_tree_range = (new_value, button_click = false) => {
       page.query_params.root = new_value
-      this.data.tree_range = new_value
-      this.data.card = 'all'
+      this.state.tree_range = new_value
+      this.state.card = 'all'
       page.query_params.card = 'all'
       this.add_card_select_options()
-      update_tree_range_view(this.data)
+      update_tree_range_view(this.state)
       this.scroll_tree_to_top()
 
-      if (this.data.tree_range == 'all') {
+      if (this.state.tree_range == 'all') {
         this._card_select.disabled = true
       } else {
         this._card_select.disabled = false
       }
 
-      var menu_metadata = this.data.get_menu_metadata_for_taxa(new_value)
+      var menu_metadata = this.state.menu_map.get_metadata(new_value)
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
 
       if (!button_click) {
@@ -745,14 +751,14 @@ class Page {
       }
     }
 
-    this._update_tree_range_view(this.data)
+    this._update_tree_range_view(this.state)
 
     var update_tree_range_view = this._update_tree_range_view
 
     var card_select_change = () => {
       page.query_params.card = this._card_select.value
-      this.data.card = this._card_select.value
-      update_tree_range_view(this.data)
+      this.state.card = this._card_select.value
+      update_tree_range_view(this.state)
     }
     this._card_select.addEventListener('change', function () {
       card_select_change()
@@ -810,12 +816,12 @@ class Page {
     el_all.innerText = 'All'
     this._card_select.appendChild(el_all)
 
-    var max_card = this.data.max_card
+    var max_card = this.state.max_card
     if (!!max_card) {
       var el_opt_group = document.createElement('optgroup')
       el_opt_group.label = 'Cards'
 
-      for (var i = 0; i < this.data.max_card; i++) {
+      for (var i = 0; i < this.state.max_card; i++) {
         var el_option = document.createElement('option')
         var label = i + 1
         el_option.value = label
@@ -829,7 +835,7 @@ class Page {
 
   page_load_callback() {
 
-    var tree_range_builder = new TreeRangeSelectorBuilder(this.data.tree_range)
+    var tree_range_builder = new TreeRangeSelectorBuilder(this.state.tree_range)
     tree_range_builder.replace_tree_range_as_buttons(this._tree_range_select)
     var select_new_tree_range = this.select_new_tree_range
     document.getElementById('tree-range-select-buttons').addEventListener('click', function (event) {
@@ -841,11 +847,11 @@ class Page {
 
     var tree_range = this.query_params.root
     if (!!tree_range) {
-      this.data.tree_range = tree_range
+      this.state.tree_range = tree_range
       var radio_btn = document.getElementById(tree_range);
       radio_btn.checked = true;
       radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
-      var menu_metadata = this.data.get_menu_metadata_for_taxa(tree_range)
+      var menu_metadata = this.state.menu_map.get_metadata(tree_range)
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
     }
 
@@ -854,13 +860,13 @@ class Page {
     var card = this.query_params.card
     if (!!card) {
       this._card_select.value = card
-      this.data.card = card
+      this.state.card = card
     } else {
       this._card_select.value = 'all'
-      this.data.card = 'all'
+      this.state.card = 'all'
     }
 
-    this._update_tree_range_view(this.data)
+    this._update_tree_range_view(this.state)
 
     var controls_are_open = this.query_params.controls
     this._controls.set_state(controls_are_open)
