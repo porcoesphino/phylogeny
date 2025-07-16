@@ -26,6 +26,8 @@ class QueryParams {
       // If this is a default, make sure it's not sent to the URL.
       if (!!params.has(key)) {
         params.delete(key)
+      } else {
+        return
       }
     } else {
       // If this will set the same value, abort early.
