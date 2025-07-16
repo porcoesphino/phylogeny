@@ -532,12 +532,16 @@
     "parent": "Conchifera",
     "rank": "Class",
     "ipa": "skæˈfɒpədə",
+    "etymology": "'shovel foot'",
     "common": [
       "tusk shells"
     ],
-    "tag": "",
+    "tag": "They have tapering shells that are conical and slightly curved to the dorsal side. The adult lives buried in sand or mud, with their head-end pointed downwards. The narrow posterior end of the shell sticks up into the seawater for water exchange and waste expulsion. Their tentacles dig for food and eat with a radula. They have no gills.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Natural_History_-_Mollusca_-_Dentalium_Tarentinum.png/40px-Natural_History_-_Mollusca_-_Dentalium_Tarentinum.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Natural_History_-_Mollusca_-_Dentalium_Tarentinum.png/40px-Natural_History_-_Mollusca_-_Dentalium_Tarentinum.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Calliodentalium_semitracheatum_%28MNHN-IM-2012-13993%29.jpeg/330px-Calliodentalium_semitracheatum_%28MNHN-IM-2012-13993%29.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Antalis_vulgaris.jpg/330px-Antalis_vulgaris.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Pulsellum_filiforme_%28MNHN-IM-2000-24333%29_001.jpeg/330px-Pulsellum_filiforme_%28MNHN-IM-2000-24333%29_001.jpeg"
     ]
   }
 ]
