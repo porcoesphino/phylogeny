@@ -6,7 +6,11 @@
     "ipa": "",
     "common": [],
     "tag": "Have no conch or shell.",
-    "imgs": []
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Tonicella-lineata.jpg/330px-Tonicella-lineata.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Falcidens_crossotus.jpg/120px-Falcidens_crossotus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Dondersia_annulata%2C_Nudi_Falls_imported_from_iNaturalist_photo_95332364.jpg/250px-Dondersia_annulata%2C_Nudi_Falls_imported_from_iNaturalist_photo_95332364.jpg"
+    ]
   },
   {
     "name": "Polyplacophora",
@@ -55,7 +59,14 @@
     "ipa": "",
     "common": [],
     "tag": "Members may bear a single shell, a single pair of shells, or lack a shell.",
-    "imgs": []
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Giant_clam_or_Tridacna_gigas.jpg/250px-Giant_clam_or_Tridacna_gigas.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Nautilus_pompilius_%28head%29.jpg/330px-Nautilus_pompilius_%28head%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Octopus3.jpg/330px-Octopus3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Slimaczek.jpg/330px-Slimaczek.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Vinogradski_puz_glava.jpg/330px-Vinogradski_puz_glava.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/CornishMussels.JPG/330px-CornishMussels.JPG"
+    ]
   },
   {
     "name": "Monoplacophora",
@@ -81,7 +92,7 @@
       "cuttlefish",
       "nautilus"
     ],
-    "tag": "Characterized by bilateral body symmetry, a prominent head, and a set of arms or tentacles modified from the primitive molluscan foot. Many species can squirt ink.",
+    "tag": "Characterized by bilateral body symmetry, a prominent head, a set of arms or tentacles with a two part beak in the center, usually a radula. Many species can squirt ink.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Octopus_vulgaris_Merculiano.jpg/120px-Octopus_vulgaris_Merculiano.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sepioteuthis_sepioidea_%28Caribbean_Reef_Squid%29.jpg/330px-Sepioteuthis_sepioidea_%28Caribbean_Reef_Squid%29.jpg",
@@ -89,6 +100,217 @@
       "https://upload.wikimedia.org/wikipedia/commons/9/9f/Cuttlefish_komodo_large.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Nautilus_belauensis_from_Palau.jpg/330px-Nautilus_belauensis_from_Palau.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Nautilus_pompilius_%28head%29.jpg/330px-Nautilus_pompilius_%28head%29.jpg"
+    ]
+  },
+  {
+    "name": "Nautilida",
+    "parent": "Cephalopoda",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "Have a coiled shell covering its body and tentacles that form two rings around its mouth. The eyes lack any lens or cornea they also lack ocular muscles.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Nautilus_belauensis_from_Palau.jpg/250px-Nautilus_belauensis_from_Palau.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Nautilus_pompilius_%28head%29.jpg/330px-Nautilus_pompilius_%28head%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/73/Nautilus_pompilius.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/16/Allonautilus_scrobiculatus.jpg"
+    ]
+  },
+  {
+    "name": "Octopodiformes",
+    "parent": "Cephalopoda",
+    "rank": "Superorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "They have eight arms, although a branch has thin filaments that were modified from two extra tentacles.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Octopus_vulgaris_Merculiano.jpg/250px-Octopus_vulgaris_Merculiano.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Vampyroteuthis_infernalis_dorsal_view.jpg/330px-Vampyroteuthis_infernalis_dorsal_view.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Octopus3.jpg/330px-Octopus3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Enteroctopus_dofleini_in_aquarium_rotated.jpg/330px-Enteroctopus_dofleini_in_aquarium_rotated.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Pu_-_Vampyroteuthis_infernalis_-_2.jpg/330px-Pu_-_Vampyroteuthis_infernalis_-_2.jpg"
+    ]
+  },
+  {
+    "name": "Vampyromorphida",
+    "parent": "Octopodiformes",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "vampire squids"
+    ],
+    "tag": "Found in extreme deep sea conditions using its bioluminescent organs and its unique oxygen metabolism. It has two long retractile filaments.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Vampire_des_abysses.jpg/250px-Vampire_des_abysses.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Vampyroteuthis_infernalis_dorsal_view.jpg/330px-Vampyroteuthis_infernalis_dorsal_view.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Vampyroteuthis_infernalis_arms.jpg/250px-Vampyroteuthis_infernalis_arms.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/MBNMS_-_Juvenile_Vampire_Squid_%2827667875204%29.jpg/330px-MBNMS_-_Juvenile_Vampire_Squid_%2827667875204%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Pu_-_Vampyroteuthis_infernalis_-_2.jpg/330px-Pu_-_Vampyroteuthis_infernalis_-_2.jpg"
+    ]
+  },
+  {
+    "name": "Octopoda",
+    "parent": "Octopodiformes",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "octopus"
+    ],
+    "tag": "Soft-bodied, eight-limbed molluscs. They can radically deform their shape and many can change colour. They use their siphon for respiration, waste disposal, discharging ink, and locomotion. They have a complex nervous system, excellent sight, and are among the most intelligent invertebrates.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Octopus_vulgaris_Merculiano.jpg/250px-Octopus_vulgaris_Merculiano.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Octopus3.jpg/330px-Octopus3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Enteroctopus_dofleini_in_aquarium_rotated.jpg/330px-Enteroctopus_dofleini_in_aquarium_rotated.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Suckers_of_octopus_by_steve_lodefink.jpg/250px-Suckers_of_octopus_by_steve_lodefink.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Octopus_vulgaris_%2C_%D0%9E%D0%BA%D1%82%D0%BE%D0%BF%D0%BE%D0%B4_%21.JPG/330px-Octopus_vulgaris_%2C_%D0%9E%D0%BA%D1%82%D0%BE%D0%BF%D0%BE%D0%B4_%21.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Graneledone_boreopacifica2.jpg/250px-Graneledone_boreopacifica2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fish3566_-_Flickr_-_NOAA_Photo_Library.jpg/330px-Fish3566_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Reef1072_-_Flickr_-_NOAA_Photo_Library.jpg/330px-Reef1072_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Dumbo-hires_%28cropped%29.jpg/330px-Dumbo-hires_%28cropped%29.jpg"
+    ]
+  },
+  {
+    "name": "Decapodiformes",
+    "parent": "Cephalopoda",
+    "rank": "Superorder",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "They have ten limbs, specifically eight short arms and two long tentacles.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%E3%82%A2%E3%82%AA%E3%83%AA%E3%82%A4%E3%82%AB-Sepioteuthis_lessoniana.jpg/330px-%E3%82%A2%E3%82%AA%E3%83%AA%E3%82%A4%E3%82%AB-Sepioteuthis_lessoniana.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Sepiola_atlantica.jpg/330px-Sepiola_atlantica.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sepia_officinalis_2.jpg/250px-Sepia_officinalis_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Spirula_spirula_illustration.jpg/250px-Spirula_spirula_illustration.jpg"
+    ]
+  },
+  {
+    "name": "Spirulida",
+    "parent": "Decapodiformes",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "ram's horn squid"
+    ],
+    "tag": "A deep-water squid-like mollusk with a light-emitting organ. They have no radula, at most a vestigial one. Its shell commonly floats onto beaches and is known as the ram's horn shell.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Spirula_spirula_illustration.jpg/250px-Spirula_spirula_illustration.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/18/Spirula_spirula4.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Spirula_spirula1.jpg/330px-Spirula_spirula1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Spirula_spirula2.jpg/330px-Spirula_spirula2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Spirula_spirula_lateral-view.jpg/250px-Spirula_spirula_lateral-view.jpg"
+    ]
+  },
+  {
+    "name": "Sepiida",
+    "parent": "Decapodiformes",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "cuttlefish"
+    ],
+    "tag": "They have a unique internal shell, the cuttlebone, which is used for control of buoyancy. Their eyes have W-shaped pupils, and two tentacles are furnished with denticulated suckers. Some produce venom that's excreted through their beak, and others can change colour. They eat small molluscs, crabs, shrimp, fish, octopuses, worms, and other cuttlefish. Life expectancy is about 1–2 years.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Sepia_officinalis_2.jpg/250px-Sepia_officinalis_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Cuttlefish_komodo_large.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Australian_Giant_Cuttlefish%2C_Australia_imported_from_iNaturalist_photo_479494705.jpg/330px-Australian_Giant_Cuttlefish%2C_Australia_imported_from_iNaturalist_photo_479494705.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Cuttlefish_eye.jpg/330px-Cuttlefish_eye.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Kalamar.jpg/250px-Kalamar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Ascarosepion_pfefferi_1.jpg/330px-Ascarosepion_pfefferi_1.jpg"
+    ]
+  },
+  {
+    "name": "Sepiolida",
+    "parent": "Decapodiformes",
+    "rank": "Suborder",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "bobtail squid"
+    ],
+    "tag": "They have a rounder mantle than cuttlefish and have no cuttlebone with a typical male mantle length being between 1 and 8 cm.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Heteroteuthis_hawaiiensis1.jpg/250px-Heteroteuthis_hawaiiensis1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Sepiola_atlantica.jpg/330px-Sepiola_atlantica.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Bobtail_squid.jpg/330px-Bobtail_squid.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Rossia_pacifica.jpg/330px-Rossia_pacifica.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Euprymna_scolopes_%28Bobtail_squid_in_orange_form%29.jpg/330px-Euprymna_scolopes_%28Bobtail_squid_in_orange_form%29.jpg"
+    ]
+  },
+  {
+    "name": "Idiosepiidae",
+    "parent": "Decapodiformes",
+    "rank": "Family",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "pygmy squids"
+    ],
+    "tag": "The smallest known squids. The dorsal surface of the mantle has a unique oval adhesive organ, which secretes a sticky substance and is used to attach itself to seaweed or seagrass blades.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Tropical_Pygmy_Squid_%28Idiosepius_pygmaeus%29_%2825377304317%29.jpg/330px-Tropical_Pygmy_Squid_%28Idiosepius_pygmaeus%29_%2825377304317%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Idiosepius_paradoxus_himeika03_1.jpg/330px-Idiosepius_paradoxus_himeika03_1.jpg"
+    ]
+  },
+  {
+    "name": "Myopsida",
+    "parent": "Decapodiformes",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "pencil squids",
+      "European common squids",
+      "reef squids"
+    ],
+    "tag": "They lack a secondary eyelid. Their arms and tentacles are ornamented with simple suckers without hooks.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/%E3%82%A2%E3%82%AA%E3%83%AA%E3%82%A4%E3%82%AB-Sepioteuthis_lessoniana.jpg/330px-%E3%82%A2%E3%82%AA%E3%83%AA%E3%82%A4%E3%82%AB-Sepioteuthis_lessoniana.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Squid_komodo.jpg/250px-Squid_komodo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Caribbean_reef_squid.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Logilo_cc.jpg/330px-Logilo_cc.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1a/Uroteuthis_noctiluca.jpeg"
+    ]
+  },
+  {
+    "name": "Bathyteuthida",
+    "parent": "Decapodiformes",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "common": [],
+    "tag": "Deep see squid with some bioluminescent species. They lack corneal membranes covering their eyes. They have tentacle pockets in the head and small suckers on the buccal supports.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Bathyteuthisabyssicola.jpg/330px-Bathyteuthisabyssicola.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Chtenopteryx_sicula_1.jpg/250px-Chtenopteryx_sicula_1.jpg"
+    ]
+  },
+  {
+    "name": "Oegopsida",
+    "parent": "Decapodiformes",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "giant squid",
+      "firefly squid"
+    ],
+    "tag": "Their head is without tentacle pockets, eyes lack a corneal covering, arms and tentacle clubs may have hooks, the buccal supports are without suckers, and oviducts in females are paired.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/c/c0/Watasenia_scintillans_%28rotated%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Slosarczykovia_circumantarctica_122_mm_ML.jpg/330px-Slosarczykovia_circumantarctica_122_mm_ML.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Octosquid.jpg/330px-Octosquid.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fa/Joubiniteuthis_portieri.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Cranchiidae_sp.jpg/250px-Cranchiidae_sp.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/92/Dosidicus_gigas.jpg",
+      "https://upload.wikimedia.org/wikipedia/en/4/49/Giantsquidphoto2.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Giant_squid_Ranheim.jpg/250px-Giant_squid_Ranheim.jpg"
     ]
   },
   {
