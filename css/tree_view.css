@@ -7,10 +7,12 @@
   font-size: 0.75em;
   margin: 0 4px;
   text-align: center;
-  /* border-radius: 0.2rem; */
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   vertical-align: text-top;
   height: 18px;
   line-height: 10px;
+  cursor: pointer;
 }
 
 .badge {

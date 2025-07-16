@@ -5,23 +5,23 @@
   padding: 4px;
 }
 
-li {
+#tree-range-select-buttons li {
   list-style: none;
 }
 
-ul {
+#tree-range-select-buttons ul {
   padding-inline-start: 20px;
 }
 
 /** Hide the radiobox. */
-input[type=radio] {
+#tree-range-select-buttons input[type=radio] {
   opacity: 0;
   height: 1px;
   visibility: hidden;
   overflow: hidden;
 }
 
-label div {
+#tree-range-select-buttons label div {
   background-color: #e4e4e4;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
@@ -34,11 +34,11 @@ label div {
   margin: 2px;
 }
 
-label:hover {
+#tree-range-select-buttons label:hover {
   cursor: pointer;
 }
 
-input:checked+label div {
+#tree-range-select-buttons input:checked+label div {
   background-color: #a5dc86;
   box-shadow: none;
 }
