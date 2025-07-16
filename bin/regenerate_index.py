@@ -456,7 +456,7 @@ def get_html() -> str:
           <div>
             <div class="control-section">Select tree range</div>
             <input type="search" id="taxa-search" placeholder="Exact match search — try plurals"
-              list="common-names-and-taxa-list">
+              list="common-names-and-taxa-list" enterkeyhint="search">
             <datalist id="common-names-and-taxa-list">
             </datalist>
             <div id="tree-range-select-buttons">
