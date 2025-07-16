@@ -8,8 +8,10 @@ class QueryParams {
   static _KEY_SUMMARY = 'summary'
   static _DEFAULT_SUMMARY = ''
   static _KEY_ROOT = 'root'
+  static _DEFAULT_ROOT = 'animalia'
   static _KEY_CARD = 'card'
   static _DEFAULT_CARD = 'all'
+  static _ALLOWED_KEYS = new Set([QueryParams._KEY_CONTROLS, QueryParams._KEY_SUMMARY, QueryParams._KEY_ROOT, QueryParams._KEY_CARD])
 
   _get(key, default_value = null) {
     const params = new URLSearchParams(location.search);
@@ -75,6 +77,39 @@ class QueryParams {
 
   set card(new_value) {
     this._update(QueryParams._KEY_CARD, new_value, QueryParams._DEFAULT_CARD)
+  }
+
+  clean_url(state) {
+    const params = new URLSearchParams(location.search);
+    const keys = Array.from(params.keys())
+    for (var i = 0; i < keys.length; i++) {
+      if (!QueryParams._ALLOWED_KEYS.has(keys[i])) {
+        params.delete(keys[i])
+      }
+    }
+    if (params.has(QueryParams._KEY_ROOT)) {
+      if (!state.data_map.has_taxa(this.root)) {
+        params.delete(QueryParams._KEY_ROOT)
+      }
+    }
+
+    // TODO: This is a terrible piece of code, even if isolated. Clean up.
+    if (params.get(QueryParams._KEY_SUMMARY) == QueryParams._DEFAULT_SUMMARY) {
+      params.delete(QueryParams._KEY_SUMMARY)
+    }
+    if (params.get(QueryParams._KEY_CONTROLS) == QueryParams._DEFAULT_CONTROLS) {
+      params.delete(QueryParams._KEY_CONTROLS)
+    }
+    if (params.get(QueryParams._KEY_CARD) == QueryParams._DEFAULT_CARD) {
+      params.delete(QueryParams._KEY_CARD)
+    }
+
+    if (params.size > 0) {
+      var new_location = `${location.pathname}?${params}`
+    } else {
+      var new_location = location.pathname
+    }
+    window.history.replaceState({}, '', new_location);
   }
 }
 
@@ -802,7 +837,7 @@ class Page {
     this._summary = new Accordion(Accordion.ID_SUMMARY)
 
     this.query_params = new QueryParams()
-    this.state = new State('animalia', 'all')
+    this.state = new State(QueryParams._DEFAULT_ROOT, QueryParams._DEFAULT_CARD)
 
     this.search = new Search(this.state)
     this.search.add_callback()
@@ -939,6 +974,8 @@ class Page {
         select_new_tree_range(clicked_range, true)
       }
     });
+
+    this.query_params.clean_url(this.state)
 
     var tree_range = this.query_params.root
     if (!!tree_range) {
