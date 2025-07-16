@@ -145,6 +145,8 @@ class DataMap {
   constructor() {
     this._taxa_to_root = null
     this._taxa_to_metadata = null
+    this._taxa_set = null
+    this._common_name_set = null
   }
 
   static get_data_for_file(metadata_file) {
@@ -158,6 +160,8 @@ class DataMap {
     if (this._data_mapped_by_taxa == null) {
       this._taxa_to_root = new Map()
       this._taxa_to_metadata = new Map()
+      var taxa_list = []
+      var common_name_list = []
       for (var file_i = 0; file_i < window.data_files.length; file_i++) {
         var menu_metadata = window.data_files[file_i]
         var tree_as_list = DataMap.get_data_for_file(menu_metadata.file)
@@ -170,8 +174,17 @@ class DataMap {
           }
           this._taxa_to_root.set(id, root)
           this._taxa_to_metadata.set(id, taxa_metadata)
+          taxa_list.push(id)
+
+          if (!!taxa_metadata.common) {
+            for (var common_i = 0; common_i < taxa_metadata.common.length; common_i++) {
+              common_name_list.push(taxa_metadata.common[common_i])
+            }
+          }
         }
       }
+      this._taxa_set = new Set(taxa_list)
+      this._common_name_set = new Set(common_name_list)
     }
     return this._data_mapped_by_taxa
   }
@@ -196,6 +209,20 @@ class DataMap {
     }
     return this._taxa_to_metadata.get(taxa.toLowerCase())
   }
+
+  get taxa_set() {
+    if (!this._taxa_set) {
+      this._build_maps()
+    }
+    return this._taxa_set
+  }
+
+  get common_name_set() {
+    if (!this._common_name_set) {
+      this._build_maps()
+    }
+    return this._common_name_set
+  }
 }
 
 class State {
@@ -206,6 +233,7 @@ class State {
     this._clear_cache()
     this.menu_map = new MenuMap()
     this.data_map = new DataMap()
+    this._autocomplete_set = null
   }
 
   get_tree_for_root_id(root_id) {
@@ -350,10 +378,20 @@ class State {
     }
     return this._name_to_node
   }
+
+  get autocomplete_set() {
+    if (!this._autocomplete_set) {
+      var taxa_set = this.data_map.taxa_set
+      var common_name_set = this.data_map.common_name_set
+      this._autocomplete_set = new Set([...taxa_set, ...common_name_set])
+    }
+    return this._autocomplete_set
+  }
 }
 
 class Search {
   static ID = 'taxa-search'
+  static AUTOCOMPLETE_LIST_ID = 'common-names-and-taxa-list'
 
   constructor(state) {
     this._state = state
@@ -450,6 +488,18 @@ class Search {
   add_callback() {
     var process_typing = this._debounce(() => this._search_callback());
     document.getElementById(Search.ID).addEventListener('input', process_typing)
+  }
+
+  add_autocomplete_options() {
+    const fragment = document.createDocumentFragment();
+    const autocomplete_set = this._state.autocomplete_set
+    for (const autocomplete_value of autocomplete_set.values()) {
+      const option_el = document.createElement("option");
+      option_el.value = autocomplete_value
+      fragment.appendChild(option_el);
+    }
+    const autocomplete_list_el = document.getElementById(Search.AUTOCOMPLETE_LIST_ID)
+    autocomplete_list_el.appendChild(fragment)
   }
 }
 
@@ -917,8 +967,13 @@ class Page {
     var page_load_callback = () => {
       this.page_load_callback()
     }
-    setTimeout(function () {
+    setTimeout(() => {
       page_load_callback()
+      // Add the autocomplete options after releasing this thread.
+      // These are low priority and could be put in another thread but this is simpler for now.
+      setTimeout(() => {
+        this.search.add_autocomplete_options()
+      })
     })
 
     window.addEventListener("popstate", (e) => {
