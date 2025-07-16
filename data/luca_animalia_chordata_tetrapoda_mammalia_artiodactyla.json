@@ -1,7 +1,7 @@
 [
   {
     "name": "Camelidae",
-    "parent": "Artiodactyl",
+    "parent": "Artiodactyla",
     "rank": "Family",
     "ipa": "",
     "etymology": "",
@@ -21,7 +21,7 @@
   },
   {
     "name": "Suina",
-    "parent": "Artiodactyl",
+    "parent": "Artiodactyla",
     "rank": "Suborder",
     "ipa": "",
     "etymology": "",
@@ -71,7 +71,7 @@
   },
   {
     "name": "Cetruminantia",
-    "parent": "Artiodactyl",
+    "parent": "Artiodactyla",
     "rank": "Clade",
     "ipa": "",
     "etymology": "",
