@@ -171,7 +171,7 @@ class State {
     this.data_map = new DataMap()
   }
 
-  _get_data(root_id) {
+  get_tree_for_root_id(root_id) {
     switch (root_id) {
       case 'all':
         var all_data = []
@@ -226,7 +226,7 @@ class State {
       if (!this.tree_range) {
         return []  // Abort early during initialisation.
       }
-      this._displayed_tree_raw_data = this._get_data(this.tree_range)
+      this._displayed_tree_raw_data = this.get_tree_for_root_id(this.tree_range)
     }
     return this._displayed_tree_raw_data
   }
@@ -318,21 +318,30 @@ class State {
 class Search {
   static ID = 'taxa-search'
 
+  // TODO: Broken for pig and crab
   constructor(state) {
     this._state = state
   }
 
-  _menu_el_matches_search(el, search_input) {
+  static ensure_parents_are_visible(el) {
+    var p = el.parentNode
+    while (p.id != 'tree-range-select-buttons') {
+      p.style.display = ''
+      p = p.parentNode
+    }
+  }
+
+  _menu_el_matches_search(el, lowercase_search_input) {
     var input_el = el.getElementsByTagName('input')[0];
     var id = input_el.id
-    var data_for_menu_item = window[id]
+    var data_for_menu_item = window.page.state.get_tree_for_root_id(id)
     for (var data_i = 0; data_i < data_for_menu_item.length; data_i++) {
       var taxa_metadata = data_for_menu_item[data_i]
-      if (taxa_metadata.name.includes(search_input)) {
+      if (taxa_metadata.name.toLowerCase().includes(lowercase_search_input)) {
         return true
       }
 
-      if (!!taxa_metadata.tag && taxa_metadata.tag.includes(search_input)) {
+      if (!!taxa_metadata.tag && taxa_metadata.tag.toLowerCase().includes(lowercase_search_input)) {
         return true
       }
 
@@ -341,7 +350,7 @@ class Search {
       }
       var common_names = taxa_metadata.common
       for (var name_i = 0; name_i < common_names.length; name_i++) {
-        if (common_names[name_i].includes(search_input)) {
+        if (common_names[name_i].toLowerCase().includes(lowercase_search_input)) {
           return true
         }
       }
@@ -352,24 +361,46 @@ class Search {
 
   _search_callback() {
     var search_el = document.getElementById(Search.ID)
-    var search_input = search_el.value
+    var search_input = search_el.value.toLowerCase()
+
+    var matches = []
 
     var menu_items = document.querySelectorAll('#tree-range-select-buttons li, #tree-range-select-buttons > div')
+
+    // If the search is empty, make the menu visible.
+    if (!search_input) {
+      for (var i = 0; i < menu_items.length; i++) {
+        var menu_el = menu_items[i]
+        menu_el.style.display = ''
+      }
+      return
+    }
+
     for (var i = 0; i < menu_items.length; i++) {
       var menu_el = menu_items[i]
 
-      if (!search_input) {
-        menu_el.style.display = ''
-        continue
-      }
 
-      var innerText = menu_items[i].innerText
+
+      var innerText = menu_items[i].innerText.toLowerCase()
       if (innerText.includes(search_input) || this._menu_el_matches_search(menu_el, search_input)) {
-        menu_el.style.display = ''
-      } else {
-        menu_el.style.display = 'none'
+        matches.push(menu_el)
       }
     }
+
+    // Start by hidding all items
+    for (var i = 0; i < menu_items.length; i++) {
+      var menu_el = menu_items[i]
+      menu_el.style.display = 'none'
+    }
+
+    // Then make matches and parents visible
+    // TODO: Parents and matches should be a different colour.
+    for (var i = 0; i < matches.length; i++) {
+      var menu_el = matches[i]
+      menu_el.style.display = ''
+      Search.ensure_parents_are_visible(menu_el)
+    }
+
   }
 
   _debounce(func, timeout = 300) {
