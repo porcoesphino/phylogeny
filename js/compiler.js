@@ -439,7 +439,7 @@ class Search {
 
     var matches = []
 
-    var menu_items = document.querySelectorAll('#tree-range-select-buttons li, #tree-range-select-buttons > div')
+    var menu_items = document.querySelectorAll('#tree-range-select-buttons li, #tree-range-select-buttons > div > div')
 
     // If the search is empty, make the menu visible.
     if (!search_input) {
