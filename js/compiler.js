@@ -320,7 +320,6 @@ class State {
 class Search {
   static ID = 'taxa-search'
 
-  // TODO: Broken for pig and crab
   constructor(state) {
     this._state = state
   }
@@ -563,7 +562,6 @@ class TreeBuilderAsTreeList {
       parent_el.appendChild(outer_box_el)
     }
 
-
     var { name, parent } = node
     var id = parent + '_' + name
 
@@ -611,8 +609,7 @@ class TreeBuilderAsTreeList {
   static get_html_for_tree_range(data) {
 
     if (!data.tree_range || !window.page) {
-      // TODO: Optimise so this doesn't happen with the page initialised and the menu loaded.
-      return  // Abort early during initialisation.
+      throw Error('Trying to build the taxa tree before initialisation completes.')
     }
 
     var root_name = data.root_name
@@ -850,8 +847,6 @@ class Page {
         radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
       }
     }
-
-    this._update_tree_range_view(this.state)
 
     var update_tree_range_view = this._update_tree_range_view
 
