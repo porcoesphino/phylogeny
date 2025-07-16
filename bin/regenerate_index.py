@@ -43,6 +43,13 @@ DATA_LIST = [
         level=1,
     ),
     JsonDataFile(
+        file='luca_animalia_mollusca',
+        domain='animalia',
+        taxa='Mollusca',
+        tag='Snails, bivalves, squids and nudibranchs.',
+        level=1,
+    ),
+    JsonDataFile(
         file='luca_animalia_arthropoda',
         domain='animalia',
         taxa='Arthropoda',

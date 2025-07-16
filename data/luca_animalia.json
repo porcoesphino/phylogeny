@@ -116,7 +116,7 @@
     "card": 3
   },
   {
-    "name": "Molusca",
+    "name": "Mollusca",
     "parent": "Spiralia",
     "rank": "Phylum",
     "ipa": "",
@@ -127,9 +127,10 @@
       "cockles",
       "octopuses",
       "squids",
-      "cuttlefish"
+      "cuttlefish",
+      "nudibranchs"
     ],
-    "tag": "This includes the order nudibranchia.",
+    "tag": "Extant species have a soft body composed almost entirely of muscle, a mantle with a significant cavity used for breathing and excretion, the presence of a radula (except for bivalves), and the structure of the nervous system.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/Grapevinesnail_01.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/4/41/Bivalve_Sea_Shell.png",

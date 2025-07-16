@@ -209,6 +209,13 @@ var data_files = [
     "level": 1
   },
   {
+    "file": "luca_animalia_mollusca",
+    "domain": "animalia",
+    "taxa": "Mollusca",
+    "tag": "Snails, bivalves, squids and nudibranchs.",
+    "level": 1
+  },
+  {
     "file": "luca_animalia_arthropoda",
     "domain": "animalia",
     "taxa": "Arthropoda",
@@ -593,7 +600,7 @@ var data_files = [
         "card": 3
       },
       {
-        "name": "Molusca",
+        "name": "Mollusca",
         "parent": "Spiralia",
         "rank": "Phylum",
         "ipa": "",
@@ -604,9 +611,10 @@ var data_files = [
           "cockles",
           "octopuses",
           "squids",
-          "cuttlefish"
+          "cuttlefish",
+          "nudibranchs"
         ],
-        "tag": "This includes the order nudibranchia.",
+        "tag": "Extant species have a soft body composed almost entirely of muscle, a mantle with a significant cavity used for breathing and excretion, the presence of a radula (except for bivalves), and the structure of the nervous system.",
         "imgs": [
           "https://upload.wikimedia.org/wikipedia/commons/6/69/Grapevinesnail_01.jpg",
           "https://upload.wikimedia.org/wikipedia/commons/4/41/Bivalve_Sea_Shell.png",
@@ -988,6 +996,163 @@ var data_files = [
           "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Physalia_physalis_EM1B0679_%2840827501481%29.jpg/330px-Physalia_physalis_EM1B0679_%2840827501481%29.jpg"
         ],
         "card": 1
+      }
+    ]
+    var luca_animalia_mollusca = [
+      {
+        "name": "Aculifera",
+        "parent": "Mollusca",
+        "rank": "Subphylum",
+        "ipa": "",
+        "common": [],
+        "tag": "Have no conch or shell.",
+        "imgs": []
+      },
+      {
+        "name": "Polyplacophora",
+        "parent": "Aculifera",
+        "rank": "Class",
+        "ipa": "",
+        "common": [
+          "chitons",
+          "sea cradles"
+        ],
+        "tag": "Have a shell composed of eight separate shell plates or valves.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Chiton_magnificus.jpg/120px-Chiton_magnificus.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Tonicella-lineata.jpg/330px-Tonicella-lineata.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Acanthopleura_granulata_with_Nerita_tessellata.jpg/330px-Acanthopleura_granulata_with_Nerita_tessellata.jpg"
+        ]
+      },
+      {
+        "name": "Caudofoveata",
+        "parent": "Aculifera",
+        "rank": "Class",
+        "ipa": "",
+        "common": [],
+        "tag": "Caudofoveata are worm-like molluscs mostly ranging from 0.02 cm to 10 cm.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Falcidens_crossotus.jpg/120px-Falcidens_crossotus.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Chaetoderma_nitidulum.jpg/330px-Chaetoderma_nitidulum.jpg"
+        ]
+      },
+      {
+        "name": "Solenogastres",
+        "parent": "Aculifera",
+        "rank": "Class",
+        "ipa": "",
+        "common": [],
+        "tag": "Small, worm-like, shell-less molluscs.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Epimenia_verrucosa.jpg/120px-Epimenia_verrucosa.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Dondersia_annulata%2C_Nudi_Falls_imported_from_iNaturalist_photo_95332364.jpg/250px-Dondersia_annulata%2C_Nudi_Falls_imported_from_iNaturalist_photo_95332364.jpg"
+        ]
+      },
+      {
+        "name": "Conchifera",
+        "parent": "Mollusca",
+        "rank": "Subphylum",
+        "ipa": "",
+        "common": [],
+        "tag": "Members may bear a single shell, a single pair of shells, or lack a shell.",
+        "imgs": []
+      },
+      {
+        "name": "Monoplacophora",
+        "parent": "Conchifera",
+        "rank": "Class",
+        "ipa": "ˌmɒnoʊpləˈkɒfərə",
+        "etymology": "'one'-'plate'-'bearing'",
+        "common": [],
+        "tag": "Molluscs with a cap-like shell, inhabiting deep sea environments.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Tryblidium_reticulatum_2.jpg/60px-Tryblidium_reticulatum_2.jpg"
+        ]
+      },
+      {
+        "name": "Cephalopoda",
+        "parent": "Conchifera",
+        "rank": "Class",
+        "ipa": "sɛfəˈlɒpədə",
+        "etymology": "'head'-'feet'",
+        "common": [
+          "squid",
+          "octopus",
+          "cuttlefish",
+          "nautilus"
+        ],
+        "tag": "Characterized by bilateral body symmetry, a prominent head, and a set of arms or tentacles modified from the primitive molluscan foot. Many species can squirt ink.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Octopus_vulgaris_Merculiano.jpg/120px-Octopus_vulgaris_Merculiano.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sepioteuthis_sepioidea_%28Caribbean_Reef_Squid%29.jpg/330px-Sepioteuthis_sepioidea_%28Caribbean_Reef_Squid%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Octopus2.jpg/330px-Octopus2.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/9/9f/Cuttlefish_komodo_large.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Nautilus_belauensis_from_Palau.jpg/330px-Nautilus_belauensis_from_Palau.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Nautilus_pompilius_%28head%29.jpg/330px-Nautilus_pompilius_%28head%29.jpg"
+        ]
+      },
+      {
+        "name": "Gastropoda",
+        "parent": "Conchifera",
+        "rank": "Class",
+        "ipa": "ɡæsˈtrɒpədə",
+        "common": [
+          "slugs",
+          "snails",
+          "nudibranchs",
+          "conches",
+          "periwinkles",
+          "whelks"
+        ],
+        "tag": "Snails and slugs from saltwater, freshwater, and from the land",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Grapevinesnail_01a.jpg/120px-Grapevinesnail_01a.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Slimaczek.jpg/330px-Slimaczek.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Slug_02.jpg/330px-Slug_02.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Common_limpets1.jpg/330px-Common_limpets1.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Berghia_coerulescens_%28Laurillard%2C_1830%29.jpg/330px-Berghia_coerulescens_%28Laurillard%2C_1830%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Chromodoris_lochi_%28AA3%29.jpg/330px-Chromodoris_lochi_%28AA3%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Blue_dragon-glaucus_atlanticus_%288599051974%29.jpg/330px-Blue_dragon-glaucus_atlanticus_%288599051974%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Queen_Conch_%28Lobatus_gigas%29.jpg/330px-Queen_Conch_%28Lobatus_gigas%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/LivingAbalone.JPG/330px-LivingAbalone.JPG"
+        ]
+      },
+      {
+        "name": "Bivalvia",
+        "parent": "Conchifera",
+        "rank": "Class",
+        "ipa": "baɪˈvælviə",
+        "common": [
+          "clams",
+          "oysters",
+          "cockles",
+          "mussels",
+          "scallops"
+        ],
+        "tag": "Aquatic molluscs (marine and freshwater) that have laterally compressed soft bodies enclosed by a calcified exoskeleton consisting of a hinged pair of half-shells known as valves. Most are are benthic filter feeders that bury themselves in sediment.",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Bivalve_Sea_Shell.png/120px-Bivalve_Sea_Shell.png",
+          "https://upload.wikimedia.org/wikipedia/commons/3/3b/LittleNeck_clams_USDA96c1862.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Geoduck_held_in_two_hands.jpg/250px-Geoduck_held_in_two_hands.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Crassostrea_gigas_p1040848.jpg/330px-Crassostrea_gigas_p1040848.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Sydney_rock_oysters.jpg/330px-Sydney_rock_oysters.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Coque_blanche_%28Cerastoderma_edule%29.jpg/250px-Coque_blanche_%28Cerastoderma_edule%29.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mytilus_with_byssus.jpg/250px-Mytilus_with_byssus.jpg",
+          "https://upload.wikimedia.org/wikipedia/commons/0/09/Argopecten_irradians.jpg"
+        ]
+      },
+      {
+        "name": "Scaphopoda",
+        "parent": "Conchifera",
+        "rank": "Class",
+        "ipa": "skæˈfɒpədə",
+        "common": [
+          "tusk shells"
+        ],
+        "tag": "",
+        "imgs": [
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Natural_History_-_Mollusca_-_Dentalium_Tarentinum.png/40px-Natural_History_-_Mollusca_-_Dentalium_Tarentinum.png"
+        ]
       }
     ]
     var luca_animalia_arthropoda = [
