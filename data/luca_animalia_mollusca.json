@@ -452,6 +452,82 @@
     ]
   },
   {
+    "name": "Heterodonta",
+    "parent": "Bivalvia",
+    "rank": "Subclass",
+    "ipa": "",
+    "common": [
+      "cockles",
+      "Venus clams",
+      "freshwater mussels",
+      "brooch clams"
+    ],
+    "tag": "Their shell has two equally sized halves with a few cardinal teeth separated from a number of long lateral teeth. Their shells lack a nacreous layer, and the gills are lamellibranch in form. Most species have a siphon.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/PZSL1852PlateMollusca17_clean.png/250px-PZSL1852PlateMollusca17_clean.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Freshwater_mussels.jpg/330px-Freshwater_mussels.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Sunetta_meroe_002.jpg/330px-Sunetta_meroe_002.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Coque_blanche_%28Cerastoderma_edule%29.jpg/250px-Coque_blanche_%28Cerastoderma_edule%29.jpg"
+    ]
+  },
+  {
+    "name": "Palaeoheterodonta",
+    "parent": "Bivalvia",
+    "rank": "Subclass",
+    "ipa": "",
+    "common": [
+      "freshwater mussels"
+    ],
+    "tag": "Their two shell halves are equal size and shape, but the hinge teeth are in a single row, instead of separated into two groups.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Neotrigonia_margaritacea.jpg/330px-Neotrigonia_margaritacea.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/25/Anodonta_anatina1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Freshwater_mussels.jpg/330px-Freshwater_mussels.jpg"
+    ]
+  },
+  {
+    "name": "Protobranchia",
+    "parent": "Bivalvia",
+    "rank": "Subclass",
+    "ipa": "",
+    "common": [
+      "nut clams"
+    ],
+    "tag": "Deep water clams with a hinge that uses many similar, small teeth; generally with a central ligament pit; large labial palps which are used in deposit feeding; the gills used only for respiration; the anterior and posterior adductor muscles are nearly equal in size; the foot is divided sagittally and longitudinally with papillate margins.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Acila_cobboldiae.jpg/250px-Acila_cobboldiae.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Nucula_nucleus_2008-09-09-63.jpg/330px-Nucula_nucleus_2008-09-09-63.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Solemya_elarraichensis_holotype.jpg/330px-Solemya_elarraichensis_holotype.jpg"
+    ]
+  },
+  {
+    "name": "Pteriomorphia",
+    "parent": "Bivalvia",
+    "rank": "Subclass",
+    "ipa": "",
+    "common": [
+      "marine mussels",
+      "scallops",
+      "pen shells",
+      "oysters"
+    ],
+    "tag": "They have lamellibranch gills, are epibenthic, some attach to the substrate using a byssus, the foot is reduced, and gills are usually large and assist in feeding. Some members have rudimentary eyes, unlike other bivalves.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Mytilus_with_byssus.jpg/250px-Mytilus_with_byssus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/CornishMussels.JPG/330px-CornishMussels.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Pectinidae_-_Argopecten_irradians.JPG/330px-Pectinidae_-_Argopecten_irradians.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/0/09/Argopecten_irradians.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Scallop_eyes2.jpg/330px-Scallop_eyes2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Atrina_rigida_no.1.jpg/250px-Atrina_rigida_no.1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Atrina_serrata.jpg/330px-Atrina_serrata.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Pinnidae_-_Pinna_nobilis.jpg/250px-Pinnidae_-_Pinna_nobilis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Crassostrea_gigas_p1040847.jpg/330px-Crassostrea_gigas_p1040847.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Sydney_rock_oysters.jpg/330px-Sydney_rock_oysters.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Spondylus_varius.jpg/330px-Spondylus_varius.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Spondylus_crassisquama.jpg/330px-Spondylus_crassisquama.jpg"
+    ]
+  },
+  {
     "name": "Scaphopoda",
     "parent": "Conchifera",
     "rank": "Class",
