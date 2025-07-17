@@ -25,6 +25,7 @@
     "name": "Eukaryota",
     "parent": "Archaea",
     "rank": "Domain",
+    "ipa": "yuˈkæriˌoʊtə",
     "tag": "Organisms with cells have a membrane-bound nucleus and organelles, including a nucleus, mitochondria, endoplasmic reticulum, and Golgi apparatus.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Chaos_carolinense.jpg/330px-Chaos_carolinense.jpg",
@@ -64,6 +65,7 @@
     "name": "Plantae",
     "parent": "Eukaryota",
     "rank": "Kingdom",
+    "ipa": "ˈplænti",
     "tag": "The primary producers in most terrestrial ecosystems using organelles specialised for photosynthesis. Their cell walls contain cellulose.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/f/fb/Chondrus_crispus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-034_%28single%29.jpg",
