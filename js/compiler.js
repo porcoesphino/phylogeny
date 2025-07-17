@@ -410,7 +410,7 @@ class Search {
   _menu_el_matches_search(el, lowercase_search_input) {
     var input_el = el.getElementsByTagName('input')[0];
     var id = input_el.id
-    var data_for_menu_item = window.page.state.get_tree_for_root_id(id)
+    var data_for_menu_item = this._state.get_tree_for_root_id(id)
     for (var data_i = 0; data_i < data_for_menu_item.length; data_i++) {
       var taxa_metadata = data_for_menu_item[data_i]
       if (taxa_metadata.name.toLowerCase().includes(lowercase_search_input)) {
@@ -511,7 +511,7 @@ class TreeBuilderAsTreeList {
     this._state = state
   }
 
-  static _get_element_for_node(node, node_map, level = 0) {
+  _get_element_for_node(node, node_map, level = 0) {
 
     if (typeof (node) == 'string') {
       var is_root = true
@@ -523,13 +523,13 @@ class TreeBuilderAsTreeList {
         }
       } else {
         // If this is a parent node, load it's data from the tree where it's a child.
-        node = window.page.state.data_map.get_metadata(node)
+        node = this._state.data_map.get_metadata(node)
       }
     } else {
       var is_root = false
     }
 
-    function append_name(node, parent_el) {
+    const append_name = (node, parent_el) => {
       var name_el = document.createElement('span')
       var wikipedia_link_el = document.createElement('a')
       wikipedia_link_el.href = 'https://en.wikipedia.org/wiki/' + name
@@ -548,7 +548,7 @@ class TreeBuilderAsTreeList {
       parent_el.appendChild(name_el)
     }
 
-    function maybe_append_common_names(node, parent_el) {
+    const maybe_append_common_names = (node, parent_el) => {
       if (node.hasOwnProperty('common') && !!node.common && node.common.length > 0) {
         var common_names_el = document.createElement('span')
         common_names_el.classList.add('common_names')
@@ -557,7 +557,7 @@ class TreeBuilderAsTreeList {
       }
     }
 
-    function add_float_right(node, parent_el, is_root) {
+    const add_float_right = (node, parent_el, is_root) => {
       var right_el = document.createElement('span')
       right_el.classList.add('float-right')
       maybe_append_open_tree_button(node, right_el, is_root)
@@ -565,14 +565,14 @@ class TreeBuilderAsTreeList {
       parent_el.appendChild(right_el)
     }
 
-    function maybe_append_open_tree_button(node, parent_el) {
+    const maybe_append_open_tree_button = (node, parent_el) => {
       if (!window.page) {
         // Abort early during init.
         return
       }
 
       var id = node.name.toLowerCase()
-      if (window.page.state.menu_map.has_taxa(id)) {
+      if (this._state.menu_map.has_taxa(id)) {
         var button_el = document.createElement('button')
         if (is_root) {
           button_el.innerText = 'See parent'
@@ -589,7 +589,7 @@ class TreeBuilderAsTreeList {
       }
     }
 
-    function maybe_append_rank(node, parent_el) {
+    const maybe_append_rank = (node, parent_el) => {
       if (node.hasOwnProperty('rank') && !!node.rank) {
         var rank_el = document.createElement('span')
         rank_el.classList.add('badge')
@@ -598,14 +598,14 @@ class TreeBuilderAsTreeList {
       }
     }
 
-    function maybe_append_tag_line(node, parent_el) {
+    const maybe_append_tag_line = (node, parent_el) => {
       if (node.hasOwnProperty('tag') && !!node.tag) {
         var tag_el = document.createElement('p')
         tag_el.innerText = node.tag
         parent_el.appendChild(tag_el)
       }
     }
-    function maybe_append_images(node, parent_el) {
+    const maybe_append_images = (node, parent_el) => {
       if (node.hasOwnProperty('imgs') && !!node.imgs) {
         var wrapper_el = document.createElement('div')
         for (var i = 0; i < node.imgs.length; i++) {
@@ -637,7 +637,7 @@ class TreeBuilderAsTreeList {
       }
     }
 
-    function append_tree_box(node, parent_el) {
+    const append_tree_box = (node, parent_el) => {
       var outer_box_el = document.createElement('div')
       outer_box_el.classList.add('outer_tree_box')
 
@@ -678,7 +678,7 @@ class TreeBuilderAsTreeList {
       var ul_el = document.createElement('ul')
       for (var i = 0; i < children.length; i++) {
         var node_new_child = children[i]
-        var li_child_el = TreeBuilderAsTreeList._get_element_for_node(node_new_child, node_map, level + 1)
+        var li_child_el = this._get_element_for_node(node_new_child, node_map, level + 1)
         ul_el.appendChild(li_child_el)
       }
       li_el.appendChild(ul_el)
@@ -700,7 +700,7 @@ class TreeBuilderAsTreeList {
 
   get_html_for_tree_range() {
 
-    if (!this._state.tree_range || !window.page) {
+    if (!this._state.tree_range) {
       throw Error('Trying to build the taxa tree before initialisation completes.')
     }
 
@@ -709,7 +709,7 @@ class TreeBuilderAsTreeList {
 
     var root_list_el = document.createElement('ul');
     root_list_el.classList.add('tree')
-    root_list_el.appendChild(TreeBuilderAsTreeList._get_element_for_node(root_name, dict))
+    root_list_el.appendChild(this._get_element_for_node(root_name, dict))
 
     return root_list_el
   }
