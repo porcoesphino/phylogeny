@@ -506,6 +506,11 @@ class Search {
 }
 
 class TreeBuilderAsTreeList {
+
+  constructor(state) {
+    this._state = state
+  }
+
   static _get_element_for_node(node, node_map, level = 0) {
 
     if (typeof (node) == 'string') {
@@ -693,14 +698,14 @@ class TreeBuilderAsTreeList {
     return li_el
   }
 
-  static get_html_for_tree_range(data) {
+  get_html_for_tree_range() {
 
-    if (!data.tree_range || !window.page) {
+    if (!this._state.tree_range || !window.page) {
       throw Error('Trying to build the taxa tree before initialisation completes.')
     }
 
-    var root_name = data.root_name
-    var dict = data.parent_to_child_list
+    var root_name = this._state.root_name
+    var dict = this._state.parent_to_child_list
 
     var root_list_el = document.createElement('ul');
     root_list_el.classList.add('tree')
@@ -894,8 +899,10 @@ class Page {
     this.search = new Search(this.state)
     this.search.add_callback()
 
-    this._update_tree_range_view = (data) => {
-      var root_list_el = TreeBuilderAsTreeList.get_html_for_tree_range(data)
+    this._tree_range_builder = new TreeBuilderAsTreeList(this.state)
+
+    this._update_tree_range_view = () => {
+      var root_list_el = this._tree_range_builder.get_html_for_tree_range()
 
       if (!root_list_el) {
         return  // Abort early during initialisation.
@@ -916,7 +923,7 @@ class Page {
       this.state.card = 'all'
       page.query_params.card = 'all'
       this.add_card_select_options()
-      update_tree_range_view(this.state)
+      update_tree_range_view()
       this.scroll_tree_to_top()
 
       if (this.state.tree_range == 'all') {
@@ -940,7 +947,7 @@ class Page {
     var card_select_change = () => {
       page.query_params.card = this._card_select.value
       this.state.card = this._card_select.value
-      update_tree_range_view(this.state)
+      update_tree_range_view()
     }
     this._card_select.addEventListener('change', function () {
       card_select_change()
@@ -1055,7 +1062,7 @@ class Page {
       this.state.card = 'all'
     }
 
-    this._update_tree_range_view(this.state)
+    this._update_tree_range_view()
 
     var controls_are_open = this.query_params.controls
     this._controls.set_state(controls_are_open)
