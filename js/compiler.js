@@ -3,6 +3,7 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
 class QueryParams {
+  static _MISSING_ROOT_FOR_LUCA = 'overview'
   static _KEY_CONTROLS = 'controls'
   static _DEFAULT_CONTROLS = 'open'
   static _KEY_SUMMARY = 'summary'
@@ -81,6 +82,7 @@ class QueryParams {
 
   clean_url(state) {
     const params = new URLSearchParams(location.search);
+
     const keys = Array.from(params.keys())
     for (var i = 0; i < keys.length; i++) {
       if (!QueryParams._ALLOWED_KEYS.has(keys[i])) {
@@ -88,7 +90,7 @@ class QueryParams {
       }
     }
     if (params.has(QueryParams._KEY_ROOT)) {
-      if (!state.data_map.has_taxa(this.root)) {
+      if (this.root != QueryParams._MISSING_ROOT_FOR_LUCA && !state.data_map.has_taxa(this.root)) {
         params.delete(QueryParams._KEY_ROOT)
       }
     }
