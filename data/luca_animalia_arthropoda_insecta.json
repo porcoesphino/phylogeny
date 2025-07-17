@@ -116,7 +116,8 @@
     "name": "Hemiptera",
     "parent": "Neoptera",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "hɛˈmɪptərə",
+    "etymology": "greek 'different'-'wings'",
     "common": [
       "cicadas",
       "aphids",
@@ -125,12 +126,25 @@
       "assassin bugs",
       "shield bugs",
       "plant hoppers",
-      "leaf hoppers"
+      "leaf hoppers",
+      "moss bugs",
+      "bat bugs"
     ],
+    "tag": "The true bugs. Named because the the texture of the front wings is different near the base (leathery) than at the apex (membranous). Other distinguishing features are the way the front wings cross over to form “X”-pattern on back and the tubular proboscis (beak) used as piercing-sucking mouthparts. They range in size from 1 mm (0.04 in) to around 15 cm (6 in). They can be terrestrial, aquatic and semi-aquatic. Most feed on plant sap but some are bloodsucking, and others are predators.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dorisiana_bicolor_MHNT%2C_Montsin%C3%A9ry%2C_Guyane_dos_vol_2.jpg/330px-Dorisiana_bicolor_MHNT%2C_Montsin%C3%A9ry%2C_Guyane_dos_vol_2.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dorisiana_bicolor_MHNT%2C_Montsin%C3%A9ry%2C_Guyane_dos_vol_2.jpg/330px-Dorisiana_bicolor_MHNT%2C_Montsin%C3%A9ry%2C_Guyane_dos_vol_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Neotibicen_linnei.jpg/330px-Neotibicen_linnei.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Aphids_September_2008-1.jpg/250px-Aphids_September_2008-1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Schizaphis_graminum_usda_%28cropped%29.jpg/250px-Schizaphis_graminum_usda_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Flatid_leaf_bugs_and_nymphs_%28Phromnia_rosea%29.jpg/330px-Flatid_leaf_bugs_and_nymphs_%28Phromnia_rosea%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Lantern_bug.jpg/330px-Lantern_bug.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Flickr_-_ggallice_-_Fulgorid.jpg/250px-Flickr_-_ggallice_-_Fulgorid.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Graphocephala_coccinea_6.jpg/330px-Graphocephala_coccinea_6.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Gminatus_australis_dorsal_view.jpg/330px-Gminatus_australis_dorsal_view.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Bed_bug%2C_Cimex_lectularius.jpg/330px-Bed_bug%2C_Cimex_lectularius.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Pentatomidae_spec.jpg/250px-Pentatomidae_spec.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Ovatus_sp._-_Guelph%2C_Ontario_2017-06-13_%2802%29.jpg/330px-Ovatus_sp._-_Guelph%2C_Ontario_2017-06-13_%2802%29.jpg"
     ],
-    "tag": "The true bugs.",
     "card": 3
   },
   {
@@ -156,7 +170,7 @@
     "rank": "Clade",
     "ipa": "",
     "common": [],
-    "tag": "Grasshoppers, crickets, and allies.",
+    "tag": "",
     "card": 3
   },
   {
@@ -164,15 +178,28 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "greek 'straight'-'wing'",
     "common": [
       "grasshoppers",
       "locusts",
       "crickets"
     ],
+    "tag": "Grasshoppers, crickets, and allies. Named by having thickened front wings that are parallel-sided. Other distinguishing factors are hind legs modified for jumping; and antennae segments that are cylindrical and uniform in size. Many species have the ability to make and detect sounds.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Gryllidae_usda.png"
+      "https://upload.wikimedia.org/wikipedia/commons/e/ef/Gryllidae_usda.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Miramella_alpina_male_%283788740982%29.jpg/330px-Miramella_alpina_male_%283788740982%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Gryllomorpha_dalmatina01.jpg/330px-Gryllomorpha_dalmatina01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Locusta-migratoria-wanderheuschrecke.jpg/330px-Locusta-migratoria-wanderheuschrecke.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Locusts_Saad.jpg/330px-Locusts_Saad.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Pachyrhamma_waitomoensis_aggregation.jpg/330px-Pachyrhamma_waitomoensis_aggregation.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Schizodactylus_monstrosus_Rajasthan.jpg/330px-Schizodactylus_monstrosus_Rajasthan.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Jerusalemcricket.jpg/250px-Jerusalemcricket.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Leaf_Grasshopper_%28Systella_sp.%29_%288742072742%29.jpg/330px-Leaf_Grasshopper_%28Systella_sp.%29_%288742072742%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Eumastax_zumuniana.jpg/330px-Eumastax_zumuniana.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Horsehead_Grasshopper_%28Pseudoproscopia_scabra%29%2C_Tambopata_Lodge.jpg/330px-Horsehead_Grasshopper_%28Pseudoproscopia_scabra%29%2C_Tambopata_Lodge.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Grouse_Locust_%28Potua_sp.%29_%2823289516379%29.jpg/330px-Grouse_Locust_%28Potua_sp.%29_%2823289516379%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Gryllus_campestris_female_%284724690375%29.jpg/330px-Gryllus_campestris_female_%284724690375%29.jpg"
     ],
-    "tag": "",
     "card": 4
   },
   {
@@ -476,7 +503,8 @@
     "rank": "Order",
     "ipa": "",
     "common": [
-      "true flies"
+      "true flies",
+      "lovebugs"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Common_house_fly%2C_Musca_domestica.jpg/330px-Common_house_fly%2C_Musca_domestica.jpg"
@@ -489,7 +517,9 @@
     "rank": "Order",
     "ipa": "",
     "common": [
-      "beetles"
+      "beetles",
+      "Maybug",
+      "ladybugs"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Pseudacrossus_przewalskyi_%28Reitter%2C_1887%29.jpg/330px-Pseudacrossus_przewalskyi_%28Reitter%2C_1887%29.jpg"
