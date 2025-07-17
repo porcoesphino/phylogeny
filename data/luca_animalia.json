@@ -3,13 +3,19 @@
     "name": "Ctenophora",
     "parent": "Animalia",
     "rank": "Phylum",
-    "ipa": "",
+    "ipa": "təˈnɒfərə",
+    "etymology": "'comb'-'carrying'",
     "common": [
       "comb jellies"
     ],
-    "tag": "A medusa that swims with groups of cilia.",
+    "tag": "A medusa that swims with groups of cilia. It's the largest animals to swim with the help of cilia. Their bodies consist of a mass of jelly, with a layer two cells thick on the outside, and another lining the internal cavity. Almost all ctenophores are predators.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/ca/Pelagic_ctenophores.png"
+      "https://upload.wikimedia.org/wikipedia/commons/c/ca/Pelagic_ctenophores.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Comb_jelly.jpg/250px-Comb_jelly.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2a/Juvenile_Bolinopsis_ctenophore.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/LightRefractsOf_comb-rows_of_ctenophore_Mertensia_ovum.jpg/250px-LightRefractsOf_comb-rows_of_ctenophore_Mertensia_ovum.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9d/Ctenophore.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Lobate_ctenophore.jpg/330px-Lobate_ctenophore.jpg"
     ],
     "card": 1
   },
@@ -17,14 +23,19 @@
     "name": "Porifera",
     "parent": "Animalia",
     "rank": "Phylum",
-    "ipa": "",
+    "ipa": "pəˈrɪfərəˌ",
     "etymology": "latin 'pore-bearing'",
     "common": [
-      "sponges"
+      "sea sponges"
     ],
-    "tag": "They do not have tissues that derive from embryonic germ layers. Some are radially symmetrical, but most are asymmetrical.",
+    "tag": "Sessile filter feeders that are bound to the seabed with many being important reef-building organisms. They are multicellular organisms with tube-like bodies full of pores that circulate water usually with the help of flagella movements of 'collar cells'. They do not have complex nervous, digestive or circulatory systems. Their bodies consist of a non-living jelly-like mass sandwiched between two main layers of cells. They have unspecialized cells that can transform into other types and do not have tissues that derive from embryonic germ layers. Some are radially symmetrical, but most are asymmetrical.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Euplectella_aspergillum_%28cropped%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/a/a7/Euplectella_aspergillum_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Aplysina_archeri_%28Stove-pipe_Sponge-pink_variation%29.jpg/250px-Aplysina_archeri_%28Stove-pipe_Sponge-pink_variation%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Reef3859_-_Flickr_-_NOAA_Photo_Library.jpg/330px-Reef3859_-_Flickr_-_NOAA_Photo_Library.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Spongilla_lacustris.jpg/330px-Spongilla_lacustris.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Euplectella_aspergillum_Okeanos.jpg/330px-Euplectella_aspergillum_Okeanos.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Chondrocladia_lampadiglobus.jpg"
     ],
     "card": 1
   },
@@ -33,22 +44,31 @@
     "parent": "Animalia",
     "rank": "Clade",
     "ipa": "",
+    "tag": "Named to include all of the animal phyla that have Hox and/or ParaHox genes.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Phyllorhiza_punctata_macro_II.jpg/330px-Phyllorhiza_punctata_macro_II.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/330px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg"
+    ],
     "card": 1
   },
   {
     "name": "Cnidaria",
     "parent": "ParaHoxozoa",
     "rank": "Phylum",
-    "ipa": "",
+    "ipa": "nɪˈdɛəriə",
     "common": [
       "jellyfish",
-      "anemones",
+      "hydroids",
+      "sea anemones",
       "corals"
     ],
-    "tag": "They have no organs or organ systems and include some of the smallest marine parasites.",
+    "tag": "Aquatic invertebrates found both in freshwater and marine environment. They usually have two basic body forms (swimming medusae and sessile polyps) and both are radially symmetrical with mouths surrounded by tentacles. They have an uncentralized nervous system distributed throughout a gelatinous body and specialized cells with ejectable flagella used mainly for envenomation and capturing prey. They have no organs or organ systems and include some of the smallest marine parasites. They can reproduce both sexually and asexually.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Phyllorhiza_punctata_macro_II.jpg/330px-Phyllorhiza_punctata_macro_II.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hertshoon.jpg/330px-Hertshoon.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hertshoon.jpg/330px-Hertshoon.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/84/Chrysaora_jelly.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Annella_mollis_Maldives.JPG/330px-Annella_mollis_Maldives.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Colonial_anemone_zebra.jpg/250px-Colonial_anemone_zebra.jpg"
     ],
     "card": 1
   },
@@ -56,16 +76,29 @@
     "name": "Bilateria",
     "parent": "ParaHoxozoa",
     "rank": "Clade",
-    "ipa": "",
-    "tag": "Animals that have bilateral symmetry during embryonic development. They are also triploblasts.",
+    "ipa": "ˌbaɪləˈtɪəriə",
+    "tag": "Characterised by bilateral symmetry during embryonic development. Most maintain a bilaterally symmetrical body as adults. Embryos are triploblastic. They have complete digestive tracts with a separate mouth and anus.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/330px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Snail.jpg/330px-Snail.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Scolopendra_cataracta_from_Zookeys.jpg/330px-Scolopendra_cataracta_from_Zookeys.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Clown_fish_in_the_Andaman_Coral_Reef.jpg/330px-Clown_fish_in_the_Andaman_Coral_Reef.jpg"
+    ],
     "card": 1
   },
   {
     "name": "Protostomia",
     "parent": "Bilateria",
     "rank": "Clade",
-    "ipa": "",
-    "tag": "Sister clade to deuterostomia. Many form the organism's mouth before its anus during embryonic development.",
+    "ipa": "ˌproʊtəˈstoʊmi.ə",
+    "etymology": "first-mouth'",
+    "tag": "Named for they way many species form the organism's mouth before its anus during embryonic development. Cell fates become fixed at the first cleavage of the early embryo. Coeloms generally form out of a solid mass of embryonic tissue splitting away from the rest.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Scolopendra_cataracta_from_Zookeys.jpg/330px-Scolopendra_cataracta_from_Zookeys.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pseudobiceros_hancockanus.jpg/330px-Pseudobiceros_hancockanus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Snail.jpg/330px-Snail.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Lumbricus_terrestris_%2826559560801%29.jpg/330px-Lumbricus_terrestris_%2826559560801%29.jpg"
+    ],
     "card": 2
   },
   {
@@ -73,10 +106,11 @@
     "parent": "Protostomia",
     "rank": "Clade",
     "ipa": "",
-    "tag": "Mostly exhibit canonical spiral cleavage during early development.",
+    "tag": "Named for the spiral cleavage that many species exhibit during embryonic development.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/2/21/Polychaeta_%28no%29_2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/6/64/Grapevinesnail_01a.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Lumbricus_terrestris_%2826559560801%29.jpg/330px-Lumbricus_terrestris_%2826559560801%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Snail.jpg/330px-Snail.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pseudobiceros_hancockanus.jpg/330px-Pseudobiceros_hancockanus.jpg"
     ],
     "card": 2
   },
@@ -85,15 +119,26 @@
     "parent": "Spiralia",
     "rank": "Phylum",
     "ipa": "",
+    "etymology": "greek 'flat worm'",
     "common": [
       "flatworms",
       "flukes",
-      "tapeworms"
+      "tapeworms",
+      "ribbon worms"
     ],
-    "etymology": "greek 'flat worm'",
+    "tag": "Relatively simple bilaterian, unsegmented, soft-bodied invertebrates commonly called flatworms. Free-living flatworms are mostly predators. The parasitic forms live in the digestive systems of fish or land vertebrates with intermediate stages transfering the parasites from one host to another. They are acoelomates with no specialised circulatory and respiratory organs so they are restricted to a flattened body layout. The digestive cavity has only one opening for both ingestion and egestion so food can not be processed continuously.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/e/ea/New_Zealand_flatworm_2.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pseudobiceros_hancockanus.jpg/330px-Pseudobiceros_hancockanus.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Pseudobiceros_hancockanus.jpg/330px-Pseudobiceros_hancockanus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Fasciola_hepatica_%28Linnaeus%2C_1758%29_2013_000-2.jpg/330px-Fasciola_hepatica_%28Linnaeus%2C_1758%29_2013_000-2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Dugesia_subtentaculata_1.jpg/330px-Dugesia_subtentaculata_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Platydemus_manokwari_in_Florida_PeerJ2015_fig-1-full.png/330px-Platydemus_manokwari_in_Florida_PeerJ2015_fig-1-full.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Strongylostoma_elongatum_spinosum.jpg/330px-Strongylostoma_elongatum_spinosum.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Bedford%27s_Flatworm.jpg/330px-Bedford%27s_Flatworm.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Taenia_scolex_cropped.jpg/330px-Taenia_scolex_cropped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Gorgonorhynchus_repens.jpg/330px-Gorgonorhynchus_repens.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Stenostomum_simplex.jpg/330px-Stenostomum_simplex.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Catenula_lemnae.jpg/330px-Catenula_lemnae.jpg"
     ],
     "card": 3
   },
@@ -101,17 +146,29 @@
     "name": "Annelida",
     "parent": "Spiralia",
     "rank": "Phylum",
-    "ipa": "",
+    "ipa": "əˈnɛlɪdə",
     "common": [
-      "bristle/fan worms",
-      "segmented worms",
-      "leeches"
+      "earthworms",
+      "leeches",
+      "ragworms",
+      "feather duster worms",
+      "fan worms",
+      "bristle worms"
     ],
     "etymology": "latin 'little ring'",
+    "tag": "The segmented worms. They are bilaterally symmetrical, triploblastic, coelomate, invertebrate organisms with a parapodia for locomotion. Their bodies are long, with segments visible by ring-like constrictions called annuli and each segment has the same sets of organs.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Polychaeta_%28no%29_2.jpg/330px-Polychaeta_%28no%29_2.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Lumbricus_terrestris_%2826559560801%29.jpg/330px-Lumbricus_terrestris_%2826559560801%29.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Eunice_aphroditois.jpg/250px-Eunice_aphroditois.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Eunice_aphroditois.jpg/250px-Eunice_aphroditois.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Earthworm_01.jpg/330px-Earthworm_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Urechiscaupo_%28cropped_and_mirrored%29.jpg/330px-Urechiscaupo_%28cropped_and_mirrored%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Christmas_tree_worm_%28Spirobranchus_giganteus%29.jpg/330px-Christmas_tree_worm_%28Spirobranchus_giganteus%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Marphysa_sanguinea.jpg/330px-Marphysa_sanguinea.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Riftia_tube_worms_Galapagos_2011.jpg/330px-Riftia_tube_worms_Galapagos_2011.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Bispira_sp._%28Tubeworm%29.jpg/330px-Bispira_sp._%28Tubeworm%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Alitta_succinea_%28epitoke%29.jpg/330px-Alitta_succinea_%28epitoke%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Sucking_leech.jpg/330px-Sucking_leech.jpg"
     ],
     "card": 3
   },
@@ -134,7 +191,8 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/6/69/Grapevinesnail_01.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/4/41/Bivalve_Sea_Shell.png",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sepioteuthis_sepioidea_%28Caribbean_Reef_Squid%29.jpg/330px-Sepioteuthis_sepioidea_%28Caribbean_Reef_Squid%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Sepioteuthis_sepioidea_%28Caribbean_Reef_Squid%29.jpg/330px-Sepioteuthis_sepioidea_%28Caribbean_Reef_Squid%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Tonicella-lineata.jpg/330px-Tonicella-lineata.jpg"
     ],
     "card": 3
   },
@@ -143,20 +201,37 @@
     "parent": "Protostomia",
     "rank": "Clade",
     "ipa": "",
-    "tag": "The sister clade to spiralia. Most distinguishing feature is their cuticle: a tough, but flexible exoskeleton that is periodically shed.",
+    "tag": "Characterised by a cuticle composed of organic material that is periodically molted as the animal grows. Their embryos do not undergo spiral cleavage. A respiratory and circulatory system is only present in some species.",
+    "common": [
+      "tardigrades",
+      "roundworms",
+      "crabs",
+      "insects",
+      "arachnids",
+      "centipedes"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/6/6a/CelegansGoldsteinLabUNC.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Scolopendra_cataracta_from_Zookeys.jpg/330px-Scolopendra_cataracta_from_Zookeys.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Echiniscus_insularis_%2810.3897-evolsyst.5.59997%29_Figure_6_%28white_background%29.jpg/330px-Echiniscus_insularis_%2810.3897-evolsyst.5.59997%29_Figure_6_%28white_background%29.jpg"
+    ],
     "card": 2
   },
   {
     "name": "Nematoda",
     "parent": "Ecdysozoa",
     "rank": "Phylum",
-    "ipa": "",
+    "ipa": "ˌɛkdɪsoʊˈzoʊə",
+    "etymology": "'thread'-'like'",
     "common": [
       "roundworms"
     ],
+    "tag": "They are bilaterally symmetrical, elongated, and usually tapered at both ends. Most species are free-living, feeding on microorganisms, but many are parasitic. They secrete an external cuticle that is periodically molted and have a tubular digestive system with openings at both ends. Some cause of soil-transmitted helminthiases. Some species have a pseudocoel.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/6/6a/CelegansGoldsteinLabUNC.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hookworms.JPG/330px-Hookworms.JPG"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Hookworms.JPG/330px-Hookworms.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fb/Roundworm.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mermis_nigrescens_beentree.jpg/330px-Mermis_nigrescens_beentree.jpg"
     ],
     "card": 4
   },
@@ -169,13 +244,17 @@
     "common": [
       "crabs",
       "insects",
-      "shrimps",
-      "crayfish"
+      "arachnids",
+      "centipedes"
     ],
+    "tag": "Possess an exoskeleton with a cuticle made of chitin, often mineralised with calcium carbonate, a body with differentiated (metameric) segments, and paired jointed appendages. While growing they moult their exoskeleton. They have an open circulatory system with a body cavity called a haemocoel through which haemolymph circulates to the interior organs. Their internal organs are generally built of repeated segments.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/European_wasp_white_bg02.jpg/330px-European_wasp_white_bg02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Apis_mellifera_carnica_worker_hive_entrance_3.jpg/330px-Apis_mellifera_carnica_worker_hive_entrance_3.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Ocypode-ceratophthalma-horned-ghost-crab-krabi-thailand.jpg/330px-Ocypode-ceratophthalma-horned-ghost-crab-krabi-thailand.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/PlatycryptusUndatusFemale.jpg/330px-PlatycryptusUndatusFemale.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Araneus_diadematus%2C_Livorno_1.JPG/250px-Araneus_diadematus%2C_Livorno_1.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/CSIRO_ScienceImage_2992_The_Giant_Tiger_Prawn.jpg/330px-CSIRO_ScienceImage_2992_The_Giant_Tiger_Prawn.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Limulus_polyphemus_%28aq.%29.jpg/330px-Limulus_polyphemus_%28aq.%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Scolopendra_cataracta_from_Zookeys.jpg/330px-Scolopendra_cataracta_from_Zookeys.jpg"
     ],
     "card": 4
   },
@@ -183,27 +262,41 @@
     "name": "Deuterostomia",
     "parent": "Bilateria",
     "rank": "Clade",
-    "ipa": "",
-    "tag": "Characterized by their anus forming before the mouth during embryonic development.",
+    "ipa": "ˌdjuːtərəˈstoʊmi.ə",
+    "etymology": "greek 'second mouth'",
+    "tag": "Characterized by their anus forming before the mouth during embryonic development. Blastula divisions occur as radial cleavage; most deuterostomes display indeterminate cleavage; and the coelom develops from buds off the embryonic gut.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Expn7526_%2838827990315%29.jpg/330px-Expn7526_%2838827990315%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/20/Rhabdopleuratubes.png",
+      "https://upload.wikimedia.org/wikipedia/commons/b/ba/Fromia_indica_HI09-0187.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/330px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg"
+    ],
     "card": 2
   },
   {
     "name": "Echinodermata",
     "parent": "Deuterostomia",
     "rank": "Phylum",
-    "ipa": "",
+    "ipa": "ɪˌkaɪnoʊˈdɜːrmətə",
     "common": [
+      "starfish",
       "sea urchins",
       "sea stars",
       "brittle stars",
       "sea lillies",
-      "sea cucumbers"
+      "sea cucumbers",
+      "sand dollars"
     ],
     "etymology": "greek 'porcupine, hedgehog'-'skin'",
+    "tag": "Adults have five-pointed radial symmetry (pentamerous symmetry), and are found on the sea bed at every ocean depth from the intertidal zone to the abyssal zone, but the larvae are bilaterally symmetrical. Most are able to reproduce asexually and regenerate tissue, organs and limbs. Their ossified dermal endoskeletons are major contributors to many limestone formations.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Echinaster_serpentarius_%28USNM_E28192%29_001.png/250px-Echinaster_serpentarius_%28USNM_E28192%29_001.png",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Holothuria_parvula.png/330px-Holothuria_parvula.png",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Echinometra_viridis.png/330px-Echinometra_viridis.png"
+      "https://upload.wikimedia.org/wikipedia/commons/b/ba/Fromia_indica_HI09-0187.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Ophionereis_reticulata_1.jpg/330px-Ophionereis_reticulata_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/0/07/Sea_cucumber_at_Pulau_Redang.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Nerr0878.jpg/330px-Nerr0878.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Strongylocentrotus_purpuratus_1.jpg/330px-Strongylocentrotus_purpuratus_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Crinoid_on_the_reef_of_Batu_Moncho_Island.JPG/250px-Crinoid_on_the_reef_of_Batu_Moncho_Island.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Clypeaster_reticulatus.jpg/330px-Clypeaster_reticulatus.jpg"
     ],
     "card": 5
   },
@@ -217,8 +310,9 @@
       "sea squirts",
       "vertibrates"
     ],
+    "tag": "Possess at some point during their larval or adult stages a notochord, a hollow dorsal nerve cord, an endostyle or thyroid, pharyngeal slits, and a post-anal tail.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/4/42/Equus_quagga_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Equus_quagga_burchellii_-_Etosha%2C_2014.jpg/330px-Equus_quagga_burchellii_-_Etosha%2C_2014.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Tunicate_komodo.jpg/330px-Tunicate_komodo.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Branchiostoma_lanceolatum.jpg/330px-Branchiostoma_lanceolatum.jpg"
     ],
