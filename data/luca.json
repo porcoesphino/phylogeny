@@ -4,6 +4,7 @@
     "parent": "LUCA",
     "rank": "Domain",
     "ipa": "bækˈtɪəriə",
+    "tag": "Single celled organisms that do not have organelles or a true nucleus. They appear in most habitats on earth, including larger life forms. Sometimes living in mutualistic, commensal and parasitic relationships. Their DNA is typically typically a single circular chromosome.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/E._coli_Bacteria_%287316101966%29.jpg/330px-E._coli_Bacteria_%287316101966%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/7/79/Gram_Stain_Anthrax.jpg"
@@ -14,7 +15,7 @@
     "parent": "LUCA",
     "rank": "Domain",
     "ipa": "ɑːrˈkiːə",
-    "tag": "Early cellular life with one branch evolving into eukaryota.",
+    "tag": "Early cellular life with one branch evolving into eukaryota. They are often found in extreme environments like hydrothermal vents, highly acidic soils, and salt lakes. Some are methanogens. Their cell walls lack peptidoglycan; use ether bonds to connect fatty acids and glycerol; have multiple RNA polymerases; metabolism can include nitrogen fixation, denitrification, chemolithotrophy, and hyperthermophilic growth.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/d/dc/Urzwerg.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/a/a1/Halobacteria.jpg"
@@ -31,6 +32,7 @@
     "parent": "Eukaryota",
     "rank": "Kingdom",
     "ipa": "ˌænɪˈmeɪliə",
+    "tag": "Most species consume organic material, breathe oxygen, have myocytes and are able to move, can reproduce sexually, and grow from a hollow sphere of cells, the blastula, during embryonic development.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/European_wasp_white_bg02.jpg/330px-European_wasp_white_bg02.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Hertshoon.jpg/330px-Hertshoon.jpg",
@@ -43,21 +45,28 @@
     "parent": "Eukaryota",
     "rank": "Kingdom",
     "ipa": "ˈfʌŋɡi",
-    "tag": "Eukaryotes with chitin in their cell walls and the primary decomposers in many ecological systems.",
+    "tag": "The primary decomposers in many ecological systems. Their cell walls contain chitin.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Scarlet_elf_cap_cadnant_dingle.jpg/330px-Scarlet_elf_cap_cadnant_dingle.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caloplaca_thallincola.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/b/b9/Caloplaca_thallincola.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/%28Gemeine_Steinpilz%29_Boletus_edulis.jpg/330px-%28Gemeine_Steinpilz%29_Boletus_edulis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Flavoparmelia_caperata_240112.jpg/330px-Flavoparmelia_caperata_240112.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Penicillium_%D0%BD%D0%B0_%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D0%B8%D0%BD%D0%B5.jpg/330px-Penicillium_%D0%BD%D0%B0_%D0%BC%D0%B0%D0%BD%D0%B4%D0%B0%D1%80%D0%B8%D0%BD%D0%B5.jpg",
     ]
   },
   {
     "name": "Plantae",
     "parent": "Eukaryota",
     "rank": "Kingdom",
-    "tag": "Eukaryotes with organelles for photosynthesis and cellulose in their cell walls.",
+    "tag": "The primary producers in most terrestrial ecosystems using organelles specialised for photosynthesis. Their cell walls contain cellulose.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/f/fb/Chondrus_crispus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-034_%28single%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Tionesta-ac-moss2.jpg/330px-Tionesta-ac-moss2.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Senecio_angulatus_003.jpg/330px-Senecio_angulatus_003.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Senecio_angulatus_003.jpg/330px-Senecio_angulatus_003.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Klebsormidium_bilatum_Belgium_%2814759117646%29.jpg/330px-Klebsormidium_bilatum_Belgium_%2814759117646%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Jungermannia_hyalina_%28a%2C_113308-471324%29_2392.JPG/330px-Jungermannia_hyalina_%28a%2C_113308-471324%29_2392.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Tree_Fern_%2848717210587%29.jpg/330px-Tree_Fern_%2848717210587%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Larix_decidua_Aletschwald.jpg/250px-Larix_decidua_Aletschwald.jpg"
     ]
   }
 ]
