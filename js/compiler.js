@@ -12,7 +12,14 @@ class QueryParams {
   static _DEFAULT_ROOT = 'animalia'
   static _KEY_CARD = 'card'
   static _DEFAULT_CARD = 'all'
-  static _ALLOWED_KEYS = new Set([QueryParams._KEY_CONTROLS, QueryParams._KEY_SUMMARY, QueryParams._KEY_ROOT, QueryParams._KEY_CARD])
+  static _KEY_TAXA = 'taxa'
+  static _ALLOWED_KEYS = new Set([
+    QueryParams._KEY_CONTROLS,
+    QueryParams._KEY_SUMMARY,
+    QueryParams._KEY_ROOT,
+    QueryParams._KEY_CARD,
+    QueryParams._KEY_TAXA,
+  ])
 
   _get(key, default_value = null) {
     const params = new URLSearchParams(location.search);
@@ -78,6 +85,14 @@ class QueryParams {
 
   set card(new_value) {
     this._update(QueryParams._KEY_CARD, new_value, QueryParams._DEFAULT_CARD)
+  }
+
+  get taxa() {
+    return this._get(QueryParams._KEY_TAXA)
+  }
+
+  set taxa(new_value) {
+    this._update(QueryParams._KEY_TAXA, new_value)
   }
 
   clean_url(state) {
@@ -1075,6 +1090,14 @@ class Page {
 
     Accordion.add_query_param_on_state_change(Accordion.ID_CONTROLS)
     Accordion.add_query_param_on_state_change(Accordion.ID_SUMMARY)
+
+    if (!!this.query_params.taxa) {
+      var taxa_treebox_el = document.getElementById(`${this.state.tree_range}_${this.query_params.taxa}`)
+      // TODO: Remove this workaround to ensure the column layout is complete.
+      setTimeout(() => {
+        taxa_treebox_el.scrollIntoView({ block: "center", behavior: "instant" });
+      }, 100)
+    }
   }
 }
 
