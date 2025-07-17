@@ -529,6 +529,8 @@ class TreeBuilderAsTreeList {
       var is_root = false
     }
 
+    const taxa_as_id = node.name.toLowerCase()
+
     const append_name = (node, parent_el) => {
       var name_el = document.createElement('span')
       var wikipedia_link_el = document.createElement('a')
@@ -571,8 +573,7 @@ class TreeBuilderAsTreeList {
         return
       }
 
-      var id = node.name.toLowerCase()
-      if (this._state.menu_map.has_taxa(id)) {
+      if (this._state.menu_map.has_taxa(taxa_as_id)) {
         var button_el = document.createElement('button')
         if (is_root) {
           button_el.innerText = 'See parent'
@@ -582,7 +583,7 @@ class TreeBuilderAsTreeList {
         } else {
           button_el.innerText = 'See children'
           button_el.addEventListener('click', () => {
-            window.page.select_new_tree_range(id, false)
+            window.page.select_new_tree_range(taxa_as_id, false)
           })
         }
         parent_el.appendChild(button_el)
@@ -639,6 +640,7 @@ class TreeBuilderAsTreeList {
 
     const append_tree_box = (node, parent_el) => {
       var outer_box_el = document.createElement('div')
+      outer_box_el.id = `${this._state.tree_range}_${taxa_as_id}`
       outer_box_el.classList.add('outer_tree_box')
 
       var inner_box_el = document.createElement('div')
