@@ -1,0 +1,20 @@
+{
+  "short_name": "PT",
+  "name": "Simplified phylogentic tree",
+  "icons": [
+    {
+      "src": "/favicon_tree_192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/favicon_tree_512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "start_url": ".",
+  "display": "minimal-ui",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

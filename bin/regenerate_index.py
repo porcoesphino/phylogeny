@@ -297,6 +297,7 @@ def get_html() -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json" />
   <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/typography.css">
@@ -304,6 +305,8 @@ def get_html() -> str:
   <link rel="stylesheet" href="./css/controls.css">
   <link rel="stylesheet" href="./css/tree_view.css">
   <link rel="stylesheet" href="./css/radio_nav.css">
+  <link rel="icon" href="favicon_tree_192.jpg" sizes="192x192"/>
+  <link rel="icon" href="favicon_tree_512.jpg" sizes="512x512"/>
   <title>Phylogentic tree</title>
 </head>
 

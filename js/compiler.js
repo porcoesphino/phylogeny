@@ -2,6 +2,24 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
+console.log('Almost registering the service worker.');
+
+if ('serviceWorker' in navigator) {
+  // Register a service worker hosted at the root of the
+  // site using the default scope.
+  console.log('Registering the service worker.');
+  navigator.serviceWorker.register('./cacher.js').then(
+    (registration) => {
+      console.log('Service worker registration succeeded:', registration);
+    },
+    (error) => {
+      console.error(`Service worker registration failed: ${error}`);
+    },
+  );
+} else {
+  console.error('Service workers are not supported.');
+}
+
 function clear_child_nodes(parent_el) {
   while (parent_el.firstChild) {
     // The list is LIVE so it will re-index each call
