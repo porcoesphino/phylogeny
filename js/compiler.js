@@ -663,10 +663,10 @@ class TreeBuilderAsTreeList {
 
     const append_tree_box = (node, parent_el) => {
       var outer_box_el = document.createElement('div')
-      outer_box_el.id = `${this._state.tree_range}_${taxa_as_id}`
       outer_box_el.classList.add('outer_tree_box')
 
       var inner_box_el = document.createElement('div')
+      inner_box_el.id = `${this._state.tree_range}_${taxa_as_id}`
       inner_box_el.classList.add('tree_box')
       outer_box_el.appendChild(inner_box_el)
 
@@ -1099,10 +1099,27 @@ class Page {
     Accordion.add_query_param_on_state_change(Accordion.ID_SUMMARY)
 
     if (!!this.query_params.taxa) {
-      var taxa_treebox_el = document.getElementById(`${this.state.tree_range}_${this.query_params.taxa}`)
+      const taxa_treebox_el = document.getElementById(`${this.state.tree_range}_${this.query_params.taxa}`)
       // TODO: Remove this workaround to ensure the column layout is complete.
       setTimeout(() => {
         taxa_treebox_el.scrollIntoView({ block: "center", behavior: "instant" });
+        const shake_animation = [
+          { transform: 'translate(1px, 1px) rotate(0deg)' },
+          { transform: 'translate(-1px, -1px) rotate(-0.1deg)' },
+          { transform: 'translate(-1px, 0px) rotate(0.1deg)' },
+          { transform: 'translate(1px, 1px) rotate(0deg)' },
+          { transform: 'translate(1px, -1px) rotate(0.1deg)' },
+          { transform: 'translate(-1px, 1px) rotate(-0.1deg)' },
+          { transform: 'translate(-1px, 1px) rotate(0deg)' },
+          { transform: 'translate(1px, 1px) rotate(-0.1deg)' },
+          { transform: 'translate(-1px, -1px) rotate(0.1deg)' },
+          { transform: 'translate(1px, 1px) rotate(0deg)' },
+          { transform: 'translate(1px, -1px) rotate(-0.1deg)' },
+        ]
+
+        taxa_treebox_el.style.background = 'rgb(229 255 220)'
+        taxa_treebox_el.style.borderColor = 'rgb(50 161 12)'
+        taxa_treebox_el.animate(shake_animation, { duration: 1000 })
       }, 100)
     }
   }
