@@ -481,10 +481,12 @@
       "dottybacks",
       "jawfishes",
       "damselfishes",
+      "clownfishes",
       "anemonefishes"
     ],
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/FMIB_46186_Butterfly_Blenny.jpeg/120px-FMIB_46186_Butterfly_Blenny.jpeg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/FMIB_46186_Butterfly_Blenny.jpeg/120px-FMIB_46186_Butterfly_Blenny.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg/330px-Amphiprion_ocellaris_%28Clown_anemonefish%29_by_Nick_Hobgood.jpg"
     ],
     "tag": "",
     "species": 0
