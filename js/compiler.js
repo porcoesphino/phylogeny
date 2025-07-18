@@ -177,7 +177,7 @@ class DataMap {
     this._taxa_to_root = null
     this._taxa_to_metadata = null
     this._taxa_set = null
-    this._common_name_set = null
+    this._common_name_to_root_taxa_list = null
   }
 
   static get_data_for_file(metadata_file) {
@@ -191,8 +191,7 @@ class DataMap {
     if (this._data_mapped_by_taxa == null) {
       this._taxa_to_root = new Map()
       this._taxa_to_metadata = new Map()
-      var taxa_list = []
-      var common_name_list = []
+      this._common_name_to_root_taxa_list = new Map()
       for (var file_i = 0; file_i < window.data_files.length; file_i++) {
         var menu_metadata = window.data_files[file_i]
         var tree_as_list = DataMap.get_data_for_file(menu_metadata.file)
@@ -200,59 +199,59 @@ class DataMap {
         for (var taxa_i = 0; taxa_i < tree_as_list.length; taxa_i++) {
           var taxa_metadata = tree_as_list[taxa_i]
           var id = taxa_metadata.name.toLowerCase()
-          if (this._taxa_to_root.has(name) || this._taxa_to_metadata.has(name)) {
+          if (this._taxa_to_root.has(id) || this._taxa_to_metadata.has(id)) {
             throw new Error('Duplicate taxa ID in source data.')
           }
           this._taxa_to_root.set(id, root)
           this._taxa_to_metadata.set(id, taxa_metadata)
-          taxa_list.push(id)
 
           if (!!taxa_metadata.common) {
             for (var common_i = 0; common_i < taxa_metadata.common.length; common_i++) {
-              common_name_list.push(taxa_metadata.common[common_i])
+              const common_name = taxa_metadata.common[common_i]
+              if (!this._common_name_to_root_taxa_list.has(common_name)) {
+                this._common_name_to_root_taxa_list.set(common_name, [])
+              }
+              var root_for_common_names = this._common_name_to_root_taxa_list.get(common_name)
+              root_for_common_names.push(`${root}_${id}`)
             }
           }
         }
       }
-      this._taxa_set = new Set(taxa_list)
-      this._common_name_set = new Set(common_name_list)
     }
     return this._data_mapped_by_taxa
   }
 
-  has_taxa(taxa) {
+  get taxa_to_root() {
     if (this._taxa_to_root == null) {
       this._build_maps()
     }
-    return this._taxa_to_root.has(taxa.toLowerCase())
+    return this._taxa_to_root
+  }
+
+  has_taxa(taxa) {
+    return this.taxa_to_root.has(taxa.toLowerCase())
   }
 
   get_root(taxa) {
-    if (this._taxa_to_root == null) {
-      this._build_maps()
-    }
-    return this._taxa_to_root.get(taxa.toLowerCase())
+    return this.taxa_to_root.get(taxa.toLowerCase())
   }
 
-  get_metadata(taxa) {
+  get taxa_to_metadata() {
     if (this._taxa_to_metadata == null) {
       this._build_maps()
     }
-    return this._taxa_to_metadata.get(taxa.toLowerCase())
+    return this._taxa_to_metadata
   }
 
-  get taxa_set() {
-    if (!this._taxa_set) {
-      this._build_maps()
-    }
-    return this._taxa_set
+  get_metadata(taxa) {
+    return this.taxa_to_metadata.get(taxa.toLowerCase())
   }
 
-  get common_name_set() {
-    if (!this._common_name_set) {
+  get common_name_to_root_taxa_list() {
+    if (!this._common_name_to_root_taxa_list) {
       this._build_maps()
     }
-    return this._common_name_set
+    return this._common_name_to_root_taxa_list
   }
 }
 
@@ -264,7 +263,7 @@ class State {
     this._clear_cache()
     this.menu_map = new MenuMap()
     this.data_map = new DataMap()
-    this._autocomplete_set = null
+    this._autocomplete_list = null
   }
 
   get_tree_for_root_id(root_id) {
@@ -309,11 +308,6 @@ class State {
 
   set card(new_val) {
     this._card = new_val
-    this._clear_cache()
-  }
-
-  set tree_range(new_val) {
-    this._tree_range = new_val
     this._clear_cache()
   }
 
@@ -410,13 +404,13 @@ class State {
     return this._name_to_node
   }
 
-  get autocomplete_set() {
-    if (!this._autocomplete_set) {
-      var taxa_set = this.data_map.taxa_set
-      var common_name_set = this.data_map.common_name_set
-      this._autocomplete_set = new Set([...taxa_set, ...common_name_set])
+  get autocomplete_list() {
+    if (!this._autocomplete_list) {
+      var taxa_list = this.data_map.taxa_to_root.keys()
+      var common_name_list = this.data_map.common_name_to_root_taxa_list.keys()
+      this._autocomplete_list = [...taxa_list, ...common_name_list]
     }
-    return this._autocomplete_set
+    return this._autocomplete_list
   }
 }
 
@@ -523,8 +517,8 @@ class Search {
 
   add_autocomplete_options() {
     const fragment = document.createDocumentFragment();
-    const autocomplete_set = this._state.autocomplete_set
-    for (const autocomplete_value of autocomplete_set.values()) {
+    const autocomplete_list = this._state.autocomplete_list
+    for (const autocomplete_value of autocomplete_list.values()) {
       const option_el = document.createElement("option");
       option_el.value = autocomplete_value
       fragment.appendChild(option_el);
