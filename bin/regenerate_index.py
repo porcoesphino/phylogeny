@@ -459,6 +459,10 @@ def get_html() -> str:
               list="common-names-and-taxa-list" enterkeyhint="search">
             <datalist id="common-names-and-taxa-list">
             </datalist>
+            <fieldset id="exact-match-fieldset" style="display: none;">
+              <legend>Open exact match</legend>
+              <div id="exact-match-buttons"></div>
+            </fieldset>
             <div id="tree-range-select-buttons">
               <div style="height: 1800px; width: 500px;"></div>
             </div>

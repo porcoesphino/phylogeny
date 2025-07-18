@@ -39,8 +39,24 @@ details.controls div.select {
   width: 100%;
 }
 
-.controls table {
-  width: 100%;
+.controls fieldset {
+  display: block;
+  min-inline-size: min-content;
+  margin-bottom: 4px;
+  border-width: 2px;
+  border-style: groove;
+  border-color: threedface;
+  border-image: initial;
+  padding-block: 0.35em 0.625em;
+  padding-inline: 0.75em;
+}
+
+
+.controls fieldset legend {
+  display: block;
+  unicode-bidi: isolate;
+  padding-inline: 2px;
+  font-size: .8rem;
 }
 
 .controls option {

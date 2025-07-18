@@ -5,23 +5,27 @@
   padding: 4px;
 }
 
-#tree-range-select-buttons li {
+#tree-range-select-buttons li,
+#exact-match-buttons li {
   list-style: none;
 }
 
-#tree-range-select-buttons ul {
+#tree-range-select-buttons ul,
+#exact-match-buttons ul {
   padding-inline-start: 20px;
 }
 
 /** Hide the radiobox. */
-#tree-range-select-buttons input[type=radio] {
+#tree-range-select-buttons input[type=radio],
+#exact-match-buttons input[type=radio] {
   opacity: 0;
   height: 1px;
   visibility: hidden;
   overflow: hidden;
 }
 
-#tree-range-select-buttons label div {
+#tree-range-select-buttons label div,
+#exact-match-buttons label div {
   background-color: #e4e4e4;
   color: rgba(0, 0, 0, 0.6);
   font-size: 14px;
@@ -34,11 +38,13 @@
   margin: 2px;
 }
 
-#tree-range-select-buttons label:hover {
+#tree-range-select-buttons label:hover,
+#exact-match-buttons label:hover {
   cursor: pointer;
 }
 
-#tree-range-select-buttons input:checked+label div {
+#tree-range-select-buttons input:checked+label div,
+#exact-match-buttons input:checked+label div {
   background-color: #a5dc86;
   box-shadow: none;
 }

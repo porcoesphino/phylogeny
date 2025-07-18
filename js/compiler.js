@@ -2,6 +2,13 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
+function clear_child_nodes(parent_el) {
+  while (parent_el.firstChild) {
+    // The list is LIVE so it will re-index each call
+    parent_el.removeChild(parent_el.firstChild);
+  }
+}
+
 class QueryParams {
   static _MISSING_ROOT_FOR_LUCA = 'overview'
   static _KEY_CONTROLS = 'controls'
@@ -212,7 +219,7 @@ class DataMap {
                 this._common_name_to_root_taxa_list.set(common_name, [])
               }
               var root_for_common_names = this._common_name_to_root_taxa_list.get(common_name)
-              root_for_common_names.push(`${root}_${id}`)
+              root_for_common_names.push([root, id])
             }
           }
         }
@@ -466,8 +473,16 @@ class Search {
 
     var menu_items = document.querySelectorAll('#tree-range-select-buttons li, #tree-range-select-buttons > div > div')
 
-    // If the search is empty, make the menu visible.
+    const exact_match_fieldset_el = document.getElementById('exact-match-fieldset')
+    const exact_match_buttons_el = document.getElementById('exact-match-buttons')
+    clear_child_nodes(exact_match_buttons_el)
+
     if (!search_input) {
+
+      // If the search is empty, hide the exact matches before the early abort.
+      exact_match_fieldset_el.style.display = 'none'
+
+      // If the search is empty, make the menu visible.
       for (var i = 0; i < menu_items.length; i++) {
         var menu_el = menu_items[i]
         menu_el.style.display = ''
@@ -500,6 +515,68 @@ class Search {
       Search.ensure_parents_are_visible(menu_el)
     }
 
+    if (matches.length == 0) {
+      exact_match_fieldset_el.style.display = 'none'
+    } else {
+
+      var root_taxa_pairs = []
+      if (this._state.data_map.taxa_to_root.has(search_input)) {
+        root_taxa_pairs.push([this._state.data_map.taxa_to_root.get(search_input), search_input])
+      }
+      if (this._state.data_map.common_name_to_root_taxa_list.has(search_input)) {
+        const root_taxa_pairs_for_common_name = this._state.data_map.common_name_to_root_taxa_list.get(search_input)
+        root_taxa_pairs = root_taxa_pairs.concat(root_taxa_pairs_for_common_name)
+      }
+
+      const capitalizeFirstLetter = (str) => {
+        return String(str).charAt(0).toUpperCase() + String(str).slice(1);
+      }
+
+      const fragment = document.createDocumentFragment();
+      for (var i = 0; i < root_taxa_pairs.length; i++) {
+        const [root, taxa] = root_taxa_pairs[i]
+        const callback = () => {
+          window.page.select_new_tree_range(root, true /* button click */, taxa)
+        }
+
+        var outer_div_el = document.createElement('div')
+        var input_el = document.createElement('input')
+        input_el.type = 'radio'
+        var id = `exact_match_${root}_${taxa}`
+        input_el.id = id
+        input_el.value = id
+        input_el.name = 'exact_match_radio'
+        input_el.addEventListener('click', callback)
+        outer_div_el.appendChild(input_el)
+        var label_el = document.createElement('label')
+        label_el.htmlFor = id
+        outer_div_el.appendChild(label_el)
+        var inner_div_el = document.createElement('div')
+        var label = `${capitalizeFirstLetter(taxa)} found in ${capitalizeFirstLetter(root)}`
+        inner_div_el.innerText = label
+
+        const metadata = this._state.data_map.get_metadata(taxa)
+        if (!!metadata.tag) {
+          var br_el = document.createElement('br')
+          inner_div_el.appendChild(br_el)
+          var small_el = document.createElement('small')
+          const max_summary_length = 150
+          var summary = metadata.tag.substr(0, max_summary_length)
+          if (metadata.tag.length > max_summary_length) {
+            summary += '…'
+          }
+          small_el.innerText = summary
+          inner_div_el.appendChild(small_el)
+        }
+        label_el.appendChild(inner_div_el)
+
+        fragment.appendChild(outer_div_el)
+
+      }
+
+      exact_match_buttons_el.appendChild(fragment)
+      exact_match_fieldset_el.style.display = ''
+    }
   }
 
   _debounce(func, timeout = 300) {
@@ -532,6 +609,35 @@ class TreeBuilderAsTreeList {
 
   constructor(state) {
     this._state = state
+  }
+
+  static scroll_to_taxa(root, taxa, shake = false) {
+
+    const taxa_treebox_el = document.getElementById(`${root}_${taxa}`)
+    // TODO: Remove this workaround to ensure the column layout is complete.
+    setTimeout(() => {
+      taxa_treebox_el.scrollIntoView({ block: "center", behavior: "instant" });
+
+      if (shake) {
+        const shake_animation = [
+          { transform: 'translate(1px, 1px) rotate(0deg)' },
+          { transform: 'translate(-1px, -1px) rotate(-0.1deg)' },
+          { transform: 'translate(-1px, 0px) rotate(0.1deg)' },
+          { transform: 'translate(1px, 1px) rotate(0deg)' },
+          { transform: 'translate(1px, -1px) rotate(0.1deg)' },
+          { transform: 'translate(-1px, 1px) rotate(-0.1deg)' },
+          { transform: 'translate(-1px, 1px) rotate(0deg)' },
+          { transform: 'translate(1px, 1px) rotate(-0.1deg)' },
+          { transform: 'translate(-1px, -1px) rotate(0.1deg)' },
+          { transform: 'translate(1px, 1px) rotate(0deg)' },
+          { transform: 'translate(1px, -1px) rotate(-0.1deg)' },
+        ]
+
+        taxa_treebox_el.style.background = 'rgb(229 255 220)'
+        taxa_treebox_el.style.borderColor = 'rgb(50 161 12)'
+        taxa_treebox_el.animate(shake_animation, { duration: 1000 })
+      }
+    }, 100)
   }
 
   _get_element_for_node(node, node_map, level = 0) {
@@ -603,7 +709,10 @@ class TreeBuilderAsTreeList {
         if (is_root) {
           button_el.innerText = 'See parent'
           button_el.addEventListener('click', () => {
-            window.page.select_new_tree_range(window.page.state.data_map.get_root(id), false)
+            window.page.select_new_tree_range(
+              window.page.state.data_map.get_root(taxa_as_id),
+              false /* scroll menu */
+            )
           })
         } else {
           button_el.innerText = 'See children'
@@ -788,7 +897,7 @@ class TreeRangeSelectorBuilder {
       var input_el = document.createElement('input')
       input_el.type = 'radio'
       var id = metadata.taxa.toLowerCase()
-      input_el.id = metadata.taxa.toLowerCase()
+      input_el.id = id
       input_el.value = id
       input_el.name = 'tree_range_selector_radio'
       outer_div_el.appendChild(input_el)
@@ -829,10 +938,7 @@ class TreeRangeSelectorBuilder {
   }
 
   replace_tree_range_as_buttons(parent_el) {
-    while (parent_el.firstChild) {
-      // The list is LIVE so it will re-index each call
-      parent_el.removeChild(parent_el.firstChild);
-    }
+    clear_child_nodes(parent_el)
 
     var wrapper_div_el = document.createElement('div')
 
@@ -945,15 +1051,15 @@ class Page {
       tree_root.appendChild(root_list_el)
     }
 
-    this.select_new_tree_range = (new_value, button_click = false) => {
+    this.select_new_tree_range = (new_value, scroll_menu = false, new_taxa = '') => {
       if (!new_value) { new_value = '' }
       this.state.tree_range = new_value
       this.state.card = 'all'
-      this.state.taxa = ''
+      this.state.taxa = new_taxa
       page.query_params.update_all(new Map([
         [QueryParams._KEY_ROOT, new_value],
-        [QueryParams._KEY_CARD, 'all'],
-        [QueryParams._KEY_TAXA, '']
+        [QueryParams._KEY_CARD, this.state.card],
+        [QueryParams._KEY_TAXA, new_taxa]
       ]), this.state)
       this.add_card_select_options()
       update_tree_range_view()
@@ -962,10 +1068,14 @@ class Page {
       var menu_metadata = this.state.menu_map.get_metadata(new_value)
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
 
-      if (!button_click) {
+      if (!scroll_menu) {
         var radio_btn = document.getElementById(new_value);
         radio_btn.checked = true;
         radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
+      }
+
+      if (!!new_taxa) {
+        TreeBuilderAsTreeList.scroll_to_taxa(new_value, new_taxa, false /* shake */)
       }
     }
 
@@ -1102,28 +1212,10 @@ class Page {
     Accordion.add_query_param_on_state_change(Accordion.ID_SUMMARY)
 
     if (!!this.query_params.taxa) {
-      const taxa_treebox_el = document.getElementById(`${this.state.tree_range}_${this.query_params.taxa}`)
-      // TODO: Remove this workaround to ensure the column layout is complete.
-      setTimeout(() => {
-        taxa_treebox_el.scrollIntoView({ block: "center", behavior: "instant" });
-        const shake_animation = [
-          { transform: 'translate(1px, 1px) rotate(0deg)' },
-          { transform: 'translate(-1px, -1px) rotate(-0.1deg)' },
-          { transform: 'translate(-1px, 0px) rotate(0.1deg)' },
-          { transform: 'translate(1px, 1px) rotate(0deg)' },
-          { transform: 'translate(1px, -1px) rotate(0.1deg)' },
-          { transform: 'translate(-1px, 1px) rotate(-0.1deg)' },
-          { transform: 'translate(-1px, 1px) rotate(0deg)' },
-          { transform: 'translate(1px, 1px) rotate(-0.1deg)' },
-          { transform: 'translate(-1px, -1px) rotate(0.1deg)' },
-          { transform: 'translate(1px, 1px) rotate(0deg)' },
-          { transform: 'translate(1px, -1px) rotate(-0.1deg)' },
-        ]
+      const root = this.state.tree_range
+      const taxa = this.query_params.taxa
 
-        taxa_treebox_el.style.background = 'rgb(229 255 220)'
-        taxa_treebox_el.style.borderColor = 'rgb(50 161 12)'
-        taxa_treebox_el.animate(shake_animation, { duration: 1000 })
-      }, 100)
+      TreeBuilderAsTreeList.scroll_to_taxa(root, taxa, true /* shake */)
     }
   }
 }
