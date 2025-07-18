@@ -1,8 +1,5 @@
 #tree-range-select-buttons {
   overflow: auto;
-  border: 1px solid grey;
-  border-radius: 3px;
-  padding: 4px;
 }
 
 #tree-range-select-buttons li,

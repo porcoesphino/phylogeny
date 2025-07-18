@@ -47,8 +47,8 @@ details.controls div.select {
   border-style: groove;
   border-color: threedface;
   border-image: initial;
-  padding-block: 0.35em 0.625em;
-  padding-inline: 0.75em;
+  padding: 4px;
+  border-radius: 3px;
 }
 
 

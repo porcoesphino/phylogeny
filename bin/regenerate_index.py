@@ -463,9 +463,12 @@ def get_html() -> str:
               <legend>Open exact match</legend>
               <div id="exact-match-buttons"></div>
             </fieldset>
-            <div id="tree-range-select-buttons">
-              <div style="height: 1800px; width: 500px;"></div>
-            </div>
+            <fieldset>
+              <legend>Open tree</legend>
+              <div id="tree-range-select-buttons">
+                <div style="height: 1800px; width: 500px;"></div>
+              </div>
+            </fieldset>
           </div>
 
           <div>
