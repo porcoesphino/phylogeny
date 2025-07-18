@@ -521,10 +521,13 @@
       "scorpionfish",
       "sculpins",
       "sticklebacks",
-      "eelpouts"
+      "eelpouts",
+      "lionfish"
     ],
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Abborre%2C_Iduns_kokbok.jpg/120px-Abborre%2C_Iduns_kokbok.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Abborre%2C_Iduns_kokbok.jpg/120px-Abborre%2C_Iduns_kokbok.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/84/Grosserdrachenkopf-02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Pterois_volitans.001_-_Aquarium_Finisterrae.JPG/330px-Pterois_volitans.001_-_Aquarium_Finisterrae.JPG"
     ],
     "tag": "",
     "species": 0
