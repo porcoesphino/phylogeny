@@ -561,6 +561,8 @@ class TreeBuilderAsTreeList {
       wikipedia_link_el.innerText = name
       wikipedia_link_el.target = '_blank'
       name_el.appendChild(wikipedia_link_el)
+      // TODO: Find better workaround for copy-paste.
+      name_el.appendChild(document.createTextNode(' '))
       if (node.hasOwnProperty('ipa') && !!node.ipa) {
         name_el.appendChild(document.createTextNode(' (/'))
         var ipa_link_el = document.createElement('a')
