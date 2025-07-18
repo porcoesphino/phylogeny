@@ -528,6 +528,11 @@ class Search {
         root_taxa_pairs = root_taxa_pairs.concat(root_taxa_pairs_for_common_name)
       }
 
+      if (root_taxa_pairs.length == 0) {
+        exact_match_fieldset_el.style.display = 'none'
+        return
+      }
+
       const capitalizeFirstLetter = (str) => {
         return String(str).charAt(0).toUpperCase() + String(str).slice(1);
       }
@@ -536,7 +541,7 @@ class Search {
       for (var i = 0; i < root_taxa_pairs.length; i++) {
         const [root, taxa] = root_taxa_pairs[i]
         const callback = () => {
-          window.page.select_new_tree_range(root, true /* button click */, taxa)
+          window.page.select_new_tree_range(root, true /* select_menu */, false /* scroll_menu */, taxa)
         }
 
         var outer_div_el = document.createElement('div')
@@ -711,13 +716,13 @@ class TreeBuilderAsTreeList {
           button_el.addEventListener('click', () => {
             window.page.select_new_tree_range(
               window.page.state.data_map.get_root(taxa_as_id),
-              false /* scroll menu */
+              true, true /* skip_menu_update */
             )
           })
         } else {
           button_el.innerText = 'See children'
           button_el.addEventListener('click', () => {
-            window.page.select_new_tree_range(taxa_as_id, false)
+            window.page.select_new_tree_range(taxa_as_id, true /* select_menu */, true /* scroll_menu */)
           })
         }
         parent_el.appendChild(button_el)
@@ -1051,7 +1056,7 @@ class Page {
       tree_root.appendChild(root_list_el)
     }
 
-    this.select_new_tree_range = (new_value, scroll_menu = false, new_taxa = '') => {
+    this.select_new_tree_range = (new_value, select_menu = true, scroll_menu = true, new_taxa = '') => {
       if (!new_value) { new_value = '' }
       this.state.tree_range = new_value
       this.state.card = 'all'
@@ -1068,10 +1073,14 @@ class Page {
       var menu_metadata = this.state.menu_map.get_metadata(new_value)
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
 
-      if (!scroll_menu) {
+      if (select_menu || scroll_menu) {
         var radio_btn = document.getElementById(new_value);
-        radio_btn.checked = true;
-        radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
+        if (select_menu) {
+          radio_btn.checked = true;
+        }
+        if (scroll_menu) {
+          radio_btn.scrollIntoView({ block: "center", behavior: "instant" });
+        }
       }
 
       if (!!new_taxa) {
@@ -1172,7 +1181,7 @@ class Page {
     document.getElementById('tree-range-select-buttons').addEventListener('click', function (event) {
       if (event.target && event.target.matches("input[type='radio']")) {
         var clicked_range = event.target.id
-        select_new_tree_range(clicked_range, true)
+        select_new_tree_range(clicked_range, false /* select_menu */, false /* scroll_menu */)
       }
     });
 

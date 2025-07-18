@@ -43,8 +43,7 @@
   cursor: pointer;
 }
 
-#tree-range-select-buttons input:checked+label div,
-#exact-match-buttons input:checked+label div {
+#tree-range-select-buttons input:checked+label div {
   background-color: #a5dc86;
   box-shadow: none;
 }
