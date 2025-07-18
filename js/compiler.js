@@ -653,6 +653,7 @@ class TreeBuilderAsTreeList {
             var img_href = 'https://commons.wikimedia.org/wiki/File:' + img_base
             var img_link = document.createElement('a')
             img_link.href = img_href
+            img_link.target = '_blank'
             img_link.appendChild(img_el)
             wrapper_el.appendChild(img_link)
           } else {
