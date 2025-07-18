@@ -13,12 +13,13 @@ class QueryParams {
   static _KEY_CARD = 'card'
   static _DEFAULT_CARD = 'all'
   static _KEY_TAXA = 'taxa'
-  static _ALLOWED_KEYS = new Set([
-    QueryParams._KEY_CONTROLS,
-    QueryParams._KEY_SUMMARY,
-    QueryParams._KEY_ROOT,
-    QueryParams._KEY_CARD,
-    QueryParams._KEY_TAXA,
+  static _DEFAULT_TAXA = ''
+  static _DEFAULTS = new Map([
+    [QueryParams._KEY_CONTROLS, QueryParams._DEFAULT_CONTROLS],
+    [QueryParams._KEY_SUMMARY, QueryParams._DEFAULT_SUMMARY],
+    [QueryParams._KEY_ROOT, QueryParams._DEFAULT_ROOT],
+    [QueryParams._KEY_CARD, QueryParams._DEFAULT_CARD],
+    [QueryParams._KEY_TAXA, QueryParams._DEFAULT_TAXA],
   ])
 
   _get(key, default_value = null) {
@@ -27,6 +28,14 @@ class QueryParams {
       return default_value
     }
     return params.get(key)
+  }
+
+  static _get_new_location_from_params(params) {
+    if (params.size > 0) {
+      return `${location.pathname}?${params}`
+    } else {
+      return location.pathname
+    }
   }
 
   _update(key, value, default_value = null) {
@@ -47,16 +56,22 @@ class QueryParams {
 
       params.set(key, value)
     }
-    if (params.size > 0) {
-      var new_location = `${location.pathname}?${params}`
-    } else {
-      var new_location = location.pathname
-    }
-    window.history.pushState({}, '', new_location);
+
+    window.history.pushState({}, '', QueryParams._get_new_location_from_params(params));
   }
 
   get controls() {
     return this._get(QueryParams._KEY_CONTROLS, QueryParams._DEFAULT_CONTROLS)
+  }
+
+  update_all(new_params, state) {
+    const params = new URLSearchParams(location.search);
+    for (const [key, value] of new_params) {
+      params.set(key, value)
+    }
+    const new_location = QueryParams._get_new_location_from_params(params)
+    window.history.pushState({}, '', new_location);
+    this.clean_url(state)
   }
 
   set controls(new_value) {
@@ -88,11 +103,11 @@ class QueryParams {
   }
 
   get taxa() {
-    return this._get(QueryParams._KEY_TAXA)
+    return this._get(QueryParams._KEY_TAXA, QueryParams._DEFAULT_TAXA)
   }
 
   set taxa(new_value) {
-    this._update(QueryParams._KEY_TAXA, new_value)
+    this._update(QueryParams._KEY_TAXA, new_value, QueryParams._DEFAULT_TAXA)
   }
 
   clean_url(state) {
@@ -100,7 +115,7 @@ class QueryParams {
 
     const keys = Array.from(params.keys())
     for (var i = 0; i < keys.length; i++) {
-      if (!QueryParams._ALLOWED_KEYS.has(keys[i])) {
+      if (!QueryParams._DEFAULTS.has(keys[i])) {
         params.delete(keys[i])
       }
     }
@@ -110,15 +125,14 @@ class QueryParams {
       }
     }
 
-    // TODO: This is a terrible piece of code, even if isolated. Clean up.
-    if (params.get(QueryParams._KEY_SUMMARY) == QueryParams._DEFAULT_SUMMARY) {
-      params.delete(QueryParams._KEY_SUMMARY)
-    }
-    if (params.get(QueryParams._KEY_CONTROLS) == QueryParams._DEFAULT_CONTROLS) {
-      params.delete(QueryParams._KEY_CONTROLS)
-    }
-    if (params.get(QueryParams._KEY_CARD) == QueryParams._DEFAULT_CARD) {
-      params.delete(QueryParams._KEY_CARD)
+    for (const [key, default_value] of QueryParams._DEFAULTS) {
+      // Always show the root
+      if (key == QueryParams._KEY_ROOT) {
+        continue
+      }
+      if (params.get(key) == default_value) {
+        params.delete(key)
+      }
     }
 
     if (params.size > 0) {
@@ -935,19 +949,18 @@ class Page {
     }
 
     this.select_new_tree_range = (new_value, button_click = false) => {
-      page.query_params.root = new_value
+      if (!new_value) { new_value = '' }
       this.state.tree_range = new_value
       this.state.card = 'all'
-      page.query_params.card = 'all'
+      this.state.taxa = ''
+      page.query_params.update_all(new Map([
+        [QueryParams._KEY_ROOT, new_value],
+        [QueryParams._KEY_CARD, 'all'],
+        [QueryParams._KEY_TAXA, '']
+      ]), this.state)
       this.add_card_select_options()
       update_tree_range_view()
       this.scroll_tree_to_top()
-
-      if (this.state.tree_range == 'all') {
-        this._card_select.disabled = true
-      } else {
-        this._card_select.disabled = false
-      }
 
       var menu_metadata = this.state.menu_map.get_metadata(new_value)
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
