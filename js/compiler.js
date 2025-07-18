@@ -557,7 +557,7 @@ class Search {
         label_el.htmlFor = id
         outer_div_el.appendChild(label_el)
         var inner_div_el = document.createElement('div')
-        var label = `${capitalizeFirstLetter(taxa)} found in ${capitalizeFirstLetter(root)}`
+        var label = `${capitalizeFirstLetter(taxa)} as part of the ${capitalizeFirstLetter(root)} tree`
         inner_div_el.innerText = label
 
         const metadata = this._state.data_map.get_metadata(taxa)
