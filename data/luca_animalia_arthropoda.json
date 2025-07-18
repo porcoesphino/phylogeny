@@ -301,7 +301,9 @@
       "spiders",
       "scorpions",
       "pseudoscorpions",
-      "harvestmen"
+      "harvestmen",
+      "chiggers",
+      "mites"
     ],
     "card": 2
   }

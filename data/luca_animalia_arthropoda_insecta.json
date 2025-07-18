@@ -95,12 +95,13 @@
     "parent": "Neoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "'gnawing-order'",
     "common": [
       "bark lice",
       "book lice",
       "parasitic lice"
     ],
-    "tag": "Small, scavenging insects that feed primarily on fungi, algae, lichen, and organic detritus. Some are parasitic on warm-blooded hosts feeding on skin, debris or blood.",
+    "tag": "Small, scavenging insects that feed primarily on fungi, algae, lichen, and organic detritus. Some are parasitic on warm-blooded hosts feeding on skin, debris or blood. Non-parasitic species have a neck-like constriction between head and thorax.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f5/Psocoptera_%28white_background%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Lipeurus_forficulatus_f.png/250px-Lipeurus_forficulatus_f.png",
@@ -152,10 +153,11 @@
     "parent": "Neoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "'fringe-wings'",
     "common": [
       "thrips"
     ],
-    "tag": "Slender insects with fringed wings and unique asymmetrical 'piercing-sucking' mouthparts mouthparts and are usually less than 1 mm long. Many species are fungivorous and many are pollinators.",
+    "tag": "Slender insects, widest in middle, with wings fringed with long hairs and unique asymmetrical 'piercing-sucking' mouthparts mouthparts that are concealed within head capsule. They are usually less than 1 mm long. Many species are fungivorous and many are pollinators.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Thrips_%28PSF%29_%28white_background%29.png/250px-Thrips_%28PSF%29_%28white_background%29.png",
       "https://upload.wikimedia.org/wikipedia/commons/f/f5/Frankadult.jpg",
@@ -359,7 +361,17 @@
     "rank": "Clade",
     "ipa": "",
     "common": [],
-    "tag": "Undergo complete metamorphism.",
+    "tag": "They undergo complete metamorphosis and go through distinctive life stages: egg, larva, pupa, and adult. Larval traits maximize feeding, growth, and development. Adult traits enable dispersal, mating, and egg laying. The pupa is usually a quiescent, non-feeding developmental stage and most move very little, sometimes enclosed in other structures like cocoons, nests, or shells.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg/250px-Fesoj_-_Papilio_machaon_%28by%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Apis_mellifera_Western_honey_bee.jpg/330px-Apis_mellifera_Western_honey_bee.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Red_Ant_-_March_2025.jpg/330px-Red_Ant_-_March_2025.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Coleoptera_collage.png/330px-Coleoptera_collage.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/A_pupa_of_Euploea_core_%28Cramer%2C_1780%29_-_Common_Crow_WLB.jpg/330px-A_pupa_of_Euploea_core_%28Cramer%2C_1780%29_-_Common_Crow_WLB.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Dwarf_birch_spinner_%28Eriogaster_arbusculae%29_cocoon_Dovrefjell.jpg/330px-Dwarf_birch_spinner_%28Eriogaster_arbusculae%29_cocoon_Dovrefjell.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Nacimiento_de_una_Dryas_iulia%2C_Mariposario_de_Icod_de_los_Vinos%2C_Tenerife%2C_Espa%C3%B1a%2C_2012-12-13%2C_DD_03.jpg/250px-Nacimiento_de_una_Dryas_iulia%2C_Mariposario_de_Icod_de_los_Vinos%2C_Tenerife%2C_Espa%C3%B1a%2C_2012-12-13%2C_DD_03.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Ontwikkelstadia_wespenpoppen.jpg/120px-Ontwikkelstadia_wespenpoppen.jpg"
+    ],
     "card": 3
   },
   {
@@ -395,11 +407,15 @@
     "parent": "Holometabola",
     "rank": "Order",
     "ipa": "",
-    "tag": "The twisted-wing insects / parasites with a parasitic larval stage where the female protrudes between segments of the host's abdomen.",
+    "etymology": "'twisted-wing'",
+    "tag": "The twisted-wing insects. They are endoparasites of other insects with a parasitic larval stage. In most species the female does not leave its host and remains larviform (legless and wingless), protruding between segments of the host's abdomen. The adult males hindwings are generally fan-shaped; their forewings are modified to be small and club-shaped; their mouthparts cannot be used for feeding; their eyes have a blackberry-like appearance; and their antennae are often branched.",
     "common": [],
     "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Stylops_melittae_m3.JPG/250px-Stylops_melittae_m3.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Stylops_melittae_f1.jpg/250px-Stylops_melittae_f1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/1/19/Elenchus_koebelei.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Xenos_peckii_head_closeup.png/330px-Xenos_peckii_head_closeup.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Andrena_nivalis%2C_stylopid%2C_U%2C_Cocos_Co.%2C_NH%2C_back_2015-07-13-15.57.01_ZS_PMax_%28cropped2%29.jpg/250px-Andrena_nivalis%2C_stylopid%2C_U%2C_Cocos_Co.%2C_NH%2C_back_2015-07-13-15.57.01_ZS_PMax_%28cropped2%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Strepsiptera.png/250px-Strepsiptera.png"
     ],
     "card": 6
   },
@@ -408,13 +424,23 @@
     "parent": "Holometabola",
     "rank": "Order",
     "ipa": "",
+    "etymology": "'large-wing'",
     "common": [
       "alderflies",
       "dobsonflies",
       "fishflies"
     ],
+    "tag": "Adults have large, nearly equal sized wings with crossveins near leading edge and a pleated region on their hindwings to help them fold over the abdomen; their antennae are prominent; and they have strong mandibles apparently adapted for chewing but many species do not eat as adults. The larvae live in fresh water; have large heads and elongated bodies; possess strong jaws that they use to capture their prey; and are carnivorous feeding on small invertebrates.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Corydalus_cornutus_illustration_%28rotated%29.png/330px-Corydalus_cornutus_illustration_%28rotated%29.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Corydalus_cornutus_illustration_%28rotated%29.png/330px-Corydalus_cornutus_illustration_%28rotated%29.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Corydalus_affinis%2C_Pacaraima_-_RR%2C_69345-000%2C_Brasil_imported_from_iNaturalist_photo_203073948.jpg/330px-Corydalus_affinis%2C_Pacaraima_-_RR%2C_69345-000%2C_Brasil_imported_from_iNaturalist_photo_203073948.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Protosialis_americana_PCCA20050708-9036A.jpg/330px-Protosialis_americana_PCCA20050708-9036A.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Other_Wondrous_Things_Dark_Fishfly_%2847947964738%29.jpg/250px-Other_Wondrous_Things_Dark_Fishfly_%2847947964738%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Taeniochauliodes.jpg/330px-Taeniochauliodes.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/16/Chloronia_osae.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/30/Platyneuromus_soror.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Sialis_lutaria_larva_%28aka%29.jpg/330px-Sialis_lutaria_larva_%28aka%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/35/Dobsonfly_Corydalus_cornutus_larvae.jpg"
     ],
     "card": 6
   },
@@ -423,11 +449,15 @@
     "parent": "Holometabola",
     "rank": "Order",
     "ipa": "",
+    "etymology": "'needle-wing'",
     "common": [
       "snakeflies"
     ],
+    "tag": "The adults body is long and slender, has a mobile head and two pairs of long, membranous wings that are prominently veined. Females usually have a long ovipositor that is used to deposit eggs into crevices or under bark. The larvae develop under the bark of trees and have large heads with projecting mandibles with long bodies. Both adults and larvae are predators of soft-bodied arthropods.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/3/36/Raphidia_icon.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Dichrostigma_flavipes_beentree.jpg/330px-Dichrostigma_flavipes_beentree.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Raphidia_ophiopsis_M_NL-Doorwerth-19540617_right_wing_-_collection_Naturalis.jpg/330px-Raphidia_ophiopsis_M_NL-Doorwerth-19540617_right_wing_-_collection_Naturalis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Rhaphidioptera-larva.jpg/330px-Rhaphidioptera-larva.jpg"
     ],
     "card": 6
   },
@@ -439,8 +469,14 @@
     "common": [
       "caddisflies"
     ],
+    "tag": "The adult is a medium-sized insect with membranous, hairy wings, which are held in a tent-wise fashion when the insect is at rest. The antennae are fairly long and threadlike, the mouthparts are reduced in size and the legs have five lower leg joints. The larvae are aquatic and may be predators, leaf shredders, algal grazers, or collectors of particles from the water column and benthos. The larvae of many species use silk to make protective cases, which are often strengthened with gravel, sand, twigs, or other debris. Most adults have short lives during which they do not feed.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/RHYACOPHILA_DORSALIS_Male_Pont_Forge_de_Sailly_Watigny_02_MHNT.jpg/330px-RHYACOPHILA_DORSALIS_Male_Pont_Forge_de_Sailly_Watigny_02_MHNT.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/RHYACOPHILA_DORSALIS_Male_Pont_Forge_de_Sailly_Watigny_02_MHNT.jpg/330px-RHYACOPHILA_DORSALIS_Male_Pont_Forge_de_Sailly_Watigny_02_MHNT.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Caddisfly_Larva.jpg/330px-Caddisfly_Larva.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/83/Trichoptera_larvenbau.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/81/Philopotamidae_Notch.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Tinodes_assimilis%2C_Psychomyiidae%2C_Glaslyn_marsh%2C_North_Wales%2C_July_2014_%281%29_%2818035673942%29.jpg/330px-Tinodes_assimilis%2C_Psychomyiidae%2C_Glaslyn_marsh%2C_North_Wales%2C_July_2014_%281%29_%2818035673942%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a6/Notidobia.ciliaris.jpg"
     ],
     "card": 6
   },
@@ -449,11 +485,22 @@
     "parent": "Holometabola",
     "rank": "Order",
     "ipa": "",
+    "etymology": "'long-wings'",
     "common": [
-      "scorpionflies"
+      "scorpionflies",
+      "hangingflies",
+      "earwigflies"
     ],
+    "tag": "Adults are small to medium-sized insects with long beaklike rostra; an elongated head with chewing mouthparts; membranous wings that extend beyond abdomen; slender, elongated bodies; and are mostly scavengers, feeding on decaying vegetation and dead invertebrates. The larvae are caterpillar-like and mostly feed on vegetable matter. Both larvae and adults are omnivorous. Males of the scorpionfly group have enlarged genitals raised over the body that look similar to the stingers of scorpions.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Scorpionfly_%28white_background%29.jpg/330px-Scorpionfly_%28white_background%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Scorpionfly_%28white_background%29.jpg/330px-Scorpionfly_%28white_background%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Skorpionsfliege_Panorpa_communis_male_full_%28cropped%29.jpg/330px-Skorpionsfliege_Panorpa_communis_male_full_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Bittacidae_fg1.jpg/250px-Bittacidae_fg1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Skorpionsfliege_Panorpa_communis_male_genital.jpg/330px-Skorpionsfliege_Panorpa_communis_male_genital.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Boreus_hyemalis_female.jpg/330px-Boreus_hyemalis_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Scorpionfly_%285584476733%29.jpg/250px-Scorpionfly_%285584476733%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Notiothauma_reedi.jpg/330px-Notiothauma_reedi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Merope_tuber_dorsal_view_-_ZooKeys-269-051-g007A.jpeg/330px-Merope_tuber_dorsal_view_-_ZooKeys-269-051-g007A.jpeg"
     ],
     "card": 6
   },
@@ -462,11 +509,19 @@
     "parent": "Holometabola",
     "rank": "Order",
     "ipa": "",
+    "etymology": "'pipe-wingless'",
     "common": [
-      "fleas"
+      "fleas",
+      "jiggers"
     ],
+    "tag": "Small flightless insects that live as external parasites of mammals and birds feeding on the blood of their hosts. They grow to be 3 millimetres long, and have bodies that are narrow to better move through their hosts' fur or feathers. Their hind legs are extremely well adapted for jumping.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Pulex_irritans_female_ZSM_%28white_background%29.jpg/250px-Pulex_irritans_female_ZSM_%28white_background%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flea_Scanning_Electron_Micrograph_False_Color.jpg/250px-Flea_Scanning_Electron_Micrograph_False_Color.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d7/Vogelfloehe.2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Tunga_penetrans_%281%29.JPG/330px-Tunga_penetrans_%281%29.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Flea_Larva.jpg/250px-Flea_Larva.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/%D0%9A%D0%BE%D1%88%D0%B0%D1%87%D1%8C%D1%8F_%D0%B1%D0%BB%D0%BE%D1%85%D0%B0.jpg/330px-%D0%9A%D0%BE%D1%88%D0%B0%D1%87%D1%8C%D1%8F_%D0%B1%D0%BB%D0%BE%D1%85%D0%B0.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/A_dog_flea_%28Ctenocephalides_canis%29%3B_adult%2C_pupa%2C_egg_and_lar_Wellcome_V0022501EL.jpg/250px-A_dog_flea_%28Ctenocephalides_canis%29%3B_adult%2C_pupa%2C_egg_and_lar_Wellcome_V0022501EL.jpg"
     ],
     "card": 6
   },
@@ -475,17 +530,22 @@
     "parent": "Holometabola",
     "rank": "Order",
     "ipa": "",
+    "etymology": "'membrane-wings'",
     "common": [
       "sawflies",
       "wasps",
       "ants",
       "bees"
     ],
+    "tag": "Adults range from very small to large insects; have well-developed mandibles adapted for chewing; many species have a long proboscis for drinking nector; and hindwings connected to the forewings by a series of hooks. Many of the species are parasitic. Females typically have an ovipositor for inserting eggs into hosts and this is often modified into a stinger. A large sub group are known for their 'wasp-waist'.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Wasp_March_2008-3.jpg/330px-Wasp_March_2008-3.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Apis_mellifera_Western_honey_bee.jpg/330px-Apis_mellifera_Western_honey_bee.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Meat_eater_ant_feeding_on_honey02.jpg/330px-Meat_eater_ant_feeding_on_honey02.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/XN_Tenthredo_mesomela.jpg/330px-XN_Tenthredo_mesomela.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/XN_Tenthredo_mesomela.jpg/330px-XN_Tenthredo_mesomela.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Bienenwabe_mit_Eiern_und_Brut_5.jpg/330px-Bienenwabe_mit_Eiern_und_Brut_5.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/92/Ants_and_Eggs_-_geograph.org.uk_-_726733.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Pupae_of_an_S._invicta_queen.png/330px-Pupae_of_an_S._invicta_queen.png"
     ],
     "card": 6
   },
@@ -494,12 +554,13 @@
     "parent": "Holometabola",
     "rank": "Order",
     "ipa": "ˌlɛpɪˈdɒptərə",
+    "etymology": "'scale-wings'",
     "common": [
       "butterflies",
       "moths",
       "caterpillars"
     ],
-    "tag": "Characterised by scales that cover the bodies, large triangular wings, and a proboscis for siphoning nectars. The scales are modified hairs and give them their wide variety of colors and patterns. Mating and the laying of eggs is normally performed near or on host plants for the larvae. The larvae, caterpillars, have a cylindrical body with a well-developed head, mandible mouth parts, three pairs of thoracic legs and from none up to five pairs of prolegs.",
+    "tag": "Characterised by scales that cover the bodies, large triangular wings, and a coiled proboscis for siphoning nectars. The scales are modified hairs and give them their wide variety of colors and patterns. Mating and the laying of eggs is normally performed near or on host plants for the larvae. The larvae, caterpillars, have a cylindrical body with a well-developed head, mandible mouth parts, three pairs of thoracic legs and from none up to five pairs of prolegs.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg/250px-Fesoj_-_Papilio_machaon_%28by%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Giant_grey_moth.png/330px-Giant_grey_moth.png",
@@ -521,12 +582,27 @@
     "parent": "Holometabola",
     "rank": "Order",
     "ipa": "",
+    "etymology": "'two-wings'",
     "common": [
       "true flies",
-      "lovebugs"
+      "lovebugs",
+      "midges",
+      "mosquitoes",
+      "wireworms",
+      "metallic flat-headed wood borers"
     ],
+    "tag": "Adults only use a single pair of wings to fly since the hindwings have evolved into sensory orgrans to perform advanced aerobatics; have a mobile head; a pair of large compound eyes; and mouthparts designed eithern for piercing and sucking, or for lapping and sucking. The eggs are often laid on the larval food-source and the larvae, which lack true limbs, develop in a protected environment, often inside their food source. Other species opportunistically deposit hatched or hatching larvae instead of eggs on carrion, dung, decaying material, or open wounds of mammals.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Common_house_fly%2C_Musca_domestica.jpg/330px-Common_house_fly%2C_Musca_domestica.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Musca_domestica_housefly.jpg/330px-Musca_domestica_housefly.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Klegg_%2835325924364%29.jpg/330px-Klegg_%2835325924364%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Ctenophora_pectinicornis_bl.jpg/330px-Ctenophora_pectinicornis_bl.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Mosquito_Tasmania_crop.jpg/330px-Mosquito_Tasmania_crop.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a0/Prionocera_turcica.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Maggia_fg34.jpg/330px-Maggia_fg34.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Robber_Fly_with_prey_%28Holcocephala_fusca%29_by_Thomas_Shahan.jpg/330px-Robber_Fly_with_prey_%28Holcocephala_fusca%29_by_Thomas_Shahan.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Grosser_Wollschweber_Bombylius_major.jpg/330px-Grosser_Wollschweber_Bombylius_major.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Mydas_sp..JPG/330px-Mydas_sp..JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Stomoxys-stable-fly-life-cycle-2.jpg/250px-Stomoxys-stable-fly-life-cycle-2.jpg"
     ],
     "card": 6
   },
@@ -534,14 +610,33 @@
     "name": "Coleoptera",
     "parent": "Holometabola",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "koʊliːˈɒptɛrə",
+    "etymology": "'sheath-wings'",
     "common": [
       "beetles",
       "Maybug",
-      "ladybugs"
+      "ladybugs",
+      "scarabs",
+      "weevils",
+      "fireflies",
+      "glowworms",
+      "grubs"
     ],
+    "tag": "Adults front pair of wings are hardened into wing-cases that meet in a straight line down the center of the back; typically have a particularly hard exoskeleton; most have mandibles that move in a horizontal plane; They feed on plants and fungi, break down animal and plant debris, or eat other invertebrates. The larvae are commonly called grubs; and typically have elongated bodies with chewing mouthparts and poorly developed eyes.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Pseudacrossus_przewalskyi_%28Reitter%2C_1887%29.jpg/330px-Pseudacrossus_przewalskyi_%28Reitter%2C_1887%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Coleoptera_collage.png/330px-Coleoptera_collage.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Coleoptera_SMNK.jpg/250px-Coleoptera_SMNK.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Cetonia-aurata.jpg/330px-Cetonia-aurata.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Dynastes_hercules_ecuatorianus_MHNT.jpg/330px-Dynastes_hercules_ecuatorianus_MHNT.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Scarabaeus_laticollis_2.jpg/330px-Scarabaeus_laticollis_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Temognatha_alternata_Jewel_Beetle_Cooktown.jpg/330px-Temognatha_alternata_Jewel_Beetle_Cooktown.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/BIEDRONA_mirrored%2C_cropped.png/250px-BIEDRONA_mirrored%2C_cropped.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Weevil3.jpg/330px-Weevil3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Head_of_the_Weaver_Beetle_%28Lamia_textor%29.jpg/330px-Head_of_the_Weaver_Beetle_%28Lamia_textor%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Polyphylla_fullo_up.jpg/330px-Polyphylla_fullo_up.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Hercules_beetle_%28larva%29.jpg/250px-Hercules_beetle_%28larva%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Photuris_lucicrescens.jpg/330px-Photuris_lucicrescens.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Phengodes_species%2C_U%2C_Right%2C_U_2013-07-18-15.54.20_ZS_PMax_%289335901793%29.jpg/330px-Phengodes_species%2C_U%2C_Right%2C_U_2013-07-18-15.54.20_ZS_PMax_%289335901793%29.jpg"
     ],
     "card": 6
   }
