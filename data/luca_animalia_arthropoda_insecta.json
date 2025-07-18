@@ -493,15 +493,26 @@
     "name": "Lepidoptera",
     "parent": "Holometabola",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˌlɛpɪˈdɒptərə",
     "common": [
       "butterflies",
-      "moths"
+      "moths",
+      "caterpillars"
     ],
+    "tag": "Characterised by scales that cover the bodies, large triangular wings, and a proboscis for siphoning nectars. The scales are modified hairs and give them their wide variety of colors and patterns. Mating and the laying of eggs is normally performed near or on host plants for the larvae. The larvae, caterpillars, have a cylindrical body with a well-developed head, mandible mouth parts, three pairs of thoracic legs and from none up to five pairs of prolegs.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Arctia_villica_SLU.JPG/330px-Arctia_villica_SLU.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Anise_Swallowtail_Life_Cycle.svg/250px-Anise_Swallowtail_Life_Cycle.svg.png",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Giant_grey_moth.png/330px-Giant_grey_moth.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Fesoj_-_Papilio_machaon_%28by%29.jpg/250px-Fesoj_-_Papilio_machaon_%28by%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Giant_grey_moth.png/330px-Giant_grey_moth.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/RhetusButterfly.jpg/330px-RhetusButterfly.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Deilephila_elpenor_04.jpg/330px-Deilephila_elpenor_04.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/73/Chrysalis5504.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Group_of_Melitaea_athalia_near_Warka%2C_Poland.PNG/330px-Group_of_Melitaea_athalia_near_Warka%2C_Poland.PNG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Hummingbird_hawkmoth_a.jpg/250px-Hummingbird_hawkmoth_a.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Peacock_butterfly_%28Aglais_io%29_2.jpg/330px-Peacock_butterfly_%28Aglais_io%29_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Arctiidae_caterpillar_edit.jpg/250px-Arctiidae_caterpillar_edit.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Heliconius_mimicry.png/250px-Heliconius_mimicry.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Chenille_de_Grand_porte_queue_%28macaon%29_Fausses_pattes.jpg/330px-Chenille_de_Grand_porte_queue_%28macaon%29_Fausses_pattes.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e5/Caterpillar_face_close_up.jpg"
     ],
     "card": 6
   },
