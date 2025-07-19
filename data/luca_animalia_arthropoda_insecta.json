@@ -357,8 +357,15 @@
     "rank": "Clade",
     "ipa": "",
     "etymology": "",
-    "common": [],
-    "tag": "Secondarily wingless.",
+    "common": [
+      "ice crawlers",
+      "gladiators"
+    ],
+    "tag": "They have long antennae but no wings, even as adults. They have mandibles adapted for biting with the lower jaw longer than the upper jaw.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Grylloblattidae_%28cropped%29.jpg/330px-Grylloblattidae_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mantophasma_zephyra_Zompro_et_al_2002.jpg/330px-Mantophasma_zephyra_Zompro_et_al_2002.jpg"
+    ],
     "card": 4
   },
   {
@@ -366,12 +373,16 @@
     "parent": "Notoptera",
     "rank": "Order",
     "ipa": "",
-    "etymology": "",
+    "etymology": "'cricket'-'cockroach'",
     "common": [
       "ice crawlers"
     ],
+    "tag": "They live in the cold on top of mountains and the edges of glaciers or in caves, have long cerci, their eyes are either missing or reduced, and most species are less than 3 cm long. Most are nocturnal and feed primarily on dead arthropods and carrion but can survive on plant material. Their optimal living temperature is usually between 1–4 °C and most will die with temperatures above 10 °C so they in colder temperatures they live under snow pack near the soil.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Grylloblattidae_%28white_background%29.jpg/330px-Grylloblattidae_%28white_background%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Galloisiana_kiyosawai.jpg/330px-Galloisiana_kiyosawai.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Grylloblattidae_%28cropped%29.jpg/330px-Grylloblattidae_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Grylloblatta_scudderi%2C_Squamish-Lillooet%2C_British_Columbia_2.jpg/330px-Grylloblatta_scudderi%2C_Squamish-Lillooet%2C_British_Columbia_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Endemic_Grylloblattid_%2810334180636%29.jpg/330px-Endemic_Grylloblattid_%2810334180636%29.jpg"
     ],
     "card": 5
   },
@@ -380,12 +391,16 @@
     "parent": "Notoptera",
     "rank": "Order",
     "ipa": "",
-    "etymology": "",
+    "etymology": "'mantid'-'stick-insect'",
     "common": [
       "gladiators"
     ],
+    "tag": "Nocturnal carnivores with short cerci that live in rock crevices. They are rate and only found in parts of southern Africa. During courtship, they communicate using vibrations transmitted through the ground or substrate",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Mantophasma_zephyra_%28white_background%29.jpg/330px-Mantophasma_zephyra_%28white_background%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Mantophasma_zephyra_Zompro_et_al_2002.jpg/330px-Mantophasma_zephyra_Zompro_et_al_2002.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Karoophasma_biedouwensis_15669932.jpg/330px-Karoophasma_biedouwensis_15669932.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Kuboesphasma_compactum_%2810.3897-zookeys.746.14885%29_Figure_2.jpg/250px-Kuboesphasma_compactum_%2810.3897-zookeys.746.14885%29_Figure_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Minutophasma_richtersveldense_%2810.3897-zookeys.746.14885%29_Figure_10.jpg/330px-Minutophasma_richtersveldense_%2810.3897-zookeys.746.14885%29_Figure_10.jpg"
     ],
     "card": 5
   },
