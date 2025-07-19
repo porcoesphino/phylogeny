@@ -3,12 +3,12 @@
   "name": "Simplified phylogentic tree",
   "icons": [
     {
-      "src": "/favicon_tree_192.png",
+      "src": "/phylogeny/favicon_tree_192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/favicon_tree_512.png",
+      "src": "/phylogeny/favicon_tree_512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
