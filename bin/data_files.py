@@ -1,4 +1,9 @@
 from dataclasses import dataclass
+import json
+import os
+import typing
+
+import common
 
 DATA_DIR = 'data'
 
@@ -246,3 +251,24 @@ DATA_LIST = [
         level=1,
     ),
 ]
+
+
+def process_nodes(
+    per_node_function: typing.Callable[[common.NodeRaw], None]
+) -> None:  # type: ignore
+  for file_metadata in DATA_LIST:
+    full_filename = os.path.join(DATA_DIR, f'{file_metadata.file}.json')
+    print(f'Validating: {full_filename}')
+    with open(full_filename, 'r', encoding='utf8') as json_file:
+      try:
+        json_data: list[object] = json.load(json_file)
+
+        for item in json_data:
+          n = common.NodeRaw(**item)  # pyright: ignore[reportCallIssue]
+
+          per_node_function(n)
+
+      except Exception as e:
+        raise ValueError(f'Invalid data in file "{full_filename}" thowing error: {e}') from e
+
+  print('Data files are valid')
