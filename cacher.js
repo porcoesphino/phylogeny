@@ -60,6 +60,8 @@ self.addEventListener('fetch', (event) => {
 
         return fetch(event.request).then((fetch_response) => {
           console.log('Cache miss for ', event.request.url, fetch_response);
+          // TODO: We should only be storing if the request was successful but it is complicated
+          // by CORS. The response then is "opaque" and has empty attributes but works for caching.
           if (url.startsWith('https://upload.wikimedia.org') || url.endsWith('reset-2.0.min.css')) {
             console.log('Storing file in the cache', event.request.url);
             let responseClone = fetch_response.clone();
