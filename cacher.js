@@ -1,5 +1,5 @@
 
-const cacheName = "porcoesphino_pt";
+const cacheName = 'porcoesphino_pt';
 const precachedResources = [
   '/',
   '/cacher.js',
@@ -16,13 +16,13 @@ const precachedResources = [
 ]
 
 async function precache(prefix) {
-  console.log('Actually ran precache')
   const initial_load = []
   for (var i = 0; i < precachedResources.length; i++) {
     initial_load.push(prefix + precachedResources[i])
   }
-  const cache = await caches.open(initial_load);
-  return cache.addAll(precachedResources).catch((error) => {
+  console.log('Precache expected files: ', initial_load)
+  const cache = await caches.open(cacheName);
+  return cache.addAll(initial_load).catch((error) => {
     console.error('Continuing through an error during addAll: ', error);
   });;
 }
@@ -31,9 +31,9 @@ console.log('Registering the cacher install')
 self.addEventListener('install', (event) => {
   console.log('Install ran in cacher', event)
   if (event.target.registration.scope.startsWith('https://porcoesphino.github.io')) {
-    var prefix = ''
+    var prefix = '/phylogeny'
   } else {
-    var prefix = 'phylogeny/'
+    var prefix = ''
   }
   event.waitUntil(precache(prefix));
 });
