@@ -30,27 +30,47 @@ def print_node(
       print_node(child, children_map, level + 1)
 
 
+def validate_no_loop(n: common.NodeRaw, taxa_to_metadata: dict[str, common.NodeRaw]) -> None:
+
+  seen_node_names: set[str] = set()
+  current_node = n
+
+  while current_node.parent != 'LUCA':
+    if current_node.name in seen_node_names:
+      raise ValueError(f'Loop in nodes: {seen_node_names}')
+
+    seen_node_names.add(current_node.name)
+
+    current_node = taxa_to_metadata[current_node.parent]
+
+
 def main():
 
   children: dict[str, list[common.NodeRaw]] = {}
+  children['LUCA'] = []
+  taxa_to_metadata: dict[str, common.NodeRaw] = {}
 
-  for file_metadata in JSON_DATA_LIST:
-    full_filename = os.path.join(DATA_DIR, f'{file_metadata.file}.json')
-    print(f'Loading: {full_filename}')
-    with open(full_filename, 'r', encoding='utf8') as json_file:
-      try:
-        json_data: list = json.load(json_file)
+  def validate_node(n: common.NodeRaw) -> None:
+    n.validate()
 
-        for item in json_data:
-          n = common.NodeRaw(**item)
-          if n.parent not in children:
-            children[n.parent] = []
-          children[n.parent].append(n)
+    if n.parent not in children:
+      raise ValueError(f'Node ({n.name}) has a parent ({n.parent}) that does not already exist.')
 
-      except Exception as e:
-        raise ValueError(f'Invalid data in file: {full_filename}') from e
+    children[n.parent].append(n)
+    children[n.name] = []
 
-  print_node('LUCA', children)
+    if n.name in taxa_to_metadata:
+      raise ValueError(f'Duplicate node ({n.name}).')
+
+    taxa_to_metadata[n.name] = n
+
+  data_files.process_nodes(validate_node)
+
+  print('Testing node data does not have a loop...')
+  for n in taxa_to_metadata.values():
+    validate_no_loop(n, taxa_to_metadata)
+
+  print('Data files are valid')
 
 
 if __name__ == '__main__':
