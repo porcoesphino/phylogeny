@@ -305,8 +305,8 @@ def get_html() -> str:
   <link rel="stylesheet" href="./css/controls.css">
   <link rel="stylesheet" href="./css/tree_view.css">
   <link rel="stylesheet" href="./css/radio_nav.css">
-  <link rel="icon" href="./favicon_tree_192.jpg" sizes="192x192">
-  <link rel="icon" href="./favicon_tree_512.jpg" sizes="512x512">
+  <link rel="icon" href="./favicon_tree_192.png" sizes="192x192">
+  <link rel="icon" href="./favicon_tree_512.png" sizes="512x512">
   <title>Phylogentic tree</title>
 </head>
 

@@ -3,8 +3,8 @@ const cacheName = 'porcoesphino_pt';
 const precachedResources = [
   '/',
   '/cacher.js',
-  '/favicon_tree_192.jpg',
-  '/favicon_tree_512.jpg',
+  '/favicon_tree_192.png',
+  '/favicon_tree_512.png',
   '/index.html',
   '/js/compiler.js',
   '/css/collapsible_block.css',
