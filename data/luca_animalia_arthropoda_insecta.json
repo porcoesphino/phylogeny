@@ -4,6 +4,7 @@
     "parent": "Insecta",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "jumping bristletails"
     ],
@@ -21,6 +22,7 @@
     "parent": "Insecta",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "silverfish",
       "firebrat"
@@ -38,6 +40,7 @@
     "parent": "Insecta",
     "rank": "Subclass",
     "ipa": "",
+    "etymology": "",
     "common": [],
     "tag": "Winged insects.",
     "card": 1
@@ -47,6 +50,7 @@
     "parent": "Pterygota",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "mayflies"
     ],
@@ -65,6 +69,7 @@
     "parent": "Pterygota",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "dragonflies",
       "damselfiles"
@@ -86,6 +91,7 @@
     "parent": "Pterygota",
     "rank": "Clade",
     "ipa": "",
+    "etymology": "",
     "common": [],
     "tag": "Can fold wings over their abdomens.",
     "card": 2
@@ -171,6 +177,7 @@
     "parent": "Neoptera",
     "rank": "Clade",
     "ipa": "",
+    "etymology": "",
     "common": [],
     "tag": "",
     "card": 3
@@ -209,6 +216,7 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "stick instects"
     ],
@@ -223,6 +231,7 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "webspinners"
     ],
@@ -237,6 +246,7 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "stoneflies"
     ],
@@ -251,6 +261,7 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "earwigs"
     ],
@@ -265,6 +276,7 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "angel insects"
     ],
@@ -280,6 +292,7 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "mantises"
     ],
@@ -294,6 +307,7 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "cockroaches",
       "termites"
@@ -310,14 +324,19 @@
     "parent": "Blattodea",
     "rank": "Intra-order",
     "ipa": "",
+    "etymology": "'equal-wings'",
     "common": [
       "termites"
     ],
+    "tag": "Detritophagous eusocial cockroaches that consume a variety of decaying plant material. They have antennae that resemble a string of beads and a wide junction between thorax and abdomen. The worker caste is a soft-bodied, unpigmented, often blind and are diploid individuals of both sexes that develop from fertilised eggs. The soldier class have larger heads with prominent mandibles and are often blind. The winged males and females usually have eyes and will pair to create a new colony after a nuptial flight.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/7/7d/Termites_marked_with_traceable_protiens.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Isoptera.jpg/330px-Isoptera.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Isoptera.jpg/330px-Isoptera.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e8/Flying_Termites_after_rain.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Termitenh%C3%BCgel_Namibia.jpg/330px-Termitenh%C3%BCgel_Namibia.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c3/K8085-21.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Workers_%26_Soldiers.jpg/330px-Workers_%26_Soldiers.jpg"
     ],
-    "tag": "",
     "card": 4
   },
   {
@@ -325,6 +344,7 @@
     "parent": "Polyneoptera",
     "rank": "Clade",
     "ipa": "",
+    "etymology": "",
     "common": [],
     "tag": "Secondarily wingless.",
     "card": 4
@@ -334,6 +354,7 @@
     "parent": "Notoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "ice crawlers"
     ],
@@ -347,6 +368,7 @@
     "parent": "Notoptera",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "gladiators"
     ],
@@ -360,6 +382,7 @@
     "parent": "Neoptera",
     "rank": "Clade",
     "ipa": "",
+    "etymology": "",
     "common": [],
     "tag": "They undergo complete metamorphosis and go through distinctive life stages: egg, larva, pupa, and adult. Larval traits maximize feeding, growth, and development. Adult traits enable dispersal, mating, and egg laying. The pupa is usually a quiescent, non-feeding developmental stage and most move very little, sometimes enclosed in other structures like cocoons, nests, or shells.",
     "imgs": [
@@ -466,6 +489,7 @@
     "parent": "Holometabola",
     "rank": "Order",
     "ipa": "",
+    "etymology": "",
     "common": [
       "caddisflies"
     ],
