@@ -4,7 +4,7 @@
     "parent": "Plantae",
     "rank": "Division",
     "ipa": "roʊˈdɒfɪtə",
-    "ipa-hidden": [
+    "ipa_alt": [
       "ˌroʊdəˈfaɪtə"
     ],
     "tag": "",
@@ -73,7 +73,7 @@
     "parent": "Embryophyta",
     "rank": "Clade",
     "ipa": "braɪˈɒfətə",
-    "ipa-hidden": [
+    "ipa_alt": [
       "ˌbraɪ.əˈfaɪtə"
     ],
     "tag": "A clade of early land plants that are dominated by a multicellular haploid gametophyte and lack of true vascular tissue.",
@@ -86,14 +86,13 @@
     "parent": "Bryophyta",
     "rank": "Division",
     "ipa": "mɑːrˌkæntiˈɒfətə",
-    "ipa-hidden": [
+    "ipa_alt": [
       "mɑːrˌkæntiˈoʊˈfaɪtə"
     ],
-    "tag": "",
     "common": [
       "liverworts"
     ],
-    "description": "Have a gametophyte-dominant life cycle, in which cells of the plant carry only a single set of genetic information. The division name was derived from the genus name Marchantia, named by French botanist Jean Marchant after his father, also a biologist and together they authored Histoire des plantes.",
+    "tag": "Have a gametophyte-dominant life cycle, in which cells of the plant carry only a single set of genetic information. The division name was derived from the genus name Marchantia, named by French botanist Jean Marchant after his father, also a biologist and together they authored Histoire des plantes.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Lunularia_cruciata.jpg/330px-Lunularia_cruciata.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Marchantia_polymorpha_20100619_44.jpg/250px-Marchantia_polymorpha_20100619_44.jpg",
@@ -106,15 +105,14 @@
     "parent": "Bryophyta",
     "rank": "Division",
     "ipa": "ˌænθoʊˌsɛrəˈtɒfətə",
-    "ipa-hidden": [
+    "ipa_alt": [
       "ˌænθoʊˌsɛrəˈtəˈfaɪtə"
     ],
     "etymology": "greek 'flower'-'horn'-'plant'",
-    "tag": "",
     "common": [
       "hornworts"
     ],
-    "description": "The hornworts (refering to the elongated horn-like structure, which is the sporophyte). As in mosses and liverworts, hornworts have a gametophyte-dominant life cycle, in which cells of the plant carry only a single set of genetic information; the flattened, green plant body of a hornwort is the gametophyte stage of the plant.",
+    "tag": "The hornworts (refering to the elongated horn-like structure, which is the sporophyte). As in mosses and liverworts, hornworts have a gametophyte-dominant life cycle, in which cells of the plant carry only a single set of genetic information; the flattened, green plant body of a hornwort is the gametophyte stage of the plant.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Phaeoceros_laevis.jpg/330px-Phaeoceros_laevis.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Dendroceros.jpg/330px-Dendroceros.jpg",

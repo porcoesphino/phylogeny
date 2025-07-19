@@ -11,7 +11,7 @@
       "uakaris"
     ],
     "tag": "",
-    "imgs": [],
+    "imgs": []
   },
   {
     "name": "Callicebinae",
@@ -26,7 +26,7 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Callicebus_nigrifrons_Minas_Gerais.jpg/250px-Callicebus_nigrifrons_Minas_Gerais.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Brown_Titi_Monkey_%28Callicebus_brunneus%29_%283419492981%29.jpg/250px-Brown_Titi_Monkey_%28Callicebus_brunneus%29_%283419492981%29.jpg"
-    ],
+    ]
   },
   {
     "name": "Pitheciinae",
@@ -46,7 +46,7 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Chiropotes_utahickae.jpg/330px-Chiropotes_utahickae.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Chiropotes_albinasus.jpg/330px-Chiropotes_albinasus.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Captive_Pithecia_albicans.jpg/330px-Captive_Pithecia_albicans.jpg"
-    ],
+    ]
   },
   {
     "name": "Atelidae",
@@ -61,7 +61,7 @@
       "woolly monkeys"
     ],
     "tag": "",
-    "imgs": [],
+    "imgs": []
   },
   {
     "name": "Alouattinae",
@@ -73,7 +73,7 @@
       "howler monkeys"
     ],
     "tag": "",
-    "imgs": [],
+    "imgs": []
   },
   {
     "name": "Alouatta",
@@ -105,7 +105,7 @@
       "woolly monkeys"
     ],
     "tag": "",
-    "imgs": [],
+    "imgs": []
   },
   {
     "name": "Ateles",
@@ -170,7 +170,7 @@
       "squirrel monkeys"
     ],
     "tag": "",
-    "imgs": [],
+    "imgs": []
   },
   {
     "name": "Cebinae",
@@ -186,7 +186,7 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Cebus_albifrons_edit.jpg/250px-Cebus_albifrons_edit.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Capuchin_Monkey_enjoys_a_massage.jpg/330px-Capuchin_Monkey_enjoys_a_massage.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Capuchin_monkeys_sharing.jpg/250px-Capuchin_monkeys_sharing.jpg"
-    ],
+    ]
   },
   {
     "name": "Saimirinae",
@@ -202,7 +202,7 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Saimiri_sciureus-1_Luc_Viatour.jpg/330px-Saimiri_sciureus-1_Luc_Viatour.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Wild-57.jpg/330px-Wild-57.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Miss_Baker%2C_the_squirrel_monkey.jpg/330px-Miss_Baker%2C_the_squirrel_monkey.jpg"
-    ],
+    ]
   },
   {
     "name": "Callitrichidae",
@@ -236,7 +236,7 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Saguinus_midas_flk24863753.jpg/330px-Saguinus_midas_flk24863753.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Saguinus_tripartitus_-_Golden-mantled_Tamarin.jpg/330px-Saguinus_tripartitus_-_Golden-mantled_Tamarin.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Saguinus_mystax_pileatus_205524045.jpg/330px-Saguinus_mystax_pileatus_205524045.jpg"
-    ],
+    ]
   },
   {
     "name": "Aotidae",
@@ -256,6 +256,6 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Aotus_nigriceps.jpg/330px-Aotus_nigriceps.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Aotus_nancymai.jpg/330px-Aotus_nancymai.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Amiconax_FMC.jpg/330px-Amiconax_FMC.jpg"
-    ],
-  },
+    ]
+  }
 ]

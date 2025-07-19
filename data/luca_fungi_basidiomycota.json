@@ -4,7 +4,7 @@
     "parent": "Basidiomycota",
     "rank": "Subdivision",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -25,7 +25,7 @@
     "parent": "Agaricomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -52,7 +52,7 @@
     "parent": "Agaricomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -65,7 +65,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -98,7 +98,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -117,7 +117,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -141,7 +141,7 @@
     "parent": "Agaricomycetes",
     "rank": "Subclass",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -154,7 +154,7 @@
     "parent": "Phallomycetidae",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -178,7 +178,7 @@
     "parent": "Phallomycetidae",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -199,7 +199,7 @@
     "parent": "Phallomycetidae",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -225,7 +225,7 @@
     "parent": "Phallomycetidae",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -252,7 +252,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -273,7 +273,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -309,7 +309,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -348,7 +348,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -385,7 +385,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -406,7 +406,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -426,7 +426,7 @@
     "parent": "Agaricomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -473,7 +473,7 @@
     "parent": "Agaricomycetes",
     "rank": "Subclass",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -488,7 +488,7 @@
     "parent": "Agaricomycetidae",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -542,7 +542,7 @@
     "parent": "Agaricomycetidae",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -584,7 +584,7 @@
     "parent": "Agaricomycetidae",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -607,7 +607,7 @@
     "parent": "Agaricomycetidae",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -622,7 +622,7 @@
     "parent": "Agaricomycetidae",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -642,7 +642,7 @@
     "parent": "Agaricomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -663,7 +663,7 @@
     "parent": "Basidiomycota",
     "rank": "Subdivision",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -676,7 +676,7 @@
     "parent": "Ustilaginomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -691,7 +691,7 @@
     "parent": "Ustilaginomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -708,7 +708,7 @@
     "parent": "Ustilaginomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -727,7 +727,7 @@
     "parent": "Ustilaginomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -740,7 +740,7 @@
     "parent": "Basidiomycota",
     "rank": "Subdivision",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -756,5 +756,5 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Puccinia_sessilis_0521.jpg/330px-Puccinia_sessilis_0521.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/2013-05-21_Eocronartium_muscicola_%28Pers.%29_Fitzp_334819.jpg/330px-2013-05-21_Eocronartium_muscicola_%28Pers.%29_Fitzp_334819.jpg"
     ]
-  },
+  }
 ]

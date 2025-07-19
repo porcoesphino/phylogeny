@@ -83,7 +83,7 @@
     "rank": "Order",
     "ipa": "",
     "etymology": "",
-    "tag": "The true corals sometimes called hermatypic or reef building.",
+    "tag": "The true corals, sometimes called hermatypic or reef building corals, build reefs by depositing hard calcareous material for their skeletons, forming the stony framework of the reef. A close up each looks like miniature sea anemone since they are closely related.",
     "common": [
       "stony corals"
     ],
@@ -95,7 +95,6 @@
       "https://upload.wikimedia.org/wikipedia/commons/4/48/Plesiastrea_versipora%2C_in_situ.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Coral_%28Favia_favus%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-27%2C_DD_12.jpg/250px-Coral_%28Favia_favus%29%2C_parque_nacional_Ras_Muhammad%2C_Egipto%2C_2022-03-27%2C_DD_12.jpg"
     ],
-    "description": "True corals build reefs by depositing hard calcareous material for their skeletons, forming the stony framework of the reef. A close up each looks like miniature sea anemone since they are closely related.",
     "card": 3
   },
   {
@@ -111,7 +110,7 @@
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Zoanthus-dragon-eye.jpg/330px-Zoanthus-dragon-eye.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Parazoanth2.JPG/250px-Parazoanth2.JPG",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Palythoa_grandis_%28Sun_Zoanthids%29.jpg/330px-Palythoa_grandis_%28Sun_Zoanthids%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Palythoa_grandis_%28Sun_Zoanthids%29.jpg/330px-Palythoa_grandis_%28Sun_Zoanthids%29.jpg"
     ],
     "card": 3
   },
@@ -129,7 +128,6 @@
       "blue corals"
     ],
     "imgs": [],
-    "description": "",
     "card": 2
   },
   {
@@ -195,7 +193,7 @@
     "rank": "Class",
     "ipa": "",
     "etymology": "greek 'cup'-'animal'",
-    "tag": "The true jellyfish",
+    "tag": "The true jellyfish. Their firmness comes from hydrostatic pressure and they are 95% water, have four radial gastric pouches.",
     "common": [
       "lion's mane jellyfish",
       "moon jellies",
@@ -208,7 +206,6 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Periphyllopsis_braueri.jpg/330px-Periphyllopsis_braueri.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Fkeysmacro.jpg/330px-Fkeysmacro.jpg"
     ],
-    "description": "Their firmness comes from hydrostatic pressure and they are 95% water, have four radial gastric pouches. Well known scyphozoa include the lion's mane jellyfish, moon jellies, upside-down jellyfish",
     "card": 1
   },
   {
@@ -217,7 +214,7 @@
     "rank": "Class",
     "ipa": "",
     "etymology": "greek 'cross'-'animal'",
-    "tag": "Similar to the scyphozoans but lack an alternating polyp/medusa life cycle and have a stalk that attaches to rock.",
+    "tag": "The only extant order is commonly called the stalked jellyfishes. They are similar to the scyphozoans but lack an alternating polyp/medusa life cycle and have a stalk that attaches to rock resulting in a flowerlike in apearance.",
     "common": [
       "stalked jellyfishes"
     ],
@@ -225,7 +222,6 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Haliclystus_antarcticus_1B.jpg/330px-Haliclystus_antarcticus_1B.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Haliclystus_stejnegeri_1.jpg/250px-Haliclystus_stejnegeri_1.jpg"
     ],
-    "description": "The only extant order is commonly called the stalked jellyfishes and they have a small and flowerlike in apearance.",
     "card": 1
   },
   {
@@ -234,15 +230,14 @@
     "rank": "Class",
     "ipa": "",
     "etymology": "greek 'box'-'animal'",
-    "tag": "",
     "common": [
       "box jellyfish"
     ],
+    "tag": "Compared to the scyphozoa (true jellyfish) they have more optimised propusion and a more developed nervous system. They have four radial symmetric parts each with six fully formed eyes (including two that are lensed)",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Box_jellyfish_at_Bakoven_Rock_DSC11031.JPG/330px-Box_jellyfish_at_Bakoven_Rock_DSC11031.JPG",
       "https://upload.wikimedia.org/wikipedia/commons/7/75/Chironex_fleckeri_%28sea_wasp%29.jpg"
     ],
-    "description": "Compared to the scyphozoa (true jellyfish) they have more optimised propusion and a more developed nervous system. They have four radial symmetric parts each with six fully formed eyes (including two that are lensed)",
     "card": 1
   },
   {

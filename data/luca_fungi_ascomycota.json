@@ -4,7 +4,7 @@
     "parent": "Ascomycota",
     "rank": "Subdivision",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -28,7 +28,7 @@
     "parent": "Pezizomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -41,7 +41,7 @@
     "parent": "Pezizomycotina",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -58,7 +58,7 @@
     "parent": "Pezizomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -78,7 +78,7 @@
     "parent": "Pezizomycetes",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -91,7 +91,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -118,7 +118,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -138,7 +138,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -153,7 +153,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -171,7 +171,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -186,7 +186,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -206,7 +206,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -224,7 +224,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -244,7 +244,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -263,7 +263,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -295,7 +295,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -310,7 +310,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -325,7 +325,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -349,7 +349,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -372,7 +372,7 @@
     "parent": "Pezizales",
     "rank": "Family",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -398,7 +398,7 @@
     "parent": "Pezizaceae",
     "rank": "Clade",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -422,7 +422,7 @@
     "parent": "Pezizomycotina",
     "rank": "Clade",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -437,7 +437,7 @@
     "parent": "Leotiomyceta",
     "rank": "Clade",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -452,7 +452,7 @@
     "parent": "Dothideomyceta",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -467,7 +467,7 @@
     "parent": "Dothideomyceta",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -501,7 +501,7 @@
     "parent": "Dothideomyceta",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -519,7 +519,7 @@
     "parent": "Dothideomyceta",
     "rank": "Order",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -531,7 +531,7 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Lichinella_cribellifera_6160711.jpg/330px-Lichinella_cribellifera_6160711.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Peltula_euploca_2952674.jpg/330px-Peltula_euploca_2952674.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/f/fe/Candelariella.coralliza2.-.lindsey.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Candelariella_xanthostigma_a1_%286%29.JPG/330px-Candelariella_xanthostigma_a1_%286%29.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Candelariella_xanthostigma_a1_%286%29.JPG/330px-Candelariella_xanthostigma_a1_%286%29.JPG"
     ]
   },
   {
@@ -539,7 +539,7 @@
     "parent": "Dothideomyceta",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -556,7 +556,7 @@
     "parent": "Dothideomyceta",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -575,7 +575,7 @@
     "parent": "Leotiomyceta",
     "rank": "Clade",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -590,7 +590,7 @@
     "parent": "Sordariomyceta",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -605,7 +605,7 @@
     "parent": "Sordariomyceta",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -620,7 +620,7 @@
     "parent": "Sordariomyceta",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -644,7 +644,7 @@
     "parent": "Ascomycota",
     "rank": "Subdivision",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -667,7 +667,7 @@
     "parent": "Ascomycota",
     "rank": "Subdivision",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -680,7 +680,7 @@
     "parent": "Taphrinomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -695,7 +695,7 @@
     "parent": "Taphrinomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -714,7 +714,7 @@
     "parent": "Taphrinomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",
@@ -733,7 +733,7 @@
     "parent": "Taphrinomycotina",
     "rank": "Class",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "",

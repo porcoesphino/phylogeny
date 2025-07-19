@@ -54,7 +54,9 @@
     "parent": "Vertebrata",
     "rank": "Infraphylum",
     "ipa": "ˈæɡnəθə",
-    "ipa-hidden": "æɡˈneɪθə",
+    "ipa_alt": [
+      "æɡˈneɪθə"
+    ],
     "etymology": "Greek 'without'-'jaws'",
     "tag": "The extant jawless fish.",
     "common": [

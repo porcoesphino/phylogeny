@@ -4,7 +4,7 @@
     "parent": "Fungi",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Micro-organisms that they lack chitinous cell walls at any trophic stage in their lifecycle. Often parasitic.",
@@ -20,7 +20,7 @@
     "parent": "Fungi",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Parasitoids of various algae and diatoms.",
@@ -35,7 +35,7 @@
     "parent": "Fungi",
     "rank": "Clade",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "'true'-'fungi'",
@@ -51,7 +51,7 @@
     "parent": "Eumycota",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Anaerobic fungi that reproduce in the rumen of ruminants. Their flagellated zoospores are capable of active movement.",
@@ -67,7 +67,7 @@
     "parent": "Eumycota",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "greek 'little pot'",
@@ -88,7 +88,7 @@
     "parent": "Eumycota",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Very similar to the chytrids, and often still colloquially have the same name, but a different genetic tree.",
@@ -108,7 +108,7 @@
     "parent": "Eumycota",
     "rank": "Clade",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "All fungi without flagella or centrioles, and with unstacked Golgi apparatus cisternae. Includes Dikarya and the traditional paraphyletic assemblage 'Zygomycota'. Sometimes known as 'Eufungi'.",
@@ -123,7 +123,7 @@
     "parent": "Amastigomycota",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Cells are uninucleate and their relatively large nuclei contain a nucleolus, but no heterochromatin.",
@@ -138,7 +138,7 @@
     "parent": "Amastigomycota",
     "rank": "Subkingdom",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "May be saprotrophs, gut symbionts or parasites of animals or mycoparasites. Thallus mycelial, mostly separated into cells with complete or uniperforate septa; Some reproduce sexually via zygospores by gametangial conjugation.",
@@ -153,7 +153,7 @@
     "parent": "Zoopagomyceta",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Microscopic and typically obligate parasites of other zygomycete fungi and of microscopic soil animals such as nematodes, rotifers and amoebae.",
@@ -173,7 +173,7 @@
     "parent": "Zoopagomyceta",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Mostly arthropod pathogens or soil- and litter-borne saprobes.",
@@ -190,7 +190,7 @@
     "parent": "Zoopagomyceta",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Decomposers that may be parasitic on fungi and can form symbiotic associations.",
@@ -207,7 +207,7 @@
     "parent": "Amastigomycota",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Parasitic or saprotrophic; fine mycelium, branched (arachnoid); sporangia with 1 or many spores; may form chlamydospores (thick-walled asexual spores); produces garliclike odour.",
@@ -224,7 +224,7 @@
     "parent": "Amastigomycota",
     "rank": "Subkingdom",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "A diverse group of various molds.",
@@ -239,7 +239,7 @@
     "parent": "Mucoromyceta",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Saprotrophic, filamentous and developes coenocytic mycelium. Some are parasites of animals. Some are used for fermentation.",
@@ -261,7 +261,7 @@
     "parent": "Mucoromyceta",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "The thallus is branched, with septate hyphae. The vegetative hyphae is hyaline, smooth and thin-walled. It has cultures with no distinctive smell.",
@@ -276,7 +276,7 @@
     "parent": "Amastigomycota",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Most members are endomycorrhizal fungi with bryophytes and the roots of vascular land plants but at least one species forms an endocytobiotic with a cyanobacteria instead. Some species seem to be able to live independently.",
@@ -294,7 +294,7 @@
     "parent": "Amastigomycota",
     "rank": "Subkingdom",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "In general produce dikaryons, may be filamentous or unicellular, but are always without flagella. Sometimes called 'higher fungi'.",
@@ -338,7 +338,7 @@
     "parent": "Dikarya",
     "rank": "Phylum",
     "ipa": "bəˌsɪdi.oʊmaɪˈkoʊtə",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "Filamentous fungi that are usually composed of hyphae and usually reproduce sexually via the formation of specialized club-shaped end cells called basidia that normally bear external meiospores (usually four).",
@@ -382,7 +382,7 @@
     "parent": "Dikarya",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "tag": "A small group of teliosporic root parasites that form galls on plants in the rush sedge families.",
@@ -397,7 +397,7 @@
     "parent": "Dikarya",
     "rank": "Phylum",
     "ipa": "",
-    "ipa-hidden": [
+    "ipa_alt": [
       ""
     ],
     "etymology": "greek 'sac'-'mushroom'",
