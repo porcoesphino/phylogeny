@@ -227,7 +227,7 @@ class DataMap {
           var taxa_metadata = tree_as_list[taxa_i]
           var id = taxa_metadata.name.toLowerCase()
           if (this._taxa_to_root.has(id) || this._taxa_to_metadata.has(id)) {
-            throw new Error('Duplicate taxa ID in source data.')
+            throw new Error(`Duplicate taxa ID in source data (${id}).`)
           }
           this._taxa_to_root.set(id, root)
           this._taxa_to_metadata.set(id, taxa_metadata)
