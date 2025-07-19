@@ -3,7 +3,6 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
 console.log('Almost registering the service worker.');
-
 if ('serviceWorker' in navigator) {
   // Register a service worker hosted at the root of the
   // site using the default scope.
@@ -18,6 +17,14 @@ if ('serviceWorker' in navigator) {
   );
 } else {
   console.error('Service workers are not supported.');
+}
+
+// TODO: Move into service worker code.
+async function fetchAllUrls(urls) {
+  console.log(urls)
+  for (var i = 0; i < urls.length; i++) {
+    await window.fetch(urls[i])
+  }
 }
 
 function clear_child_nodes(parent_el) {
@@ -201,7 +208,6 @@ class DataMap {
   constructor() {
     this._taxa_to_root = null
     this._taxa_to_metadata = null
-    this._taxa_set = null
     this._common_name_to_root_taxa_list = null
   }
 
@@ -289,6 +295,7 @@ class State {
     this.menu_map = new MenuMap()
     this.data_map = new DataMap()
     this._autocomplete_list = null
+    this._img_list = null
   }
 
   get_tree_for_root_id(root_id) {
@@ -436,6 +443,21 @@ class State {
       this._autocomplete_list = [...taxa_list, ...common_name_list]
     }
     return this._autocomplete_list
+  }
+
+  get img_list() {
+    if (!this._img_list) {
+      this._img_list = []
+      for (const metadata of this.data_map.taxa_to_metadata.values()) {
+        console.log('metadata', metadata)
+        if (!!metadata.imgs && metadata.imgs.length > 0) {
+          console.log('imgs', metadata.imgs)
+          this._img_list = this._img_list.concat(metadata.imgs)
+        }
+      }
+    }
+    console.log('img list', this._img_list)
+    return this._img_list
   }
 }
 
@@ -1244,6 +1266,8 @@ class Page {
 
       TreeBuilderAsTreeList.scroll_to_taxa(root, taxa, true /* shake */)
     }
+
+    fetchAllUrls(this.state.img_list)
   }
 }
 
