@@ -231,14 +231,16 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
-    "etymology": "",
+    "etymology": "'lively-wings'",
     "common": [
       "webspinners"
     ],
+    "tag": "They have long, flexible bodies and short legs with the lower segment of the front limbs enlarged and modified for silk production. They males do not feed and die soon after mating. Only the males have wings but not in all species. They live subsocially in galleries spun of silk. They are generalist herbivores.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/c/cb/Embia_major_hor.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Notoligotoma_nitens.jpg/330px-Notoligotoma_nitens.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Metoligotoma_tasmanica.jpg/330px-Metoligotoma_tasmanica.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c6/Diradius_vandykei.jpg"
     ],
-    "tag": "",
     "card": 4
   },
   {
@@ -261,14 +263,17 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
-    "etymology": "",
+    "etymology": "'skin-wings'",
     "common": [
       "earwigs"
     ],
+    "tag": "They have a pair of forceps-like pincers on their abdomen, and membranous wings folded underneath short, rarely used forewings. Some groups are tiny parasites on mammals and lack the typical pincers. They are mostly scavengers or herbivores that are mostly nocturnal and oten hide during the day.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Earwig_on_white_background.jpg/330px-Earwig_on_white_background.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Forficula_auricularia.jpg/250px-Forficula_auricularia.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f7/Forficula.auricularia.-.lindsey.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Nesting_Earwig_Chester_UK_2.jpg/330px-Nesting_Earwig_Chester_UK_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/3/36/Adiathetus_tenebrator_iruppu.jpg"
     ],
-    "tag": "",
     "card": 4
   },
   {
@@ -296,10 +301,14 @@
     "common": [
       "mantises"
     ],
+    "tag": "They have triangular heads with bulging eyes supported on flexible necks, raptorial front legs for catching and gripping prey, an upright posture and elongated bodies. They are mostly ambush predators. Females sometimes practice sexual cannibalism.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/a/aa/Stagmomantis_carolina_usda_hor.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Mantis_%28European%29.jpg/330px-Mantis_%28European%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Wandering_Violin_Mantis_%28Gongylus_gongylodes%29_Photograph_By_Shantanu_Kuveskar.jpg/250px-Wandering_Violin_Mantis_%28Gongylus_gongylodes%29_Photograph_By_Shantanu_Kuveskar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Gottesanbeterin_Abwehr.JPG/330px-Gottesanbeterin_Abwehr.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Choeradodis_stalii_MHNT_dos.jpg/330px-Choeradodis_stalii_MHNT_dos.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Large_brown_mantid_close_up_nohair.jpg/330px-Large_brown_mantid_close_up_nohair.jpg"
     ],
-    "tag": "",
     "card": 4
   },
   {
@@ -312,17 +321,20 @@
       "cockroaches",
       "termites"
     ],
+    "tag": "The cockroaches and termites. Cockroaches are flattened dorsolaterally and are roughly oval with a shield-like plate covering the thorax and posterior region of the head, long thread-like antennae, and two short, multi-segmented protrusions from the rear.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/7/7d/Termites_marked_with_traceable_protiens.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/American-cockroach.jpg/330px-American-cockroach.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/American-cockroach.jpg/330px-American-cockroach.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/91/Cryptocercus_clevelandi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Blatta_orientalis_male_from_Botevgrad%2C_Bulgaria_01.jpg/330px-Blatta_orientalis_male_from_Botevgrad%2C_Bulgaria_01.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Domino_cockroach_Therea_petiveriana.jpg/250px-Domino_cockroach_Therea_petiveriana.jpg"
     ],
-    "tag": "",
     "card": 4
   },
   {
-    "name": "Isoptera",
+    "name": "Termitoidae",
     "parent": "Blattodea",
-    "rank": "Intra-order",
+    "rank": "Epifamily",
     "ipa": "",
     "etymology": "'equal-wings'",
     "common": [
