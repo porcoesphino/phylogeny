@@ -1,43 +1,19 @@
 #!/usr/bin/env python
 
-from dataclasses import dataclass
 import os
-import typing
 
 import json
 
-import regenerate_index
+import common
+import data_files
 
-JSON_DATA_LIST = regenerate_index.JSON_DATA_LIST
-DATA_DIR = regenerate_index.DATA_DIR
-
-Rank: typing.TypeAlias = typing.Literal[
-    'domain',  # Drunken
-    'kingdom',  # Kangaroos
-    'phylum',  # Punch
-    'class',  # Children
-    'order',  # On
-    'family',  # Family
-    'genus',  # Game
-    'species',  # Shows
-]
+JSON_DATA_LIST = data_files.DATA_LIST
+DATA_DIR = data_files.DATA_DIR
 
 
-@dataclass(kw_only=True)
-class NodeRaw:
-  name: str
-  rank: Rank
-  parent: str
-  ipa: str | None = None
-  imgs: list[str] | None = None  # TODO: Should this be local or remote?
-  description: str | None = None
-  common: list[str] | None = None
-  etymology: str | None = None
-  tag: str | None = None
-  card: int | None = None
-
-
-def print_node(n: NodeRaw | str, children_map: dict[str, list[NodeRaw]], level: int = 0) -> None:
+def print_node(
+    n: common.NodeRaw | str, children_map: dict[str, list[common.NodeRaw]], level: int = 0
+) -> None:
   leading_spaces = 2 * level
   if isinstance(n, str):
     name = n
@@ -56,19 +32,23 @@ def print_node(n: NodeRaw | str, children_map: dict[str, list[NodeRaw]], level: 
 
 def main():
 
-  children: dict[str, list[NodeRaw]] = {}
+  children: dict[str, list[common.NodeRaw]] = {}
 
-  for json_filename in JSON_DATA_LIST:
-    full_filename = os.path.join(DATA_DIR, json_filename)
+  for file_metadata in JSON_DATA_LIST:
+    full_filename = os.path.join(DATA_DIR, f'{file_metadata.file}.json')
     print(f'Loading: {full_filename}')
     with open(full_filename, 'r', encoding='utf8') as json_file:
-      json_data: list = json.load(json_file)
+      try:
+        json_data: list = json.load(json_file)
 
-      for item in json_data:
-        n = NodeRaw(**item)
-        if n.parent not in children:
-          children[n.parent] = []
-        children[n.parent].append(n)
+        for item in json_data:
+          n = common.NodeRaw(**item)
+          if n.parent not in children:
+            children[n.parent] = []
+          children[n.parent].append(n)
+
+      except Exception as e:
+        raise ValueError(f'Invalid data in file: {full_filename}') from e
 
   print_node('LUCA', children)
 
