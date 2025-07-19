@@ -2,11 +2,8 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
-console.log('Almost registering the service worker.');
 if ('serviceWorker' in navigator) {
-  // Register a service worker hosted at the root of the
-  // site using the default scope.
-  console.log('Registering the service worker.');
+  // Register a service worker hosted at the root of the site using the default scope.
   navigator.serviceWorker.register('./cacher.js').then(
     (registration) => {
       console.log('Service worker registration succeeded:', registration);
@@ -21,7 +18,6 @@ if ('serviceWorker' in navigator) {
 
 // TODO: Move into service worker code.
 async function fetchAllUrls(urls) {
-  console.log(urls)
   for (var i = 0; i < urls.length; i++) {
     await window.fetch(urls[i])
   }
@@ -440,7 +436,8 @@ class State {
     if (!this._autocomplete_list) {
       var taxa_list = this.data_map.taxa_to_root.keys()
       var common_name_list = this.data_map.common_name_to_root_taxa_list.keys()
-      this._autocomplete_list = [...taxa_list, ...common_name_list]
+      this._autocomplete_list = [...taxa_list, ...common_name_list].sort()
+
     }
     return this._autocomplete_list
   }
@@ -449,14 +446,11 @@ class State {
     if (!this._img_list) {
       this._img_list = []
       for (const metadata of this.data_map.taxa_to_metadata.values()) {
-        console.log('metadata', metadata)
         if (!!metadata.imgs && metadata.imgs.length > 0) {
-          console.log('imgs', metadata.imgs)
           this._img_list = this._img_list.concat(metadata.imgs)
         }
       }
     }
-    console.log('img list', this._img_list)
     return this._img_list
   }
 }
