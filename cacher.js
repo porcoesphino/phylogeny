@@ -40,7 +40,7 @@ async function match_from_cache_and_fetch_on_miss(cache_name, url_or_request, pu
   const fetch_response = await fetch(request)
   console.log(`Cache miss for "${request.url}" fetch response`, fetch_response)
   if (put_on_success && fetch_response.ok) {
-    console.log('Adding "${request.url}" to cache', fetch_response)
+    console.log(`Adding "${request.url}" to cache`, fetch_response)
     await cache.put(request, fetch_response)
   }
   return fetch_response
