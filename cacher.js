@@ -66,7 +66,7 @@ async function precache(event) {
   for (var i = 0; i < precachedResources.length; i++) {
     initial_load.push(prefix + precachedResources[i])
   }
-  await fault_tolerant_add_all(cacheName, initial_load, false /* only_if_cache_miss */)
+  return fault_tolerant_add_all(cacheName, initial_load, false /* only_if_cache_miss */)
 }
 
 self.addEventListener('install', (event) => {
@@ -120,5 +120,5 @@ self.addEventListener('fetch', (event) => {
 });
 
 self.addEventListener('message', async (event) => {
-  await fault_tolerant_add_all(cacheName, event.data, true /* only_if_cache_miss */)
+  event.waitUntil(fault_tolerant_add_all(cacheName, event.data, true /* only_if_cache_miss */))
 });
