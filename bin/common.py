@@ -1,9 +1,16 @@
 from dataclasses import dataclass
+import re
 import typing
 
-# TODO: Should https://upload.wikimedia.org/wikipedia/commons/ be the value?
-# Why is https://upload.wikimedia.org/wikipedia/en in the list?
-IMG_PREFIX = 'https://upload.wikimedia.org/wikipedia/'
+IMG_PREFIX = 'https://upload.wikimedia.org/wikipedia/commons/'
+
+IMG_SOURCE_THUMBNAIL_REGEX = re.compile(
+    r'^https\:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/[^\/]+\/[^\/]+\/([^\/]+)\/(|(lossless|lossy)-page1-)[0-9]*px-\1(|.png|.jpg)$'  #pylint: disable=line-too-long
+)
+
+IMG_SOURCE_COMMONS_REGEX = re.compile(
+    r'^https\:\/\/upload.wikimedia.org\/wikipedia\/commons\/[^\/]+\/[^\/]+\/([^\/]+)$'
+)
 
 Rank: typing.TypeAlias = typing.Literal[
     'domain',  # Drunken
@@ -15,6 +22,65 @@ Rank: typing.TypeAlias = typing.Literal[
     'genus',  # Game
     'species',  # Shows
 ]
+
+
+def _get_local_filename_from_remote(url: str) -> str:
+  [_, local] = url.rsplit('/', 1)
+  return local
+
+
+def _get_filename_with_pattern(img_url: str, pattern: re.Pattern[str], image_type: str) -> str:
+  m = pattern.match(img_url)
+  if not m:
+    raise ValueError(f'{image_type} image URL does not match regex: {img_url}')
+  filename = m.group(1)
+  if not filename:
+    raise ValueError(f'{image_type} image URL does not have capture group: {img_url}')
+
+  return filename
+
+
+def _get_remote_filename(img_url: str) -> str:
+
+  if not img_url.startswith(IMG_PREFIX):
+    raise ValueError(f'Image URL does not start with "{IMG_PREFIX}": {img_url}')
+
+  prefix_removed = img_url.removeprefix(IMG_PREFIX)
+
+  if prefix_removed.startswith('thumb'):
+    filename = _get_filename_with_pattern(
+        img_url=img_url, pattern=IMG_SOURCE_THUMBNAIL_REGEX, image_type='Thumbnail'
+    )
+
+  else:
+    filename = _get_filename_with_pattern(
+        img_url=img_url, pattern=IMG_SOURCE_COMMONS_REGEX, image_type='Commons'
+    )
+
+  return filename
+
+
+def _get_attribution_link_from_image_url(url: str) -> str:
+  remote_filename = _get_remote_filename(url)
+  return f'https://commons.wikimedia.org/wiki/File:{remote_filename}'
+
+
+class Image:
+
+  def __init__(self, url: str) -> None:
+    self._url = url
+
+  @property
+  def remote_url(self) -> str:
+    return self._url
+
+  @property
+  def local_filename(self) -> str:
+    return _get_local_filename_from_remote(self._url)
+
+  @property
+  def attribution_url(self) -> str:
+    return _get_attribution_link_from_image_url(self._url)
 
 
 @dataclass(kw_only=True)
@@ -35,6 +101,13 @@ class NodeRaw:  #pylint: disable=too-many-instance-attributes
   species: int | None = None
   card: int | None = None
 
+  @property
+  def image_list(self) -> list[Image]:
+    if not self.imgs:
+      return []
+
+    return [Image(img_url) for img_url in self.imgs]
+
   def _validate_common(self) -> None:
     if not self.common:
       return
@@ -46,9 +119,9 @@ class NodeRaw:  #pylint: disable=too-many-instance-attributes
     if not self.imgs:
       return
 
-    for img in self.imgs:
-      if not img.startswith(IMG_PREFIX):
-        raise ValueError(f'Invalid image in {self.name} that does not start with "{IMG_PREFIX}".')
+    for img_url in self.imgs:
+      # This also validates the images url.
+      _get_remote_filename(img_url=img_url)
 
   def validate(self) -> None:
     self._validate_imgs()

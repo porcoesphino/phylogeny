@@ -1,9 +1,5 @@
 #!/usr/bin/env python
 
-import os
-
-import json
-
 import common
 import data_files
 
