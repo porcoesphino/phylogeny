@@ -180,16 +180,6 @@ def get_html() -> str:
         <div>
 
           <div>
-            <div class="select">
-              <label for="style-select">Select style</label>
-              <select size="1" id="style-select">
-                <option value="tree">Tree list</option>
-                <!-- <option value="list" selected>Regular list</option> -->
-              </select>
-            </div>
-          </div>
-
-          <div>
             <div class="control-section">Select tree range</div>
             <input type="search" id="taxa-search" placeholder="Exact match search — try plurals"
               list="common-names-and-taxa-list" enterkeyhint="search">
@@ -205,14 +195,6 @@ def get_html() -> str:
                 <div style="height: 1800px; width: 500px;"></div>
               </div>
             </fieldset>
-          </div>
-
-          <div>
-            <div class="select">
-              <label for="card-select">Select card <small>(Advanced for Anki input)</small></label>
-              <select id="card-select">
-              </select>
-            </div>
           </div>
 
         </div>
