@@ -15,6 +15,14 @@ const precachedResources = [
   '/css/typography.css'
 ]
 
+function url_is_remote(url) {
+  return url.startsWith('https://porcoesphino.github.io')
+}
+
+function url_is_favicon(url) {
+  return url.endsWith('favicon_tree_192.png') || url.endsWith('favicon_tree_512.png')
+}
+
 async function precache(prefix) {
   const initial_load = []
   for (var i = 0; i < precachedResources.length; i++) {
@@ -30,7 +38,7 @@ async function precache(prefix) {
 console.log('Registering the cacher install')
 self.addEventListener('install', (event) => {
   console.log('Install ran in cacher', event)
-  if (event.target.registration.scope.startsWith('https://porcoesphino.github.io')) {
+  if (url_is_remote(event.target.registration.scope)) {
     var prefix = '/phylogeny'
   } else {
     var prefix = ''
@@ -57,11 +65,21 @@ self.addEventListener('fetch', (event) => {
           return cache_response;
         }
 
-        return fetch(event.request).then((fetch_response) => {
-          console.log('Cache miss for ', event.request.url, fetch_response);
+        console.log('Cache miss for ', event.request.url, event.request);
+
+        // The server puts files in a directory and so the HTML needs to reference this directory
+        // but this doesn't align with local dev. For local dev catch and reroute these requests.
+        var updated_request = event.request.clone()
+        if (url_is_favicon(url) && !url_is_remote(url)) {
+          split_url = event.request.url.split('/')
+          updated_request = new Request('./' + split_url[split_url.length - 1])
+        }
+
+        return fetch(updated_request).then((fetch_response) => {
+
           // TODO: Load the CSS reset from a local dir.
           if ((url.includes('/thumbnails/') && fetch_response.ok) || url.endsWith('reset-2.0.min.css')) {
-            console.log('Storing file in the cache', event.request.url);
+            console.log('Storing file in the cache', event.request.url, fetch_response);
             let responseClone = fetch_response.clone();
             console.log('clone', responseClone)
             caches.open(cacheName).then((cache) => {
