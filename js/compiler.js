@@ -17,10 +17,12 @@ if ('serviceWorker' in navigator) {
 }
 
 // TODO: Move into service worker code.
-async function fetchAllUrls(urls) {
-  for (var i = 0; i < urls.length; i++) {
-    await window.fetch(urls[i])
-  }
+async function fetchAllUrls(local_urls) {
+  console.log('Attempting image prefetch.')
+  local_urls.forEach(async (local_url) => {
+    return await window.fetch(local_url)
+  })
+  console.log('Finished image prefetch.')
 }
 
 function clear_child_nodes(parent_el) {
@@ -284,6 +286,11 @@ class DataMap {
 
 class State {
 
+  static get_img_relative_path_from_remote(remote_url) {
+    const split_path = remote_url.split('/')
+    return 'thumbnails/' + split_path[split_path.length - 1]
+  }
+
   constructor(tree_range, card = 'all') {
     this._tree_range = tree_range
     this._card = card
@@ -291,7 +298,7 @@ class State {
     this.menu_map = new MenuMap()
     this.data_map = new DataMap()
     this._autocomplete_list = null
-    this._img_list = null
+    this._img_set = null
   }
 
   get_tree_for_root_id(root_id) {
@@ -442,16 +449,19 @@ class State {
     return this._autocomplete_list
   }
 
-  get img_list() {
-    if (!this._img_list) {
-      this._img_list = []
+  get img_urls() {
+    if (!this._img_set) {
+      var img_list = []
       for (const metadata of this.data_map.taxa_to_metadata.values()) {
         if (!!metadata.imgs && metadata.imgs.length > 0) {
-          this._img_list = this._img_list.concat(metadata.imgs)
+          metadata.imgs.forEach((remote_url) => {
+            img_list.push(State.get_img_relative_path_from_remote(remote_url))
+          })
         }
       }
+      this._img_set = new Set(img_list)
     }
-    return this._img_list
+    return this._img_set
   }
 }
 
@@ -783,19 +793,19 @@ class TreeBuilderAsTreeList {
       if (node.hasOwnProperty('imgs') && !!node.imgs) {
         var wrapper_el = document.createElement('div')
         for (var i = 0; i < node.imgs.length; i++) {
-          var img_src = node.imgs[i]
-          if (!img_src) {
+          var img_remote_src = node.imgs[i]
+          if (!img_remote_src) {
             continue
           }
           var img_el = document.createElement('img')
-          img_el.src = img_src
+          img_el.src = State.get_img_relative_path_from_remote(img_remote_src)
 
-          if (img_src.startsWith('https://upload.wikimedia.org/wikipedia/commons/thumb')) {
+          if (img_remote_src.startsWith('https://upload.wikimedia.org/wikipedia/commons/thumb')) {
             var re = /https\:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/[^/]+\/[^/]+\/([^/]+)\//
           } else {
             var re = /https\:\/\/upload.wikimedia.org\/wikipedia\/commons\/[^/]+\/[^/]+\/([^/]+)/
           }
-          var re_match = re.exec(img_src)
+          var re_match = re.exec(img_remote_src)
           if (!!re_match && re_match.length > 1) {
             var img_base = re_match[1]
             var img_href = 'https://commons.wikimedia.org/wiki/File:' + img_base
@@ -1261,7 +1271,7 @@ class Page {
       TreeBuilderAsTreeList.scroll_to_taxa(root, taxa, true /* shake */)
     }
 
-    fetchAllUrls(this.state.img_list)
+    fetchAllUrls(this.state.img_urls)
   }
 }
 
