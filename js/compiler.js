@@ -1089,7 +1089,7 @@ class Page {
 
   constructor() {
     this._tree_range_select = document.getElementById('tree-range-select-buttons');
-    this._card_select = document.getElementById('card-select');
+    // this._card_select = document.getElementById('card-select');
     this._tree_root = document.getElementById('tree_root')
 
     this._controls = new Accordion(Accordion.ID_CONTROLS)
@@ -1129,7 +1129,7 @@ class Page {
         [QueryParams._KEY_CARD, this.state.card],
         [QueryParams._KEY_TAXA, new_taxa]
       ]), this.state)
-      this.add_card_select_options()
+      // this.add_card_select_options()
       update_tree_range_view()
       this.scroll_tree_to_top()
 
@@ -1153,14 +1153,14 @@ class Page {
 
     var update_tree_range_view = this._update_tree_range_view
 
-    var card_select_change = () => {
-      page.query_params.card = this._card_select.value
-      this.state.card = this._card_select.value
-      update_tree_range_view()
-    }
-    this._card_select.addEventListener('change', function () {
-      card_select_change()
-    });
+    // var card_select_change = () => {
+    //   page.query_params.card = this._card_select.value
+    //   this.state.card = this._card_select.value
+    //   update_tree_range_view()
+    // }
+    // this._card_select.addEventListener('change', function () {
+    //   card_select_change()
+    // });
 
     this._set_state_based_on_width = () => {
       var width = window.innerWidth
@@ -1260,16 +1260,15 @@ class Page {
       document.title = 'Phylogentic tree - ' + menu_metadata.taxa
     }
 
-    this.add_card_select_options()
-
-    var card = this.query_params.card
-    if (!!card) {
-      this._card_select.value = card
-      this.state.card = card
-    } else {
-      this._card_select.value = 'all'
-      this.state.card = 'all'
-    }
+    // this.add_card_select_options()
+    // var card = this.query_params.card
+    // if (!!card) {
+    //   this._card_select.value = card
+    //   this.state.card = card
+    // } else {
+    //   this._card_select.value = 'all'
+    //   this.state.card = 'all'
+    // }
 
     this._update_tree_range_view()
 
