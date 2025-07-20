@@ -489,17 +489,17 @@ class Search {
     }
   }
 
-  _menu_el_matches_search(el, lowercase_search_input) {
+  _menu_el_matches_search(el, search_input_lowercase) {
     var input_el = el.getElementsByTagName('input')[0];
     var id = input_el.id
     var data_for_menu_item = this._state.get_tree_for_root_id(id)
     for (var data_i = 0; data_i < data_for_menu_item.length; data_i++) {
       var taxa_metadata = data_for_menu_item[data_i]
-      if (taxa_metadata.name.toLowerCase().includes(lowercase_search_input)) {
+      if (taxa_metadata.name.toLowerCase().includes(search_input_lowercase)) {
         return true
       }
 
-      if (!!taxa_metadata.tag && taxa_metadata.tag.toLowerCase().includes(lowercase_search_input)) {
+      if (!!taxa_metadata.tag && taxa_metadata.tag.toLowerCase().includes(search_input_lowercase)) {
         return true
       }
 
@@ -508,7 +508,7 @@ class Search {
       }
       var common_names = taxa_metadata.common
       for (var name_i = 0; name_i < common_names.length; name_i++) {
-        if (common_names[name_i].toLowerCase().includes(lowercase_search_input)) {
+        if (common_names[name_i].toLowerCase().includes(search_input_lowercase)) {
           return true
         }
       }
@@ -519,7 +519,8 @@ class Search {
 
   _search_callback() {
     var search_el = document.getElementById(Search.ID)
-    var search_input = search_el.value.toLowerCase()
+    const search_input_raw = search_el.value
+    const search_input_lowercase = search_input_raw.toLowerCase()
 
     var matches = []
 
@@ -529,7 +530,7 @@ class Search {
     const exact_match_buttons_el = document.getElementById('exact-match-buttons')
     clear_child_nodes(exact_match_buttons_el)
 
-    if (!search_input) {
+    if (!search_input_raw) {
 
       // If the search is empty, hide the exact matches before the early abort.
       exact_match_fieldset_el.style.display = 'none'
@@ -547,8 +548,11 @@ class Search {
 
 
 
-      var innerText = menu_items[i].innerText.toLowerCase()
-      if (innerText.includes(search_input) || this._menu_el_matches_search(menu_el, search_input)) {
+      var innerText_lowercase = menu_items[i].innerText.toLowerCase()
+      if (
+        innerText_lowercase.includes(search_input_lowercase) ||
+        this._menu_el_matches_search(menu_el, search_input_lowercase)
+      ) {
         matches.push(menu_el)
       }
     }
@@ -572,11 +576,11 @@ class Search {
     } else {
 
       var root_taxa_pairs = []
-      if (this._state.data_map.taxa_to_root.has(search_input)) {
-        root_taxa_pairs.push([this._state.data_map.taxa_to_root.get(search_input), search_input])
+      if (this._state.data_map.taxa_to_root.has(search_input_raw)) {
+        root_taxa_pairs.push([this._state.data_map.taxa_to_root.get(search_input_raw), search_input_raw])
       }
-      if (this._state.data_map.common_name_to_root_taxa_list.has(search_input)) {
-        const root_taxa_pairs_for_common_name = this._state.data_map.common_name_to_root_taxa_list.get(search_input)
+      if (this._state.data_map.common_name_to_root_taxa_list.has(search_input_raw)) {
+        const root_taxa_pairs_for_common_name = this._state.data_map.common_name_to_root_taxa_list.get(search_input_raw)
         root_taxa_pairs = root_taxa_pairs.concat(root_taxa_pairs_for_common_name)
       }
 
