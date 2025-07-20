@@ -43,8 +43,10 @@ async function cache_match_with_fetch_fallback(cache_name, url_or_request, put_o
     return cache_response
   }
 
+  // Put this before the fetch so that we have some messaging if the fetch hard fails.
+  console.log(`Cache miss for "${request.url}", about to fetch.`)
   const fetch_response = await fetch(request)
-  console.log(`Cache miss for "${request.url}" fetch response`, fetch_response)
+  console.log('Fetch response', fetch_response)
   if (put_on_success && fetch_response.ok) {
     console.log(`Adding "${request.url}" to cache`, fetch_response)
     let responseClone = fetch_response.clone();
