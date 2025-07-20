@@ -1,6 +1,7 @@
 {
   "short_name": "PT",
   "name": "Simplified phylogentic tree",
+  "version": "25.07.20",
   "icons": [
     {
       "src": "/phylogeny/favicon_tree_192.png",
@@ -16,5 +17,25 @@
   "start_url": ".",
   "display": "minimal-ui",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "A web app to quickly navigate different branches of life that's intended to help learn the tree from the top down.",
+  "categories": [
+    "education",
+    "reference"
+  ],
+  "screenshots": [
+    {
+      "src": "screenshots/iphone_screenshot.png",
+      "sizes": "500x800",
+      "form_factor": "narrow",
+      "label": "The single column layout with the initial animalaia tree."
+    },
+    {
+      "src": "screenshots/chrome_screenshot.png",
+      "sizes": "800x500",
+      "form_factor": "wide",
+      "label": "The three column layout with the mollusca tree."
+    }
+  ],
+  "offline_enabled": true
 }
