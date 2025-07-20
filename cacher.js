@@ -126,5 +126,5 @@ self.addEventListener('fetch', (event) => {
 });
 
 self.addEventListener('message', async (event) => {
-  await fault_tolerant_add_all(cacheName, event.data, only_if_cache_miss = true)
+  await fault_tolerant_add_all(cacheName, event.data, true /* only_if_cache_miss */)
 });
