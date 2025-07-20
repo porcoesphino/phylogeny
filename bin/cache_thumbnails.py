@@ -27,14 +27,19 @@ def download_thumbnails(local_to_remote: dict[str, str]) -> None:
   total_items = len(local_to_remote)
   completed_items = 0
   bytes_so_far = 0
+
+  print(f'Beginning download of {total_items} thumbnails.')
+
   for (local, remote) in local_to_remote.items():
-    print(f'Saving {completed_items} / {total_items} using {bytes_so_far / 1024 / 1024:.2f}MiB')
     downloaded_size = maybe_save_thumbnail(local=local, remote=remote)
+    if bytes_so_far == 0 and downloaded_size > 0:
+      print(f'Skipped {completed_items} already downloaded files.')
     bytes_so_far += downloaded_size
     completed_items += 1
 
-    # If we just hit the server, then wait a little before continuing.
+    # If we just hit the server, then give a status then wait a little before continuing.
     if downloaded_size:
+      print(f'Saved {completed_items} / {total_items} using {bytes_so_far / 1024 / 1024:.2f}MiB')
       sleep_in_sec = random.random() * 3  # Get a sleep of less than three seconds.
       time.sleep(sleep_in_sec)
 
