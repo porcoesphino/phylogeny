@@ -23,6 +23,39 @@ function url_is_favicon(url) {
   return url.endsWith('favicon_tree_192.png') || url.endsWith('favicon_tree_512.png')
 }
 
+async function match_from_cache_and_fetch_on_miss(cache_name, url_or_request, put_on_success = true) {
+  const cache = await caches.open(cache_name)
+  if (typeof (url_or_request) == 'string') {
+    var request = new Request(url_or_request)
+  } else {
+    var request = url_or_request.clone()
+  }
+  const cache_response = await cache.match(request)
+  if (cache_response) {
+    return cache_response
+  }
+
+  const fetch_response = await fetch(request)
+  if (put_on_success && fetch_response.ok) {
+    await cache.put(request, fetch_response)
+  }
+  return fetch_response
+}
+
+async function fault_tolerant_add_all(cache_name, list_or_set, only_if_cache_miss = false) {
+  const cache = await caches.open(cache_name)
+  url_list = [...list_or_set]
+  for (var i = 0; i < url_list.length; i++) {
+    var url = url_list[i]
+    if (only_if_cache_miss) {
+      await match_from_cache_and_fetch_on_miss(cacheName, url, put_on_success = true)
+    } else {
+      await cache.add(url)
+    }
+  }
+  console.log(`Finished ensuring the cache is fresh for ${url_list.length} items.`, url_list)
+}
+
 async function precache(prefix) {
   const initial_load = []
   for (var i = 0; i < precachedResources.length; i++) {
@@ -90,4 +123,8 @@ self.addEventListener('fetch', (event) => {
         });
       })
   );
+});
+
+self.addEventListener('message', async (event) => {
+  await fault_tolerant_add_all(cacheName, event.data, only_if_cache_miss = true)
 });

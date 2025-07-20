@@ -20,17 +20,14 @@ if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
   console.warn('Cacher service worker was not registered since service workers are not supported.');
 }
 
-// TODO: Move into service worker code.
 async function fetchAllUrls(local_urls) {
-  console.log('Attempting image prefetch.')
-  if (will_be_blocked_by_cors()) {
-    console.warn('Image prefetch abored since CORS will fail the requests.')
-    return
-  }
-  local_urls.forEach(async (local_url) => {
-    return await window.fetch(local_url)
-  })
-  console.log('Finished image prefetch.')
+  navigator.serviceWorker.ready.then(
+    (registration) => {
+      registration.active.postMessage(
+        local_urls
+      )
+    }
+  )
 }
 
 function clear_child_nodes(parent_el) {
