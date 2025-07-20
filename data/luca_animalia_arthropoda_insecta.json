@@ -174,7 +174,17 @@
     "ipa": "",
     "etymology": "",
     "common": [],
-    "tag": "",
+    "tag": "They have chewing mouthparts and incomplete development so instead of a pupal stage they develop through a series of nymphal instars that gradually acquire adult features. Some adults are secondarily wingless but if not they have four wings and the front wings are usually thickened or leathery with the front and hind wings operating independently of one another.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Miramella_alpina_male_%283788740982%29.jpg/330px-Miramella_alpina_male_%283788740982%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Phyllium_bilobatum%2C_male_larva.jpg/250px-Phyllium_bilobatum%2C_male_larva.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Perlidae_P1400217a.jpg/330px-Perlidae_P1400217a.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/f7/Forficula.auricularia.-.lindsey.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Zorotypus_from_Los_Bancos%2C_Pichincha%2C_Ecuador.jpg/330px-Zorotypus_from_Los_Bancos%2C_Pichincha%2C_Ecuador.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Mantis_%28European%29.jpg/330px-Mantis_%28European%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/American-cockroach.jpg/330px-American-cockroach.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Grylloblatta_scudderi%2C_Squamish-Lillooet%2C_British_Columbia_2.jpg/330px-Grylloblatta_scudderi%2C_Squamish-Lillooet%2C_British_Columbia_2.jpg"
+    ],
     "card": 3
   },
   {
@@ -250,14 +260,23 @@
     "parent": "Polyneoptera",
     "rank": "Order",
     "ipa": "",
-    "etymology": "",
+    "etymology": "'braided'-'wings'",
     "common": [
       "stoneflies"
     ],
+    "tag": "Named for the braided ladder-like pattern their veins make across their wings. They have long antennae and cerci; and their wings fold flat and extend past tip of abdomen. The nymphs are aquatic; usually herbivorous with some being hunters;  and live in the floor of well-oxygenated lakes and streams. Some adults do not feed at all, but those that do are herbivorous.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Neoperla_clymene_hor.png/330px-Neoperla_clymene_hor.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Perlidae_P1400217a.jpg/330px-Perlidae_P1400217a.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Chloroperlidae.jpg/330px-Chloroperlidae.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Soliperla_sierra.jpg/330px-Soliperla_sierra.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Amphinemura.jpg/330px-Amphinemura.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Small_Winter_Stonefly_-_Allocapnia_species%3F%2C_Riverbend_Park%2C_Great_Falls%2C_Virginia_-_13007749435.jpg/250px-Small_Winter_Stonefly_-_Allocapnia_species%3F%2C_Riverbend_Park%2C_Great_Falls%2C_Virginia_-_13007749435.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Plecoptera_-_exuvia.jpg/330px-Plecoptera_-_exuvia.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Thaumatoperla_robusta.jpg/330px-Thaumatoperla_robusta.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Stenoperla_prasina.jpg/330px-Stenoperla_prasina.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/SteinfliegenLarve2.JPG/330px-SteinfliegenLarve2.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Eusthenia_sp.jpg/250px-Eusthenia_sp.jpg"
     ],
-    "tag": "",
     "card": 4
   },
   {
@@ -289,9 +308,9 @@
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Zorotypus_from_Los_Bancos%2C_Pichincha%2C_Ecuador.jpg/330px-Zorotypus_from_Los_Bancos%2C_Pichincha%2C_Ecuador.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Zorotypus_guineensis_%28white_background%29.jpg/330px-Zorotypus_guineensis_%28white_background%29.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Zorotypus.jpg/330px-Zorotypus.jpg"
     ],
-    "tag": "",
+    "tag": "Small and soft bodied insects with two forms: winged with wings sheddable as in termites, dark and with eyes and ocelli; or wingless, pale and without eyes or ocelli. They have a characteristic nine-segmented beaded antenna. They have mouthparts adapted for chewing and are mostly found under bark, in dry wood or in leaf litter.",
     "card": 4
   },
   {
