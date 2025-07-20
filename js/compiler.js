@@ -23,7 +23,8 @@ if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
     () => {
       console.error('There was a new agent waiting so reloaded.')
       window.location.reload();
-    }
+    },
+    { once: true }
   );
 } else {
   console.warn('Cacher service worker was not registered since service workers are not supported.');

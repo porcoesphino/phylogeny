@@ -15,7 +15,9 @@ const precached_resources = [
   '/css/layout.css',
   '/css/radio_nav.css',
   '/css/tree_view.css',
-  '/css/typography.css'
+  '/css/typography.css',
+  '/screenshots/chrome_screenshot.png',
+  '/screenshots/iphone_screenshot.png',
 ]
 
 function url_is_remote(url) {
@@ -61,7 +63,7 @@ async function fault_tolerant_add_all(cache_name, list_or_set, only_add_on_cache
   for (var i = 0; i < url_list.length; i++) {
     var url = url_list[i]
     if (only_add_on_cache_miss) {
-      await cache_match_with_fetch_fallback(cache_name, url, put_on_success = true)
+      await cache_match_with_fetch_fallback(cache_name, url, true /* put_on_success */)
     } else {
       await cache.add(url)
     }
@@ -108,15 +110,29 @@ function strip_query_params(url_str) {
 
 self.addEventListener('install', (event) => {
   console.log('Installing cacher.js', event)
-  event.waitUntil(precache(event));
-  // This should be safe because we have a listener that should refresh old tabs.
-  console.warn('Skipping waiting to become active!')
-  skipWaiting();
+  event.waitUntil(async () => {
+    await precache_then_delete_old_caches(event)
+
+    // This should be safe because we have a listener that should refresh old tabs.
+    console.warn('Skipping waiting to become active!')
+    return skipWaiting();
+  });
 });
+
+async function precache_then_delete_old_caches(event) {
+  await precache(event)
+  const all_caches = await caches.keys()
+  current_caches = [cache_name_versioned, cache_name_thumbnails]
+  const old_caches = all_caches.filter((item) => !current_caches.includes(item))
+  for (const cache_name of old_caches) {
+    console.warn('Deleting old cache', cache_name)
+    await caches.delete(cache_name)
+  }
+}
 
 self.addEventListener('activate', (event) => {
   console.log('Activating cacher.js', event)
-  event.waitUntil(precache(event));
+  event.waitUntil(precache_then_delete_old_caches(event));
 });
 
 self.addEventListener('fetch', (event) => {
