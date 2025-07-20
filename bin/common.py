@@ -119,9 +119,13 @@ class NodeRaw:  #pylint: disable=too-many-instance-attributes
     if not self.imgs:
       return
 
-    for img_url in self.imgs:
+    for img in self.image_list:
+
       # This also validates the images url.
-      _get_remote_filename(img_url=img_url)
+      attribution_url = img.attribution_url
+
+      if len(img.local_filename) > 255:
+        raise ValueError(f'Image has local filename that is too long {attribution_url}')
 
   def validate(self) -> None:
     self._validate_imgs()
