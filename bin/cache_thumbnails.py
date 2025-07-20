@@ -1,6 +1,9 @@
+#!/usr/bin/env python
+
 import os
 import random
 import time
+import urllib.error
 import urllib.request
 
 import common
@@ -16,8 +19,10 @@ def maybe_save_thumbnail(local: str, remote: str) -> int:
   # If the file already exists, continue.
   if os.path.isfile(image_local_path):
     return 0
-
-  urllib.request.urlretrieve(remote, image_local_path)
+  try:
+    urllib.request.urlretrieve(remote, image_local_path)
+  except urllib.error.URLError as e:
+    raise SystemError(f'Download to file "{image_local_path}" failed.') from e
 
   file_size = os.path.getsize(image_local_path)
   return file_size

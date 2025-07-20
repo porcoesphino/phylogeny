@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 import re
 import typing
+import urllib.parse
 
 IMG_PREFIX = 'https://upload.wikimedia.org/wikipedia/commons/'
 
@@ -25,8 +26,8 @@ Rank: typing.TypeAlias = typing.Literal[
 
 
 def _get_local_filename_from_remote(url: str) -> str:
-  [_, local] = url.rsplit('/', 1)
-  return local
+  [_, url_encoded_filename] = url.rsplit('/', 1)
+  return urllib.parse.unquote(url_encoded_filename)
 
 
 def _get_filename_with_pattern(img_url: str, pattern: re.Pattern[str], image_type: str) -> str:
