@@ -2,23 +2,31 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
-if ('serviceWorker' in navigator) {
+function will_be_blocked_by_cors() {
+  return window.location.href.startsWith('file:')
+}
+
+if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
   // Register a service worker hosted at the root of the site using the default scope.
   navigator.serviceWorker.register('./cacher.js').then(
     (registration) => {
-      console.log('Service worker registration succeeded:', registration);
+      console.log('Cacher service worker registration succeeded:', registration);
     },
     (error) => {
-      console.error(`Service worker registration failed: ${error}`);
+      console.error(`Cacher service worker registration failed: ${error}`);
     },
   );
 } else {
-  console.error('Service workers are not supported.');
+  console.warn('Cacher service worker was not registered since service workers are not supported.');
 }
 
 // TODO: Move into service worker code.
 async function fetchAllUrls(local_urls) {
   console.log('Attempting image prefetch.')
+  if (will_be_blocked_by_cors()) {
+    console.warn('Image prefetch abored since CORS will fail the requests.')
+    return
+  }
   local_urls.forEach(async (local_url) => {
     return await window.fetch(local_url)
   })
