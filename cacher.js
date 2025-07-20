@@ -1,6 +1,7 @@
 
-const cacheName = 'porcoesphino_pt';
-const precachedResources = [
+const cache_name_versioned = 'porcoesphino_pt_v1';
+const cache_name_thumbnails = 'porcoesphino_pt_thumbnails';
+const precached_resources = [
   '/',
   '/manifest.json',
   '/cacher.js',
@@ -37,7 +38,9 @@ async function match_from_cache_and_fetch_on_miss(cache_name, url_or_request, pu
   }
 
   const fetch_response = await fetch(request)
+  console.log(`Cache miss for "${request.url}" fetch response`, fetch_response)
   if (put_on_success && fetch_response.ok) {
+    console.log('Adding "${request.url}" to cache', fetch_response)
     await cache.put(request, fetch_response)
   }
   return fetch_response
@@ -49,12 +52,12 @@ async function fault_tolerant_add_all(cache_name, list_or_set, only_if_cache_mis
   for (var i = 0; i < url_list.length; i++) {
     var url = url_list[i]
     if (only_if_cache_miss) {
-      await match_from_cache_and_fetch_on_miss(cacheName, url, put_on_success = true)
+      await match_from_cache_and_fetch_on_miss(cache_name, url, put_on_success = true)
     } else {
       await cache.add(url)
     }
   }
-  console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. only_if_cache_miss=(${only_if_cache_miss})`, url_list)
+  console.log(`Finished ensuring the cache is fresh for ${url_list.length} items.only_if_cache_miss = (${only_if_cache_miss})`, url_list)
 }
 
 async function precache(event) {
@@ -64,10 +67,10 @@ async function precache(event) {
     var prefix = ''
   }
   const initial_load = []
-  for (var i = 0; i < precachedResources.length; i++) {
-    initial_load.push(prefix + precachedResources[i])
+  for (var i = 0; i < precached_resources.length; i++) {
+    initial_load.push(prefix + precached_resources[i])
   }
-  return fault_tolerant_add_all(cacheName, initial_load, false /* only_if_cache_miss */)
+  return fault_tolerant_add_all(cache_name_versioned, initial_load, false /* only_if_cache_miss */)
 }
 
 self.addEventListener('install', (event) => {
@@ -92,34 +95,13 @@ self.addEventListener('fetch', (event) => {
     updated_request = new Request('./' + split_url[split_url.length - 1])
   }
 
-  event.respondWith(
-    caches
-      .open(cacheName)
-      .then((cache) => cache.match(updated_request))
-      .then((cache_response) => {
-        if (cache_response) {
-          return cache_response;
-        }
-
-        console.log('Cache miss for ', event.request.url, event.request);
-
-        return fetch(updated_request).then((fetch_response) => {
-
-          // TODO: Load the CSS reset from a local dir.
-          if ((url.includes('/thumbnails/') && fetch_response.ok) || url.endsWith('reset-2.0.min.css')) {
-            console.log('Storing file in the cache', event.request.url, fetch_response);
-            let responseClone = fetch_response.clone();
-            console.log('clone', responseClone)
-            caches.open(cacheName).then((cache) => {
-              cache.put(event.request, responseClone);
-            });
-          }
-          return fetch_response;
-        });
-      })
-  );
+  if (url.includes('/thumbnails/')) {
+    event.respondWith(match_from_cache_and_fetch_on_miss(cache_name_thumbnails, updated_request, true /* put_on_success */))
+  } else {
+    event.respondWith(match_from_cache_and_fetch_on_miss(cache_name_versioned, updated_request, false /* put_on_success */))
+  }
 });
 
 self.addEventListener('message', async (event) => {
-  event.waitUntil(fault_tolerant_add_all(cacheName, event.data, true /* only_if_cache_miss */))
+  event.waitUntil(fault_tolerant_add_all(cache_name_thumbnails, event.data, true /* only_if_cache_miss */))
 });
