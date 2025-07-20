@@ -154,7 +154,7 @@ self.addEventListener('fetch', (event) => {
   if (is_request_for_website(event.request) && original_url.includes('/thumbnails/')) {
     event.respondWith(cache_match_with_fetch_fallback(cache_name_thumbnails, updated_request, true /* put_on_success */))
   } else {
-    event.respondWith(cache_match_with_fetch_fallback(cache_name_versioned, updated_request, false /* put_on_success */))
+    event.respondWith(cache_match_with_fetch_fallback(cache_name_versioned, updated_request, true /* put_on_success */))
   }
 });
 
