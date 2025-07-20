@@ -107,6 +107,9 @@ function strip_query_params(url_str) {
 self.addEventListener('install', (event) => {
   console.log('Installing cacher.js', event)
   event.waitUntil(precache(event));
+  // This should be safe because we have a listener that should refresh old tabs.
+  console.warn('Skipping waiting to become active!')
+  skipWaiting();
 });
 
 self.addEventListener('activate', (event) => {

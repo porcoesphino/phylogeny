@@ -16,6 +16,15 @@ if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
       console.error(`Cacher service worker registration failed: ${error}`);
     },
   );
+
+  // This is isn't ideal for the user but ensures data isn't stale.
+  // Force the page to refresh / an update when there is a new service worker waiting.
+  navigator.serviceWorker.addEventListener('controllerchange',
+    () => {
+      console.error('There was a new agent waiting so reloaded.')
+      window.location.reload();
+    }
+  );
 } else {
   console.warn('Cacher service worker was not registered since service workers are not supported.');
 }
