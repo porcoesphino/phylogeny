@@ -81,16 +81,26 @@
     "etymology": "",
     "common": [
       "dragonflies",
-      "damselfiles"
+      "damselfiles",
+      "darners",
+      "clubtails",
+      "skimmers"
     ],
-    "tag": "Predatory flying insects have aquatic larvae. They are carnivorous and are almost entirely insectivorous. The adults have two pairs of long, transparent wings that move independently, and elongated abdomens.",
+    "tag": "Predatory flying insects have aquatic larvae. The adults have two pairs of long, transparent wings that move independently, large compound eyes, short bristle-like antennae, and elongated abdomens. They are carnivorous and are almost entirely insectivorous. Damselflies have narrow wings as they join the thorax and dragonflies hind wings are wider near the base.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Common_blue_damselfly02.jpg/250px-Common_blue_damselfly02.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/2/2d/Aeshna_juncea_hovering.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Beautiful_demoiselle_%28Calopteryx_virgo%29_male_3.jpg/330px-Beautiful_demoiselle_%28Calopteryx_virgo%29_male_3.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ischnura_heterosticta02.jpg/330px-Ischnura_heterosticta02.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Aeshna_cyanea_female_1.jpg/330px-Aeshna_cyanea_female_1.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Anotogaster_sieboldii_on_wall.jpg/330px-Anotogaster_sieboldii_on_wall.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Anotogaster_sieboldii_on_wall.jpg/330px-Anotogaster_sieboldii_on_wall.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Lesser_Tasmanian_Darner_Austroaeschna_hardyi_female.jpg/330px-Lesser_Tasmanian_Darner_Austroaeschna_hardyi_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Common_Clubtail_%28Ictinogomphus_rapax%29_W_IMG_0224.jpg/330px-Common_Clubtail_%28Ictinogomphus_rapax%29_W_IMG_0224.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Desert_Whitetail_-_Plathemis_subornata%2C_Bitter_Lakes_National_Wildlife_Refuge%2C_Roswell%2C_New_Mexico_-_7299714954.jpg/330px-Desert_Whitetail_-_Plathemis_subornata%2C_Bitter_Lakes_National_Wildlife_Refuge%2C_Roswell%2C_New_Mexico_-_7299714954.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Celithemis_eponina_%28Halloween_Pennant%29.jpg/250px-Celithemis_eponina_%28Halloween_Pennant%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Darter_August_2007-20.jpg/330px-Darter_August_2007-20.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Trithemis_annulata.jpg/330px-Trithemis_annulata.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Anisoptera_Ana_Cotta_3022296333.jpg/330px-Anisoptera_Ana_Cotta_3022296333.jpg"
     ],
     "card": 2
   },
