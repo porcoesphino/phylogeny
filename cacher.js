@@ -53,38 +53,32 @@ async function fault_tolerant_add_all(cache_name, list_or_set, only_if_cache_mis
       await cache.add(url)
     }
   }
-  console.log(`Finished ensuring the cache is fresh for ${url_list.length} items.`, url_list)
+  console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. only_if_cache_miss=(${only_if_cache_miss})`, url_list)
 }
 
-async function precache(prefix) {
-  const initial_load = []
-  for (var i = 0; i < precachedResources.length; i++) {
-    initial_load.push(prefix + precachedResources[i])
-  }
-  console.log('Precache expected files: ', initial_load)
-  const cache = await caches.open(cacheName);
-  return cache.addAll(initial_load).catch((error) => {
-    console.error('Continuing through an error during addAll: ', error);
-  });;
-}
-
-console.log('Registering the cacher install')
-self.addEventListener('install', (event) => {
-  console.log('Install ran in cacher', event)
+async function precache(event) {
   if (url_is_remote(event.target.registration.scope)) {
     var prefix = '/phylogeny'
   } else {
     var prefix = ''
   }
-  event.waitUntil(precache(prefix));
+  const initial_load = []
+  for (var i = 0; i < precachedResources.length; i++) {
+    initial_load.push(prefix + precachedResources[i])
+  }
+  await fault_tolerant_add_all(cacheName, initial_load, false /* only_if_cache_miss */)
+}
+
+self.addEventListener('install', (event) => {
+  console.log('Installing cacher.js', event)
+  event.waitUntil(precache(event));
 });
 
-console.log('Registering the cacher activate')
 self.addEventListener('activate', (event) => {
-  console.log('Activating', event)
+  console.log('Activating cacher.js', event)
+  event.waitUntil(precache(event));
 });
 
-console.log('Registering the cacher fetch')
 self.addEventListener('fetch', (event) => {
 
   const url = event.request.url
