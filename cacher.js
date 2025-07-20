@@ -2,6 +2,7 @@
 const cacheName = 'porcoesphino_pt';
 const precachedResources = [
   '/',
+  '/manifest.json',
   '/cacher.js',
   '/favicon_tree_192.png',
   '/favicon_tree_512.png',
@@ -83,24 +84,24 @@ self.addEventListener('fetch', (event) => {
 
   const url = event.request.url
 
+  // The server puts files in a directory and so the HTML needs to reference this directory
+  // but this doesn't align with local dev. For local dev catch and reroute these requests.
+  var updated_request = event.request.clone()
+  if (url_is_favicon(url) && !url_is_remote(url)) {
+    split_url = event.request.url.split('/')
+    updated_request = new Request('./' + split_url[split_url.length - 1])
+  }
+
   event.respondWith(
     caches
       .open(cacheName)
-      .then((cache) => cache.match(event.request))
+      .then((cache) => cache.match(updated_request))
       .then((cache_response) => {
         if (cache_response) {
           return cache_response;
         }
 
         console.log('Cache miss for ', event.request.url, event.request);
-
-        // The server puts files in a directory and so the HTML needs to reference this directory
-        // but this doesn't align with local dev. For local dev catch and reroute these requests.
-        var updated_request = event.request.clone()
-        if (url_is_favicon(url) && !url_is_remote(url)) {
-          split_url = event.request.url.split('/')
-          updated_request = new Request('./' + split_url[split_url.length - 1])
-        }
 
         return fetch(updated_request).then((fetch_response) => {
 
