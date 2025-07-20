@@ -31,7 +31,7 @@ def get_html() -> str:
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="manifest" href="./manifest.json" />
-  <link rel="stylesheet" href="https://public.codepenassets.com/css/reset-2.0.min.css">
+  <link rel="stylesheet" href="./css/reset-2.0.min.css">
   <link rel="stylesheet" href="./css/layout.css">
   <link rel="stylesheet" href="./css/typography.css">
   <link rel="stylesheet" href="./css/collapsible_block.css">

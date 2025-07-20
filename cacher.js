@@ -9,6 +9,7 @@ const precached_resources = [
   '/favicon_tree_512.png',
   '/index.html',
   '/js/compiler.js',
+  '/css/reset-2.0.min.css',
   '/css/collapsible_block.css',
   '/css/controls.css',
   '/css/layout.css',
