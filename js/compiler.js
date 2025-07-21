@@ -511,6 +511,96 @@ class Search {
     }
   }
 
+  static get_start_indicies_for_substring(full_string, sub_string) {
+    let string_to_match_in = full_string.toLowerCase()
+    const sub_string_lower = sub_string.toLowerCase()
+    const indicies = []
+
+    while (true) {
+      const rel_index = string_to_match_in.indexOf(sub_string_lower)
+      if (rel_index >= 0) {
+        if (indicies.length > 0) {
+          var absolut_index = rel_index + indicies[indicies.length - 1] + sub_string.length
+        } else {
+          var absolut_index = rel_index
+        }
+        indicies.push(absolut_index)
+        string_to_match_in = string_to_match_in.substr(absolut_index + sub_string_lower.length)
+      } else {
+        break
+      }
+    }
+    return indicies
+  }
+
+  static wrap_nested_text_with_mark_tags(el, text) {
+    const indicies = Search.get_start_indicies_for_substring(el.innerText, text)
+    const inner_text = el.innerText
+    const fragment = document.createDocumentFragment();
+
+    let last_index = 0
+    for (const index of indicies) {
+      if (last_index < index) {
+        const text_for_node = inner_text.substr(last_index, index - last_index)
+        fragment.appendChild(document.createTextNode(text_for_node))
+      }
+      const mark_el = document.createElement('mark')
+      mark_el.innerText = inner_text.substr(index, text.length)
+      fragment.appendChild(mark_el)
+      last_index = index + text.length
+    }
+    const end_of_last_match = indicies[indicies.length - 1] + text.length
+    const text_after_last_match = inner_text.substr(end_of_last_match)
+    fragment.appendChild(document.createTextNode(text_after_last_match))
+
+    clear_child_nodes(el)
+    el.innerText = ''
+    el.appendChild(fragment)
+  }
+
+  static add_mark_for_text(search) {
+    const root_el = document.getElementById('tree_root')
+    const text_only_els = root_el.querySelectorAll('.taxa, .common_names, .tag')
+    for (const el of text_only_els) {
+      if (el.innerText.toLowerCase().includes(search.toLowerCase())) {
+        Search.wrap_nested_text_with_mark_tags(el, search)
+      }
+    }
+  }
+
+  // Assumes all parent elements were text before mark was added.
+  static remove_all_marks() {
+    const root_el = document.getElementById('tree_root')
+    const mark_els = root_el.querySelectorAll('mark')
+    const parents = []
+
+    // Mutliple mark elements could have the same parent, so flatten them.
+    for (const el of mark_els) {
+      parents.push(el.parentElement)
+    }
+    const parent_set = new Set(parents)
+
+    for (const parent of parent_set) {
+      let text = ''
+      for (const child of parent.childNodes) {
+        switch (child.nodeName) {
+          case 'MARK':
+            text += child.innerText
+            break
+          case '#text':
+            text += child.textContent
+            break
+          default:
+            const error_msg_prefix = 'Unexpected node while removing marks: '
+            console.error(error_msg_prefix, child)
+            throw Error(`${error_msg_prefix}${child}`)
+        }
+      }
+      clear_child_nodes(parent)
+      parent.innerText = text
+    }
+  }
+
   _menu_el_matches_search(el, search_input_lowercase) {
     var input_el = el.getElementsByTagName('input')[0];
     var id = input_el.id
@@ -557,6 +647,8 @@ class Search {
       // If the search is empty, hide the exact matches before the early abort.
       exact_match_fieldset_el.style.display = 'none'
 
+      Search.remove_all_marks()
+
       // If the search is empty, make the menu visible.
       for (var i = 0; i < menu_items.length; i++) {
         var menu_el = menu_items[i]
@@ -594,8 +686,12 @@ class Search {
     }
 
     if (matches.length == 0) {
+      Search.remove_all_marks()
       exact_match_fieldset_el.style.display = 'none'
     } else {
+
+      // Add a `mark` tag.
+      Search.add_mark_for_text(search_input_raw)
 
       var root_taxa_pairs = []
       if (this._state.data_map.taxa_to_root.has(search_input_raw)) {
@@ -747,6 +843,7 @@ class TreeBuilderAsTreeList {
       var name_el = document.createElement('span')
       var wikipedia_link_el = document.createElement('a')
       wikipedia_link_el.href = 'https://en.wikipedia.org/wiki/' + name
+      wikipedia_link_el.classList.add('taxa')
       wikipedia_link_el.innerText = name
       wikipedia_link_el.target = '_blank'
       name_el.appendChild(wikipedia_link_el)
@@ -820,6 +917,7 @@ class TreeBuilderAsTreeList {
       if (node.hasOwnProperty('tag') && !!node.tag) {
         var tag_el = document.createElement('p')
         tag_el.innerText = node.tag
+        tag_el.classList.add('tag')
         parent_el.appendChild(tag_el)
       }
     }
@@ -1164,6 +1262,13 @@ class Page {
       if (!!new_taxa) {
         TreeBuilderAsTreeList.scroll_to_taxa(new_value, new_taxa, false /* shake */)
       }
+
+      setTimeout(() => {
+        const search_text = document.getElementById(Search.ID).value
+        if (search_text.length > 0) {
+          Search.add_mark_for_text(search_text)
+        }
+      }, 0.5)
     }
 
     var update_tree_range_view = this._update_tree_range_view
