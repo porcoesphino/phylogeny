@@ -15,7 +15,7 @@
     }
   ],
   "start_url": ".",
-  "display": "minimal-ui",
+  "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
   "description": "A web app to quickly navigate different branches of life that's intended to help learn the tree from the top down.",
