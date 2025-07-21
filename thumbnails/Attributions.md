@@ -1308,7 +1308,6 @@
 - [250px-Marbled_cat_borneo.jpg](https://commons.wikimedia.org/wiki/File:Marbled_cat_borneo.jpg)
 - [330px-Pardofelis_marmorata_300280177.jpg](https://commons.wikimedia.org/wiki/File:Pardofelis_marmorata_300280177.jpg)
 - [330px-Bay_cat_1_Jim_Sanderson-cropped.jpg](https://commons.wikimedia.org/wiki/File:Bay_cat_1_Jim_Sanderson-cropped.jpg)
-- [250px-Asian_Golden_cat.jpg](https://commons.wikimedia.org/wiki/File:Asian_Golden_cat.jpg)
 - [250px-Asian_Golden_Cat.jpg](https://commons.wikimedia.org/wiki/File:Asian_Golden_Cat.jpg)
 - [250px-Eurasischer_Luchs_im_Tier-Freigelände_Nationalparkzentrums_Falkenstein_im_Nationalpark_Bayerischer_Wald.jpg](https://commons.wikimedia.org/wiki/File:Eurasischer_Luchs_im_Tier-Freigel%C3%A4nde_Nationalparkzentrums_Falkenstein_im_Nationalpark_Bayerischer_Wald.jpg)
 - [Linces10.jpg](https://commons.wikimedia.org/wiki/File:Linces10.jpg)
