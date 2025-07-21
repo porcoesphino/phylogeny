@@ -57,19 +57,19 @@ async function cache_match_with_fetch_fallback(cache_name, url_or_request, put_o
   return fetch_response
 }
 
-async function fault_tolerant_add_all(cache_name, list_or_set, only_add_on_cache_miss = false) {
+fault_tolerant_add_all = async (cache_name, list_or_set, only_add_on_cache_miss = false) => {
   const cache = await caches.open(cache_name)
-  url_list = [...list_or_set]
+  const url_list = [...list_or_set]
   for (var i = 0; i < url_list.length; i++) {
     var url = url_list[i]
     if (only_add_on_cache_miss) {
       await cache_match_with_fetch_fallback(cache_name, url, true /* put_on_success */)
     } else {
-      console.log(`Ensuring "${url}" is up to date.`)
+      console.log(`Ensuring "${url}" is up to date with an "add".`)
       await cache.add(url)
     }
   }
-  console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
+  console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
 }
 
 async function precache(event) {
@@ -143,7 +143,7 @@ self.addEventListener('fetch', (event) => {
   var updated_request = event.request.clone()
   const original_url = updated_request.url
   if (url_is_favicon(original_url) && !url_is_remote(original_url)) {
-    split_url = original_url.split('/')
+    const split_url = original_url.split('/')
     updated_request = new Request('./' + split_url[split_url.length - 1])
 
     // If this is request for this website, and has quer params, then strip them.
