@@ -21,7 +21,7 @@ if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
   // Force the page to refresh / an update when there is a new service worker waiting.
   navigator.serviceWorker.addEventListener('controllerchange',
     () => {
-      console.error('There was a new agent waiting so reloaded.')
+      console.error('There is a new agent waiting so force a page reload.')
       window.location.reload();
     },
     { once: true }
@@ -30,13 +30,25 @@ if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
   console.warn('Cacher service worker was not registered since service workers are not supported.');
 }
 
-async function fetchAllUrls(local_urls) {
+async function fetch_all_urls(local_urls) {
   navigator.serviceWorker.ready.then(
     (registration) => {
       registration.active.postMessage(
         {
           'type': 'thumbnail_prefetch',
           'data': local_urls
+        }
+      )
+    }
+  )
+}
+
+async function trigger_app_code_refresh() {
+  navigator.serviceWorker.ready.then(
+    (registration) => {
+      registration.active.postMessage(
+        {
+          'type': 'app_prefetch',
         }
       )
     }
@@ -1241,6 +1253,10 @@ class Page {
 
   page_load_callback() {
 
+    // Forceably reload the cache of app code on every refresh.
+    // NOTE: It won't immediately be used but it won't need to wait for an install.
+    trigger_app_code_refresh()
+
     var tree_range_builder = new TreeRangeSelectorBuilder(this.state.tree_range)
     tree_range_builder.replace_tree_range_as_buttons(this._tree_range_select)
     var select_new_tree_range = this.select_new_tree_range
@@ -1292,7 +1308,7 @@ class Page {
       TreeBuilderAsTreeList.scroll_to_taxa(root, taxa, true /* shake */)
     }
 
-    fetchAllUrls(this.state.img_urls)
+    fetch_all_urls(this.state.img_urls)
   }
 }
 

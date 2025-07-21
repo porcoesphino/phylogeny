@@ -165,7 +165,10 @@ self.addEventListener('message', async (event) => {
     case 'thumbnail_prefetch':
       event.waitUntil(fault_tolerant_add_all(cache_name_thumbnails, data.data, true /* only_add_on_cache_miss */))
       break
+    case 'app_prefetch':
+      event.waitUntil(precache(event))
+      break
     default:
-      throw Error('Unknown event type sent as message.')
+      throw Error(`Unknown event type sent as message: ${data.type}`)
   }
 });
