@@ -1,5 +1,5 @@
 
-const cache_name_versioned = 'porcoesphino_pt_v1';
+const cache_name_versioned = 'porcoesphino_pt_v24.07.20.1';
 const cache_name_thumbnails = 'porcoesphino_pt_thumbnails';
 const precached_resources = [
   '/',
