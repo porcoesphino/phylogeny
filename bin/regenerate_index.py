@@ -41,6 +41,12 @@ def get_html() -> str:
   <link rel="icon" href="./favicon_tree_192.png" sizes="192x192">
   <link rel="icon" href="./favicon_tree_512.png" sizes="512x512">
   <title>Phylogentic tree</title>
+  <meta property="og:site_name" content="Phylogentic tree">
+  <meta property="og:og:description"
+        content="A website to quickly explore how different life is related from the top down.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://porcoesphino.github.io/phylogeny/" />
+  <meta property="og:image" content="./screenshots/chrome_screenshot.png">
 </head>
 
 <body>
