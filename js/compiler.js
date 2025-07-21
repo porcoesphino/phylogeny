@@ -34,7 +34,10 @@ async function fetchAllUrls(local_urls) {
   navigator.serviceWorker.ready.then(
     (registration) => {
       registration.active.postMessage(
-        local_urls
+        {
+          'type': 'thumbnail_prefetch',
+          'data': local_urls
+        }
       )
     }
   )

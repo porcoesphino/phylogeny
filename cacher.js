@@ -123,7 +123,7 @@ self.addEventListener('install', (event) => {
 async function precache_then_delete_old_caches(event) {
   await precache(event)
   const all_caches = await caches.keys()
-  current_caches = [cache_name_versioned, cache_name_thumbnails]
+  const current_caches = [cache_name_versioned, cache_name_thumbnails]
   const old_caches = all_caches.filter((item) => !current_caches.includes(item))
   for (const cache_name of old_caches) {
     console.warn('Deleting old cache', cache_name)
@@ -160,5 +160,12 @@ self.addEventListener('fetch', (event) => {
 });
 
 self.addEventListener('message', async (event) => {
-  event.waitUntil(fault_tolerant_add_all(cache_name_thumbnails, event.data, true /* only_add_on_cache_miss */))
+  const data = event.data
+  switch (data.type) {
+    case 'thumbnail_prefetch':
+      event.waitUntil(fault_tolerant_add_all(cache_name_thumbnails, data.data, true /* only_add_on_cache_miss */))
+      break
+    default:
+      throw Error('Unknown event type sent as message.')
+  }
 });
