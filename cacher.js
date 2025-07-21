@@ -65,6 +65,7 @@ async function fault_tolerant_add_all(cache_name, list_or_set, only_add_on_cache
     if (only_add_on_cache_miss) {
       await cache_match_with_fetch_fallback(cache_name, url, true /* put_on_success */)
     } else {
+      console.log(`Ensuring "${url}" is up to date.`)
       await cache.add(url)
     }
   }
