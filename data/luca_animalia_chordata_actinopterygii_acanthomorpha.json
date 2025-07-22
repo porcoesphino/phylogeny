@@ -657,17 +657,32 @@
     "name": "Lophiiformes",
     "parent": "Eupercaria",
     "rank": "Order",
-    "ipa": "",
+    "ipa": "ˌlɒfiɪˈfɔːrmiːz",
     "etymology": "",
     "common": [
       "anglerfishes",
-      "deep-sea batfishes"
+      "deep-sea batfishes",
+      "sea toads",
+      "frogfishes",
+      "monkfishes",
+      "goosefishes",
+      "dreamers"
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Humpback_anglerfish.png/120px-Humpback_anglerfish.png",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Halieutaea_stellata_by_DaijuAzuma.jpg/250px-Halieutaea_stellata_by_DaijuAzuma.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Halieutaea_stellata_by_DaijuAzuma.jpg/250px-Halieutaea_stellata_by_DaijuAzuma.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Caulophryne_pelagica_facing_left.jpg/330px-Caulophryne_pelagica_facing_left.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/59/Sea_toad_genus_Chaunax_Mona_Canyon_13_April_2015.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Lophius_piscatorius_269401148.jpg/330px-Lophius_piscatorius_269401148.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D1%86%D0%B5%D1%80%D0%B0%D0%BF%D0%B8%D1%8F_%28cropped%29.jpg/330px-%D0%A1%D0%B5%D0%B2%D0%B5%D1%80%D0%BD%D0%B0%D1%8F_%D1%86%D0%B5%D1%80%D0%B0%D0%BF%D0%B8%D1%8F_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Ogcocephalus_vespertilio_110861367.jpg/330px-Ogcocephalus_vespertilio_110861367.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Expl2183_%289734084875%29.jpg/330px-Expl2183_%289734084875%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Sea_toad_%28Chaunacops_cf._melanostomus%29.jpg/330px-Sea_toad_%28Chaunacops_cf._melanostomus%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/cf/Haplophryne.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a5/BMC_-_Thaumatichthyidae-Thaumatichthys.binghami.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/a4/BMC_-_Melanocetidae-Melanocetus.eustales.jpg"
     ],
-    "tag": "",
+    "tag": "Named from the way many species have a modified dorsal fin ray that acts as a lure for prey. They are generally ambush predators. The majority of species are bottom-dwellers, with some deep-sea anglerfish living high in the water column.  They are sexual dimorphic; this can go so far as sexual parasitism with the male attached to the much larger female, sometimes fusing together as an example of natural parabiosis. In most species, a wide mouth extends all around the anterior circumference of the head, and bands of inwardly inclined teeth line both jaws and the teeth are depressible and can hinge back. They have gills that open behind the pectoral fins. Their lengths are 2–18 cm.",
     "species": 0
   },
   {
