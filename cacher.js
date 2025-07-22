@@ -93,7 +93,7 @@ function is_request_for_website(request) {
   const referrer_url = new URL(request.referrer)
   const request_url = new URL(request.url)
 
-  return referrer_url.host = request_url.host
+  return referrer_url.host == request_url.host
 }
 
 function has_query_params(request) {
