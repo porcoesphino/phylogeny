@@ -749,7 +749,6 @@
 - [330px-Pegasus_lancifer_in_vivo.jpg](https://commons.wikimedia.org/wiki/File:Pegasus_lancifer_in_vivo.jpg)
 - [330px-Eurypegasus_draconis_SI.jpg](https://commons.wikimedia.org/wiki/File:Eurypegasus_draconis_SI.jpg)
 - [Eurypegasus_draconis.jpg](https://commons.wikimedia.org/wiki/File:Eurypegasus_draconis.jpg)
-- [250px-Apogon_robinsi_-_pone.0010676.g071.png](https://commons.wikimedia.org/wiki/File:Apogon_robinsi_-_pone.0010676.g071.png)
 - [330px-Cryptocentrus_cinctus.JPG](https://commons.wikimedia.org/wiki/File:Cryptocentrus_cinctus.JPG)
 - [330px-ApogonVithisma.jpg](https://commons.wikimedia.org/wiki/File:ApogonVithisma.jpg)
 - [330px-Pterapogon_kauderni4.JPG](https://commons.wikimedia.org/wiki/File:Pterapogon_kauderni4.JPG)
