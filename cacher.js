@@ -33,27 +33,44 @@ function url_is_favicon(url) {
   return url.endsWith('favicon_tree_192.png') || url.endsWith('favicon_tree_512.png')
 }
 
-async function cache_match_with_fetch_fallback(cache_name, url_or_request, put_on_success = true) {
+async function cache_match_with_fetch_fallback(cache_name, url_or_request, put_on_success = true, cache_first = true) {
   const cache = await caches.open(cache_name)
   if (typeof (url_or_request) == 'string') {
     var request = new Request(url_or_request)
   } else {
     var request = url_or_request.clone()
   }
-  const cache_response = await cache.match(request)
-  if (cache_response) {
-    return cache_response
+
+  // If we're serving the cache first, look it up and return.
+  if (cache_first) {
+    const cache_response = await cache.match(request)
+    if (cache_response) {
+      return cache_response
+    }
+    console.log(`Cache miss for "${request.url}", about to fetch.`)
   }
 
-  // Put this before the fetch so that we have some messaging if the fetch hard fails.
-  console.log(`Cache miss for "${request.url}", about to fetch.`)
+  // TODO: Ensure context is more clearly printed on failure.
   const fetch_response = await fetch(request)
-  console.log('Fetch response', fetch_response)
-  if (put_on_success && fetch_response.ok) {
-    console.log(`Adding "${request.url}" to cache`, fetch_response)
-    let responseClone = fetch_response.clone();
-    await cache.put(request, responseClone)
+  if (fetch_response.ok) {
+    if (put_on_success) {
+      console.log(`Adding "${request.url}" to cache`)
+      let responseClone = fetch_response.clone();
+      await cache.put(request, responseClone)
+    }
+  } else {
+
+    // If we're not caching first, the load from the cache for any fetch miss.
+    // If we were caching first, this was a miss so return the response.
+    if (!cache_first) {
+      console.log(`Fetch wasn't okay. Testing if the cache is available "${request.url}".`)
+      const cache_response = await cache.match(request)
+      if (cache_response) {
+        return cache_response
+      }
+    }
   }
+
   return fetch_response
 }
 
@@ -155,7 +172,7 @@ self.addEventListener('fetch', (event) => {
   if (is_request_for_website(event.request) && original_url.includes('/thumbnails/')) {
     event.respondWith(cache_match_with_fetch_fallback(cache_name_thumbnails, updated_request, true /* put_on_success */))
   } else {
-    event.respondWith(cache_match_with_fetch_fallback(cache_name_versioned, updated_request, true /* put_on_success */))
+    event.respondWith(cache_match_with_fetch_fallback(cache_name_versioned, updated_request, true /* put_on_success */, false /* cache_first */))
   }
 });
 
