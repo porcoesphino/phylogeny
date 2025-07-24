@@ -22,7 +22,7 @@ def maybe_save_thumbnail(local: str, remote: str) -> int:
   try:
     urllib.request.urlretrieve(remote, image_local_path)
   except urllib.error.URLError as e:
-    raise SystemError(f'Download to file "{image_local_path}" failed.') from e
+    raise SystemError(f'Failed to download "{remote}" to "{image_local_path}".') from e
 
   file_size = os.path.getsize(image_local_path)
   return file_size
