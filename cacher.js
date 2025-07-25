@@ -49,112 +49,128 @@ class AppData {
   }
 }
 
-async function cache_match_with_fetch_fallback(cache_name, url_or_request, put_on_success = true, cache_first = true) {
-  const cache = await caches.open(cache_name)
-  if (typeof (url_or_request) == 'string') {
-    var request = new Request(url_or_request)
-  } else {
-    var request = url_or_request.clone()
+class Fetcher {
+
+  static is_request_for_website(request) {
+    // This is the initial page load.
+    if (request.referrer == '') {
+      return true
+    }
+    const referrer_url = new URL(request.referrer)
+    const request_url = new URL(request.url)
+
+    return referrer_url.host == request_url.host
   }
 
-  // If we're serving the cache first, look it up and return.
-  if (cache_first) {
-    const cache_response = await cache.match(request)
-    if (cache_response) {
-      return cache_response
-    }
-    console.log(`Cache miss for "${request.url}", about to fetch.`)
+  static has_query_params(request) {
+    const request_url = new URL(request.url)
+    return request_url.search.length > 0
   }
 
-  // TODO: Ensure context is more clearly printed on failure.
-  const fetch_response = await fetch(request)
-  if (fetch_response.ok) {
-    if (put_on_success) {
-      console.log(`Adding "${request.url}" to cache`)
-      let responseClone = fetch_response.clone();
-      await cache.put(request, responseClone)
+  static strip_query_params(url_str) {
+    const url = new URL(url_str)
+    for (const key of url.searchParams.keys()) {
+      url.searchParams.delete(key)
     }
-  } else {
+    return url
+  }
 
-    // If we're not caching first, the load from the cache for any fetch miss.
-    // If we were caching first, this was a miss so return the response.
-    if (!cache_first) {
-      console.log(`Fetch wasn't okay. Testing if the cache is available "${request.url}".`)
+  static async cache_match_with_fetch_fallback(cache_name, url_or_request, put_on_success = true, cache_first = true) {
+    const cache = await caches.open(cache_name)
+    if (typeof (url_or_request) == 'string') {
+      var request = new Request(url_or_request)
+    } else {
+      var request = url_or_request.clone()
+    }
+
+    // If we're serving the cache first, look it up and return.
+    if (cache_first) {
       const cache_response = await cache.match(request)
       if (cache_response) {
         return cache_response
       }
+      console.log(`Cache miss for "${request.url}", about to fetch.`)
     }
-  }
 
-  return fetch_response
-}
-
-fault_tolerant_add_all = async (cache_name, list_or_set, only_add_on_cache_miss = false) => {
-  const cache = await caches.open(cache_name)
-  const url_list = [...list_or_set]
-  for (var i = 0; i < url_list.length; i++) {
-    var url = url_list[i]
-    if (only_add_on_cache_miss) {
-      await cache_match_with_fetch_fallback(cache_name, url, true /* put_on_success */)
+    // TODO: Ensure context is more clearly printed on failure.
+    const fetch_response = await fetch(request)
+    if (fetch_response.ok) {
+      if (put_on_success) {
+        console.log(`Adding "${request.url}" to cache`)
+        let responseClone = fetch_response.clone();
+        await cache.put(request, responseClone)
+      }
     } else {
-      console.log(`Ensuring "${url}" is up to date with an "add".`)
-      await cache.add(url)
+
+      // TODO: This will stall if there is a slow connection.
+      // Instead we want to update in the background and then message the user that the data was stale.
+      // If we're not caching first, the load from the cache for any fetch miss.
+      // If we were caching first, this was a miss so return the response.
+      if (!cache_first) {
+        console.log(`Fetch wasn't okay. Testing if the cache is available "${request.url}".`)
+        const cache_response = await cache.match(request)
+        if (cache_response) {
+          return cache_response
+        }
+      }
     }
+
+    return fetch_response
   }
-  console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
+
+  static fault_tolerant_add_all = async (cache_name, list_or_set, only_add_on_cache_miss = false) => {
+    const cache = await caches.open(cache_name)
+    const url_list = [...list_or_set]
+    for (var i = 0; i < url_list.length; i++) {
+      var url = url_list[i]
+      if (only_add_on_cache_miss) {
+        await Fetcher.cache_match_with_fetch_fallback(cache_name, url, true /* put_on_success */)
+      } else {
+        console.log(`Ensuring "${url}" is up to date with an "add".`)
+        await cache.add(url)
+      }
+    }
+    console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
+  }
 }
 
 async function precache(event) {
   const resources = AppData.get_resource_list_for_event(event)
-  return fault_tolerant_add_all(cache_name_versioned, resources, false /* only_add_on_cache_miss */)
+  return Fetcher.fault_tolerant_add_all(cache_name_versioned, resources, false /* only_add_on_cache_miss */)
 }
 
-function is_request_for_website(request) {
-  // This is the initial page load.
-  if (request.referrer == '') {
-    return true
+async function precache_then_delete_old_caches(event) {
+  await precache(event)
+  console.log('Done with precache, auditing old caches.')
+  const all_caches = await caches.keys()
+  const current_caches = [cache_name_versioned, cache_name_thumbnails]
+  const old_caches = all_caches.filter((item) => !current_caches.includes(item))
+  if (old_caches.length > 0) {
+    console.log('Found old caches, beginning delete.')
+    for (const cache_name of old_caches) {
+      console.warn('Deleting old cache', cache_name)
+      await caches.delete(cache_name)
+    }
+    console.log('Done deleting old cache.')
+  } else {
+    console.log('There are no old caches to delete.')
   }
-  const referrer_url = new URL(request.referrer)
-  const request_url = new URL(request.url)
-
-  return referrer_url.host == request_url.host
-}
-
-function has_query_params(request) {
-  const request_url = new URL(request.url)
-  return request_url.search.length > 0
-}
-
-function strip_query_params(url_str) {
-  const url = new URL(url_str)
-  for (const key of url.searchParams.keys()) {
-    url.searchParams.delete(key)
-  }
-  return url
 }
 
 self.addEventListener('install', (event) => {
   console.log('Installing cacher.js', event)
   event.waitUntil(async () => {
-    await precache_then_delete_old_caches(event)
-
-    // This should be safe because we have a listener that should refresh old tabs.
-    console.warn('Skipping waiting to become active!')
-    return skipWaiting();
+    try {
+      await precache_then_delete_old_caches(event)
+    } catch (error) {
+      console.error('Error during install event, falling back to finish skip waiting. ', error);
+    } finally {
+      // This should be safe because we have a listener that should refresh old tabs.
+      console.warn('Skipping waiting to become active!')
+      return self.skipWaiting();
+    }
   });
 });
-
-async function precache_then_delete_old_caches(event) {
-  await precache(event)
-  const all_caches = await caches.keys()
-  const current_caches = [cache_name_versioned, cache_name_thumbnails]
-  const old_caches = all_caches.filter((item) => !current_caches.includes(item))
-  for (const cache_name of old_caches) {
-    console.warn('Deleting old cache', cache_name)
-    await caches.delete(cache_name)
-  }
-}
 
 self.addEventListener('activate', (event) => {
   console.log('Activating cacher.js', event)
@@ -173,14 +189,17 @@ self.addEventListener('fetch', (event) => {
 
     // If this is request for this website, and has quer params, then strip them.
     // The response will be the same and it will mean there are more cache hits.
-  } else if (is_request_for_website(event.request) && has_query_params(event.request)) {
-    updated_request = new Request(strip_query_params(original_url))
+  } else if (
+    Fetcher.is_request_for_website(event.request) &&
+    Fetcher.has_query_params(event.request)
+  ) {
+    updated_request = new Request(Fetcher.strip_query_params(original_url))
   }
 
-  if (is_request_for_website(event.request) && original_url.includes('/thumbnails/')) {
-    event.respondWith(cache_match_with_fetch_fallback(cache_name_thumbnails, updated_request, true /* put_on_success */))
+  if (Fetcher.is_request_for_website(event.request) && original_url.includes('/thumbnails/')) {
+    event.respondWith(Fetcher.cache_match_with_fetch_fallback(cache_name_thumbnails, updated_request, true /* put_on_success */))
   } else {
-    event.respondWith(cache_match_with_fetch_fallback(cache_name_versioned, updated_request, true /* put_on_success */, false /* cache_first */))
+    event.respondWith(Fetcher.cache_match_with_fetch_fallback(cache_name_versioned, updated_request, true /* put_on_success */, false /* cache_first */))
   }
 });
 
@@ -188,7 +207,7 @@ self.addEventListener('message', async (event) => {
   const data = event.data
   switch (data.type) {
     case 'thumbnail_prefetch':
-      event.waitUntil(fault_tolerant_add_all(cache_name_thumbnails, data.data, true /* only_add_on_cache_miss */))
+      event.waitUntil(Fetcher.fault_tolerant_add_all(cache_name_thumbnails, data.data, true /* only_add_on_cache_miss */))
       break
     case 'app_prefetch':
       event.waitUntil(precache(event))
