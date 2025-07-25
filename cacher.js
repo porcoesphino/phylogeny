@@ -161,18 +161,18 @@ class Fetcher {
 
 class Cacher {
   constructor() {
-    this.last_precache_date = null
+    this.last_app_precache_start_date = null
   }
 
   // This function could do with a debounce on load, but there is no real "page load" event
   // for these workers and the initialisation is pretty long lived so for now this uses a TTL.
-  async precache(event) {
-    if (!this.last_precache_date) {
-      this.last_precache_date = new Date(Date.now())
+  async app_precache(event) {
+    if (!this.last_app_precache_start_date) {
+      this.last_app_precache_start_date = new Date(Date.now())
       console.log('Starting the precache of app files.')
     } else {
       const allowed_wait_sec = 5  // Short enough it's unlikely a refresh during development.
-      const time_since_sec = (Date.now() - this.last_precache_date.getTime()) / 1000
+      const time_since_sec = (Date.now() - this.last_app_precache_start_date.getTime()) / 1000
       if (time_since_sec < allowed_wait_sec) {
         console.log(`Prefetch is recent, ${time_since_sec} seconds ago. Returning early.`)
         return Promise.resolve()
@@ -184,38 +184,38 @@ class Cacher {
     const resources = AppData.get_resource_list_for_event(event)
     return Fetcher.fault_tolerant_add_all(cache_name_versioned, resources, false /* only_add_on_cache_miss */)
   }
+
+  async precache_then_delete_old_caches(event) {
+    await this.app_precache(event)
+    console.log('Done with precache, auditing old caches.')
+    const all_caches = await caches.keys()
+    const current_caches = [cache_name_versioned, cache_name_thumbnails]
+    const old_caches = all_caches.filter((item) => !current_caches.includes(item))
+    if (old_caches.length > 0) {
+      console.log('Found old caches, beginning delete.')
+      for (const cache_name of old_caches) {
+        console.warn('Deleting old cache', cache_name)
+        await caches.delete(cache_name)
+      }
+      console.log('Done deleting old cache.')
+    } else {
+      console.log('There are no old caches to delete.')
+    }
+  }
 }
 
 const cacher = new Cacher()
 
-async function precache_then_delete_old_caches(event) {
-  await cacher.precache(event)
-  console.log('Done with precache, auditing old caches.')
-  const all_caches = await caches.keys()
-  const current_caches = [cache_name_versioned, cache_name_thumbnails]
-  const old_caches = all_caches.filter((item) => !current_caches.includes(item))
-  if (old_caches.length > 0) {
-    console.log('Found old caches, beginning delete.')
-    for (const cache_name of old_caches) {
-      console.warn('Deleting old cache', cache_name)
-      await caches.delete(cache_name)
-    }
-    console.log('Done deleting old cache.')
-  } else {
-    console.log('There are no old caches to delete.')
-  }
-}
-
 self.addEventListener('install', (event) => {
   console.log('Installing cacher.js', event)
   event.waitUntil(async () => {
-    await precache_then_delete_old_caches(event)
+    await cacher.precache_then_delete_old_caches(event)
   });
 });
 
 self.addEventListener('activate', (event) => {
   console.log('Activating cacher.js', event)
-  event.waitUntil(precache_then_delete_old_caches(event));
+  event.waitUntil(cacher.precache_then_delete_old_caches(event));
 });
 
 self.addEventListener('fetch', (event) => {
@@ -230,7 +230,7 @@ self.addEventListener('message', async (event) => {
       event.waitUntil(Fetcher.fault_tolerant_add_all(cache_name_thumbnails, data.data, true /* only_add_on_cache_miss */))
       break
     case 'app_prefetch':
-      event.waitUntil(cacher.precache(event))
+      event.waitUntil(cacher.app_precache(event))
       break
     default:
       throw Error(`Unknown event type sent as message: ${data.type}`)
