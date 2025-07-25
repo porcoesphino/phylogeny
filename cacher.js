@@ -132,15 +132,64 @@ class Fetcher {
     }
     console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
   }
+
+  static async fetch(request) {
+    // The server puts files in a directory and so the HTML needs to reference this directory
+    // but this doesn't align with local dev. For local dev catch and reroute these requests.
+    var updated_request = request.clone()
+    const original_url = updated_request.url
+    if (AppData.url_is_favicon(original_url) && !AppData.url_is_remote(original_url)) {
+      const split_url = original_url.split('/')
+      updated_request = new Request('./' + split_url[split_url.length - 1])
+
+      // If this is request for this website, and has quer params, then strip them.
+      // The response will be the same and it will mean there are more cache hits.
+    } else if (
+      Fetcher.is_request_for_website(request) &&
+      Fetcher.has_query_params(request)
+    ) {
+      updated_request = new Request(Fetcher.strip_query_params(original_url))
+    }
+
+    if (Fetcher.is_request_for_website(request) && original_url.includes('/thumbnails/')) {
+      return Fetcher.cache_match_with_fetch_fallback(cache_name_thumbnails, updated_request, true /* put_on_success */)
+    } else {
+      return Fetcher.cache_match_with_fetch_fallback(cache_name_versioned, updated_request, true /* put_on_success */, false /* cache_first */)
+    }
+  }
 }
 
-async function precache(event) {
-  const resources = AppData.get_resource_list_for_event(event)
-  return Fetcher.fault_tolerant_add_all(cache_name_versioned, resources, false /* only_add_on_cache_miss */)
+class Cacher {
+  constructor() {
+    this.last_precache_date = null
+  }
+
+  // This function could do with a debounce on load, but there is no real "page load" event
+  // for these workers and the initialisation is pretty long lived so for now this uses a TTL.
+  async precache(event) {
+    if (!this.last_precache_date) {
+      this.last_precache_date = new Date(Date.now())
+      console.log('Starting the precache of app files.')
+    } else {
+      const allowed_wait_sec = 5  // Short enough it's unlikely a refresh during development.
+      const time_since_sec = (Date.now() - this.last_precache_date.getTime()) / 1000
+      if (time_since_sec < allowed_wait_sec) {
+        console.log(`Prefetch is recent, ${time_since_sec} seconds ago. Returning early.`)
+        return Promise.resolve()
+      } else {
+        console.log(`Prefetch is old, ${time_since_sec} seconds ago. Beginning new prefetch.`)
+      }
+    }
+    this.precache_started = true
+    const resources = AppData.get_resource_list_for_event(event)
+    return Fetcher.fault_tolerant_add_all(cache_name_versioned, resources, false /* only_add_on_cache_miss */)
+  }
 }
+
+const cacher = new Cacher()
 
 async function precache_then_delete_old_caches(event) {
-  await precache(event)
+  await cacher.precache(event)
   console.log('Done with precache, auditing old caches.')
   const all_caches = await caches.keys()
   const current_caches = [cache_name_versioned, cache_name_thumbnails]
@@ -160,15 +209,7 @@ async function precache_then_delete_old_caches(event) {
 self.addEventListener('install', (event) => {
   console.log('Installing cacher.js', event)
   event.waitUntil(async () => {
-    try {
-      await precache_then_delete_old_caches(event)
-    } catch (error) {
-      console.error('Error during install event, falling back to finish skip waiting. ', error);
-    } finally {
-      // This should be safe because we have a listener that should refresh old tabs.
-      console.warn('Skipping waiting to become active!')
-      return self.skipWaiting();
-    }
+    await precache_then_delete_old_caches(event)
   });
 });
 
@@ -178,29 +219,8 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-
-  // The server puts files in a directory and so the HTML needs to reference this directory
-  // but this doesn't align with local dev. For local dev catch and reroute these requests.
-  var updated_request = event.request.clone()
-  const original_url = updated_request.url
-  if (AppData.url_is_favicon(original_url) && !AppData.url_is_remote(original_url)) {
-    const split_url = original_url.split('/')
-    updated_request = new Request('./' + split_url[split_url.length - 1])
-
-    // If this is request for this website, and has quer params, then strip them.
-    // The response will be the same and it will mean there are more cache hits.
-  } else if (
-    Fetcher.is_request_for_website(event.request) &&
-    Fetcher.has_query_params(event.request)
-  ) {
-    updated_request = new Request(Fetcher.strip_query_params(original_url))
-  }
-
-  if (Fetcher.is_request_for_website(event.request) && original_url.includes('/thumbnails/')) {
-    event.respondWith(Fetcher.cache_match_with_fetch_fallback(cache_name_thumbnails, updated_request, true /* put_on_success */))
-  } else {
-    event.respondWith(Fetcher.cache_match_with_fetch_fallback(cache_name_versioned, updated_request, true /* put_on_success */, false /* cache_first */))
-  }
+  response = Fetcher.fetch(event.request)
+  event.respondWith(response)
 });
 
 self.addEventListener('message', async (event) => {
@@ -210,9 +230,17 @@ self.addEventListener('message', async (event) => {
       event.waitUntil(Fetcher.fault_tolerant_add_all(cache_name_thumbnails, data.data, true /* only_add_on_cache_miss */))
       break
     case 'app_prefetch':
-      event.waitUntil(precache(event))
+      event.waitUntil(cacher.precache(event))
       break
     default:
       throw Error(`Unknown event type sent as message: ${data.type}`)
   }
 });
+
+// This is meant to be done in the install event, but that code often doesn't execute.
+// This will execute on load and only does something if there is a new worker waiting.
+// It should be "safe" because the `compiler.js` code listens and refreshes the page if needed.
+// It's still very aggressive to the user but for now seems better than the default of not
+// knowning when the page will update.
+console.warn('New load for service worker code. Calling `skipWaiting` to activate any that are ready.')
+self.skipWaiting();
