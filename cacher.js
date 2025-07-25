@@ -1,36 +1,52 @@
 
 const cache_name_versioned = 'porcoesphino_pt_v24.07.20.1';
 const cache_name_thumbnails = 'porcoesphino_pt_thumbnails';
-const precached_resources = [
-  '/',
-  '/manifest.json',
-  '/cacher.js',
-  '/favicon_tree_192.png',
-  '/favicon_tree_512.png',
-  '/index.html',
-  '/js/compiler.js',
-  '/css/reset-2.0.min.css',
-  '/css/collapsible_block.css',
-  '/css/controls.css',
-  '/css/layout.css',
-  '/css/radio_nav.css',
-  '/css/tree_view.css',
-  '/css/typography.css',
-  '/screenshots/chrome_screenshot.png',
-  '/screenshots/iphone_screenshot.png',
-]
 
-function url_is_remote(url) {
-  return url.startsWith('https://porcoesphino.github.io')
-}
+class AppData {
+  static PRECACHED_RESOURCES = Object.freeze([
+    '/',
+    '/manifest.json',
+    '/cacher.js',
+    '/favicon_tree_192.png',
+    '/favicon_tree_512.png',
+    '/index.html',
+    '/js/compiler.js',
+    '/css/reset-2.0.min.css',
+    '/css/collapsible_block.css',
+    '/css/controls.css',
+    '/css/layout.css',
+    '/css/radio_nav.css',
+    '/css/tree_view.css',
+    '/css/typography.css',
+    '/screenshots/chrome_screenshot.png',
+    '/screenshots/iphone_screenshot.png',
+  ])
 
-function is_remote(event) {
-  const scope = event.target.registration.scope
-  return url_is_remote(scope)
-}
+  static url_is_remote(url) {
+    return url.startsWith('https://porcoesphino.github.io')
+  }
 
-function url_is_favicon(url) {
-  return url.endsWith('favicon_tree_192.png') || url.endsWith('favicon_tree_512.png')
+  static is_remote(event) {
+    const scope = event.target.registration.scope
+    return AppData.url_is_remote(scope)
+  }
+
+  static url_is_favicon(url) {
+    return url.endsWith('favicon_tree_192.png') || url.endsWith('favicon_tree_512.png')
+  }
+
+  static get_resource_list_for_event(event) {
+    if (AppData.is_remote(event)) {
+      var prefix = '/phylogeny'
+    } else {
+      var prefix = ''
+    }
+    const resources_with_correct_prefix = []
+    for (var i = 0; i < AppData.PRECACHED_RESOURCES.length; i++) {
+      resources_with_correct_prefix.push(prefix + AppData.PRECACHED_RESOURCES[i])
+    }
+    return resources_with_correct_prefix
+  }
 }
 
 async function cache_match_with_fetch_fallback(cache_name, url_or_request, put_on_success = true, cache_first = true) {
@@ -90,16 +106,8 @@ fault_tolerant_add_all = async (cache_name, list_or_set, only_add_on_cache_miss 
 }
 
 async function precache(event) {
-  if (is_remote(event)) {
-    var prefix = '/phylogeny'
-  } else {
-    var prefix = ''
-  }
-  const initial_load = []
-  for (var i = 0; i < precached_resources.length; i++) {
-    initial_load.push(prefix + precached_resources[i])
-  }
-  return fault_tolerant_add_all(cache_name_versioned, initial_load, false /* only_add_on_cache_miss */)
+  const resources = AppData.get_resource_list_for_event(event)
+  return fault_tolerant_add_all(cache_name_versioned, resources, false /* only_add_on_cache_miss */)
 }
 
 function is_request_for_website(request) {
@@ -159,7 +167,7 @@ self.addEventListener('fetch', (event) => {
   // but this doesn't align with local dev. For local dev catch and reroute these requests.
   var updated_request = event.request.clone()
   const original_url = updated_request.url
-  if (url_is_favicon(original_url) && !url_is_remote(original_url)) {
+  if (AppData.url_is_favicon(original_url) && !AppData.url_is_remote(original_url)) {
     const split_url = original_url.split('/')
     updated_request = new Request('./' + split_url[split_url.length - 1])
 
