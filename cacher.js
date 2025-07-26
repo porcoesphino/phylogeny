@@ -119,19 +119,47 @@ class Fetcher {
     return fetch_response
   }
 
-  static fault_tolerant_add_all = async (cache_name, list_or_set, only_add_on_cache_miss = false) => {
+  static async add_and_return_if_different(cache_name, url) {
     const cache = await caches.open(cache_name)
+    const request = new Request(url)
+
+    const cache_response = await cache.match(request)
+    const fetch_response = await fetch(request)
+
+    // If the response failed. Don't update the cache or force a reload.
+    if (!fetch_response.ok) {
+      return true
+    }
+
+    const cache_text = await cache_response.clone().text()
+    const fetch_text = await fetch_response.clone().text()
+    const cache_and_fetch_are_equal = (cache_text == fetch_text)
+
+    if (!cache_and_fetch_are_equal) {
+      console.log(`Updating cache (${cache_name}) with file that changed: ${url}`)
+      await cache.put(request, fetch_response)
+    }
+
+    return cache_and_fetch_are_equal
+  }
+
+  static fault_tolerant_add_all = async (cache_name, list_or_set, only_add_on_cache_miss = false) => {
     const url_list = [...list_or_set]
+    let all_unchanged = true
     for (var i = 0; i < url_list.length; i++) {
       var url = url_list[i]
       if (only_add_on_cache_miss) {
         await Fetcher.cache_match_with_fetch_fallback(cache_name, url, true /* put_on_success */)
       } else {
-        console.log(`Ensuring "${url}" is up to date with an "add".`)
-        await cache.add(url)
+        const this_response_unchange = await this.add_and_return_if_different(cache_name, url)
+        all_unchanged = all_unchanged && this_response_unchange
       }
     }
     console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
+    if (!only_add_on_cache_miss) {
+      console.log('Fetch complete and files are unchanged: ', all_unchanged)
+      return all_unchanged
+    }
   }
 
   static async fetch(request) {
@@ -155,7 +183,7 @@ class Fetcher {
     if (Fetcher.is_request_for_website(request) && original_url.includes('/thumbnails/')) {
       return Fetcher.cache_match_with_fetch_fallback(cache_name_thumbnails, updated_request, true /* put_on_success */)
     } else {
-      return Fetcher.cache_match_with_fetch_fallback(cache_name_versioned, updated_request, true /* put_on_success */, false /* cache_first */)
+      return Fetcher.cache_match_with_fetch_fallback(cache_name_versioned, updated_request, true /* put_on_success */)
     }
   }
 }
@@ -172,7 +200,7 @@ class Cacher {
       this.last_app_precache_start_date = new Date(Date.now())
       console.log('Starting the precache of app files.')
     } else {
-      const allowed_wait_sec = 5  // Short enough it's unlikely a refresh during development.
+      const allowed_wait_sec = 2  // Short enough for quick refreshes during development.
       const time_since_sec = (Date.now() - this.last_app_precache_start_date.getTime()) / 1000
       if (time_since_sec < allowed_wait_sec) {
         console.log(`Prefetch is recent, ${time_since_sec} seconds ago. Returning early.`)
@@ -183,7 +211,18 @@ class Cacher {
     }
     this.precache_started = true
     const resources = AppData.get_resource_list_for_event(event)
-    return Fetcher.fault_tolerant_add_all(cache_name_versioned, resources, false /* only_add_on_cache_miss */)
+    const all_unchanged = await Fetcher.fault_tolerant_add_all(cache_name_versioned, resources, false /* only_add_on_cache_miss */)
+    if (!all_unchanged) {
+      console.warn('Data changed and the page will refresh in half a second.')
+      await new Promise(r => setTimeout(r, 500));
+      await self.clients.matchAll({ 'type': 'window' }).then(async (clientList) => {
+        for (const client of clientList) {
+          await new Promise(r => setTimeout(r, 2000));
+          client.postMessage('reload')
+        }
+      });
+    }
+    return all_unchanged
   }
 
   async precache_then_delete_old_caches(event) {

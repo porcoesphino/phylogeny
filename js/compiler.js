@@ -21,8 +21,18 @@ if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
   // Force the page to refresh / an update when there is a new service worker waiting.
   navigator.serviceWorker.addEventListener('controllerchange',
     () => {
-      console.error('There is a new agent waiting so force a page reload.')
+      console.error('A new service worked started so do the simple thing and reload.')
       window.location.reload();
+    },
+    { once: true }
+  );
+
+  navigator.serviceWorker.addEventListener('message',
+    (event) => {
+      if (event.data == 'reload') {
+        console.error('Executing the reload request of a service worker.')
+        window.location.reload();
+      }
     },
     { once: true }
   );
