@@ -69,7 +69,8 @@ class Fetcher {
 
   static strip_query_params(url_str) {
     const url = new URL(url_str)
-    for (const key of url.searchParams.keys()) {
+    const original_keys = Array.from(url.searchParams.keys())
+    for (const key of original_keys) {
       url.searchParams.delete(key)
     }
     return url
