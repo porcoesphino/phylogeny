@@ -131,6 +131,11 @@ class Fetcher {
       return true
     }
 
+    // If the cache doesn't have the item yet, return that they different.
+    if (!cache_response) {
+      return false
+    }
+
     const cache_text = await cache_response.clone().text()
     const fetch_text = await fetch_response.clone().text()
     const cache_and_fetch_are_equal = (cache_text == fetch_text)
