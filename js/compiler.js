@@ -1016,10 +1016,6 @@ class TreeBuilderAsTreeList {
       tree_label_el.classList.add('tree_label')
       li_el.appendChild(tree_label_el)
 
-      var outer_box_el = document.createElement('div')
-      outer_box_el.classList.add('outer_tree_box')
-      li_el.appendChild(outer_box_el)
-
       append_tree_box(node, li_el)
     }
 
