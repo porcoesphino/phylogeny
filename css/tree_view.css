@@ -230,8 +230,10 @@ div.tree_label:after {
   width: 100%;
 }
 
+/** Make the text just a little denser. */
 .tree_box p {
   font-size: 0.75em;
+  line-height: 1rem;
 }
 
 .tree_box img {
