@@ -25,6 +25,7 @@ def get_script_vars() -> str:
 
 def get_html() -> str:
   html_wrapper_start = """
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
