@@ -82,7 +82,6 @@ Tree rows
 }
 
 .tree li {
-  /* line-height: 1.2; */
   line-height: 1.5;
   position: relative;
   padding: 0 0 1em 1em;
