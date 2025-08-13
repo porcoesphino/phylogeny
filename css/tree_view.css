@@ -50,7 +50,7 @@ Tree core styles
 */
 
 .tree {
-  margin: 1em;
+  margin: 1em 1em 1em 2em;
 }
 
 .tree,
@@ -122,7 +122,7 @@ label.tree_label:before {
   position: relative;
   z-index: 1;
   float: left;
-  margin: 0 1em 0 -2em;
+  margin: 0 1em -1em -2em;
   width: 1em;
   height: 1em;
   content: '+';
@@ -228,6 +228,7 @@ div.tree_label:after {
   vertical-align: top;
   margin-top: -1.5em;
   width: 100%;
+  line-height: .8rem;
 }
 
 /** Make the text just a little denser. */
