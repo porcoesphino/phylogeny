@@ -73,3 +73,16 @@ details.controls div.select {
   border: 1px solid grey;
   margin: 0;
 }
+
+/**
+ * Ensure padding isn't introduced when forcing the browser out of quirks mode.
+ * This might have something to do with the invisible checkbox.
+ */
+#tree-range-select-buttons>div div {
+  margin-top: -15px;
+}
+
+/** Keep the lines dense when forcing the browser out of quirks mode. */
+#tree-range-select-buttons>div div>label * {
+  line-height: 0.7rem;
+}

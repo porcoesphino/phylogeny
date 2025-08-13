@@ -1,3 +1,9 @@
+html,
+body,
+.full-height-wrapper {
+  height: 100%;
+}
+
 @media only screen and (max-width: 780px) {
   #tree-range-select-buttons {
     height: 10rem !important;
@@ -59,7 +65,7 @@
     overflow: auto;
     mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
     /* Why does this overflow? Details elements? */
-    height: 90%;
+    height: 80vh !important;
   }
 }
 
@@ -99,21 +105,12 @@
     overflow: auto;
     mask-image: linear-gradient(to bottom, black calc(100% - 48px), transparent 100%);
     /* Why does this overflow? Details elements? */
-    height: 90%;
+    height: 80vh !important;
   }
 }
 
-/** Safari only CSS to make scrolling in columns work correctly. */
-@supports (-webkit-backdrop-filter: blur(10px)) {
-
-  details.controls,
-  .summary,
-  details>div {
-    display: flex;
-    flex-direction: column;
-  }
-
-}
+/** Safari only block for when it's needed again. */
+@supports (-webkit-backdrop-filter: blur(10px)) {}
 
 @media only screen and (min-width: 780px) and (max-width: 1200px) and (max-height: 1000px) {
   .tree_box img {
