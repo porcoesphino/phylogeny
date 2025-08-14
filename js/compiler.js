@@ -22,7 +22,12 @@ if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
   navigator.serviceWorker.addEventListener('controllerchange',
     () => {
       console.error('A new service worked started so do the simple thing and reload.')
-      window.location.reload();
+      function sleep(time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+      }
+      sleep(2000).then(() => {
+        window.location.reload();
+      })
     },
     { once: true }
   );
