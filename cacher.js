@@ -131,14 +131,15 @@ class Fetcher {
       return true
     }
 
-    // If the cache doesn't have the item yet, return that they different.
+    let cache_and_fetch_are_equal = true
     if (!cache_response) {
-      return false
+      // If the cache doesn't have the item yet, return that they different.
+      cache_and_fetch_are_equal = false
+    } else {
+      const cache_text = await cache_response.clone().text()
+      const fetch_text = await fetch_response.clone().text()
+      cache_and_fetch_are_equal = (cache_text == fetch_text)
     }
-
-    const cache_text = await cache_response.clone().text()
-    const fetch_text = await fetch_response.clone().text()
-    const cache_and_fetch_are_equal = (cache_text == fetch_text)
 
     if (!cache_and_fetch_are_equal) {
       console.log(`Updating cache (${cache_name}) with file that changed: ${url}`)
