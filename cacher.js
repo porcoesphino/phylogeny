@@ -222,6 +222,7 @@ class Cacher {
       await new Promise(r => setTimeout(r, 500));
       await self.clients.matchAll({ 'type': 'window' }).then(async (clientList) => {
         for (const client of clientList) {
+          console.warn('Sending reload request to client', client)
           await new Promise(r => setTimeout(r, 2000));
           client.postMessage('reload')
         }
