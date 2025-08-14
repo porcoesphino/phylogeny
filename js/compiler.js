@@ -46,28 +46,37 @@ if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
 }
 
 async function fetch_all_urls(local_urls) {
-  navigator.serviceWorker.ready.then(
-    (registration) => {
-      registration.active.postMessage(
-        {
-          'type': 'thumbnail_prefetch',
-          'data': local_urls
-        }
-      )
-    }
-  )
+  if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
+    navigator.serviceWorker.ready.then(
+      (registration) => {
+        console.log('Thumbnail fetch', local_urls, registration)
+        registration.active.postMessage(
+          {
+            'type': 'thumbnail_prefetch',
+            'data': local_urls
+          }
+        )
+      }
+    )
+  } else {
+    console.warn('The thumbnail_prefetch was aborted since service workers are not supported.');
+  }
 }
 
 async function trigger_app_code_refresh() {
-  navigator.serviceWorker.ready.then(
-    (registration) => {
-      registration.active.postMessage(
-        {
-          'type': 'app_prefetch',
-        }
-      )
-    }
-  )
+  if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
+    navigator.serviceWorker.ready.then(
+      (registration) => {
+        registration.active.postMessage(
+          {
+            'type': 'app_prefetch',
+          }
+        )
+      }
+    )
+  } else {
+    console.warn('The app_prefetch was aborted since service workers are not supported.');
+  }
 }
 
 function clear_child_nodes(parent_el) {
