@@ -150,7 +150,6 @@ class Fetcher {
 
   static fault_tolerant_add_all = async (cache_name, list_or_set, only_add_on_cache_miss = false) => {
     const url_list = [...list_or_set]
-    let all_unchanged = true
     let changed_files = []
     for (var i = 0; i < url_list.length; i++) {
       var url = url_list[i]
@@ -161,16 +160,15 @@ class Fetcher {
         if (!this_response_unchanged) {
           changed_files.push(url)
         }
-        all_unchanged = all_unchanged && this_response_unchanged
       }
     }
-    console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (all_unchanged = ${all_unchanged}; cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
+    console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss}; changed_files = ${changed_files})`, url_list)
     if (changed_files) {
       console.log('Changed files: ', changed_files)
     }
     if (!only_add_on_cache_miss) {
-      console.log('Fetch complete and files are unchanged: ', all_unchanged)
-      return all_unchanged
+      console.log('Fetch complete and these files are changed: ', changed_files)
+      return changed_files
     }
   }
 
@@ -223,13 +221,14 @@ class Cacher {
     }
     this.precache_started = true
     const resources = AppData.get_resource_list_for_event(event)
-    const all_unchanged = await Fetcher.fault_tolerant_add_all(cache_name_versioned, resources, false /* only_add_on_cache_miss */)
-    if (!all_unchanged) {
-      console.warn('Data changed and the page will refresh in half a second.')
+    const only_add_on_cache_miss = false
+    const changed_files = await Fetcher.fault_tolerant_add_all(cache_name_versioned, resources, only_add_on_cache_miss)
+    if (changed_files.length > 0) {
+      console.warn('Data changed and the page will refresh in half a second since these files changed:', changed_files)
       await new Promise(r => setTimeout(r, 500));
       await self.clients.matchAll({ 'type': 'window' }).then(async (clientList) => {
         for (const client of clientList) {
-          console.warn('Sending reload request to client', client)
+          console.warn('Sending reload request to client after app files were found to have changed:', client)
           await new Promise(r => setTimeout(r, 2000));
           client.postMessage('reload')
         }

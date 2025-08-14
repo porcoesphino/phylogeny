@@ -54,7 +54,7 @@ async function fetch_all_urls(local_urls) {
   if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
     navigator.serviceWorker.ready.then(
       (registration) => {
-        console.log('Thumbnail fetch', local_urls, registration)
+        console.log('Client requesting thumbnail_prefetch', local_urls, registration)
         registration.active.postMessage(
           {
             'type': 'thumbnail_prefetch',
