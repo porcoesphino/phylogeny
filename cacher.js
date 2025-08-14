@@ -133,7 +133,7 @@ class Fetcher {
 
     let cache_and_fetch_are_equal = true
     if (!cache_response) {
-      // If the cache doesn't have the item yet, return that they different.
+      // If the cache doesn't have the item yet update the cache and return that they different.
       cache_and_fetch_are_equal = false
     } else {
       const cache_text = await cache_response.clone().text()
