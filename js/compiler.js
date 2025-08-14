@@ -31,7 +31,7 @@ if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
     (event) => {
       if (event.data == 'reload') {
         console.error('Executing the reload request of a service worker.')
-        window.location.reload();
+        new Promise(r => setTimeout(() => window.location.reload(), 2000))
       }
     },
     { once: true }
