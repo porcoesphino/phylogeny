@@ -163,7 +163,7 @@ class Fetcher {
       }
     }
     console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss}; changed_files = ${changed_files})`, url_list)
-    if (changed_files) {
+    if (changed_files.length) {
       console.log('Changed files: ', changed_files)
     }
     if (!only_add_on_cache_miss) {
@@ -234,7 +234,7 @@ class Cacher {
         }
       });
     }
-    return all_unchanged
+    return changed_files
   }
 
   async precache_then_delete_old_caches(event) {
