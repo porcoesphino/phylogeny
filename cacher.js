@@ -160,7 +160,7 @@ class Fetcher {
         all_unchanged = all_unchanged && this_response_unchange
       }
     }
-    console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
+    console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (all_unchanged = ${all_unchanged}; cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
     if (!only_add_on_cache_miss) {
       console.log('Fetch complete and files are unchanged: ', all_unchanged)
       return all_unchanged
