@@ -151,16 +151,23 @@ class Fetcher {
   static fault_tolerant_add_all = async (cache_name, list_or_set, only_add_on_cache_miss = false) => {
     const url_list = [...list_or_set]
     let all_unchanged = true
+    let changed_files = []
     for (var i = 0; i < url_list.length; i++) {
       var url = url_list[i]
       if (only_add_on_cache_miss) {
         await Fetcher.cache_match_with_fetch_fallback(cache_name, url, true /* put_on_success */)
       } else {
-        const this_response_unchange = await this.add_and_return_if_different(cache_name, url)
-        all_unchanged = all_unchanged && this_response_unchange
+        const this_response_unchanged = await this.add_and_return_if_different(cache_name, url)
+        if (!this_response_unchanged) {
+          changed_files.push(url)
+        }
+        all_unchanged = all_unchanged && this_response_unchanged
       }
     }
     console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (all_unchanged = ${all_unchanged}; cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss})`, url_list)
+    if (changed_files) {
+      console.log('Changed files: ', changed_files)
+    }
     if (!only_add_on_cache_miss) {
       console.log('Fetch complete and files are unchanged: ', all_unchanged)
       return all_unchanged
