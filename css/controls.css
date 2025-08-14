@@ -18,6 +18,11 @@ details.controls>div>div {
   padding: 0.5rem;
 }
 
+details.controls>div>div {
+  /** TODO: Remove this workaround for two column layout controls scrolling. */
+  padding-bottom: 5rem;
+}
+
 details.controls input[type=search] {
   width: 100%;
   padding: 0.3rem;
