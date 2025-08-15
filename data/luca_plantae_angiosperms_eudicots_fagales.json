@@ -1,0 +1,87 @@
+[
+  {
+    "name": "Nothofagaceae",
+    "parent": "Fagales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [
+      "false beeches",
+      "southern beeches"
+    ],
+    "tag": "The southern beech family. The leaves are toothed or entire, evergreen or deciduous. The fruit is a small, flattened or triangular nut, borne in cupules containing one to seven nuts. ",
+    "imgs": []
+  },
+  {
+    "name": "Fagaceae",
+    "parent": "Fagales",
+    "rank": "Family",
+    "ipa": "fəˈɡeɪsi.iː",
+    "ipa-other": "fəˈɡeɪsiˌaɪ",
+    "common": [
+      "beeches",
+      "chestnuts",
+      "oaks"
+    ],
+    "tag": "The beech family.",
+    "imgs": []
+  },
+  {
+    "name": "Myricaceae",
+    "parent": "Fagales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "The bayberry family.",
+    "imgs": []
+  },
+  {
+    "name": "Juglandaceae",
+    "parent": "Fagales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [
+      "walnut",
+      "pecan",
+      "hickory"
+    ],
+    "tag": "The walnut family.",
+    "imgs": []
+  },
+  {
+    "name": "Ticodendraceae",
+    "parent": "Fagales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "The ticodendron family with only one species. A tree, 20–30 m tall, superficially resembling an alder in appearance, with alternate, simple leaves 5–12 cm long with a serrated margin. Generally dioecious, with separate male and female plants.",
+    "imgs": []
+  },
+  {
+    "name": "Betulaceae",
+    "parent": "Fagales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [
+      "birches",
+      "alders",
+      "hazels",
+      "hornbeams",
+      "hazel-hornbeam",
+      "hop-hornbeams"
+    ],
+    "tag": "The birch family.",
+    "imgs": []
+  },
+  {
+    "name": "Casuarinaceae",
+    "parent": "Fagales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [
+      "she-oaks",
+      "Daintree oaks"
+    ],
+    "tag": "The she-oak family. Dicotyledonous flowering trees and shrubs, many of which have a distinctly pinelike aspect when seen from afar. They are naturally distributed in tropical eastern Africa, the Mascarene Islands, Southeast Asia, Malaysia, Australia, and Polynesia.",
+    "imgs": []
+  }
+]

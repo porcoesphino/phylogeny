@@ -1,0 +1,121 @@
+[
+  {
+    "name": "Cannabaceae",
+    "parent": "Rosales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "The hemp family.",
+    "imgs": []
+  },
+  {
+    "name": "Dirachmaceae",
+    "parent": "Rosales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Elaeagnaceae",
+    "parent": "Rosales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "The oleaster/Russian olive family.",
+    "imgs": []
+  },
+  {
+    "name": "Moraceae",
+    "parent": "Rosales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [
+      "common fig",
+      "breadfruit",
+      "jackfruit",
+      "mulberry"
+    ],
+    "tag": "The mulberry family.",
+    "imgs": []
+  },
+  {
+    "name": "Rhamnaceae",
+    "parent": "Rosales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "The buckthorn family.",
+    "imgs": []
+  },
+  {
+    "name": "Rosaceae",
+    "parent": "Rosales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "The rose family.",
+    "imgs": []
+  },
+  {
+    "name": "Amygdaloideae",
+    "parent": "Rosaceae",
+    "rank": "Subfamily",
+    "ipa": "",
+    "common": [
+      "plums",
+      "cherries",
+      "apricots",
+      "peaches",
+      "almonds",
+      "apples",
+      "pears",
+      "spireas",
+      "meadowsweets",
+      "steeplebushes",
+      "goatsbeards"
+    ],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Rosoideae",
+    "parent": "Rosaceae",
+    "rank": "Subfamily",
+    "ipa": "",
+    "common": [],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Dryadoideae",
+    "parent": "Rosaceae",
+    "rank": "Subfamily",
+    "ipa": "",
+    "common": [],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Ulmaceae",
+    "parent": "Rosales",
+    "rank": "Family",
+    "ipa": "ʌlˈmeɪsi",
+    "common": [],
+    "tag": "The elm family.",
+    "imgs": [
+      "elms",
+      "zelkovas"
+    ]
+  },
+  {
+    "name": "Urticaceae",
+    "parent": "Rosales",
+    "rank": "Family",
+    "ipa": "ɜːrtɪˈkeɪsiː",
+    "common": [],
+    "tag": "The nettle family.",
+    "imgs": []
+  }
+]

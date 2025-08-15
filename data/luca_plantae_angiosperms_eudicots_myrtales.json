@@ -1,0 +1,109 @@
+[
+  {
+    "name": "Alzateaceae",
+    "parent": "Myrtales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "Only one species.",
+    "imgs": []
+  },
+  {
+    "name": "Combretaceae",
+    "parent": "Myrtales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "The white mangrove family.",
+    "imgs": []
+  },
+  {
+    "name": "Crypteroniaceae",
+    "parent": "Myrtales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "Native to Indomalaya.",
+    "imgs": []
+  },
+  {
+    "name": "Lythraceae",
+    "parent": "Myrtales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [
+      "loosestrifes",
+      "hennas",
+      "pomegranates",
+      "crape myrtle"
+    ],
+    "tag": "The loosestrife and pomegranate family. The leaves generally have an opposite arrangement, but sometimes are whorled or alternate. The flower petals emerge from the rim of the calyx tube and the petals often appear crumpled. Most often herbs, and less often shrubs or trees; the shrubs and trees often have flaky bark.",
+    "imgs": []
+  },
+  {
+    "name": "Melastomataceae",
+    "parent": "Myrtales",
+    "rank": "Family",
+    "ipa": "mɛləstoʊmɑːˈteɪsiˌaɪ",
+    "ipa-other": "mɛləstoʊmɑːˈteɪsiːˌiː",
+    "common": [],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Myrtaceae",
+    "parent": "Myrtales",
+    "rank": "Family",
+    "ipa": "mərˈteɪsiˌaɪ",
+    "ipa-other": "mərˈteɪsiːˌiː",
+    "common": [
+      "Myrtles",
+      "pōhutukawas",
+      "bay rum trees",
+      "cloves",
+      "guavas",
+      "accas",
+      "allspices",
+      "eucalyptuses",
+      "gum trees",
+      "paperbarks",
+      "honey-myrtles",
+      "bottlebrushes",
+      "tea-trees"
+    ],
+    "tag": "The myrtle family. Found mainly in the warmer parts of Australia and America and also Africa and Asia. Usually evergreen woody trees and shrubs with few herbs. The bark is often smooth and flakes off on older trees.",
+    "imgs": []
+  },
+  {
+    "name": "Onagraceae",
+    "parent": "Myrtales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [
+      "primroses",
+      "fuchsias",
+      "willowherbs",
+      "fireweed "
+    ],
+    "tag": "The evening primrose and Fuchsia family. Characterised by flowers with usually four sepals and petals; in some genera the sepals are as brightly coloured as the petals. Seeds are generally very small. Some genera have tufts of hairs to help with wind dispersal.",
+    "imgs": []
+  },
+  {
+    "name": "Penaeaceae",
+    "parent": "Myrtales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "",
+    "imgs": []
+  },
+  {
+    "name": "Vochysiaceae",
+    "parent": "Myrtales",
+    "rank": "Family",
+    "ipa": "",
+    "common": [],
+    "tag": "A family that likely originated in South America with most native to the Neotropics and some native to West and Central Africa. Trees or shrubs with opposite leaves; flowers are zygomorph 1-(3)-5 merous; ovary inferior or superior; one fertile stamen; fruits are capsules or winged achene. ",
+    "imgs": []
+  }
+]
