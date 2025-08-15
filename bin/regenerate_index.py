@@ -75,9 +75,10 @@ def get_html() -> str:
             have a tree that was accurate enough to get a bit of an understanding without getting too
             complicated and to then split it up into smaller chunks that can be memorised with
             <a href="https://apps.ankiweb.net/">Anki</a>
-            <a href="https://docs.ankiweb.net/?search=cloze%20deletion">cloze cards</a>. To achieve
-            this I've mostly flattened complicated parts of the tree or parts that seemed less certain.
-            I aimed to include some context without adding too much noise or individual detail.
+            <a href="https://docs.ankiweb.net/?search=cloze%20deletion">cloze cards</a>. To do
+            this I've mostly flattened complicated parts of the tree or parts that seemed less certain,
+            aiming for a branching factor of around 7±2. I aimed to include some context without adding
+            too much noise or individual detail.
           </p>
           <p>
             Each item has the name of the group, and a link back to Wikipedia. Most will list the more
