@@ -130,8 +130,22 @@ def get_html() -> str:
                   </ul>
                 </li>
                 <li>
+                  <a href="https://www.marinespecies.org">The World Register of Marine Species</a>
+                </li>
+                <li>
                   Animals
                   <ul>
+                    <li>
+                      Sponges
+                      <ul>
+                        <li>
+                          <a href="https://www.marinespecies.org/porifera/">The World Porifera Database</a>
+                        </li>
+                        <li>
+                          University of North Carolina Wilmington - <a href="https://spongeguide.uncw.edu/">The Sponge Guide - Caribbean</a>
+                        </li>
+                      </ul>
+                    </li>
                     <li>
                       Insects
                       <ul>
