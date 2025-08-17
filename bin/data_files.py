@@ -202,6 +202,13 @@ DATA_LIST = [
         level=0,
     ),
     JsonDataFile(
+        file='luca_plantae_rhodophyta',
+        domain='plantae',
+        taxa='Rhodophyta',
+        tag='The red algae... but often green in colour and includes some seaweeds.',
+        level=1,
+    ),
+    JsonDataFile(
         file='luca_plantae_pinophyta',
         domain='plantae',
         taxa='Pinophyta',
