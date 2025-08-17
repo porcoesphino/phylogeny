@@ -209,6 +209,13 @@ DATA_LIST = [
         level=1,
     ),
     JsonDataFile(
+        file='luca_plantae_chlorophyta',
+        domain='plantae',
+        taxa='Chlorophyta',
+        tag='The green algae that branched off before the land plants including some seaweeds.',
+        level=1,
+    ),
+    JsonDataFile(
         file='luca_plantae_pinophyta',
         domain='plantae',
         taxa='Pinophyta',

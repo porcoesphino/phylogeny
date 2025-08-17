@@ -28,7 +28,7 @@
   {
     "name": "Chlorodendrophyceae",
     "parent": "Chlorophytina",
-    "rank": "",
+    "rank": "Class",
     "ipa": "",
     "tag": "Unicellular green algae that's flagellated that have cellular scales of carbohydrates that fuse to form the thecal wall but remain separated on the flagella. It's one of the taxa often called prasinophytes, a paraphyletic group of unicellular green algae.",
     "common": [],
@@ -40,7 +40,7 @@
   {
     "name": "Pedinophyceae",
     "parent": "Chlorophytina",
-    "rank": "",
+    "rank": "Class",
     "ipa": "",
     "tag": "A class of single celled, asymmetric uniflagellate green algae that do not have extracellular scales.",
     "common": [],
@@ -51,7 +51,7 @@
   {
     "name": "Trebouxiophyceae",
     "parent": "Chlorophytina",
-    "rank": "",
+    "rank": "Class",
     "ipa": "",
     "tag": "Single-celled, colonial, or multicellular and are found in freshwater, terrestrial or marine habitats worldwide. Many taxa form symbiotic relationships with other organisms; in particular they are the main phycobionts within lichens. Others have lost the ability to photosynthesize and have evolved to become parasitic.",
     "common": [
@@ -77,7 +77,7 @@
   {
     "name": "Chlorophyceae",
     "parent": "Chlorophytina",
-    "rank": "",
+    "rank": "Class",
     "ipa": "",
     "tag": "",
     "common": [
@@ -86,7 +86,7 @@
     ],
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Mikrofoto.de-volvox-4.jpg/330px-Mikrofoto.de-volvox-4.jpg",
-      "https://upload.wikimedia.org/wikipedia/en/e/e0/Hydrodictyon.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Hydrodictyon_amimidoro01.jpg/330px-Hydrodictyon_amimidoro01.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Volvox_aureus.jpg/250px-Volvox_aureus.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Pleurococcus1pl.jpg/250px-Pleurococcus1pl.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/4/42/Stigeoclonium_sp_zugespitzte_seitenzweige.jpeg",
@@ -103,7 +103,7 @@
   {
     "name": "Ulvophyceae",
     "parent": "Chlorophytina",
-    "rank": "",
+    "rank": "Class",
     "ipa": "",
     "tag": "Common forms include filaments (both unbranched and branched), tubular and blade-like thalli, and siphonous thalli. Siphonous thalli are composed of a single giant cell with thousands of nuclei and chloroplasts. They have a counter-clockwise arrangement of the flagellar basal bodies, cytokinesis by furrowing, a closed persistent mitotic spindle, and the lack of a phycoplast.",
     "common": [
