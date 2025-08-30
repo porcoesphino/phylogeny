@@ -21,7 +21,7 @@ details.controls>div>div {
 @media only screen and (min-width: 780px) {
   details.controls>div>div {
     /** TODO: Remove this workaround for two column layout controls scrolling. */
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
   }
 }
 
