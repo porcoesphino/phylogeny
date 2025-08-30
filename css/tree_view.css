@@ -50,7 +50,8 @@ Tree core styles
 */
 
 .tree {
-  margin: 0 1em 1em 2em;
+  margin: 0 1rem 1rem 2rem;
+  padding-bottom: 2rem;
 }
 
 .tree,
@@ -234,6 +235,14 @@ div.tree_label:after {
 .tree_box p {
   font-size: 0.75em;
   line-height: 1rem;
+  padding-top: 3px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/** The parent container for the images. */
+.tree_box>div {
+  margin-top: 3px;
 }
 
 .tree_box img {
