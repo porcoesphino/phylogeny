@@ -7,7 +7,8 @@ body,
 /** Single column layout */
 @media only screen and (max-width: 780px) {
   #tree-range-select-buttons {
-    height: 35vh !important;
+    height: fit-content;
+    max-height: 35vh !important;
   }
 
   details.controls {
