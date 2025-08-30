@@ -4,9 +4,10 @@ body,
   height: 100%;
 }
 
+/** Single column layout */
 @media only screen and (max-width: 780px) {
   #tree-range-select-buttons {
-    height: 10rem !important;
+    height: 35vh !important;
   }
 
   details.controls {
@@ -15,6 +16,7 @@ body,
   }
 }
 
+/** Two column layout */
 @media only screen and (min-width: 780px) and (max-width: 1200px) {
   .rows-on-mobile {
     display: flex;
@@ -69,6 +71,7 @@ body,
   }
 }
 
+/** Three column layout */
 @media only screen and (min-width: 1200px) {
   .rows-on-mobile {
     display: flex;
@@ -111,6 +114,10 @@ body,
 
 /** Safari only block for when it's needed again. */
 @supports (-webkit-backdrop-filter: blur(10px)) {}
+
+/**
+ * Set some different heights for species images based on the rough available space.
+ */
 
 @media only screen and (min-width: 780px) and (max-width: 1200px) and (max-height: 1000px) {
   .tree_box img {
