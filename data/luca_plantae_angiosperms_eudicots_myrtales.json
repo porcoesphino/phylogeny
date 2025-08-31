@@ -45,7 +45,7 @@
     "parent": "Myrtales",
     "rank": "Family",
     "ipa": "mɛləstoʊmɑːˈteɪsiˌaɪ",
-    "ipa-other": "mɛləstoʊmɑːˈteɪsiːˌiː",
+    "ipa_alt": "mɛləstoʊmɑːˈteɪsiːˌiː",
     "common": [],
     "tag": "",
     "imgs": []
@@ -55,7 +55,7 @@
     "parent": "Myrtales",
     "rank": "Family",
     "ipa": "mərˈteɪsiˌaɪ",
-    "ipa-other": "mərˈteɪsiːˌiː",
+    "ipa_alt": "mərˈteɪsiːˌiː",
     "common": [
       "Myrtles",
       "pōhutukawas",
