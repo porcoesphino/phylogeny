@@ -122,10 +122,10 @@ def get_html() -> str:
                       <a href="http://tolweb.org/">Tree of Life - web project</a>
                     </li>
                     <li>
-                      <a href="https://eol.org/">Encylcopedia of Life</a>
+                      <a href="https://eol.org/">Encyclopedia of Life</a>
                     </li>
                     <li>
-                      <a href="https://animaldiversity.org/">Animal Diversity Web</a>
+                      University of Michigan Museum of Zoology - <a href="https://animaldiversity.org/">Animal Diversity Web</a>
                     </li>
                   </ul>
                 </li>
