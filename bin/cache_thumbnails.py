@@ -5,6 +5,7 @@ import random
 import time
 import urllib.error
 import urllib.request
+import requests
 
 import common
 import data_files
@@ -13,16 +14,54 @@ _THUMBNAIL_DIR = 'thumbnails'
 _ATTRIBUTIONS_FILE = 'Attributions.md'
 
 
+def save_thumbnail_naive_urlretrieve(image_local_path: str, remote: str) -> None:
+  try:
+    urllib.request.urlretrieve(remote, image_local_path)
+  except urllib.error.URLError as e:
+    raise SystemError(f'Failed to download "{remote}" to "{image_local_path}".') from e
+
+
+def save_thumbnail_request_with_headers(image_local_path: str, remote: str) -> None:
+  try:
+    headers = {
+        'Accept':
+            'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Encoding':
+            'gzip, deflate, br',
+        'Accept-Language':
+            'en-AU,en;q=0.9',
+        'Cache-Control':
+            'no-cache',
+        'Pragma':
+            'no-cache',
+        'Priority':
+            'u=0, i',
+        'Referer':
+            'https://www.google.com/',
+        'Sec-Fetch-Dest':
+            'document',
+        'Sec-Fetch-Mode':
+            'navigate',
+        'Sec-Fetch-Site':
+            'none',
+        'User-Agent':
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.6 Safari/605.1.15'
+    }
+    response = requests.get(remote, headers=headers)
+    with open(image_local_path, 'wb') as local_image_file:
+      local_image_file.write(response.content)
+  except urllib.error.URLError as e:
+    raise SystemError(f'Failed to download "{remote}" to "{image_local_path}".') from e
+
+
 def maybe_save_thumbnail(local: str, remote: str) -> int:
   image_local_path = os.path.join(_THUMBNAIL_DIR, local)
 
   # If the file already exists, continue.
   if os.path.isfile(image_local_path):
     return 0
-  try:
-    urllib.request.urlretrieve(remote, image_local_path)
-  except urllib.error.URLError as e:
-    raise SystemError(f'Failed to download "{remote}" to "{image_local_path}".') from e
+
+  save_thumbnail_request_with_headers(image_local_path=image_local_path, remote=remote)
 
   file_size = os.path.getsize(image_local_path)
   return file_size
