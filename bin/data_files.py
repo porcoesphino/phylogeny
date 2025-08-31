@@ -167,6 +167,13 @@ DATA_LIST = [
         level=4,
     ),
     JsonDataFile(
+        file='luca_animalia_chordata_tetrapoda_mammalia_artiodactyla_cetacea',
+        domain='animalia',
+        taxa='Cetacea',
+        tag='The whales, dolphins and porpoises.',
+        level=5,
+    ),
+    JsonDataFile(
         file='luca_animalia_chordata_tetrapoda_mammalia_primates',
         domain='animalia',
         taxa='Primates',
