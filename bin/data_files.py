@@ -278,7 +278,7 @@ def process_nodes(
     per_node_function: typing.Callable[[common.NodeRaw], None]
 ) -> None:  # type: ignore
   for file_metadata in DATA_LIST:
-    full_filename = os.path.join(DATA_DIR, f'{file_metadata.file}.json')
+    full_filename = os.path.join(DATA_DIR, f'{file_metadata.file}.jsonc')
     print(f'Validating: {full_filename}')
     with open(full_filename, 'r', encoding='utf8') as json_file:
       try:

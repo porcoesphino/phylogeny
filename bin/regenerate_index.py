@@ -14,12 +14,11 @@ def get_script_vars() -> str:
   output: str = 'var data_files = ' + json.dumps(
       data_files.DATA_LIST, default=asdict, indent=2
   ) + '\n'
-  for json_file in data_files.DATA_LIST:
-    json_filename = f'{json_file.file}.json'
+  for file_metadata in data_files.DATA_LIST:
+    json_filename = f'{file_metadata.file}.jsonc'
     with open(os.path.join(data_files.DATA_DIR, json_filename), 'r', encoding='utf8') as json_file:
-      var_name = json_filename.removesuffix('.json')
       prefix_spaces = '    '
-      output += f'{prefix_spaces}var {var_name} = {prefix_spaces.join(json_file.readlines())}\n'
+      output += f'{prefix_spaces}var {file_metadata.file} = {prefix_spaces.join(json_file.readlines())}\n'
   return output
 
 
