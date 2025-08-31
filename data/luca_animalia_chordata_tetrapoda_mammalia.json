@@ -168,14 +168,19 @@
       "wallabies",
       "possums",
       "koala",
-      "wombats"
+      "wombats",
+      "tree-kangaroos"
     ],
     "tag": "",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Koala_climbing_tree.jpg/250px-Koala_climbing_tree.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/0/01/Mahogany_glider.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Macropus_giganteus_-_Brunkerville.jpg/250px-Macropus_giganteus_-_Brunkerville.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Ailurops_ursinus_Naemundung_2_North_Sulawesi.jpg/330px-Ailurops_ursinus_Naemundung_2_North_Sulawesi.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Ailurops_ursinus_Naemundung_2_North_Sulawesi.jpg/330px-Ailurops_ursinus_Naemundung_2_North_Sulawesi.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Bennett%27s_Tree-kangaroo.jpg/250px-Bennett%27s_Tree-kangaroo.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Dendrolagus_matschiei_at_the_Bronx_Zoo_007.jpg/250px-Dendrolagus_matschiei_at_the_Bronx_Zoo_007.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Tree_kangaroo2.jpg/250px-Tree_kangaroo2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/72/Dendrolagus_mbaiso.jpg"
     ],
     "card": 3
   },
