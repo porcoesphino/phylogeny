@@ -156,6 +156,7 @@ class Fetcher {
     const clientList = await self.clients.matchAll({ 'type': 'window' })
 
     for (var i = 0; i < url_list.length; i++) {
+      console.log('Starting: ', i, url_list.length)
       var url = url_list[i]
       if (only_add_on_cache_miss) {
         await Fetcher.cache_match_with_fetch_fallback(cache_name, url, true /* put_on_success */)
