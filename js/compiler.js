@@ -407,6 +407,8 @@ class State {
     this._autocomplete_list = null
     this._img_set = null
 
+    // Note:Using localStorage since sessionStorage is partitioned by both origin and browser tabs
+    // and only kept for the duration of the page session.
     this._offline_mode = (localStorage['offline_mode'] === "true") || false
   }
 
