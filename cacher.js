@@ -167,7 +167,15 @@ class Fetcher {
       }
 
       for (const client of clientList) {
-        client.postMessage({'type': 'installation_update', 'payload': {'progress': i + 1, 'total': url_list.length}})
+        client.postMessage(
+          {
+            'type': 'installation_update',
+            'payload': {
+              'progress': i + 1,
+              'total': url_list.length
+            }
+          }
+        )
       }
     }
     console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss}; changed_files = ${changed_files})`, url_list)
