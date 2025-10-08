@@ -1303,8 +1303,27 @@ class Settings {
     var offline_mode_toggle = document.getElementById(Settings.ID_OFFLINE_MODE)
     var delete_cache_button = document.getElementById(Settings.ID_DELETE_CACHE)
 
+    // TODO: Some of this code sets state that's used elsewhere. Verify there is no race condition.
     if (OfflineCaching.offline_support()) {
-      offline_mode_toggle.checked = state.offline_mode
+      // If the media display mode matches an installed app set as offline.
+      if (window.matchMedia('(display-mode: standalone)').matches) {
+        state.offline_mode = true
+        offline_mode_toggle.checked = true
+
+        offline_mode_toggle.disabled = true
+        offline_mode_toggle.labels[0].style.color = 'graytext'
+      } else {
+        // Use the value in local storage.
+        offline_mode_toggle.checked = state.offline_mode
+      }
+
+      // Handle the case a user has just chosen to install the app and set offline_mode.
+      // Note: this is Chrome only and the installation probably hasn't finished.
+      // This may not have an effect until a reload.
+      window.addEventListener('appinstalled', () => {
+        console.log('This is an installed app. Setting for offline use.');
+        offline_mode_toggle.checked = true
+      });
     } else {
       delete_cache_button.disabled = true
 
