@@ -63,7 +63,7 @@ class OfflineCaching {
               throw Error(`Unknown event type sent as message: ${data.type}`)
           }
         },
-        { once: true }
+        { once: false }
       );
     } else {
       console.warn('Cacher service worker was not registered since service workers are not supported.');
