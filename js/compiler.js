@@ -69,6 +69,7 @@ class OfflineCaching {
   }
 
   static update_download_progress_indicator(progress, total) {
+    console.log('Updating progress', progress, total)
     var offline_bar_el = document.getElementById(OfflineCaching.ID_DOWNLOAD_PROGRESS_BAR)
     offline_bar_el.max = total
     offline_bar_el.value = progress
