@@ -152,6 +152,9 @@ class Fetcher {
   static fault_tolerant_add_all = async (cache_name, list_or_set, only_add_on_cache_miss = false) => {
     const url_list = [...list_or_set]
     let changed_files = []
+
+    const clientList = await self.clients.matchAll({ 'type': 'window' })
+
     for (var i = 0; i < url_list.length; i++) {
       var url = url_list[i]
       if (only_add_on_cache_miss) {
@@ -163,7 +166,9 @@ class Fetcher {
         }
       }
 
-      client.postMessage({'type': 'installation_update', 'payload': {'progress': i, 'total': url_list.length}})
+      for (const client of clientList) {
+        client.postMessage({'type': 'installation_update', 'payload': {'progress': i, 'total': url_list.length}})
+      }
     }
     console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss}; changed_files = ${changed_files})`, url_list)
     if (changed_files.length) {
