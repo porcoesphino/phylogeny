@@ -199,6 +199,26 @@ def get_html() -> str:
               </ul>
             </li>
           </ul>
+          <div>
+            <h2>Settings</h2>
+            <div>
+              <input type="checkbox" id="offline-mode-toggle">
+              <label for="offline-mode-toggle">
+                Offline mode
+              </label>
+            </div>
+            <div id="status">
+              <span>Version: </span><span id="version">1.0</span>
+            </div>
+            <div id="status">
+              <span>Version: </span><span id="version">1.0</span>
+            </div>
+            <div>
+              <button id="delete-cache-button">
+                Delete app cache
+              </button>
+            </div>
+          </div>
         </div>
       </details>
 

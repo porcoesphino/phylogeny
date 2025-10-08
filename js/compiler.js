@@ -100,6 +100,22 @@ class OfflineCaching {
   static async get_cache_names() {
     return await window.caches.keys()
   }
+
+  static async delete_caches() {
+    if (OfflineCaching.offline_support()) {
+      navigator.serviceWorker.ready.then(
+        (registration) => {
+          registration.active.postMessage(
+            {
+              'type': 'delete_caches',
+            }
+          )
+        }
+      )
+    } else {
+      console.warn('Deleting caches was aborted since service workers are not supported.');
+    }
+  }
 }
 
 function clear_child_nodes(parent_el) {
@@ -1266,16 +1282,18 @@ class Accordion {
 
 class Settings {
   static ID_OFFLINE_MODE = 'offline-mode-toggle'
+  static ID_DELETE_CACHE = 'delete-cache-button'
   static ID_CACHE_LIST = 'cache-list-indicator'
 
   static add_callbacks(state) {
     var offline_mode_toggle = document.getElementById(Settings.ID_OFFLINE_MODE)
+    var delete_cache_button = document.getElementById(Settings.ID_DELETE_CACHE)
 
     if (OfflineCaching.offline_support()) {
-      // TODO: Test if the app is installed.
-      // If it is, set offline mode to true and disable checkbox.
       offline_mode_toggle.checked = state.offline_mode
     } else {
+      delete_cache_button.disabled = true
+
       offline_mode_toggle.checked = false
       state.offline_mode = false
 
@@ -1291,6 +1309,17 @@ class Settings {
         window.location.reload();
       } else {
         state.offline_mode = false
+      }
+    })
+
+    delete_cache_button.addEventListener('click', async function (event) {
+      console.log('Delete cache button clicked', event)
+      const theyAreSure = window.confirm('Are you sure you want to delete the app cache?')
+      if (theyAreSure) {
+        console.log('Beginning delete of the app cache.')
+        await OfflineCaching.delete_caches()
+      } else {
+        console.log('Aborting touching the local cache.')
       }
     })
 

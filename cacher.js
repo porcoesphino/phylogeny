@@ -255,6 +255,14 @@ class Cacher {
       console.log('There are no old caches to delete.')
     }
   }
+
+  async delete_all_caches() {
+    const all_caches = await caches.keys()
+    for (const cache_name of all_caches) {
+      console.warn('Deleting cache', cache_name)
+      await caches.delete(cache_name)
+    }
+  }
 }
 
 const cacher = new Cacher()
@@ -284,6 +292,9 @@ self.addEventListener('message', async (event) => {
       break
     case 'app_prefetch':
       event.waitUntil(cacher.app_precache(event))
+      break
+    case 'delete_caches':
+      event.waitUntil(cacher.delete_all_caches())
       break
     default:
       throw Error(`Unknown event type sent as message: ${data.type}`)
