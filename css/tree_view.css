@@ -253,9 +253,9 @@ div.tree_label:after {
 
 .tree_box a.icon-button {
   border: 1px #01010195 solid;
-  padding: 2px 1px 0 1px;
+  padding: 5px 1px 0 1px;
   background-color: white;
-  height: 14px;
+  height: 12px;
   width: 13px;
   border-radius: 4px;
   margin-left: 4px;
@@ -265,7 +265,7 @@ div.tree_label:after {
 .tree_box a.icon-button img {
   height: 8px;
   width: 13px;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .tree_box a {
