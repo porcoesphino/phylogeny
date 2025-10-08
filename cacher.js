@@ -262,7 +262,12 @@ class Cacher {
       console.warn('Deleting cache', cache_name)
       await caches.delete(cache_name)
     }
-    client.postMessage({'type': 'reload'})
+    await self.clients.matchAll({ 'type': 'window' }).then(async (clientList) => {
+        for (const client of clientList) {
+          console.warn('Sending reload request to client after caches were deleted:', client)
+          client.postMessage({'type': 'reload'})
+        }
+      });
   }
 }
 
