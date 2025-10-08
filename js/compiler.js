@@ -308,7 +308,7 @@ class MenuMap {
   }
 
   get_metadata(taxa) {
-    return this._get_menu_map().get(taxa)
+    return this._get_menu_map().get(taxa.toLowerCase())
   }
 }
 
@@ -328,6 +328,7 @@ class DataMap {
 
   _build_maps() {
     if (this._data_mapped_by_taxa == null) {
+      // The value is name of the tree that includes this taxa.
       this._taxa_to_root = new Map()
       this._taxa_to_metadata = new Map()
       this._common_name_to_root_taxa_list = new Map()
@@ -360,6 +361,7 @@ class DataMap {
     return this._data_mapped_by_taxa
   }
 
+  // The value is name of the tree that includes this taxa.
   get taxa_to_root() {
     if (this._taxa_to_root == null) {
       this._build_maps()
@@ -503,10 +505,12 @@ class State {
 
       if (!name_to_node.has(n.name)) {
         name_to_node.set(n.name, n)
+      } else {
+        console.error('Map already has node', n.name, n, name_to_node)
       }
     }
 
-    if (!filtered_nodes || filtered_nodes.lenth == 0) {
+    if (!filtered_nodes || filtered_nodes.length == 0) {
       throw new Error('Empty filtered_nodes')
     }
 
