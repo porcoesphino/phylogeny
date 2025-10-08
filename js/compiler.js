@@ -5,6 +5,7 @@ const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 class OfflineCaching {
   static ID_DOWNLOAD_PROGRESS_TEXT = 'offline-download-progress-text'
   static ID_DOWNLOAD_PROGRESS_BAR = 'offline-download-progress-bar'
+  static ID_MEMORY_USED = 'memory-used'
 
   static will_be_blocked_by_cors() {
     return window.location.href.startsWith('file:')
@@ -68,6 +69,13 @@ class OfflineCaching {
     }
   }
 
+  static async update_memory_estimate() {
+    const  memory_used_el = document.getElementById(OfflineCaching.ID_MEMORY_USED)
+    const quota = await navigator.storage.estimate();
+    const usage_mb = quota.usage / 1000 / 1000
+    memory_used_el.innerText = Math.round(usage_mb) + ' MB'
+  }
+
   static update_download_progress_indicator(progress, total) {
     var offline_bar_el = document.getElementById(OfflineCaching.ID_DOWNLOAD_PROGRESS_BAR)
     offline_bar_el.max = total
@@ -79,9 +87,10 @@ class OfflineCaching {
   static async fetch_all_urls(local_urls) {
     if (OfflineCaching.offline_support()) {
       navigator.serviceWorker.ready.then(
-        (registration) => {
+        async (registration) => {
           console.log('Client requesting thumbnail_prefetch', local_urls, registration)
           OfflineCaching.update_download_progress_indicator(0, local_urls.size)
+          await OfflineCaching.update_memory_estimate()
           registration.active.postMessage(
             {
               'type': 'thumbnail_prefetch',
@@ -1381,6 +1390,10 @@ class Settings {
           cache_list_el.appendChild(li_el)
         }
       }
+    })
+
+    setTimeout(async () => {
+      OfflineCaching.update_memory_estimate()
     })
   }
 }
