@@ -370,6 +370,8 @@ class State {
     this.data_map = new DataMap()
     this._autocomplete_list = null
     this._img_set = null
+
+    this._offline_mode = (localStorage['offline_mode'] === "true") || false
   }
 
   get_tree_for_root_id(root_id) {
@@ -533,6 +535,15 @@ class State {
       this._img_set = new Set(img_list)
     }
     return this._img_set
+  }
+
+  get offline_mode() {
+    return this._offline_mode
+  }
+
+  set offline_mode(new_val) {
+    localStorage['offline_mode'] = new_val
+    this._offline_mode = new_val
   }
 }
 
