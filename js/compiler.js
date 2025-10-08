@@ -44,11 +44,9 @@ class OfflineCaching {
         { once: true }
       );
 
-      console.log('Adding listener for serviceWorker messages')
       navigator.serviceWorker.addEventListener('message',
         (event) => {
           const data = event.data
-          console.log('Received message from serviceWorker', event)
           switch (data.type) {
             case 'reload':
               console.error('Executing the reload request of a service worker.')
@@ -71,7 +69,6 @@ class OfflineCaching {
   }
 
   static update_download_progress_indicator(progress, total) {
-    console.log('Updating progress', progress, total)
     var offline_bar_el = document.getElementById(OfflineCaching.ID_DOWNLOAD_PROGRESS_BAR)
     offline_bar_el.max = total
     offline_bar_el.value = progress
@@ -1355,10 +1352,8 @@ class Settings {
     })
 
     delete_cache_button.addEventListener('click', async function (event) {
-      console.log('Delete cache button clicked', event)
       const theyAreSure = window.confirm('Are you sure you want to delete the app cache?')
       if (theyAreSure) {
-        console.log('Beginning delete of the app cache.')
         await OfflineCaching.delete_caches()
         var cache_list_el = document.getElementById(Settings.ID_CACHE_LIST)
         var li_el = document.createElement('li')

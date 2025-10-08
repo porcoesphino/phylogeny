@@ -156,7 +156,6 @@ class Fetcher {
     const clientList = await self.clients.matchAll({ 'type': 'window' })
 
     for (var i = 0; i < url_list.length; i++) {
-      console.log('Starting: ', i, url_list.length)
       var url = url_list[i]
       if (only_add_on_cache_miss) {
         await Fetcher.cache_match_with_fetch_fallback(cache_name, url, true /* put_on_success */)
@@ -168,10 +167,8 @@ class Fetcher {
       }
 
       for (const client of clientList) {
-        console.log('Installation update', client, i, url_list.length)
-        client.postMessage({'type': 'installation_update', 'payload': {'progress': i, 'total': url_list.length}})
+        client.postMessage({'type': 'installation_update', 'payload': {'progress': i + 1, 'total': url_list.length}})
       }
-      console.log('Continuing: ', i, url_list.length)
     }
     console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss}; changed_files = ${changed_files})`, url_list)
     if (changed_files.length) {
