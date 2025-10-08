@@ -35,3 +35,8 @@ div.summary {
 small {
   font-size: 0.65rem;
 }
+
+#status {
+  font-size: 0.65rem;
+  padding: 0.65rem
+}
