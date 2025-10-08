@@ -211,7 +211,7 @@ def get_html() -> str:
               <div>Caches: </div>
               <ul id="cache-list-indicator" class="regular_list">
               </ul>
-              <label for="file">Downloaded assets<span id="offline-download-progress-text"></span>:</label>
+              <label for="offline-download-progress-bar">Downloaded assets<span id="offline-download-progress-text"></span>:</label>
               <progress id="offline-download-progress-bar" max="100" value="0"></progress>
             </div>
             <div>
