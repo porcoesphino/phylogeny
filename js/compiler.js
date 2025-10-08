@@ -84,7 +84,7 @@ class OfflineCaching {
       navigator.serviceWorker.ready.then(
         (registration) => {
           console.log('Client requesting thumbnail_prefetch', local_urls, registration)
-          OfflineCaching.update_download_progress_indicator(0, local_urls.length)
+          OfflineCaching.update_download_progress_indicator(0, local_urls.size)
           registration.active.postMessage(
             {
               'type': 'thumbnail_prefetch',
