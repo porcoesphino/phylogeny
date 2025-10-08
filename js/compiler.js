@@ -1453,6 +1453,7 @@ class Page {
 
   page_load_callback() {
 
+    OfflineCaching.register_cacher()
     // On every refresh, forcibly reload the app code stored in the cache.
     // NOTE: The code won't be loaded until a reload but it should be installed.
     OfflineCaching.trigger_app_code_refresh()
