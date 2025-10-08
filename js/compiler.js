@@ -69,10 +69,10 @@ class OfflineCaching {
   }
 
   static update_download_progress_indicator(progress, total) {
-    var offline_bar_el = document.getElementById(Settings.ID_DOWNLOAD_PROGRESS_BAR)
+    var offline_bar_el = document.getElementById(OfflineCaching.ID_DOWNLOAD_PROGRESS_BAR)
     offline_bar_el.max = total
     offline_bar_el.value = progress
-    var offline_text_el = document.getElementById(Settings.ID_DOWNLOAD_PROGRESS_TEXT)
+    var offline_text_el = document.getElementById(OfflineCaching.ID_DOWNLOAD_PROGRESS_TEXT)
     offline_text_el.innerText = ' (' + progress + '/' + total + ')'
   }
 
