@@ -7,6 +7,10 @@ class OfflineCaching {
     return window.location.href.startsWith('file:')
   }
 
+  static offline_support() {
+    return 'serviceWorker' in navigator && !OfflineCaching.will_be_blocked_by_cors()
+  }
+
   static sleep(time) {
     return new Promise((resolve) => setTimeout(resolve, time));
   }
@@ -19,7 +23,7 @@ class OfflineCaching {
   }
 
   static register_cacher() {
-    if ('serviceWorker' in navigator && !OfflineCaching.will_be_blocked_by_cors()) {
+    if (OfflineCaching.offline_support()) {
       // Register a service worker hosted at the root of the site using the default scope.
       navigator.serviceWorker.register('./cacher.js').then(
         (registration) => {
@@ -60,7 +64,7 @@ class OfflineCaching {
   }
 
   static async fetch_all_urls(local_urls) {
-    if ('serviceWorker' in navigator && !OfflineCaching.will_be_blocked_by_cors()) {
+    if (OfflineCaching.offline_support()) {
       navigator.serviceWorker.ready.then(
         (registration) => {
           console.log('Client requesting thumbnail_prefetch', local_urls, registration)
