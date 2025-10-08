@@ -36,11 +36,7 @@ class OfflineCaching {
       navigator.serviceWorker.addEventListener('controllerchange',
         () => {
           console.error('A new service worked started so do the simple thing and reload.')
-          
-          // TODO: Do we still need to sleep now there is modal?
-          OfflineCaching.sleep(2000).then(() => {
-            OfflineCaching.reload_update_if_user_confirms('controllerchange')
-          })
+          OfflineCaching.reload_update_if_user_confirms('controllerchange')
         },
         { once: true }
       );
@@ -49,11 +45,7 @@ class OfflineCaching {
         (event) => {
           if (event.data == 'reload') {
             console.error('Executing the reload request of a service worker.')
-
-            // TODO: Do we still need to sleep now there is modal?
-            OfflineCaching.sleep(2000).then(() => {
-              OfflineCaching.reload_update_if_user_confirms('message')
-            })
+            OfflineCaching.reload_update_if_user_confirms('message')
           }
         },
         { once: true }

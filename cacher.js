@@ -225,12 +225,10 @@ class Cacher {
     const only_add_on_cache_miss = false
     const changed_files = await Fetcher.fault_tolerant_add_all(cache_name_versioned, resources, only_add_on_cache_miss)
     if (changed_files.length > 0) {
-      console.warn('Data changed and the page will refresh in half a second since these files changed:', changed_files)
-      await new Promise(r => setTimeout(r, 500));
+      console.warn('A message will be sent to refresh all tabs using this service worker since this data has changed:', changed_files)
       await self.clients.matchAll({ 'type': 'window' }).then(async (clientList) => {
         for (const client of clientList) {
           console.warn('Sending reload request to client after app files were found to have changed:', client)
-          await new Promise(r => setTimeout(r, 2000));
           client.postMessage('reload')
         }
       });
