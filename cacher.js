@@ -162,6 +162,8 @@ class Fetcher {
           changed_files.push(url)
         }
       }
+
+      client.postMessage({'type': 'installation_update', 'payload': {'progress': i, 'total': url_list.length}})
     }
     console.log(`Finished ensuring the cache is fresh for ${url_list.length} items. (cache_name = ${cache_name}, only_add_on_cache_miss = ${only_add_on_cache_miss}; changed_files = ${changed_files})`, url_list)
     if (changed_files.length) {
@@ -229,7 +231,7 @@ class Cacher {
       await self.clients.matchAll({ 'type': 'window' }).then(async (clientList) => {
         for (const client of clientList) {
           console.warn('Sending reload request to client after app files were found to have changed:', client)
-          client.postMessage('reload')
+          client.postMessage({'type': 'reload'})
         }
       });
     }

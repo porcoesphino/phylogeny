@@ -3,6 +3,9 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
 class OfflineCaching {
+  static ID_DOWNLOAD_PROGRESS_TEXT = 'offline-download-progress-text'
+  static ID_DOWNLOAD_PROGRESS_BAR = 'offline-download-progress-bar'
+
   static will_be_blocked_by_cors() {
     return window.location.href.startsWith('file:')
   }
@@ -43,9 +46,19 @@ class OfflineCaching {
 
       navigator.serviceWorker.addEventListener('message',
         (event) => {
-          if (event.data == 'reload') {
-            console.error('Executing the reload request of a service worker.')
+          const data = event.data
+          switch (data.type) {
+            case 'reload':
+              console.error('Executing the reload request of a service worker.')
             OfflineCaching.reload_update_if_user_confirms('message')
+              break
+            case 'installation_update':
+              const progress = data.payload.progress
+              const total = data.payload.total
+              OfflineCaching.update_download_progress_indicator(progress, total)
+              break
+            default:
+              throw Error(`Unknown event type sent as message: ${data.type}`)
           }
         },
         { once: true }
@@ -55,11 +68,20 @@ class OfflineCaching {
     }
   }
 
+  static update_download_progress_indicator(progress, total) {
+    var offline_bar_el = document.getElementById(Settings.ID_DOWNLOAD_PROGRESS_BAR)
+    offline_bar_el.max = total
+    offline_bar_el.value = progress
+    var offline_text_el = document.getElementById(Settings.ID_DOWNLOAD_PROGRESS_TEXT)
+    offline_text_el.innerText = ' (' + progress + '/' + total + ')'
+  }
+
   static async fetch_all_urls(local_urls) {
     if (OfflineCaching.offline_support()) {
       navigator.serviceWorker.ready.then(
         (registration) => {
           console.log('Client requesting thumbnail_prefetch', local_urls, registration)
+          OfflineCaching.update_download_progress_indicator(0, local_urls.length)
           registration.active.postMessage(
             {
               'type': 'thumbnail_prefetch',

@@ -208,10 +208,11 @@ def get_html() -> str:
               </label>
             </div>
             <div id="status">
-              <span>Version: </span><span id="version">1.0</span>
-            </div>
-            <div id="status">
-              <span>Version: </span><span id="version">1.0</span>
+              <div>Caches: </div>
+              <ul id="cache-list-indicator" class="regular_list">
+              </ul>
+              <label for="file">Downloaded assets<span id="offline-download-progress-text"></span>:</label>
+              <progress id="offline-download-progress-bar" max="100" value="0"></progress>
             </div>
             <div>
               <button id="delete-cache-button">
