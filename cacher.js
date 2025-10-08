@@ -262,6 +262,7 @@ class Cacher {
       console.warn('Deleting cache', cache_name)
       await caches.delete(cache_name)
     }
+    client.postMessage({'type': 'reload'})
   }
 }
 
