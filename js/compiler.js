@@ -1265,9 +1265,35 @@ class Accordion {
 }
 
 class Settings {
+  static ID_OFFLINE_MODE = 'offline-mode-toggle'
   static ID_CACHE_LIST = 'cache-list-indicator'
 
-  static add_callbacks() {
+  static add_callbacks(state) {
+    var offline_mode_toggle = document.getElementById(Settings.ID_OFFLINE_MODE)
+
+    if (OfflineCaching.offline_support()) {
+      // TODO: Test if the app is installed.
+      // If it is, set offline mode to true and disable checkbox.
+      offline_mode_toggle.checked = state.offline_mode
+    } else {
+      offline_mode_toggle.checked = false
+      state.offline_mode = false
+
+      offline_mode_toggle.disabled = true
+      offline_mode_toggle.labels[0].style.color = 'graytext'
+    }
+
+    offline_mode_toggle.addEventListener('click', function () {
+      if (offline_mode_toggle.checked) {
+        state.offline_mode = true
+
+        window.alert('Refreshing to download data for offline use.')
+        window.location.reload();
+      } else {
+        state.offline_mode = false
+      }
+    })
+
     setTimeout(async () => {
       var cache_list_el = document.getElementById(Settings.ID_CACHE_LIST)
       var cache_list = await OfflineCaching.get_cache_names()
@@ -1509,9 +1535,15 @@ class Page {
       TreeBuilderAsTreeList.scroll_to_taxa(root, taxa, true /* shake */)
     }
   
-    setTimeout(async () => {
-      await OfflineCaching.fetch_all_urls(this.state.img_urls)
-    })
+    if (this.state.offline_mode) {
+      console.log('Loading all images for offline mode')
+      setTimeout(async () => {
+        await OfflineCaching.fetch_all_urls(this.state.img_urls)
+      })
+    } else {
+      console.log('Skipping image load - not in offline mode')
+    }
+    
   }
 }
 
