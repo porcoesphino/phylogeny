@@ -46,7 +46,7 @@ class OfflineCaching {
       );
 
       navigator.serviceWorker.addEventListener('message',
-        (event) => {
+        async (event) => {
           const data = event.data
           switch (data.type) {
             case 'reload':
@@ -57,6 +57,7 @@ class OfflineCaching {
               const progress = data.payload.progress
               const total = data.payload.total
               OfflineCaching.update_download_progress_indicator(progress, total)
+              await OfflineCaching.update_memory_estimate()
               break
             default:
               throw Error(`Unknown event type sent as message: ${data.type}`)
@@ -1393,7 +1394,7 @@ class Settings {
     })
 
     setTimeout(async () => {
-      OfflineCaching.update_memory_estimate()
+      await OfflineCaching.update_memory_estimate()
     })
   }
 }

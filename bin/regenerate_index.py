@@ -215,6 +215,10 @@ def get_html() -> str:
               <progress id="offline-download-progress-bar" max="100" value="0"></progress>
             </div>
             <div>
+              <span>Memory used:</span>
+              <span id="memory-used">0 MB</span>
+            </div>
+            <div>
               <button id="delete-cache-button">
                 Delete app cache
               </button>
