@@ -1353,6 +1353,11 @@ class Settings {
       if (theyAreSure) {
         console.log('Beginning delete of the app cache.')
         await OfflineCaching.delete_caches()
+        var cache_list_el = document.getElementById(Settings.ID_CACHE_LIST)
+        var li_el = document.createElement('li')
+        li_el.innerText = 'Unknown'
+        li_el.style.color = 'graytext'
+        cache_list_el.replaceChildren(li_el)
       } else {
         console.log('Aborting touching the local cache.')
       }
