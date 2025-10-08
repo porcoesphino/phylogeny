@@ -2,87 +2,99 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
-function will_be_blocked_by_cors() {
-  return window.location.href.startsWith('file:')
-}
+class OfflineCaching {
+  static will_be_blocked_by_cors() {
+    return window.location.href.startsWith('file:')
+  }
 
-if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
-  // Register a service worker hosted at the root of the site using the default scope.
-  navigator.serviceWorker.register('./cacher.js').then(
-    (registration) => {
-      console.log('Cacher service worker registration succeeded:', registration);
-    },
-    (error) => {
-      console.error(`Cacher service worker registration failed: ${error}`);
-    },
-  );
+  static sleep(time) {
+    return new Promise((resolve) => setTimeout(resolve, time));
+  }
 
-  // This is isn't ideal for the user but ensures data isn't stale.
-  // Force the page to refresh / an update when there is a new service worker waiting.
-  navigator.serviceWorker.addEventListener('controllerchange',
-    () => {
-      console.error('A new service worked started so do the simple thing and reload.')
-      function sleep(time) {
-        return new Promise((resolve) => setTimeout(resolve, time));
-      }
-      sleep(2000).then(() => {
-        window.location.reload();
-      })
-    },
-    { once: true }
-  );
+  static reload_update_if_user_confirms(event_name) {
+    const theyAreSure = window.confirm('A new version was loaded (' + event_name + '). Reload now?')
+    if (theyAreSure) {
+      window.location.reload();
+    }
+  }
 
-  navigator.serviceWorker.addEventListener('message',
-    (event) => {
-      if (event.data == 'reload') {
-        console.error('Executing the reload request of a service worker.')
-        function sleep(time) {
-          return new Promise((resolve) => setTimeout(resolve, time));
+  static register_cacher() {
+    if ('serviceWorker' in navigator && !OfflineCaching.will_be_blocked_by_cors()) {
+      // Register a service worker hosted at the root of the site using the default scope.
+      navigator.serviceWorker.register('./cacher.js').then(
+        (registration) => {
+          console.log('Cacher service worker registration succeeded:', registration);
+        },
+        (error) => {
+          console.error(`Cacher service worker registration failed: ${error}`);
+        },
+      );
+      navigator.serviceWorker.addEventListener('controllerchange',
+        () => {
+          console.error('A new service worked started so do the simple thing and reload.')
+          
+          // TODO: Do we still need to sleep now there is modal?
+          OfflineCaching.sleep(2000).then(() => {
+            OfflineCaching.reload_update_if_user_confirms('controllerchange')
+          })
+        },
+        { once: true }
+      );
+
+      navigator.serviceWorker.addEventListener('message',
+        (event) => {
+          if (event.data == 'reload') {
+            console.error('Executing the reload request of a service worker.')
+
+            // TODO: Do we still need to sleep now there is modal?
+            OfflineCaching.sleep(2000).then(() => {
+              OfflineCaching.reload_update_if_user_confirms('message')
+            })
+          }
+        },
+        { once: true }
+      );
+    } else {
+      console.warn('Cacher service worker was not registered since service workers are not supported.');
+    }
+  }
+
+  static async fetch_all_urls(local_urls) {
+    if ('serviceWorker' in navigator && !OfflineCaching.will_be_blocked_by_cors()) {
+      navigator.serviceWorker.ready.then(
+        (registration) => {
+          console.log('Client requesting thumbnail_prefetch', local_urls, registration)
+          registration.active.postMessage(
+            {
+              'type': 'thumbnail_prefetch',
+              'data': local_urls
+            }
+          )
         }
-        sleep(2000).then(() => {
-          window.location.reload()
-        })
-      }
-    },
-    { once: true }
-  );
-} else {
-  console.warn('Cacher service worker was not registered since service workers are not supported.');
-}
+      )
+    } else {
+      console.warn('The thumbnail_prefetch was aborted since service workers are not supported.');
+    }
+  }
 
-async function fetch_all_urls(local_urls) {
-  if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
-    navigator.serviceWorker.ready.then(
-      (registration) => {
-        console.log('Client requesting thumbnail_prefetch', local_urls, registration)
-        registration.active.postMessage(
-          {
-            'type': 'thumbnail_prefetch',
-            'data': local_urls
-          }
-        )
-      }
-    )
-  } else {
-    console.warn('The thumbnail_prefetch was aborted since service workers are not supported.');
+  static async trigger_app_code_refresh() {
+    if ('serviceWorker' in navigator && !OfflineCaching.will_be_blocked_by_cors()) {
+      navigator.serviceWorker.ready.then(
+        (registration) => {
+          registration.active.postMessage(
+            {
+              'type': 'app_prefetch',
+            }
+          )
+        }
+      )
+    } else {
+      console.warn('The app_prefetch was aborted since service workers are not supported.');
+    }
   }
 }
 
-async function trigger_app_code_refresh() {
-  if ('serviceWorker' in navigator && !will_be_blocked_by_cors()) {
-    navigator.serviceWorker.ready.then(
-      (registration) => {
-        registration.active.postMessage(
-          {
-            'type': 'app_prefetch',
-          }
-        )
-      }
-    )
-  } else {
-    console.warn('The app_prefetch was aborted since service workers are not supported.');
-  }
-}
+OfflineCaching.register_cacher()
 
 function clear_child_nodes(parent_el) {
   while (parent_el.firstChild) {
@@ -603,7 +615,7 @@ class Search {
     const mark_els = root_el.querySelectorAll('mark')
     const parents = []
 
-    // Mutliple mark elements could have the same parent, so flatten them.
+    // Multiple mark elements could have the same parent, so flatten them.
     for (const el of mark_els) {
       parents.push(el.parentElement)
     }
@@ -1395,9 +1407,9 @@ class Page {
 
   page_load_callback() {
 
-    // Forceably reload the cache of app code on every refresh.
-    // NOTE: It won't immediately be used but it won't need to wait for an install.
-    trigger_app_code_refresh()
+    // On every refresh, forcibly reload the app code stored in the cache.
+    // NOTE: The code won't be loaded until a reload but it should be installed.
+    OfflineCaching.trigger_app_code_refresh()
 
     var tree_range_builder = new TreeRangeSelectorBuilder(this.state.tree_range)
     tree_range_builder.replace_tree_range_as_buttons(this._tree_range_select)
