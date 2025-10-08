@@ -1476,8 +1476,10 @@ class Page {
 
       TreeBuilderAsTreeList.scroll_to_taxa(root, taxa, true /* shake */)
     }
-
-    fetch_all_urls(this.state.img_urls)
+  
+    setTimeout(async () => {
+      await OfflineCaching.fetch_all_urls(this.state.img_urls)
+    })
   }
 }
 
