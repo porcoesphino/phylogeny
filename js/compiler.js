@@ -96,9 +96,11 @@ class OfflineCaching {
       console.warn('The app_prefetch was aborted since service workers are not supported.');
     }
   }
-}
 
-OfflineCaching.register_cacher()
+  static async get_cache_names() {
+    return await window.caches.keys()
+  }
+}
 
 function clear_child_nodes(parent_el) {
   while (parent_el.firstChild) {
@@ -1262,6 +1264,30 @@ class Accordion {
   }
 }
 
+class Settings {
+  static ID_CACHE_LIST = 'cache-list-indicator'
+
+  static add_callbacks() {
+    setTimeout(async () => {
+      var cache_list_el = document.getElementById(Settings.ID_CACHE_LIST)
+      var cache_list = await OfflineCaching.get_cache_names()
+      if (!cache_list || cache_list.length == 0) {
+        var li_el = document.createElement('li')
+        li_el.innerText = 'No caches found'
+        cache_list_el.appendChild(li_el)
+        cache_list_el.style.color = 'graytext'
+        li_el.style.color = 'graytext'
+      } else {
+        for (const cache_name of cache_list) {
+          var li_el = document.createElement('li')
+          li_el.innerText = cache_name
+          cache_list_el.appendChild(li_el)
+        }
+      }
+    })
+  }
+}
+
 class Page {
 
   constructor() {
@@ -1334,6 +1360,11 @@ class Page {
         }
       }, 0.5)
     }
+
+    // TODO: Do we need async to know if the app is installed?
+    setTimeout(async () => {
+      Settings.add_callbacks(this.state)
+    })
 
     var update_tree_range_view = this._update_tree_range_view
 
