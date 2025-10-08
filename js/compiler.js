@@ -44,9 +44,11 @@ class OfflineCaching {
         { once: true }
       );
 
+      console.log('Adding listener for serviceWorker messages')
       navigator.serviceWorker.addEventListener('message',
         (event) => {
           const data = event.data
+          console.log('Received message from serviceWorker', event)
           switch (data.type) {
             case 'reload':
               console.error('Executing the reload request of a service worker.')
