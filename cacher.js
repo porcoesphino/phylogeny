@@ -167,6 +167,7 @@ class Fetcher {
       }
 
       for (const client of clientList) {
+        console.log('Installation update', client, i, url_list.length)
         client.postMessage({'type': 'installation_update', 'payload': {'progress': i, 'total': url_list.length}})
       }
     }
