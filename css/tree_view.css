@@ -245,10 +245,27 @@ div.tree_label:after {
   margin-top: 3px;
 }
 
-.tree_box img {
+.tree_box img.taxa-img {
   max-height: 43px;
   float: right;
   border: 0.5px #010101 solid;
+}
+
+.tree_box a.icon-button {
+  border: 1px #01010195 solid;
+  padding: 2px 1px 0 1px;
+  background-color: white;
+  height: 14px;
+  width: 13px;
+  border-radius: 4px;
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.tree_box a.icon-button img {
+  height: 8px;
+  width: 13px;
+  vertical-align: middle;
 }
 
 .tree_box a {

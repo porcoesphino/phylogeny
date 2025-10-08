@@ -689,8 +689,6 @@ class Search {
     for (var i = 0; i < menu_items.length; i++) {
       var menu_el = menu_items[i]
 
-
-
       var innerText_lowercase = menu_items[i].innerText.toLowerCase()
       if (
         innerText_lowercase.includes(search_input_lowercase) ||
@@ -869,25 +867,38 @@ class TreeBuilderAsTreeList {
     const taxa_as_id = node.name.toLowerCase()
 
     const append_name = (node, parent_el) => {
+      var name_parent_el = document.createElement('span')
+
       var name_el = document.createElement('span')
+      name_el.innerText = name
+
+      name_parent_el.appendChild(name_el)
+
       var wikipedia_link_el = document.createElement('a')
       wikipedia_link_el.href = 'https://en.wikipedia.org/wiki/' + name
       wikipedia_link_el.classList.add('taxa')
-      wikipedia_link_el.innerText = name
       wikipedia_link_el.target = '_blank'
-      name_el.appendChild(wikipedia_link_el)
-      // TODO: Find better workaround for copy-paste.
-      name_el.appendChild(document.createTextNode(' '))
+      wikipedia_link_el.classList.add('icon-button')
+
+      var wikipedia_link_img_el = document.createElement('img')
+      wikipedia_link_img_el.src = './thumbnails/icon_wikipedia.jpg'
+
+      wikipedia_link_el.appendChild(wikipedia_link_img_el)
+      name_parent_el.appendChild(wikipedia_link_el)
+
       if (node.hasOwnProperty('ipa') && !!node.ipa) {
-        name_el.appendChild(document.createTextNode(' (/'))
+
+        var ipa_parent_el = document.createElement('span')
+        ipa_parent_el.appendChild(document.createTextNode(' (/'))
         var ipa_link_el = document.createElement('a')
         ipa_link_el.href = 'https://ipa-reader.com/?voice=Russell&text=' + node.ipa
         ipa_link_el.innerText = node.ipa
         ipa_link_el.target = '_blank'
-        name_el.appendChild(ipa_link_el)
-        name_el.appendChild(document.createTextNode('/)'))
+        ipa_parent_el.appendChild(ipa_link_el)
+        ipa_parent_el.appendChild(document.createTextNode('/)'))
+        name_parent_el.appendChild(ipa_parent_el)
       }
-      parent_el.appendChild(name_el)
+      parent_el.appendChild(name_parent_el)
     }
 
     const maybe_append_common_names = (node, parent_el) => {
@@ -960,6 +971,7 @@ class TreeBuilderAsTreeList {
           }
           var img_el = document.createElement('img')
           img_el.src = State.get_img_relative_path_from_remote(img_remote_src)
+          img_el.classList.add('taxa-img')
 
           if (img_remote_src.startsWith('https://upload.wikimedia.org/wikipedia/commons/thumb')) {
             var re = /https\:\/\/upload.wikimedia.org\/wikipedia\/commons\/thumb\/[^/]+\/[^/]+\/([^/]+)\//
