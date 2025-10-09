@@ -33,10 +33,10 @@ def _get_local_filename_from_remote(url: str) -> str:
 def _get_filename_with_pattern(img_url: str, pattern: re.Pattern[str], image_type: str) -> str:
   m = pattern.match(img_url)
   if not m:
-    raise ValueError(f'{image_type} image URL does not match regex: {img_url}')
+    raise ValueError(f'{image_type} image URL does not match regex: "{img_url}"')
   filename = m.group(1)
   if not filename:
-    raise ValueError(f'{image_type} image URL does not have capture group: {img_url}')
+    raise ValueError(f'{image_type} image URL does not have capture group: "{img_url}"')
 
   return filename
 
@@ -44,7 +44,7 @@ def _get_filename_with_pattern(img_url: str, pattern: re.Pattern[str], image_typ
 def _get_remote_filename(img_url: str) -> str:
 
   if not img_url.startswith(IMG_PREFIX):
-    raise ValueError(f'Image URL does not start with "{IMG_PREFIX}": {img_url}')
+    raise ValueError(f'Image URL does not start with "{IMG_PREFIX}": "{img_url}"')
 
   prefix_removed = img_url.removeprefix(IMG_PREFIX)
 

@@ -288,15 +288,22 @@ def process_nodes(
     full_filename = os.path.join(DATA_DIR, f'{file_metadata.file}.jsonc')
     print(f'Validating: {full_filename}')
     with open(full_filename, 'r', encoding='utf8') as json_file:
+      json_file_comment_stripped: str = ''.join(
+        l if not l.lstrip().startswith('//') else '' for l in list(json_file)
+      )
       try:
-        json_data: list[object] = json.load(json_file)
+        json_data: list[object] = json.loads(json_file_comment_stripped)
 
         for item in json_data:
-          n = common.NodeRaw(**item)  # pyright: ignore[reportCallIssue]
+          try:
+            n = common.NodeRaw(**item)  # pyright: ignore[reportCallIssue]
 
-          per_node_function(n)
+            per_node_function(n)
+          except Exception as e:
+            raise ValueError(f'Error building node from JSON: "{item}"') from e
 
       except Exception as e:
+        print(json_file_comment_stripped)
         raise ValueError(f'Invalid data in file "{full_filename}" thowing error: {e}') from e
 
   print('Data files are valid')
