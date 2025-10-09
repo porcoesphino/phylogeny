@@ -1376,7 +1376,6 @@ class Settings {
         missing_thumbnails.add(img)
       }
     }
-    console.log('Missing thumbnails', missing_thumbnails)
     return missing_thumbnails
   }
 
@@ -1385,7 +1384,6 @@ class Settings {
     const all_imgs = state.img_urls
 
     const installed_assets = all_imgs.size - missing_thumbnails.size
-    console.log(installed_assets, all_imgs.size)
 
     var installed_assets_el = document.getElementById(Settings.ID_INSTALLED_ASSETS)
     installed_assets_el.innerHTML = `(${installed_assets} / ${all_imgs.size})`
@@ -1393,6 +1391,9 @@ class Settings {
     if (missing_thumbnails.size > 0) {
       const uninstalled_badge_indicator = document.getElementById(Settings.ID_UNINSTALLED_BADGE)
       uninstalled_badge_indicator.style.visibility = 'visible'
+    } else {
+      const install_assets_button = document.getElementById(Settings.ID_INSTALL_ASSETS_BUTTON)
+      install_assets_button.disabled = true
     }
   }
 
