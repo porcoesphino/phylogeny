@@ -60,6 +60,7 @@ class OfflineCaching {
               const total = data.payload.total
               OfflineCaching.update_download_progress_indicator(progress, total)
               await OfflineCaching.update_memory_estimate()
+              await Settings.update_assets_progress(page.state)
               break
             default:
               throw Error(`Unknown event type sent as message: ${data}`)
@@ -420,10 +421,6 @@ class State {
     this.data_map = new DataMap()
     this._autocomplete_list = null
     this._img_set = null
-
-    // Note:Using localStorage since sessionStorage is partitioned by both origin and browser tabs
-    // and only kept for the duration of the page session.
-    this._offline_mode = (localStorage['offline_mode'] === "true") || false
   }
 
   get_tree_for_root_id(root_id) {
@@ -597,15 +594,6 @@ class State {
       this._img_set = new Set(img_list)
     }
     return this._img_set
-  }
-
-  get offline_mode() {
-    return this._offline_mode
-  }
-
-  set offline_mode(new_val) {
-    localStorage['offline_mode'] = new_val
-    this._offline_mode = new_val
   }
 }
 
@@ -1401,7 +1389,7 @@ class Settings {
     var installed_assets_el = document.getElementById(Settings.ID_INSTALLED_ASSETS)
     installed_assets_el.innerHTML = `(${installed_assets} / ${all_imgs.size})`
 
-    if (!!missing_thumbnails.size) {
+    if (missing_thumbnails.size > 0) {
       const uninstalled_badge_indicator = document.getElementById(Settings.ID_UNINSTALLED_BADGE)
       uninstalled_badge_indicator.style.visibility = 'visible'
     }
@@ -1418,7 +1406,7 @@ class Settings {
     var delete_cache_button = document.getElementById(Settings.ID_DELETE_CACHE_BUTTON)
     var install_assets_button = document.getElementById(Settings.ID_INSTALL_ASSETS_BUTTON)
 
-    // Handle the case a user has just chosen to install the app and set offline_mode.
+    // Handle the case a user has just chosen to install the app by downloading offline assets.
     // Note: this is Chrome only and the installation probably hasn't finished.
     // This may not have an effect until a reload.
     window.addEventListener('appinstalled', async () => {
@@ -1695,16 +1683,6 @@ class Page {
 
       TreeBuilderAsTreeList.scroll_to_taxa(root, taxa, true /* shake */)
     }
-  
-    if (this.state.offline_mode) {
-      console.log('Loading all images for offline mode')
-      setTimeout(async () => {
-        await OfflineCaching.fetch_all_urls(this.state.img_urls)
-      })
-    } else {
-      console.log('Skipping image load - not in offline mode')
-    }
-    
   }
 }
 
