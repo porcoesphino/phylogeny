@@ -2,7 +2,7 @@
   {
     "name": "Acariformes",
     "parent": "Arachnida",
-    "rank": "",
+    "rank": "Superorder",
     "ipa": "",
     "etymology": "",
     "common": [
@@ -61,7 +61,7 @@
   {
     "name": "Solifugae",
     "parent": "Arachnida",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "etymology": "",
     "common": [
@@ -387,7 +387,7 @@
   {
     "name": "RTA clade",
     "parent": "Entelegynae",
-    "rank": "",
+    "rank": "Clade",
     "ipa": "",
     "etymology": "",
     "common": [
