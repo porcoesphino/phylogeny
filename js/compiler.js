@@ -1359,11 +1359,13 @@ class Accordion {
 }
 
 class Settings {
-  static ID_OFFLINE_MODE = 'offline-mode-toggle'
-  static ID_DELETE_CACHE = 'delete-cache-button'
+  static ID_INSTALL_ASSETS_BUTTON = 'install-assets-button'
+  static ID_DELETE_CACHE_BUTTON = 'delete-cache-button'
   static ID_CACHE_LIST = 'cache-list-indicator'
+  static ID_INSTALLED_ASSETS = 'installed-assets'
+  static ID_UNINSTALLED_BADGE = 'uninstalled-badge'
 
-  static async update_assets_progress(state) {
+  static async get_missing_thumbnails(state) {
     const cache_name_thumbnails = 'porcoesphino_pt_thumbnails';
     const thumbnail_cache = await window.caches.open(cache_name_thumbnails)
     const thumbnail_requests = await thumbnail_cache.keys()
@@ -1377,63 +1379,67 @@ class Settings {
       thumbnail_urls.add(trimmed_url)
     }
 
-    var cache_hits = 0
+    const missing_thumbnails = new Set()
     const all_imgs = state.img_urls
     for (const img of all_imgs) {
-      if (thumbnail_urls.has(img)) {
-        cache_hits += 1
+      if (!thumbnail_urls.has(img)) {
+        missing_thumbnails.add(img)
       }
     }
-    console.log(cache_hits, all_imgs.size)
+    return missing_thumbnails
+  }
+
+  static async update_assets_progress(state) {
+    const missing_thumbnails = await Settings.get_missing_thumbnails(state)
+    const all_imgs = state.img_urls
+
+    const installed_assets = all_imgs.size - missing_thumbnails.size
+    console.log(installed_assets, all_imgs.size)
+
+    var installed_assets_el = document.getElementById(Settings.ID_INSTALLED_ASSETS)
+    installed_assets_el.innerHTML = `(${installed_assets} / ${all_imgs.size})`
+
+    if (!!missing_thumbnails.size) {
+      const uninstalled_badge_indicator = document.getElementById(Settings.ID_UNINSTALLED_BADGE)
+      uninstalled_badge_indicator.style.visibility = 'visible'
+    }
+  }
+
+  static async download_missing_thumbnails(state) {
+    const progress_indicator_el = document.getElementById('progress')
+    progress_indicator_el.style.visibility = 'visible'
+    const missing_thumbnails = await Settings.get_missing_thumbnails(state)
+    await OfflineCaching.fetch_all_urls(missing_thumbnails)
   }
 
   static add_callbacks(state) {
-    var offline_mode_toggle = document.getElementById(Settings.ID_OFFLINE_MODE)
-    var delete_cache_button = document.getElementById(Settings.ID_DELETE_CACHE)
+    var delete_cache_button = document.getElementById(Settings.ID_DELETE_CACHE_BUTTON)
+    var install_assets_button = document.getElementById(Settings.ID_INSTALL_ASSETS_BUTTON)
 
-    // TODO: Some of this code sets state that's used elsewhere. Verify there is no race condition.
-    if (OfflineCaching.offline_support()) {
-      // If the media display mode matches an installed app set as offline.
-      if (window.matchMedia('(display-mode: standalone)').matches) {
-        state.offline_mode = true
-        offline_mode_toggle.checked = true
+    // Handle the case a user has just chosen to install the app and set offline_mode.
+    // Note: this is Chrome only and the installation probably hasn't finished.
+    // This may not have an effect until a reload.
+    window.addEventListener('appinstalled', async () => {
+      await Settings.download_missing_thumbnails(state)
+    });
 
-        offline_mode_toggle.disabled = true
-        offline_mode_toggle.labels[0].style.color = 'graytext'
-      } else {
-        // Use the value in local storage.
-        offline_mode_toggle.checked = state.offline_mode
-      }
-
-      // Handle the case a user has just chosen to install the app and set offline_mode.
-      // Note: this is Chrome only and the installation probably hasn't finished.
-      // This may not have an effect until a reload.
-      window.addEventListener('appinstalled', () => {
-        console.log('This is an installed app. Setting for offline use.');
-        offline_mode_toggle.checked = true
-      });
-    } else {
+    if (!OfflineCaching.offline_support()) {
       delete_cache_button.disabled = true
-
-      offline_mode_toggle.checked = false
-      state.offline_mode = false
-
-      offline_mode_toggle.disabled = true
-      offline_mode_toggle.labels[0].style.color = 'graytext'
+      install_assets_button.disabled = true
+      const uninstalled_badge_indicator = document.getElementById(Settings.ID_UNINSTALLED_BADGE)
+      uninstalled_badge_indicator.style.visibility = 'hidden'
+    } else {
+      setTimeout(async () => {
+        await Settings.update_assets_progress(state)
+        await OfflineCaching.update_memory_estimate()
+      })
     }
 
-    offline_mode_toggle.addEventListener('click', function () {
-      if (offline_mode_toggle.checked) {
-        state.offline_mode = true
-
-        window.alert('Refreshing to download data for offline use.')
-        window.location.reload();
-      } else {
-        state.offline_mode = false
-      }
+    install_assets_button.addEventListener('click', async () => {
+      await Settings.download_missing_thumbnails(state)
     })
 
-    delete_cache_button.addEventListener('click', async function (event) {
+    delete_cache_button.addEventListener('click', async () => {
       const theyAreSure = window.confirm('Are you sure you want to delete the app cache?')
       if (theyAreSure) {
         await OfflineCaching.delete_caches()
@@ -1445,10 +1451,6 @@ class Settings {
       } else {
         console.log('Aborting touching the local cache.')
       }
-    })
-
-    setTimeout(async () => {
-      await Settings.update_assets_progress(state)
     })
 
     setTimeout(async () => {
@@ -1467,10 +1469,6 @@ class Settings {
           cache_list_el.appendChild(li_el)
         }
       }
-    })
-
-    setTimeout(async () => {
-      await OfflineCaching.update_memory_estimate()
     })
   }
 }

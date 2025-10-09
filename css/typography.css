@@ -40,3 +40,12 @@ small {
   font-size: 0.65rem;
   padding: 0.65rem
 }
+
+#uninstalled-badge {
+  font-size: small;
+  height: 1rem;
+  background-color: rgb(255, 189, 115);
+  border-radius: 5px;
+  padding: 2px;
+  margin-left: 1rem;
+}
