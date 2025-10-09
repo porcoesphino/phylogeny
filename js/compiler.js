@@ -1373,9 +1373,14 @@ class Settings {
     const all_imgs = state.img_urls
     for (const img of all_imgs) {
       if (!thumbnail_urls.has(img)) {
-        const img_encoded = encodeURIComponent(img)
+        const img_prefix = 'thumbnails/'
+        if (!request.url.startsWith(img_prefix)) {
+          throw Error('Cache includes unexpected request: ' + request.url)
+        }
+        const img_suffix = request.url.substring(img_prefix.length)
+        const img_encoded = relative_prefix + encodeURIComponent(img_suffix)
         if (!thumbnail_urls.has(img_encoded)) {
-          const img_decoded = decodeURIComponent(img)
+          const img_decoded = relative_prefix + decodeURIComponent(img_suffix)
           if (!thumbnail_urls.has(img_decoded)) {
             console.log('Missing in cache', img, img_decoded, img_encoded)
             missing_thumbnails.add(img)
