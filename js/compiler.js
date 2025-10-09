@@ -925,6 +925,19 @@ class TreeBuilderAsTreeList {
     }, 100)
   }
 
+  _create_icon_button(prefix, icon_path, name) {
+    var link_el = document.createElement('a')
+    link_el.href = prefix + name
+    link_el.target = '_blank'
+    link_el.classList.add('icon-button')
+
+    var link_img_el = document.createElement('img')
+    link_img_el.src = icon_path
+
+    link_el.appendChild(link_img_el)
+    return link_el
+  }
+
   _get_element_for_node(node, node_map, level = 0) {
 
     if (typeof (node) == 'string') {
@@ -953,43 +966,33 @@ class TreeBuilderAsTreeList {
 
       name_parent_el.appendChild(name_el)
 
-      var wikipedia_link_el = document.createElement('a')
-      wikipedia_link_el.href = 'https://en.wikipedia.org/wiki/' + name
-      wikipedia_link_el.target = '_blank'
-      wikipedia_link_el.classList.add('icon-button')
-      var wikipedia_link_img_el = document.createElement('img')
-      wikipedia_link_img_el.src = './thumbnails/icon_wikipedia.jpg'
-      wikipedia_link_el.appendChild(wikipedia_link_img_el)
+      const wikipedia_link_el = this._create_icon_button(
+        'https://en.wikipedia.org/wiki/',
+        './thumbnails/icon_wikipedia.jpg',
+        name
+      )
       name_parent_el.appendChild(wikipedia_link_el)
 
-      var inaturalist_link_el = document.createElement('a')
-      inaturalist_link_el.href = 'https://www.inaturalist.org/search?source%5B%5D=taxa&q=' + name
-      inaturalist_link_el.target = '_blank'
-      inaturalist_link_el.classList.add('icon-button')
-
-      var inaturalist_link_img_el = document.createElement('img')
-      inaturalist_link_img_el.src = './thumbnails/icon_inaturalist.png'
-
-      inaturalist_link_el.appendChild(inaturalist_link_img_el)
+      const inaturalist_link_el = this._create_icon_button(
+        'https://www.inaturalist.org/search?source%5B%5D=taxa&q=',
+        './thumbnails/icon_inaturalist.png',
+        name
+      )
       name_parent_el.appendChild(inaturalist_link_el)
 
-      var eol_link_el = document.createElement('a')
-      eol_link_el.href = 'https://eol.org/search?utf8=%E2%9C%93&q=' + name
-      eol_link_el.target = '_blank'
-      eol_link_el.classList.add('icon-button')
-      var eol_link_img_el = document.createElement('img')
-      eol_link_img_el.src = './thumbnails/icon_eol.png'
-      eol_link_el.appendChild(eol_link_img_el)
+      const eol_link_el = this._create_icon_button(
+        'https://eol.org/search?utf8=%E2%9C%93&q=',
+        './thumbnails/icon_eol.png',
+        name
+      )
       name_parent_el.appendChild(eol_link_el)
 
       if (this._state.current_domain == 'animalia') {
-        var animaldiversity_link_el = document.createElement('a')
-        animaldiversity_link_el.href = 'https://animaldiversity.org/accounts/' + name
-        animaldiversity_link_el.target = '_blank'
-        animaldiversity_link_el.classList.add('icon-button')
-        var animaldiversity_link_img_el = document.createElement('img')
-        animaldiversity_link_img_el.src = './thumbnails/icon_animaldiversity.png'
-        animaldiversity_link_el.appendChild(animaldiversity_link_img_el)
+        const animaldiversity_link_el = this._create_icon_button(
+          'https://animaldiversity.org/accounts/',
+          './thumbnails/icon_animaldiversity.png',
+          name
+        )
         name_parent_el.appendChild(animaldiversity_link_el)
       }
 
