@@ -964,9 +964,19 @@ class TreeBuilderAsTreeList {
       wikipedia_link_el.appendChild(wikipedia_link_img_el)
       name_parent_el.appendChild(wikipedia_link_el)
 
+      var eol_link_el = document.createElement('a')
+      eol_link_el.href = 'https://eol.org/search?utf8=%E2%9C%93&q=' + name
+      eol_link_el.target = '_blank'
+      eol_link_el.classList.add('icon-button')
+
+      var eol_link_img_el = document.createElement('img')
+      eol_link_img_el.src = './thumbnails/icon_eol.png'
+
+      eol_link_el.appendChild(eol_link_img_el)
+      name_parent_el.appendChild(eol_link_el)
+
       if (this._state.current_domain == 'animalia') {
         var animaldiversity_link_el = document.createElement('a')
-        // TODO: Update the python scripts to update the json if there is 404.
         animaldiversity_link_el.href = 'https://animaldiversity.org/accounts/' + name
         animaldiversity_link_el.target = '_blank'
         animaldiversity_link_el.classList.add('icon-button')
