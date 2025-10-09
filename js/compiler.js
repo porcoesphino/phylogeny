@@ -1366,26 +1366,14 @@ class Settings {
         throw Error('Cache includes unexpected request: ' + request.url)
       }
       const trimmed_url = request.url.substring(request_prefix.length)
-      thumbnail_urls.add(trimmed_url)
+      thumbnail_urls.add(decodeURIComponent(trimmed_url))
     }
 
     const missing_thumbnails = new Set()
     const all_imgs = state.img_urls
     for (const img of all_imgs) {
-      if (!thumbnail_urls.has(img)) {
-        const img_prefix = 'thumbnails/'
-        if (!img.startsWith(img_prefix)) {
-          throw Error('Image in data file has unexpected prefix: ' + request.url)
-        }
-        const img_suffix = img.substring(img_prefix.length)
-        const img_encoded = img_prefix + encodeURIComponent(img_suffix)
-        if (!thumbnail_urls.has(img_encoded)) {
-          const img_decoded = img_prefix + decodeURIComponent(img_suffix)
-          if (!thumbnail_urls.has(img_decoded)) {
-            console.log('Missing in cache', img, img_decoded, img_encoded)
-            missing_thumbnails.add(img)
-          }
-        }
+      if (!thumbnail_urls.has(decodeURIComponent(img))) {
+        missing_thumbnails.add(img)
       }
     }
     console.log('Missing thumbnails', missing_thumbnails)
