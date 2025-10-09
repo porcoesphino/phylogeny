@@ -81,46 +81,67 @@
   {
     "name": "Parasitiformes",
     "parent": "Arachnida",
-    "rank": "",
+    "rank": "Superorder",
     "ipa": "",
     "etymology": "",
     "common": [
+      "mites",
+      "red mites",
+      "ticks"
     ],
-    "tag": "",
+    "tag": "The less diverse of the two superorders of mites. Many species are parasitic. About half of the species are predatory and cryptozoan, living in soil-litter, rotting wood, dung, carrion, nests or house dust. A few species have switched to grazing on fungi or ingesting spores or pollen.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ixodes_scapularis_P1170301a_%28white_background%29.png/120px-Ixodes_scapularis_P1170301a_%28white_background%29.png"
+      "https://upload.wikimedia.org/wikipedia/commons/b/b3/Opilioacarus_baeticus_2_%28cropped%29.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Varroa_destructor%2C_1_2019-09-06-19.12.07_ZS_PMax_UDR_%2848697155713%29.jpg/330px-Varroa_destructor%2C_1_2019-09-06-19.12.07_ZS_PMax_UDR_%2848697155713%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Dermanyssus_cfr_gallinae_%285021757436%29.jpg/330px-Dermanyssus_cfr_gallinae_%285021757436%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Sternothyrus_braueri_62962027_cropped.jpg/330px-Sternothyrus_braueri_62962027_cropped.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Ixodus_ricinus_5x.jpg/330px-Ixodus_ricinus_5x.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Tick_in_amber_carrying_spirochetes.jpg/330px-Tick_in_amber_carrying_spirochetes.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/29/Amblyomma_americanum_tick.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Argas_spec_columbidae.jpg/330px-Argas_spec_columbidae.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Klopa_med_parjenjem-fotoBlazVerbic.jpg/250px-Klopa_med_parjenjem-fotoBlazVerbic.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Ixodes_hexagonus_%28aka%29.jpg/250px-Ixodes_hexagonus_%28aka%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Nuttalliella_namaqua_cropped.png/250px-Nuttalliella_namaqua_cropped.png"
     ]
   },
   {
     "name": "Pseudoscorpiones",
     "parent": "Arachnida",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "etymology": "",
     "common": [
+      "false scorpions",
+      "book scorpions"
     ],
-    "tag": "",
+    "tag": "They are small arachnids with a flat, pear-shaped body, and pincer-like pedipalps that resemble those of scorpions. They usually range from 2 to 8 mm in length. They have eight legs with five to seven segments each. They spin silk from a gland in their jaws to make disk-shaped cocoons for mating, molting, or waiting out cold weather. Some species are arboreal, while others are phagophiles, eating parasites in an example of cleaning symbiosis.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Neobisium_sylvaticum_03.png/120px-Neobisium_sylvaticum_03.png"
+      "https://upload.wikimedia.org/wikipedia/commons/8/81/Neobisium_sylvaticum_03.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Ar_1.jpg/330px-Ar_1.jpg"
     ]
   },
   {
     "name": "Scorpiones",
     "parent": "Arachnida",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "etymology": "",
     "common": [
+      "scorpions"
     ],
-    "tag": "",
+    "tag": "They are predatory arachnids with eight legs, a pair of grasping pincers and a narrow, segmented tail, often carried in a characteristic forward curve over the back and always ending with a stinger. They primarily prey on insects and other invertebrates, but some species hunt vertebrates. They use their pincers to restrain and kill prey, or to prevent their own predation.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Buthus_mariefranceae_%2810.3897-zookeys.686.12206%29_Figure_1.jpg/120px-Buthus_mariefranceae_%2810.3897-zookeys.686.12206%29_Figure_1.jpg"
+      "https://upload.wikimedia.org/wikipedia/commons/f/fe/Scorpion_Photograph_By_Shantanu_Kuveskar.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/fe/Odonturus_dentatus.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Cercophonius_squama.jpg/330px-Cercophonius_squama.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Paravaejovis_spinigerus_002.jpg/330px-Paravaejovis_spinigerus_002.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/Scorpionwithyoung.JPG"
     ]
   },
   {
     "name": "Tetrapulmonata",
     "parent": "Arachnida",
-    "rank": "",
+    "rank": "Clade",
     "ipa": "",
     "etymology": "",
     "common": [
@@ -131,12 +152,12 @@
   {
     "name": "Araneae",
     "parent": "Tetrapulmonata",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "etymology": "",
     "common": [
     ],
-    "tag": "Eye count can vary from 8, 6, 4, 2 and 0.",
+    "tag": "They are air-breathing arthropods that have eight limbs, chelicerae with fangs generally able to inject venom, and spinnerets that extrude silk. The eye count can vary from 8, 6, 4, 2 and 0. The usual body segments found in arthropods are fused into two tagmata, the cephalothorax (prosoma) and the opisthosoma (abdomen) that is joined by a small, cylindrical pedicel.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Aptostichus_simus_Monterey_County.jpg/120px-Aptostichus_simus_Monterey_County.jpg"
     ]
@@ -144,21 +165,35 @@
   {
     "name": "Mygalomorphae",
     "parent": "Araneae",
-    "rank": "",
+    "rank": "Infraorder",
     "ipa": "",
     "etymology": "",
     "common": [
-      "trapdoor spiders",
       "tarantulas",
-      "Australian funnel web spiders"
+      "Australian funnel web spiders",
+      "mouse spiders",
+      "trapdoor spiders"
     ],
-    "tag": "They have chelicerae (fangs) that point straight down. Many members are known as trapdoor spiders",
-    "imgs": []
+    "tag": "They have chelicerae (fangs) that point straight down, parallel to the long axis of the spider's body, and only have one orientation they can employ during prey capture. Many members are known as trapdoor spiders. Many are well adapted to killing other large arthropods and will also sometimes kill small mammals, birds, and reptiles.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Brachypelma_vagans_p1.jpg/330px-Brachypelma_vagans_p1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Lasiodora_parahybana_2009_G03.jpg/330px-Lasiodora_parahybana_2009_G03.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Mojave_Tarantula.jpg/330px-Mojave_Tarantula.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Lasiodora_parahybana%2C_claws.JPG/330px-Lasiodora_parahybana%2C_claws.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Tarantula%2C_Attacking_Position%2C_Photo_by_Sascha_Grabow.jpg/250px-Tarantula%2C_Attacking_Position%2C_Photo_by_Sascha_Grabow.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/5/54/Cyclosternum_fasciatum%2C_eye_region.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/9f/Atrax_robustus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Male_Missulena_occatoria_spider_-_cropped.JPG/250px-Male_Missulena_occatoria_spider_-_cropped.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Mouse_spider02.jpg/330px-Mouse_spider02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Male_Mouse_Spider.jpg/330px-Male_Mouse_Spider.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Trittame_loki_471756472.jpg/250px-Trittame_loki_471756472.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Idiops_castaneus_298356289_537412358.jpg/330px-Idiops_castaneus_298356289_537412358.jpg"
+    ]
   },
   {
     "name": "Araneomorphae",
     "parent": "Araneae",
-    "rank": "",
+    "rank": "Infraorder",
     "ipa": "",
     "etymology": "",
     "common": [
@@ -169,42 +204,101 @@
   {
     "name": "Synspermiata",
     "parent": "Araneomorphae",
-    "rank": "",
+    "rank": "Clade",
     "ipa": "",
     "etymology": "",
     "common": [
+      "coneweb spiders",
+      "false violin spiders",
+      "woodlouse hunters",
+      "sowbug-eating spiders",
+      "cell spiders",
+      "goblin spiders",
+      "cellar spiders",
+      "daddy long-legs spiders",
+      "carpenter spiders",
+      "vibrating spiders",
+      "gyrating spiders",
+      "long daddies",
+      "angel spiders",
+      "plectreurid spiders",
+      "tube-dwelling spiders",
+      "recluse spiders",
+      "violin spiders",
+      "brown recluse spiders",
+      "sand spiders",
+      "assassin spiders",
+      "long-legged cave spiders",
+      "armored spiders"
     ],
-    "tag": "",
-    "imgs": []
+    "tag": "United by having simpler genitalia than other araneomorph spiders, lacking a cribellum, and sharing an evolutionary history of synspermia – a particular way in which spermatozoa are grouped together when transferred to the female. There is unusual in the degree to which the eye number varies being either 8, 6, 4, or 2. Some species exhibit presocial behaviour, in which mature spiders live together and assist the young with food.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Orthonops_lapanus_535351835.jpg/330px-Orthonops_lapanus_535351835.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/ce/Diguetia_canities.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Drymusa.jpg/250px-Drymusa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Izithunzi_capense_171403079.jpg/330px-Izithunzi_capense_171403079.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Dysdera_crocata_458284237.jpg/330px-Dysdera_crocata_458284237.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Dysdera_fg03.jpg/250px-Dysdera_fg03.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Tapinesthis_inermis_female_D.jpg/250px-Tapinesthis_inermis_female_D.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Azanialobus_lawrencei_307210059_554091822.jpg/330px-Azanialobus_lawrencei_307210059_554091822.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Periegops_suterii_311469976.jpg/330px-Periegops_suterii_311469976.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Cellar_Spider_preying_upon_house_spider.jpg/330px-Cellar_Spider_preying_upon_house_spider.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Female_Crossopriza_lyoni_-_Mindanao%2C_Philippines_1.jpg/330px-Female_Crossopriza_lyoni_-_Mindanao%2C_Philippines_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/28/Physocyclus.globosus.female.2.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Micropholcus_fauroti.jpg/330px-Micropholcus_fauroti.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Modisimus_texanus.jpg/330px-Modisimus_texanus.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/93/Male_plectreurid_%28Marshal_Hedin%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Scytodes_thoracica_%28aka%29.jpg/330px-Scytodes_thoracica_%28aka%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/8c/Scytodes.fusca.female.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Scytodes_glabula_3.jpg/330px-Scytodes_glabula_3.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Araña_Mandaio.07-0-2006.jpg/250px-Araña_Mandaio.07-0-2006.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Segestria_bavarica_male.jpg/250px-Segestria_bavarica_male.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Brown_recluse_spider%2C_Loxosceles_reclusa.jpg/330px-Brown_recluse_spider%2C_Loxosceles_reclusa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Hexophthalma_hahni_305451503_550742892.jpg/330px-Hexophthalma_hahni_305451503_550742892.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Hexophthalma_hahni_305451503_550744608.jpg/330px-Hexophthalma_hahni_305451503_550744608.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Unidentified_Sicarius%2C_female.jpg/250px-Unidentified_Sicarius%2C_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Telema_tenella.jpg/330px-Telema_tenella.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Ablemma_contrita_female_1.jpg/250px-Ablemma_contrita_female_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c7/Trogloraptor_marchingtoni_%28Female%29%3B_captive_specimen.jpg"
+    ]
   },
   {
     "name": "Palpimanoidea",
     "parent": "Araneomorphae",
-    "rank": "",
+    "rank": "Superfamily",
     "ipa": "",
     "etymology": "",
     "common": [
-      "assassin spiders"
+      "assassin spiders",
+      "palp-footed spiders"
     ],
-    "tag": "Many specialize in preying on other spiders.",
+    "tag": "Many specialize in preying on other spiders. They often have enlarged front legs, which enable them to both seize and manipulate prey. Their heads are raised up on a \"neck\" with long chelicerae (\"jaws\").",
     "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Huttonia_sp._male.jpg/250px-Huttonia_sp._male.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Zearchaea_clypeata_female.jpg/330px-Zearchaea_clypeata_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Diaphorocellus_biplagiatus_297526137_535836028.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Austrarchaea_raveni_353492909.jpg/330px-Austrarchaea_raveni_353492909.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Zephyrarchaea.jpg/250px-Zephyrarchaea.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Eriauchenius_pauliani_%2810.3897-zookeys.727.20222%29_Figure_18.jpg/250px-Eriauchenius_pauliani_%2810.3897-zookeys.727.20222%29_Figure_18.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Palpimanus_transvaalicus_308353429_556306020.jpg/330px-Palpimanus_transvaalicus_308353429_556306020.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Palpimanus_paroculus_305448567_550738457.jpg/330px-Palpimanus_paroculus_305448567_550738457.jpg"
     ]
   },
   {
     "name": "Entelegynae",
     "parent": "Araneomorphae",
-    "rank": "",
+    "rank": "Clade",
     "ipa": "",
     "etymology": "",
     "common": [
     ],
-    "tag": "Females have a genital plate and a \"flow through\" fertilization system; males have complex palpal bulbs.",
+    "tag": "Females have a genital plate and three external openings in the female's body. Sperm is injected via one or other of the two separate copulatory openings and then enters the spermathecae. The other external opening is where the fertilized egg emerges. Males have complex palpal bulbs.",
     "imgs": []
   },
   {
     "name": "Araneoidea",
     "parent": "Entelegynae",
-    "rank": "",
+    "rank": "Superfamily",
     "ipa": "",
     "etymology": "",
     "common": [
@@ -256,24 +350,39 @@
   {
     "name": "Eresidae",
     "parent": "Entelegynae",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
+      "velvet spiders",
+      "ladybird spiders"
     ],
-    "tag": "",
-    "imgs": []
+    "tag": "They can look quite smooth and velvety and usually live in silken tubes under objects, or underground, with some species building silken nests. They are almost entirely limited to the Old World, with the exception of one species known from Brazil.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Colonial_Spiders_%28Stegodyphus_dumicola%29_%286607372243%29%2C_crop1.jpg/330px-Colonial_Spiders_%28Stegodyphus_dumicola%29_%286607372243%29%2C_crop1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Eresus_fg03.jpg/330px-Eresus_fg03.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/23/Dresserus_colsoni_302560865_545286026.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Gandanameno_purcelli_313759681_566637883.jpg/330px-Gandanameno_purcelli_313759681_566637883.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/90/Loureedia_annulipes_male1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Adonea_eye_group.svg/330px-Adonea_eye_group.svg.png"
+    ]
   },
   {
     "name": "Titanoecidae",
     "parent": "Entelegynae",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
     ],
-    "tag": "",
-    "imgs": []
+    "tag": "They are mostly dark-colored builders of \"woolly\" (cribellate) silk webs. Several species are found at relatively high altitudes in mountain ranges and may be very common in such habitats.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/d/db/Goeldia_patellaris_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Nurscia_albomaculata.jpg/330px-Nurscia_albomaculata.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/94/Pandava.laminata.female.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/1/1f/Titanoeca_americana_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c9/Titanoeca_quadriguttata.jpg"
+    ]
   },
   {
     "name": "RTA clade",
@@ -289,37 +398,56 @@
   {
     "name": "Zodariidae",
     "parent": "RTA clade",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
+      "ant spiders"
     ],
-    "tag": "",
+    "tag": "Most species are daytime hunters and live together with ants, mimicking their behavior and sometimes even their chemical traits.",
     "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/4/4e/Mallinella.fulvipes.female.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Caesetius_-_Rudolph_Steenkamp_-_176367867.jpeg/330px-Caesetius_-_Rudolph_Steenkamp_-_176367867.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Psammorygma_aculeatum_336191094.jpg/330px-Psammorygma_aculeatum_336191094.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/21/Mallinella.shimojanai.female.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Diores_russelli_308129210_555876139.jpg/330px-Diores_russelli_308129210_555876139.jpg"
+
     ]
   },
   {
     "name": "Sparassidae",
     "parent": "RTA clade",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
+      "huntsman spiders",
+      "giant crab spiders",
+      "wood spiders",
+      "rain spiders",
+      "lizard-eating spiders"
     ],
-    "tag": "",
+    "tag": "Many species grow very large. Their legs bear fairly prominent spines. They tend to live under rocks, bark and similar shelters. They hunt and forage for food with a diet consisting primarily of insects and other invertebrates, and occasionally small skinks and geckos. They are able to travel extremely quickly.",
     "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Sparassidae_Palystes_castaneus_mature_female_9923s.jpg/330px-Sparassidae_Palystes_castaneus_mature_female_9923s.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Olios_argelasius_MHNT.jpg/330px-Olios_argelasius_MHNT.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/ac/Huntsman-Spider-Delena-cancerides.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Huntsman_spider_with_meal.jpg/330px-Huntsman_spider_with_meal.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Huntsman_Spider_feeding_Grasshopper.jpg/330px-Huntsman_Spider_feeding_Grasshopper.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Huntsman_spider_on_log.jpg/330px-Huntsman_spider_on_log.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Huntsman_spider_%28Sparassidae_sp.%29_Ankasa.jpg/330px-Huntsman_spider_%28Sparassidae_sp.%29_Ankasa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Huntsman_Spider_egg_sac_hatching_23_Jan_11.JPG/250px-Huntsman_Spider_egg_sac_hatching_23_Jan_11.JPG"
     ]
   },
   {
     "name": "Lycosidae",
     "parent": "RTA clade",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
-      "wandering spiders",
       "wolf spiders",
-      "huntsman spiders",
+      "wandering spiders",
       "lynx spiders",
       "nursery web spiders",
       "flower crab spiders",
@@ -331,8 +459,6 @@
       "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ctenus_caligineus_302557374_545280326.jpg/250px-Ctenus_caligineus_302557374_545280326.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wolf_spider_tunnel.jpg/330px-Wolf_spider_tunnel.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Wolf_eyes_for_guide.jpg/330px-Wolf_eyes_for_guide.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Sparassidae_Palystes_castaneus_mature_female_9923s.jpg/330px-Sparassidae_Palystes_castaneus_mature_female_9923s.jpg",
-      "https://upload.wikimedia.org/wikipedia/commons/a/ac/Huntsman-Spider-Delena-cancerides.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Oxyopes_salticus_Kaldari_02.jpg/330px-Oxyopes_salticus_Kaldari_02.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/LynxSpider_Hunt_macrogiants_E.jpg/250px-LynxSpider_Hunt_macrogiants_E.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/LynxSpider_Hunt_macrogiants_F.jpg/250px-LynxSpider_Hunt_macrogiants_F.jpg",
@@ -356,7 +482,7 @@
   {
     "name": "Dionycha",
     "parent": "RTA clade",
-    "rank": "",
+    "rank": "Clade",
     "ipa": "",
     "etymology": "",
     "common": [
@@ -367,51 +493,88 @@
   {
     "name": "Clubionidae",
     "parent": "Dionycha",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
+      "sac spiders"
     ],
-    "tag": "",
-    "imgs": []
+    "tag": "They are nocturnal, sac-building hunting spiders with a near-worldwide distribution.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Clubiona_trivialis2.jpg/330px-Clubiona_trivialis2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Clubiona_durbana_315168323_569327015.jpg/330px-Clubiona_durbana_315168323_569327015.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Elaver_excepta_297602220.jpg/250px-Elaver_excepta_297602220.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Porrhoclubiona_leucaspis.jpg/250px-Porrhoclubiona_leucaspis.jpg"
+    ]
   },
   {
     "name": "Gnaphosidae",
     "parent": "Dionycha",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
+      "ground spiders"
     ],
-    "tag": "",
-    "imgs": []
+    "tag": "Generally characterized by having barrel-shaped anterior spinnerets that are one spinneret diameter apart. The main exception are some ant-mimicking species. All species lack a prey-capture web and generally run prey down on the surface. They entangle their prey in swathing attacks, often applying their webbing to their prey's legs and mouths. They hunt at night and spend the day in a silken retreat.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/e/e2/Callilepis_nocturna.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Ammoxenus_amphalodes_301149800_542654034.jpg/330px-Ammoxenus_amphalodes_301149800_542654034.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Ammoxenus_amphalodes_301149489_542653466.jpg/330px-Ammoxenus_amphalodes_301149489_542653466.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Asemesthes_flavipes_297522781_535830530.jpg/250px-Asemesthes_flavipes_297522781_535830530.jpg"
+    ]
   },
   {
     "name": "Corinnidae",
     "parent": "Dionycha",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
+      "corinnid sac spiders"
     ],
-    "tag": "",
-    "imgs": []
+    "tag": "Phylogenetic studies have made the group stricter but the group was known for having eight eyes arranged in two rows, conical anterior spinnerets that touch and for being wandering predators that build silken retreats, or sacs, usually on plant terminals, between leaves, under bark or under rocks. Some species mimic ants and velvet ants.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/3/3d/Copa_flavoplumosa_male_-_ZooKeys-276-001-g001-3.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Graptartia_granulosa_438844712.jpg/330px-Graptartia_granulosa_438844712.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Pronophaea_natalica_-_Sunčana_Bradley_-_353831943.jpeg/330px-Pronophaea_natalica_-_Sunčana_Bradley_-_353831943.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Coenoptychus_mutillicus_177260866.jpg/330px-Coenoptychus_mutillicus_177260866.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ant-mimic_Spider_-_Castianeira_longipalpa%2C_SERC%2C_Edgewater%2C_Maryland.jpg/330px-Ant-mimic_Spider_-_Castianeira_longipalpa%2C_SERC%2C_Edgewater%2C_Maryland.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Castianeira_longipalpa%2C_Woodbridge%2C_Virginia.jpg/250px-Castianeira_longipalpa%2C_Woodbridge%2C_Virginia.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Battalus_wallum_176745825.jpg/330px-Battalus_wallum_176745825.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Merenius_alberti_299747383_540037796.jpg/250px-Merenius_alberti_299747383_540037796.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Nyssus_coloripes_74386182.jpg/250px-Nyssus_coloripes_74386182.jpg"
+    ]
   },
   {
     "name": "Philodromidae",
     "parent": "Dionycha",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
+      "philodromid crab spiders",
+      "running crab spiders"
     ],
-    "tag": "",
-    "imgs": []
+    "tag": "They have a crab-like shape due to the first two pairs of legs being oriented sideways (laterigrade) but are not closely related to garden crab spiders (Thomisidae). They have scopula only at the tips of the tarsi and their eyes are in two curved rows with the posterior row wider than the anterior row. They are active ambush predators and are often found on the stems and leaves of plants.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Ebo_pepinensis%2C_female_%28F_Philodromidae%29_%284131858085%29.jpg/330px-Ebo_pepinensis%2C_female_%28F_Philodromidae%29_%284131858085%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Gephyrota_glauca_2024_06_30_15_49_46_iN_227105452.jpg/330px-Gephyrota_glauca_2024_06_30_15_49_46_iN_227105452.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Hirriusa_bidentata_298372205_537443454.jpg/330px-Hirriusa_bidentata_298372205_537443454.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Paracleocnemis%2C_Puerto_Madero%2C_CABA%2C_Argentina_imported_from_iNaturalist_photo_91152209.jpg/330px-Paracleocnemis%2C_Puerto_Madero%2C_CABA%2C_Argentina_imported_from_iNaturalist_photo_91152209.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/b/bc/Petrichus_sp.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Metallic_Crab_Spider_-_Philodromus_marxi%2C_Leesylvania_State_Park%2C_Woodbridge%2C_Virginia.jpg/250px-Metallic_Crab_Spider_-_Philodromus_marxi%2C_Leesylvania_State_Park%2C_Woodbridge%2C_Virginia.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f8/Philodromus.aureolus.male.6.jpg/330px-Philodromus.aureolus.male.6.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Philodromidae_-_Philodromus_sp..jpg/330px-Philodromidae_-_Philodromus_sp..jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Philodromidae_-_Tibellus_sp..JPG/330px-Philodromidae_-_Tibellus_sp..JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Philodromid-crab-spider-frontal-mze.jpg/330px-Philodromid-crab-spider-frontal-mze.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Running_crab_spider_%28Philodromidae%29_on_Norfolk_Island_pine_leaf_%28Araucaria_heterophylla%2C_Jardim_da_Praça_de_Londres%2C_Lisbon%2C_Portugal_julesvernex2.jpg/330px-Running_crab_spider_%28Philodromidae%29_on_Norfolk_Island_pine_leaf_%28Araucaria_heterophylla%2C_Jardim_da_Praça_de_Londres%2C_Lisbon%2C_Portugal_julesvernex2.jpg"
+    ]
   },
   {
     "name": "Salticidae",
     "parent": "Dionycha",
-    "rank": "",
+    "rank": "Family",
     "ipa": "",
     "etymology": "",
     "common": [
@@ -430,27 +593,40 @@
   {
     "name": "Amblypygi",
     "parent": "Tetrapulmonata",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "etymology": "",
     "common": [
+      "whip-spiders",
+      "tailless whip-scorpions"
     ],
-    "tag": "",
+    "tag": "They possess no silk glands or venom. They are found in tropical and subtropical regions worldwide, mainly in warm and humid environments. They like to stay protected and hidden within leaf litter, caves, or underneath bark. Some species are subterranean; all are nocturnal. They have eight legs, but use only six for walking, often in a crab-like, sideways fashion. The front pair of legs are modified for use as antennae-like feelers. They mostly eat arthropod prey, but sometimes feed on vertebrates. They grind and chew the prey prior to ingestion.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flickr_-_ggallice_-_Tailless_whip-scorpion%2C_La_Muerta.png/120px-Flickr_-_ggallice_-_Tailless_whip-scorpion%2C_La_Muerta.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Heterophrynus_02.jpg/330px-Heterophrynus_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/AmblypygiDorsal.jpg/330px-AmblypygiDorsal.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Damon_diadema_female.jpg/250px-Damon_diadema_female.jpg"
     ]
   },
   {
     "name": "Uropygi",
     "parent": "Tetrapulmonata",
-    "rank": "",
+    "rank": "Order",
     "ipa": "",
     "etymology": "",
     "common": [
+      "whip scorpions",
+      "vinegaroons"
     ],
-    "tag": "",
+    "tag": "They resemble true scorpions, with a whiplike tail, and when attacked can discharge an offensive, vinegar-smelling liquid. They use only six legs for walking, with the first two legs serving as antennae-like sensory organs. All species also have large scorpion-like pedipalps (pincers). They have one pair of median eyes at the front of the cephalothorax and up till five pairs of lateral eyes on each side of the head. They are carnivorous, nocturnal hunters feeding mostly on insects, millipedes, scorpions, and terrestrial isopods, but sometimes on worms and slugs. The prey is crushed between special teeth while eating.",
     "imgs": [
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Whip_Scorpion_body_%289672115742%29_%28white_background%29.png/120px-Whip_Scorpion_body_%289672115742%29_%28white_background%29.png"
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Thelyphonidae_-_Hypoctonus_formosus.JPG/250px-Thelyphonidae_-_Hypoctonus_formosus.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Labochirus_tauricornis.jpg/330px-Labochirus_tauricornis.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Vinegaroon_-_Whip_Spider_%28Mastigoproctus_baracoensis%29_%288576421119%29.jpg/330px-Vinegaroon_-_Whip_Spider_%28Mastigoproctus_baracoensis%29_%288576421119%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Thelyphonellus_amazonicus_178761753.jpg/330px-Thelyphonellus_amazonicus_178761753.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Malaysian_Vinegaroon_%28Thelyphonus_sp.%29_%288723019285%29.jpg/330px-Malaysian_Vinegaroon_%28Thelyphonus_sp.%29_%288723019285%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Typopeltis_crucifer_at_Fuxing%2C_Taoyuan_2022-06-12_%28cropped%29.jpg/330px-Typopeltis_crucifer_at_Fuxing%2C_Taoyuan_2022-06-12_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/6/60/Vinegaroon_-_Mastigoproctus_giganteus_with_Slate_Millipede.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Mastigoproctus_giganteus_0008_L.D.jpg/330px-Mastigoproctus_giganteus_0008_L.D.jpg"
     ]
   }
 ]
