@@ -565,7 +565,11 @@ class State {
   }
 
   get current_domain() {
-    return this.menu_map.get_metadata(this.root_name).domain
+    const menu_metadata = this.menu_map.get_metadata(this.root_name)
+    if (!menu_metadata) {
+      return ''
+    }
+    return menu_metadata.domain
   }
 
   get autocomplete_list() {
