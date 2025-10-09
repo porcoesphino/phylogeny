@@ -1363,6 +1363,30 @@ class Settings {
   static ID_DELETE_CACHE = 'delete-cache-button'
   static ID_CACHE_LIST = 'cache-list-indicator'
 
+  static async update_assets_progress(state) {
+    const cache_name_thumbnails = 'porcoesphino_pt_thumbnails';
+    const thumbnail_cache = await window.caches.open(cache_name_thumbnails)
+    const thumbnail_requests = await thumbnail_cache.keys()
+    const thumbnail_urls = new Set()
+    const request_prefix = window.location.origin + window.location.pathname
+    for (const request of thumbnail_requests) {
+      if (!request.url.startsWith(request_prefix)) {
+        throw Error('Cache includes unexpected request: ' + request.url)
+      }
+      const trimmed_url = request.url.substring(request_prefix.length)
+      thumbnail_urls.add(trimmed_url)
+    }
+
+    var cache_hits = 0
+    const all_imgs = state.img_urls
+    for (const img of all_imgs) {
+      if (thumbnail_urls.has(img)) {
+        cache_hits += 1
+      }
+    }
+    console.log(cache_hits, all_imgs.size)
+  }
+
   static add_callbacks(state) {
     var offline_mode_toggle = document.getElementById(Settings.ID_OFFLINE_MODE)
     var delete_cache_button = document.getElementById(Settings.ID_DELETE_CACHE)
@@ -1421,6 +1445,10 @@ class Settings {
       } else {
         console.log('Aborting touching the local cache.')
       }
+    })
+
+    setTimeout(async () => {
+      await Settings.update_assets_progress(state)
     })
 
     setTimeout(async () => {
