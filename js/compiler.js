@@ -1373,7 +1373,13 @@ class Settings {
     const all_imgs = state.img_urls
     for (const img of all_imgs) {
       if (!thumbnail_urls.has(img)) {
-        missing_thumbnails.add(img)
+        const img_encoded = encodeURIComponent(img)
+        if (!thumbnail_urls.has(img_encoded)) {
+          const img_decoded = decodeURIComponent(img)
+          if (!thumbnail_urls.has(img_decoded)) {
+            missing_thumbnails.add(img)
+          }
+        }
       }
     }
     console.log('Missing thumbnails', missing_thumbnails)
