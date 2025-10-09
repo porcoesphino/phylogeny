@@ -996,6 +996,15 @@ class TreeBuilderAsTreeList {
         name_parent_el.appendChild(animaldiversity_link_el)
       }
 
+      if (node.rank == 'Order' && this._state.tree_range == 'insecta') {
+        const animaldiversity_link_el = this._create_icon_button(
+          'https://genent.cals.ncsu.edu/insect-identification/order-',
+          './thumbnails/icon_ncstate.png',
+          name
+        )
+        name_parent_el.appendChild(animaldiversity_link_el)
+      }
+
       if (node.hasOwnProperty('ipa') && !!node.ipa) {
 
         var ipa_parent_el = document.createElement('span')
