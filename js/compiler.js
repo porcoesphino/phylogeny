@@ -1396,6 +1396,8 @@ class Settings {
   }
 
   static async download_missing_thumbnails(state) {
+    const install_assets_button = document.getElementById(Settings.ID_INSTALL_ASSETS_BUTTON)
+    install_assets_button.disabled = true
     const progress_indicator_el = document.getElementById('progress')
     progress_indicator_el.style.visibility = 'visible'
     const missing_thumbnails = await Settings.get_missing_thumbnails(state)
