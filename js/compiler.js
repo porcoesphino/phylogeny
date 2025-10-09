@@ -564,6 +564,10 @@ class State {
     return this._name_to_node
   }
 
+  get current_domain() {
+    return this.menu_map.get_metadata(this.root_name).domain
+  }
+
   get autocomplete_list() {
     if (!this._autocomplete_list) {
       var taxa_list = this.data_map.taxa_to_root.keys()
@@ -951,7 +955,6 @@ class TreeBuilderAsTreeList {
 
       var wikipedia_link_el = document.createElement('a')
       wikipedia_link_el.href = 'https://en.wikipedia.org/wiki/' + name
-      wikipedia_link_el.classList.add('taxa')
       wikipedia_link_el.target = '_blank'
       wikipedia_link_el.classList.add('icon-button')
 
@@ -960,6 +963,20 @@ class TreeBuilderAsTreeList {
 
       wikipedia_link_el.appendChild(wikipedia_link_img_el)
       name_parent_el.appendChild(wikipedia_link_el)
+
+      if (this._state.current_domain == 'animalia') {
+        var animaldiversity_link_el = document.createElement('a')
+        // TODO: Update the python scripts to update the json if there is 404.
+        animaldiversity_link_el.href = 'https://animaldiversity.org/accounts/' + name
+        animaldiversity_link_el.target = '_blank'
+        animaldiversity_link_el.classList.add('icon-button')
+
+        var animaldiversity_link_img_el = document.createElement('img')
+        animaldiversity_link_img_el.src = './thumbnails/icon_animaldiversity.png'
+
+        animaldiversity_link_el.appendChild(animaldiversity_link_img_el)
+        name_parent_el.appendChild(animaldiversity_link_el)
+      }
 
       if (node.hasOwnProperty('ipa') && !!node.ipa) {
 
