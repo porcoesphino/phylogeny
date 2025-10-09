@@ -1374,10 +1374,10 @@ class Settings {
     for (const img of all_imgs) {
       if (!thumbnail_urls.has(img)) {
         const img_prefix = 'thumbnails/'
-        if (!request.url.startsWith(img_prefix)) {
-          throw Error('Cache includes unexpected request: ' + request.url)
+        if (!img.startsWith(img_prefix)) {
+          throw Error('Image in data file has unexpected prefix: ' + request.url)
         }
-        const img_suffix = request.url.substring(img_prefix.length)
+        const img_suffix = img.substring(img_prefix.length)
         const img_encoded = relative_prefix + encodeURIComponent(img_suffix)
         if (!thumbnail_urls.has(img_encoded)) {
           const img_decoded = relative_prefix + decodeURIComponent(img_suffix)
