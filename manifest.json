@@ -1,7 +1,7 @@
 {
   "short_name": "PT",
   "name": "Simplified phylogentic tree",
-  "version": "25.07.20.1",
+  "version": "24.10.08.1",
   "icons": [
     {
       "src": "/phylogeny/favicon_tree_192.png",
