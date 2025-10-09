@@ -300,6 +300,7 @@
     "parent": "Chelicerata",
     "rank": "Class",
     "ipa": "",
+    "tag": "They have eight legs attached to the cephalothorax. In some species the frontmost pair of legs has converted to a sensory function, while in others, different appendages can grow large enough to take on the appearance of extra pairs of legs.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Opiliones_harvestman.jpg/330px-Opiliones_harvestman.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Plexippus_paykulli_-_50959617953.jpg/330px-Plexippus_paykulli_-_50959617953.jpg",
@@ -311,8 +312,12 @@
       "scorpions",
       "pseudoscorpions",
       "harvestmen",
-      "chiggers",
-      "mites"
+      "camel spiders",
+      "whip spiders",
+      "vinegaroons",
+      "ticks",
+      "mites",
+      "chiggers"
     ],
     "card": 2
   }

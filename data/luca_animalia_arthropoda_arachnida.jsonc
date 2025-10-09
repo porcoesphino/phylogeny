@@ -1,0 +1,485 @@
+[
+  {
+    "name": "Acariformes",
+    "parent": "Arachnida",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "mites",
+      "house dust mites",
+      "rust mites",
+      "gall mites"
+    ],
+    "tag": "The more diverse of the two superorders of mites. Members ingest solid food, being mainly microherbivores, fungivores and detritivores. Some are plant parasite species. Many species are also predators, fungivores, and animal parasites.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Trombidium_holosericeum_%28aka%29.jpg/250px-Trombidium_holosericeum_%28aka%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Yellow_mite_%28Tydeidae%29%2C_Lorryia_formosa.jpg/330px-Yellow_mite_%28Tydeidae%29%2C_Lorryia_formosa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Glycyphagus-spp-mite.jpg/250px-Glycyphagus-spp-mite.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Phthiracarid.jpg/330px-Phthiracarid.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Tetranychus_urticae_with_silk_threads.jpg/330px-Tetranychus_urticae_with_silk_threads.jpg"
+    ]
+  },
+  {
+    // Their phylogenetic position within the Arachnida is disputed.
+    "name": "Opiliones",
+    "parent": "Arachnida",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "harvestmen",
+      "harvesters",
+      "daddy long legs"
+    ],
+    "tag": "Known for having exceptionally long legs relative to their body size (but this is not true of all species). The connection between the cephalothorax and abdomen is broad, so that the body appears to be a single oval structure. They have no venom glands or silk glands. They can swallow chunks of solid food, not only liquids. They tend to have a single pair of camera-type eyes in the middle of the head.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Opiliones_harvestman.jpg/330px-Opiliones_harvestman.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Pseudo-araña_nocturna_%28opilion%29.jpg/330px-Pseudo-araña_nocturna_%28opilion%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Harvester_body_close_up.jpg/330px-Harvester_body_close_up.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Harvestman_Opiliones_grooming_2016-05-15.jpg/330px-Harvestman_Opiliones_grooming_2016-05-15.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Opiliones_20100626.jpg/330px-Opiliones_20100626.jpg"
+    ]
+  },
+  {
+    "name": "Ricinulei",
+    "parent": "Arachnida",
+    "rank": "Order",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "hooded tickspiders"
+    ],
+    "tag": "They inhabit the leaf litter of rainforest floors, as well as caves, where they search for prey with their elongate sensory second, longer, leg pair. They are predatory; eating small arthropods. Extant species have no eyes. They have a \"hood\" which can be raised and lowered over the head. When lowered, it covers the mouth and the chelicerae.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Cryptocellus_goodnighti.jpg/330px-Cryptocellus_goodnighti.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/8/8c/Ricinulei_from_Fernandez_%26_Giribet%2C_nymph_of_Ricinoides_atewa_%282015%29_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/ac/Ricinulei_from_Fernandez_%26_Giribet%2C_male_Ricinoides_karschii_from_Campo_Reserve%2C_Cameroon_%282015%29_%28cropped%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/28/Ricinulei_from_Fernandez_%26_Giribet%2C_male_Pseudocellus_pearsei_from_Grutas_Tzabnah%2C_Yucatán%2C_Mexico_%282015%29_%28cropped%29.jpg"
+    ]
+  },
+  {
+    "name": "Solifugae",
+    "parent": "Arachnida",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "solifuges",
+      "sun spiders",
+      "camel spiders",
+      "wind scorpions"
+    ],
+    "tag": "Most species live in dry climates and are carnivores that feed opportunistically on ground-dwelling arthropods and other small animals. They hunt their prey using three main hunting-strategies: Stalking, chasing, and ambushing. They lack both spinnerets and silk. The chelicerae serve as jaws, and in many species also are used for stridulation. They have a pair of large central eyes. The smaller males often have longer legs.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Sunspider.jpg/250px-Sunspider.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Solpugidae_showing_eyes_with_presumably_protective_bristles_2012_01_24_1019s.JPG/330px-Solpugidae_showing_eyes_with_presumably_protective_bristles_2012_01_24_1019s.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solfugid_in_veld_near_Uniondale_%28Western_Cape%29_1600.jpg/330px-Solfugid_in_veld_near_Uniondale_%28Western_Cape%29_1600.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Gluvia4.jpg/250px-Gluvia4.jpg"
+    ]
+  },
+  {
+    "name": "Parasitiformes",
+    "parent": "Arachnida",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Ixodes_scapularis_P1170301a_%28white_background%29.png/120px-Ixodes_scapularis_P1170301a_%28white_background%29.png"
+    ]
+  },
+  {
+    "name": "Pseudoscorpiones",
+    "parent": "Arachnida",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Neobisium_sylvaticum_03.png/120px-Neobisium_sylvaticum_03.png"
+    ]
+  },
+  {
+    "name": "Scorpiones",
+    "parent": "Arachnida",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Buthus_mariefranceae_%2810.3897-zookeys.686.12206%29_Figure_1.jpg/120px-Buthus_mariefranceae_%2810.3897-zookeys.686.12206%29_Figure_1.jpg"
+    ]
+  },
+  {
+    "name": "Tetrapulmonata",
+    "parent": "Arachnida",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "They have a set of paired book lungs occupying the second and third opisthosomal segments; a large postcerebral pharynx; prosomal endosternite with four segmental components; and a complex coxotrochanteral joint in the walking legs.",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Araneae",
+    "parent": "Tetrapulmonata",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "Eye count can vary from 8, 6, 4, 2 and 0.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Aptostichus_simus_Monterey_County.jpg/120px-Aptostichus_simus_Monterey_County.jpg"
+    ]
+  },
+  {
+    "name": "Mygalomorphae",
+    "parent": "Araneae",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "trapdoor spiders",
+      "tarantulas",
+      "Australian funnel web spiders"
+    ],
+    "tag": "They have chelicerae (fangs) that point straight down. Many members are known as trapdoor spiders",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Araneomorphae",
+    "parent": "Araneae",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "They have chelicerae (fangs) that point diagonally forward and cross in a pinching action.",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Synspermiata",
+    "parent": "Araneomorphae",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Palpimanoidea",
+    "parent": "Araneomorphae",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "assassin spiders"
+    ],
+    "tag": "Many specialize in preying on other spiders.",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Entelegynae",
+    "parent": "Araneomorphae",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "Females have a genital plate and a \"flow through\" fertilization system; males have complex palpal bulbs.",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Araneoidea",
+    "parent": "Entelegynae",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "araneoids",
+      "tangle-web spiders",
+      "cobweb spiders",
+      "comb-footed spiders",
+      "widow spiders",
+      "redback spiders",
+      "orb-weaver spiders",
+      "pirate spiders",
+      "ray spiders",
+      "sheet weavers",
+      "money spiders",
+      "triangular spiders"
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Argiope_catenulata_at_Kadavoor.jpg/250px-Argiope_catenulata_at_Kadavoor.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Orb_weaver_spiderlings.jpg/330px-Orb_weaver_spiderlings.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Araneus_apricus_29825863.jpg/250px-Araneus_apricus_29825863.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Arrow-shaped_Micrathena_-_Micrathena_sagittata%2C_Julie_Metz_Wetlands%2C_Woodbridge%2C_Virginia_-_8004905359.jpg/250px-Arrow-shaped_Micrathena_-_Micrathena_sagittata%2C_Julie_Metz_Wetlands%2C_Woodbridge%2C_Virginia_-_8004905359.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Argiope_sp.jpg/330px-Argiope_sp.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/Eriophora_sp_2.jpg/330px-Eriophora_sp_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Dippenaaria_luxurians_dorsal_view.jpg/330px-Dippenaaria_luxurians_dorsal_view.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/e/ee/Conoculus.lyugadinus.female.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Arkys_cornutus_1.jpg/250px-Arkys_cornutus_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/2c/Arkys.sp.new.guinea.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Matilda_australia_450296949.jpg/330px-Matilda_australia_450296949.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Drapetisca_alteranda.JPG/330px-Drapetisca_alteranda.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Ero_aphana_female_side.jpg/250px-Ero_aphana_female_side.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/d/d4/Mimetus.ryukyus.female.-.takinawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Mysmena_80038039.jpg/330px-Mysmena_80038039.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/4c/Male_Nesticus_sp._%28Marshal_Hedin%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Crassignatha_danaugirangensis_female%2C_dorsal_view.jpg/330px-Crassignatha_danaugirangensis_female%2C_dorsal_view.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Cepheia_longiseta_359150569.jpg/330px-Cepheia_longiseta_359150569.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Metellina_mengei_%28aka%29.jpg/250px-Metellina_mengei_%28aka%29.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Long-jawed_orb-weaver_spider_%28Tetragnatha_montana%29_female.jpg/330px-Long-jawed_orb-weaver_spider_%28Tetragnatha_montana%29_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Redback_vers_Lizard.jpg/330px-Redback_vers_Lizard.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Latrodectus_hasselti_-Sydney%2C_Australia-8.jpg/330px-Latrodectus_hasselti_-Sydney%2C_Australia-8.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/%28MHNT%29_Enoplognatha_ovata_on_Daucus_carota.jpg/250px-%28MHNT%29_Enoplognatha_ovata_on_Daucus_carota.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/c/c3/Chrysso.pulcherrima.male.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/f/ff/Dipoena.martinae.female.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Black_Widow_Spider_07-04-20.jpg/330px-Black_Widow_Spider_07-04-20.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/7/71/Wendilgarda.sp.female.-.tanikawa.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/96/Zookeys.753.20805.figure3_%28A%29.jpg"
+    ]
+  },
+  {
+    "name": "Eresidae",
+    "parent": "Entelegynae",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Titanoecidae",
+    "parent": "Entelegynae",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "RTA clade",
+    "parent": "Entelegynae",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "They have a backward-facing projection on the tibia of the male pedipalp.",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Zodariidae",
+    "parent": "RTA clade",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Sparassidae",
+    "parent": "RTA clade",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Lycosidae",
+    "parent": "RTA clade",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "wandering spiders",
+      "wolf spiders",
+      "huntsman spiders",
+      "lynx spiders",
+      "nursery web spiders",
+      "flower crab spiders",
+      "ant mimicking crab spiders"
+    ],
+    "tag": "Traditionally defined as having a \"grate-shaped\" reflective layer at the back of the eye but phylogenetic studies shuffle these species somewhat.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/1/14/Wandering_spider.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Ctenus_caligineus_302557374_545280326.jpg/250px-Ctenus_caligineus_302557374_545280326.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Wolf_spider_tunnel.jpg/330px-Wolf_spider_tunnel.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Wolf_eyes_for_guide.jpg/330px-Wolf_eyes_for_guide.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Sparassidae_Palystes_castaneus_mature_female_9923s.jpg/330px-Sparassidae_Palystes_castaneus_mature_female_9923s.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/a/ac/Huntsman-Spider-Delena-cancerides.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Oxyopes_salticus_Kaldari_02.jpg/330px-Oxyopes_salticus_Kaldari_02.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/LynxSpider_Hunt_macrogiants_E.jpg/250px-LynxSpider_Hunt_macrogiants_E.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/LynxSpider_Hunt_macrogiants_F.jpg/250px-LynxSpider_Hunt_macrogiants_F.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Peucetia-formosensis-female.jpg/250px-Peucetia-formosensis-female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Nursery_web_spider_%28Nilus_albocinctus%29_female.jpg/330px-Nursery_web_spider_%28Nilus_albocinctus%29_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Nursery_web_spider_%28Pisaura_mirabilis%29_2.jpg/250px-Nursery_web_spider_%28Pisaura_mirabilis%29_2.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Bytom_Pisaura_mirabilis_female_tent.jpg/330px-Bytom_Pisaura_mirabilis_female_tent.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Dolomedes_fimbriatus_1.jpg/330px-Dolomedes_fimbriatus_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Afropisaura_ducis_-_Jonathan_Whitaker_-_168768862.jpeg/250px-Afropisaura_ducis_-_Jonathan_Whitaker_-_168768862.jpeg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Hygropoda_tangana_165771712.jpg/250px-Hygropoda_tangana_165771712.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Fecenia_cylindrata.png/330px-Fecenia_cylindrata.png",
+      "https://upload.wikimedia.org/wikipedia/commons/8/8c/Fecenia_protensa.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Crab_Spider_6299.jpg/330px-Crab_Spider_6299.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Food_chain_2023.jpg/250px-Food_chain_2023.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/2/27/Camaricus_sp.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Misumena_vatia_female_Luc_Viatour_1.jpg/330px-Misumena_vatia_female_Luc_Viatour_1.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/4/43/Phyrnarachne_sp.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/9/97/Amyciaea_sp..jpg"
+    ]
+  },
+  {
+    "name": "Dionycha",
+    "parent": "RTA clade",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "Characterized by the possession of two tarsal claws with tufts of hairs (setae) beside them, which produce strong adhesion, enabling some species to climb glass.",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Clubionidae",
+    "parent": "Dionycha",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Gnaphosidae",
+    "parent": "Dionycha",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Corinnidae",
+    "parent": "Dionycha",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Philodromidae",
+    "parent": "Dionycha",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      ""
+    ]
+  },
+  {
+    "name": "Salticidae",
+    "parent": "Dionycha",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+      "jumping spiders"
+    ],
+    "tag": "They have some of the best vision among arthropods and are capable of stereoptic color vision. Most species are capable of very agile jumps. Both their book lungs and tracheal system are well-developed, and they use both systems (bimodal breathing). All species have four pairs of eyes, with the anterior median pair (the two front middle eyes) being particularly large.",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/PlatycryptusUndatusFemale.jpg/330px-PlatycryptusUndatusFemale.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Jumping_spider_vision_David_Hill.svg/250px-Jumping_spider_vision_David_Hill.svg.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Telamonia_dimidiata_female.jpg/250px-Telamonia_dimidiata_female.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Phidippus_audax_male.jpg/330px-Phidippus_audax_male.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Unidentified_Salticid_Jumping_with_Trailing_Dragline.jpg/330px-Unidentified_Salticid_Jumping_with_Trailing_Dragline.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Saitis_barbipes_signaling.jpg/330px-Saitis_barbipes_signaling.jpg"
+    ]
+  },
+  {
+    "name": "Amblypygi",
+    "parent": "Tetrapulmonata",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Flickr_-_ggallice_-_Tailless_whip-scorpion%2C_La_Muerta.png/120px-Flickr_-_ggallice_-_Tailless_whip-scorpion%2C_La_Muerta.png"
+    ]
+  },
+  {
+    "name": "Uropygi",
+    "parent": "Tetrapulmonata",
+    "rank": "",
+    "ipa": "",
+    "etymology": "",
+    "common": [
+    ],
+    "tag": "",
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Whip_Scorpion_body_%289672115742%29_%28white_background%29.png/120px-Whip_Scorpion_body_%289672115742%29_%28white_background%29.png"
+    ]
+  }
+]

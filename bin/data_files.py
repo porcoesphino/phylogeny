@@ -69,6 +69,13 @@ DATA_LIST = [
         level=3,
     ),
     JsonDataFile(
+        file='luca_animalia_arthropoda_arachnida',
+        domain='animalia',
+        taxa='Arachnida',
+        tag='The arachnids, including spiders, scorpions and mites.',
+        level=2,
+    ),
+    JsonDataFile(
         file='luca_animalia_chordata',
         domain='animalia',
         taxa='Chordata',
