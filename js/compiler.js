@@ -54,6 +54,8 @@ class OfflineCaching {
             OfflineCaching.reload_update_if_user_confirms('message')
               break
             case 'installation_update':
+              const progress_indicator_el = document.getElementById('progress')
+              progress_indicator_el.style.visibility = 'visible'
               const progress = data.payload.progress
               const total = data.payload.total
               OfflineCaching.update_download_progress_indicator(progress, total)
