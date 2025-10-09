@@ -1378,9 +1378,9 @@ class Settings {
           throw Error('Image in data file has unexpected prefix: ' + request.url)
         }
         const img_suffix = img.substring(img_prefix.length)
-        const img_encoded = relative_prefix + encodeURIComponent(img_suffix)
+        const img_encoded = img_prefix + encodeURIComponent(img_suffix)
         if (!thumbnail_urls.has(img_encoded)) {
-          const img_decoded = relative_prefix + decodeURIComponent(img_suffix)
+          const img_decoded = img_prefix + decodeURIComponent(img_suffix)
           if (!thumbnail_urls.has(img_decoded)) {
             console.log('Missing in cache', img, img_decoded, img_encoded)
             missing_thumbnails.add(img)
