@@ -65,7 +65,12 @@ def get_html() -> str:
     <div class="rows-on-mobile">
 
       <details class="controls" id="summary-accordion">
-        <summary>Summary</summary>
+        <summary>
+          Summary
+          <span id="uninstalled-badge" style="visibility:hidden">
+            Uninstalled assets
+          </span>
+        </summary>
         <div class="summary">
           <p>
             This website is a way to help me memorise a simplified phylogenetic tree of life. The
@@ -200,20 +205,23 @@ def get_html() -> str:
             </li>
           </ul>
           <div>
-            <h2>Settings</h2>
+            <h2>Status</h2>
             <div>
-              <input type="checkbox" id="offline-mode-toggle">
-              <label for="offline-mode-toggle">
-                Offline mode
-              </label>
+              <button id="install-assets-button">
+                Install offline assets
+              </button>
             </div>
             <div id="status">
+              <div id="progress" style="visibility: hidden;">
+                <label for="offline-download-progress-bar">Downloaded assets<span id="offline-download-progress-text"></span>:</label>
+                <progress id="offline-download-progress-bar" max="100" value="0"></progress>
+              </div>
               <div>Caches: </div>
               <ul id="cache-list-indicator" class="regular_list">
               </ul>
-              <div id="progress">
-                <label for="offline-download-progress-bar">Downloaded assets<span id="offline-download-progress-text"></span>:</label>
-                <progress id="offline-download-progress-bar" max="100" value="0"></progress>
+              <div>
+                <span>Installed assets:</span>
+                <span id="installed-assets">Unknown</span>
               </div>
               <div>
                 <span>Memory used:</span>
