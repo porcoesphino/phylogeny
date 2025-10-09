@@ -1377,6 +1377,7 @@ class Settings {
         if (!thumbnail_urls.has(img_encoded)) {
           const img_decoded = decodeURIComponent(img)
           if (!thumbnail_urls.has(img_decoded)) {
+            console.log('Missing in cache', img, img_decoded, img_encoded)
             missing_thumbnails.add(img)
           }
         }
