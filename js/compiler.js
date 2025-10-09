@@ -60,7 +60,7 @@ class OfflineCaching {
               await OfflineCaching.update_memory_estimate()
               break
             default:
-              throw Error(`Unknown event type sent as message: ${data.type}`)
+              throw Error(`Unknown event type sent as message: ${data}`)
           }
         },
         { once: false }
