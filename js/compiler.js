@@ -1376,6 +1376,7 @@ class Settings {
         missing_thumbnails.add(img)
       }
     }
+    console.log('Missing thumbnails', missing_thumbnails)
     return missing_thumbnails
   }
 
