@@ -15,7 +15,7 @@ class Debouncer {
   request_poll() {
     const request_date = new Date()
     const time_since = request_date - this.last_poll
-    const last_poll_is_old = time_since > Poller.INTERVAL_SEC
+    const last_poll_is_old = time_since > Debouncer.INTERVAL_SEC
     if (this.request_waiting) {
       return
     }
@@ -24,7 +24,7 @@ class Debouncer {
       this.last_poll = new Date()
       this._func()
     } else {
-      const time_to_wait = Poller.INTERVAL_SEC - time_since
+      const time_to_wait = Debouncer.INTERVAL_SEC - time_since
       this.request_waiting = true
       setTimeout(async () => {
         await new Promise(r => setTimeout(r, time_to_wait));
