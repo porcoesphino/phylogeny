@@ -2,10 +2,45 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
-var is_first_two_seconds = true
-setTimeout(async () => {
-  await new Promise(r => setTimeout(r, 2000));
-  is_first_two_seconds = false
+// Used to avoid overloading the Cache API.
+class Debouncer {
+  static INTERVAL_SEC = 1000
+
+  constructor(func) {
+    this.last_poll = new Date()
+    this.request_waiting = false
+    this._func = func
+  }
+
+  request_poll() {
+    const request_date = new Date()
+    const time_since = request_date - this.last_poll
+    const last_poll_is_old = time_since > Poller.INTERVAL_SEC
+    if (this.request_waiting) {
+      return
+    }
+
+    if (last_poll_is_old) {
+      this.last_poll = new Date()
+      this._func()
+    } else {
+      const time_to_wait = Poller.INTERVAL_SEC - time_since
+      this.request_waiting = true
+      setTimeout(async () => {
+        await new Promise(r => setTimeout(r, time_to_wait));
+        this.last_poll = new Date()
+        this.request_waiting = false
+        this._func()
+      })
+    }
+  }
+}
+
+// Avoid overloading the Cache API.
+var update_progress_debouncer = new Debouncer(async () => {
+  console.log('Updating memory estimate and assets progress')
+  await OfflineCaching.update_memory_estimate()
+  await Settings.update_assets_progress(page.state)
 })
 
 class OfflineCaching {
@@ -65,11 +100,7 @@ class OfflineCaching {
               const progress = data.payload.progress
               const total = data.payload.total
               OfflineCaching.update_download_progress_indicator(progress, total)
-              // Avoid using the Cache API during early page load or it will stop fetches.
-              if (!is_first_two_seconds) {
-                await OfflineCaching.update_memory_estimate()
-                await Settings.update_assets_progress(page.state)
-              }
+              update_progress_debouncer.request_poll()
               break
             default:
               throw Error(`Unknown event type sent as message: ${data}`)
