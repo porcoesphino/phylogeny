@@ -1428,6 +1428,7 @@ class Settings {
       uninstalled_badge_indicator.style.visibility = 'hidden'
     } else {
       setTimeout(async () => {
+        // Note: The Cache API sometimes errors on startup. Delay this low priority request.
         await new Promise(r => setTimeout(r, 2000));
         await Settings.update_assets_progress(state)
         await OfflineCaching.update_memory_estimate()
@@ -1454,6 +1455,8 @@ class Settings {
 
     setTimeout(async () => {
       var cache_list_el = document.getElementById(Settings.ID_CACHE_LIST)
+      // Note: The Cache API sometimes errors on startup. Delay this low priority request.
+      await new Promise(r => setTimeout(r, 2000));
       var cache_list = await OfflineCaching.get_cache_names()
       if (!cache_list || cache_list.length == 0) {
         var li_el = document.createElement('li')
