@@ -1395,6 +1395,9 @@ class Settings {
     } else {
       const install_assets_button = document.getElementById(Settings.ID_INSTALL_ASSETS_BUTTON)
       install_assets_button.disabled = true
+
+      const uninstalled_badge_indicator = document.getElementById(Settings.ID_UNINSTALLED_BADGE)
+      uninstalled_badge_indicator.style.visibility = 'hidden'
     }
   }
 
