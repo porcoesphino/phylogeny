@@ -2,6 +2,12 @@ const WIDTH_BOTH_ACCORDIONS_STAY_OPEN = 1200
 
 const WIDTH_CONTROL_ACCORDION_STAY_OPEN = 780
 
+var is_first_two_seconds = true
+setTimeout(async () => {
+  await new Promise(r => setTimeout(r, 2000));
+  is_first_two_seconds = false
+})
+
 class OfflineCaching {
   static ID_DOWNLOAD_PROGRESS_TEXT = 'offline-download-progress-text'
   static ID_DOWNLOAD_PROGRESS_BAR = 'offline-download-progress-bar'
@@ -59,8 +65,11 @@ class OfflineCaching {
               const progress = data.payload.progress
               const total = data.payload.total
               OfflineCaching.update_download_progress_indicator(progress, total)
-              await OfflineCaching.update_memory_estimate()
-              await Settings.update_assets_progress(page.state)
+              // Avoid using the Cache API during early page load or it will stop fetches.
+              if (!is_first_two_seconds) {
+                await OfflineCaching.update_memory_estimate()
+                await Settings.update_assets_progress(page.state)
+              }
               break
             default:
               throw Error(`Unknown event type sent as message: ${data}`)
