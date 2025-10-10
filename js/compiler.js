@@ -1376,6 +1376,7 @@ class Settings {
         missing_thumbnails.add(img)
       }
     }
+    console.log('Found missing artifacts: ', missing_thumbnails)
     return missing_thumbnails
   }
 
@@ -1424,6 +1425,7 @@ class Settings {
       uninstalled_badge_indicator.style.visibility = 'hidden'
     } else {
       setTimeout(async () => {
+        await new Promise(r => setTimeout(r, 2000));
         await Settings.update_assets_progress(state)
         await OfflineCaching.update_memory_estimate()
       })
