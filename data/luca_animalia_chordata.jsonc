@@ -126,7 +126,7 @@
     "rank": "Subclass",
     "ipa": "ɪˌlæzməˈbræŋkiaɪ",
     "etymology": "",
-    "tag": "The cartilaginous fish. They have no swim bladder and need to swim to avoid sinking.",
+    "tag": "The cartilaginous fish. They have no swim bladder and need to swim to avoid sinking. The teeth are in several series; the upper jaw is not fused to the cranium, and the lower jaw is articulated with the upper.",
     "common": [
       "sharks",
       "whale sharks",
@@ -177,7 +177,7 @@
     "rank": "Class",
     "ipa": "ˌæktɪnɒptəˈrɪdʒiaɪ",
     "etymology": "",
-    "tag": "The ray-finned fish. The majority of the extant fish.",
+    "tag": "The ray-finned fish. The majority of the extant fish. They have lightly built fins made of webbings of skin supported by radially extended thin bony spines that resemble folding fans.",
     "imgs": [
       "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Sole_commune_%28Solea_solea%29_en_rade_de_Brest_%28Ifremer_00558-67035_-_20670%29.jpg/330px-Sole_commune_%28Solea_solea%29_en_rade_de_Brest_%28Ifremer_00558-67035_-_20670%29.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg/250px-Hippocampus_hippocampus_%28on_Ascophyllum_nodosum%29.jpg",
@@ -197,8 +197,19 @@
     "rank": "Clade",
     "ipa": "ˌsɑːrkɒptəˈrɪdʒi.aɪ",
     "etymology": "",
-    "tag": "The lobe-finned fish (and relatives to all land vertebrates).",
-    "imgs": [],
+    "tag": "The lobe-finned fish (and relatives to all land vertebrates). Characterised by prominent muscular limb buds (lobes) within their fins, which are supported by articulated appendicular skeletons.",
+    "common": [
+      "lobe-finned fish",
+      "coelacanths",
+      "lungfish",
+      "Queensland lungfish"
+    ],
+    "imgs": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Coelacanth_off_Pumula_on_the_KwaZulu-Natal_South_Coast%2C_South_Africa%2C_on_22_November_2019.png/330px-Coelacanth_off_Pumula_on_the_KwaZulu-Natal_South_Coast%2C_South_Africa%2C_on_22_November_2019.png",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Neoceratodus_forsteri%2C_2014-09-19.JPG/330px-Neoceratodus_forsteri%2C_2014-09-19.JPG",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Latimeria_Paris.jpg/330px-Latimeria_Paris.jpg",
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Fins_to_hands.png/330px-Fins_to_hands.png"
+     ],
     "card": 4
   },
   {
